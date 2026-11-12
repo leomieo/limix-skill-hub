@@ -215,6 +215,12 @@
       "commit": null,
       "checksum": "69609b5bea4238edfe271245b12f563c9e6e0d265efa67e1d3d5055e07661cbb",
       "at": null
+    },
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "3305513e4eb4a01c7e12435a2a9dfa1cebb46db9ee085a93df988febd79c322d",
+      "at": null
     }
   ],
   "claude-animated-shorts": [
@@ -222,6 +228,12 @@
       "version": "0",
       "commit": null,
       "checksum": "1342f26e8208cf6f2d68a8e54fd28f910bd8c3bdb7d75683f22783d240b0a1c5",
+      "at": null
+    },
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "7eb073ab4a07963306c265d25b2b522d20cc702a8e6607428e079c7abaa57fcc",
       "at": null
     }
   ],
@@ -231,6 +243,12 @@
       "commit": null,
       "checksum": "60d56fa0dd1411ed870fb714846a46c581bc7d4076e816a8174bda0add5197a4",
       "at": null
+    },
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "78d2fc6bcd3ac2417a2d69488f66575714218d754611e9c5eb3d425d816e6298",
+      "at": null
     }
   ],
   "instagram-agent-skill": [
@@ -239,6 +257,12 @@
       "commit": null,
       "checksum": "e456a8c7b46130995711680db09bc7e06bee6cda7260f1697760bbc4a413c6fe",
       "at": null
+    },
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "fcb0a1e6f5429493d8ecab83c53fa5a70e9bc2eb947ec62af09e6654252b8e93",
+      "at": null
     }
   ],
   "stageshow": [
@@ -246,6 +270,52 @@
       "version": "0",
       "commit": null,
       "checksum": "9e37652899c5279ab546abe6af53828ea2d837171b459a4dd594715d796a5b91",
+      "at": null
+    },
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "3a23fa4fac3f0bdb12151797defeb79c7206790fecc126185f3d9beae659d080",
+      "at": null
+    }
+  ],
+  "agent-autoloop": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "35341f6e0adebb757f26b8cc6ceca1286de58f1a8984854c1a3ec2c9e6223f05",
+      "at": null
+    }
+  ],
+  "api-anything": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "235f7d256352b8b0ea8d01366a198a9d5b5c5c9e50733f9f89a861e455d87486",
+      "at": null
+    }
+  ],
+  "earshot": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "e3a32beb3e81cb5f116180317db60a39b8f5303798aee739781d2b974f39974e",
+      "at": null
+    }
+  ],
+  "huashu-art-motion": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "f8ebc6c04d2b84fec15f84516fbb789c9fc388f28e11c723c913c952e6a32918",
+      "at": null
+    }
+  ],
+  "rea-video": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "75ec9dbd16b6e8716f7e1d3cf6c722ec24e5a9c2d78adfef07371380eb493fd8",
       "at": null
     }
   ]

@@ -3,6 +3,7 @@
 //   node tools/build-catalog.mjs [--root <repo dir>]
 import { mkdir, readdir, readFile, rename, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { parseSkillMd, isSkillName } from "../lib/skill-md.mjs";
 import { readSkillDir, folderChecksum } from "../lib/pack.mjs";
 import { scanSkill } from "../lib/security.mjs";
@@ -10,7 +11,7 @@ import { classifySkill } from "../lib/classify.mjs";
 import { scoreSkill } from "../lib/score.mjs";
 
 const rootArg = process.argv.indexOf("--root");
-const root = rootArg > 0 ? path.resolve(process.argv[rootArg + 1]) : path.resolve(new URL("..", import.meta.url).pathname);
+const root = rootArg > 0 ? path.resolve(process.argv[rootArg + 1]) : path.resolve(fileURLToPath(new URL("..", import.meta.url)));
 
 const readJson = async (file, fallback) => {
   try { return JSON.parse(await readFile(file, "utf8")); } catch { return fallback; }
