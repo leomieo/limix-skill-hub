@@ -5,7 +5,7 @@ on:
     - cron: "0 20 * * *" # 03:00 Asia/Ho_Chi_Minh (UTC+7)
   workflow_dispatch:
   push:
-    paths: ["lib/**", "tools/**", "tests/**"]
+    paths: ["lib/**", "tools/**", "tests/**", "skills/**", "quarantine/**", "discovery/**"]
 
 permissions:
   contents: write
@@ -26,10 +26,15 @@ jobs:
       - name: Tests
         run: npm test
       - name: Discover (download only, nothing is executed)
-        if: github.event_name != 'push'
+        # The owner's curator bot picks the skills; automatic discovery runs only when started by hand.
+        if: github.event_name == 'workflow_dispatch'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node tools/discover.mjs
+      - name: Refresh stars and dates
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node tools/refresh-stats.mjs
       - name: Rebuild registry
         run: node tools/build-catalog.mjs
       - name: Commit changes
