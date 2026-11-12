@@ -31,6 +31,11 @@ Mỗi thư mục `skills/<id>/` gồm `SKILL.md` (Việt hóa, frontmatter chu�
 | [geo-sleuth](skills/geo-sleuth/SKILL.md) | [Oldcircle/geo-sleuth](https://github.com/Oldcircle/geo-sleuth) | 6.894 | 2026-09-18 | 2026-11-12 (lần 1/30) | Xác minh nơi chụp ảnh (dùng có điều kiện) |
 | [answer-me-with-html](skills/answer-me-with-html/SKILL.md) | [QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | 6.264 | 2026-10-02 | 2026-11-12 (lần 1/30) | Báo cáo/giải thích dạng trang HTML |
 | [stack-diagram](skills/stack-diagram/SKILL.md) | [caru-ini/stack-diagram](https://github.com/caru-ini/stack-diagram) | 2.435 | 2026-11-01 | 2026-11-12 (lần 1/30) | Sơ đồ kiến trúc có logo chính hãng |
+| [universal-modder](skills/universal-modder/SKILL.md) | [rehan-remade/universal-modder](https://github.com/rehan-remade/universal-modder) | 9.634 | 2026-09-30 | 2026-11-12 (lần 2/30) | Mod game PC bằng agent (13 skill + CLI `um`) |
+| [replica-skill](skills/replica-skill/SKILL.md) | [Jakeschincariol/replica-skill](https://github.com/Jakeschincariol/replica-skill) | 9.041 | 2026-10-03 | 2026-11-12 (lần 2/30) | Clone sạch (clean-room) một app, từ recon đến deploy |
+| [pixelfx](skills/pixelfx/SKILL.md) | [patch-gg/pixelfx](https://github.com/patch-gg/pixelfx) | 7.103 | 2026-10-30 | 2026-11-12 (lần 2/30) | 244 hiệu ứng pixel art bằng code, xuất sprite sheet |
+| [janestreet-agent-skills](skills/janestreet-agent-skills/SKILL.md) | [janestreet/agent_skills](https://github.com/janestreet/agent_skills) | 6.983 | 2026-11-03 | 2026-11-12 (lần 2/30) | Gia sư Socratic có cấu trúc (skill chính thức Jane Street) |
+| [logo-design-skill](skills/logo-design-skill/SKILL.md) | [kaankiziltug/logo-design-skill](https://github.com/kaankiziltug/logo-design-skill) | 6.703 | 2026-09-26 | 2026-11-12 (lần 2/30) | Thiết kế logo/brand có checkpoint + thư viện 1.400+ SVG |
 
 ## Việt hóa và chấm thử
 Do một bot chạy trên máy chủ bot (Limix Bot của chủ kho) thực hiện, rồi ghi `_hub.review.json` và `SKILL.vi.md` vào repo này. Hub không giữ khóa AI nào.
