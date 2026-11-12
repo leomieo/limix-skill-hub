@@ -20,6 +20,18 @@ Kho kỹ năng (skill) trung tâm cho Limix Bot: tìm, quét an toàn, chấm đ
   Từ 90 xuất sắc, 80-89 khuyên dùng, 65-79 cần xem xét, dưới 65 từ chối.
 - `_hub.json` (nguồn) và `_hub.review.json` (bot quản lý: bản dịch `description_vi`, điểm chạy thử, `approval`) nằm trong từng thư mục skill và không được cài vào máy.
 
+## Skill đã Việt hóa
+
+Mỗi thư mục `skills/<id>/` gồm `SKILL.md` (Việt hóa, frontmatter chuẩn hub), `SKILL.en.md` (trích bản gốc tiếng Anh) và `PHAN-TICH.md` (phân tích: sao, ngày tạo, lý do chọn, mức phù hợp). Số sao đo tại thời điểm chạy.
+
+| Skill | Nguồn | Sao | Tạo | Chạy | Phù hợp Limix Bot |
+|---|---|---:|---|---|---|
+| [anatomy](skills/anatomy/SKILL.md) | [wheresryan22/anatomy](https://github.com/wheresryan22/anatomy) | 26.861 | 2026-10-08 | 2026-11-12 (lần 1/30) | Minh họa kỹ thuật tương tác cho explainer/docs |
+| [unslop](skills/unslop/SKILL.md) | [heydamir/unslop](https://github.com/heydamir/unslop) | 14.847 | 2026-10-29 | 2026-11-12 (lần 1/30) | Duyệt thẩm mỹ UI do agent tự dựng |
+| [geo-sleuth](skills/geo-sleuth/SKILL.md) | [Oldcircle/geo-sleuth](https://github.com/Oldcircle/geo-sleuth) | 6.894 | 2026-09-18 | 2026-11-12 (lần 1/30) | Xác minh nơi chụp ảnh (dùng có điều kiện) |
+| [answer-me-with-html](skills/answer-me-with-html/SKILL.md) | [QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | 6.264 | 2026-10-02 | 2026-11-12 (lần 1/30) | Báo cáo/giải thích dạng trang HTML |
+| [stack-diagram](skills/stack-diagram/SKILL.md) | [caru-ini/stack-diagram](https://github.com/caru-ini/stack-diagram) | 2.435 | 2026-11-01 | 2026-11-12 (lần 1/30) | Sơ đồ kiến trúc có logo chính hãng |
+
 ## Việt hóa và chấm thử
 Do một bot chạy trên máy chủ bot (Limix Bot của chủ kho) thực hiện, rồi ghi `_hub.review.json` và `SKILL.vi.md` vào repo này. Hub không giữ khóa AI nào.
 
