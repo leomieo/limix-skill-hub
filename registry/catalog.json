@@ -1,0 +1,659 @@
+{
+  "schema": 1,
+  "hub": "leomieo/limix-skill-hub",
+  "count": 10,
+  "skills": [
+    {
+      "id": "anatomy",
+      "name": "anatomy",
+      "description": "Skill tạo hình minh họa đẳng trục (isometric) tương tác để giải thích một ý tưởng kỹ thuật: agent \"phát minh\" một vật thể cơ khí mà cơ chế hoạt động của nó chính là khái niệm cần giải thích, dựng hàng chục chi tiết nhỏ bằng SVG + WebGL (tùy chọn 3D beta), đóng khung thẻ có tiêu đề, số liệu trực tiếp và chuyển động mượt theo con trỏ/bàn phím, rồi tự kiểm tra hình bằng audit hình học và ảnh chụp headless Chrome. Xuất HTML độc lập, SVG đơn hoặc component React/Next.js.",
+      "description_vi": "Skill tạo hình minh họa đẳng trục (isometric) tương tác để giải thích một ý tưởng kỹ thuật: agent \"phát minh\" một vật thể cơ khí mà cơ chế hoạt động của nó chính là khái niệm cần giải thích, dựng hàng chục chi tiết nhỏ bằng SVG + WebGL (tùy chọn 3D beta), đóng khung thẻ có tiêu đề, số liệu trực tiếp và chuyển động mượt theo con trỏ/bàn phím, rồi tự kiểm tra hình bằng audit hình học và ảnh chụp headless Chrome. Xuất HTML độc lập, SVG đơn hoặc component React/Next.js.",
+      "version": "0",
+      "source": {
+        "repository": null,
+        "commit": null,
+        "path": null
+      },
+      "license": "MIT",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 75,
+      "score_parts": {
+        "function": 21,
+        "security": 25,
+        "compatibility": 20,
+        "testing": 0,
+        "maintenance": 4,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": "Claude Code, Antigravity, OpenCode, Codex, MiniMax Code (định dạng Agent Skill chuẩn SKILL.md)",
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          }
+        ]
+      },
+      "dependencies": [
+        "node"
+      ],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "3718761b0eec4e1065c262e242442e419f06d7bbbddf5d0b8644787feef6c27a",
+      "file_hashes": {
+        "PHAN-TICH.md": "16e6af2f71e7161120c5124f80659596cd1498a96d401d2979fe8376ee46e84e",
+        "SKILL.en.md": "c912706cf4963590f5d66a73dc9bee35c43336df1c683cc2c884e4626fe1442e",
+        "SKILL.md": "bcf4dda072b5ff76d3a0e941d1866a43a834ee7f86e1680272794d84c0fc9c8d"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
+      "id": "answer-me-with-html",
+      "name": "answer-me-with-html",
+      "description": "Skill trả lời câu hỏi khó bằng một trang HTML đọc được thay vì cả khối chữ — model chỉ viết nháp Markdown (khoảng 1/8 số token so với tự viết HTML), CLI đi kèm dựng trang hoàn chỉnh theo component (sequence, flow, state, er, class, api, tree, timeline, chart, annot, kv, callout, ask), có 3 theme (blueprint/shadcn/paper) sáng/tối, tự sửa lỗi nháp, nhúng code thật từ file dự án, kèm video giải thích kiểu 3b1b và chế độ always-on cho mọi kết luận.",
+      "description_vi": "Skill trả lời câu hỏi khó bằng một trang HTML đọc được thay vì cả khối chữ — model chỉ viết nháp Markdown (khoảng 1/8 số token so với tự viết HTML), CLI đi kèm dựng trang hoàn chỉnh theo component (sequence, flow, state, er, class, api, tree, timeline, chart, annot, kv, callout, ask), có 3 theme (blueprint/shadcn/paper) sáng/tối, tự sửa lỗi nháp, nhúng code thật từ file dự án, kèm video giải thích kiểu 3b1b và chế độ always-on cho mọi kết luận.",
+      "version": "0",
+      "source": {
+        "repository": null,
+        "commit": null,
+        "path": null
+      },
+      "license": "MIT",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 79,
+      "score_parts": {
+        "function": 25,
+        "security": 25,
+        "compatibility": 20,
+        "testing": 0,
+        "maintenance": 4,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": "Claude Code, Codex, Cursor, OpenCode, Pi, DeepSeek Harness (bất kỳ agent nào chạy được lệnh shell; Node.js ≥ 20)",
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "ffmpeg"
+      ],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "5876f924684602f62290959b824ed74113c65a0a9950dd58c8ebe65c92bf59cd",
+      "file_hashes": {
+        "PHAN-TICH.md": "932616ff4edf328633783d83d97e41642bee3998b510c75e11dbf28abb7a9a29",
+        "SKILL.en.md": "ab8bb95322defafe0f430bdc892a3af031fa6063a4a03adb65cf8456c2a1e1a1",
+        "SKILL.md": "39954f13b806ff5d17da3c31219868bfd6d017d78bdc85fe6f6d0d20c71ada1d"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
+      "id": "geo-sleuth",
+      "name": "geo-sleuth",
+      "description": "Skill định vị ảnh chụp bằng agent — đưa cho agent một bức ảnh và bảo \"tìm nơi này được chụp ở đâu\", nó trả về tọa độ máy ảnh (kèm bán kính sai số), hướng ống kính và ảnh bằng chứng vệ tinh, giải trình từng bước bằng file lệnh đã chạy. Dữ liệu OpenStreetMap, độ cao địa hình, tile vệ tinh và street view thay cho chữ trong ảnh: khoảng cách mố cầu làm thước đo, bóng đổ làm la bàn, đường viền núi khớp với dữ liệu elevation. Chạy với Claude Code, Codex, Cursor, Gemini CLI, OpenCode, GitHub Copilot.",
+      "description_vi": "Skill định vị ảnh chụp bằng agent — đưa cho agent một bức ảnh và bảo \"tìm nơi này được chụp ở đâu\", nó trả về tọa độ máy ảnh (kèm bán kính sai số), hướng ống kính và ảnh bằng chứng vệ tinh, giải trình từng bước bằng file lệnh đã chạy. Dữ liệu OpenStreetMap, độ cao địa hình, tile vệ tinh và street view thay cho chữ trong ảnh: khoảng cách mố cầu làm thước đo, bóng đổ làm la bàn, đường viền núi khớp với dữ liệu elevation. Chạy với Claude Code, Codex, Cursor, Gemini CLI, OpenCode, GitHub Copilot.",
+      "version": "0",
+      "source": {
+        "repository": null,
+        "commit": null,
+        "path": null
+      },
+      "license": "MIT",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 75,
+      "score_parts": {
+        "function": 21,
+        "security": 25,
+        "compatibility": 20,
+        "testing": 0,
+        "maintenance": 4,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": "Python ≥ 3.10 + uv + curl; agent chạy được shell; reverse image search cần Chrome/Playwright Chromium; match.py/sat_scan.py dùng torch (CUDA/MPS/CPU)",
+        "runtimes": [
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "node",
+            "installerId": "node"
+          }
+        ]
+      },
+      "dependencies": [
+        "node"
+      ],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "42e68980ca378098f10a8f6b1f5a15ac535d832268464105df4e504914be69df",
+      "file_hashes": {
+        "PHAN-TICH.md": "02874b417943522da4110265fa09baa2f4d0a545367e2435b914c86ab1d68069",
+        "SKILL.en.md": "f4c7c2aa0c0a463ecd84624c34bd8ab872be82fae58d1551db7107a3132a82ef",
+        "SKILL.md": "9d13df50c9d11b38c8cd66ed4b51fb1aa035aedaf7ecac6cee51f0a07bd72745"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
+      "id": "logo-design",
+      "name": "logo-design",
+      "description": "Skill thiết kế logo và brand mark chuyên nghiệp, từ brief đến file sản xuất — biến Claude (hoặc Gemini CLI, Codex CLI, Cursor, GitHub Copilot, OpenCode) thành nhà thiết kế bản sắc kỷ luật. Bao trùm: khai thác và design brief, word mapping, chọn loại mark (wordmark, monogram, letterform, pictorial, abstract, emblem, mascot, combination), dựng SVG hình học sạch, tinh chỉnh quang học (overshoot, bone effect, irradiation), màu và typography, lockup, kiểm thử (16px, một màu, đảo màu, squint, shelf test cạnh đối thủ), trình bày cho khách, xuất variant và brand guidelines. Kèm thư viện tra cứu 1.400+ logo SVG thực tế phân loại theo loại mark/kỹ thuật/hình học/chủ đề/mood/ngành, và tool Python không dependency: audit SVG, bảng concept, test sheet, presentation board theo ngành, render PNG, xuất favicon/app-icon/web-manifest. Luôn dừng ở checkpoint để khách chọn hướng trước khi làm full kit.",
+      "description_vi": "Skill thiết kế logo và brand mark chuyên nghiệp, từ brief đến file sản xuất — biến Claude (hoặc Gemini CLI, Codex CLI, Cursor, GitHub Copilot, OpenCode) thành nhà thiết kế bản sắc kỷ luật. Bao trùm: khai thác và design brief, word mapping, chọn loại mark (wordmark, monogram, letterform, pictorial, abstract, emblem, mascot, combination), dựng SVG hình học sạch, tinh chỉnh quang học (overshoot, bone effect, irradiation), màu và typography, lockup, kiểm thử (16px, một màu, đảo màu, squint, shelf test cạnh đối thủ), trình bày cho khách, xuất variant và brand guidelines. Kèm thư viện tra cứu 1.400+ logo SVG thực tế phân loại theo loại mark/kỹ thuật/hình học/chủ đề/mood/ngành, và tool Python không dependency: audit SVG, bảng concept, test sheet, presentation board theo ngành, render PNG, xuất favicon/app-icon/web-manifest. Luôn dừng ở checkpoint để khách chọn hướng trước khi làm full kit.",
+      "version": "0",
+      "source": {
+        "repository": null,
+        "commit": null,
+        "path": null
+      },
+      "license": "MIT",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 75,
+      "score_parts": {
+        "function": 21,
+        "security": 25,
+        "compatibility": 20,
+        "testing": 0,
+        "maintenance": 4,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": "Claude Code, Claude.ai/Desktop, Gemini CLI, Codex CLI, Cursor, GitHub Copilot, OpenCode (chuẩn Agent Skills; tool là Python thuần không dependency)",
+        "runtimes": [
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ]
+      },
+      "dependencies": [],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "c48d75ce4fa56552e58f0f4cb96ff583fa1ed5838f7461f2b9d63b1c77faed74",
+      "file_hashes": {
+        "PHAN-TICH.md": "d8e14f45d5beae76ba0dac28802dece09f461057c7bcade8adfd8f111a6b577a",
+        "SKILL.en.md": "65ec4bd58732e8cc11e244724e8666de78764b973f6d3b03b233904639cf47c6",
+        "SKILL.md": "06772c09aa0dc8427ae12e894a2f281be78b59e75423fef7e6fa3a1d5dd849a5"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
+      "id": "pixelfx",
+      "name": "pixelfx",
+      "description": "Thư viện 244 hiệu ứng pixel art và hoạt hình sprite viết bằng code — mỗi hiệu ứng một file JS, không phụ thuộc, không ảnh: vẽ vào hai buffer màu (pixel đục/dither/bán trong) và sáng (glow cộng dồn). Họ lửa, nổ, nước, băng, sét, sci-fi, cận chiến, va đập, đạn, sinh/tử, huyền thuật, thánh quang, bóng tối, trạng thái, tự nhiên, thời tiết, UI, vật phẩm, chuyển cảnh, sinh vật nhỏ. Hiệu ứng có nhân vật đều được \"diễn xuất\" (giậm chân - tung đòn - chạm - hồi), 12 combo trọn từ giậm đến hồi. Chơi live trong game canvas/Phaser/PixiJS/Kaplay/three.js, đổi màu, lật, đổi seed, xuất sprite sheet cho Godot/Unity/GameMaker/Defold/LÖVE/Bevy, kèm vòng draft-render-nhìn-chỉnh để tạo hiệu ứng mới như một pixel artist khắt khe. Dùng khi cần VFX pixel art, sprite animation, \"game juice\" hoặc một hiệu ứng cụ thể.",
+      "description_vi": "Thư viện 244 hiệu ứng pixel art và hoạt hình sprite viết bằng code — mỗi hiệu ứng một file JS, không phụ thuộc, không ảnh: vẽ vào hai buffer màu (pixel đục/dither/bán trong) và sáng (glow cộng dồn). Họ lửa, nổ, nước, băng, sét, sci-fi, cận chiến, va đập, đạn, sinh/tử, huyền thuật, thánh quang, bóng tối, trạng thái, tự nhiên, thời tiết, UI, vật phẩm, chuyển cảnh, sinh vật nhỏ. Hiệu ứng có nhân vật đều được \"diễn xuất\" (giậm chân - tung đòn - chạm - hồi), 12 combo trọn từ giậm đến hồi. Chơi live trong game canvas/Phaser/PixiJS/Kaplay/three.js, đổi màu, lật, đổi seed, xuất sprite sheet cho Godot/Unity/GameMaker/Defold/LÖVE/Bevy, kèm vòng draft-render-nhìn-chỉnh để tạo hiệu ứng mới như một pixel artist khắt khe. Dùng khi cần VFX pixel art, sprite animation, \"game juice\" hoặc một hiệu ứng cụ thể.",
+      "version": "0",
+      "source": {
+        "repository": null,
+        "commit": null,
+        "path": null
+      },
+      "license": "MIT",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 25,
+        "security": 0,
+        "compatibility": 20,
+        "testing": 0,
+        "maintenance": 4,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "pipe-to-shell",
+          "severity": "high",
+          "file": "SKILL.en.md",
+          "line": 152
+        },
+        {
+          "rule": "powershell-iex",
+          "severity": "high",
+          "file": "SKILL.en.md",
+          "line": 153
+        },
+        {
+          "rule": "exe-download",
+          "severity": "medium",
+          "file": "SKILL.en.md",
+          "line": 152
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": "Node 18+ (không dependency); Claude Code, Codex và mọi agent hỗ trợ Agent Skills; ffmpeg tùy chọn (preview GIF/MP4)",
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "ffmpeg"
+      ],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "93e21116b2bea6c1a92dc7995fe7e4a55f44bbb423f72763a2f1c0671ceb4f40",
+      "file_hashes": {
+        "PHAN-TICH.md": "01462d298cfa93ef5400e9bf64b08d6fd0092632ba77d457e2100d7d16542a2e",
+        "SKILL.en.md": "b8210917cf4218fbc7d64a07ec4eed4b7888981df3a0224a4681f3547e0f09c5",
+        "SKILL.md": "d48a32cbd4799c1f94d83b5f29fbed60d8da27ec225c3891f0893bb3eee09081"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "quarantine"
+    },
+    {
+      "id": "replica-skill",
+      "name": "replica-skill",
+      "description": "Bộ 11 skill \"nhân bản\" (clone) bất kỳ ứng dụng nào theo quy trình clean-room, MIT, miễn phí, không cần đăng ký hay API key. replica-recon phân tích ngược ứng dụng muốn clone (màn hình, luồng, component, mô hình dữ liệu, bảng feature); replica-architect chọn stack và vẽ schema; replica-design dựng lại design system; replica-build rebuild từng màn hình; replica-backend thêm auth/DB/thanh toán; replica-test click qua mọi luồng để tìm bug; replica-diff chấm điểm độ tương đồng; replica-entrepreneur đọc review thật để tìm điểm người dùng ghét; replica-brand, replica-launch, replica-deploy đưa sản phẩm riêng lên domain của bạn. Dùng khi người dùng nói \"clone app X\", \"reverse engineer X\", \"làm phiên bản riêng của X\".",
+      "description_vi": "Bộ 11 skill \"nhân bản\" (clone) bất kỳ ứng dụng nào theo quy trình clean-room, MIT, miễn phí, không cần đăng ký hay API key. replica-recon phân tích ngược ứng dụng muốn clone (màn hình, luồng, component, mô hình dữ liệu, bảng feature); replica-architect chọn stack và vẽ schema; replica-design dựng lại design system; replica-build rebuild từng màn hình; replica-backend thêm auth/DB/thanh toán; replica-test click qua mọi luồng để tìm bug; replica-diff chấm điểm độ tương đồng; replica-entrepreneur đọc review thật để tìm điểm người dùng ghét; replica-brand, replica-launch, replica-deploy đưa sản phẩm riêng lên domain của bạn. Dùng khi người dùng nói \"clone app X\", \"reverse engineer X\", \"làm phiên bản riêng của X\".",
+      "version": "0",
+      "source": {
+        "repository": null,
+        "commit": null,
+        "path": null
+      },
+      "license": "MIT",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 79,
+      "score_parts": {
+        "function": 25,
+        "security": 25,
+        "compatibility": 20,
+        "testing": 0,
+        "maintenance": 4,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": "Claude Code (plugin/skill folder), Claude.ai (dán SKILL.md), các agent hỗ trợ Agent Skills",
+        "runtimes": [
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ]
+      },
+      "dependencies": [],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "d3ebe5aa53b8632023a7644672ce14e6c25c7c28687faaaf88b14801ddce19e9",
+      "file_hashes": {
+        "PHAN-TICH.md": "1c5d520d38c43930a8b99ed967c070c42be56bfd7ecfbf6d312db067e3df2abf",
+        "SKILL.en.md": "b1fd6a60cf0bcd481f6828453da24b9d9f0935ec6e883741e5f620259f13ff40",
+        "SKILL.md": "be32f4153e25d285c07db350c38d1327fafbac269fbc3d9edc11dbee69f3d544"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
+      "id": "socratic-tutor",
+      "name": "socratic-tutor",
+      "description": "Skill dạy học Socratic có cấu trúc của Jane Street: biến LLM thành gia sư nghiêm khắc dạy một chủ đề theo phương pháp maieutic — dạy chủ yếu bằng đặt câu hỏi buộc người học phải suy luận, dự đoán và giải thích, không giảng bài đọc sẵn. Gồm chẩn đoán đầu vào, bản đồ kỹ năng 4-10 phân kỹ năng với thang 0-5, hỏi từng câu một, ôn theo khoảng cách (spaced review), đánh giá cuối khóa và kiểm tra đạt trình độ. Chỉ kích hoạt khi người dùng muốn được dạy/kiểm tra/luyện đến thành thạo (\"teach me\", \"tutor me\", \"quiz me\", \"drill me\", \"giúp mình luyện đi\"); KHÔNG dùng cho câu hỏi giải thích một lần (\"X là gì?\"). Copy thư mục skill vào skills của agent, hoặc dán nội dung SKILL.md vào chatbot bất kỳ.",
+      "description_vi": "Skill dạy học Socratic có cấu trúc của Jane Street: biến LLM thành gia sư nghiêm khắc dạy một chủ đề theo phương pháp maieutic — dạy chủ yếu bằng đặt câu hỏi buộc người học phải suy luận, dự đoán và giải thích, không giảng bài đọc sẵn. Gồm chẩn đoán đầu vào, bản đồ kỹ năng 4-10 phân kỹ năng với thang 0-5, hỏi từng câu một, ôn theo khoảng cách (spaced review), đánh giá cuối khóa và kiểm tra đạt trình độ. Chỉ kích hoạt khi người dùng muốn được dạy/kiểm tra/luyện đến thành thạo (\"teach me\", \"tutor me\", \"quiz me\", \"drill me\", \"giúp mình luyện đi\"); KHÔNG dùng cho câu hỏi giải thích một lần (\"X là gì?\"). Copy thư mục skill vào skills của agent, hoặc dán nội dung SKILL.md vào chatbot bất kỳ.",
+      "version": "0",
+      "source": {
+        "repository": null,
+        "commit": null,
+        "path": null
+      },
+      "license": "Xem LICENSE.md trong repo gốc",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 73,
+      "score_parts": {
+        "function": 21,
+        "security": 25,
+        "compatibility": 20,
+        "testing": 0,
+        "maintenance": 2,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": "Mọi agent hỗ trợ Agent Skills (SKILL.md); chatbot thường dùng được bằng cách dán nội dung vào chat/system prompt",
+        "runtimes": []
+      },
+      "dependencies": [],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "ababec44e61148f14b54bdf51f582c15e1b6be98e93c72ea488a3dc7cfe84162",
+      "file_hashes": {
+        "PHAN-TICH.md": "45887560bebc7f58d4be601c100d21e87cffc0b5d7e4b64e8a6bcf9f07b634e2",
+        "SKILL.en.md": "9190b68440ad99be4d865c63b87939f23a362efac0776c5a67c93d1498bb5e37",
+        "SKILL.md": "9e6002b8ba03d9db7663fbad9a1a2e9af75c4b46160470936b2121f41f9cf39f"
+      },
+      "notes": [
+        "Giấy phép lạ, cần xem lại điều khoản."
+      ],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
+      "id": "stack-diagram",
+      "name": "stack-diagram",
+      "description": "Skill vẽ sơ đồ kiến trúc (architecture diagram) với logo chính hãng chỉ từ một câu mô tả tech stack — agent tự tra logo từ svgl, devicon, gilbarbara/logos hoặc gói icon của chính AWS/Google Cloud/Azure (không recolor, không vẽ lại), tự định tuyến đường nối tránh xuyên chữ, render kiểm tra rồi giao file HTML độc lập (mặc định), PNG, hoặc React component không dependency; luôn xuất cả bản sáng và tối, dùng được cho cloud, monorepo tooling và ứng dụng AI.",
+      "description_vi": "Skill vẽ sơ đồ kiến trúc (architecture diagram) với logo chính hãng chỉ từ một câu mô tả tech stack — agent tự tra logo từ svgl, devicon, gilbarbara/logos hoặc gói icon của chính AWS/Google Cloud/Azure (không recolor, không vẽ lại), tự định tuyến đường nối tránh xuyên chữ, render kiểm tra rồi giao file HTML độc lập (mặc định), PNG, hoặc React component không dependency; luôn xuất cả bản sáng và tối, dùng được cho cloud, monorepo tooling và ứng dụng AI.",
+      "version": "0",
+      "source": {
+        "repository": null,
+        "commit": null,
+        "path": null
+      },
+      "license": "MIT",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 75,
+      "score_parts": {
+        "function": 21,
+        "security": 25,
+        "compatibility": 20,
+        "testing": 0,
+        "maintenance": 4,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": "Claude Code, Codex, Cursor và các agent hỗ trợ skills (Python ≥ 3.9 + mạng khi vẽ; PNG cần Playwright + Chromium)",
+        "runtimes": [
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "node",
+            "installerId": "node"
+          }
+        ]
+      },
+      "dependencies": [
+        "node"
+      ],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "1d2a2fba03f6da5bebe7bb8f5cd8f0bc30f9ff2363e8d9cc4837b609010344da",
+      "file_hashes": {
+        "PHAN-TICH.md": "64ac8837d0eef80fdb4d6655ebcccc89110ca2d38b780baf3a091967e7ce1e57",
+        "SKILL.en.md": "8afd0a7de1d5d4a769cb4c78f250523dbc1e33e25dd5ecc24f6fceca53480fa6",
+        "SKILL.md": "3e3db82f000e45beb3e9c830902d6e112fd52dd8f03526b31ae9b8e80c9eb9b4"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
+      "id": "universal-modder",
+      "name": "universal-modder",
+      "description": "Hệ 13 skill + CLI `um` + MCP fal giúp mọi AI coding agent (Claude Code, Codex, Cursor, Gemini CLI, Copilot, OpenCode) mod gần như bất kỳ game PC người dùng sở hữu: recon engine/chống gian lận, chọn route, dựng lab an toàn (backup save), đọc code thật, build từng \"vertical slice\" chạy được, tạo asset bằng fal, xác minh ngay trong game thật, quay video trình diễn và ghi field note vào knowledge base cho agent sau. Skill chính là mod-any-game. Dùng khi người dùng muốn mod, mở rộng, reverse-engineer hoặc mashup game (\"thêm nuke vào Terraria\", \"làm văn minh mới cho Age of Empires II\", \"đưa Minecraft vào GTA V\", \"game này mod được không?\").",
+      "description_vi": "Hệ 13 skill + CLI `um` + MCP fal giúp mọi AI coding agent (Claude Code, Codex, Cursor, Gemini CLI, Copilot, OpenCode) mod gần như bất kỳ game PC người dùng sở hữu: recon engine/chống gian lận, chọn route, dựng lab an toàn (backup save), đọc code thật, build từng \"vertical slice\" chạy được, tạo asset bằng fal, xác minh ngay trong game thật, quay video trình diễn và ghi field note vào knowledge base cho agent sau. Skill chính là mod-any-game. Dùng khi người dùng muốn mod, mở rộng, reverse-engineer hoặc mashup game (\"thêm nuke vào Terraria\", \"làm văn minh mới cho Age of Empires II\", \"đưa Minecraft vào GTA V\", \"game này mod được không?\").",
+      "version": "0",
+      "source": {
+        "repository": null,
+        "commit": null,
+        "path": null
+      },
+      "license": "MIT",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 79,
+      "score_parts": {
+        "function": 25,
+        "security": 25,
+        "compatibility": 20,
+        "testing": 0,
+        "maintenance": 4,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": "Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot, OpenCode",
+        "runtimes": [
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "java",
+            "installerId": "jdk"
+          },
+          {
+            "name": "ghidra",
+            "installerId": "ghidra"
+          },
+          {
+            "name": "node",
+            "installerId": "node"
+          }
+        ]
+      },
+      "dependencies": [
+        "ffmpeg",
+        "jdk",
+        "ghidra",
+        "node"
+      ],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "e04840d0cbc99a57a0e6d54b80e245b9e752e804b53cc984dc320712c2d2d1b5",
+      "file_hashes": {
+        "PHAN-TICH.md": "1b2dc2bba7ebc448edaf46c6e64954e468da3d954553871b6e332fd02f0a7bff",
+        "SKILL.en.md": "6917f5983b8c99950f41012a2c225d2f8d3617664a6c79a914677c631afe0eaa",
+        "SKILL.md": "827b9c9bc3b4df1e8d5106ce019cba6610698caf115dac841602f7edd7f6a4b4"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
+      "id": "unslop",
+      "name": "unslop",
+      "description": "Skill sửa UI \"vibe-coded\" (nhìn là biết AI làm) thành giao diện có cá tính: quét tìm dấu vết slop (gradient tím, glow, nhãn emoji, chữ la hét, giãn cách không đều), đề xuất hướng thiết kế từ chính sản phẩm của bạn, rồi chỉnh màn hình theo từng pass (spacing → màu → icon → copy → chữ → layout → chi tiết → visuals → motion). Chạy được trên Next.js, React, Vue, Svelte, Tailwind, HTML/CSS thuần, kể cả website trực tiếp qua link; kèm tính năng quay video \"story\" dưới 10 giây.",
+      "description_vi": "Skill sửa UI \"vibe-coded\" (nhìn là biết AI làm) thành giao diện có cá tính: quét tìm dấu vết slop (gradient tím, glow, nhãn emoji, chữ la hét, giãn cách không đều), đề xuất hướng thiết kế từ chính sản phẩm của bạn, rồi chỉnh màn hình theo từng pass (spacing → màu → icon → copy → chữ → layout → chi tiết → visuals → motion). Chạy được trên Next.js, React, Vue, Svelte, Tailwind, HTML/CSS thuần, kể cả website trực tiếp qua link; kèm tính năng quay video \"story\" dưới 10 giây.",
+      "version": "0",
+      "source": {
+        "repository": null,
+        "commit": null,
+        "path": null
+      },
+      "license": "CC BY 4.0",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 75,
+      "score_parts": {
+        "function": 21,
+        "security": 25,
+        "compatibility": 20,
+        "testing": 0,
+        "maintenance": 4,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": "Claude Code, Codex, Google Antigravity",
+        "runtimes": [
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "node",
+            "installerId": "node"
+          }
+        ]
+      },
+      "dependencies": [
+        "ffmpeg",
+        "node"
+      ],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "156ef8c0649732b0ed343480463228139d14b663d5cfbdfdef5b1e7d4db2845b",
+      "file_hashes": {
+        "PHAN-TICH.md": "e53c3553f885d8dd519e6b6e6b4d167d657faa24d62a975a3a7d01c15280562d",
+        "SKILL.en.md": "f445aa5db68ce1563cec6246dc747051c6c27ad7ff41f079c25b618025c609e2",
+        "SKILL.md": "c3f734e601a3aa0b0cc5936dbd014e056d2c964e6d2f29c4c185b0613bba8d0a"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    }
+  ]
+}

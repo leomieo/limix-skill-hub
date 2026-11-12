@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Rebuilds registry/*.json from skills/ and quarantine/. Pure local work: no network, no skill code is executed.
 //   node tools/build-catalog.mjs [--root <repo dir>]
-import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, rename, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { parseSkillMd, isSkillName } from "../lib/skill-md.mjs";
 import { readSkillDir, folderChecksum } from "../lib/pack.mjs";
@@ -23,10 +23,22 @@ async function entryFor(area, id) {
   if (!skillFile) return { error: "no SKILL.md" };
   const parsed = parseSkillMd(skillFile.text);
   if ("error" in parsed) return { error: parsed.error };
-  if (parsed.name !== id || !isSkillName(id)) return { error: "folder name must equal the skill name" };
+  if (!isSkillName(parsed.name)) return { error: `invalid skill name ${parsed.name}` };
+  if (parsed.name !== id) {
+    // The app installs a skill under its SKILL.md name, so the folder must carry that name: rename it when free.
+    const target = path.join(root, area, parsed.name);
+    if (await stat(target).then(() => true, () => false)) return { error: `folder ${id} holds skill ${parsed.name}, which already has a folder` };
+    await rename(dir, target);
+    console.log(`  renamed ${area}/${id} -> ${area}/${parsed.name}`);
+    return entryFor(area, parsed.name);
+  }
   const meta = await readJson(path.join(dir, "_hub.json"), {});          // source info written by discovery
   const review = await readJson(path.join(dir, "_hub.review.json"), {}); // curator bot output (test, translation)
   const content = files.filter((f) => !f.path.startsWith("_hub"));
+  // The owner's curator writes the Vietnamese SKILL.md and keeps the original as SKILL.en.md.
+  const translated = content.some((f) => f.path === "SKILL.en.md");
+  if (!meta.license && parsed.license) meta.license = parsed.license;
+  if (translated) { review.localized ??= true; review.description_vi ??= parsed.description; review.language ??= "vi"; }
   const scan = scanSkill(content);
   const classification = classifySkill(content);
   const score = scoreSkill({ parsed, scan, classification, meta, review });

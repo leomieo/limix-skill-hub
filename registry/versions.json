@@ -1,0 +1,82 @@
+{
+  "anatomy": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "3718761b0eec4e1065c262e242442e419f06d7bbbddf5d0b8644787feef6c27a",
+      "at": null
+    }
+  ],
+  "answer-me-with-html": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "5876f924684602f62290959b824ed74113c65a0a9950dd58c8ebe65c92bf59cd",
+      "at": null
+    }
+  ],
+  "geo-sleuth": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "42e68980ca378098f10a8f6b1f5a15ac535d832268464105df4e504914be69df",
+      "at": null
+    }
+  ],
+  "pixelfx": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "93e21116b2bea6c1a92dc7995fe7e4a55f44bbb423f72763a2f1c0671ceb4f40",
+      "at": null
+    }
+  ],
+  "replica-skill": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "d3ebe5aa53b8632023a7644672ce14e6c25c7c28687faaaf88b14801ddce19e9",
+      "at": null
+    }
+  ],
+  "stack-diagram": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "1d2a2fba03f6da5bebe7bb8f5cd8f0bc30f9ff2363e8d9cc4837b609010344da",
+      "at": null
+    }
+  ],
+  "universal-modder": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "e04840d0cbc99a57a0e6d54b80e245b9e752e804b53cc984dc320712c2d2d1b5",
+      "at": null
+    }
+  ],
+  "unslop": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "156ef8c0649732b0ed343480463228139d14b663d5cfbdfdef5b1e7d4db2845b",
+      "at": null
+    }
+  ],
+  "socratic-tutor": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "ababec44e61148f14b54bdf51f582c15e1b6be98e93c72ea488a3dc7cfe84162",
+      "at": null
+    }
+  ],
+  "logo-design": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "c48d75ce4fa56552e58f0f4cb96ff583fa1ed5838f7461f2b9d63b1c77faed74",
+      "at": null
+    }
+  ]
+}
