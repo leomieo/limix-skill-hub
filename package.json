@@ -8,6 +8,6 @@
   "scripts": {
     "discover": "node tools/discover.mjs",
     "catalog": "node tools/build-catalog.mjs",
-    "test": "node --test tests/hub.test.mjshub.test.mjs"
+    "test": "node --test tests/hub.test.mjs"
   }
 }
