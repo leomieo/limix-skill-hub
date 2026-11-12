@@ -36,13 +36,3 @@ Mỗi thư mục `skills/<id>/` gồm `SKILL.md` (Việt hóa, frontmatter chu�
 | [pixelfx](skills/pixelfx/SKILL.md) | [patch-gg/pixelfx](https://github.com/patch-gg/pixelfx) | 7.103 | 2026-10-30 | 2026-11-12 (lần 2/30) | 244 hiệu ứng pixel art bằng code, xuất sprite sheet |
 | [janestreet-agent-skills](skills/janestreet-agent-skills/SKILL.md) | [janestreet/agent_skills](https://github.com/janestreet/agent_skills) | 6.983 | 2026-11-03 | 2026-11-12 (lần 2/30) | Gia sư Socratic có cấu trúc (skill chính thức Jane Street) |
 | [logo-design-skill](skills/logo-design-skill/SKILL.md) | [kaankiziltug/logo-design-skill](https://github.com/kaankiziltug/logo-design-skill) | 6.703 | 2026-09-26 | 2026-11-12 (lần 2/30) | Thiết kế logo/brand có checkpoint + thư viện 1.400+ SVG |
-
-## Việt hóa và chấm thử
-Do một bot chạy trên máy chủ bot (Limix Bot của chủ kho) thực hiện, rồi ghi `_hub.review.json` và `SKILL.vi.md` vào repo này. Hub không giữ khóa AI nào.
-
-## Chạy thử
-```
-npm test
-node tools/build-catalog.mjs
-GITHUB_TOKEN=... node tools/discover.mjs --dry
-```
