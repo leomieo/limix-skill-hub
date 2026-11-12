@@ -78,5 +78,45 @@
       "checksum": "c48d75ce4fa56552e58f0f4cb96ff583fa1ed5838f7461f2b9d63b1c77faed74",
       "at": null
     }
+  ],
+  "day-trader-skill": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "34a84a13193560d234a1fcfe0c7612bd531f29b3c76b59e31ed9c938bcfa2696",
+      "at": null
+    }
+  ],
+  "ffmpeg-skill": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "9f7d1703000940448fe688ace3a80bb904055997a815cbc5702889cdddf89b99",
+      "at": null
+    }
+  ],
+  "oil-ui": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "3038d598d44318255a50cbd4e020e0d7bec1f79af5e743aaab838d7c6a1fd948",
+      "at": null
+    }
+  ],
+  "teardown": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "9894597339a0c3097c71d8434d48cecaf9280a933ac86d3459c5c12071bb3a8e",
+      "at": null
+    }
+  ],
+  "tstack": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "a5da63502a2e82787a8d447eca86e11b9953823959eaa13444986946f55ef87f",
+      "at": null
+    }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "hub": "leomieo/limix-skill-hub",
-  "count": 10,
+  "count": 15,
   "skills": [
     {
       "id": "anatomy",
@@ -14,7 +14,7 @@
         "commit": null,
         "path": null
       },
-      "stars": 26870,
+      "stars": 26871,
       "created_at": "2026-10-08T10:12:49Z",
       "pushed_at": "2026-10-18T20:20:24Z",
       "stats_checked": "2026-11-12",
@@ -78,7 +78,7 @@
         "commit": null,
         "path": null
       },
-      "stars": 6264,
+      "stars": 6266,
       "created_at": "2026-10-02T09:57:40Z",
       "pushed_at": "2026-11-11T19:55:14Z",
       "stats_checked": "2026-11-12",
@@ -137,6 +137,141 @@
       "area": "skills"
     },
     {
+      "id": "day-trader-skill",
+      "name": "day-trader-skill",
+      "description": "Bộ 11 skill day-trading cho agent — quét hàng nghìn biểu đồ tìm setup (opening-range breakout, bull flag, oversold bounce), theo dõi tin tức ảnh hưởng giá, bấm giờ điểm vào, đặt stop/target trước khi vào lệnh, \"Cỗ máy thời gian\" mô phỏng 10.000 phiên để nói xác suất thật, quản lý rủi ro, quản lý ngân sách, gửi lệnh sang broker (mặc định paper trading, không bao giờ tự đặt lệnh không có sự đồng ý), cảnh báo giá và đọc báo cáo kết quả kinh doanh. Toàn bộ tool là Python thuần đọc dữ liệu công khai miễn phí (Yahoo Finance, Nasdaq Trader, SEC EDGAR, House Clerk) — không đăng ký, không API key. Lưu ý rủi ro: chỉ là danh sách biểu đồ khớp luật, không phải dự đoán; hầu hết người day-trade thua lỗ. Dùng khi người dùng nói \"scan thị trường\", \"tìm setup\", \"cổ phiếu đang breakout\", \"xây watchlist hôm nay\".",
+      "description_vi": "Bộ 11 skill day-trading cho agent — quét hàng nghìn biểu đồ tìm setup (opening-range breakout, bull flag, oversold bounce), theo dõi tin tức ảnh hưởng giá, bấm giờ điểm vào, đặt stop/target trước khi vào lệnh, \"Cỗ máy thời gian\" mô phỏng 10.000 phiên để nói xác suất thật, quản lý rủi ro, quản lý ngân sách, gửi lệnh sang broker (mặc định paper trading, không bao giờ tự đặt lệnh không có sự đồng ý), cảnh báo giá và đọc báo cáo kết quả kinh doanh. Toàn bộ tool là Python thuần đọc dữ liệu công khai miễn phí (Yahoo Finance, Nasdaq Trader, SEC EDGAR, House Clerk) — không đăng ký, không API key. Lưu ý rủi ro: chỉ là danh sách biểu đồ khớp luật, không phải dự đoán; hầu hết người day-trade thua lỗ. Dùng khi người dùng nói \"scan thị trường\", \"tìm setup\", \"cổ phiếu đang breakout\", \"xây watchlist hôm nay\".",
+      "version": "0",
+      "source": {
+        "repository": "Jakeschincariol/day-trader-skill",
+        "commit": null,
+        "path": null
+      },
+      "stars": 7259,
+      "created_at": "2026-10-20T14:17:54Z",
+      "pushed_at": "2026-10-20T14:18:00Z",
+      "stats_checked": "2026-11-12",
+      "license": "MIT",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 85,
+      "score_parts": {
+        "function": 25,
+        "security": 25,
+        "compatibility": 20,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "recommended",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "approved",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": "Python 3.8+ thuần (không pip install); Claude Code, Codex và mọi agent hỗ trợ Agent Skills",
+        "runtimes": [
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ]
+      },
+      "dependencies": [],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "34a84a13193560d234a1fcfe0c7612bd531f29b3c76b59e31ed9c938bcfa2696",
+      "file_hashes": {
+        "PHAN-TICH.md": "6a7332b5311b8320e01a589e347c9c87cc439de1180b5761c7b5f024d2f13390",
+        "SKILL.en.md": "8db022339f3ddd3a5f0574152040d154c484ef4c56f5dbc4a4d6c5768b8c92f7",
+        "SKILL.md": "5f3978bd6c2f82ffff32c418b47f82ec3a55355006ad4f6eb38edda8f5133fae"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
+      "id": "ffmpeg-skill",
+      "name": "ffmpeg-skill",
+      "description": "Sửa video và âm thanh bằng FFmpeg cục bộ — cắt, ghép, đổi khung hình, đổi tốc độ, phụ đề (kể cả karaoke highlight), overlay, xóa khoảng lặng, đồng bộ, chuẩn hóa loudness (LUFS), HDR→SDR, xuất bản theo từng nền tảng và kiểm tra kết quả. 42 tool Python thuần (chỉ thư viện chuẩn, không cloud, không API key) dạy agent quy trình cố định probe → sửa ít phá hủy nhất → check → verify, tự đo lại file đầu ra thay vì tin lời của chính mình. Cần FFmpeg 6.1+ và Python 3.10+. Dùng bất cứ khi nào người dùng nhắc file video/âm thanh (mp4, mov, wav, m4a), footage, phụ đề, reel/short, xuất YouTube/TikTok, LUFS hoặc ffmpeg — dù không nói chữ \"sửa\".",
+      "description_vi": "Sửa video và âm thanh bằng FFmpeg cục bộ — cắt, ghép, đổi khung hình, đổi tốc độ, phụ đề (kể cả karaoke highlight), overlay, xóa khoảng lặng, đồng bộ, chuẩn hóa loudness (LUFS), HDR→SDR, xuất bản theo từng nền tảng và kiểm tra kết quả. 42 tool Python thuần (chỉ thư viện chuẩn, không cloud, không API key) dạy agent quy trình cố định probe → sửa ít phá hủy nhất → check → verify, tự đo lại file đầu ra thay vì tin lời của chính mình. Cần FFmpeg 6.1+ và Python 3.10+. Dùng bất cứ khi nào người dùng nhắc file video/âm thanh (mp4, mov, wav, m4a), footage, phụ đề, reel/short, xuất YouTube/TikTok, LUFS hoặc ffmpeg — dù không nói chữ \"sửa\".",
+      "version": "0",
+      "source": {
+        "repository": "kajisho5/ffmpeg-skill",
+        "commit": null,
+        "path": null
+      },
+      "stars": 5170,
+      "created_at": "2026-09-03T14:33:38Z",
+      "pushed_at": "2026-11-12T13:07:12Z",
+      "stats_checked": "2026-11-12",
+      "license": "MIT",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 85,
+      "score_parts": {
+        "function": 25,
+        "security": 25,
+        "compatibility": 20,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "recommended",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "approved",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": "FFmpeg 6.1+ | Python 3.10+ chỉ dùng thư viện chuẩn | Claude Code, Cursor, Codex, MCP client bất kỳ",
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "ffmpeg"
+      ],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "9f7d1703000940448fe688ace3a80bb904055997a815cbc5702889cdddf89b99",
+      "file_hashes": {
+        "PHAN-TICH.md": "f0b8b9d945bdf8a378586427c486623377c7cb7b091450843d5bb3dd9defc265",
+        "SKILL.en.md": "7732e4f7bd93a829e4e3885a96f995a0a53ce2863201fd4c525d6be0cfeb646a",
+        "SKILL.md": "fd20c0f43d7f916c11f4db07118142b2be186b6a89c3ea610a6d49f3a7b712d9"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
       "id": "geo-sleuth",
       "name": "geo-sleuth",
       "description": "Skill định vị ảnh chụp bằng agent — đưa cho agent một bức ảnh và bảo \"tìm nơi này được chụp ở đâu\", nó trả về tọa độ máy ảnh (kèm bán kính sai số), hướng ống kính và ảnh bằng chứng vệ tinh, giải trình từng bước bằng file lệnh đã chạy. Dữ liệu OpenStreetMap, độ cao địa hình, tile vệ tinh và street view thay cho chữ trong ảnh: khoảng cách mố cầu làm thước đo, bóng đổ làm la bàn, đường viền núi khớp với dữ liệu elevation. Chạy với Claude Code, Codex, Cursor, Gemini CLI, OpenCode, GitHub Copilot.",
@@ -147,7 +282,7 @@
         "commit": null,
         "path": null
       },
-      "stars": 6897,
+      "stars": 6898,
       "created_at": "2026-09-18T08:51:34Z",
       "pushed_at": "2026-11-09T13:31:34Z",
       "stats_checked": "2026-11-12",
@@ -215,7 +350,7 @@
         "commit": null,
         "path": null
       },
-      "stars": 6706,
+      "stars": 6709,
       "created_at": "2026-09-26T08:23:34Z",
       "pushed_at": "2026-11-06T07:40:27Z",
       "stats_checked": "2026-11-12",
@@ -267,6 +402,68 @@
       "area": "skills"
     },
     {
+      "id": "oil-ui",
+      "name": "oil-ui",
+      "description": "Skill thiết kế giao diện cho AI agent — hiểu sản phẩm là gì trước khi vẽ, biến các từ kiểu \"cao cấp\"/\"gọn gàng\" thành quyết định hiển thị thật (typeface, khoảng trắng, tỷ lệ dùng màu), khởi tạo mỗi hướng từ thứ cụ thể (chất liệu, khung cảnh, ngôn ngữ thị giác của lĩnh vực khác), so sánh nhiều hướng khác biệt thật sự, để lại một khoảnh khắc đáng nhớ, và luôn kiểm tra trên ảnh chụp màn hình desktop + mobile trước khi giao. Mặc định đề xuất 1 hướng để duyệt; yêu cầu so sánh thì xếp preview lên một trang so để bạn chọn. Dùng cho website, app, dashboard, component — khi người dùng cần UI/UX cho sản phẩm hoặc trang của bot.",
+      "description_vi": "Skill thiết kế giao diện cho AI agent — hiểu sản phẩm là gì trước khi vẽ, biến các từ kiểu \"cao cấp\"/\"gọn gàng\" thành quyết định hiển thị thật (typeface, khoảng trắng, tỷ lệ dùng màu), khởi tạo mỗi hướng từ thứ cụ thể (chất liệu, khung cảnh, ngôn ngữ thị giác của lĩnh vực khác), so sánh nhiều hướng khác biệt thật sự, để lại một khoảnh khắc đáng nhớ, và luôn kiểm tra trên ảnh chụp màn hình desktop + mobile trước khi giao. Mặc định đề xuất 1 hướng để duyệt; yêu cầu so sánh thì xếp preview lên một trang so để bạn chọn. Dùng cho website, app, dashboard, component — khi người dùng cần UI/UX cho sản phẩm hoặc trang của bot.",
+      "version": "0",
+      "source": {
+        "repository": "oil-oil/oil-ui",
+        "commit": null,
+        "path": null
+      },
+      "stars": 3195,
+      "created_at": "2026-09-30T03:55:35Z",
+      "pushed_at": "2026-11-11T04:56:08Z",
+      "stats_checked": "2026-11-12",
+      "license": "MIT",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 79,
+      "score_parts": {
+        "function": 19,
+        "security": 25,
+        "compatibility": 20,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": "Mọi agent hỗ trợ Agent Skill (Claude Code, Codex...) | check_update: POSIX shell hoặc Python 3.10+ (không cài gì thêm)",
+        "runtimes": [
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ]
+      },
+      "dependencies": [],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "3038d598d44318255a50cbd4e020e0d7bec1f79af5e743aaab838d7c6a1fd948",
+      "file_hashes": {
+        "PHAN-TICH.md": "2b9b7f964e9543533315ed37af54a156442d001ec13caacb19db6877af85ae7b",
+        "SKILL.en.md": "38ec1a5721c6de2331819cb2be2b6a8c130f7cd09e5d4708fc1cef0fa8863601",
+        "SKILL.md": "ef5c69595320879790a3fe071d04c05c60873977298710040dabd5e25be66ecb"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
       "id": "pixelfx",
       "name": "pixelfx",
       "description": "Thư viện 244 hiệu ứng pixel art và hoạt hình sprite viết bằng code — mỗi hiệu ứng một file JS, không phụ thuộc, không ảnh: vẽ vào hai buffer màu (pixel đục/dither/bán trong) và sáng (glow cộng dồn). Họ lửa, nổ, nước, băng, sét, sci-fi, cận chiến, va đập, đạn, sinh/tử, huyền thuật, thánh quang, bóng tối, trạng thái, tự nhiên, thời tiết, UI, vật phẩm, chuyển cảnh, sinh vật nhỏ. Hiệu ứng có nhân vật đều được \"diễn xuất\" (giậm chân - tung đòn - chạm - hồi), 12 combo trọn từ giậm đến hồi. Chơi live trong game canvas/Phaser/PixiJS/Kaplay/three.js, đổi màu, lật, đổi seed, xuất sprite sheet cho Godot/Unity/GameMaker/Defold/LÖVE/Bevy, kèm vòng draft-render-nhìn-chỉnh để tạo hiệu ứng mới như một pixel artist khắt khe. Dùng khi cần VFX pixel art, sprite animation, \"game juice\" hoặc một hiệu ứng cụ thể.",
@@ -277,7 +474,7 @@
         "commit": null,
         "path": null
       },
-      "stars": 7104,
+      "stars": 7113,
       "created_at": "2026-10-30T06:43:25Z",
       "pushed_at": "2026-11-12T08:42:35Z",
       "stats_checked": "2026-11-12",
@@ -365,7 +562,7 @@
         "commit": null,
         "path": null
       },
-      "stars": 9045,
+      "stars": 9047,
       "created_at": "2026-10-03T12:07:49Z",
       "pushed_at": "2026-10-03T12:07:53Z",
       "stats_checked": "2026-11-12",
@@ -427,7 +624,7 @@
         "commit": null,
         "path": null
       },
-      "stars": 7029,
+      "stars": 7096,
       "created_at": "2026-11-03T16:50:21Z",
       "pushed_at": "2026-11-03T18:14:13Z",
       "stats_checked": "2026-11-12",
@@ -484,7 +681,7 @@
         "commit": null,
         "path": null
       },
-      "stars": 2437,
+      "stars": 2439,
       "created_at": "2026-11-01T05:35:12Z",
       "pushed_at": "2026-11-12T06:44:00Z",
       "stats_checked": "2026-11-12",
@@ -542,6 +739,141 @@
       "area": "skills"
     },
     {
+      "id": "teardown",
+      "name": "teardown",
+      "description": "Xây mô phỏng 3D tương tác của một cỗ máy hay cơ cấu thật (động cơ, càng đáp, liên kết đi bộ, bơm, hộp số) thành một trang HTML offline có thể tháo rời — mọi bảng quanh mô hình đọc số thật từ chính model làm các chi tiết chuyển động, mỗi phân hệ một nút mở phần đang làm việc, có cắt tầng, góc máy và chuyến tham quan tự động khi không ai chạm; rồi quay lại từng khung thành video 60 fps có nhạc quy trình hóa đồng bộ trên cùng timeline. Cần Node.js 20+, ffmpeg cho video, Python 3 cho âm thanh. Dùng khi ai đó hỏi \"cái máy này hoạt động thế nào\", muốn visual explainer, simulator, cutaway, exploded view hoặc bài học 3D tương tác.",
+      "description_vi": "Xây mô phỏng 3D tương tác của một cỗ máy hay cơ cấu thật (động cơ, càng đáp, liên kết đi bộ, bơm, hộp số) thành một trang HTML offline có thể tháo rời — mọi bảng quanh mô hình đọc số thật từ chính model làm các chi tiết chuyển động, mỗi phân hệ một nút mở phần đang làm việc, có cắt tầng, góc máy và chuyến tham quan tự động khi không ai chạm; rồi quay lại từng khung thành video 60 fps có nhạc quy trình hóa đồng bộ trên cùng timeline. Cần Node.js 20+, ffmpeg cho video, Python 3 cho âm thanh. Dùng khi ai đó hỏi \"cái máy này hoạt động thế nào\", muốn visual explainer, simulator, cutaway, exploded view hoặc bài học 3D tương tác.",
+      "version": "0",
+      "source": {
+        "repository": "elvarofficial/teardown",
+        "commit": null,
+        "path": null
+      },
+      "stars": 3273,
+      "created_at": "2026-10-30T09:29:01Z",
+      "pushed_at": "2026-10-31T14:01:06Z",
+      "stats_checked": "2026-11-12",
+      "license": "MIT",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 85,
+      "score_parts": {
+        "function": 25,
+        "security": 25,
+        "compatibility": 20,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "recommended",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "approved",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": "Node.js 20+ | Playwright chromium (cài 1 lần) | ffmpeg (video) | Python 3 (âm thanh) | Claude Code và mọi agent đọc SKILL.md",
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "ffmpeg"
+      ],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "9894597339a0c3097c71d8434d48cecaf9280a933ac86d3459c5c12071bb3a8e",
+      "file_hashes": {
+        "PHAN-TICH.md": "e88ba9678ea508372275602b3201ca24fde72dbb2c4ccdd11ffb6f52c030ceff",
+        "SKILL.en.md": "9395e463e8ff733c4cadafe8dafeceb72fd462a2a1fc89a58c17d3b756b5929b",
+        "SKILL.md": "276c73254ed3388d4011987bcc4d20a6ca5ba673ff8b012ab7e9412fe437d008"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
+      "id": "tstack",
+      "name": "tstack",
+      "description": "Bộ skill làm việc với pull request hằng ngày của Theo (T3) — \"full send\" đưa một thay đổi đến PR được merge không cần ai trông; \"council\" lấy review từ 3 model của 3 nhà cung cấp khác nhau và lặp đến khi cả ba đồng ý; \"sol loop\" review vòng lặp hai agent; \"file a PR\" viết PR ngắn mở đầu bằng vấn đề; \"takeover\" nhận tiếp PR/branch/thread của người khác và giữ credit; \"babysit\" trông PR xuyên qua CI và review bot rồi sửa finding thật; \"modernize\" rebase PR cũ và quyết định nó còn đáng sống không. Chạy trong Claude Code và Codex; cần `gh` đã đăng nhập và python3. Dùng khi người dùng nói \"full send\", \"council\", \"file a PR\", \"babysit\", \"take over\", \"modernize\".",
+      "description_vi": "Bộ skill làm việc với pull request hằng ngày của Theo (T3) — \"full send\" đưa một thay đổi đến PR được merge không cần ai trông; \"council\" lấy review từ 3 model của 3 nhà cung cấp khác nhau và lặp đến khi cả ba đồng ý; \"sol loop\" review vòng lặp hai agent; \"file a PR\" viết PR ngắn mở đầu bằng vấn đề; \"takeover\" nhận tiếp PR/branch/thread của người khác và giữ credit; \"babysit\" trông PR xuyên qua CI và review bot rồi sửa finding thật; \"modernize\" rebase PR cũ và quyết định nó còn đáng sống không. Chạy trong Claude Code và Codex; cần `gh` đã đăng nhập và python3. Dùng khi người dùng nói \"full send\", \"council\", \"file a PR\", \"babysit\", \"take over\", \"modernize\".",
+      "version": "0",
+      "source": {
+        "repository": "t3dotgg/tstack",
+        "commit": null,
+        "path": null
+      },
+      "stars": 3509,
+      "created_at": "2026-10-24T05:00:20Z",
+      "pushed_at": "2026-11-11T11:33:03Z",
+      "stats_checked": "2026-11-12",
+      "license": "MIT",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 85,
+      "score_parts": {
+        "function": 25,
+        "security": 25,
+        "compatibility": 20,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "recommended",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "approved",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": "Claude Code và Codex | cần GitHub CLI (`gh`) đã xác thực | python3 cho script `pr-wait` | council/sol-loop cần harness chạy subagent model khác nhà cung cấp",
+        "runtimes": [
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ]
+      },
+      "dependencies": [],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "a5da63502a2e82787a8d447eca86e11b9953823959eaa13444986946f55ef87f",
+      "file_hashes": {
+        "PHAN-TICH.md": "87d7b9fb5a703bfe722722a5ddd27c6d54332b8f827b86ba94791aa7d505ad4e",
+        "SKILL.en.md": "ba585e47cd901506b0e2de13025b0e39bc02462c136cf27491ad3efbdfe66020",
+        "SKILL.md": "d2d48d580f4659bc778c2659c2d60bab33717a6f8f494ee5903377aae11cf5ee"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
       "id": "universal-modder",
       "name": "universal-modder",
       "description": "Hệ 13 skill + CLI `um` + MCP fal giúp mọi AI coding agent (Claude Code, Codex, Cursor, Gemini CLI, Copilot, OpenCode) mod gần như bất kỳ game PC người dùng sở hữu: recon engine/chống gian lận, chọn route, dựng lab an toàn (backup save), đọc code thật, build từng \"vertical slice\" chạy được, tạo asset bằng fal, xác minh ngay trong game thật, quay video trình diễn và ghi field note vào knowledge base cho agent sau. Skill chính là mod-any-game. Dùng khi người dùng muốn mod, mở rộng, reverse-engineer hoặc mashup game (\"thêm nuke vào Terraria\", \"làm văn minh mới cho Age of Empires II\", \"đưa Minecraft vào GTA V\", \"game này mod được không?\").",
@@ -552,7 +884,7 @@
         "commit": null,
         "path": null
       },
-      "stars": 9635,
+      "stars": 9636,
       "created_at": "2026-09-30T05:00:35Z",
       "pushed_at": "2026-11-12T12:26:08Z",
       "stats_checked": "2026-11-12",
@@ -635,7 +967,7 @@
         "commit": null,
         "path": null
       },
-      "stars": 14863,
+      "stars": 14881,
       "created_at": "2026-10-29T15:41:21Z",
       "pushed_at": "2026-11-08T21:18:33Z",
       "stats_checked": "2026-11-12",
