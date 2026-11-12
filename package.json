@@ -1,0 +1,13 @@
+{
+  "name": "limix-skill-hub",
+  "private": true,
+  "type": "module",
+  "description": "Limix Skill Hub: discovery, security scan, scoring and registry of AI agent skills for Limix Bot",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "discover": "node tools/discover.mjs",
+    "catalog": "node tools/build-catalog.mjs",
+    "test": "node --test tests/hub.test.mjshub.test.mjs"
+  }
+}

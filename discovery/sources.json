@@ -1,0 +1,16 @@
+{
+  "topics": ["agent-skills", "claude-skills", "claude-code-skills", "anthropic-skills", "ai-agent-skills"],
+  "queries": ["filename:SKILL.md path:skills"],
+  "awesome_lists": [],
+  "repositories": [
+    { "repo": "anthropics/skills", "note": "Official examples" }
+  ],
+  "users": [],
+  "limits": {
+    "max_repos_per_run": 60,
+    "max_skills_per_repo": 40,
+    "max_new_skills_per_run": 120,
+    "min_stars": 0,
+    "pushed_within_months": 24
+  }
+}

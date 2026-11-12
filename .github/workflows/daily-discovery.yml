@@ -1,0 +1,43 @@
+name: daily-discovery
+
+on:
+  schedule:
+    - cron: "0 20 * * *" # 03:00 Asia/Ho_Chi_Minh (UTC+7)
+  workflow_dispatch:
+  push:
+    paths: ["lib/**", "tools/**", "tests/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hub-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Tests
+        run: npm test
+      - name: Discover (download only, nothing is executed)
+        if: github.event_name != 'push'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node tools/discover.mjs
+      - name: Rebuild registry
+        run: node tools/build-catalog.mjs
+      - name: Commit changes
+        run: |
+          git config user.name "limix-skill-hub"
+          git config user.email "limix-skill-hub@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "No changes"; else
+            git commit -m "hub: daily update $(date -u +%F)"
+            git push
+          fi
