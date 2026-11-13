@@ -12648,7 +12648,13 @@
           "guide": "references/guide.vi.md",
           "sourceSha256": "d476642ed52fe500fce636e16a8a2c7ec5b2a017a344bf124b6d8b06e0c66946"
         },
-        "requiredCapabilities": [],
+        "requiredCapabilities": [
+          "node",
+          "react",
+          "remotion-cli",
+          "chromium-rendering",
+          "media-binaries"
+        ],
         "permissions": [
           "filesystem-read",
           "filesystem-write",
@@ -12667,7 +12673,8 @@
           "notes": [
             "Hub-authored reference adapter, not an upstream SKILL.md.",
             "The official remotion-best-practices entrypoint was located and hashed, but is only linked here pending license review.",
-            "Static review only. No third-party scripts or dependency installers executed; runtime/provider acceptance NOT_TESTED."
+            "Static review only. No third-party scripts or dependency installers executed; runtime/provider acceptance NOT_TESTED.",
+            "Full required/optional Tool and Framework checklist added in references/requirements.en.md on 2026-11-14; environment installation and rendering remain NOT_TESTED."
           ]
         }
       },
@@ -12720,11 +12727,21 @@
           {
             "name": "node",
             "installerId": "node"
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "docker",
+            "installerId": "docker"
           }
         ]
       },
       "dependencies": [
-        "node"
+        "node",
+        "ffmpeg",
+        "docker"
       ],
       "permissions": {
         "runs_code": false,
@@ -12733,15 +12750,17 @@
           "SKILL.md",
           "manifest.json",
           "references/guide.vi.md",
+          "references/requirements.en.md",
           "references/source.en.md"
         ]
       },
-      "checksum": "6ae97797c1c5caf10acc13db4aba028166ab1e6495d8a315ac4df87cffe1a631",
+      "checksum": "da0bd09d62a5490df1f6e4bde11b8eed4772b04f348fce21be7f6ca8d407dd8b",
       "file_hashes": {
         "SKILL.md": "d476642ed52fe500fce636e16a8a2c7ec5b2a017a344bf124b6d8b06e0c66946",
-        "manifest.json": "a71495ff34dd85805d8850efa4c07d614c02c168a19cfd9ef9b4e89ad84aec68",
-        "references/guide.vi.md": "f57803646401091cb752da3083b8adecaf7dcf12fa60ff001f4694b61b7f917a",
-        "references/source.en.md": "e1d2989b792afad6dce36859f4e94b07bc8c53bb2dceaa3d254c4fd5d1d5f6a8"
+        "manifest.json": "fb14fc299ff73e81667137764446bfb421dab2ce52b6b0ad1699e6d577e002c7",
+        "references/guide.vi.md": "67bd33f85810c16692c4428fea8fae8f8f3849132e0be8f36bd0e93270cbb346",
+        "references/requirements.en.md": "5df13b5b631a8ec8c96c05c6359d704128b579f5aec29b295ffbbdcaee1f24b1",
+        "references/source.en.md": "df891bbe825b22664bb1dde08e123e9ae39b3d8ccd6632b8c7fe0b7b0f07b0df"
       },
       "notes": [
         "Giấy phép lạ, cần xem lại điều khoản."

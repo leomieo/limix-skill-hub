@@ -32,7 +32,13 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "d476642ed52fe500fce636e16a8a2c7ec5b2a017a344bf124b6d8b06e0c66946"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "node",
+    "react",
+    "remotion-cli",
+    "chromium-rendering",
+    "media-binaries"
+  ],
   "permissions": [
     "filesystem-read",
     "filesystem-write",
@@ -51,7 +57,8 @@
     "notes": [
       "Hub-authored reference adapter, not an upstream SKILL.md.",
       "The official remotion-best-practices entrypoint was located and hashed, but is only linked here pending license review.",
-      "Static review only. No third-party scripts or dependency installers executed; runtime/provider acceptance NOT_TESTED."
+      "Static review only. No third-party scripts or dependency installers executed; runtime/provider acceptance NOT_TESTED.",
+      "Full required/optional Tool and Framework checklist added in references/requirements.en.md on 2026-11-14; environment installation and rendering remain NOT_TESTED."
     ]
   }
 }
