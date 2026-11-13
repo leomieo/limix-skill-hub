@@ -525,6 +525,12 @@
       "commit": null,
       "checksum": "fc9c8bc726e0912e53c7b8cee6f7795ba5209d214c5850135233763756c4081d",
       "at": null
+    },
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "0f137e190d218dd2d28b2b805b06b6d66f8c73af6c1d739122c1174b85b417f0",
+      "at": null
     }
   ],
   "claude-guardian": [
@@ -549,6 +555,12 @@
       "commit": null,
       "checksum": "ef99f6e660ea34dd483c5bf6587e2eb339b8df35b9f60b62479d69c0a4256a4a",
       "at": null
+    },
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "8019745eaff78f7540351dc00496f0fb44d469357b60c364dcba6095f0a7a4e0",
+      "at": null
     }
   ],
   "reanimate": [
@@ -556,6 +568,12 @@
       "version": "0",
       "commit": null,
       "checksum": "4e17f76dca80d3bcc513cde045e7609951d51aa598da26fd02cef6b819a33311",
+      "at": null
+    },
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "b3e025faf012e2065c8ce07f055c1c01faf69792af90006e495168754580925f",
       "at": null
     }
   ]
