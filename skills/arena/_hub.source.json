@@ -1,0 +1,36 @@
+{
+  "repository": "Jakeschincariol/arena-skill",
+  "commit": "df07b8e518e10cdecd8cd7712d9958b6f396250e",
+  "path": "skills/arena",
+  "verified": true,
+  "coreSha256": "c06f9828566485d5bd6507150f454d6f37d49c2b02e5308b8f744a4a046bdf39",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "c06f9828566485d5bd6507150f454d6f37d49c2b02e5308b8f744a4a046bdf39",
+      "executable": false
+    },
+    {
+      "path": "bracket.py",
+      "sha256": "f56ba7de9746c1aed77b5d6aee58a3c2ca07bd239896dbe7dba88654694c1fa2",
+      "executable": false
+    },
+    {
+      "path": "rubric.md",
+      "sha256": "3296801e01035f3ad8dc2b57f0c47d84d296bbc716bf8b36bdb02b426c2735a5",
+      "executable": false
+    },
+    {
+      "path": "strategies.json",
+      "sha256": "30517505dd84dba84e94c0a92ee7aaa48b5aee7817dd465fb04856b6b0d8ca40",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "857c8d5276809c8196b3cd7cb3300324768bfc562b2b6281b06d6865058e186c",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/arena"
+}

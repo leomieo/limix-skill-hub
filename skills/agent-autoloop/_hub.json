@@ -4,5 +4,12 @@
   "createdAt": "2026-11-03T08:02:11Z",
   "pushedAt": "2026-11-13T01:07:32Z",
   "statsCheckedAt": "2026-11-13",
-  "license": "MIT"
+  "license": "MIT",
+  "commit": "c9ec4a187cab49627947e7e33db265ec143db3b8",
+  "path": "skills/agent-autoloop",
+  "language": "hybrid",
+  "version": "c9ec4a187cab",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-13T09:14:21.544Z"
 }

@@ -1,0 +1,111 @@
+{
+  "repository": "rehan-remade/universal-modder",
+  "commit": "3c4ac6c38e411b8c543bce217eae197039516bfc",
+  "path": ".agents/skills/mod-any-game",
+  "verified": true,
+  "coreSha256": "6917f5983b8c99950f41012a2c225d2f8d3617664a6c79a914677c631afe0eaa",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "6917f5983b8c99950f41012a2c225d2f8d3617664a6c79a914677c631afe0eaa",
+      "executable": false
+    },
+    {
+      "path": "references/case-studies.md",
+      "sha256": "c3257a6a4bc122d053fb8d2bfd4081bffd786792ddf2dc49bbb8c6bd514d1c9d",
+      "executable": false
+    },
+    {
+      "path": "references/engines/bannerlord.md",
+      "sha256": "1cafee8588eb69a4e3f7fec842e3a31320d111f2e996c2dc868f6d427763ccce",
+      "executable": false
+    },
+    {
+      "path": "references/engines/bethesda.md",
+      "sha256": "60ac9e401d65804699cc3fe87bc75cd5930ee56014ca8ecad27a3e7371b8b45e",
+      "executable": false
+    },
+    {
+      "path": "references/engines/big-frameworks.md",
+      "sha256": "6a12cb4867dfbd315b8137b8e242d6fb36f792346c3f1f88bc5a0093274a5859",
+      "executable": false
+    },
+    {
+      "path": "references/engines/dotnet-xna.md",
+      "sha256": "9ad346d1f04cee450cda1760744d6fdb71ef5145fff0dcb5744c74f41eaba186",
+      "executable": false
+    },
+    {
+      "path": "references/engines/genie-aoe2.md",
+      "sha256": "f0969565b41e538a08c194016b0791b4ba0470f300613092f551e371b85663a2",
+      "executable": false
+    },
+    {
+      "path": "references/engines/godot.md",
+      "sha256": "a1bddb32078298715b45e688f7e72763c8d0745248d4d50f77f38686edd60541",
+      "executable": false
+    },
+    {
+      "path": "references/engines/isaac.md",
+      "sha256": "abe166df99160a2306fe45ddb76ef45328e3bee95ec17db64ae37af00b10bd36",
+      "executable": false
+    },
+    {
+      "path": "references/engines/iw-engine.md",
+      "sha256": "a76061e0cc8d2561948ac649f2411ff98baeaa02651c8c1d4b3b45fe9fbe11a3",
+      "executable": false
+    },
+    {
+      "path": "references/engines/minecraft.md",
+      "sha256": "e8e462421150fb760c8ab7d1bca4420513c9ed3dad1271bdae65355404809f97",
+      "executable": false
+    },
+    {
+      "path": "references/engines/misc-engines.md",
+      "sha256": "b3c9db647955a206719cc88c6fe6c87dc6e149b9076147fa7f54bf8d52da99fb",
+      "executable": false
+    },
+    {
+      "path": "references/engines/native.md",
+      "sha256": "9759d0710c43debe6670d480939572b437c09f838b2ec1d3ce14c59cceba6271",
+      "executable": false
+    },
+    {
+      "path": "references/engines/retro-decomp.md",
+      "sha256": "1c5a365e7c325b364c346c5374dc0ca3ac68c905b2916db5b8460073b16ae10f",
+      "executable": false
+    },
+    {
+      "path": "references/engines/source.md",
+      "sha256": "fa48993cd98850b0271ed1883a5e1566fa965722e91230cc5620a41149e639bf",
+      "executable": false
+    },
+    {
+      "path": "references/engines/unity.md",
+      "sha256": "2f45993b863baeb083b0a241fc8d9ef5e19a59534f8782a6909bc7f2a5fe38ab",
+      "executable": false
+    },
+    {
+      "path": "references/engines/unreal.md",
+      "sha256": "34e897880500a737c3df34e948211b76fac919b582236388db135b053a5f3bcc",
+      "executable": false
+    },
+    {
+      "path": "references/engines/zengin.md",
+      "sha256": "f6c84fbf4e2e4a80e6f4e37e913bfd27912e39344dfd6266b7b98597b12637a2",
+      "executable": false
+    },
+    {
+      "path": "references/safety.md",
+      "sha256": "7efff1c779d63488f588e9595d8bc59f3621fc6022c8d109c9c34c7e654abb4a",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "db6cfa2ad2c44f73080440c866c4a3a078749d84ba40b4dfa27d50f18a525543",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/universal-modder"
+}

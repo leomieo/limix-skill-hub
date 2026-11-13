@@ -4,5 +4,12 @@
   "createdAt": "2026-10-05T06:50:33Z",
   "pushedAt": "2026-11-07T20:59:58Z",
   "statsCheckedAt": "2026-11-13",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "commit": "dcc1503994f6e0238119452f14fa251ea53ef573",
+  "path": "skills/grandet-api-price-finder",
+  "language": "hybrid",
+  "version": "dcc1503994f6",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-13T09:22:43.610Z"
 }

@@ -1,76 +1,152 @@
 ---
 name: stageshow
-description: Skill build UI sản phẩm giả ("faux product UI") trông như sản phẩm thật — ảnh tĩnh, feature card, demo con trỏ, bento grid — viết bằng React + CSS thuần. Cửa sổ app/trình duyệt, dashboard, điện thoại, thông báo, terminal, bento grid, walkthrough con trỏ, được đóng khung/cắt/phối đúng kiểu một trang marketing, feature card hoặc docs hero cần. Dùng khi người dùng muốn UI giả/mock, demo sản phẩm, animation walkthrough, hero hoặc feature-card minh họa app, product shot kiểu trang marketing, hay con trỏ chuột hoạt động trong giao diện — kể cả khi họ không nói chữ "faux UI". Kèm kit React (Stage/Window/Phone/Act...) + 40 gold example làm chuẩn chất lượng và script film tự kiểm tra.
-license: MIT (file stageshow/LICENSE của repo gốc; NOTICE.md cho asset bên thứ ba)
-compatibility: React + react-dom + lucide-react | npm run dev để xem preview | node scripts/film.mjs để film/kiểm tra (cần Node)
-version: 2026-11-12
+description: Build faux product UI that looks like a real product, as a still illustration or an animated demo with a cursor. Browser and app windows, dashboards, phones, notifications, terminals, bento grids and cursor walkthroughs, framed, masked and cropped the way a marketing page, feature card or docs hero needs them. Use whenever someone wants a fake or mocked UI, a product demo or walkthrough animation, a hero or feature-card illustration of an app, a product shot in the style of a polished marketing site, or an animated cursor doing things in an interface, even if they never say "faux UI". React and plain CSS.
+metadata:
+  version: 1.1.1
 ---
 
-# Stageshow (Việt hóa)
+# Stageshow
 
-> Nguồn gốc: https://github.com/benjitaylor/skills — skill `stageshow`, MIT. Bản gốc tiếng Anh xem `SKILL.en.md` (nguyên văn SKILL.md gốc); phân tích chi tiết xem `PHAN-TICH.md`.
+Miniature product UI: a believable interface, framed in its space, as one still or a short animation in which one thing happens. The viewer recognizes the screen and sees the thing happen.
 
-## Dùng để làm gì
+## The one idea
 
-**Miniature product UI:** một giao diện đáng tin, đặt trong không gian của nó, dưới dạng một ảnh tĩnh hoặc một đoạn animation ngắn trong đó **một điều xảy ra**. Người xem nhận ra màn hình và thấy điều đó xảy ra.
+**It reads as a real product, simplified to what the viewer needs, framed with intent, and every motion has a cause.**
 
-Mỗi skill gồm kit, gold example, examples, tools quay kết quả để agent tự kiểm tra công việc của mình.
+Five ways it fails:
 
-## Một ý tưởng duy nhất
+- **Too much.** Real text in every row, numbers everywhere, everything packed. The more detail, the more it looks generated.
+- **Wireframe.** Two gray blobs and a button. Built too small, or stripped of what made it recognizable.
+- **Boxed.** A whole window shrunk into a card with even margins: a screenshot pasted in, not a product shot.
+- **Flat.** Every object the same weight in the same bordered card. The eye has nowhere to land.
+- **Bland.** A gray window with a cursor, whatever the brief said. The brief's look and energy (a blueprint, glass over color, a Dynamic Island, a mascot) are the point; take what it asks for and build it to the rules, as `examples/hero-demo` does with its typed popup and terminal satellite (a satellite is a smaller second object, a receipt, phone or detail card, straddling the hero's edge).
 
-**Trông như sản phẩm thật, đơn giản hóa đúng mức người xem cần, đóng khung có chủ đích, và mọi chuyển động đều có nguyên nhân.**
+The fix: a full, structured screen in quiet grays, real words only on what the story is about, placeholder lines for the rest, room to breathe, a crop that puts the eye where the story is. Simplify the words, not the context. An empty corner, a void under a list, rows spread to fill a pane, a window floating on a plate (a backdrop or tinted field behind it): unfinished, not calm.
 
-5 kiểu hỏng kinh điển:
+These are authored illustrations, not browser automation: `a.click()` draws the cursor pressing, `a.set()` changes the scene.
 
-- **Quá nhiều.** Text thật ở mọi dòng, số liệu dày đặc. Càng chi tiết càng trông "generated".
-- **Wireframe.** Hai cục xám + một nút. Dựng quá nhỏ hoặc bỏ mất phần nhận diện.
-- **Boxed.** Cả cửa sổ thu nhỏ vào card đều đặn lề — trông như screenshot dán vào, không phải product shot.
-- **Flat.** Mọi vật cùng trọng lượng trong card viền giống nhau — mắt không có chỗ đỗ.
-- **Bland.** Cửa sổ xám + con trỏ, bất kể brief nói gì. Style của brief (blueprint, kính trên màu, Dynamic Island, mascot) chính là điểm nhấn.
+## How hard to press
 
-**Cách sửa:** màn hình đầy đủ, có cấu trúc, nền xám trầm; chữ thật chỉ ở thứ truyện kể, phần còn lại là placeholder line; chừa khoảng thở; crop đặt mắt vào chỗ có truyện. **Đơn giản hóa chữ, không đơn giản hóa ngữ cảnh.** Đây là minh họa do tác giả dựng — `a.click()` vẽ con trỏ nhấn, `a.set()` đổi cảnh — không phải browser automation.
+Build it the way a product designer builds a launch page they will be judged on. The gold examples in `examples/` are the bar, not a reference: if yours is the emptier, flatter or smaller one beside the closest gold, that is the first fix. Then look at the frame the way the most exacting designer you know would, the one who screenshots the one wrong thing and sends it back with "what is this?": a dot off its avatar, a unit on its own line, a grabber under the island, copy touching a card. If you can picture that screenshot, you have found the next fix.
 
-## Độ "ép" chất lượng
+## Workflow
 
-Dựng như một product designer dựng launch page mà họ bị đánh giá. **Gold example trong `examples/` là chuẩn, không phải tham khảo:** nếu bản của bạn trống hơn, phẳng hơn hoặc nhỏ hơn gold gần nhất, đó là fix đầu tiên. Rồi nhìn frame bằng con mắt của designer khó tính nhất bạn biết — người chụp đúng một thứ sai và gửi trả kèm "cái gì đây?".
+Most of the quality is decided before any code. Write the plan first: where it sits, the focal object, the action, the payoff, what can be left out.
 
-## Quy trình 7 bước
+1. **Medium and place.** Still or animation (loop, once in view, or hover). The page, its ground, its width. Design at the size it will be seen, about 720 × 340 for a hero beside copy (`hero-demo`), 900 to 1100 wide for a full-width hero (`linear`), 400 × 300 for a card, shown at 1:1; never under about 320 wide for a demo, though a bento tile or a satellite card may be smaller. Every demo that can sit in a phone column ships a `compact` design at the column's width (358), a redesign not a squeeze (`references/framing.md`, Small formats and the page). A grid of tiles is one set: plan it with `references/bento.md`.
+2. **Look.** With the product's code or site at hand, map its tokens to the kit's (`references/looks.md`); if the developer asks for their own components, use them inside the stage instead of the kit's small parts. Otherwise a theme (light, dark, blueprint, glass), a palette (accent, mono) and a fidelity: `minimal` is all bars, `standard` is words where they carry meaning and bars elsewhere, `realistic` is real content everywhere. Default light, accent, standard; go realistic at hero scale, for a named real product, or a still whose subject is a list or page. Write filler once with `Text filler` and the fidelity decides. The product's own icons, its real chrome, the content that makes it recognizable. A brief with a style (kawaii, paper, a poster color) gets that style in full, still built to these rules.
+3. **The story.** Its shape (`references/motion.md`, Story): how it feels to use, a flow, or what the system does. Three to five beats and a payoff, 10 to 16 seconds. No cursor move you can't explain. Data never rewinds in view without a cause. Between a richer story and a calmer frame, choose the frame.
+4. **Start from an example.** Find the closest gold example (the Gold table below) and film it (`node scripts/film.mjs "<preview>/?capture=<gold>" --select '#example' --still --out gold.png`; `npm run dev` serves the preview). Copy its folder into your project as the starting point; don't rewrite it from a glance. The quickest loop: copy it to `examples/<yours>/` here, where the preview picks it up and `?capture=<yours>` films it, then move it into the host when it passes and fix its kit import path. Keep its structure: the stage size, the crop and bleed, row and type sizes, spacing, the script's beats, the kit parts. Now read `references/craft.md` in full: it is short, and it holds the still-frame rules the gold can't show you, the cases your gold doesn't happen to contain. Then replace its look and content with the brief's product: the tokens from step 2, the product's own icons, chrome and words. A copy that only changes the name is not done: it should read as the brief's product, not the gold's. If no gold tells your story, choose in two parts: the layout first (pick it from the table in `references/framing.md`; each layout names its example), and copy that example even though its story differs; then borrow the motion for your beats from the example whose story is closest, and build what neither has in the same style. Then frame it: crop to the panel the story happens in, judged in the final visible crop (`references/framing.md` has the rules and the layout table). The short form: one gutter, a full one or well past; only filler bleeds; what opens stays in; windows keep their shape; the page is the ground, so no plate under a hero on a white or dark page and no window whole with air on four sides; `unframed` only when the developer asks; no dead corners. Film one still at both widths beside the gold's; if yours is emptier, flatter or more boxed, fix the frame before any motion.
+5. **The screen.** Count the real strings, usually 3 to 7 (`references/craft.md`, Restraint): a budget for words, not elements. Build with the kit's tokens, `Bar`, `Text` and `Row`. Fit every control's text before it moves. Mark what the cursor touches with `data-target` and `data-cursor`; measure with `rect()`, never hard-code.
+6. **Choreograph.** The `Act` API. Keep what appears mounted and toggle it so exits animate (`Bubble` and `Fly` hand off explicitly). Animate the relationship, not just the object: a new row carries the rows below it, a surface that resizes never stretches its text. Beats overlap, groups stagger, the payoff holds, the loop ends where it began or resets with a visible cause.
+7. **Rehearse.** Set `poster` first: most people see only that frame (a thumbnail, reduced motion, a screenshot), so it is the beat that tells the story on its own, never one caught mid-change, with the result left on screen rather than tidied away (`references/motion.md`, Story). Then film the loop, not just a still, and always with `--gate`: it is the same contact sheet plus the verdict, so it costs nothing extra. Film the contact sheet at the shown width and at 390, and step through every press, menu, morph and the loop seam (`references/rehearse.md`). A still can't show a pop. Read every frame, fix the largest visible fault first (framing, then hierarchy, then motion, then polish), re-film. Then hold it next to the closest gold and answer the whole-composition and style pairs in `references/teaching.md` as questions about your still (what does the eye land on first, and is it the result? is one window, tile or device clearly leading?); any no is the largest fault. Don't hand over until the loop's `--gate` ends `rehearsal passed`: every line it prints is a fault a viewer will see, even when the contact sheet looks smooth. Short on time or tool calls, fixing its lines comes before more stills, the review and the notes. Passing is necessary, not sufficient. Then run the last pass in `references/rehearse.md`: a fresh-eye review (`references/review.md`) and `REHEARSAL.md` beside the component (template in `references/verify.md`, Hand over): the gold you copied, what you changed, what you did not check.
 
-Phần lớn chất lượng quyết định trước khi viết code. Viết plan trước: nó nằm ở đâu, vật-focus, hành động, payoff, cái gì bỏ được.
+Faults that come back every round, each with its rule; check them before handing over:
 
-1. **Medium và vị trí.** Tĩnh hay animation (loop, một lần, hover). Trang nào, nền gì, rộng bao nhiêu. Thiết kế ở kích thước sẽ xem: ~720×340 cho hero cạnh chữ, 900-1100 cho hero full-width, 400×300 cho card, hiển thị 1:1; demo không bao giờ dưới ~320. Mỗi demo vừa cột điện thoại có bản `compact` **thiết kế lại** ở 358, không phải bóp. Bento tile là một bộ — plan bằng `references/bento.md`.
-2. **Look.** Có code/site của sản phẩm thì map token của nó sang kit (`references/looks.md`); developer muốn dùng component riêng thì dùng trong stage. Không thì chọn theme (light/dark/blueprint/glass), palette và mức fidelity: `minimal` toàn bar, `standard` chữ chỗ mang nghĩa + bar chỗ còn lại, `realistic` nội dung thật khắp nơi. Mặc định light + standard; `realistic` ở scale hero, sản phẩm thật có tên, hoặc still có chủ đề là list/trang. Brief có style (kawaii, giấy, màu poster) thì style đó trọn vẹn.
-3. **Truyện.** 3-5 beat + payoff, 10-16 giây. Không cú move con trỏ nào không giải thích được. Dữ liệu không tua ngược trước mắt khi không có nguyên nhân. Giữa truyện giàu và frame tĩnh hơn, chọn frame.
-4. **Bắt đầu từ một example.** Tìm gold gần nhất trong bảng Gold (40+ mục: `static-card`, `hero-demo`, `choreography`, `ai-chat`, `form-error`, `reorder`, `chart-scrub`, `loading`, `dark-hero`, `presence`, `dynamic-island`...) và **film nó** (`node scripts/film.mjs "..." --still --out gold.png`). Copy thư mục nó làm điểm bắt đầu, không viết lại theo liếc mắt. Đọc `references/craft.md` trọn — ngắn, và giữ luật still-frame mà gold không thể hiện. Rồi thay look + nội dung bằng sản phẩm của brief (token từ bước 2, icon/chrome/chữ của sản phẩm). Đóng khung theo `references/framing.md` (crop vào panel xảy ra truyện; một gutter; chỉ filler được bleed; cửa sổ giữ hình dáng; không plate dưới hero; không góc chết...). Film một still ở cả hai width cạnh gold — nếu th emptier/flatter/more boxed thì fix frame trước mọi motion.
-5. **Màn hình.** Đếm string thật, thường 3-7 — ngân sách **từ**, không phải phần tử. Dựng bằng token của kit: `Bar`, `Text`, `Row`. Fit text của mọi control trước khi nó chuyển động. Đánh dấu thứ con trỏ chạm bằng `data-target`/`data-cursor`; đo bằng `rect()`, không hard-code.
-6. **Choreograph.** API `Act`. Giữ thứ đã hiện ở mounted và toggle để exit animate. Animate **quan hệ**, không chỉ vật: dòng mới khiêng các dòng dưới, surface resize không kéo giãn text. Beat chồng nhau, nhóm stagger, payoff giữ, loop kết thúc ở chỗ bắt đầu hoặc reset có nguyên nhân thấy được.
-7. **Diễn tập.** Đặt `poster` trước — đa số người chỉ thấy frame đó (thumbnail, reduced-motion, screenshot) nên nó phải tự kể truyện. Film **loop**, luôn với `--gate`: contact sheet + verdict cùng lúc. Film ở width hiển thị và 390, bước qua từng press/menu/morph/seam loop. Đọc từng frame, fix lỗi lớn thấy trước nhất (framing → hierarchy → motion → polish), film lại. Đặt cạnh gold và trả các cặp câu trong `references/teaching.md`. **Không giao cho đến khi loop `--gate` in `rehearsal passed`** — mỗi line nó in là một lỗi người xem sẽ thấy. Rồi chạy pass cuối: fresh-eye review + `REHEARSAL.md` cạnh component (template ở `references/verify.md`).
+- **Content that swaps** instead of moving (`references/motion.md`, Changing text and values).
+- **Gray bars where the eye lands;** filler belongs at the edges (`references/craft.md`, Restraint).
+- **A plate behind the window, or a window floating** with air on four sides; the window or phone fills at least two thirds of the stage and runs off an edge (`references/framing.md`, rule 5 and Small formats and the page).
+- **Empty bands, cut controls and shadows** (`references/craft.md`, Restraint; `references/framing.md`, rule 4).
+- **Stock AI and made-up logos:** sparkles, purple, a letter in a colored square (`references/craft.md`, Icons and logos).
+- **Busy rows and uneven insets** (`references/craft.md`, Restraint and Spacing and alignment).
+- **Long holds and a reset with no cause** (`references/motion.md`, Loops).
+- **A selection that isn't under the I-beam** (`references/motion.md`, Drags and selection).
+- **A status bar or home indicator drawn by hand;** the Phone draws both (`references/craft.md`, Chrome and devices).
+- **A centered amount centered with its sign** (`references/craft.md`, Spacing and alignment).
 
-## Lỗi quay lại mỗi vòng (check trước khi giao)
+## Examples
 
-- Nội dung **swap** thay vì chuyển động (`references/motion.md`).
-- **Bar xám ở chỗ mắt đỗ** — filler thuộc về mép (`references/craft.md`).
-- Plate sau cửa sổ, hoặc cửa sổ lơ lửng có air bốn phía — cửa sổ/phone chiếm ≥2/3 stage và chạy tràn một cạnh.
-- Băng trống, control bị cắt, shadow rối.
-- **Stock AI và logo bịa:** sparkle, tím, chữ cái trong ô màu.
-- Dòng rối và inset lệch nhau.
-- Hold dài và reset không nguyên nhân.
-- Selection không nằm dưới I-beam.
-- Status bar/home indicator vẽ tay — `Phone` tự vẽ cả hai.
-- Số tiền căn giữa cả dấu (`Spacing and alignment`).
+Film the closest one before you start (step 4). The gold examples are the quality bar; product studies are for borrowing an interaction, never another product's identity; specimen sheets are catalogs, not compositions. Run everything with `npm install` and `npm run dev`. `teaching/` holds bad/good pairs (`references/teaching.md`) for diagnosing a problem; the bad halves are never starting points.
 
-## Kit
+### Gold
 
-Copy `kit/` vào project, import từ `kit/index.ts`. React, react-dom, lucide-react (cho `Icon`). Phần khó sửa tay thì kit lo, look của sản phẩm là của bạn (`references/kit.md` có props + luật từng part):
+| Need | Example | What to learn |
+|---|---|---|
+| Still or feature card | `static-card` | Quiet hierarchy, a hard crop, one satellite, real words only on the selected customer, its neighbors and the total |
+| Dark still | `dark-bento` | One signal said once; album art keeps it a music app |
+| Animated hero, a gesture | `hero-demo` | Five beats, named targets, an annotation, a terminal coming forward |
+| Choreography, no cursor | `payout-flow` | Slow overlapping arrivals, reading time, a payoff that holds |
+| Content changing in place | `choreography` | Retained tracks, soft masks, dependent timing |
+| AI answer | `ai-chat` | The question sent, Thinking, the answer streaming in with its height, sources last; no sparkles, no purple |
+| AI with cards | `ai-cards` | A multiple-choice card answered and kept as the record, a card of options opening in the thread, booked from its own button |
+| Form validation | `form-error` | An error on the field that caused it, cleared by fixing it, then the button confirms on itself |
+| Drag to reorder | `reorder` | A row lifted by its grip, the others making room, dropped into place |
+| Chart scrub | `chart-scrub` | A hairline and dot that follow the pointer, the headline value rolling to the day under it |
+| Edit in a table | `table-edit` | A cell edited in place, then the total it feeds rolls a beat later |
+| Loading to content | `loading` | A skeleton at the content's own geometry, rows resolving top to bottom, real chrome throughout |
+| Dark hero | `dark-hero` | Depth from surface steps on black, one lit color, a status that changes on its own pill |
+| Live collaborators | `presence` | Each person one color everywhere, names riding their cursors, work shown in the doc's own marks |
+| System story | `subscriptions` | A chip flies into a row, MRR rolls, a second scene is the reset |
+| Close-up | `close-up` | One control at 1.4x with its window's chrome, the row whole, a large cursor to match |
+| Many of one | `many-of-one` | A grid of one thing off every edge, one tile in focus by depth, the only one with words |
+| Fade crop | `fade-crop` | A window fading out at its foot, over filler, instead of running off an edge |
+| Panel over product | `panel-annotation` | A settings panel over the product's margin, one leader from the setting to what it changed |
+| Overlapping windows | `overlap` | A card in front of a window, its edge on the window's sidebar line |
+| Stacked cards | `stacked-cards` | Two components at one width, a small gap, the lower one off the bottom |
+| Opposite corners | `opposite-corners` | A bento tile: copy bottom-left, the product hung from the top-right corner |
+| Tilted stack | `tilted-stack` | A loose pile of paper, small alternating angles, only the top card has words |
+| Corner chip | `corner-chip` | A small chip centered on a window's corner, half outside |
+| Monochrome | `monochrome` | Other companies' products in a row, grayscale, faded at the foot |
+| Row of windows | `window-row` | Sessions side by side at one height: focus by depth, neighbors cut by the stage, only filler cropped |
+| Window and phone | `device-pair` | A dashboard and a lock screen telling one event; the phone straddles over margin, never over the figure |
+| Related objects | `story` | An invoice, a plan, a connector, rolling totals |
+| Calendar drag | `calendar` | A populated week, one focal event, a measured pickup |
+| Free dragging | `freeform-drag` | Grab offset, a measured grid, a drop slot that snaps |
+| Phone app | `phone-touch` | A card opens into its screen as one object, and the loop folds back |
+| Dynamic Island | `dynamic-island` | One black shape, its content a separate layer |
+| Messages | `messages` | Composer, typing, receipts, a bubble's lifetime |
+| Cursors | `cursors`, `cursor-morph`, `cursor-resize` | Five styles, element-driven kinds, resize edges and corners, no cursor at all |
+| Annotations | `annotations` | Leaders, dimensions, flows and a moving target; `references/annotations.md` |
+| Feature grid | `bento` | One hero, one window, a stat, an object, a diagram |
+| Dark ruled grid | `ruled-bento` | Shared rules and technical imagery |
+| Consumer grid | `staggered-bento` | Offset tiles, graphic art, physical objects |
+| Image-led hero grid | `hero-grid` | Different grounds and materials composed as one picture |
+| Upload | `upload` | A file dragged in from the desktop, an upload row with progress that settles as a file row |
+| Share | `share` | A share popover over a document: an email becomes a chip, a role menu, a person added to the list |
+| Swipe | `swipe` | A phone swipe to archive: press, swipe, a throw at the finger's speed, the gap closes |
 
-- **Stage:** `Stage` (design size, scale-to-fit, `compact`, scene state, playback, look, cursor) + `Act` (`set`, `wait`, `move`, `click`, `type`...).
-- **Frames:** `Window`, `Phone` + `LockScreen` + `Notification`, `Keyboard`, `Thread` + `Bubble`, `Stamp`, `Receipt` — hình học thật, không bao giờ vẽ tay.
-- **Motion:** `Collapse`, `Roll`, `Swap`, `Count`, `Connector`, `Fly`, `Follow`, `States`, `Stream`, `Popover`, `Scroll`, `Camera`, `Expand`.
-- **Small parts:** `Bar`, `Text`, `Row` (mọi list làm từ nó), `Card`, `Divider`, `Avatar`, `Pin`, `Icon`, `Menu`, `Field`, `Draft`, `Button`, `Segmented`, `Toggle`, `Tabs`, `Badge`, `Chip`, `Kbd`, `BrandMark`, `Code`, `Chart`, `Toast`.
-- **Dùng kit part, không dùng lookalike:** trước khi tự viết class cho button/card/tab/avatar/toast, kiểm tra list — bản tay là nơi padding lệch, label chật và text không kích thước sinh ra. Restyle bằng props + token, không đổi hình học từ bên ngoài.
+### Product studies
 
-## References & examples
+Recognizable products (Figma, Linear, Slack, Raycast, Finder, Spotify, Notion, Gmail, Google's apps, Office, Wikipedia, Telegram, iMessage): read `references/products.md` first. Borrow the interaction, not another product's identity.
 
-- `references/framing.md` (luật đóng khung + bảng layout), `craft.md` (still frame: tiết chế, type, spacing, icon, màu, chrome), `motion.md` (truyện, loop, nhịp, con trỏ, drag), `verify.md` (checklist bảng you-see/you-do), `rehearse.md` (cách film + những line film không bao giờ là chủ ý).
-- **Gold table** 40+ example theo nhu cầu (tĩnh, hero, choreography, AI chat, form, chart, table, loading, phone, cursors, bento, upload, share, swipe...). **Product studies** (Figma, Linear, Slack, Raycast, Finder, Spotify, Notion, Gmail, Calendar, Office, Wikipedia, Telegram, iMessage): đọc `references/products.md` trước — **mượn tương tác, không mượn danh tính sản phẩm khác**. **Specimen sheets** là catalog, không phải bố cục.
-- Chạy mọi thứ bằng `npm install` + `npm run dev`; `teaching/` chứa cặp xấu/đúng để chẩn đoán — nửa xấu không bao giờ là điểm bắt đầu.
+| Need | Example | What to learn |
+|---|---|---|
+| Design tool | `figma` | Canvas selection, a color picker, a second cursor |
+| Issue tracker | `linear` | Command menu and assignment |
+| Chat | `slack` | Messages, a reaction, a thread reply |
+| Launcher | `raycast` | Search and clipboard history over a blurred desktop |
+| Files | `finder`, `finder-glass` | Quick Look over a file list; a file moved into a folder; the same window in frosted glass |
+| Music, dark | `spotify` | A dark desktop app with album art |
+| Docs and editors | `notion`, `google-docs` | A slash command; a comment and its reply |
+| Email | `gmail` | Hover actions, archive, an undo toast |
+| Calendar, real app | `google-calendar` | Drag to create an event, the quick-create popup |
+| Office | `powerpoint`, `excel` | Slide editing; AutoSum and a chart |
+| Browser page | `wikipedia` | Search suggestions in a browser |
+| Phone conversations | `telegram`, `imessage` | Native chat apps on an iPhone |
+
+### Specimen and reference sheets
+
+Catalogs of parts and grounds, described in `references/kit.md` (Specimen sheets). Look up a part here; compose from a gold example.
+
+| Need | Example | What to learn |
+|---|---|---|
+| Kit specimens | `chrome`, `phones`, `controls`, `buttons`, `cards`, `parts`, `kit-extras` | Every frame and part |
+| Glass | `glass` | Frosted surfaces over a color field |
+| Backgrounds | `backgrounds` | One interface over twenty grounds; `references/backgrounds.md` |
+| Logos | `brand-marks` | Real marks, optically sized, on light and dark; `references/brands.md` |
+| A product's look | `looks` | Type, shape and color working together |
+
+## The kit
+
+Copy `kit/` into the project and import from `kit/index.ts`. React, react-dom and lucide-react (for `Icon`, which `Field` and `Chip` use); each part brings its own CSS. It does the parts that are hard to get right by hand and leaves the product's look to you. `references/kit.md` has every part's props and rules; read the entries for the parts you use.
+
+- **The stage.** `Stage`: design size and scale-to-fit, `compact`, scene state, playback, the look, the cursor. The script gets an `Act` (`set`, `wait`, `move`, `click`, `type` and the rest: `references/kit.md`, Act).
+- **Frames.** `Window`, `Phone` with `LockScreen` and `Notification`, `Keyboard`, `Thread` with `Bubble`, `Stamp`, `Receipt`. Real geometry; never draw a window, device or bubble by hand.
+- **Motion.** `Collapse`, `Roll`, `Swap`, `Count`, `Connector`, `Fly`, `Follow`, `States`, `Stream`, `Popover`, `Scroll`, `Camera`, `Expand`. They handle the frames a cold hand gets wrong.
+- **Small parts.** `Bar`, `Text`, `Row` (every list is made of it), `Card`, `Divider`, `Avatar`, `Pin`, `Icon`, `Menu`, `Field`, `Draft`, `Button`, `Segmented`, `Toggle`, `Tabs`, `Badge`, `Chip`, `Kbd`, `BrandMark`, `Code`, `Chart`, `Toast`. Quiet starting points; restyle to the product, never reshape a kit part's geometry from outside.
+- **Use the kit part, never a lookalike.** Before writing a class for a button, card, tab, avatar, field, toast, badge or shortcut, check this list: a hand-built one is where uneven padding, squeezed labels and unsized text come from. Restyle the kit part with its props and tokens instead. When a button's label or icon changes, change it on the same `Button`, which animates it; never swap in a second element (`references/motion.md`, Story).
+- **`stageshow.css`**: tokens, looks, edge fades, chrome, phones, keycaps.
+
+## The references
+
+`references/framing.md`: the framing rules and the layout table. `references/craft.md`: the still frame (restraint, type, spacing, icons, color, chrome). `references/motion.md`: story, loops, pace, the cursor and drags. `references/verify.md`: the checklist with a you-see / you-do table. `references/rehearse.md`: how to film, and the film lines that are never intentional.

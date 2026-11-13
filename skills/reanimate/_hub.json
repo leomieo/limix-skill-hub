@@ -4,5 +4,12 @@
   "createdAt": "2026-10-29T06:20:59Z",
   "pushedAt": "2026-10-31T12:49:35Z",
   "statsCheckedAt": "2026-11-13",
-  "license": "MIT"
+  "license": "MIT",
+  "commit": "3f7a55a2986a84ca2173e86ee9127eefe31d046d",
+  "path": null,
+  "language": "hybrid",
+  "version": "3f7a55a2986a",
+  "hybrid": true,
+  "originalCoreVerified": false,
+  "last_checked": "2026-11-13T09:27:13.451Z"
 }

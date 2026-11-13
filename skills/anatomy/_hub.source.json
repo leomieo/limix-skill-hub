@@ -1,0 +1,489 @@
+{
+  "repository": "wheresryan22/anatomy",
+  "commit": "1482e8469b0a9e0d8cc18ea2740a01423d29ae80",
+  "path": "",
+  "verified": true,
+  "coreSha256": "3423ada45a05033bb6e320dfc3b3ac832569969a5afb059bbfc9096c5cf0c71b",
+  "skipped": [
+    ".gitattributes",
+    ".github/assets/dial-indicator.webp",
+    ".github/assets/raptor-engine-apart.webp",
+    ".github/assets/raptor-engine-firing.webp",
+    ".github/assets/ripple-tank.webp",
+    ".github/assets/turning-dial.webp",
+    ".github/ISSUE_TEMPLATE/bug_report.yml",
+    ".github/ISSUE_TEMPLATE/config.yml",
+    ".github/ISSUE_TEMPLATE/figure_request.yml",
+    ".github/PULL_REQUEST_TEMPLATE.md",
+    ".github/workflows/ci.yml",
+    ".gitignore",
+    "examples/arcade-cabinet/arcade-cabinet-detailed-a4.pdf",
+    "examples/raptor-engine/raptor-engine-detailed-a4.pdf",
+    "examples/raptor-engine/raptor-engine-drawing-a4.pdf",
+    "examples/turning-dial/turning-dial.html",
+    "examples/turning-dial/turning-stress-light.html",
+    "kit/iso-kit.mjs",
+    "kit/iso-kit.ts",
+    "kit/lathe.mjs",
+    "kit/tube.mjs",
+    "kit/turn-audit.mjs",
+    "kit/turn-build.mjs",
+    "kit/turn-fixed.mjs",
+    "kit/turn.mjs",
+    "README.md",
+    "references/3d.md",
+    "references/craft.md",
+    "references/kit.md",
+    "references/motion.md",
+    "references/publish.md",
+    "references/react.md",
+    "references/verify.md",
+    "references/walkthrough.md",
+    "references/webgl.md",
+    "scripts/audit-affine-bounds.test.mjs",
+    "scripts/audit-clearance-envelope.test.mjs",
+    "scripts/audit-empty-clipping.test.mjs",
+    "scripts/audit-order-convergence.test.mjs",
+    "scripts/audit-path-origin.test.mjs",
+    "scripts/audit-profile.test.mjs",
+    "scripts/audit-projection.test.mjs",
+    "scripts/audit-slide-clearance.test.mjs",
+    "scripts/audit-svg-attributes.test.mjs",
+    "scripts/audit-taper.test.mjs",
+    "scripts/audit-tube-support.test.mjs",
+    "scripts/capture-current-geometry.test.mjs",
+    "scripts/capture-selector.test.mjs",
+    "scripts/capture.mjs",
+    "scripts/capture.test.mjs",
+    "scripts/chrome-startup.test.mjs",
+    "scripts/curve-density.test.mjs",
+    "scripts/drive-actions.test.mjs",
+    "scripts/drive-async-until.test.mjs",
+    "scripts/drive-page-load.test.mjs",
+    "scripts/drive-turn-controller.test.mjs",
+    "scripts/drive.mjs",
+    "scripts/drive.test.mjs",
+    "scripts/enter-key.test.mjs",
+    "scripts/fidelity-cut.test.mjs",
+    "scripts/fidelity-tube-coverage.test.mjs",
+    "scripts/fingerprint.mjs",
+    "scripts/inline-kit.mjs",
+    "scripts/line-ends.mjs",
+    "scripts/lines-arcs.test.mjs",
+    "scripts/lines-bezier.test.mjs",
+    "scripts/lines-round.test.mjs",
+    "scripts/lines-rounded-rect.test.mjs",
+    "scripts/lines.mjs",
+    "scripts/lines.test.mjs",
+    "scripts/navigation.test.mjs",
+    "scripts/orbit-sampling.test.mjs",
+    "scripts/print-sheet.mjs",
+    "scripts/print-sheet.test.mjs",
+    "scripts/print.mjs",
+    "scripts/publish.mjs",
+    "scripts/publish.test.mjs",
+    "scripts/react-dots-opacity.test.mjs",
+    "scripts/react-readout-first-write.test.mjs",
+    "scripts/react-readout-target.test.mjs",
+    "scripts/react-solid-seamless.test.mjs",
+    "scripts/react-visibility-target.test.mjs",
+    "scripts/session.mjs",
+    "scripts/session.test.mjs",
+    "scripts/turn-audit-samples.test.mjs",
+    "scripts/turn-bench.mjs",
+    "scripts/turn-check.mjs",
+    "scripts/turn-convex-check.test.mjs",
+    "scripts/turn-fidelity.mjs",
+    "scripts/turn-group-reference.test.mjs",
+    "scripts/turn-rounded-polygon.test.mjs",
+    "scripts/turn-split-owner.test.mjs",
+    "SECURITY.md",
+    "tests/fixtures/react-dots-dark.png",
+    "tests/fixtures/react-dots-light.png",
+    "tests/fixtures/react-solid-dark.png",
+    "tests/fixtures/react-solid-light.png"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "3423ada45a05033bb6e320dfc3b3ac832569969a5afb059bbfc9096c5cf0c71b",
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "254b17510460bc5151295b1e1e40b6a1aceeff60a0dda4e9594adcfa36819526",
+      "executable": false
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "b0305b4561400a9caaa31de78d9ba434b4f1b908253fff8bc9dda30100d6287e",
+      "executable": false
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "dd94a5c1483143876992d096247d6b5531fd7a1041728bee339b007fe15764e5",
+      "executable": false
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "a62d35373c6eb6e65ac9c0550b5e213d25d82674969d0c0d985456e9e735c966",
+      "executable": false
+    },
+    {
+      "path": "evals/evals.json",
+      "sha256": "b79afa9daa10084c71bb18c3baafef403a929c1d707b2be4c636952ae1896dd4",
+      "executable": false
+    },
+    {
+      "path": "examples/arcade-cabinet/arcade-cabinet-drawing-a4.pdf",
+      "sha256": "233092454ca079083346c3287bab477fcb3f1fd4805ceae8a037bdf7d04b8658",
+      "executable": false
+    },
+    {
+      "path": "examples/arcade-cabinet/arcade-cabinet-light.html",
+      "sha256": "f54197aa4c3b7e5b00469266f38f79bc0d907f52bf572838eea2acaac89ddbc7",
+      "executable": false
+    },
+    {
+      "path": "examples/arcade-cabinet/arcade-cabinet-poster-a4.pdf",
+      "sha256": "2d45bd3bdf863bd908d19cd2c1304bdbceed117a7a817098af4e751d88f376e8",
+      "executable": false
+    },
+    {
+      "path": "examples/arcade-cabinet/arcade-cabinet.css",
+      "sha256": "a0ea7bce89a665ddd13f72daf31849c07d8b517b66a3d555543aa506b8933629",
+      "executable": false
+    },
+    {
+      "path": "examples/arcade-cabinet/arcade-cabinet.html",
+      "sha256": "54dffaa73cca2169198de6db28bf4b370cff28bd3b5d4fb32078ae4fde80d0ab",
+      "executable": false
+    },
+    {
+      "path": "examples/arcade-cabinet/build.mjs",
+      "sha256": "be649f9fed8f1841b96546577729096af63670ef7b83d4cec32716df3429a03d",
+      "executable": false
+    },
+    {
+      "path": "examples/arcade-cabinet/live.js",
+      "sha256": "d9f02ea9193f3109501333bdfb4ab297a71457aaba431f05f5df667ea8c40c8f",
+      "executable": false
+    },
+    {
+      "path": "examples/arcade-cabinet/parts.mjs",
+      "sha256": "3ba74b8c55e72933b1e119e3d24c939f654b2c43d41ff26cf855f064cbc7d2a3",
+      "executable": false
+    },
+    {
+      "path": "examples/arcade-cabinet/screen.mjs",
+      "sha256": "8fbb8aebb1d657508979ec9b58a29281c71403396df1fcdc6f8f834fe9097be9",
+      "executable": false
+    },
+    {
+      "path": "examples/arcade-cabinet/sheet.mjs",
+      "sha256": "b5f71ec5682e49c954ba344ee66a2f75d06f76fe7006e6a714c71cc0552eff81",
+      "executable": false
+    },
+    {
+      "path": "examples/desk-computer/build.mjs",
+      "sha256": "d378f9814acf75bc915921d4f2d83ed1eb4991a8b4298eb0de0e10383b2ff66d",
+      "executable": false
+    },
+    {
+      "path": "examples/desk-computer/desk-computer-light.html",
+      "sha256": "ce63c5bed81b76491a82f5e94d22e5f64744c87bc448fdad8726ae0c6ecd0b59",
+      "executable": false
+    },
+    {
+      "path": "examples/desk-computer/desk-computer.html",
+      "sha256": "94f04084c1ce997a88e60fc0b4d9c5b6dbe859b95ee0dd7a10603e648fced2bc",
+      "executable": false
+    },
+    {
+      "path": "examples/dial-indicator/build.mjs",
+      "sha256": "e4eaa2324af7f2630650ca72e52a78d56159213a786e14fba8321344789f990d",
+      "executable": false
+    },
+    {
+      "path": "examples/dial-indicator/dial-indicator-light.html",
+      "sha256": "bc1810e340d916a25cc1749589b44096b7e41970f22fa7fce569bbefc0613093",
+      "executable": false
+    },
+    {
+      "path": "examples/dial-indicator/dial-indicator.html",
+      "sha256": "2ba95d49a5432a5aa764fca89af91ab91043531669609ed57b92bd50b51e5519",
+      "executable": false
+    },
+    {
+      "path": "examples/push-button/build.mjs",
+      "sha256": "830973d137441897f03f55d2f19ba0a5f9b22221e72bf5060809753ebfb02e45",
+      "executable": false
+    },
+    {
+      "path": "examples/push-button/push-button-detailed-a4.pdf",
+      "sha256": "694380d98939910affe24844a39bbd8e52527f07c1754ba0d184a9e4a029789a",
+      "executable": false
+    },
+    {
+      "path": "examples/push-button/push-button-drawing-a4.pdf",
+      "sha256": "0e2f2a3b1aeaa1ba52ef6a8cfd65762f6b3227f04cfb3a8143b6f9394602c308",
+      "executable": false
+    },
+    {
+      "path": "examples/push-button/push-button-light.html",
+      "sha256": "88b1a2a242d7674a23c802d3657257dda52c997ccbe7bdff4534d0dff5ad29bd",
+      "executable": false
+    },
+    {
+      "path": "examples/push-button/push-button-poster-a4.pdf",
+      "sha256": "c757010ee2c207724557da3dd6c0d4e760b4033ed126490f4c2fd350a2b4e98b",
+      "executable": false
+    },
+    {
+      "path": "examples/push-button/push-button.html",
+      "sha256": "1408c226200c87cb36409e3c687ec4945fe9e4b9025ba0e91bcffce2dc1a2815",
+      "executable": false
+    },
+    {
+      "path": "examples/push-button/sheet.mjs",
+      "sha256": "be472b279a847016d4ea3ca4ab28365998e1f737248049248270a4d7471db828",
+      "executable": false
+    },
+    {
+      "path": "examples/raptor-engine/build.mjs",
+      "sha256": "cf5dc0d679bee415fc36c74f2e67d4620e106011037dd3a0d44dcdc559084427",
+      "executable": false
+    },
+    {
+      "path": "examples/raptor-engine/live.js",
+      "sha256": "03d801ef2b75e17a38ebc3d5cb9178747226ea8c2e0c527caafb9c72844d88d8",
+      "executable": false
+    },
+    {
+      "path": "examples/raptor-engine/raptor-engine-light.html",
+      "sha256": "48f64b954b93567f1a5ca87fa823c34ae9e81842fa5b95512deba6b22b37a537",
+      "executable": false
+    },
+    {
+      "path": "examples/raptor-engine/raptor-engine-poster-a4.pdf",
+      "sha256": "a3f3c40c5b9f916a0d457909d853f83e1aef61f2858f09632430a9065fe25756",
+      "executable": false
+    },
+    {
+      "path": "examples/raptor-engine/raptor-engine.html",
+      "sha256": "cb2b7df8f24bf86fe870aa25598e348626af263332c553b90bd574dd029a257b",
+      "executable": false
+    },
+    {
+      "path": "examples/raptor-engine/raptor.css",
+      "sha256": "f850575feeeacac8ef5d9d9c49359f4deaef848666c68a4dafa9727fe926cd6e",
+      "executable": false
+    },
+    {
+      "path": "examples/raptor-engine/sheet.mjs",
+      "sha256": "20a125dc6db40c7e874e3c928e5e119ad4e998387b7e0bf62bb612d6d9815c48",
+      "executable": false
+    },
+    {
+      "path": "examples/ripple-tank/build.mjs",
+      "sha256": "5a5b846bcd146630be3eafb73ebd04cfdd2101d05def15a877fff7188822b493",
+      "executable": false
+    },
+    {
+      "path": "examples/ripple-tank/live.js",
+      "sha256": "5bff25143635ff13af50a7bee015289d8ada5a2f5b13c0cdb8a1516897f03944",
+      "executable": false
+    },
+    {
+      "path": "examples/ripple-tank/model.mjs",
+      "sha256": "f6315aa53e80c0c69bf3c52baf0a1340ca4daacfae80245def02f357c2d33882",
+      "executable": false
+    },
+    {
+      "path": "examples/ripple-tank/ripple-tank-light.html",
+      "sha256": "15b5b7a1e738fb5e435e9c1dccea874f6d292962fb31943fdd4466c15b351b59",
+      "executable": false
+    },
+    {
+      "path": "examples/ripple-tank/ripple-tank.html",
+      "sha256": "7bd07bcc9784d9536bb9f00d6fa3440765edf65fe086687718229a0a31a5911e",
+      "executable": false
+    },
+    {
+      "path": "examples/ripple-tank/ripple.css",
+      "sha256": "1bf7a778f0b50928adcd54e67c44aa2b12a6877b45f15a0b697d87ab7be0dd5c",
+      "executable": false
+    },
+    {
+      "path": "examples/spot-plate/art.tsx",
+      "sha256": "aecef8d6ee247e99d52717371a319283af8b1bbba2adfcdd4d012553d2963b38",
+      "executable": false
+    },
+    {
+      "path": "examples/spot-plate/drops.ts",
+      "sha256": "9bec874c5e324d69a25cc9085ecf2c5d9c3c2e3bd1a8c667c45e048301b899d4",
+      "executable": false
+    },
+    {
+      "path": "examples/spot-plate/fan.ts",
+      "sha256": "648c1d946e9512afcae60e077d2436926ca1ea94b02c944df8624419812077b1",
+      "executable": false
+    },
+    {
+      "path": "examples/spot-plate/figure.tsx",
+      "sha256": "b9db1ef99bfac58d55d0506f05e0c178e5c9566c61cbf26826ea25cfaa57805f",
+      "executable": false
+    },
+    {
+      "path": "examples/spot-plate/geometry.ts",
+      "sha256": "faf7d6bf1b475daacd4751687d409d7a5c03a6c2bb216ae81beadce5a3cea99a",
+      "executable": false
+    },
+    {
+      "path": "examples/spot-plate/live.tsx",
+      "sha256": "e96fd47aa4ab250a6b2c6fe3c6c3c96d4bcf737dff7f084d4912f5d1ef195116",
+      "executable": false
+    },
+    {
+      "path": "examples/spot-plate/rig.ts",
+      "sha256": "b19fc1637a1f4c411c23f34c7a48361f308402b15b11efc44fb6555e8f67ceea",
+      "executable": false
+    },
+    {
+      "path": "examples/spot-plate/spot-plate.css",
+      "sha256": "b31e4c8e02f4de0b77fe0a71718f59d7df2e3abc3d9772f802e00fc3d8a582bd",
+      "executable": false
+    },
+    {
+      "path": "examples/test-rig/art.tsx",
+      "sha256": "a6b8c1094a9402380d9835ecedbcc677254686b7391027a20da10fc8bf24dae5",
+      "executable": false
+    },
+    {
+      "path": "examples/test-rig/figure.tsx",
+      "sha256": "2dbaef167b9a6a96de74357fc57ae2a650159007852d3d4e8c471b8837e463a9",
+      "executable": false
+    },
+    {
+      "path": "examples/test-rig/geometry.ts",
+      "sha256": "b8c275eb58b093a85c312f90dc5d79fd9d9a93ae266e42a8a6fa7f6f9aaeb571",
+      "executable": false
+    },
+    {
+      "path": "examples/test-rig/live.tsx",
+      "sha256": "46a4c338a2805fc0078a20d6f4e12d9de20fc4145ec051ffce3964b164c5a7da",
+      "executable": false
+    },
+    {
+      "path": "examples/test-rig/pose.ts",
+      "sha256": "380e1d07afcaa3a4e2cd1b13556500f2b336e354fa1c369918b3173f0c9d0866",
+      "executable": false
+    },
+    {
+      "path": "examples/test-rig/rig.ts",
+      "sha256": "9672431d6982acaa7b6f28e88e1371443bd6a10fb906ff52fc7bdb0f5fd88b05",
+      "executable": false
+    },
+    {
+      "path": "examples/test-rig/stretch.css",
+      "sha256": "dd15f4582b5fb9b228dc7e32ef57dbcba0129dad38b36e5707247eeb7a2abe8b",
+      "executable": false
+    },
+    {
+      "path": "examples/test-rig/view.ts",
+      "sha256": "5465a3e122c2074f8de755b874c7bdb783b365e4140e3e741fc91a32cd69500c",
+      "executable": false
+    },
+    {
+      "path": "examples/turning-dial/build.mjs",
+      "sha256": "dcb1b2a1fec2c98c2cea401c6a5b1c7e6545da3b5ea08433cfd72a7f27a49248",
+      "executable": false
+    },
+    {
+      "path": "examples/turning-dial/dial.css",
+      "sha256": "769fc9596dcd2bbc46823d6e2816a3e584b52e0a6db359d93bedce16f354bedd",
+      "executable": false
+    },
+    {
+      "path": "examples/turning-dial/live.js",
+      "sha256": "e872f0d930ba583ce7c4c252a3767aa6b9f6cd1f97fe6dddb212653a0579b41f",
+      "executable": false
+    },
+    {
+      "path": "examples/turning-dial/stress.mjs",
+      "sha256": "6d3aec19d8ce6daadffe15113da9415c2fe084c6407d1bb7fb4b5fec86330314",
+      "executable": false
+    },
+    {
+      "path": "examples/turning-dial/turning-dial-light.html",
+      "sha256": "7873a4873e4f1a204ca59691765915f155f44095c2c290730aa2b915b4c88c9e",
+      "executable": false
+    },
+    {
+      "path": "examples/turning-dial/turning-dial-verify-light.html",
+      "sha256": "7516d25e04c8a2c7d3abc7bf19e78985cfca2a2f37e1de72740808a977346366",
+      "executable": false
+    },
+    {
+      "path": "kit/audit.mjs",
+      "sha256": "74e605b5d549c1f31c8a1104db7560057105cf86809bf6ced00e4ac79194c8e2",
+      "executable": false
+    },
+    {
+      "path": "kit/canvas-painter.mjs",
+      "sha256": "1918db10279c9d9df87d7df52c7ed8c2de8acd0bbce214c8f2115a39e7f955ac",
+      "executable": false
+    },
+    {
+      "path": "kit/gl-shared.mjs",
+      "sha256": "8c3773cf3e15844df332db3ba55af940186edb2227201e5839347ecc390c039c",
+      "executable": false
+    },
+    {
+      "path": "kit/gl.mjs",
+      "sha256": "17a477411e0b9fcb8e84e718094eaefa6be2c0b7d6ce15ee03fe8e252944130a",
+      "executable": false
+    },
+    {
+      "path": "kit/iso.css",
+      "sha256": "ef19bac5a42ba9be42b56b2c1cf7fc7e21d332a8060765e9ca1d987b8ab23924",
+      "executable": false
+    },
+    {
+      "path": "kit/pdf-button.mjs",
+      "sha256": "884de49c75f11c78a102b4b413006f36b087e0e3bc9f33dc462dc44430d69342",
+      "executable": false
+    },
+    {
+      "path": "kit/react/draw.tsx",
+      "sha256": "d5389bd78aa3d5424a37b1ce6f635bd102eb86faf27d064b10957716278a631c",
+      "executable": false
+    },
+    {
+      "path": "kit/react/live.tsx",
+      "sha256": "6d01fa12bca4ec14d1b7d7d5331d18a997dd3ee131d59dd57f83b932a1705f42",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "87c078ab9d90a3044f359e6b563d4e6afea7aa060897cf4f21618687b3856796",
+      "executable": false
+    },
+    {
+      "path": "references/print.md",
+      "sha256": "1b4146c35214f76bf8ddc1765b3d1540d9bdfceba0c641e7b93c33229265c0be",
+      "executable": false
+    },
+    {
+      "path": "scripts/audit-cache.test.mjs",
+      "sha256": "00b49601c068897e94bf8309d652bb55595e541283c510bba34957c457edd57e",
+      "executable": false
+    },
+    {
+      "path": "scripts/chrome-port.mjs",
+      "sha256": "6775d3d389d26f37a52be8358aa88d1dc0aded63cb24ae20a936505a192e5d9d",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/anatomy"
+}

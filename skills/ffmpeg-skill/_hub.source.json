@@ -1,0 +1,787 @@
+{
+  "repository": "kajisho5/ffmpeg-skill",
+  "commit": "92dabd8372dafd033055a3b22d3fb71b39ac3cfd",
+  "path": "",
+  "verified": true,
+  "coreSha256": "b266140505cb9de5d980976a8aaf04f0bb546abdbdc07cc67995be824bd08506",
+  "skipped": [
+    ".claude-plugin/marketplace.json",
+    ".claude-plugin/plugin.json",
+    ".claude/settings.json",
+    ".clusterfuzzlite/build.sh",
+    ".clusterfuzzlite/Dockerfile",
+    ".clusterfuzzlite/project.yaml",
+    ".cursor-plugin/plugin.json",
+    ".github/dependabot.yml",
+    ".github/FUNDING.yml",
+    ".github/ISSUE_TEMPLATE/bug_report.md",
+    ".github/ISSUE_TEMPLATE/config.yml",
+    ".github/ISSUE_TEMPLATE/feature_request.md",
+    ".github/pull_request_template.md",
+    ".github/release-drafter.yml",
+    ".github/scripts/build_pages.py",
+    ".github/scripts/build_plugin_skill.py",
+    ".github/scripts/bump_contract_md.py",
+    ".github/scripts/bump_roadmap_md.py",
+    ".github/scripts/bump_server_json.py",
+    ".github/scripts/design_decisions_index.py",
+    ".github/scripts/pages_layout.html",
+    ".github/scripts/publish_plugin_branch.sh",
+    ".github/scripts/recover_release.py",
+    ".github/scripts/resolve_version.py",
+    ".github/workflows/cflite.yml",
+    ".github/workflows/ci.yml",
+    ".github/workflows/codeql.yml",
+    ".github/workflows/dependabot-auto-merge.yml",
+    ".github/workflows/pages.yml",
+    ".github/workflows/release-drafter.yml",
+    ".github/workflows/release.yml",
+    ".github/workflows/scorecard.yml",
+    ".gitignore",
+    ".npmignore",
+    ".snyk",
+    "docs/demos/multicam_switch_energy.gif",
+    "docs/demos/multicam_switch.gif",
+    "docs/demos/pad_timeline.gif",
+    "docs/demos/pauses_en.gif",
+    "docs/demos/proxy.gif",
+    "docs/demos/redact_blur.gif",
+    "docs/demos/reframe_crop.gif",
+    "docs/demos/reframe_pad.gif",
+    "docs/demos/reframe_talk.gif",
+    "docs/demos/render_pip.gif",
+    "docs/demos/render_project.gif",
+    "docs/demos/reverse.gif",
+    "docs/demos/scenes_highlights.gif",
+    "docs/demos/scenes_shots.gif",
+    "docs/demos/sequence_frames.gif",
+    "docs/demos/silence_removal.gif",
+    "docs/demos/speed_up.gif",
+    "docs/demos/speedramp.gif",
+    "docs/demos/sphere_flat.gif",
+    "docs/demos/stabilize.gif",
+    "docs/demos/straighten.gif",
+    "docs/demos/template_tiktok.gif",
+    "docs/demos/tempo_exact_length.gif",
+    "docs/demos/title_card.gif",
+    "docs/demos/waveform_render.gif",
+    "docs/design-decisions.md",
+    "docs/roadmap.md",
+    "evals/agent_prompts_24.json",
+    "evals/agent_prompts_audio.json",
+    "evals/agent_prompts_audio2.json",
+    "evals/agent_prompts_exec.json",
+    "evals/agent_prompts.json",
+    "evals/contract/check.py",
+    "evals/contract/questions.json",
+    "evals/contract/README.md",
+    "evals/grade_runs_24.py",
+    "evals/grade_runs_25.py",
+    "evals/grade_runs.py",
+    "evals/README.md",
+    "evals/results/audio-2.json",
+    "evals/results/audio-only-1.json",
+    "evals/results/contract-2026-09-04.json",
+    "evals/results/corpus-2026-09-13-1.10.0.md",
+    "evals/results/exec-1.json",
+    "evals/results/iteration-1.json",
+    "evals/results/iteration-10-independent-grades.json",
+    "evals/results/iteration-10.json",
+    "evals/results/iteration-11-independent-grades.json",
+    "evals/results/iteration-11.json",
+    "evals/results/iteration-12-independent-grades.json",
+    "evals/results/iteration-12.json",
+    "evals/results/iteration-13-independent-grades.json",
+    "evals/results/iteration-13.json",
+    "evals/results/iteration-14-independent-grades.json",
+    "evals/results/iteration-14.json",
+    "evals/results/iteration-15-independent-grades.json",
+    "evals/results/iteration-15.json",
+    "evals/results/iteration-16-independent-grades.json",
+    "evals/results/iteration-16.json",
+    "evals/results/iteration-17-independent-grades.json",
+    "evals/results/iteration-17.json",
+    "evals/results/iteration-18-independent-grades.json",
+    "evals/results/iteration-18.json",
+    "evals/results/iteration-19-independent-grades.json",
+    "evals/results/iteration-19.json",
+    "evals/results/iteration-2-4-independent-grades.json",
+    "evals/results/iteration-2-4.json",
+    "evals/results/iteration-2.json",
+    "evals/results/iteration-20-independent-grades.json",
+    "evals/results/iteration-20.json",
+    "evals/results/iteration-21.json",
+    "evals/results/iteration-22.json",
+    "evals/results/iteration-23-partial.json",
+    "evals/results/iteration-23b.json",
+    "evals/results/iteration-23b/ff1/with_skill/outputs/run.md",
+    "evals/results/iteration-23b/kw1/with_skill/outputs/run.md",
+    "evals/results/iteration-24.json",
+    "evals/results/iteration-24/h1/with_skill/outputs/run.md",
+    "evals/results/iteration-24/h2/with_skill/outputs/run.md",
+    "evals/results/iteration-24/ow1/with_skill/outputs/run.md",
+    "evals/results/iteration-24/ow2/with_skill/outputs/run.md",
+    "evals/results/iteration-24/q1/with_skill/outputs/run.md",
+    "evals/results/iteration-25.json",
+    "evals/results/iteration-5.json",
+    "evals/results/iteration-6.json",
+    "evals/results/iteration-7-independent-grades.json",
+    "evals/results/iteration-7.json",
+    "evals/results/iteration-8-independent-grades.json",
+    "evals/results/iteration-8.json",
+    "evals/results/iteration-9-independent-grades.json",
+    "evals/results/iteration-9.json",
+    "evals/results/routing-skill-md-restructure.json",
+    "evals/run_agents_25.sh",
+    "evals/run.py",
+    "evals/tasks.json",
+    "evals/trigger/prompts_25.json",
+    "evals/trigger/prompts.json",
+    "evals/trigger/README.md",
+    "evals/trigger/results-2026-09-04.json",
+    "evals/trigger/results-2026-09-11.json",
+    "evals/trigger/results-2026-09-12-it7.json",
+    "evals/trigger/results-2026-09-12-it8.json",
+    "evals/trigger/results-2026-09-12-it9.json",
+    "evals/trigger/results-2026-09-12.json",
+    "evals/trigger/results-2026-09-13-it10.json",
+    "evals/trigger/results-2026-09-13-it11.json",
+    "evals/trigger/results-2026-09-13-it12.json",
+    "evals/trigger/results-2026-09-13-it13.json",
+    "evals/trigger/results-2026-09-13-it14.json",
+    "evals/trigger/results-2026-09-13-it15.json",
+    "evals/trigger/results-2026-09-13-it16.json",
+    "evals/trigger/results-2026-09-14-it17.json",
+    "evals/trigger/results-2026-09-14-it18.json",
+    "evals/trigger/results-2026-09-14-it19.json",
+    "evals/trigger/results-2026-09-14-it20.json",
+    "evals/trigger/results-2026-09-24-it25.json",
+    "evals/trigger/results-2026-10-31.json",
+    "evals/write_fixtures.py",
+    "examples/brand.json",
+    "examples/make_demo.sh",
+    "examples/README.md",
+    "fuzz/_harness.py",
+    "fuzz/json_input_fuzzer.py",
+    "fuzz/parse_time_fuzzer.py",
+    "fuzz/seeds/json_input/deep.json",
+    "fuzz/seeds/parse_time/srt",
+    "fuzz/seeds/srt/bom_crlf.srt",
+    "fuzz/seeds/srt/cr_cr_lf.srt",
+    "fuzz/seeds/srt/no_blank_lines.srt",
+    "fuzz/seeds/srt/position_fields.srt",
+    "fuzz/seeds/srt/space_blank_line.srt",
+    "fuzz/seeds/srt/two_arrows.srt",
+    "fuzz/seeds/srt/two_cues.srt",
+    "fuzz/seeds/timeline_xml/entity.xml",
+    "fuzz/seeds/timeline_xml/fcpxml.xml",
+    "fuzz/srt_fuzzer.py",
+    "fuzz/timeline_xml_fuzzer.py",
+    "gemini-extension.json",
+    "glama.json",
+    "LICENSE",
+    "mcp/server.py",
+    "package.json",
+    "PRIVACY.md",
+    "README.md",
+    "references/ci-platform-pitfalls.md",
+    "references/devices.md",
+    "references/flags.md",
+    "references/gotchas.md",
+    "references/process-pitfalls.md",
+    "references/report.md",
+    "references/requests.md",
+    "references/scripts.md",
+    "references/timestamps.md",
+    "references/workflow.md",
+    "scripts/_ass_overlay.py",
+    "scripts/_common/__init__.py",
+    "scripts/_common/alpha.py",
+    "scripts/_common/asr.py",
+    "scripts/_common/color.py",
+    "scripts/_common/decision.py",
+    "scripts/_common/drawtext.py",
+    "scripts/_common/emit.py",
+    "scripts/_common/emoji.py",
+    "scripts/_common/fonts.py",
+    "scripts/_common/probe.py",
+    "scripts/_common/runner.py",
+    "scripts/_common/text.py",
+    "scripts/_common/timeline.py",
+    "scripts/_common/wrap.py",
+    "scripts/_contract.py",
+    "scripts/_platforms.py",
+    "scripts/_smartcut.py",
+    "scripts/audio.py",
+    "scripts/background.py",
+    "scripts/batch.py",
+    "scripts/broll.py",
+    "scripts/caption.py",
+    "scripts/check.py",
+    "scripts/color.py",
+    "scripts/crop.py",
+    "scripts/cropdetect.py",
+    "scripts/cut.py",
+    "scripts/deinterlace.py",
+    "scripts/denoise.py",
+    "scripts/export.py",
+    "scripts/fit.py",
+    "scripts/freeze.py",
+    "scripts/graphics.py",
+    "scripts/grid.py",
+    "scripts/insert.py",
+    "scripts/join.py",
+    "scripts/look.py",
+    "scripts/loop.py",
+    "scripts/loudness.py",
+    "scripts/metadata.py",
+    "scripts/multicam.py",
+    "scripts/overlay.py",
+    "scripts/pad.py",
+    "scripts/probe.py",
+    "scripts/proxy.py",
+    "scripts/redact.py",
+    "scripts/render.py",
+    "scripts/report.py",
+    "scripts/reverse.py",
+    "scripts/scenes.py",
+    "scripts/sequence.py",
+    "scripts/silence.py",
+    "scripts/speedramp.py",
+    "scripts/sphere.py",
+    "scripts/stabilize.py",
+    "scripts/straighten.py",
+    "scripts/sync.py",
+    "scripts/verify.py",
+    "scripts/waveform.py",
+    "SECURITY.md",
+    "server.json",
+    "site/brand/apple-touch-icon.png",
+    "site/brand/favicon.ico",
+    "site/brand/favicon.svg",
+    "site/brand/ffmpeg-skill-horizontal-on-dark.svg",
+    "site/brand/ffmpeg-skill-symbol-on-dark.svg",
+    "site/brand/og.png",
+    "site/brand/velisa-horizontal-on-dark.svg",
+    "site/brand/velisa-horizontal.svg",
+    "site/index.html",
+    "site/media/filler_en.jpg",
+    "site/media/filler_en.mp4",
+    "site/media/reframe_talk.jpg",
+    "site/media/reframe_talk.mp4",
+    "templates/audiogram.json",
+    "templates/facebook.json",
+    "templates/linkedin.json",
+    "templates/podcast.json",
+    "templates/reels.json",
+    "templates/shorts.json",
+    "templates/tiktok.json",
+    "templates/x.json",
+    "templates/youtube-shorts.json",
+    "templates/youtube.json",
+    "tests/_fixtures.py",
+    "tests/bench_scenes.py",
+    "tests/bench_silence.py",
+    "tests/bench_sync.py",
+    "tests/bench_vt.py",
+    "tests/corpus.py",
+    "tests/fixtures/caption_1_16_1_fitsize_off.ass",
+    "tests/fixtures/ffmpeg_bsfs_6.1.txt",
+    "tests/fixtures/ffmpeg_bsfs_8.1.2_macos.txt",
+    "tests/fixtures/ffmpeg_bsfs_9.0.1_windows.txt",
+    "tests/fixtures/ffmpeg_decoders_6.1.txt",
+    "tests/fixtures/ffmpeg_encoders_6.1_no_aac.txt",
+    "tests/fixtures/ffmpeg_encoders_6.1.txt",
+    "tests/fixtures/ffmpeg_encoders_8.1.2_macos.txt",
+    "tests/fixtures/ffmpeg_encoders_9.0.1_windows.txt",
+    "tests/fixtures/ffmpeg_filters_6.1.txt",
+    "tests/fixtures/ffmpeg_filters_7.1_constructed.txt",
+    "tests/fixtures/ffmpeg_filters_8.1.2_macos.txt",
+    "tests/fixtures/ffmpeg_filters_9.0.1_windows.txt",
+    "tests/fixtures/ffmpeg_filters_garbage.txt",
+    "tests/fixtures/mcp_tools.json",
+    "tests/fixtures/README.md",
+    "tests/release_check.sh",
+    "tests/run_parallel.py",
+    "tests/sweep.py",
+    "tests/test_accel.py",
+    "tests/test_all.py",
+    "tests/test_analysis.py",
+    "tests/test_asr.py",
+    "tests/test_audio.py",
+    "tests/test_contract.py",
+    "tests/test_cut_copy.py",
+    "tests/test_delivery.py",
+    "tests/test_editing.py",
+    "tests/test_orchestration.py",
+    "tests/test_picture.py"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "b266140505cb9de5d980976a8aaf04f0bb546abdbdc07cc67995be824bd08506",
+      "executable": false
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc4476e6cce25565d9f9e65bb17a9fe1c4dc5e371fe8739ec4396a768be40702",
+      "executable": false
+    },
+    {
+      "path": "assets/demo.gif",
+      "sha256": "35dc6f07a43909f46db9f8acd0548f8ab92cd6095de32e1a9243eaf06af0a8bb",
+      "executable": false
+    },
+    {
+      "path": "assets/icon.png",
+      "sha256": "45f39351bbf2bb7923f3203323d9d75ed8b7ec131841731cbca57a5d355ec88b",
+      "executable": false
+    },
+    {
+      "path": "assets/logo.png",
+      "sha256": "b5ca078afcb43685653163104e0fd2704694846d95d08b935b3d700a73fc3adf",
+      "executable": false
+    },
+    {
+      "path": "assets/social-preview.png",
+      "sha256": "7a6b44b52317d4624a83e3d8d682581b621a76316d55842706613ca5a140eb81",
+      "executable": false
+    },
+    {
+      "path": "bin/install.js",
+      "sha256": "12070abb5e74b07d4eca852615dc19646fede864a9bce387e8fc5e12e19c74b1",
+      "executable": true
+    },
+    {
+      "path": "brand/app-icon-dark.png",
+      "sha256": "840607914b248621fc6701d52c7626d4113c0bf45022a2416db70ef50598198a",
+      "executable": false
+    },
+    {
+      "path": "brand/app-icon.png",
+      "sha256": "94a1a7c45b856f959667129a569bcf9807368ee35371067dd5420cc4660dcc0c",
+      "executable": false
+    },
+    {
+      "path": "brand/ffmpeg-skill.icon/Assets/in-out.svg",
+      "sha256": "0c93f1e345212929cd17aa18f19ad703dd810009f3a8a5bd6a92fdb362b85729",
+      "executable": false
+    },
+    {
+      "path": "brand/ffmpeg-skill.icon/Assets/playhead.svg",
+      "sha256": "e76968487123e949e4c2815e94ab8b06c0e40e382c966e4bc880070cc3a863b2",
+      "executable": false
+    },
+    {
+      "path": "brand/ffmpeg-skill.icon/icon.json",
+      "sha256": "2fe266f1bedade5af7caa96fbca4cdc5fad86079902000162be97e6ce051cd4f",
+      "executable": false
+    },
+    {
+      "path": "brand/logo/ffmpeg-skill-horizontal-on-dark.svg",
+      "sha256": "b39a434086115efd535b8637ec76edfe0ac1d335415b27ec7ad71a5282f65165",
+      "executable": false
+    },
+    {
+      "path": "brand/logo/ffmpeg-skill-horizontal.svg",
+      "sha256": "b2c5ab5ff540d4bb2aa14c93a5ff916c68942dd3a4b4173ca77c19f351eca691",
+      "executable": false
+    },
+    {
+      "path": "brand/logo/ffmpeg-skill-wordmark-black.svg",
+      "sha256": "684010543dda76c4b7d94304652b4401f26744705965b93d35e50be0080f6a16",
+      "executable": false
+    },
+    {
+      "path": "brand/logo/ffmpeg-skill-wordmark-white.svg",
+      "sha256": "d098eeaf215c7cfde3faf77066df5b1dbc49bd29303d1e6dc9e6d2ddf873a37a",
+      "executable": false
+    },
+    {
+      "path": "brand/og.png",
+      "sha256": "5bcd3590607f5f9c8ba31382d901e7bac9b126f97661e3bd4c8c847d942fdb17",
+      "executable": false
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "53b583860e6a7e5c47cfcde7edbd31d5c01328800aa683ec9becb7ab96602f9f",
+      "executable": false
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "f77f3912ac802a2e9176ae819de7bb89ccf42a23a0a192db646b31a3c4b47fee",
+      "executable": false
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "67646211a0eb2c37bb397d8db376987821ccd61f1203e5d17669c1e0b832ee9f",
+      "executable": false
+    },
+    {
+      "path": "demos/build.py",
+      "sha256": "fb391cfa2dfddeb523788fe443f53a91dfcc1d3822ae4b6274276d999b9c1138",
+      "executable": false
+    },
+    {
+      "path": "demos/CI.md",
+      "sha256": "fe9d3c320d4604e0d78d9b8d8a44c7368542a8d6952b26a6db5c5d28284e2171",
+      "executable": false
+    },
+    {
+      "path": "demos/footage/ai_talk_en.mp4",
+      "sha256": "4a06601f7b0639a9f8fbdef7cacd5051b43a849434a0e37157b7c82c3befab88",
+      "executable": false
+    },
+    {
+      "path": "demos/footage/ai_talk_en.words.json",
+      "sha256": "fa60d85e62079637c189b3b14c526af2e93272f7a604ecc69eb3b29df39228e3",
+      "executable": false
+    },
+    {
+      "path": "demos/footage/ai_talk.mp4",
+      "sha256": "aef3b4a5c05a10c5349c838ffec937499a31faef16098ed7b2cfdb8568be4268",
+      "executable": false
+    },
+    {
+      "path": "demos/footage/README.md",
+      "sha256": "b29db1a6be7e1c11600c140f46a27dc5db1317c682b379f786a57bd24ed408e2",
+      "executable": false
+    },
+    {
+      "path": "demos/pages_videos.py",
+      "sha256": "19a9635a9536dfe0fc7e4869e58f66ec306f90cf80a5d4c22e83154c8607e4e0",
+      "executable": false
+    },
+    {
+      "path": "docs/contract.md",
+      "sha256": "aa5fee495643dbfbbf84c1d309d17f5dd88ccd531dff1f3abb1f152fbd5aa02c",
+      "executable": false
+    },
+    {
+      "path": "docs/demos.md",
+      "sha256": "5a2e95e5d253d767b56b331f27e2543611ddee9d51ed95ff48d2c7e13585eaf7",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/alpha_layer.gif",
+      "sha256": "fe2a3a110873f7ae3d926d2344e3d1319fee080e61003d85842efa9ebdce0635",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/audiogram.gif",
+      "sha256": "287376e5c189e62b27f41b73cb4f7a74eb8952717143ec1a8144c7077a3e3a69",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/beats_snap.gif",
+      "sha256": "e2c6222ff488bbf0d3825c1c82bc0323040c6d8f0068f3f48bbf62450c8d874f",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/bgm_ducking.gif",
+      "sha256": "a1961f88ed1b2f893fbbed5f78e75c70e2905c6d32a823e3c0a73867457985d5",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/broll_cutaway.gif",
+      "sha256": "ec6f2e072129478777e7423c94c6715265a1a08f9d9472ef516a345b716dabf6",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/captions_ar.gif",
+      "sha256": "5588d04df45ec1324d80cc3806acd0392753a9eeed5198507be18018a44c0c45",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/captions_emoji.gif",
+      "sha256": "2ecc72156451ff61ebdb90afe124d72cefc2bf44ba57de1d6a136e7cf3e8d7e7",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/captions_en.gif",
+      "sha256": "7dc579b8ccca0118aeb185e56ae39eea6f2d7636de37b52c18f93e5a7365884d",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/captions_fitsize.gif",
+      "sha256": "61bd813a52694b6d308ae3b06f16b2362e6747ce8dcf24dd830a8543e1c7d56a",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/captions_ja.gif",
+      "sha256": "bfd4d6c0f658166e2373e5c6d0e62aa9115b7ddfc28a75f07a9fa37c6787ec5f",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/captions_ko.gif",
+      "sha256": "b4e1b8e63de37a9f80cb16e978175bcc4c13c371f91766d62fe1403c4ae75203",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/captions_multitrack.gif",
+      "sha256": "af1520f6702f8509bb37bc560eab4fef70d2b84f53a99654b662759a83356a8e",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/captions_phrase.gif",
+      "sha256": "ae59b54f6c51c05868e4688cfef345afaf3132fd3f14019169dd6fd4e80490fd",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/captions_pop_karaoke.gif",
+      "sha256": "926bbd344df43a988b2b79018d59e1d831a4b6cdc0725814dd87812f9511ac81",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/captions_zh.gif",
+      "sha256": "0b99ffd7d5494b7c39e581cd74bed0410726107a70d13d2b44969513050b31ca",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/color_correct.gif",
+      "sha256": "dfc9273d9816080f1616a2519ebf0bf11b10d01a0aa94f18912c128310037cf5",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/color_legalize.gif",
+      "sha256": "ddc92f196a3bc90e1ba19492ef61675fa23cf173fdaba6fff795a7e787b27fe9",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/color_lut.gif",
+      "sha256": "b3c76594625c394323b9348b7cd4e62b283d48f6aef9af46aed7152217a3d156",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/contact_sheet.gif",
+      "sha256": "df0ac18bc2ddb67955d29224f21e242acd3f50a7c8b22bd0771f1fab5acf3124",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/crop_rect.gif",
+      "sha256": "e65331736a597e2be666d8ffee5d0e19fd2d6ee4bee3081189b106388fc9b5bb",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/cropdetect_crop.gif",
+      "sha256": "1939282e7464ccf94b27492e1198ba0586674c26a9a12638c13b3dfa243e2e77",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/cut_accurate.gif",
+      "sha256": "8da352aecd1888ea00c19d6502f0d6baa101ede69084023ad9892def21cc754e",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/cut_edit_list.gif",
+      "sha256": "9c00ba2e4b190ed2b82ade613610bd4f11541a09421392f9aa1df1cc3d3f570c",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/cut_remove.gif",
+      "sha256": "57906f2f117d4be6c8780a822082d538ea5a61132d5912697c8b201c2d875031",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/cut_smart.gif",
+      "sha256": "ef3c4de3c5e233017d80948aed276557591d11d732a2317bd10361b9c6279368",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/deinterlace.gif",
+      "sha256": "20077744dec590769717f4396615336d34bcc593be3d1a2acc5bd6eb436a7ce6",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/delogo.gif",
+      "sha256": "286c6ab7dafb46e1e7c802e53a275b47137b7bbcef7cf441299006d847c29a72",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/denoise.gif",
+      "sha256": "8e19c63f68cc75437de34e3fe7ca100da22c100d8d38f393c8906693a9e34be5",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/downmix_51.gif",
+      "sha256": "02ae62c71f64ef50b3ad30dfa4313dcfa45977aefa872cac2084a6d622a85679",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/export_reels.gif",
+      "sha256": "a2ef3cc485919384d2a5e72da08d6e3320a5da6f22761d5e19ca9b2c6650382c",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/filler_en.gif",
+      "sha256": "abfe469e75f4248114f5ad1597809f66d0cbd59ee193e045c3a48070db1d617f",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/filler_korean.gif",
+      "sha256": "c215c790d60eefff0ffd19cc1a33a75ea273861c43707f097f6f0d7f8f36851d",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/fit_blur.gif",
+      "sha256": "ddfdc1eca55b9b046b6599f8e290711fa041514ecc436f5f0a1c0a0b4b20bb37",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/freeze_hold.gif",
+      "sha256": "0915f701d0fca121dd3458882d656044129359433bee1858555c385c1d5ff989",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/greenscreen.gif",
+      "sha256": "f3f1124c9f0086566bd786390a53442870cca2914d74d1a68169ef3af8303c42",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/grid_2x2.gif",
+      "sha256": "ea8f4b7d411cfdba36378b58e83b925cc8e611d36da376631525b96a4e3f7cac",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/hdr_tonemap.gif",
+      "sha256": "6846605a8c1382232f5d87c5b258b66c462c219bd55fa6b600891b95f0b79de5",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/insert_still.gif",
+      "sha256": "0a66cbbeb42fe1e487d0dfa9749d0e2c22a56d2a80378f3a26ff3568948f7956",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/join_fade.gif",
+      "sha256": "c43c2b6ac2bbcae55fd986c258e1b3cd8a7ffed1c3a1111bb5a08c0cddac8ac5",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/join_fadeblack.gif",
+      "sha256": "c43c2b6ac2bbcae55fd986c258e1b3cd8a7ffed1c3a1111bb5a08c0cddac8ac5",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/logo_overlay.gif",
+      "sha256": "65de6ef05a0e33617ec89d58318937a0b31b32b3bed4aaa43f4e6c16514f0b24",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/loop_crossfade.gif",
+      "sha256": "2d8a94c8a90d78bbfd18c7430bdafdd328ac328ca110706b856bb8129c1a02ef",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/loop_times.gif",
+      "sha256": "4d6f7db650cb5748abf691928827d5b5e94b8a546cc48b769c08e29b92e1ee12",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/loudness.gif",
+      "sha256": "2c1b36e4bb9997e7f5217ca9c073c5d3b0272002fbf4b88277e8bae88c098e1a",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/lower_third_hindi.gif",
+      "sha256": "65c936857bb02d6b197d6a54b69bf02a0b16743bfe2cfd17f887ac76e7839a73",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/lower_third.gif",
+      "sha256": "bc60cf482425575d95dc43a2932bddb86d12b787c0c9caea231c25f28cb46342",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/metadata_auto_chapters.gif",
+      "sha256": "2a7bb0022bee300dc264df95bea334faa1da6202085974d5ae87a77a30a9f7cb",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/metadata_chapters.gif",
+      "sha256": "ff53e85a9ce9c6da58a597747a2e8527755456620fc55a57d4ff1de381a0d387",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/motion_centre_crop.gif",
+      "sha256": "52c95fa927efec7d0edd03f6454c7f13cae46f21317449b5dda11db526f33d93",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/overlay_place.gif",
+      "sha256": "8c39707144e9a6072a4b01a3fe2071893a4784fdf8b3ed497f60f766633f7dc6",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/silence_speech_aware.gif",
+      "sha256": "bbd8728e4f4599b3401b78602209e480839ade1d211544ba18e8f4cd4a5c883d",
+      "executable": false
+    },
+    {
+      "path": "docs/demos/sync_mic.gif",
+      "sha256": "86255870ee5b083207a63e922ecbd306f97947400e68c28f456e8999267dab77",
+      "executable": false
+    },
+    {
+      "path": "evals/agent_prompts_25.json",
+      "sha256": "022bd8b14ce29c262a0460ed24f530d0dfdfeea63f885c7e90162c077f99c21b",
+      "executable": false
+    },
+    {
+      "path": "evals/agent_prompts_26.json",
+      "sha256": "0158b19738b422a60209f99a15580d31253a721d559a52c001654bd320e26198",
+      "executable": false
+    },
+    {
+      "path": "fuzz/seeds/json_input/bom.json",
+      "sha256": "967bea9eefe387f22cd49fc20b736f88f6116ed2439e368c6bee10c078cc5a4b",
+      "executable": false
+    },
+    {
+      "path": "fuzz/seeds/json_input/nan.json",
+      "sha256": "f8a20a3eeb70978084f03245a2ede8581fa94015f6d5c3ce310036cd580a6081",
+      "executable": false
+    },
+    {
+      "path": "fuzz/seeds/json_input/segments_number.json",
+      "sha256": "130fa2be65937112531cf322b981a5aff36c1e5b25efaa63e207ff19e921d336",
+      "executable": false
+    },
+    {
+      "path": "fuzz/seeds/json_input/segments_strings.json",
+      "sha256": "ea5167d7592bb9f23025e650a9ab7bc76eb88fcaa9c3d16d5f63032aee146131",
+      "executable": false
+    },
+    {
+      "path": "fuzz/seeds/json_input/words.json",
+      "sha256": "cfcec6410f9ad8cc07ba73b5082441ce16f51d84f204a7a919a5b6628713fb29",
+      "executable": false
+    },
+    {
+      "path": "fuzz/seeds/parse_time/mmss",
+      "sha256": "090dcce8b56e5998b22ac30cf1f80fccd431950d68c68824c6228d4aa72b55a5",
+      "executable": false
+    },
+    {
+      "path": "fuzz/seeds/parse_time/negative",
+      "sha256": "37c2b212b94e5372b33df924ea2a91182d90c237d0bf942c1768e794ebef2376",
+      "executable": false
+    },
+    {
+      "path": "fuzz/seeds/parse_time/seconds",
+      "sha256": "b902cc4550838229a710bfec4c38cbc7eb11082367a409df9135e7f007a96bda",
+      "executable": false
+    },
+    {
+      "path": "fuzz/seeds/parse_time/smpte",
+      "sha256": "8214d9818cbf977f67e0b01a56b794eb04aec1cc5322ce7b13112e21bcf5a062",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "7522b29e4d6e90f2a8fab15f07d224b1064c70692a872be9996ac1a88cf474e9",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/ffmpeg-skill"
+}

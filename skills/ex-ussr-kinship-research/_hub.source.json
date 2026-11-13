@@ -1,0 +1,468 @@
+{
+  "repository": "DenisSergeevitch/ex-ussr-kinship-research",
+  "commit": "f4b6b3ffc99ccdcb3e4b6bbfad3fca51b09bd23c",
+  "path": "",
+  "verified": true,
+  "coreSha256": "eaf19cd9d5dd08052e017f1025da7862fa49f8cc888c01d626aa03de1f0c0c98",
+  "skipped": [
+    ".gitignore"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "eaf19cd9d5dd08052e017f1025da7862fa49f8cc888c01d626aa03de1f0c0c98",
+      "executable": false
+    },
+    {
+      "path": "assets/artifact-register.csv",
+      "sha256": "4a0a16264dae7be15b7d4806b503d2a43b04d09001d9cb16685b486cc565de0c",
+      "executable": false
+    },
+    {
+      "path": "assets/cano-vital-record-request.template.docx",
+      "sha256": "5a039cf0ed779f92651b3e663d4a20995b92dc03a4fafd7108da058d4d17d2fe",
+      "executable": false
+    },
+    {
+      "path": "assets/case-intake.template.yaml",
+      "sha256": "475c9e614f6d724bf29371679001dca04b3d66b04afc3525d555bdd54cc9ee59",
+      "executable": false
+    },
+    {
+      "path": "assets/claims-register.csv",
+      "sha256": "8c24b260156767424835695cdf635719998d1ec99b88ec48468326bf0f0f9fec",
+      "executable": false
+    },
+    {
+      "path": "assets/final-report.template.md",
+      "sha256": "f95009368d0e4a4145330b922e72534e3e6138c8558c83875fc807891b4f0336",
+      "executable": false
+    },
+    {
+      "path": "assets/person-register.csv",
+      "sha256": "d425c925e6a178c4936e7060f4425a55acb783b85bce8e3e02aecd8029575382",
+      "executable": false
+    },
+    {
+      "path": "assets/photos-readme.template.md",
+      "sha256": "ced0ff3d4c6f56c69f2af3c78c5540e695a8cecd72f99ecff0294cc79286220b",
+      "executable": false
+    },
+    {
+      "path": "assets/relationship-register.csv",
+      "sha256": "a17001c078e41053715cee57d49e04469c5a7ddb628b00693166479130e8e90a",
+      "executable": false
+    },
+    {
+      "path": "assets/report.template.html",
+      "sha256": "b0fd6722c7ad16b29dbbaad54a835c7b74bbdff2905ddf33e71c44f87fc08f48",
+      "executable": false
+    },
+    {
+      "path": "assets/research-state.template.md",
+      "sha256": "febf21eea0141fbdcbd57200cb5a5ea907e3203d5823cc233fdfde76142b5009",
+      "executable": false
+    },
+    {
+      "path": "assets/search-log.csv",
+      "sha256": "c9e343f2d01e51fff17e7fd6abd9c60ed949d255c3b834691fc612f17b3d4141",
+      "executable": false
+    },
+    {
+      "path": "docs/cover.jpg",
+      "sha256": "5d5b48135aa97a3b324c0cbd33838421add431ba6f5ee35bd28146c462bbca51",
+      "executable": false
+    },
+    {
+      "path": "evals/claim-dependence.yaml",
+      "sha256": "90b488f1fa002f0d9c286e790ca9bf4d9617e02f32ab53a3559e8f7285bd02d6",
+      "executable": false
+    },
+    {
+      "path": "evals/continuity-and-reader-tree.yaml",
+      "sha256": "9d159071792db9906198c3c8debd38390f7718ad00ac10238a180fa9b868419b",
+      "executable": false
+    },
+    {
+      "path": "evals/discovery-and-logic.yaml",
+      "sha256": "310cd24782ae980e7485233b41f33ef45f6f397e335585158a20a26c32f42ff0",
+      "executable": false
+    },
+    {
+      "path": "evals/gedcom-storage.yaml",
+      "sha256": "e479d6006b96af372ea9b0af6d99e9d5f9a4eab264cac974479f60ab9a63da15",
+      "executable": false
+    },
+    {
+      "path": "evals/marginal-notes.yaml",
+      "sha256": "69518f34824bb35428e98030dd73c939ae7cd985db6057cd0fa2a408c5c7ea5e",
+      "executable": false
+    },
+    {
+      "path": "evals/next-research-questions.yaml",
+      "sha256": "e6a077b7ea5d7623a0c53b6636440b755efc507f5a192d70746e98964c02581d",
+      "executable": false
+    },
+    {
+      "path": "evals/register-counts.yaml",
+      "sha256": "b18f5a0986c090056edeb07a11fdbca08a1b0bb8ffd06dcd2816c518037fb7f9",
+      "executable": false
+    },
+    {
+      "path": "evals/research-coordination.yaml",
+      "sha256": "7231c2c55137afeabbe69b8ef8a71988181440d3f4e12e6d67e57db7c8055642",
+      "executable": false
+    },
+    {
+      "path": "evals/search-validation.yaml",
+      "sha256": "64c2f115a996b9eacff52dfedeb6f3d2d6184f6ac51cb35a3d86a0848eafa7e0",
+      "executable": false
+    },
+    {
+      "path": "evals/source-acquisition.yaml",
+      "sha256": "ab11b627e6e03457957fa3970e8d46295e8a4c3b40875ea62b8ebdcf46e7fa85",
+      "executable": false
+    },
+    {
+      "path": "evals/tree-and-parish.yaml",
+      "sha256": "7f86d50159d571dabade22e6e487e2684e956facb645ea746b670fc74f318a9d",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "e741683284c4161a8a319d4bdf20d315994ccf6a53fe77f9121081506e0e1e4c",
+      "executable": false
+    },
+    {
+      "path": "README.az.md",
+      "sha256": "55ce55a70a68a5a1b2c3958bf93c79e9be1c7d4b1038d198f61b08c6d099919d",
+      "executable": false
+    },
+    {
+      "path": "README.be.md",
+      "sha256": "1687185c0dff79acfb7e08b2273a3d7801a69b8126eafeb31bf6360465b79276",
+      "executable": false
+    },
+    {
+      "path": "README.de.md",
+      "sha256": "939899fa862f14073aa283d6dcfde5e76c9908a730f6cca6a2653eaf057a5ad9",
+      "executable": false
+    },
+    {
+      "path": "README.et.md",
+      "sha256": "e1c0c1a0cd30ad9fdc2fea8efb3345b1e6011b143a64ce8beb6c884d0047ef4c",
+      "executable": false
+    },
+    {
+      "path": "README.hy.md",
+      "sha256": "03ce0e2978fc27ffd0da1887b6423eb737f7796478bd42f8b1ef76ccc869b016",
+      "executable": false
+    },
+    {
+      "path": "README.ja.md",
+      "sha256": "897344d0c5fd0f0c3a10ff1b7365445924f8d832e30946d715a9c53ebe5e148e",
+      "executable": false
+    },
+    {
+      "path": "README.ka.md",
+      "sha256": "15b30c678d3419e6fc0fd91b03102def64910f069dfe7656f3846a74c02472a8",
+      "executable": false
+    },
+    {
+      "path": "README.kk.md",
+      "sha256": "fcb49807df7c7eb80096c6b17417a2f1362b5ab21a05c28c942f5b25f9f623ed",
+      "executable": false
+    },
+    {
+      "path": "README.ky.md",
+      "sha256": "4ca8e419d77e48a7bcee4a56e8ad5af9b12f34f62860da4d855eff3f544d5cb6",
+      "executable": false
+    },
+    {
+      "path": "README.lt.md",
+      "sha256": "01d779517e20e887d24c733a9db9bb1a7dd8474cb28e937d0a9ac801b308de18",
+      "executable": false
+    },
+    {
+      "path": "README.lv.md",
+      "sha256": "0a3f1127c872e48ed2c737dbbc2a98d2b5c4a5e10fd2dbc42f1a7e7676a62adb",
+      "executable": false
+    },
+    {
+      "path": "README.md",
+      "sha256": "9deb84a9ef1e5a9c97b3d828f55318dfc78ba009c8f4cad1394b792a61b50f5e",
+      "executable": false
+    },
+    {
+      "path": "README.pl.md",
+      "sha256": "c4b1976093c77b0025e59c93b86e1353105e5d3ef9b117d608cf83f51ea81e2f",
+      "executable": false
+    },
+    {
+      "path": "README.ro.md",
+      "sha256": "0ad9f23bbf71cd0f5e8cac672af4739c10f90371eef1bcb9cb786aabf2057f46",
+      "executable": false
+    },
+    {
+      "path": "README.ru.md",
+      "sha256": "fea2ee4048aaf7877deeafb2fe7055ca482b596b360f54d03ce55bb5a61e9166",
+      "executable": false
+    },
+    {
+      "path": "README.tg.md",
+      "sha256": "cbb92265f89378e11d5a3d6757ac4bc54ccdf1cc17dad331a7662cbbd1e3e1df",
+      "executable": false
+    },
+    {
+      "path": "README.tk.md",
+      "sha256": "3bf70911a587974801d2025d7ee3146115bf926185c21ca3a099f52b427f89eb",
+      "executable": false
+    },
+    {
+      "path": "README.uk.md",
+      "sha256": "03a103a17ec25d6b4bd17f24338b1ca61785f0f9430aa79b87ba6f3adafbc1d8",
+      "executable": false
+    },
+    {
+      "path": "README.uz.md",
+      "sha256": "541fccdae2822075e57871b617a34976cc3b6a4f3f884be4d6d8fcefa6d39a7d",
+      "executable": false
+    },
+    {
+      "path": "references/armenia-south-caucasus.md",
+      "sha256": "5cdc788fc24e6bbb738f07f8f095fa1f18441dd234ed2d65130ad7dba6e3b367",
+      "executable": false
+    },
+    {
+      "path": "references/bessarabia-moldova.md",
+      "sha256": "ee0b855f45fe2e897a1d5e27c6aba2164cf6207355f05dd8e112c4ee7349c403",
+      "executable": false
+    },
+    {
+      "path": "references/browser-and-captcha.md",
+      "sha256": "19ade17022c5eb9734e2da05a2ba236a71b737ff56c9dba8ab201ce3f1ee9e57",
+      "executable": false
+    },
+    {
+      "path": "references/changelog.md",
+      "sha256": "1bf27b5c248395f9231e7af6fd5ab5f6eebc0500f329d36260de089218b05641",
+      "executable": false
+    },
+    {
+      "path": "references/chechnya-deportation.md",
+      "sha256": "7f533225514572b2c125fe51edfeff828001680458a880ba5e884f3eca96a491",
+      "executable": false
+    },
+    {
+      "path": "references/correspondence.md",
+      "sha256": "6de8d989b54bec35b71ce2419f56809c0caecea5f6bac481ab2290cc631bcf16",
+      "executable": false
+    },
+    {
+      "path": "references/evidence-protocol.md",
+      "sha256": "bdde2f6e73c8aeb595bae3a286c9129a1b74acbfd227d25f0be6f3452e506fab",
+      "executable": false
+    },
+    {
+      "path": "references/ex-ussr-locale-guide.md",
+      "sha256": "e8621194a9c7a9c0b1f1e5aa2f7153a13460aa8316a8b25dcb4a2d449057ca39",
+      "executable": false
+    },
+    {
+      "path": "references/familysearch-indexes.md",
+      "sha256": "832cfa2eba8343234ff1977cfb416e50863fe43b0e4b7d64e4c1b2a19b3b8a21",
+      "executable": false
+    },
+    {
+      "path": "references/familysearch-mcp.md",
+      "sha256": "1fbd0e4f0e3d1a9a551b555c9aa6bc07350ccd8e544c9f8ebaa3b5e3c4b41693",
+      "executable": false
+    },
+    {
+      "path": "references/field-lessons.md",
+      "sha256": "3b09d44afb6000a12698d2c49f460e44ac387c8155f3b50d65f772a730d0c3c5",
+      "executable": false
+    },
+    {
+      "path": "references/gedcom.md",
+      "sha256": "d6033578ef89b3e9a48ce3447d43ba9851bae048a80b7b84c260802d2b6bb630",
+      "executable": false
+    },
+    {
+      "path": "references/germany-forced-labour.md",
+      "sha256": "27f843ce6787c1d65a96553a12b176bc446ef538e3bbf02bea8d05f313d226b8",
+      "executable": false
+    },
+    {
+      "path": "references/government-portals.md",
+      "sha256": "1015cd563023c9e9427cdab11fa510e36a868a7a64c5b77a0162fa8f3bd312d9",
+      "executable": false
+    },
+    {
+      "path": "references/habsburg-galicia-bukovina.md",
+      "sha256": "4b021568decfcb30f2400b2de6ce57fde8afe5991f66311f2a7c6b29fba4d1cd",
+      "executable": false
+    },
+    {
+      "path": "references/metric-books-scans.md",
+      "sha256": "33bcb1f1564fb1a71db20f1ee759273f1e853b2570ec49fc7ef421c1b6efde00",
+      "executable": false
+    },
+    {
+      "path": "references/orenburg-chelyabinsk-verkhneuralsk.md",
+      "sha256": "095a44f4bc8d02038bec36e54de8f828f2ec2c30b5e1c2635d6a40289a949330",
+      "executable": false
+    },
+    {
+      "path": "references/photo-search.md",
+      "sha256": "a026cd219874c3b66755a2842bd3eab81a7639d00f2319abe754746317f7995c",
+      "executable": false
+    },
+    {
+      "path": "references/privacy-and-safety.md",
+      "sha256": "46248d6a7850ac3d402094fa346ca685833b28439e8b837d267c4b0b6a0b4e98",
+      "executable": false
+    },
+    {
+      "path": "references/regional-routes-mari-pavlodar-uzbekistan.md",
+      "sha256": "697c8e325a56a45316c373b570be11ace995584718366a29d970172b0972aecc",
+      "executable": false
+    },
+    {
+      "path": "references/relatives-interview.md",
+      "sha256": "2c694252c5882d5265234eaeca7c90a3a107e6d37beeab068e400d4c1d764bf1",
+      "executable": false
+    },
+    {
+      "path": "references/research-coordination.md",
+      "sha256": "36e0efd4fa6756262d1272edc3ecfcfea719ebf7a618e843e6604361483544de",
+      "executable": false
+    },
+    {
+      "path": "references/russia-records-access.md",
+      "sha256": "cb22311ac37406a209f336e22d1ee9578ee12053c029d8f89c93bdd4fdc2d3b4",
+      "executable": false
+    },
+    {
+      "path": "references/search-result-validation.md",
+      "sha256": "512cfa9dd5d00fa065e9a18923badc7b608ed1ba51259a7241f78121ac356735",
+      "executable": false
+    },
+    {
+      "path": "references/seed-sources.md",
+      "sha256": "e269a0cc75f35301c7ff0a5957c5649895e8c07650882b3bbfdf5516dd2e4b15",
+      "executable": false
+    },
+    {
+      "path": "references/source-strategy.md",
+      "sha256": "f45edb31c39e9860769bc3baae50ec9091e2876c512e599bf00349cf15a76090",
+      "executable": false
+    },
+    {
+      "path": "references/ww1-search.md",
+      "sha256": "d21fe66138e33ce4a3dc370d15a69ec1ac8f7a1382839631ab07f502e6c4dc12",
+      "executable": false
+    },
+    {
+      "path": "scripts/audit_evidence.py",
+      "sha256": "b89af9b5e3e9859326e3f1ce3b916cf1e81cc736ef2d49f55561b9a1ac217c41",
+      "executable": true
+    },
+    {
+      "path": "scripts/build_pdf.py",
+      "sha256": "70f45003f765cddc27c3ee84f6efd9dca79707e632b4296d322457ac449cd796",
+      "executable": false
+    },
+    {
+      "path": "scripts/ca/russian_trusted_root_ca.pem",
+      "sha256": "aa800ef345422d6158c6fafe1c06c429dbda21c3df4bb1ccb45a920ec1111399",
+      "executable": false
+    },
+    {
+      "path": "scripts/ca/russian_trusted_sub_ca.pem",
+      "sha256": "6f9d829c8e6712444fce3624658d8788672849c5d5b7b53fd9cf7e83eac4193e",
+      "executable": false
+    },
+    {
+      "path": "scripts/check_gedcom.py",
+      "sha256": "9bdba6be67602bcda7d09c9b920a529c8685e2fd8322dd73b39f597d86b610a4",
+      "executable": false
+    },
+    {
+      "path": "scripts/familysearch_browser.py",
+      "sha256": "9818dc7d3b8b3ce345c91346805895bce6ef7fd6f06ec6bb469db58ba4622f27",
+      "executable": false
+    },
+    {
+      "path": "scripts/familysearch.py",
+      "sha256": "33f4d1d17ae362a31710d485489a28edcc88457c81628e60349465f4a6bc4be0",
+      "executable": false
+    },
+    {
+      "path": "scripts/gwar.py",
+      "sha256": "f9bd86a3bcf8e08e6895661dd8cc3a9c68a433c08ae9405a13550b13e2049bde",
+      "executable": false
+    },
+    {
+      "path": "scripts/hash_artifact.py",
+      "sha256": "210a9ca330e4f8f5821d0751b9bb36f054d0a9dce9794876646b1045e2fb143c",
+      "executable": true
+    },
+    {
+      "path": "scripts/init_case.py",
+      "sha256": "62dd2c9bd69d19915ab05db23f3f2d626d62ca87e77a14280f1a76dd4e1f2a34",
+      "executable": true
+    },
+    {
+      "path": "scripts/register_search.py",
+      "sha256": "f1c13f9256ed3ab785018fa98abfd3f645c02a6b280fb7529d8e9f807f7cbc0f",
+      "executable": false
+    },
+    {
+      "path": "scripts/research_common.py",
+      "sha256": "8c6d25a5f795316ca9baf80aa624c6b5eb980813416c98d3bb019eab459af7eb",
+      "executable": false
+    },
+    {
+      "path": "scripts/scan_montage.py",
+      "sha256": "66bfa4b400236c1fd85125f0439f650599d9058292b9c31857d8ba6ccc1a58e1",
+      "executable": false
+    },
+    {
+      "path": "tests/test_audit_evidence.py",
+      "sha256": "b76cdac2b3f519dc443d7d71df1d63bd1875b32e03e74c4e539fb59510667dce",
+      "executable": false
+    },
+    {
+      "path": "tests/test_build_pdf.py",
+      "sha256": "161ebd743534dbecdafd5ab7e1ad7186fbb85d505c06faabff42c06a1b2af46f",
+      "executable": false
+    },
+    {
+      "path": "tests/test_cano_template.py",
+      "sha256": "b43dd642dd8bfbd59f8113f21b78d6766c72ae492fee9bafd12a7f4fb953b5f7",
+      "executable": false
+    },
+    {
+      "path": "tests/test_check_gedcom.py",
+      "sha256": "c19b7f01ce84ad1905931099d0d9d2b6f13249170bf577c3b25251d22e50d39c",
+      "executable": false
+    },
+    {
+      "path": "tests/test_familysearch_local.py",
+      "sha256": "f12d8b3d5de6f992e44fa3a09a8b260b5f50276887f98ed67c3404e8d9db94da",
+      "executable": false
+    },
+    {
+      "path": "tests/test_scan_montage.py",
+      "sha256": "b77a50462e76143bf2d7b241a8fb4e264750704a90c41bb7ec89f8be264eba73",
+      "executable": false
+    },
+    {
+      "path": "tests/test_source_search.py",
+      "sha256": "976751f63380bddfa17b12a00ff2451fedff8fbda3c5ac1057b4337ef9bb3a3d",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/ex-ussr-kinship-research"
+}

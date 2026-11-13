@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "name": "li-post",
+  "version": "add2c23882fe",
+  "source": {
+    "url": "https://github.com/Jakeschincariol/linkedin-agent-skill",
+    "commit": "add2c23882fe79180737d242ff80a5da205eda6a",
+    "sha256": "acfc8eadc47fee812f2dbaf8c97a93c313661d46963291bcbf8f154b065abee0",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Bộ 11 kỹ năng toàn diện cho AI agent vận hành tài khoản LinkedIn: viết bài từ ý tưởng thô theo 21 công thức hook đã được kiểm chứng, linter khử văn phong AI (loại bỏ em dash, từ sáo rỗng, ký tự ẩn watermark), chấm điểm hồ sơ cá nhân theo thang điểm 100, lập kế hoạch nội dung tuần và tối ưu tương tác bình luận.",
+    "aliases": [
+      "Quản lý LinkedIn",
+      "Viết nội dung LinkedIn",
+      "linkedin-agent-skill"
+    ],
+    "keywords": [
+      "li",
+      "post",
+      "Quản lý LinkedIn",
+      "Viết nội dung LinkedIn"
+    ],
+    "examples": [
+      "Dùng li-post cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "acfc8eadc47fee812f2dbaf8c97a93c313661d46963291bcbf8f154b065abee0"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

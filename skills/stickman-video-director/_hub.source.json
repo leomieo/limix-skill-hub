@@ -1,0 +1,16 @@
+{
+  "repository": "kaomei/stickman-video-director",
+  "commit": "8f11b951546db0ba994b7ad90718f046655f5132",
+  "path": null,
+  "verified": false,
+  "coreSha256": "b2c61b24ea4e43129157d1a7cff6aebda4c2e731c154ab3d8f0bd7b07c9362d6",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "b2c61b24ea4e43129157d1a7cff6aebda4c2e731c154ab3d8f0bd7b07c9362d6",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/stickman-video-director"
+}

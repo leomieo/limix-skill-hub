@@ -1,0 +1,26 @@
+{
+  "repository": "Jakeschincariol/linkedin-agent-skill",
+  "commit": "add2c23882fe79180737d242ff80a5da205eda6a",
+  "path": "skills/li-post",
+  "verified": true,
+  "coreSha256": "acfc8eadc47fee812f2dbaf8c97a93c313661d46963291bcbf8f154b065abee0",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "acfc8eadc47fee812f2dbaf8c97a93c313661d46963291bcbf8f154b065abee0",
+      "executable": false
+    },
+    {
+      "path": "hooks.json",
+      "sha256": "08988c9afae234199f51323c42baf2507101a4be2ba832384cf20f940972d712",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "857c8d5276809c8196b3cd7cb3300324768bfc562b2b6281b06d6865058e186c",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/linkedin-agent-skill"
+}

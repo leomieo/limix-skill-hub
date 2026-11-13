@@ -1,0 +1,71 @@
+{
+  "repository": "JuneYaooo/rea-video",
+  "commit": "ab8580e38a1255425b0d3b481866590766932079",
+  "path": "skills/rea-video",
+  "verified": true,
+  "coreSha256": "ee91eddc69cd38d52390499bc1c9dcd651c421bd5c07bbdc01fc41b56ef27b07",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "ee91eddc69cd38d52390499bc1c9dcd651c421bd5c07bbdc01fc41b56ef27b07",
+      "executable": false
+    },
+    {
+      "path": "references/audio.md",
+      "sha256": "1f94cea5abd453560e4197d56515d370dfdf78e9ce89b12dd81d8d247d08678c",
+      "executable": false
+    },
+    {
+      "path": "references/materials.md",
+      "sha256": "e44ae819ae919b23027ccd2c6a17651cf5b977fd4bbcb27c655d777e6566b566",
+      "executable": false
+    },
+    {
+      "path": "references/memory.md",
+      "sha256": "de908a27774bd3525ce8b31d0c904c26f0fe772f7e6d9fbebfacf191e967dd0b",
+      "executable": false
+    },
+    {
+      "path": "references/output-template.md",
+      "sha256": "37f2c009420e33b69d5ed8deda9f23846811d2d9f61391252b548e1577bc2ddd",
+      "executable": false
+    },
+    {
+      "path": "references/remake-tools.md",
+      "sha256": "dd877aa6f13fb7ccef62562438cf2c20f9a401ba0974ca849aa5b4816060fb7b",
+      "executable": false
+    },
+    {
+      "path": "references/remake.md",
+      "sha256": "47f5904a3042866160ea3b370c28ca6dcbdc8a364cf495941176ee1574ff6280",
+      "executable": false
+    },
+    {
+      "path": "references/review.md",
+      "sha256": "92633fefae4022153109c55505d703dec63630a5b2d8a92294925c92b02cafd1",
+      "executable": false
+    },
+    {
+      "path": "references/setup.md",
+      "sha256": "737095ce4e9df2cf80e95ad2138cb66bf85581bfe630a19ee7f51bc1dfe6ad09",
+      "executable": false
+    },
+    {
+      "path": "references/taxonomy.md",
+      "sha256": "3953e3be2e9276244a928e7c49f37e603fc9f5317f417f97d8faa301319a661d",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "2beb280b855389587b12dfda5f61a7baf09d1c4a20aac833b1c96f9569c5e458",
+      "executable": false
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "abffceeef67cb20d0fd6cf997eec7c7ac4b2de19f389a08b67a1f75bc7dd025b",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/rea-video"
+}

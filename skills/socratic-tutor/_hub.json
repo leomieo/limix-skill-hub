@@ -4,5 +4,12 @@
   "createdAt": "2026-11-03T16:50:21Z",
   "pushedAt": "2026-11-03T18:14:13Z",
   "statsCheckedAt": "2026-11-13",
-  "license": "MIT"
+  "license": "MIT",
+  "commit": "7c6715c29548a3b39d4a9545c698ee4fd17a7213",
+  "path": "socratic-tutor",
+  "language": "hybrid",
+  "version": "7c6715c29548",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-13T09:22:43.610Z"
 }

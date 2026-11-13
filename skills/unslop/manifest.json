@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "name": "unslop",
+  "version": "97daa3eb3656",
+  "source": {
+    "url": "https://github.com/heydamir/unslop",
+    "commit": "97daa3eb365670ea3f87ed85356cbfcee18105a5",
+    "sha256": "19afd7f1841316ddff3f854ea8ead675c738e08b30c41e51a8f1822fa0111947",
+    "license": "CC-BY-4.0"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Skill sửa UI \"vibe-coded\" (nhìn là biết AI làm) thành giao diện có cá tính: quét tìm dấu vết slop (gradient tím, glow, nhãn emoji, chữ la hét, giãn cách không đều), đề xuất hướng thiết kế từ chính sản phẩm của bạn, rồi chỉnh màn hình theo từng pass (spacing → màu → icon → copy → chữ → layout → chi tiết → visuals → motion). Chạy được trên Next.js, React, Vue, Svelte, Tailwind, HTML/CSS thuần, kể cả website trực tiếp qua link; kèm tính năng quay video \"story\" dưới 10 giây.",
+    "aliases": [
+      "Duyệt thẩm mỹ giao diện",
+      "Loại bỏ thiết kế sáo rỗng"
+    ],
+    "keywords": [
+      "unslop",
+      "Duyệt thẩm mỹ giao diện",
+      "Loại bỏ thiết kế sáo rỗng"
+    ],
+    "examples": [
+      "Dùng unslop cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "19afd7f1841316ddff3f854ea8ead675c738e08b30c41e51a8f1822fa0111947"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "review-required",
+    "findings": [
+      "references/refs/beacon-engraving.webp: binary-file (low)",
+      "references/refs/meadow-3d.webp: binary-file (low)",
+      "references/refs/story-dashboard-frames.webp: binary-file (low)",
+      "references/refs/unslop-dashboard-after.webp: binary-file (low)",
+      "references/refs/unslop-hero-after.webp: binary-file (low)"
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

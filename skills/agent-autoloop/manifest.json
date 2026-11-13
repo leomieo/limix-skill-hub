@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "name": "agent-autoloop",
+  "version": "c9ec4a187cab",
+  "source": {
+    "url": "https://github.com/KKKKhazix/agent-autoloop",
+    "commit": "c9ec4a187cab49627947e7e33db265ec143db3b8",
+    "sha256": "a00520304f9a961d0f56d256646f91682bddf684690f7f519c3bf6947b9e5900",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Cấu hình trung tâm tự động hóa cho AI Agent: thiết lập quy tắc, tích hợp webhook sự kiện (GitHub, cảnh báo ops, hệ thống nội bộ), điều phối agent nền, định tuyến thông báo và thẻ tương tác phê duyệt (Feishu, DingTalk, QQ, desktop notification), theo dõi token và chi phí.",
+    "aliases": [
+      "Tự động hóa tác vụ",
+      "Lịch chạy agent"
+    ],
+    "keywords": [
+      "agent",
+      "autoloop",
+      "Tự động hóa tác vụ",
+      "Lịch chạy agent"
+    ],
+    "examples": [
+      "Dùng agent-autoloop cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "a00520304f9a961d0f56d256646f91682bddf684690f7f519c3bf6947b9e5900"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "network"
+  ],
+  "syncedAt": "2026-11-13T09:14:21.544Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "SKILL.md: pipe-to-shell (high)",
+      "SKILL.md: exe-download (medium)"
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

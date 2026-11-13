@@ -4,5 +4,12 @@
   "createdAt": "2026-10-29T15:41:21Z",
   "pushedAt": "2026-11-08T21:18:33Z",
   "statsCheckedAt": "2026-11-13",
-  "license": "CC-BY-4.0"
+  "license": "CC-BY-4.0",
+  "commit": "97daa3eb365670ea3f87ed85356cbfcee18105a5",
+  "path": "skills/unslop",
+  "language": "hybrid",
+  "version": "97daa3eb3656",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-13T09:22:43.610Z"
 }

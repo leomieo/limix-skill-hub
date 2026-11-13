@@ -1,0 +1,16 @@
+{
+  "repository": "rehan-remade/universal-modder",
+  "stars": 9660,
+  "createdAt": "2026-09-30T05:00:35Z",
+  "pushedAt": "2026-11-13T06:27:22Z",
+  "statsCheckedAt": "2026-11-13",
+  "license": "MIT",
+  "commit": "3c4ac6c38e411b8c543bce217eae197039516bfc",
+  "path": ".agents/skills/mod-any-game",
+  "language": "hybrid",
+  "version": "3c4ac6c38e41",
+  "hybrid": true,
+  "legacyId": "universal-modder",
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-13T09:22:43.610Z"
+}

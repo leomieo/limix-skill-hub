@@ -1,0 +1,16 @@
+{
+  "repository": "Jakeschincariol/linkedin-agent-skill",
+  "stars": 3522,
+  "createdAt": "2026-09-07T22:58:16Z",
+  "pushedAt": "2026-09-17T11:27:52Z",
+  "statsCheckedAt": "2026-11-13",
+  "license": "MIT",
+  "commit": "add2c23882fe79180737d242ff80a5da205eda6a",
+  "path": "skills/li-post",
+  "language": "hybrid",
+  "version": "add2c23882fe",
+  "hybrid": true,
+  "legacyId": "linkedin-agent-skill",
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-13T09:22:43.610Z"
+}

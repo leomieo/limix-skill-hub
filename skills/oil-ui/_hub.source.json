@@ -1,0 +1,274 @@
+{
+  "repository": "oil-oil/oil-ui",
+  "commit": "28948c3d88e5d141fa0e943ff385560c5ffba979",
+  "path": "",
+  "verified": true,
+  "coreSha256": "ad6b97b768384b43d2a12cfbb431db0a70572466bb44256249365419d09eed91",
+  "skipped": [
+    ".github/workflows/tests.yml",
+    ".gitignore"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "ad6b97b768384b43d2a12cfbb431db0a70572466bb44256249365419d09eed91",
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/instrument-serif/InstrumentSerif-Regular.ttf",
+      "sha256": "498efd461f6ddfcb7a111bf9a565709d2085d48201d501ead960d93e84ffbb88",
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/instrument-serif/OFL.txt",
+      "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521",
+      "executable": false
+    },
+    {
+      "path": "assets/logo.png",
+      "sha256": "35f58a88e195bf4472e2f0fc795122fb9396464cbb3f0d7a2cb639b6c004f972",
+      "executable": false
+    },
+    {
+      "path": "assets/readme/hero.en.webp",
+      "sha256": "153da056bab4c8d489b4b7d36a129485fa94f57eeb1355a6203b2aac12f3ef7a",
+      "executable": false
+    },
+    {
+      "path": "assets/readme/hero.webp",
+      "sha256": "bca34c2ca0b7a7bee550fb47ee6b09391c56152b06e517a2ddd97f10868eaff6",
+      "executable": false
+    },
+    {
+      "path": "assets/readme/proof-mona-lisa.webp",
+      "sha256": "8c0933fa041f13fcf29dd1b64020e935f9e51f5f1d9eca7c33be3138fb303199",
+      "executable": false
+    },
+    {
+      "path": "assets/readme/proof-van-gogh.webp",
+      "sha256": "620a97a9b70fcc5c8304d72e68c9fe8313e2e90fdc836ef10604ce0a6eb094aa",
+      "executable": false
+    },
+    {
+      "path": "assets/readme/showcase.en.webp",
+      "sha256": "ea71ae0ab3ef12f4e4c4a61d49833792b71e93f830b4ef1ff8ab22311cf010c1",
+      "executable": false
+    },
+    {
+      "path": "assets/readme/showcase.webp",
+      "sha256": "92058c5846515a9c6073578fc683808208ac9af880993f9223c248198afa7071",
+      "executable": false
+    },
+    {
+      "path": "assets/style-explorer.html",
+      "sha256": "910bbc6ed3e4a8bf92bd24883ac87b400f346fe146f2deafd8eee2ce38b4962e",
+      "executable": false
+    },
+    {
+      "path": "assets/vendor/alpine.min.js",
+      "sha256": "1d8911c7b8a55bd0ceb79896251ca00d575915e2cd4348e8007a850e59ba0dc0",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "d44a3ca218007a85d3be41a0b76553d746e42336c7a63c6c6687d2619199c3c4",
+      "executable": false
+    },
+    {
+      "path": "README.en.md",
+      "sha256": "eff7f4b9a1debe1d98e8b8e5dceecac4c039c0450119e82f0f0d93135310e675",
+      "executable": false
+    },
+    {
+      "path": "README.ja.md",
+      "sha256": "793a7401161c7e9d7f2771f06331ea5a8a5bf635c5289639da437468ad7eaec4",
+      "executable": false
+    },
+    {
+      "path": "README.md",
+      "sha256": "cbcbb7cbb3799d8e97e9691ba0371cf63fa3797a72afa8b57509bcc6e8c96d55",
+      "executable": false
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha256": "07e6e2a095b7c109d5842702be701247678a5c718c0460f0522016fad5293b43",
+      "executable": false
+    },
+    {
+      "path": "references/design-direction.md",
+      "sha256": "6cd52ca6beb0f0ff542a8c59164d6f94ac20346f556e8c3e5aa18dc9bde3421a",
+      "executable": false
+    },
+    {
+      "path": "references/direction-persuasion.md",
+      "sha256": "f229766bf763be2628c50ce9045c052d87018ffc91aea4a7964eb8a215cd146c",
+      "executable": false
+    },
+    {
+      "path": "references/image-ideation.md",
+      "sha256": "b26066c5d92e3044cf298870432f2733d4f4949f2a8e250e11e5b7958c674e7e",
+      "executable": false
+    },
+    {
+      "path": "references/layout-and-viewport.md",
+      "sha256": "18385f506a894025175a6f1f47e0d759eab09f603e1bbacccce44fea20a857be",
+      "executable": false
+    },
+    {
+      "path": "references/media.md",
+      "sha256": "ce83a8992a8bdde1688f1ed5794761a183f8680b7748ea3ddbd589b56ca4dafa",
+      "executable": false
+    },
+    {
+      "path": "references/motion.md",
+      "sha256": "d4bb6feb692b86812d459534d1f443c500dbc953ee5273db17108067aab91f76",
+      "executable": false
+    },
+    {
+      "path": "references/play.md",
+      "sha256": "1785dd9eb73525631dcc516b7be45ba9676eb298742495615f6db67d1dd4baf5",
+      "executable": false
+    },
+    {
+      "path": "references/reviewer-manual.md",
+      "sha256": "7448a7887e5b04d1a817d0beb48e01ddfe534b5934692bba88ea1474c44276f8",
+      "executable": false
+    },
+    {
+      "path": "references/scroll-narrative.md",
+      "sha256": "568faf68eb4ae2fd5cf7e35d8caa055ccd352c787488caa1e1d41985f9edf8d2",
+      "executable": false
+    },
+    {
+      "path": "references/style-explorer.md",
+      "sha256": "3e2dc3c1c0c0e4544a0b12688490bcf42c04a63339857b06e6dbd2e13dc4e65c",
+      "executable": false
+    },
+    {
+      "path": "references/task-explore.md",
+      "sha256": "07a853988b844033b55c4fd386de30acd663279c5548ac483f9203e4cce7508d",
+      "executable": false
+    },
+    {
+      "path": "references/task-review.md",
+      "sha256": "f7aa2861f851ebeb378cca45ab7a29eb2f46da089a53c656497dd9ee35cfe869",
+      "executable": false
+    },
+    {
+      "path": "references/tools.md",
+      "sha256": "4b16bf320884ed2ad0281952d2dbfd43632bd0f371046e1b72aacd808f93096c",
+      "executable": false
+    },
+    {
+      "path": "references/ux-review.md",
+      "sha256": "1cfc3eafaf90a53170a9de375a5dee56ecb656dfc4a174fc95f2ebbf084b0b17",
+      "executable": false
+    },
+    {
+      "path": "references/ux-reviewer.md",
+      "sha256": "aafc0753939c06591d5078b066a89d8fe15bc539022b82b9778348a600b119fc",
+      "executable": false
+    },
+    {
+      "path": "references/visual-language.md",
+      "sha256": "667ee3bdfcfbed643cc230171dca28a45e3e5d93002634f364d0683dd9b7faea",
+      "executable": false
+    },
+    {
+      "path": "references/visual-review.md",
+      "sha256": "27f4ff47c93741c72004769097c871b6cfb351659b36a54f43efa83c8578d55f",
+      "executable": false
+    },
+    {
+      "path": "references/workdir.md",
+      "sha256": "8f56ed917e9784565c06e236bb783a8d7d644830daf67f27b2f3eff87ed0ca94",
+      "executable": false
+    },
+    {
+      "path": "scripts/build_explorer.py",
+      "sha256": "a48d3cc52a0b273b8cdb84f2d29224c31e22f0e07c0ac0c56119d86f38788dd3",
+      "executable": false
+    },
+    {
+      "path": "scripts/check_update.py",
+      "sha256": "a50605dbf50c1bc7226dc7801aa53acac2dbfacaa5b1e75beba2adb3f3d30b16",
+      "executable": true
+    },
+    {
+      "path": "scripts/check_update.sh",
+      "sha256": "eeebaf44eb29d61784690e09e0d8d306a44ca2a3025c48a42928b7ac7174d7d4",
+      "executable": true
+    },
+    {
+      "path": "scripts/chrome.mjs",
+      "sha256": "dcdc40740e541c97dc467f28f3430edc632469545504fdc165f633383ea01de3",
+      "executable": false
+    },
+    {
+      "path": "scripts/curate-media.mjs",
+      "sha256": "2bc60a4bd761b7082ac17d0d3e2d4bc1d4630cf763138e9f3bd291d6ceb3bdf4",
+      "executable": false
+    },
+    {
+      "path": "scripts/measure_reference.py",
+      "sha256": "7a10a0f87c2b1434d5047dea1903e7b0ec324ba539c68a448c0808c3a2aac536",
+      "executable": false
+    },
+    {
+      "path": "scripts/oiloil-image.mjs",
+      "sha256": "9def8ef07485436207db85a97f4a8b2a5b8ccd7b3d381547834cfcb7ed6d0164",
+      "executable": true
+    },
+    {
+      "path": "scripts/prep-image.mjs",
+      "sha256": "e886cb55c3e8e99317793fb53bc33aef1bfe4511c2c3aef66de6b48bdf107782",
+      "executable": true
+    },
+    {
+      "path": "scripts/shoot.mjs",
+      "sha256": "4f2d7b3db32d186f8270c9ad73babfae25d42b8e1b63b4cb5f9148a355e10e4a",
+      "executable": false
+    },
+    {
+      "path": "tests/test_build_explorer.py",
+      "sha256": "79bf92ffe465186289ec3de77fa632c6cda15954ad75f72a450be57b2928f6a9",
+      "executable": false
+    },
+    {
+      "path": "tests/test_check_update.py",
+      "sha256": "dc07e776739c5feafa62a580881c132d7a1914da7bbecb2625d807f7069f68f9",
+      "executable": false
+    },
+    {
+      "path": "tests/test_curate_media.py",
+      "sha256": "20244105f024df559569c56caae0977af50d15c4eeee2fc9571e66000fd1981d",
+      "executable": false
+    },
+    {
+      "path": "tests/test_measure_reference.py",
+      "sha256": "a16ebe5ea0b4321d22267f61e5cbea92e30fc79513a626bac7678ec36333b9ce",
+      "executable": false
+    },
+    {
+      "path": "tests/test_oiloil_image.py",
+      "sha256": "a59a0e0cb66bcff4c81472c18e220cf5c07efea5b94ab78cb1115eda672c7c15",
+      "executable": false
+    },
+    {
+      "path": "tests/test_prep_image.py",
+      "sha256": "ac182cfd9869574bca5ca64694578b9344c9b181597e06090e7135a22ec74a20",
+      "executable": false
+    },
+    {
+      "path": "tests/test_shoot.py",
+      "sha256": "aa98f2a01818a50b38694582a7b411a54b8c7c6399ed9eb649413b50a411b377",
+      "executable": false
+    },
+    {
+      "path": "tests/test_workdir.py",
+      "sha256": "05b252138f0eef0c8c06911ddd910ad4d2b9886c49a442ee62d8543b216f927a",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/oil-ui"
+}

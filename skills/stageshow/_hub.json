@@ -4,5 +4,12 @@
   "createdAt": "2026-10-26T06:08:56Z",
   "pushedAt": "2026-11-05T03:34:26Z",
   "statsCheckedAt": "2026-11-13",
-  "license": "MIT (stageshow/LICENSE trong repo)"
+  "license": "MIT (stageshow/LICENSE trong repo)",
+  "commit": "299140fafd08df55a9c234e610c3f64af3f45531",
+  "path": "stageshow",
+  "language": "hybrid",
+  "version": "299140fafd08",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-13T09:22:43.610Z"
 }

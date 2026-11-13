@@ -1,0 +1,16 @@
+{
+  "repository": "NiazMorshed2007/reanimate",
+  "commit": "3f7a55a2986a84ca2173e86ee9127eefe31d046d",
+  "path": null,
+  "verified": false,
+  "coreSha256": "9af29da87f816f4ca637e076909e94fce670ac964535bd9da03c3ad128bd4791",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "9af29da87f816f4ca637e076909e94fce670ac964535bd9da03c3ad128bd4791",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/reanimate"
+}

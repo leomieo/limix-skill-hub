@@ -1,0 +1,26 @@
+{
+  "repository": "lemomo-ai/lemo-opuscar",
+  "commit": "3a7132b996be0241c1ea0ab180d519f06e6f10b6",
+  "path": "plugin/skills/lemo-opuscar",
+  "verified": true,
+  "coreSha256": "17c2f1c2a337becf28ec1e23eec46b42a6f0ffa2691b40d8b97b35d043b79f65",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "17c2f1c2a337becf28ec1e23eec46b42a6f0ffa2691b40d8b97b35d043b79f65",
+      "executable": false
+    },
+    {
+      "path": "scripts/setup.sh",
+      "sha256": "6b5e39efe99e42d671edb365e11b89d065ccda7188a45e81fe5757f5f46661be",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "aee72797af4389583c0f531f7fc89c87c87cb939bdba43d888926dd8aaea8d26",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/lemo-opuscar"
+}

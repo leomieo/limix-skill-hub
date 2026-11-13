@@ -1,40 +1,41 @@
 ---
 name: youtube-agent-skill
-description: "Vận hành kênh YouTube toàn diện cho AI Agent: viết kịch bản video từ ý tưởng thô với 21 công thức hook chấm điểm tự động, kiểm duyệt ghép đôi tiêu đề và thumbnail tránh trùng lặp/cắt cụt, đọc tệp xuất retention để tìm điểm rơi người xem, tạo bảng quyết định dựng (EDL) từ bản ghi âm, tự động phát hiện và cắt Shorts từ video dài, cùng linter SEO chuẩn YouTube."
+description: Eleven Claude skills that run a YouTube channel. Scripts off 21 hook formulas with a scored hook, title and thumbnail linted as one pairing, an edit decision list from your transcript, a retention reader that finds where viewers actually leave, a Shorts cutter, and a virality engine.
 ---
 
-# youtube-agent-skill: Bộ kỹ năng vận hành kênh YouTube cho Agent
+# The YouTube agent skill
 
-Bộ kỹ năng gồm 11 module chuyên sâu và 6 công cụ Python chạy cục bộ không cần API bên ngoài, hỗ trợ sáng tạo và tối ưu hóa nội dung YouTube từ kịch bản đến đóng gói.
+Eleven Claude skills that run a YouTube channel. Free, MIT, no signup, no API key, nothing to connect.
 
-## Các module chức năng
+One of them writes your script off 21 hook formulas and scores the hook before you waste a take on it. One lints the title and the thumbnail as a single pairing, because writing them separately is why half of your click surface says the same thing twice. One reads your audience-retention export and tells you the exact second people left and what you were saying when they did. One turns a transcript into an edit decision list. One finds the Shorts already hiding inside a long video. One goes and finds what is working in your niche and ranks it by how far each video beat its own channel, not by how big the channel is.
 
-1. **Kịch bản & Hook (`/yt-script`):**
-   - Chuyển ý tưởng thô thành kịch bản hoàn chỉnh.
-   - Sinh 5 lựa chọn hook mở đầu dựa trên 21 công thức tâm lý học đã được kiểm chứng.
-   - Chấm điểm hook tự động bằng công cụ `hookscore.py` (đo thang điểm 5 tiêu chí: tò mò, tốc độ, tính cụ thể, độ cản trở, lời hứa hẹn).
+**Nothing gets published until you do it.** These skills write. You upload.
 
-2. **Đóng gói Tiêu đề & Thumbnail (`/yt-package`):**
-   - Đánh giá tiêu đề và hình thu nhỏ (thumbnail) như một cặp bài trùng duy nhất.
-   - Kiểm tra lỗi cắt chữ trên thiết bị di động, lỗi lặp từ giữa chữ trên ảnh và tiêu đề, cảnh báo tính mơ hồ.
+## The eleven skills
 
-3. **Biên tập & Dựng phim (`/yt-edit`):**
-   - Phân tích tệp phụ đề/bản ghi âm (`.srt`) để trích xuất Edit Decision List (EDL).
-   - Phát hiện khoảng lặng thừa (dead air), từ đệm lặp lại, các đoạn quay lỗi cần cắt bỏ kèm mã thời gian (timecode).
+| command | what it does |
+| --- | --- |
+| `/yt-script` | One idea into a script. Five hooks off 21 formulas, scored, then the spoken script with the retention beats marked. |
+| `/yt-package` | Title and thumbnail as one pairing, linted for truncation, duplication and vagueness. |
+| `/yt-edit` | A transcript into an edit decision list: dead air, filler cues, retakes, with timecodes. |
+| `/yt-comment` | The comment section triaged into four piles, then replies in your voice. Says which one to pin. |
+| `/yt-plan` | A week that fits the hours you actually have. One anchor, one cheap one, three Shorts. |
+| `/yt-viral` | What is working in your niche, ranked by multiple over each channel's own median. |
+| `/yt-retention` | Your retention export read properly: hook leak, the cliffs, the slide, and what to change. |
+| `/yt-shorts` | The Shorts already inside a long video, with a new first line written for each. |
+| `/yt-seo` | The description, the tags that are worth having, and the three queries this should win. |
+| `/yt-chapters` | Chapters from a transcript, validated against YouTube's own rules so they render. |
+| `/yt-audit` | The whole channel, ending in ONE fix rather than twenty. |
 
-4. **Phân tích Giữ chân Người xem (`/yt-retention`):**
-   - Đọc dữ liệu giữ chân (`retention.csv`) từ YouTube Studio.
-   - Chỉ ra chính xác giây người xem rời đi, nội dung đang nói tại thời điểm đó và nguyên nhân (sụt giảm hook, vách đá cliff, trượt dốc slide).
+## The six local tools
 
-5. **Khai thác Video ngắn (`/yt-shorts`):**
-   - Tự động dò tìm các phân đoạn đắt giá trong video dài có khả năng viral độc lập.
-   - Viết lại câu mở đầu cuốn hút riêng cho từng clip ngắn.
+Every one of these runs on a clean Python 3 with no dependencies:
 
-6. **Chiến lược Kênh (`/yt-plan`, `/yt-viral`, `/yt-audit`):**
-   - Lập lịch phát hành hàng tuần phù hợp quỹ thời gian thực tế.
-   - Quét xu hướng nội dung trong ngách thị trường, xếp hạng video đột phá theo tỷ lệ vượt trội so với trung bình kênh gốc.
-   - Kiểm toán toàn diện kênh để đưa ra DUY NHẤT một giải pháp trọng tâm cải thiện hiệu suất.
-
-## Nguyên tắc an toàn
-- Agent chỉ tạo nội dung, kịch bản và dữ liệu phân tích. Quyền tải lên và xuất bản do người dùng trực tiếp thực hiện.
-- Công cụ chỉ đọc dữ liệu cục bộ hoặc công khai, không yêu cầu mật khẩu hay khóa tài khoản.
+```bash
+python3 skills/yt-script/hookscore.py --hook "one line"        # 5-property hook panel
+python3 skills/yt-package/title.py --title "..." --thumb "..." # title + thumbnail linter
+python3 skills/yt-edit/deadair.py transcript.srt               # edit decision list
+python3 skills/yt-chapters/chapters.py transcript.srt          # validated chapters
+python3 skills/yt-retention/retention.py retention.csv         # where they left, and why
+python3 skills/yt-viral/swipe.py collected.json --min 2.0      # outliers by own-channel multiple
+```

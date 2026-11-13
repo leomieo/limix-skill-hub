@@ -1,0 +1,26 @@
+{
+  "repository": "patch-gg/pixelfx",
+  "commit": "5294518ce7c72e48b6100a744596e0acf57f2826",
+  "path": "skills/pixelfx",
+  "verified": true,
+  "coreSha256": "b8210917cf4218fbc7d64a07ec4eed4b7888981df3a0224a4681f3547e0f09c5",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "b8210917cf4218fbc7d64a07ec4eed4b7888981df3a0224a4681f3547e0f09c5",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "0a77565a50c3462831244452f129c38d2adc4fd07897cbeba8adc943f958604e",
+      "executable": false
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "d12932473f98b1a3f0b5820ae23d568b52e39294ba7c2d60c0649a93a808af3b",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/pixelfx"
+}

@@ -1,0 +1,613 @@
+{
+  "repository": "DUNHKpcc/Claude-Guardian",
+  "commit": "ec53265c84131e26b7097498a5fe0680fdeffed7",
+  "path": "skills/claude-guardian",
+  "verified": true,
+  "coreSha256": "0e98327c2ff1326d3ca2a493403b56d38e155a160b1732e80c99e344554a4246",
+  "skipped": [
+    "sources/vps-recommendations/home-aaitr.pdf"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "0e98327c2ff1326d3ca2a493403b56d38e155a160b1732e80c99e344554a4246",
+      "executable": false
+    },
+    {
+      "path": "assets/killswitch/config.example.json",
+      "sha256": "c3a74041d937cb8d0bd5ce2e3fb027cf8eb652dc2fc17491a0c4f1105d9e6a5a",
+      "executable": false
+    },
+    {
+      "path": "assets/killswitch/icon.icns",
+      "sha256": "de67b2a9b916407ef6fe13dd2e6555b8fcb52d00216c798161c00ca92f6a1243",
+      "executable": false
+    },
+    {
+      "path": "assets/killswitch/icon.ico",
+      "sha256": "9179778011500040e0ededf8b769e345ed6648447d4428e13c75aa2ec482b7a9",
+      "executable": false
+    },
+    {
+      "path": "assets/killswitch/icon.png",
+      "sha256": "2c3b17ffcac7aceafac78d712e5f58ffde820bbea3f21eb1cd21387feedbfc6e",
+      "executable": false
+    },
+    {
+      "path": "assets/killswitch/icon.svg",
+      "sha256": "98ae02ebf6509c82b7ed5976bf4eea44a8b8a581a67600c39c9209db793e32c6",
+      "executable": false
+    },
+    {
+      "path": "assets/killswitch/switch.css",
+      "sha256": "9dbda69560a2c44bd0d35da5edab38ff167898f7c0a8899aaa8b7c36355342b8",
+      "executable": false
+    },
+    {
+      "path": "assets/killswitch/switch.html",
+      "sha256": "4098e1bdc118611fea450f51f19d22d6cceeda1ce6fa7b2127aecf793fd811d4",
+      "executable": false
+    },
+    {
+      "path": "assets/killswitch/switch.js",
+      "sha256": "ca715ea99e3618983bab15a64708b3fb10dad47758a753514d9db46f64d1e2c6",
+      "executable": false
+    },
+    {
+      "path": "assets/killswitch/windows-network-transaction.ps1",
+      "sha256": "655db264d6d35160c7a5eada4eba7498c3e90045cd27cdd8c081e25aed3ffe49",
+      "executable": false
+    },
+    {
+      "path": "assets/killswitch/windows-switch.ps1",
+      "sha256": "735a68259cb6d0cb39681ed15b4ee95fed6a3914d663fd1112763d3a7dab06e1",
+      "executable": false
+    },
+    {
+      "path": "assets/mac-killswitch/guardian-pf-killswitch.sh",
+      "sha256": "4d12f4333f85a675ce1eb8040e918ebd40bb3d1e92b2a03296657bb49cbbd96f",
+      "executable": true
+    },
+    {
+      "path": "assets/remote-hardening/flclash-crash-heal.sh",
+      "sha256": "489bc8e4b0d8c78971661b436f2290d8df087972c58b27de8563966013bd146c",
+      "executable": true
+    },
+    {
+      "path": "assets/remote-hardening/install-reverse-tunnel.sh",
+      "sha256": "f919f5b40cf441722615e112aff893e7620d7339c32bb3811cc2d8e25d86afe5",
+      "executable": true
+    },
+    {
+      "path": "assets/vm-killswitch/enable-guest-ssh.sh",
+      "sha256": "77457c3849c185c9a664cc5b5116d9c10097eb0f8bb3d4f4bfc0781298f4c296",
+      "executable": false
+    },
+    {
+      "path": "assets/vm-killswitch/install-flclash-killswitch.sh",
+      "sha256": "be66fceafe1a6aa3bcc16fd0b9fc720d08ae3e9fb457549ccde616b8e1ad26c5",
+      "executable": false
+    },
+    {
+      "path": "assets/vm-killswitch/install-flclash-tun.sh",
+      "sha256": "273b81e18c93870cdb7ad3072666d10d980f8abcea74d7740698eccdc1540268",
+      "executable": false
+    },
+    {
+      "path": "assets/vps-firewall/vps-guard.sh",
+      "sha256": "0039a27b6d9693144bd1661e0b838fbc4c0b7d5dd12e134edc77e9081b00a4f4",
+      "executable": false
+    },
+    {
+      "path": "assets/webrtc-probe.html",
+      "sha256": "42e38e25a2a53a04d194334134a7833d7e63e11acd82f647a9bc04f44dd4980b",
+      "executable": false
+    },
+    {
+      "path": "references/account-onboarding.md",
+      "sha256": "db2872cb24abb3763b3d6564b75a49f22b851ce4d577431a975e61e1f0c49efd",
+      "executable": false
+    },
+    {
+      "path": "references/accounts-and-payments.md",
+      "sha256": "499eaf7c9cdf877c5efd78802a30ec162d497e81a2dfaf88482e3325182bf3bc",
+      "executable": false
+    },
+    {
+      "path": "references/advanced-route.md",
+      "sha256": "778136aa845e713b2887979a886d33e0808ffc09316acac00b91e0c4be4dfd97",
+      "executable": false
+    },
+    {
+      "path": "references/agent-on-target.md",
+      "sha256": "ee31f4e07fe3ffdeff77cb44f2747ff4a8868c648e8955624846023bd492f737",
+      "executable": false
+    },
+    {
+      "path": "references/agent-remediation.md",
+      "sha256": "dda49c8046028cc76ac20243649549c85730ec79812cb6465270dedbbd020a02",
+      "executable": false
+    },
+    {
+      "path": "references/agent-rules-task.md",
+      "sha256": "afb2acb929422a3044fd8a7a7acbe9898a8980a752dabc9d2c660281ab9751f0",
+      "executable": false
+    },
+    {
+      "path": "references/authorization-tiers.md",
+      "sha256": "ebab5d4482bc15d4442587665bd26b7ac70a799ef525fcdf07d61456a537048b",
+      "executable": false
+    },
+    {
+      "path": "references/ban-appeal.md",
+      "sha256": "686f29b40636dab7be27529c69120c727278c0f40556c28067203374101aab5a",
+      "executable": false
+    },
+    {
+      "path": "references/cleanup-cli-usage.md",
+      "sha256": "f7b05189d4208fe09f1f531bcf048932b9d6108239eaa682e930e655433b6025",
+      "executable": false
+    },
+    {
+      "path": "references/contact-and-safety.md",
+      "sha256": "b0cf376e4575ff0fa57a15fcab9c53b43cc5d5f08111247230c7dd223baa4db6",
+      "executable": false
+    },
+    {
+      "path": "references/egress-ip-options.md",
+      "sha256": "2753a020ddc2644ac4b7e870f10006b66db37630feec370a8179b69f39079086",
+      "executable": false
+    },
+    {
+      "path": "references/evidence-policy.md",
+      "sha256": "7f98706dcd4eae8a81aac89423031a4e41a552534bd7b27a6c504d4a73f91a58",
+      "executable": false
+    },
+    {
+      "path": "references/exit-consistency.md",
+      "sha256": "dc82349aed5842c2d235d00fac4af320562bcae9d4de86fe611db434521d72d4",
+      "executable": false
+    },
+    {
+      "path": "references/host-libraries.md",
+      "sha256": "a790f3a38be4c9b7729792580a9bde31dd217663d980f315b56d3ff7e8c2598b",
+      "executable": false
+    },
+    {
+      "path": "references/illegal-tools-cleanup.md",
+      "sha256": "a4a46e5dc55437f0a50d88f9eb5e0000191079aa884590242b291b688f2f5c5a",
+      "executable": false
+    },
+    {
+      "path": "references/incidents-and-integrations.md",
+      "sha256": "e641a1dc61577fb538f277117c9de742a0849e8c38962ccb58c98d27f6104eab",
+      "executable": false
+    },
+    {
+      "path": "references/intake.md",
+      "sha256": "d9067ea12b6d6f565a5666ce749bdad2c00c4e993e3d1af81b36b37508cc654e",
+      "executable": false
+    },
+    {
+      "path": "references/killswitch-switch.md",
+      "sha256": "ed90e27fac17eeb347607337f77c02c3c0cb2dc86668b417d9ef64f32b890557",
+      "executable": false
+    },
+    {
+      "path": "references/line-optimization.md",
+      "sha256": "822849c88433c06e1ccebff41bc74d3ee349013a63cc14a18f5783dc7d44ef78",
+      "executable": false
+    },
+    {
+      "path": "references/linux-cleanup.md",
+      "sha256": "41d35c37fee265de6972e209dee6fc6f9276d31e2c3e665d15dc3077bdc4ed4b",
+      "executable": false
+    },
+    {
+      "path": "references/local-advanced-route.md",
+      "sha256": "3fbd73108f9a6062e14b13970af2a4d17b4ea31724ab79d1834a0f1e0a951ea9",
+      "executable": false
+    },
+    {
+      "path": "references/local-firewall-prompts.md",
+      "sha256": "111ce9f5f8fc1d2aed0cf1dd0049243de07f5b41a98c939b901f36d497a87722",
+      "executable": false
+    },
+    {
+      "path": "references/macos-dns-case-lessons.md",
+      "sha256": "ec5c68f731a1f99a81792eb1abe60700eefd6e13b5162adad3f26a74abab16d7",
+      "executable": false
+    },
+    {
+      "path": "references/mobile-guidance.md",
+      "sha256": "582eb7ec3f6c660353fa824eb6e63bd247db9cb6df1006c5e70ad7b02be62aab",
+      "executable": false
+    },
+    {
+      "path": "references/network-and-remedies.md",
+      "sha256": "a12998ca667fd9ddac476def51637a96915e32ad40ed8889406b483d7894940e",
+      "executable": false
+    },
+    {
+      "path": "references/routes-and-platforms.md",
+      "sha256": "ccc1c05b87c4484e12ddd35f18ae9dbb30f1508d522c53eaf9c5e998faf8ee39",
+      "executable": false
+    },
+    {
+      "path": "references/scripts-index.md",
+      "sha256": "551c5ea87b4967bc68ca30b7ac7227f824ec76dd6cd3ae868b442b7b06936681",
+      "executable": false
+    },
+    {
+      "path": "references/section-index.md",
+      "sha256": "a0a37ccd6678bc2771a467472d6b28601b2fd2e904f1e01886602cac62d99c05",
+      "executable": false
+    },
+    {
+      "path": "references/skill-update.md",
+      "sha256": "e41b1aec3d8c7fee7b56dcead4e35cc12a68b9450accc1845334d8323a0d313b",
+      "executable": false
+    },
+    {
+      "path": "references/source-library.md",
+      "sha256": "0bf0afd500aee0c556318dbeb72988f1b14883732448714fb4ce01cabee49449",
+      "executable": false
+    },
+    {
+      "path": "references/trace-cleanup.md",
+      "sha256": "2b589f0a65edfce61f89b6566226cca008532628e9ee405920a288fabf19ec13",
+      "executable": false
+    },
+    {
+      "path": "references/vm-guidance.md",
+      "sha256": "b0ebb9ec890f8e08765b5904ecac681019d2a8cd9fd524d802d7b2c756c09ab7",
+      "executable": false
+    },
+    {
+      "path": "references/vps-guidance.md",
+      "sha256": "0295698d651e936ef5a68b16e2d36fa5853cfaa8a8b8d7a060c476b5d5d5232a",
+      "executable": false
+    },
+    {
+      "path": "references/whole-machine-ipv4.md",
+      "sha256": "5b82bd4ec0bc594f0ae0cc37e345f96390d99e659753d09b5070ba3eaa30c666",
+      "executable": false
+    },
+    {
+      "path": "references/windows-cleanup.md",
+      "sha256": "adb146b492adf47ffc8197a3d388c0716e6d263a55291dcc98ab152eaec74d51",
+      "executable": false
+    },
+    {
+      "path": "references/windows-network-transaction.md",
+      "sha256": "b105d474751d7b1e7da207a552508f970cef2522ab5240113ce3d1b3eba45ab8",
+      "executable": false
+    },
+    {
+      "path": "scripts/agent_remediation.py",
+      "sha256": "04ba730d9551479243d0061d94404c6783602053e591124726edc90d17bf28a1",
+      "executable": false
+    },
+    {
+      "path": "scripts/agent_rules_task.py",
+      "sha256": "b09ad827d1c39f2ca2d7fbf8355f45a51a9ede4ef3f1d9068a3045412b49dc91",
+      "executable": false
+    },
+    {
+      "path": "scripts/clash_inventory.py",
+      "sha256": "f7e1de55786786b354ed6c87b405efd56ce6ec4bce544f47b7755e65b1a36e60",
+      "executable": false
+    },
+    {
+      "path": "scripts/clash_verge_258.py",
+      "sha256": "e0ec2342a58fe1b5d6ec585e3f851f8355f4df501db96e6e17495b05b87a7ed2",
+      "executable": false
+    },
+    {
+      "path": "scripts/cleanup_cli.py",
+      "sha256": "2bbc335cd9d181a2866ee36f3a2ee72838fb789b2c65b891cc56652fe2f3d7dd",
+      "executable": false
+    },
+    {
+      "path": "scripts/cleanup_transactions.py",
+      "sha256": "42b1586eae6d67dbdfa59ffb398a445bd717d3da304bc19c3cd64a6b34ea797e",
+      "executable": false
+    },
+    {
+      "path": "scripts/config_edit_plan.py",
+      "sha256": "d50499f5a92508a9a20dd7e6193f7b2a320bba06bc8fd8ba5eb93ec2b39259dd",
+      "executable": false
+    },
+    {
+      "path": "scripts/egress_verifier.py",
+      "sha256": "699ba1a6090663f15324074acfe8e9fba5acf92acfb1e37de88e9ec8c4d8c3ad",
+      "executable": false
+    },
+    {
+      "path": "scripts/environment_entry.py",
+      "sha256": "8ffdc6eab9f15894c9dab470e9f11e4652324c6a3642aa2e6822d88c6cf26aea",
+      "executable": false
+    },
+    {
+      "path": "scripts/guardian.py",
+      "sha256": "a7ea8fcfa09f0dd410f5d961e7978359f09e9a9c1a0d7868ba340f7aca3b9ff6",
+      "executable": false
+    },
+    {
+      "path": "scripts/interview_cli.py",
+      "sha256": "b209d8539b1d7a74a73e0a3d7b3924e8dae4f736e999318b7976cd2eeb2544af",
+      "executable": false
+    },
+    {
+      "path": "scripts/interview_flow.py",
+      "sha256": "26f07675dfa3a13e2025fe15e79ccd7337a21acbb417f1fe6dc17fb7b9e75b37",
+      "executable": false
+    },
+    {
+      "path": "scripts/inventory_cli.py",
+      "sha256": "b2e5f20e16795f9f7dfe094edcad10c439dd781328159a61147c7a544acf4305",
+      "executable": false
+    },
+    {
+      "path": "scripts/killswitch_ui.py",
+      "sha256": "d731b454f161076b05f4008bc5ac1e200f763f59743036b90652f43efea913e3",
+      "executable": false
+    },
+    {
+      "path": "scripts/killswitch.py",
+      "sha256": "7705140a023118cabbbfc9e6308f6cf19baa641562fcca0ee97250f7262463ec",
+      "executable": false
+    },
+    {
+      "path": "scripts/native_clash_verge_mac.py",
+      "sha256": "a6ddc7c2c39bd249d43f1c18cc7d3d66eeab53f65d693c0757264871219124e1",
+      "executable": false
+    },
+    {
+      "path": "scripts/native_claude_state_mac.py",
+      "sha256": "baa8e543ea8ff70dd6457823b033c4c1da972fc7627e62be310fa96d14d2afc8",
+      "executable": false
+    },
+    {
+      "path": "scripts/native_cleanup_mac.py",
+      "sha256": "fe43597d9859f1dc2b2d7cb4bc1ebbac9e2f8ae4307e47a85f683b73c9e3cb7b",
+      "executable": false
+    },
+    {
+      "path": "scripts/network_check.py",
+      "sha256": "21ca79805ebc3696ac358d5e8366769892b90b610947f0d3ad3af3b8ba2c7a16",
+      "executable": false
+    },
+    {
+      "path": "scripts/probe_evidence.py",
+      "sha256": "bf21b6427fb4fcb4e90ddd29a43150c0e0117e131680e4befa72b3575e0cea4d",
+      "executable": false
+    },
+    {
+      "path": "scripts/recovery_cli.py",
+      "sha256": "0355e39cd8375f5044431d98f9949dddce05b2f07b30334f92fed3225621b732",
+      "executable": false
+    },
+    {
+      "path": "scripts/remedy_plans.py",
+      "sha256": "9b62822fbf7ac3a02ae22b031fcbbdaba5b332421fa216d75649fe8801ae432b",
+      "executable": false
+    },
+    {
+      "path": "scripts/repair_cli.py",
+      "sha256": "155f1c625c45e729249d12388412389d55f9d70b820fb9ffc41e13818b083bf7",
+      "executable": false
+    },
+    {
+      "path": "scripts/repair_execution.py",
+      "sha256": "dc689c43944b5c5cae435079ce9719b90ee6120ef42ab42a926d5c102181df1e",
+      "executable": false
+    },
+    {
+      "path": "scripts/rules_extension_plan.py",
+      "sha256": "15c3b620d2b63601794100af8685df1c3f515e6b0fe99272a4beb9649332d0d1",
+      "executable": false
+    },
+    {
+      "path": "scripts/serve_webrtc.py",
+      "sha256": "23cc16790dc913435c66f4f16812f0e62231760b64e1157a8540f479d20fc301",
+      "executable": false
+    },
+    {
+      "path": "scripts/status_dashboard.py",
+      "sha256": "8a68977d4be86cb233aa6b6cc8b9c163022b8832fcff93f844437df3c8814154",
+      "executable": false
+    },
+    {
+      "path": "scripts/stun_probe.py",
+      "sha256": "33133b6d5141797194dbc151b7fa7c473bf17dee7c13a1709bd142e93d107178",
+      "executable": false
+    },
+    {
+      "path": "scripts/traffic_policy.py",
+      "sha256": "db48d4dfcc5a006aa5e1bb981fa088ccdf596cdfba836da2065b9f7636165dbd",
+      "executable": false
+    },
+    {
+      "path": "scripts/transactions.py",
+      "sha256": "e9f5f0a7c477e66090a71ba7d2ff522a9237f30305b8386803ba60cb6638b2e3",
+      "executable": false
+    },
+    {
+      "path": "scripts/update_check.py",
+      "sha256": "ea198408e3b67aa6aaef69ab73ed9922ed06a5ffdb27730075f7709311153676",
+      "executable": false
+    },
+    {
+      "path": "sources/manifest.json",
+      "sha256": "24f52b5ab1f4c9bd30632e5af5650036fae2abb182f5d0695f8e7a24eaa545b3",
+      "executable": false
+    },
+    {
+      "path": "sources/R02-images/dual-tunnel.png",
+      "sha256": "f4fd0f37a96768205339f5c2de6a4229fad5593708a830eaebdcdd848701e0cc",
+      "executable": false
+    },
+    {
+      "path": "sources/R02-images/single-relay.png",
+      "sha256": "1d0ba47a9b0410a7daa84df69371bfd03808ac184d5054978cd26da48ac17d39",
+      "executable": false
+    },
+    {
+      "path": "sources/R02-vps-line-optimization.md",
+      "sha256": "c339fd4c511c5c2a007eb6f912211feb0a199dacaeb36ca840f80c87d14edcfb",
+      "executable": false
+    },
+    {
+      "path": "sources/S01-server-glossary.md",
+      "sha256": "e2660c1b049d73e7a927594743f079cb0a5f10be9f72bad7928f10a5838bb68b",
+      "executable": false
+    },
+    {
+      "path": "sources/S02-ai-payments.md",
+      "sha256": "9fc0962d5386011d3c292fd30a8f8530544899a82bda62d9c574ff62d4e52c75",
+      "executable": false
+    },
+    {
+      "path": "sources/S03-claude-experience.pdf",
+      "sha256": "ffd8ab0e3f8c597733f842c3b17e4bea8d9ac9585f6a21d4e12039b0b32ed792",
+      "executable": false
+    },
+    {
+      "path": "sources/S03-extracted-text.md",
+      "sha256": "63939e28f7dfb777fc7fb3cf4364bdc07605eba30d1a1f5e8f686e759ce1bc70",
+      "executable": false
+    },
+    {
+      "path": "sources/S03-source-text.md",
+      "sha256": "9789083417f707a303d4f5b920b75f35e4fe0044410d48bb7355dd1abf202de6",
+      "executable": false
+    },
+    {
+      "path": "sources/S04-claude-guide.md",
+      "sha256": "281b2881c5a016b5188aa71c1e7162e1742c98170d9685f2a4e24503ee7a5992",
+      "executable": false
+    },
+    {
+      "path": "sources/S05-local-protection.md",
+      "sha256": "e37e3f97e585ccd336744f789048b41c05a479d3d78e4a7c7699d75f3fcc38cc",
+      "executable": false
+    },
+    {
+      "path": "sources/S06-macos-cleanup-sanitized.md",
+      "sha256": "2fc1d7694bd636b2bd449a31961872958155af78855b921caf9f72a796498a91",
+      "executable": false
+    },
+    {
+      "path": "sources/S07-vps-script-catalog.md",
+      "sha256": "ffbc46c8835389ee68fcc476570a7bac87ee498a80f9d0437e77034bd0a49663",
+      "executable": false
+    },
+    {
+      "path": "sources/S08-extracted-text.md",
+      "sha256": "c806fd5e26da8721f97ad2cc0bc11cdecf1114d12d9ca3c80453fafb0c09c505",
+      "executable": false
+    },
+    {
+      "path": "sources/S08-vps-claude-tutorial.pdf",
+      "sha256": "8b0afec499f0d8c12c6e8594947e0594ac4e9622c35d602ca35e3a8e2cc01013",
+      "executable": false
+    },
+    {
+      "path": "sources/S10-windows-deployment-sanitized.md",
+      "sha256": "4193e4a1ff0194f6f8d82ad3b9f15af2ee413b3bdf93221fe4a15cdebf7f6bb1",
+      "executable": false
+    },
+    {
+      "path": "sources/vps-recommendations/biz-aws-ec2-taipei.pdf",
+      "sha256": "ea36e2d5e8a8ebbba376fbe226c6f1a75c255e9c0fbb9748dd98ff771823b449",
+      "executable": false
+    },
+    {
+      "path": "sources/vps-recommendations/biz-aws-lightsail-my.pdf",
+      "sha256": "a3cbba0bf50b694711454c10fa8ff6254fcfb8a248e239b9d9d6df0cf46386c1",
+      "executable": false
+    },
+    {
+      "path": "sources/vps-recommendations/biz-azure-jp-b2pts.pdf",
+      "sha256": "9163a7241278fb72c28fcb84999c2cd6cd039ef4eb45a42e2c4f6f5495f7ac84",
+      "executable": false
+    },
+    {
+      "path": "sources/vps-recommendations/biz-azure-sg-b2ats.pdf",
+      "sha256": "186c842f825380375baea2d0c217303627c1016b856b36b61447e00143edcedb",
+      "executable": false
+    },
+    {
+      "path": "sources/vps-recommendations/biz-dmit.pdf",
+      "sha256": "c8795af8000e5282cd96066ce9e5afd55ddcb381908d1a733a962311ce1f350a",
+      "executable": false
+    },
+    {
+      "path": "sources/vps-recommendations/home-nodemach.pdf",
+      "sha256": "ae72b03448479a01328a661f480fbd3c6f494b324d9f3090d4682e154cabdac8",
+      "executable": false
+    },
+    {
+      "path": "sources/vps-recommendations/home-novixlink.pdf",
+      "sha256": "6e3b937e1ddecda720d1cbe963b74e89d56ad3945c7bbb3320fbb0bbcd01aae3",
+      "executable": false
+    },
+    {
+      "path": "sources/vps-recommendations/home-qqpw.pdf",
+      "sha256": "006fe7813f52e7fa2c9c38fea62d3d92301128f71a4ee310a35c57b8e8be2118",
+      "executable": false
+    },
+    {
+      "path": "sources/vps-recommendations/home-radonet.pdf",
+      "sha256": "92d639b7beb386af227cddbc77be47bfd8dfb75c03c1f7b26dc2c01f9c23d730",
+      "executable": false
+    },
+    {
+      "path": "sources/vps-recommendations/home-residentialvps.pdf",
+      "sha256": "54b41ee0b058a39344d1640fa388a4e2c904e3e410ba0e005897468a5ffc6932",
+      "executable": false
+    },
+    {
+      "path": "sources/vps-recommendations/home-tokyonline.pdf",
+      "sha256": "7f33e0fca5082f45e5340f1f44f8a59e3fca615c32fa036a768b4a54ef58e409",
+      "executable": false
+    },
+    {
+      "path": "sources/vps-recommendations/home-zorocloud.pdf",
+      "sha256": "70e9279e9f0bbee7de517d835d501c0f6cea58eb96511319b4334c3683d82bc5",
+      "executable": false
+    },
+    {
+      "path": "sources/vps-recommendations/INDEX.md",
+      "sha256": "7b16eb6c06c9aa98f06078c537681dad9bcd2b052aea7bf4ef60fd16e697d243",
+      "executable": false
+    },
+    {
+      "path": "sources/vps-recommendations/value-bandwagon.pdf",
+      "sha256": "3308b48b3a8ebd69d1617a5b781cf497db16060b8eaf8238d4b6cde5cb44e896",
+      "executable": false
+    },
+    {
+      "path": "sources/vps-recommendations/value-qiansu.pdf",
+      "sha256": "547419fda9ded8f8d0db2b2a2055ad17978d858ceed1819fa9e512a1def8bae5",
+      "executable": false
+    },
+    {
+      "path": "sources/vps-recommendations/value-vmiss.pdf",
+      "sha256": "798e3ad552d16526f31a427be8633feeaef99396447128ec92e7be438fe913be",
+      "executable": false
+    },
+    {
+      "path": "sources/vps-recommendations/value-vmrack.pdf",
+      "sha256": "d5b154916257b40ebebfe0bc3891211377b4292529ecff3395e426a883ad38bc",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/claude-guardian"
+}

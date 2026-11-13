@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "name": "huashu-art-motion",
+  "version": "1468196505a5",
+  "source": {
+    "url": "https://github.com/alchaincyf/huashu-art-motion",
+    "commit": "1468196505a51728686db118d52561aa27a25124",
+    "sha256": "961b5c245620dda55ddab724e1484cd38b677c6a1cc49057f950101e8f09789b",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Hoạt họa nghệ thuật và chuyển động video bằng mã nguồn: phân tích và tái hiện chuyển động; 36 phong cách nghệ thuật thực nghiệm + 16 công thức nghiên cứu chuyển dịch; 9 cú pháp hoạt họa giải thích; kết hợp mã nguồn và tạo khung hình AI; kiểm soát bố cục máy quay, nhịp điệu và chống tình trạng AI slop.",
+    "aliases": [
+      "Hoạt họa nghệ thuật",
+      "Đồ họa chuyển động"
+    ],
+    "keywords": [
+      "huashu",
+      "art",
+      "motion",
+      "Hoạt họa nghệ thuật",
+      "Đồ họa chuyển động"
+    ],
+    "examples": [
+      "Dùng huashu-art-motion cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "961b5c245620dda55ddab724e1484cd38b677c6a1cc49057f950101e8f09789b"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "assets/showcase/hero.png: binary-file (low)",
+      "assets/全风格总览.jpg: binary-file (low)",
+      "assets/动画语法/t1_3b1b_总览.jpg: binary-file (low)",
+      "assets/动画语法/t2_keynote_ui_总览.jpg: binary-file (low)",
+      "assets/动画语法/t3_finance_chart_总览.jpg: binary-file (low)",
+      "assets/动画语法/y1_kurzgesagt_总览.jpg: binary-file (low)",
+      "assets/动画语法/y2_vox_总览.jpg: binary-file (low)",
+      "assets/动画语法/y3_whiteboard_总览.jpg: binary-file (low)",
+      "assets/动画语法/y4_storytime_总览.jpg: binary-file (low)",
+      "assets/动画语法/y5_kinetic_type_总览.jpg: binary-file (low)",
+      "assets/新风格v2_证据/38_giotto.jpg: binary-file (low)",
+      "assets/新风格v2_证据/40_raphael.jpg: binary-file (low)",
+      "assets/新风格v2_证据/41_michelangelo.jpg: binary-file (low)",
+      "assets/新风格v2_证据/43_lorenzetti.jpg: binary-file (low)",
+      "assets/新风格v2_证据/44_cortona.jpg: binary-file (low)",
+      "assets/新风格v2_证据/46_pissarro.jpg: binary-file (low)",
+      "assets/新风格v2_证据/47_sisley.jpg: binary-file (low)",
+      "assets/新风格v2_证据/48_gauguin.jpg: binary-file (low)",
+      "assets/新风格v2_证据/50_ma_yuan.jpg: binary-file (low)",
+      "assets/新风格v2_证据/51_persian_miniature.jpg: binary-file (low)",
+      "assets/新风格v2_证据/总览.jpg: binary-file (low)",
+      "assets/角色/花叔形象_对比.jpg: binary-file (low)",
+      "assets/长卷穿越_总览.jpg: binary-file (low)",
+      "scripts/engine/demos/_shared/hero/c1_0.png: binary-file (low)",
+      "scripts/engine/demos/_shared/hero/c1_1.png: binary-file (low)",
+      "scripts/engine/demos/_shared/hero/c1_2.png: binary-file (low)",
+      "scripts/engine/demos/_shared/hero/c3_line.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/8bit_act/01.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/8bit_act/02.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/8bit_act/03.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/8bit_act/04.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/8bit_act/05.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/8bit_act/06.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/8bit_act/07.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/8bit_act/08.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/8bit_walk/01.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/8bit_walk/02.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/8bit_walk/03.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/8bit_walk/04.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/8bit_walk/05.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/8bit_walk/06.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/8bit_walk/07.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/8bit_walk/08.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/egypt_dodge/01.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/egypt_dodge/02.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/egypt_dodge/03.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/egypt_dodge/04.png: binary-file (low)",
+      "scripts/engine/demos/long_scroll/frames/egypt_dodge/05.png: binary-file (low)",
+      "Incomplete upstream bundle: inspect excluded files before approving compatibility or activation."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "321 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

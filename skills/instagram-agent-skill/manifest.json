@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "name": "instagram-agent-skill",
+  "version": "d03c56bb598b",
+  "source": {
+    "url": "https://github.com/Jakeschincariol/instagram-agent-skill",
+    "commit": "d03c56bb598be770c60b201f94237e5d1a4268a6",
+    "sha256": "d32d1413cd9d69d26ce82f41b61ae431c191cde1775f34b7c0c2573a7ce83858",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "13 skill điều hành một tài khoản Instagram bằng agent — viết Reels từ 26 công thức hook (chấm điểm trước khi quay), tìm reel viral trong ngách và xếp hạng theo bội số, linter caption, score profile theo rubric 100 điểm, kế hoạch tuần, humanizer tẩy \"AI slop\". MIT, không cần đăng ký, không cần API key. 5 tool Python chạy cục bộ (hookscore.py, beats.py, caption.py, humanize.py, detect.py, swipe.py). KHÔNG tự đăng bài — mọi thứ kết thúc bằng bản copy, người dùng tự đăng. Dùng khi người dùng cần nội dung Instagram: \"viết reel\", \"caption này ổn chưa\", \"score profile của tôi\", \"kế hoạch tuần\".",
+    "aliases": [
+      "Quản lý Instagram",
+      "Viết nội dung Instagram"
+    ],
+    "keywords": [
+      "instagram",
+      "agent",
+      "skill",
+      "Quản lý Instagram",
+      "Viết nội dung Instagram"
+    ],
+    "examples": [
+      "Dùng instagram-agent-skill cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "d32d1413cd9d69d26ce82f41b61ae431c191cde1775f34b7c0c2573a7ce83858"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "network"
+  ],
+  "syncedAt": "2026-11-13T09:27:13.451Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "Legacy English wrapper has not been matched to upstream source.",
+      "No standalone upstream license evidence retained; verify redistribution terms before activation."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "No compatible upstream SKILL.md with the curated English name; legacy English wrapper retained. Local frontmatter was added to an old English extract; this is not a verified upstream SKILL.md.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

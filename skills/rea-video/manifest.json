@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "name": "rea-video",
+  "version": "ab8580e38a12",
+  "source": {
+    "url": "https://github.com/JuneYaooo/rea-video",
+    "commit": "ab8580e38a1255425b0d3b481866590766932079",
+    "sha256": "ee91eddc69cd38d52390499bc1c9dcd651c421bd5c07bbdc01fc41b56ef27b07",
+    "license": "Apache-2.0"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Phân tích ngược (reverse-engineering) quy trình sản xuất video — xác định từng khung hình là quay thực tế / trích đoạn phim / AI tạo / 3D render / hoạt hình 2D / stop-motion / mã nguồn / chụp màn hình / pan-zoom ảnh tĩnh, phát hiện chỉnh sửa AI (đổi mặt, khớp khẩu hình, chuyển phong cách), bóc tách phụ đề, đồ họa bao bì, âm thanh, TTS, nhạc nền BGM và xuất bản kế hoạch tái hiện video khả thi.",
+    "aliases": [
+      "Phân tích video",
+      "Tái hiện video"
+    ],
+    "keywords": [
+      "rea",
+      "video",
+      "Phân tích video",
+      "Tái hiện video"
+    ],
+    "examples": [
+      "Dùng rea-video cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "ee91eddc69cd38d52390499bc1c9dcd651c421bd5c07bbdc01fc41b56ef27b07"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

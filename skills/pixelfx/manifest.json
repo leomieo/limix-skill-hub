@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "name": "pixelfx",
+  "version": "5294518ce7c7",
+  "source": {
+    "url": "https://github.com/patch-gg/pixelfx",
+    "commit": "5294518ce7c72e48b6100a744596e0acf57f2826",
+    "sha256": "b8210917cf4218fbc7d64a07ec4eed4b7888981df3a0224a4681f3547e0f09c5",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Thư viện 244 hiệu ứng pixel art và hoạt hình sprite viết bằng code — mỗi hiệu ứng một file JS, không phụ thuộc, không ảnh: vẽ vào hai buffer màu (pixel đục/dither/bán trong) và sáng (glow cộng dồn). Họ lửa, nổ, nước, băng, sét, sci-fi, cận chiến, va đập, đạn, sinh/tử, huyền thuật, thánh quang, bóng tối, trạng thái, tự nhiên, thời tiết, UI, vật phẩm, chuyển cảnh, sinh vật nhỏ. Hiệu ứng có nhân vật đều được \"diễn xuất\" (giậm chân - tung đòn - chạm - hồi), 12 combo trọn từ giậm đến hồi. Chơi live trong game canvas/Phaser/PixiJS/Kaplay/three.js, đổi màu, lật, đổi seed, xuất sprite sheet cho Godot/Unity/GameMaker/Defold/LÖVE/Bevy, kèm vòng draft-render-nhìn-chỉnh để tạo hiệu ứng mới như một pixel artist khắt khe. Dùng khi cần VFX pixel art, sprite animation, \"game juice\" hoặc một hiệu ứng cụ thể.",
+    "aliases": [
+      "Hiệu ứng pixel art",
+      "Tạo sprite sheet"
+    ],
+    "keywords": [
+      "pixelfx",
+      "Hiệu ứng pixel art",
+      "Tạo sprite sheet"
+    ],
+    "examples": [
+      "Dùng pixelfx cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "b8210917cf4218fbc7d64a07ec4eed4b7888981df3a0224a4681f3547e0f09c5"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "network"
+  ],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "SKILL.md: pipe-to-shell (high)",
+      "SKILL.md: powershell-iex (high)",
+      "SKILL.md: exe-download (medium)"
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "name": "socratic-tutor",
+  "version": "7c6715c29548",
+  "source": {
+    "url": "https://github.com/janestreet/agent_skills",
+    "commit": "7c6715c29548a3b39d4a9545c698ee4fd17a7213",
+    "sha256": "9190b68440ad99be4d865c63b87939f23a362efac0776c5a67c93d1498bb5e37",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Skill dạy học Socratic có cấu trúc của Jane Street: biến LLM thành gia sư nghiêm khắc dạy một chủ đề theo phương pháp maieutic — dạy chủ yếu bằng đặt câu hỏi buộc người học phải suy luận, dự đoán và giải thích, không giảng bài đọc sẵn. Gồm chẩn đoán đầu vào, bản đồ kỹ năng 4-10 phân kỹ năng với thang 0-5, hỏi từng câu một, ôn theo khoảng cách (spaced review), đánh giá cuối khóa và kiểm tra đạt trình độ. Chỉ kích hoạt khi người dùng muốn được dạy/kiểm tra/luyện đến thành thạo (\"teach me\", \"tutor me\", \"quiz me\", \"drill me\", \"giúp mình luyện đi\"); KHÔNG dùng cho câu hỏi giải thích một lần (\"X là gì?\"). Copy thư mục skill vào skills của agent, hoặc dán nội dung SKILL.md vào chatbot bất kỳ.",
+    "aliases": [
+      "Gia sư Socratic",
+      "Học bằng câu hỏi"
+    ],
+    "keywords": [
+      "socratic",
+      "tutor",
+      "Gia sư Socratic",
+      "Học bằng câu hỏi"
+    ],
+    "examples": [
+      "Dùng socratic-tutor cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "9190b68440ad99be4d865c63b87939f23a362efac0776c5a67c93d1498bb5e37"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "repository": "goodnight000/api-anything",
+  "commit": "d40abd44f171c5cc444f1ac6b947afefa8605b78",
+  "path": "skills/api-anything",
+  "verified": true,
+  "coreSha256": "a99294ab79ea751ab0acf3b10c3d280e6d23f917b12a0ec01d66915aab6ad1b4",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "a99294ab79ea751ab0acf3b10c3d280e6d23f917b12a0ec01d66915aab6ad1b4",
+      "executable": false
+    },
+    {
+      "path": "references/authoring.md",
+      "sha256": "e742b5c168bc0a43ac9a54ed50b23dbecb2a784e8e6ba0fc43bb55c11945e76b",
+      "executable": false
+    },
+    {
+      "path": "references/writes.md",
+      "sha256": "3a9646806a77d6f367f53652778834b2efdaa20a74417b4bc2ca997ed05da45d",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "9c57c501762e9acf850474f081cdd44914f8820f0ca0099d54f8754109a47999",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/api-anything"
+}

@@ -1,0 +1,509 @@
+{
+  "repository": "Tejashmakwana/motionmaxxing",
+  "commit": "8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c",
+  "path": "",
+  "verified": true,
+  "coreSha256": "50710290ed55d2b8e1ea454a2a274345da5fa47c224a38582d2f853e824c3cd2",
+  "skipped": [
+    ".gitignore",
+    "docs/media/cluely-comparison.mp4",
+    "docs/media/hero.gif",
+    "docs/media/spotify-comparison.gif",
+    "docs/media/spotify-comparison.mp4",
+    "docs/media/wispr-comparison.gif",
+    "docs/media/wispr-comparison.mp4"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "50710290ed55d2b8e1ea454a2a274345da5fa47c224a38582d2f853e824c3cd2",
+      "executable": false
+    },
+    {
+      "path": "docs/hero/index.html",
+      "sha256": "f7eae1a646802663123e07d738923032fe1772b89d8def144c2ffc270046b515",
+      "executable": false
+    },
+    {
+      "path": "docs/hero/NOTE.md",
+      "sha256": "b19cf260093b5456b69bb19d31b4219f2b11c5ae9df172e039ac6b4f39032b5b",
+      "executable": false
+    },
+    {
+      "path": "docs/HOW-IT-WAS-BUILT.md",
+      "sha256": "7d2561d21e44720b9ff53bb52be005783540ac33d0fad85665ca5034d1f97925",
+      "executable": false
+    },
+    {
+      "path": "docs/KNOWN-LIMITS.md",
+      "sha256": "6f33de6db0b6ec25bb52b706c22fd8c4f26b32b9867c29159e3a520debd0b25d",
+      "executable": false
+    },
+    {
+      "path": "docs/media/cluely-comparison.gif",
+      "sha256": "4f81828bf8cd17f56dce7e5eb429e22f41630a3115aa5fad27e5b38b8817cfa9",
+      "executable": false
+    },
+    {
+      "path": "docs/media/cluely-poster.jpg",
+      "sha256": "94e852396a10ddb2cd505ddd1c05d210800364cf46e4bc71b94090ab6b4644e3",
+      "executable": false
+    },
+    {
+      "path": "docs/media/eases-dark.svg",
+      "sha256": "45d508147679d97ca24163afa193b5cb431a227e5e440d1239fb316f1480caff",
+      "executable": false
+    },
+    {
+      "path": "docs/media/eases-light.svg",
+      "sha256": "eee95f492e6288c6cc280c5a1206f5c1e3860e13380e3802840481e73f9c633c",
+      "executable": false
+    },
+    {
+      "path": "docs/media/eases.svg",
+      "sha256": "9c68978f9eb9bc010dca470d36fddd589795c79f68e733dc060e27cd33870911",
+      "executable": false
+    },
+    {
+      "path": "docs/media/gates.png",
+      "sha256": "9bcd160fbd8cdfe5cccbeff0cdf4709d154be6382869301dd795e6221223de03",
+      "executable": false
+    },
+    {
+      "path": "docs/media/hero.mp4",
+      "sha256": "d4e77da687607756c5e382fff452e3a5136369bc624083f547d645d1b239606d",
+      "executable": false
+    },
+    {
+      "path": "docs/media/spotify-poster.jpg",
+      "sha256": "4061028de5ced14fd8429ce0410417434af627ef305aade712793209db6f931f",
+      "executable": false
+    },
+    {
+      "path": "docs/media/wispr-poster.jpg",
+      "sha256": "1e0b18b21be3d5f85da0df050885d5aac8b488073916b308bf7a4fcaa54423a3",
+      "executable": false
+    },
+    {
+      "path": "examples/3d-hero/index.html",
+      "sha256": "0db8c44d3aa1f700a4a4cbc5c4d8e2ba5ec98c64b4516ce38b53436bb4063f43",
+      "executable": false
+    },
+    {
+      "path": "examples/demo/index.html",
+      "sha256": "1d8969815633d1e34b8aa8a32ba2b47e1939e8ac9e8b5ee8cff71f34bb8c8e14",
+      "executable": false
+    },
+    {
+      "path": "examples/phone/index.html",
+      "sha256": "df0916f38c43dabfdf14282d426156bfe552e27004420a6dcdbad375299fb75c",
+      "executable": false
+    },
+    {
+      "path": "examples/selftest/index.html",
+      "sha256": "3095fa970c1cb070b6ef7e606e70d29c63555f744daf6679fe8cbdf99ce3461d",
+      "executable": false
+    },
+    {
+      "path": "install.sh",
+      "sha256": "7d98439a06c43a527943af73b8d4db959793c5d70d93421c19ada622a1ab1d20",
+      "executable": true
+    },
+    {
+      "path": "library/moments.jsonl",
+      "sha256": "48073ea7c2aaf4461bffa846d2e574edfbb0ed6ca81143b9a5a7e94c9d79c55b",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "executable": false
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "82f5bde893626d09be6e024cfd8b6a07cbc59c859c2bba9a47ba45d66c5b3ac5",
+      "executable": false
+    },
+    {
+      "path": "README.md",
+      "sha256": "2b78e7dbc07170d9bf9d27afdda7b662d7fcfa65db8396ae7eec0cfa67fdc80c",
+      "executable": false
+    },
+    {
+      "path": "references/brand.md",
+      "sha256": "172a1e4e2ac3c846ed5a4acfd212ec8e8b087cb499b51abd2c1bd759364802a8",
+      "executable": false
+    },
+    {
+      "path": "references/close.md",
+      "sha256": "314a276380c2bc8bf6b0733a8ea99c5ac92fc97e8f3ec52d0d8a304e6f7461e5",
+      "executable": false
+    },
+    {
+      "path": "references/director.md",
+      "sha256": "de2901bc19126e6566b545b10e1d27709590655ad41f97ddd36e46b247b84796",
+      "executable": false
+    },
+    {
+      "path": "references/idea.md",
+      "sha256": "60f1beb3fe5cfb97bc5834dfa8a573b310c3a4f63ac8366da19dd3063a702cd8",
+      "executable": false
+    },
+    {
+      "path": "references/judgment.md",
+      "sha256": "6916778e8c3d622b8006a34099a933c069a671ee4b30589462846789abdca822",
+      "executable": false
+    },
+    {
+      "path": "references/layout.md",
+      "sha256": "d0d1b37f1c2ba9254354294f7f143bc87503edc1dcf4b1a422a6a7f004e7608d",
+      "executable": false
+    },
+    {
+      "path": "references/motion.md",
+      "sha256": "3d9418623860308f34cafd3b816debc2644060270af78670d07fd0c53e434a90",
+      "executable": false
+    },
+    {
+      "path": "references/slop.md",
+      "sha256": "f469e124991b2b88941c3e1cd65fb62363273ad8b6443685481fc565925c7d6a",
+      "executable": false
+    },
+    {
+      "path": "references/sound-sync.md",
+      "sha256": "4aa2d775fbf9f697e632b4c9dd37d0576de2c09720e4352d520586d670d99f69",
+      "executable": false
+    },
+    {
+      "path": "references/tools.md",
+      "sha256": "c6212d87a3488f2424ed96c8653dcfe2925fb4d910a95e27c7b5521f3d2c36a9",
+      "executable": false
+    },
+    {
+      "path": "references/transitions.md",
+      "sha256": "fd62bbb81002d4dc4d09150244b2c3a34e642adece42a51176e69b3a6cb3e9ec",
+      "executable": false
+    },
+    {
+      "path": "references/type.md",
+      "sha256": "4d52846795c5ea53ff7df11c152096c9145b625cf25dbed3c1aa6b4f37b91787",
+      "executable": false
+    },
+    {
+      "path": "references/ui-demo.md",
+      "sha256": "41d21a95c28b57cac5173c1de10ebebaff771b19374e31796fd5faa24bd7baf2",
+      "executable": false
+    },
+    {
+      "path": "references/world.md",
+      "sha256": "b6f6593ae470b20c7c1709e1afc8edb50fb27a747f767a7b3d5ac9845dba5cd3",
+      "executable": false
+    },
+    {
+      "path": "runtime/fonts.css",
+      "sha256": "e791963ef03c7ac9b077d10b5b122b02828c69d4c7c8fdb8ab6cece56c47e1fc",
+      "executable": false
+    },
+    {
+      "path": "runtime/fonts/InterVariable.woff2",
+      "sha256": "8af7bd5b545567adffb3dfceb5bedb353a522d7bf1b3a2b8af7b6064156babc0",
+      "executable": false
+    },
+    {
+      "path": "runtime/fonts/OFL.txt",
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/fonts/Inter-Bold-Latin.ttf",
+      "sha256": "cc1ec0a102b1d285f952588f3cf0997b02ccd820cac04985696df6f38e0baee6",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/fonts/OFL.txt",
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/hero3d.js",
+      "sha256": "a8f2dd424b38d56f0c0e7089eeed6673b59ec9cd29f3eb0802f2deeb0b1ad45f",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/tools/fontconv.py",
+      "sha256": "b98596c20a00d6a0ecc57588762d10cd331184ea7488c8473957315fd4ceb1a8",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/environments/RoomEnvironment.js",
+      "sha256": "dbc78a606724508ea6ddfb376b63689761cad07c49d879d0fa9c2ddc45c27dbc",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/geometries/RoundedBoxGeometry.js",
+      "sha256": "2f7e2e42ece769a23b6c1b26987cd53e851854dd7fb3035948284b9226844971",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/geometries/TextGeometry.js",
+      "sha256": "7f1d972661b8ab92ecee1626c88b6768a2678d338f3a7474da0b34f1f9132115",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/libs/fflate.module.js",
+      "sha256": "209a4412eb48ce609edb4391992a792ffcc3983d30ee7e2b0b89a8c470f3cd8a",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/loaders/EXRLoader.js",
+      "sha256": "ae44c18ca033e031b589a00d4082872a403c6099ad25b0afb7cce8e6babf7ed0",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/loaders/FontLoader.js",
+      "sha256": "7f04bd3ae77784292aee068be1a962f9a7ae2c13b1dcff8ed695e20de2719025",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/loaders/GLTFLoader.js",
+      "sha256": "03952cb129d558f92b8e6c757fbf7c1f718b3126c4d34f264d574b40ea36054f",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/loaders/HDRLoader.js",
+      "sha256": "f98403abc4846e4929df2d58aaaa835b1982fccfe414f37b20d0c9631993947c",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/loaders/RGBELoader.js",
+      "sha256": "6c08f9c441040a61a188ad7711078da4df48f8c5ac3b3725dd6f10ac9ff81162",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/loaders/SVGLoader.js",
+      "sha256": "0289aee446746db82680d9e8be47da2a8429e1a3b6ce906adf4593d67f9c308d",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/loaders/TTFLoader.js",
+      "sha256": "bee566e99386df1d186da815a68ce4e872efeea4be36838f4384022ef0f2f3cb",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/postprocessing/BokehPass.js",
+      "sha256": "6140759738494271c48d96166826bff2028d52ea634a3508678c5f2baf4cebcf",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/postprocessing/EffectComposer.js",
+      "sha256": "af78417adddaa482b742ddcfdf551ca0b35d77d58493f2e96439fdc219905ef0",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/postprocessing/MaskPass.js",
+      "sha256": "7cd08eee9d5d6f5578beaddbdcbe9c384f6873810af27f22ab7db3ceeb127aa3",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/postprocessing/OutputPass.js",
+      "sha256": "e31bb5e6843c43e99113198824c2242b95abe2ed9047e725691fd6453fc8321f",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/postprocessing/Pass.js",
+      "sha256": "ac015c53e4a491b4f071535d003e6208ec56e00cfbb74942d93556dd53c45673",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/postprocessing/RenderPass.js",
+      "sha256": "11d4309065ed205241291a6e1e3f6d54acd11ee16a753313a2b4b33a5ce4b189",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/postprocessing/ShaderPass.js",
+      "sha256": "1a07592b97c68fec70b9ece4ee32522878c9e71e8364c10f359480b8cd676ef2",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/postprocessing/UnrealBloomPass.js",
+      "sha256": "246ded822cd0fc5643b5bdc53e9542deeae168d2550c010891264920abb4bca2",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/shaders/BokehShader.js",
+      "sha256": "62a039dee2b1c892eff09f0f4b1fb7aedff861e85a03e736696a163c8b2cdab5",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/shaders/CopyShader.js",
+      "sha256": "a33057d5ac91c43304c186ac0e8816e62bb2ed471d3a00ff3018dfd5c0389718",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/shaders/LuminosityHighPassShader.js",
+      "sha256": "123c9d8c4155fa296822eb3325574e82a6c5f4cb30eed065c6cc073ba7ca3bbe",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/shaders/OutputShader.js",
+      "sha256": "353479f77a8d7e2629d49ccac9fc2f5dbfdda5442e0adf867b00377a2fcb0cb2",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/utils/BufferGeometryUtils.js",
+      "sha256": "259085a7dac89e0840393a9347c77123fbc4206ec2146bf0c29ffc72e14a2800",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/addons/utils/SkeletonUtils.js",
+      "sha256": "28017bf37d0ecb0c4be6048db759ff14df729a562464830b064d4cc239c5af17",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/opentype.LICENSE",
+      "sha256": "a5b87c9bc191e7f9c06b07bd7cbbed3ed846dfdb50e859484b2c245aa1ab2e61",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/opentype.module.js",
+      "sha256": "546d61f8dcac65041e485b6d9a1a66051779cf2c1dc42b4afa9c4aaa93f7a2a9",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/three.core.js",
+      "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/three.LICENSE",
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "executable": false
+    },
+    {
+      "path": "runtime/hero3d/vendor/three.module.js",
+      "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea",
+      "executable": false
+    },
+    {
+      "path": "runtime/motion.js",
+      "sha256": "2cfc1494d084823958f4cf7a88b3d4412ddf35da06826b6ea4d788108de23409",
+      "executable": false
+    },
+    {
+      "path": "runtime/native-ui/native-ui.css",
+      "sha256": "f43876d74f8e4731e8092da339751f95b494b24135474dadae5f3872063f11c4",
+      "executable": false
+    },
+    {
+      "path": "runtime/native-ui/native-ui.js",
+      "sha256": "9d53ee41364d2858744976f19588c606f279435f32da4212abadb3a78e4bc619",
+      "executable": false
+    },
+    {
+      "path": "runtime/README.md",
+      "sha256": "f813765e2ba584d1502b34d0fd49744a8090766f3fbb618c82e1b8b00862737b",
+      "executable": false
+    },
+    {
+      "path": "runtime/vendor/gsap.min.js",
+      "sha256": "28033e449a31ebcc396e5be8b13b63152bf03094288fb5867034321927bce087",
+      "executable": false
+    },
+    {
+      "path": "scripts/_cdp.mjs",
+      "sha256": "1ff2a601c7c4a62fb2c5d6876595e4eb1807d375399fce61c3efa56fecb1fe4b",
+      "executable": true
+    },
+    {
+      "path": "scripts/blind_review.py",
+      "sha256": "2edb982645ebd0d3a2846ce78e370178ae269cbda0cebb57887111dac1deae8d",
+      "executable": true
+    },
+    {
+      "path": "scripts/brand.mjs",
+      "sha256": "bb74436bab0720a561243931fca9e386b1666045eaf9534b299e195e7ebd3b0f",
+      "executable": true
+    },
+    {
+      "path": "scripts/fetch_logo.mjs",
+      "sha256": "71a8a24d91efb9895dfdcf3b660b937cdd64d03993b1531e819cdba530a64944",
+      "executable": true
+    },
+    {
+      "path": "scripts/imagegen.py",
+      "sha256": "f0230afaa2c6c15f14595db087a9d19f713d7c6f47ba16e399f0373b1c8e8cba",
+      "executable": true
+    },
+    {
+      "path": "scripts/lint.mjs",
+      "sha256": "c6abcb2a50fb2dfc1fbdb209ee60c2bec1e358d6e078416c3d55275a0e8b98cf",
+      "executable": true
+    },
+    {
+      "path": "scripts/look.py",
+      "sha256": "70f984b4baf024a6036dedc4efc317d4d48e41b790d2830821323d1204aa7811",
+      "executable": true
+    },
+    {
+      "path": "scripts/mix.py",
+      "sha256": "2405fe49bc13649e3313e89766956873610f9c605d3b1e94cfe2f418bc1af4cb",
+      "executable": true
+    },
+    {
+      "path": "scripts/precedent.py",
+      "sha256": "fdc92d9da917d594086e42bdcb8541b914764a31692ea3f861ba9f2dfd386a09",
+      "executable": true
+    },
+    {
+      "path": "scripts/providers.sh",
+      "sha256": "1e8652abdb7c19806df0f2b02334898dd7f20ad6dd3bfe10cb28fd0783eac266",
+      "executable": true
+    },
+    {
+      "path": "scripts/render.mjs",
+      "sha256": "c1c4f024edf24f57c884bd016349d01ebfe00f166600c2349206862005dd9a85",
+      "executable": true
+    },
+    {
+      "path": "scripts/sync.mjs",
+      "sha256": "65721378dea072abe23d3e95b9e7159b8f72d5a95ec51f4353f9ee6e445044e4",
+      "executable": true
+    },
+    {
+      "path": "scripts/voice.py",
+      "sha256": "2f691bee86045c8e1f85173bc2fae030a3a5d3b8a1f0bfb9770a2fd4b25559d8",
+      "executable": true
+    },
+    {
+      "path": "studies/judgment-studies-1.jpg",
+      "sha256": "ee723cf049f53a555df106a7d808dad019b30f508e5fcdd362ae13bc7b9d206e",
+      "executable": false
+    },
+    {
+      "path": "studies/judgment-studies-2.jpg",
+      "sha256": "2c7a7d34f1fa58b95b5f938cf227a4995429ef63e03262f26464cc6d0ba031f6",
+      "executable": false
+    },
+    {
+      "path": "studies/PROVENANCE.md",
+      "sha256": "76db2a2e1e616376dab3dbc644bcdbf21a5b1132acc1eef04b0f49a875d3a701",
+      "executable": false
+    },
+    {
+      "path": "taste/edits.md",
+      "sha256": "c7374e00c93ac1dff990ccdc9028e49a741e37859287465447c0037cc3dd5ba1",
+      "executable": false
+    },
+    {
+      "path": "taste/verdicts.md",
+      "sha256": "bcb34f3c5bb5e5018a2c9771c331f1978dc3c7f19381e753de8df653b7f7a23a",
+      "executable": false
+    },
+    {
+      "path": "templates/film.html",
+      "sha256": "4919d29692fc06a66c12a771e6a735afebaa5669d4b259083992ff75e59872c5",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/motionmaxxing"
+}

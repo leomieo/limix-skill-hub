@@ -1,0 +1,46 @@
+{
+  "repository": "google/elephant-goldfish-model",
+  "commit": "270b10326bf366d823bc76fd662cf83808d5781e",
+  "path": "skills/egm-draft",
+  "verified": true,
+  "coreSha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec",
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "eafc643897b5a4ea7a849bd4211acaf8f3bc31a079f199ef5d04d08b410705b7",
+      "executable": false
+    },
+    {
+      "path": "assets/icon.svg",
+      "sha256": "0cca32ed85b4198fdf3566198f92a17c943ee3d9a72d38c2898132b67130aebd",
+      "executable": false
+    },
+    {
+      "path": "references/design_doc.md",
+      "sha256": "309246562d1ffd801b3a2cd81f5cbc767d36f7530046f6ac681b6db40c6c7965",
+      "executable": false
+    },
+    {
+      "path": "test_scenarios.yaml",
+      "sha256": "6558ddf2c4567bb26ea233bcff8eb1ec704d511a9497410d4041383d28ed57b3",
+      "executable": false
+    },
+    {
+      "path": "TEST.md",
+      "sha256": "700b94b10584290280662e43caafa06363272d2711c131151c8fdbe6951adc0e",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/elephant-goldfish-model"
+}

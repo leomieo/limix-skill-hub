@@ -4,5 +4,12 @@
   "createdAt": "2026-10-30T06:43:25Z",
   "pushedAt": "2026-11-13T08:43:39Z",
   "statsCheckedAt": "2026-11-13",
-  "license": "MIT"
+  "license": "MIT",
+  "commit": "5294518ce7c72e48b6100a744596e0acf57f2826",
+  "path": "skills/pixelfx",
+  "language": "hybrid",
+  "version": "5294518ce7c7",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-13T09:22:43.610Z"
 }

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "name": "digital-human-koubo",
+  "version": "f661a6c047bb",
+  "source": {
+    "url": "https://github.com/andyhuo520/digital-human-koubo",
+    "commit": "f661a6c047bb74ea306ef58aeb1d461a52c01871",
+    "sha256": "2d2bf70388759deed3f8ebac0c5272d673a3bd6089d3bddbc599b7fc7f998765",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Sản xuất video người ảo (digital human) dạng nói chuyện (talking head) chuyên nghiệp từ ảnh chân dung: tích hợp Renoise MCP sinh chuyển động và khẩu hình, 5 phong cách dựng biên tập (giải thích kiểu Tiểu Lâm, video ngắn hoa tự, bản tin phát hành, hướng dẫn chi tiết, đa ngôn ngữ), 48 linh kiện đồ họa đóng gói chuẩn creator (chữ chìm sau người, bằng chứng ảnh chụp, bản đồ, bình luận, đinh số hook), cắt đoạn 15s tự động, sửa phát âm không mất khẩu hình và tự tạo ảnh bìa tích hợp khung đầu.",
+    "aliases": [
+      "Video người ảo",
+      "Nhân vật nói chuyện"
+    ],
+    "keywords": [
+      "digital",
+      "human",
+      "koubo",
+      "Video người ảo",
+      "Nhân vật nói chuyện"
+    ],
+    "examples": [
+      "Dùng digital-human-koubo cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "2d2bf70388759deed3f8ebac0c5272d673a3bd6089d3bddbc599b7fc7f998765"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-13T09:14:21.544Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "assets/avatar_ref.jpg: binary-file (low)",
+      "assets/packaging/each/ArchiveCards.jpg: binary-file (low)",
+      "assets/packaging/each/CalloutLeader.jpg: binary-file (low)",
+      "assets/packaging/each/ChapterCard.jpg: binary-file (low)",
+      "assets/packaging/each/Charts.jpg: binary-file (low)",
+      "assets/packaging/each/ColdOpenFreeze.jpg: binary-file (low)",
+      "assets/packaging/each/CompareWipe.jpg: binary-file (low)",
+      "assets/packaging/each/Counter.jpg: binary-file (low)",
+      "assets/packaging/each/Danmaku.jpg: binary-file (low)",
+      "assets/packaging/each/DocFocus.jpg: binary-file (low)",
+      "assets/packaging/each/EvidenceCard.jpg: binary-file (low)",
+      "assets/packaging/each/FreezeFrame.jpg: binary-file (low)",
+      "assets/packaging/each/GlassPanel.jpg: binary-file (low)",
+      "assets/packaging/each/GlitchInterstitial.jpg: binary-file (low)",
+      "assets/packaging/each/HandDraw.jpg: binary-file (low)",
+      "assets/packaging/each/Highlight.jpg: binary-file (low)",
+      "assets/packaging/each/HostFloaters.jpg: binary-file (low)",
+      "assets/packaging/each/KeywordStack.jpg: binary-file (low)",
+      "assets/packaging/each/LowerThird.jpg: binary-file (low)",
+      "assets/packaging/each/MapRoute.jpg: binary-file (low)",
+      "assets/packaging/each/MemeWindow.jpg: binary-file (low)",
+      "assets/packaging/each/NamePlate.jpg: binary-file (low)",
+      "assets/packaging/each/NumberSpike.jpg: binary-file (low)",
+      "assets/packaging/each/Odometer.jpg: binary-file (low)",
+      "assets/packaging/each/PaperCollage.jpg: binary-file (low)",
+      "assets/packaging/each/PollPop.jpg: binary-file (low)",
+      "assets/packaging/each/ProgressChapters.jpg: binary-file (low)",
+      "assets/packaging/each/ProgressTracker.jpg: binary-file (low)",
+      "assets/packaging/each/PunchInHost.jpg: binary-file (low)",
+      "assets/packaging/each/ReactionPop.jpg: binary-file (low)",
+      "assets/packaging/each/RecapBoard.jpg: binary-file (low)",
+      "assets/packaging/each/RetentionCaption.jpg: binary-file (low)",
+      "assets/packaging/each/ReviewCards.jpg: binary-file (low)",
+      "assets/packaging/each/SearchTyping.jpg: binary-file (low)",
+      "assets/packaging/each/SlamText.jpg: binary-file (low)",
+      "assets/packaging/each/SourceDoc.jpg: binary-file (low)",
+      "assets/packaging/each/SpecCard.jpg: binary-file (low)",
+      "assets/packaging/each/TeaserColdOpen.jpg: binary-file (low)",
+      "assets/packaging/each/TextBehind.jpg: binary-file (low)",
+      "assets/packaging/each/TiltAside.jpg: binary-file (low)",
+      "assets/packaging/each/TornStrip.jpg: binary-file (low)",
+      "assets/packaging/each/TypedNameTag.jpg: binary-file (low)",
+      "assets/packaging/each/WordStack.jpg: binary-file (low)",
+      "assets/packaging/each/ZoomFocus.jpg: binary-file (low)",
+      "assets/packaging/图鉴.jpg: binary-file (low)",
+      "assets/styles/A_xiaolin_explainer.jpg: binary-file (low)",
+      "assets/styles/B_huazi_koubo.jpg: binary-file (low)",
+      "assets/styles/B_huazi_presets.jpg: binary-file (low)",
+      "Incomplete upstream bundle: inspect excluded files before approving compatibility or activation."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "649 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

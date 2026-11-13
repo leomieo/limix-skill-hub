@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "name": "egm-draft",
+  "version": "270b10326bf3",
+  "source": {
+    "url": "https://github.com/google/elephant-goldfish-model",
+    "commit": "270b10326bf366d823bc76fd662cf83808d5781e",
+    "sha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec",
+    "license": "Apache-2.0"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Mô hình thiết kế và thẩm định kiến trúc phần mềm đa tác tử của Google: Elephant lưu giữ toàn diện ngữ cảnh dự án để soạn thảo tài liệu thiết kế (design draft/spec); Goldfish được sinh ra trong phiên làm việc độc lập hoàn toàn không có lịch sử hội thoại cũ để thẩm định khách quan, bóc tách điểm mù và giả định ngầm. Quy trình gồm 5 pha review chuyên sâu: Initial Zoom Out, Comprehension, Design Critique, Intermediate Zoom Out và Implementation Readiness.",
+    "aliases": [
+      "Phản biện đặc tả",
+      "Thiết kế đa tác tử",
+      "elephant-goldfish-model"
+    ],
+    "keywords": [
+      "egm",
+      "draft",
+      "Phản biện đặc tả",
+      "Thiết kế đa tác tử"
+    ],
+    "examples": [
+      "Dùng egm-draft cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

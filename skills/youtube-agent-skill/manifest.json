@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "name": "youtube-agent-skill",
+  "version": "a2feb2104981",
+  "source": {
+    "url": "https://github.com/Jakeschincariol/youtube-agent-skill",
+    "commit": "a2feb2104981a375ffd4f87ee04f4f5344ac43c6",
+    "sha256": "ed487ba4b1fb2e166f8d2f42a9bdc64a65ded11a73cf4885f9af2941c33887fc",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Vận hành kênh YouTube toàn diện cho AI Agent: viết kịch bản video từ ý tưởng thô với 21 công thức hook chấm điểm tự động, kiểm duyệt ghép đôi tiêu đề và thumbnail tránh trùng lặp/cắt cụt, đọc tệp xuất retention để tìm điểm rơi người xem, tạo bảng quyết định dựng (EDL) từ bản ghi âm, tự động phát hiện và cắt Shorts từ video dài, cùng linter SEO chuẩn YouTube.",
+    "aliases": [
+      "Quản lý YouTube",
+      "Kịch bản YouTube"
+    ],
+    "keywords": [
+      "youtube",
+      "agent",
+      "skill",
+      "Quản lý YouTube",
+      "Kịch bản YouTube"
+    ],
+    "examples": [
+      "Dùng youtube-agent-skill cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "ed487ba4b1fb2e166f8d2f42a9bdc64a65ded11a73cf4885f9af2941c33887fc"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "Legacy English wrapper has not been matched to upstream source.",
+      "No standalone upstream license evidence retained; verify redistribution terms before activation."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "No compatible upstream SKILL.md with the curated English name; legacy English wrapper retained.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

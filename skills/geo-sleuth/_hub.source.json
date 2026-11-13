@@ -1,0 +1,536 @@
+{
+  "repository": "Oldcircle/geo-sleuth",
+  "commit": "d56c35789565e9459f0663e860c470e98e9c30d1",
+  "path": "skills/geo-sleuth",
+  "verified": true,
+  "coreSha256": "18fc803dfbdccb92c7f92d783c266d33440266e5ffc43c79d227e760f1abc480",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "18fc803dfbdccb92c7f92d783c266d33440266e5ffc43c79d227e760f1abc480",
+      "executable": false
+    },
+    {
+      "path": "data/calling_codes.json",
+      "sha256": "a06123e92891329988e1a933668d6eb560d4879add448d0f095b10c40e18b0af",
+      "executable": false
+    },
+    {
+      "path": "data/country_names.json",
+      "sha256": "6fb12885ab95d8d3b9b23e25c857b28b4426b0254f36b3c951e3239bfa5dc383",
+      "executable": false
+    },
+    {
+      "path": "data/driving_side.json",
+      "sha256": "f2328b77017789048ccf495a3acdb2388652519c9e5c3d0732408ed621c10d1f",
+      "executable": false
+    },
+    {
+      "path": "data/README.md",
+      "sha256": "63c71e57de2ae42bc3a245e6d77dd56ec81c4a51caceaa1d3cdad2a13bf76071",
+      "executable": false
+    },
+    {
+      "path": "data/territories.json",
+      "sha256": "b3bcff2c122d315a7f8190a908e0d6489a84dd3d8ee3e5ef81a3344c81e8f204",
+      "executable": false
+    },
+    {
+      "path": "references/aerial.md",
+      "sha256": "0eb49120f89dc80ee4e0b3514f33efaa911a9e41ecc0841841cd90a85b4fa09b",
+      "executable": false
+    },
+    {
+      "path": "references/clues/global.md",
+      "sha256": "ff88c6261cfa96a9d40e8d03e5823243a16444a4953ff3db6570d029d73128ab",
+      "executable": false
+    },
+    {
+      "path": "references/clues/README.md",
+      "sha256": "733de69104f86f3145f67adc84c648bd37a0b4bfe9428ae44ff327c50ff5c991",
+      "executable": false
+    },
+    {
+      "path": "references/corridors.md",
+      "sha256": "f4699c770077ce1d56df3dbae377b9d803ffa7af02252fde2a101711fa5e6a96",
+      "executable": false
+    },
+    {
+      "path": "references/data-sources.md",
+      "sha256": "44944445c09ca72e52506a641f6a5b9c9b41407cc315d6e15e2f84de3107c801",
+      "executable": false
+    },
+    {
+      "path": "references/geometry.md",
+      "sha256": "24652611a691bdb968e311e5957288d76f6b90a916e9c7d0ef84b450bceea8d7",
+      "executable": false
+    },
+    {
+      "path": "references/observe.md",
+      "sha256": "eaef66db7dc3a3d963b27990d206034366774c8791b652df30cad2077cd90bdb",
+      "executable": false
+    },
+    {
+      "path": "references/search.md",
+      "sha256": "82c9c2d3606b6ea03f15a0754c4a316ba6b19ee3a8cde2f6e448f7baa9421f20",
+      "executable": false
+    },
+    {
+      "path": "references/sky.md",
+      "sha256": "23dd598d20d1eba300c89cdde11dd39c9191cfcd0384d1c40de8adb1c8df68b4",
+      "executable": false
+    },
+    {
+      "path": "references/skyline-fallback.md",
+      "sha256": "43d6245497c53d4066215e3ac735180720da275c72051d402d20d6ba7ede3901",
+      "executable": false
+    },
+    {
+      "path": "references/verify.md",
+      "sha256": "281c827f4997389488cb45b0ec075800aabcc4a2220818ef2b202d7c29840105",
+      "executable": false
+    },
+    {
+      "path": "regions/_template/clues.md",
+      "sha256": "c0474312161f0a65beece08f448b86ed6b472ce7c52676b5ab2963c7a981f045",
+      "executable": false
+    },
+    {
+      "path": "regions/_template/README.md",
+      "sha256": "634b9277d62ee707350e2b5dbc0b25624ae3afc35aba8b7dc3c294a570d3ee26",
+      "executable": false
+    },
+    {
+      "path": "regions/_template/region.json",
+      "sha256": "711335d3e2ad26c0162a3abadf22c8b7e67c4fe2a18769a7ec47a398d63cf2e3",
+      "executable": false
+    },
+    {
+      "path": "regions/ca/clues.md",
+      "sha256": "76ba4a2de8aa1aa5c3ffa5adc40bb34518697a272ab183439c48950019405822",
+      "executable": false
+    },
+    {
+      "path": "regions/ca/region.json",
+      "sha256": "dd581da27c25c2593b81390f1f0ce6454361f02fed21ab95585e6af069a9244c",
+      "executable": false
+    },
+    {
+      "path": "regions/cn/clues.md",
+      "sha256": "801117854cf4071e958fbc805ca9db1718c877b5c7dd6988aacc22f532cc0804",
+      "executable": false
+    },
+    {
+      "path": "regions/cn/data/admin.json",
+      "sha256": "2f135f083de47ef00e508230ebd6708cf53162113637976d8ae9b478faaf733c",
+      "executable": false
+    },
+    {
+      "path": "regions/cn/data/area_codes.json",
+      "sha256": "42bc38c52d9a462bd7e97c6bf2a141a682679830754f5c6257e02f626e2e58c6",
+      "executable": false
+    },
+    {
+      "path": "regions/cn/data/plates.json",
+      "sha256": "225ab09f97aa37d53ebbdf09f787d5fa5ffaf05561969f50a2aa7ec6349b4c22",
+      "executable": false
+    },
+    {
+      "path": "regions/cn/region.json",
+      "sha256": "f166115f966f03e9cd46c279bb4db39b666251e6a8ac61c3e82399f9bd0f0f52",
+      "executable": false
+    },
+    {
+      "path": "regions/cn/search.md",
+      "sha256": "c9a7d52cae83ebe3b61e1c9eec110531724e4c7441edae45f74d7f2b8837bfe1",
+      "executable": false
+    },
+    {
+      "path": "regions/cn/tests.json",
+      "sha256": "469821b7082657f642d33f0cd9704751ad0d7004a1a41c959e2331467913a7b5",
+      "executable": false
+    },
+    {
+      "path": "regions/il/clues.md",
+      "sha256": "8405ccd8223573dd999c384fc38a4486ae2fb37ccdfc335334708b6902f2db33",
+      "executable": false
+    },
+    {
+      "path": "regions/il/data/admin.json",
+      "sha256": "4a06d92d4a0021d9613702b7bf2186280e01370c55499ae1b0a1ead89009e49e",
+      "executable": false
+    },
+    {
+      "path": "regions/il/data/area_codes.json",
+      "sha256": "54cb20674e175f3612db6a1d0c10a767e51f56ca2356e72efad646e608bfb807",
+      "executable": false
+    },
+    {
+      "path": "regions/il/region.json",
+      "sha256": "c4989be407876de701932b6cd4c85cb7681e3ffb8cc1d5cb6034ab00820cddae",
+      "executable": false
+    },
+    {
+      "path": "regions/il/tests.json",
+      "sha256": "b21e6dd898a5c06bc4aaca0c26faca4397bb8c9e2ef5521a8ad9edc81f19da0a",
+      "executable": false
+    },
+    {
+      "path": "regions/jp/clues.md",
+      "sha256": "6c0b901e33f8ec2b0a84cbb12c30b4e040b2e75f0e4926ebc90712d10da03690",
+      "executable": false
+    },
+    {
+      "path": "regions/jp/region.json",
+      "sha256": "02bfefd8f78e40104eeaad1cb2b27e2ccbb28aeb3f8370b810ce264da4fac610",
+      "executable": false
+    },
+    {
+      "path": "regions/kg/clues.md",
+      "sha256": "7f904a9cacb88526cef23084aeb6ae0b99ef7dbc93e4ae2420a1bbce2fe51521",
+      "executable": false
+    },
+    {
+      "path": "regions/kg/data/admin.json",
+      "sha256": "f53ff26360272433b4c4ea688ac9e82cb75946d97448b4a2ffac0474950d0397",
+      "executable": false
+    },
+    {
+      "path": "regions/kg/data/area_codes.json",
+      "sha256": "b9ea3635a16ac12e8cb4c24005e8f4beb6fa8724b61c6269f549fbf4fe714529",
+      "executable": false
+    },
+    {
+      "path": "regions/kg/data/plates_1994.json",
+      "sha256": "83dbec4592b156bc9f758f37aee11d449df8aed549e1f8134dfa8c91b0ccea43",
+      "executable": false
+    },
+    {
+      "path": "regions/kg/data/plates.json",
+      "sha256": "cde57a075d19245065edc8ec46b6d68600f7867d5d8ec68acf2aed8d221d6dcb",
+      "executable": false
+    },
+    {
+      "path": "regions/kg/region.json",
+      "sha256": "e2a20bbfb5f48967ddb278863a7218e481cccfed023372e8c70d17fd6fab2528",
+      "executable": false
+    },
+    {
+      "path": "regions/kg/tests.json",
+      "sha256": "f33eea46cccb6c3fc05fb039e1bc7d898edc6c49743e431c76a296cafe59e5e8",
+      "executable": false
+    },
+    {
+      "path": "regions/kr/clues.md",
+      "sha256": "ecf5602abde4dc896bd581b0a386c2374e1d485d0241f942a904ebba9dfb0200",
+      "executable": false
+    },
+    {
+      "path": "regions/kr/data/admin.json",
+      "sha256": "4c3d13557ba27b37eab4baf7851923bea041c795ac7dc294f312f3229b342479",
+      "executable": false
+    },
+    {
+      "path": "regions/kr/data/area_codes.json",
+      "sha256": "ad148f222a07548bbf1474e371b5578b04d384c14eda5c5339c25d1a5d9d1faf",
+      "executable": false
+    },
+    {
+      "path": "regions/kr/data/plates.json",
+      "sha256": "a2b2c6a0b5b1b16c04c0c177fec27dcfa070302403fdc1e6c348a8cd7da4d7bd",
+      "executable": false
+    },
+    {
+      "path": "regions/kr/region.json",
+      "sha256": "366abcaf19c62117c4aba29bfe6dfc9d793be188fdae3c7c2949d17c3626b27f",
+      "executable": false
+    },
+    {
+      "path": "regions/kr/tests.json",
+      "sha256": "c567c632f456508d77300894ea5d0e7690ace5b6033ee8075514b878d19ce8df",
+      "executable": false
+    },
+    {
+      "path": "regions/lk/clues.md",
+      "sha256": "820d6011f7716e5c93fbd512d746f60a030a6c8ca32c548dbd589d2f6013b490",
+      "executable": false
+    },
+    {
+      "path": "regions/lk/data/admin.json",
+      "sha256": "c17364164c1625092bab3ccaa1d2d7993e59ee1bbed0b5dea392ad3816aa1805",
+      "executable": false
+    },
+    {
+      "path": "regions/lk/data/area_codes.json",
+      "sha256": "52a3931e9587b1f03bd3d22d341a13dd87093e87afa1106bd25585f4bcf580d2",
+      "executable": false
+    },
+    {
+      "path": "regions/lk/data/plates.json",
+      "sha256": "e10adf37ff9182b0009af2740e3d8a66c49aca6ee565145b5680ed752e2f76df",
+      "executable": false
+    },
+    {
+      "path": "regions/lk/region.json",
+      "sha256": "eacdee8935576b526f98e4f2864fdd56d51828c090d42c57b475a901ef0d6981",
+      "executable": false
+    },
+    {
+      "path": "regions/lk/tests.json",
+      "sha256": "baf5f6f366a986a78faa2915cd3f021569d3bb5cfde28dc92b77db73e88068b4",
+      "executable": false
+    },
+    {
+      "path": "regions/mm/clues.md",
+      "sha256": "e365048b0e2708e450f3f43b087b8603367a15253d80f5a917da5a3deb319cdb",
+      "executable": false
+    },
+    {
+      "path": "regions/mm/region.json",
+      "sha256": "05c1738f79dce086083bac9b3b86daac89ed9cc10567c5fb6681a4c92e7abd7f",
+      "executable": false
+    },
+    {
+      "path": "regions/mx/clues.md",
+      "sha256": "eca356b2ef213d2c28d941f36163cb05e40669b8725d5444cbdf3404ab508178",
+      "executable": false
+    },
+    {
+      "path": "regions/mx/region.json",
+      "sha256": "dec840841ae0f76a6f5916d79775d23dd8bffee166076bedc66a955183e513fc",
+      "executable": false
+    },
+    {
+      "path": "regions/nz/clues.md",
+      "sha256": "39ca2ae5c20fe09e2fc486fedd5712aad8196ed3b2ec66ddc2c32e21041f4957",
+      "executable": false
+    },
+    {
+      "path": "regions/nz/region.json",
+      "sha256": "476c10b0f01cf08fa6a8e1a206c629c351680e17c5df6174bad0d758f82f5233",
+      "executable": false
+    },
+    {
+      "path": "regions/README.md",
+      "sha256": "05b43eb9548940608d84576f1c422e51b40cfe787a568b6a12541a63e19ab16a",
+      "executable": false
+    },
+    {
+      "path": "regions/tr/clues.md",
+      "sha256": "5835294eaa50d38c282d96c93afb4992b21e2bd0023313000954d86145216fc6",
+      "executable": false
+    },
+    {
+      "path": "regions/tr/data/admin.json",
+      "sha256": "e240388535f7f876e60b9d77a141cdacc30c6b19795c74b8bc5a11ce6b1f7504",
+      "executable": false
+    },
+    {
+      "path": "regions/tr/data/area_codes.json",
+      "sha256": "7ce5ea7d544efc9b3546a85ee5b1e2b0d1d68dc472239547a70010c22ea63bd8",
+      "executable": false
+    },
+    {
+      "path": "regions/tr/data/plates.json",
+      "sha256": "fababba240b369b90422c052ba4d062d071e18b4418c4702f7c915b00f957b68",
+      "executable": false
+    },
+    {
+      "path": "regions/tr/region.json",
+      "sha256": "9704aa88ace9219bcbc96a80ba1f1e684041bd7f5e866cda01fbb1a5f66e2f2d",
+      "executable": false
+    },
+    {
+      "path": "regions/tr/tests.json",
+      "sha256": "2f03d1bfd55ebf672914b8d5c7e73a61fa533785ca83862933c0a7fc2edf6f27",
+      "executable": false
+    },
+    {
+      "path": "regions/us/clues.md",
+      "sha256": "becabecda31e5902fd227e49add5e985f49d2aaaa6d2dc3054c0e7bb712936db",
+      "executable": false
+    },
+    {
+      "path": "regions/us/region.json",
+      "sha256": "eb8212459739cb7df1051a1dc54ca976474aeb5e0d94e19e96f9816d99da36a6",
+      "executable": false
+    },
+    {
+      "path": "scripts/_browser.py",
+      "sha256": "542c7fd5e3d4ddbcfd2a724c934fb7d873788f5680ac6070ad0e46a251581afe",
+      "executable": false
+    },
+    {
+      "path": "scripts/_device.py",
+      "sha256": "0fb06ae8b589abcea09cddeac9568aaedc43ac41222e5ca0f1d303b790b890a3",
+      "executable": false
+    },
+    {
+      "path": "scripts/_image.py",
+      "sha256": "0f79259df40e1dae1733f2071fcfb80f2612ddbc4bb064a9f5a96681295aba13",
+      "executable": false
+    },
+    {
+      "path": "scripts/_net.py",
+      "sha256": "76bf4664e6f96eb8d0df211d72a13e223a5af58a9dfef7a56806a3eee71ae947",
+      "executable": false
+    },
+    {
+      "path": "scripts/baidu_pano.py",
+      "sha256": "e835a4eb9cce4f9234f08bd6818dfacb39ac8b58d724d255cc96e5c16c438709",
+      "executable": true
+    },
+    {
+      "path": "scripts/board.py",
+      "sha256": "e3109b74beef931b209bd3ce59cb1b6457b600f69ccde6673ce66808f87f2866",
+      "executable": false
+    },
+    {
+      "path": "scripts/clues.py",
+      "sha256": "642676fb2c7fcc6118325d94877fab8de5d92118898d507ed76c68b9ae1e0ab9",
+      "executable": false
+    },
+    {
+      "path": "scripts/doctor.py",
+      "sha256": "fc232d0971d5f931c86f273a862f6c96463ad009cae1f3f12f4f02ed489f54d5",
+      "executable": false
+    },
+    {
+      "path": "scripts/evidence.py",
+      "sha256": "4bb5949afec3eb247e89af3b2991c52786320e0666a0a7d992dfd9b581e1f25c",
+      "executable": true
+    },
+    {
+      "path": "scripts/exif.py",
+      "sha256": "3d89a690d47bd1a0b3a5c953ed1f30cdad899fccaf97117ad6c2d92bce0b0223",
+      "executable": false
+    },
+    {
+      "path": "scripts/gazetteer.py",
+      "sha256": "82baa7eea1be14138e3c9e8461032ba0b34c7067b5235b158a70af51ae8299c7",
+      "executable": false
+    },
+    {
+      "path": "scripts/geo.py",
+      "sha256": "7ef8c2e51646ac39ab80851ef0faa18eb08dcd149fed8d9509bd5e912ca5fe35",
+      "executable": true
+    },
+    {
+      "path": "scripts/gsv.py",
+      "sha256": "8c06f88c0c75d16ae3ba2f9280c09acb13a7750e56555b34005537f5dcc24913",
+      "executable": false
+    },
+    {
+      "path": "scripts/imgprep.py",
+      "sha256": "195e671b41ea4036ae1c2d9dddba66f7c432f82536bbc2a7512a66aee1cbe7e7",
+      "executable": false
+    },
+    {
+      "path": "scripts/intake.py",
+      "sha256": "51552258b37051056ce6492eb9268fc36d1ee6bd7321ea1fd71ceb5bbd292c03",
+      "executable": false
+    },
+    {
+      "path": "scripts/match.py",
+      "sha256": "79a388c78b17f7959d5f6e7614aaeaffd1e364bcb8c53ba934ab6bb0619c3c12",
+      "executable": false
+    },
+    {
+      "path": "scripts/ocr.py",
+      "sha256": "55949b422bffcce6e577b1dea471f8785f0114e48a693a77546b3da72ca6c1f8",
+      "executable": false
+    },
+    {
+      "path": "scripts/osm.py",
+      "sha256": "08b63a414ce656a828e44cade821cec0b529e7e4eecbc0d90828d8523316a7cd",
+      "executable": false
+    },
+    {
+      "path": "scripts/poi.py",
+      "sha256": "e7e82bf9868b24b75c36594174dfab61b5678742359b3d8054d9774f2a6d4b68",
+      "executable": false
+    },
+    {
+      "path": "scripts/pose.py",
+      "sha256": "70b2297bc1a80593c140caad7977c7cb30e83bd5a80e49a8601cb416a04af8fb",
+      "executable": false
+    },
+    {
+      "path": "scripts/refresh.py",
+      "sha256": "ae5cef48be2a66509dd31d9c4ce5b022a37ed9735797cb66f7eec8dafe9b6375",
+      "executable": false
+    },
+    {
+      "path": "scripts/regions.py",
+      "sha256": "7430eab7475029f009aaa18584d1e9e0d87f9de3baa7b525d9890e7148120e7d",
+      "executable": false
+    },
+    {
+      "path": "scripts/revimg.py",
+      "sha256": "25a515a47d8bf4e866d96964a84a7d2d816c52975c9774ef768a6b4761c6f3f8",
+      "executable": false
+    },
+    {
+      "path": "scripts/sat_scan.py",
+      "sha256": "5ff73aab9e78ba9531dff172c4080a173f7d6880dc30e79058abe205c53278c6",
+      "executable": false
+    },
+    {
+      "path": "scripts/sun.py",
+      "sha256": "cdc2a53b2525491737e0d8587564ad0ccf4ca1c95ce1d11df35f5af26bda05cd",
+      "executable": false
+    },
+    {
+      "path": "scripts/terrain.py",
+      "sha256": "968dfdeabe66a55174e7124263b26d64d53e1ea689c5816e92b154e7fc8ff781",
+      "executable": false
+    },
+    {
+      "path": "scripts/tiles.py",
+      "sha256": "4af1f09393915a036176cf52a7fde8cffd3def05deac916bb8910e9e54472f31",
+      "executable": true
+    },
+    {
+      "path": "tests/test_board.py",
+      "sha256": "05f64df0d12ac6cfc7a9e49469720ecac6161210bd4c004a1fb1aa785d148e5b",
+      "executable": false
+    },
+    {
+      "path": "tests/test_gazetteer.py",
+      "sha256": "6b8e04c9120b65fbc9521f3bceadbd3215d5ccac1dea7b29e87ad34d829e8041",
+      "executable": false
+    },
+    {
+      "path": "tests/test_match.py",
+      "sha256": "596836d75059815e936969e89d0da4c07b2511682464a87031214b734ab9310e",
+      "executable": false
+    },
+    {
+      "path": "tests/test_regions.py",
+      "sha256": "f258d598a3b848acfe347ff2ac14a8230542dc66af3f441ccf467c445b715db1",
+      "executable": false
+    },
+    {
+      "path": "tests/test_runtime.py",
+      "sha256": "c47d61fe6659d640bf1b37b4a5888b6716e94621d528e9b56713ba461bddadfe",
+      "executable": false
+    },
+    {
+      "path": "tests/test_sun.py",
+      "sha256": "34b6873641315931e8c6c544352e268fd16268e9265caf13b9b8cec485d8d166",
+      "executable": false
+    },
+    {
+      "path": "tests/test_terrain.py",
+      "sha256": "95c0f259aa03e3aa3a63a3cfb000354ff5ccf68b9f9dc2aa51bd6f40fba6b724",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "bd374c9fb4dcb3273b0e1098445ce62355aaa66f45df18971a84a037ed89e4b0",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/geo-sleuth"
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "name": "mod-any-game",
+  "version": "3c4ac6c38e41",
+  "source": {
+    "url": "https://github.com/rehan-remade/universal-modder",
+    "commit": "3c4ac6c38e411b8c543bce217eae197039516bfc",
+    "sha256": "6917f5983b8c99950f41012a2c225d2f8d3617664a6c79a914677c631afe0eaa",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Hệ 13 skill + CLI `um` + MCP fal giúp mọi AI coding agent (Claude Code, Codex, Cursor, Gemini CLI, Copilot, OpenCode) mod gần như bất kỳ game PC người dùng sở hữu: recon engine/chống gian lận, chọn route, dựng lab an toàn (backup save), đọc code thật, build từng \"vertical slice\" chạy được, tạo asset bằng fal, xác minh ngay trong game thật, quay video trình diễn và ghi field note vào knowledge base cho agent sau. Skill chính là mod-any-game. Dùng khi người dùng muốn mod, mở rộng, reverse-engineer hoặc mashup game (\"thêm nuke vào Terraria\", \"làm văn minh mới cho Age of Empires II\", \"đưa Minecraft vào GTA V\", \"game này mod được không?\").",
+    "aliases": [
+      "Mod game PC",
+      "Chỉnh sửa trò chơi",
+      "universal-modder"
+    ],
+    "keywords": [
+      "mod",
+      "any",
+      "game",
+      "Mod game PC",
+      "Chỉnh sửa trò chơi"
+    ],
+    "examples": [
+      "Dùng mod-any-game cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "6917f5983b8c99950f41012a2c225d2f8d3617664a6c79a914677c631afe0eaa"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "network"
+  ],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

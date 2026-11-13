@@ -9,6 +9,7 @@ import { readSkillDir, folderChecksum } from "../lib/pack.mjs";
 import { scanSkill } from "../lib/security.mjs";
 import { classifySkill } from "../lib/classify.mjs";
 import { scoreSkill } from "../lib/score.mjs";
+import { validateHybridManifest, verifyHybridSkill } from "../lib/hybrid.mjs";
 
 const rootArg = process.argv.indexOf("--root");
 const root = rootArg > 0 ? path.resolve(process.argv[rootArg + 1]) : path.resolve(fileURLToPath(new URL("..", import.meta.url)));
@@ -25,31 +26,27 @@ async function entryFor(area, id) {
   const parsed = parseSkillMd(skillFile.text);
   if ("error" in parsed) return { error: parsed.error };
   if (!isSkillName(parsed.name)) return { error: `invalid skill name ${parsed.name}` };
-  if (parsed.name !== id) {
-    // The app installs a skill under its SKILL.md name, so the folder must carry that name: rename it when free.
-    const target = path.join(root, area, parsed.name);
-    if (await stat(target).then(() => true, () => false)) return { error: `folder ${id} holds skill ${parsed.name}, which already has a folder` };
-    await rename(dir, target);
-    console.log(`  renamed ${area}/${id} -> ${area}/${parsed.name}`);
-    return entryFor(area, parsed.name);
-  }
+  if (parsed.name !== id) return { error: `folder ${id} does not match English core name ${parsed.name}` };
   const meta = await readJson(path.join(dir, "_hub.json"), {});          // source info written by discovery
   const review = await readJson(path.join(dir, "_hub.review.json"), {}); // curator bot output (test, translation)
   const content = files.filter((f) => !f.path.startsWith("_hub"));
-  // The owner's curator writes the Vietnamese SKILL.md and keeps the original as SKILL.en.md.
-  const translated = content.some((f) => f.path === "SKILL.en.md");
+  const manifestFile = files.find((file) => file.path === "manifest.json");
+  const hybrid = manifestFile ? validateHybridManifest(JSON.parse(manifestFile.text)) : null;
+  if (hybrid) await verifyHybridSkill(dir);
+  if (hybrid && (hybrid.name !== id || hybrid.source.sha256 !== skillFile.sha256)) return { error: "Hybrid source hash/name does not match English core" };
   if (!meta.license && parsed.license) meta.license = parsed.license;
-  if (translated) { review.localized ??= true; review.description_vi ??= parsed.description; review.language ??= "vi"; }
+  if (hybrid?.vietnamese) { review.localized = true; review.description_vi = hybrid.vietnamese.description; review.language = "hybrid"; }
   const scan = scanSkill(content);
   const classification = classifySkill(content);
-  const score = scoreSkill({ parsed, scan, classification, meta, review });
-  const quarantined = area === "quarantine" || scan.status === "quarantined";
-  const approval = review.approval ?? (quarantined ? "quarantined" : score.grade === "rejected" ? "rejected" : classification.needsReview || score.grade === "review" ? "review-required" : "approved");
+  const quarantined = area === "quarantine" || scan.status === "quarantined" || hybrid?.security.status === "quarantined";
+  const score = scoreSkill({ parsed, scan: { ...scan, status: quarantined ? 'quarantined' : scan.status }, classification, meta, review });
+  const approval = quarantined ? "quarantined" : "review-required";
   return {
     id,
     name: parsed.name,
     description: parsed.description,
     description_vi: review.description_vi ?? null,
+    ...(hybrid ? { hybrid, aliases: hybrid.vietnamese?.aliases ?? [], keywords: hybrid.vietnamese?.keywords ?? [], supported_languages: hybrid.languages } : {}),
     version: meta.version ?? (meta.commit ? meta.commit.slice(0, 7) : "0"),
     source: { repository: meta.repository ?? null, commit: meta.commit ?? null, path: meta.path ?? null },
     stars: typeof meta.stars === "number" ? meta.stars : null,
@@ -63,7 +60,7 @@ async function entryFor(area, id) {
     quality_score: score.total,
     score_parts: score.parts,
     grade: score.grade,
-    security_status: scan.status,
+    security_status: quarantined ? 'quarantined' : scan.status,
     security_findings: scan.findings.map(({ rule, severity, file, line }) => ({ rule, severity, file, line })),
     approval_status: approval,
     kind: classification.kind,
@@ -83,7 +80,7 @@ const problems = [];
 for (const area of ["skills", "quarantine"]) {
   const dir = path.join(root, area);
   let ids = [];
-  try { ids = (await readdir(dir, { withFileTypes: true })).filter((d) => d.isDirectory()).map((d) => d.name); } catch { /* empty */ }
+  try { ids = (await readdir(dir, { withFileTypes: true })).filter((d) => d.isDirectory() && !d.name.startsWith(".")).map((d) => d.name); } catch { /* empty */ }
   for (const id of ids.sort()) {
     try {
       const entry = await entryFor(area, id);
@@ -92,6 +89,12 @@ for (const area of ["skills", "quarantine"]) {
       problems.push({ area, id, error: String(cause?.message ?? cause) });
     }
   }
+}
+
+if (problems.length) {
+  console.error(`catalog: ${catalog.length} skills, ${problems.length} problems; previous registry retained`);
+  for (const p of problems) console.error(`  ! ${p.area}/${p.id}: ${p.error}`);
+  process.exit(1);
 }
 
 const registryDir = path.join(root, "registry");

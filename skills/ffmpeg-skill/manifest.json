@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "name": "ffmpeg-skill",
+  "version": "92dabd8372da",
+  "source": {
+    "url": "https://github.com/kajisho5/ffmpeg-skill",
+    "commit": "92dabd8372dafd033055a3b22d3fb71b39ac3cfd",
+    "sha256": "b266140505cb9de5d980976a8aaf04f0bb546abdbdc07cc67995be824bd08506",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Sửa video và âm thanh bằng FFmpeg cục bộ — cắt, ghép, đổi khung hình, đổi tốc độ, phụ đề (kể cả karaoke highlight), overlay, xóa khoảng lặng, đồng bộ, chuẩn hóa loudness (LUFS), HDR→SDR, xuất bản theo từng nền tảng và kiểm tra kết quả. 42 tool Python thuần (chỉ thư viện chuẩn, không cloud, không API key) dạy agent quy trình cố định probe → sửa ít phá hủy nhất → check → verify, tự đo lại file đầu ra thay vì tin lời của chính mình. Cần FFmpeg 6.1+ và Python 3.10+. Dùng bất cứ khi nào người dùng nhắc file video/âm thanh (mp4, mov, wav, m4a), footage, phụ đề, reel/short, xuất YouTube/TikTok, LUFS hoặc ffmpeg — dù không nói chữ \"sửa\".",
+    "aliases": [
+      "Dựng video ffmpeg",
+      "Xử lý âm thanh video"
+    ],
+    "keywords": [
+      "ffmpeg",
+      "skill",
+      "Dựng video ffmpeg",
+      "Xử lý âm thanh video"
+    ],
+    "examples": [
+      "Dùng ffmpeg-skill cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "b266140505cb9de5d980976a8aaf04f0bb546abdbdc07cc67995be824bd08506"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-13T09:27:13.451Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "assets/demo.gif: binary-file (low)",
+      "assets/icon.png: binary-file (low)",
+      "assets/logo.png: binary-file (low)",
+      "assets/social-preview.png: binary-file (low)",
+      "bin/install.js: privilege (medium)",
+      "brand/app-icon-dark.png: binary-file (low)",
+      "brand/app-icon.png: binary-file (low)",
+      "brand/og.png: binary-file (low)",
+      "CHANGELOG.md: invisible-unicode (high)",
+      "demos/CI.md: privilege (medium)",
+      "demos/footage/ai_talk_en.mp4: binary-file (low)",
+      "demos/footage/ai_talk.mp4: binary-file (low)",
+      "docs/demos/alpha_layer.gif: binary-file (low)",
+      "docs/demos/audiogram.gif: binary-file (low)",
+      "docs/demos/beats_snap.gif: binary-file (low)",
+      "docs/demos/bgm_ducking.gif: binary-file (low)",
+      "docs/demos/broll_cutaway.gif: binary-file (low)",
+      "docs/demos/captions_ar.gif: binary-file (low)",
+      "docs/demos/captions_emoji.gif: binary-file (low)",
+      "docs/demos/captions_en.gif: binary-file (low)",
+      "docs/demos/captions_fitsize.gif: binary-file (low)",
+      "docs/demos/captions_ja.gif: binary-file (low)",
+      "docs/demos/captions_ko.gif: binary-file (low)",
+      "docs/demos/captions_multitrack.gif: binary-file (low)",
+      "docs/demos/captions_phrase.gif: binary-file (low)",
+      "docs/demos/captions_pop_karaoke.gif: binary-file (low)",
+      "docs/demos/captions_zh.gif: binary-file (low)",
+      "docs/demos/color_correct.gif: binary-file (low)",
+      "docs/demos/color_legalize.gif: binary-file (low)",
+      "docs/demos/color_lut.gif: binary-file (low)",
+      "docs/demos/contact_sheet.gif: binary-file (low)",
+      "docs/demos/crop_rect.gif: binary-file (low)",
+      "docs/demos/cropdetect_crop.gif: binary-file (low)",
+      "docs/demos/cut_accurate.gif: binary-file (low)",
+      "docs/demos/cut_edit_list.gif: binary-file (low)",
+      "docs/demos/cut_remove.gif: binary-file (low)",
+      "docs/demos/cut_smart.gif: binary-file (low)",
+      "docs/demos/deinterlace.gif: binary-file (low)",
+      "docs/demos/delogo.gif: binary-file (low)",
+      "docs/demos/denoise.gif: binary-file (low)",
+      "docs/demos/downmix_51.gif: binary-file (low)",
+      "docs/demos/export_reels.gif: binary-file (low)",
+      "docs/demos/filler_en.gif: binary-file (low)",
+      "docs/demos/filler_korean.gif: binary-file (low)",
+      "docs/demos/fit_blur.gif: binary-file (low)",
+      "docs/demos/freeze_hold.gif: binary-file (low)",
+      "docs/demos/greenscreen.gif: binary-file (low)",
+      "docs/demos/grid_2x2.gif: binary-file (low)",
+      "Incomplete upstream bundle: inspect excluded files before approving compatibility or activation."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "310 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

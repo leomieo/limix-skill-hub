@@ -4,5 +4,12 @@
   "createdAt": "2026-10-26T04:34:09Z",
   "pushedAt": "2026-10-31T12:05:46Z",
   "statsCheckedAt": "2026-11-13",
-  "license": "MIT"
+  "license": "MIT",
+  "commit": "f661a6c047bb74ea306ef58aeb1d461a52c01871",
+  "path": "skills/digital-human-koubo",
+  "language": "hybrid",
+  "version": "f661a6c047bb",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-13T09:14:21.544Z"
 }

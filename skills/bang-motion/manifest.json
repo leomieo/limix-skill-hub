@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "name": "bang-motion",
+  "version": "c1aa65e921c9",
+  "source": {
+    "url": "https://github.com/bangtutorial/bang-motion",
+    "commit": "c1aa65e921c970d858705fcb4a53a8294d1a4131",
+    "sha256": "c4782d6002ed2fda3d4dd0acf82a925f7aaf78a11bbb9c6e981763c587cd36de",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Tạo đồ họa chuyển động (motion graphics) điện ảnh chạy trực tiếp trên trình duyệt bằng HTML5, CSS và GSAP (hỗ trợ Three.js khi cần). Chuyên tạo video quảng cáo (promo), đoạn mở đầu (opener/intro), bumper, kinetic typography và video giải thích (explainer) tỷ lệ 16:9 hoặc 9:16. Sản phẩm chuyển động tự nhiên như video thực thụ, không bị thô cứng như slide PowerPoint. Xuất ra tệp index.html độc lập xem ngay hoặc kết xuất video MP4.",
+    "aliases": [
+      "Đồ họa chuyển động",
+      "Video quảng cáo"
+    ],
+    "keywords": [
+      "bang",
+      "motion",
+      "Đồ họa chuyển động",
+      "Video quảng cáo"
+    ],
+    "examples": [
+      "Dùng bang-motion cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "c4782d6002ed2fda3d4dd0acf82a925f7aaf78a11bbb9c6e981763c587cd36de"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-13T09:14:21.544Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "docs/gallery/01-grainy-gradient.jpg: binary-file (low)",
+      "docs/gallery/02-kinetic-colorblock.jpg: binary-file (low)",
+      "docs/gallery/03-saas-ui-tour.jpg: binary-file (low)",
+      "docs/gallery/04-flat-vector.jpg: binary-file (low)",
+      "docs/gallery/05-continuous-action.jpg: binary-file (low)",
+      "docs/gallery/06-cartoon-stage.jpg: binary-file (low)",
+      "docs/gallery/07-flat-pop-photo.jpg: binary-file (low)",
+      "docs/gallery/08-white-catalog.jpg: binary-file (low)",
+      "docs/gallery/09-visual-journalism.jpg: binary-file (low)",
+      "docs/gallery/10-vintage-sketch.jpg: binary-file (low)",
+      "docs/gallery/11-cartoon-collage.jpg: binary-file (low)",
+      "docs/gallery/12-more-combinations.jpg: binary-file (low)",
+      "docs/gallery/hero.jpg: binary-file (low)",
+      "icon.png: binary-file (low)",
+      "Incomplete upstream bundle: inspect excluded files before approving compatibility or activation."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "2 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

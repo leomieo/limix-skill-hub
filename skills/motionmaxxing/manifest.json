@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "name": "motionmaxxing",
+  "version": "8c8ec0f2a6f6",
+  "source": {
+    "url": "https://github.com/Tejashmakwana/motionmaxxing",
+    "commit": "8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c",
+    "sha256": "50710290ed55d2b8e1ea454a2a274345da5fa47c224a38582d2f853e824c3cd2",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Đạo diễn và xây dựng video quảng bá sản phẩm, motion graphics thương hiệu (launch video, promo tính năng, kinetic typography, quảng cáo social, video CTA) đạt chuẩn thẩm mỹ của chuyên gia motion designer cao cấp, loại bỏ hoàn toàn dấu vết AI slop. Tự động khai thác bản sắc thương hiệu độc bản từ logo, màu sắc, giọng nói, tạo thế giới thị giác có chiều sâu ánh sáng và chất liệu (3D/surfaces), vận hành bộ runtime GSAP an toàn với 53 đường cong chuyển động chuẩn mẫu đo đạc từng khung hình từ các video thương mại hàng đầu, tự kiểm định qua linter nghiêm ngặt.",
+    "aliases": [
+      "Đồ họa chuyển động",
+      "Hoạt họa GSAP"
+    ],
+    "keywords": [
+      "motionmaxxing",
+      "Đồ họa chuyển động",
+      "Hoạt họa GSAP"
+    ],
+    "examples": [
+      "Dùng motionmaxxing cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "50710290ed55d2b8e1ea454a2a274345da5fa47c224a38582d2f853e824c3cd2"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write"
+  ],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "docs/media/cluely-comparison.gif: binary-file (low)",
+      "docs/media/cluely-poster.jpg: binary-file (low)",
+      "docs/media/gates.png: binary-file (low)",
+      "docs/media/hero.mp4: binary-file (low)",
+      "docs/media/spotify-poster.jpg: binary-file (low)",
+      "docs/media/wispr-poster.jpg: binary-file (low)",
+      "runtime/fonts/InterVariable.woff2: binary-file (low)",
+      "runtime/hero3d/fonts/Inter-Bold-Latin.ttf: binary-file (low)",
+      "studies/judgment-studies-1.jpg: binary-file (low)",
+      "studies/judgment-studies-2.jpg: binary-file (low)",
+      "Incomplete upstream bundle: inspect excluded files before approving compatibility or activation."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "7 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

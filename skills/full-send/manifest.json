@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "name": "full-send",
+  "version": "11e37a74d0a6",
+  "source": {
+    "url": "https://github.com/t3dotgg/tstack",
+    "commit": "11e37a74d0a6868c121cd0910ab2b3bd9873b92a",
+    "sha256": "ba585e47cd901506b0e2de13025b0e39bc02462c136cf27491ad3efbdfe66020",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Bộ skill làm việc với pull request hằng ngày của Theo (T3) — \"full send\" đưa một thay đổi đến PR được merge không cần ai trông; \"council\" lấy review từ 3 model của 3 nhà cung cấp khác nhau và lặp đến khi cả ba đồng ý; \"sol loop\" review vòng lặp hai agent; \"file a PR\" viết PR ngắn mở đầu bằng vấn đề; \"takeover\" nhận tiếp PR/branch/thread của người khác và giữ credit; \"babysit\" trông PR xuyên qua CI và review bot rồi sửa finding thật; \"modernize\" rebase PR cũ và quyết định nó còn đáng sống không. Chạy trong Claude Code và Codex; cần `gh` đã đăng nhập và python3. Dùng khi người dùng nói \"full send\", \"council\", \"file a PR\", \"babysit\", \"take over\", \"modernize\".",
+    "aliases": [
+      "Quy trình pull request",
+      "Đánh giá mã nguồn",
+      "tstack"
+    ],
+    "keywords": [
+      "full",
+      "send",
+      "Quy trình pull request",
+      "Đánh giá mã nguồn"
+    ],
+    "examples": [
+      "Dùng full-send cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "ba585e47cd901506b0e2de13025b0e39bc02462c136cf27491ad3efbdfe66020"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

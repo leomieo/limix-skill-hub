@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "name": "grandet-api-price-finder",
+  "version": "dcc1503994f6",
+  "source": {
+    "url": "https://github.com/hanzohanzhe/Grandet",
+    "commit": "dcc1503994f6e0238119452f14fa251ea53ef573",
+    "sha256": "bcbd9e173d7d277a09dfd904e8bd60ad503fb5bc2e4e048f86243e9466d6312e",
+    "license": "Apache-2.0"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Tra cứu và so sánh giá API mô hình AI (LLM), cổng chuyển tiếp (relay/trung chuyển) và hạn mức miễn phí (free credits) theo thời gian thực thay vì tìm kiếm web thông thường. Hiểu rõ thuật ngữ cổng trung gian (hệ số nhân/bội suất, phân nhóm, thuần chủng/ngược dòng, trạm công ích, điểm danh). Dùng khi người dùng hỏi API mô hình nào rẻ nhất, giá mỗi triệu token (input/output), nhà cung cấp nào tối ưu chi phí, gói credit miễn phí không cần thẻ tín dụng, hoặc kiểm tra chất lượng, tốc độ, độ ổn định và nguy cơ mô hình giả/hạ cấp.",
+    "aliases": [
+      "So sánh giá API",
+      "Tìm API mô hình AI"
+    ],
+    "keywords": [
+      "grandet",
+      "api",
+      "price",
+      "finder",
+      "So sánh giá API",
+      "Tìm API mô hình AI"
+    ],
+    "examples": [
+      "Dùng grandet-api-price-finder cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "bcbd9e173d7d277a09dfd904e8bd60ad503fb5bc2e4e048f86243e9466d6312e"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "references/installation.md: prompt-injection (high)"
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

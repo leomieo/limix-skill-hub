@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "name": "anything2explainer",
+  "version": "0b85f6c7bfc4",
+  "source": {
+    "url": "https://github.com/Vincentwei1021/anything2explainer",
+    "commit": "0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab",
+    "sha256": "9f4c9e9da7c4f9e13b628e69f17369e3eef9f5cf2ca2c6283fd513403df068a4",
+    "license": "PolyForm Noncommercial 1.0.0"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Đưa một chủ đề vào, nhận ra một video explainer motion-graphics có thuyết minh — skill Claude Code / Codex biến bất kỳ chủ đề nào thành video motion-graphics nền đen có giọng đọc TTS, phụ đề căn theo từng từ và thanh tiến độ chương, tiếng Trung hoặc tiếng Anh, mỗi frame đều vẽ bằng code với Remotion (React + TypeScript). Không stock footage, không model video sinh, không lấy frame từ ai. Kèm 9 giai đoạn quy trình, 4 checkpoint hỏi người dùng, đa agent dựng song song và QC định lượng. Dùng khi người dùng cần video giải thích/giáo dục/khoa học về một chủ đề, hoặc muốn biến bài viết/tài liệu thành video.",
+    "aliases": [
+      "Video giải thích",
+      "Dựng video thuyết minh"
+    ],
+    "keywords": [
+      "anything2explainer",
+      "Video giải thích",
+      "Dựng video thuyết minh"
+    ],
+    "examples": [
+      "Dùng anything2explainer cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "9f4c9e9da7c4f9e13b628e69f17369e3eef9f5cf2ca2c6283fd513403df068a4"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write"
+  ],
+  "syncedAt": "2026-11-13T09:14:21.544Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "examples/contrast/01_hero_size_bad_f0128.jpg: binary-file (low)",
+      "examples/contrast/01_hero_size_good_f0138.jpg: binary-file (low)",
+      "examples/contrast/02_hero_reveal_bad_f1729.jpg: binary-file (low)",
+      "examples/contrast/02_hero_reveal_good_f1105.jpg: binary-file (low)",
+      "examples/contrast/03_big_number_good_f7258.jpg: binary-file (low)",
+      "examples/contrast/03_sparse_axis_bad_f1900.jpg: binary-file (low)",
+      "examples/contrast/04_formula_bad_f3033.jpg: binary-file (low)",
+      "examples/contrast/04_result_number_good_f2613.jpg: binary-file (low)",
+      "examples/contrast/05_clean_bg_good_f1237.jpg: binary-file (low)",
+      "examples/contrast/05_clutter_bg_bad_f1651.jpg: binary-file (low)",
+      "examples/contrast/06_ending_bad_f7540.jpg: binary-file (low)",
+      "examples/contrast/06_ending_good_f8100.jpg: binary-file (low)",
+      "examples/contrast/contrast_sheet.jpg: binary-file (low)",
+      "examples/rag/frames/overview_1.jpg: binary-file (low)",
+      "examples/rag/frames/overview_2.jpg: binary-file (low)",
+      "examples/rag/frames/overview_3.jpg: binary-file (low)",
+      "examples/rag/frames/overview_4.jpg: binary-file (low)",
+      "examples/rag/frames/overview_5.jpg: binary-file (low)",
+      "examples/rag/frames/overview_6.jpg: binary-file (low)",
+      "examples/rag/frames/ref_agentic_loop_f6900.jpg: binary-file (low)",
+      "examples/rag/frames/ref_chapter_card_f1490.jpg: binary-file (low)",
+      "examples/rag/frames/ref_chunk_size_f2200.jpg: binary-file (low)",
+      "examples/rag/frames/ref_graphrag_f6600.jpg: binary-file (low)",
+      "examples/rag/frames/ref_hnsw_f3260.jpg: binary-file (low)",
+      "examples/rag/frames/ref_hybrid_rrf_f4640.jpg: binary-file (low)",
+      "examples/rag/frames/ref_long_context_f7480.jpg: binary-file (low)",
+      "examples/rag/frames/ref_lost_in_middle_f5250.jpg: binary-file (low)",
+      "examples/rag/frames/ref_moat_f8100.jpg: binary-file (low)",
+      "examples/rag/frames/ref_paper_f1300.jpg: binary-file (low)",
+      "examples/rag/frames/ref_parse_f1760.jpg: binary-file (low)",
+      "examples/rag/frames/ref_rag_reveal_f1090.jpg: binary-file (low)",
+      "examples/rag/frames/ref_ragas_f6150.jpg: binary-file (low)",
+      "examples/rag/frames/ref_rerank_funnel_f4900.jpg: binary-file (low)",
+      "examples/rag/frames/ref_shortcomings_f0600.jpg: binary-file (low)",
+      "examples/rag/frames/ref_title_f0058.jpg: binary-file (low)",
+      "examples/rag/frames/ref_vector_space_f2990.jpg: binary-file (low)",
+      "README_ZH.md: privilege (medium)",
+      "README.md: privilege (medium)",
+      "template/public/fonts/Audiowide-Regular.ttf: binary-file (low)",
+      "template/public/fonts/Exo2-Italic.ttf: binary-file (low)",
+      "template/public/fonts/Orbitron[wght].ttf: binary-file (low)",
+      "Incomplete upstream bundle: inspect excluded files before approving compatibility or activation."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "15 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

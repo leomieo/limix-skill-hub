@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "name": "earshot",
+  "version": "4ac3d2ac2b15",
+  "source": {
+    "url": "https://github.com/Leonxlnx/earshot",
+    "commit": "4ac3d2ac2b151e1c23376f9ce7f3047a17050013",
+    "sha256": "57b984a602ae1881cb3cfe58cedf61cc89b5c443c0b315fe5b8767471cb6c1ec",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Cung cấp khả năng thẩm âm cho AI Agent: đánh giá, lựa chọn, cắt tỉa, xác minh và so sánh âm thanh khi agent không thể tự nghe — chọn hiệu ứng âm thanh SFX, nhạc nền, tìm khoảnh khắc sạch nhất trong bản ghi, phân biệt âm thanh thu thực tế hay tổng hợp bằng code (p_real), kiểm tra đồng bộ âm thanh - video (sync, LUFS, dBTP), tạo âm thanh từ code và thư viện SFX tích hợp.",
+    "aliases": [
+      "Kiểm tra âm thanh",
+      "Phân tích phổ âm"
+    ],
+    "keywords": [
+      "earshot",
+      "Kiểm tra âm thanh",
+      "Phân tích phổ âm"
+    ],
+    "examples": [
+      "Dùng earshot cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "57b984a602ae1881cb3cfe58cedf61cc89b5c443c0b315fe5b8767471cb6c1ec"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-13T09:14:21.544Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

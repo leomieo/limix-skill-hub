@@ -4,5 +4,12 @@
   "createdAt": "2026-10-29T16:15:01Z",
   "pushedAt": "2026-11-13T08:19:51Z",
   "statsCheckedAt": "2026-11-13",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "commit": "ab8580e38a1255425b0d3b481866590766932079",
+  "path": "skills/rea-video",
+  "language": "hybrid",
+  "version": "ab8580e38a12",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-13T09:22:43.610Z"
 }

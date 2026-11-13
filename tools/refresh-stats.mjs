@@ -5,9 +5,10 @@
 //   GITHUB_TOKEN=... node tools/refresh-stats.mjs [--root <dir>]
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const args = process.argv.slice(2);
-const root = args.includes("--root") ? path.resolve(args[args.indexOf("--root") + 1]) : path.resolve(new URL("..", import.meta.url).pathname);
+const root = args.includes("--root") ? path.resolve(args[args.indexOf("--root") + 1]) : fileURLToPath(new URL("..", import.meta.url));
 const token = process.env.GITHUB_TOKEN ?? "";
 const readText = (file) => readFile(file, "utf8").catch(() => "");
 const REPO_LINK = /github\.com\/([A-Za-z0-9_.-]+)\/([A-Za-z0-9_.-]+?)(?:\.git)?(?=[\s)\]"'#/?]|$)/;

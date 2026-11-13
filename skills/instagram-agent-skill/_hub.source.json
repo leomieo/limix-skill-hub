@@ -1,0 +1,16 @@
+{
+  "repository": "Jakeschincariol/instagram-agent-skill",
+  "commit": "d03c56bb598be770c60b201f94237e5d1a4268a6",
+  "path": null,
+  "verified": false,
+  "coreSha256": "d32d1413cd9d69d26ce82f41b61ae431c191cde1775f34b7c0c2573a7ce83858",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "d32d1413cd9d69d26ce82f41b61ae431c191cde1775f34b7c0c2573a7ce83858",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/instagram-agent-skill"
+}

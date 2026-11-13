@@ -1,0 +1,331 @@
+{
+  "repository": "Motionsites-AI/claude-skill",
+  "commit": "faa30d512e3973e58675c72101a7ef42ed37ae83",
+  "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder",
+  "verified": true,
+  "coreSha256": "bac1e1f79e5fd72b253c978e64f708a828b94c3512ec4d1e2eb13d3204e79035",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "bac1e1f79e5fd72b253c978e64f708a828b94c3512ec4d1e2eb13d3204e79035",
+      "executable": false
+    },
+    {
+      "path": "examples/3d-character-studio.md",
+      "sha256": "871c9c38444f785b8c5e52c410b73597019d61fdd801ea36327bb35e43911400",
+      "executable": false
+    },
+    {
+      "path": "examples/3d-collectible-hero.md",
+      "sha256": "dd39b5af1ff733bd71e7266719ea2f5754948e0fe59eaa78ee26ba8fbdb48148",
+      "executable": false
+    },
+    {
+      "path": "examples/3d-jack-portfolio-hero.md",
+      "sha256": "9c6358d030e0c6071158139d71b8b5b3c8ace9dd9726f2ef5774cee4b296fbc5",
+      "executable": false
+    },
+    {
+      "path": "examples/aethera-hero.md",
+      "sha256": "174ba8304d270e94fb50745e7ae6033a6cffa328762fc7693552cf692eb08227",
+      "executable": false
+    },
+    {
+      "path": "examples/aetheris-voyage-hero.md",
+      "sha256": "6dd28cdfc56476fe1063d90b70766ef29fc29171b140156d9da1c34ec20a5900",
+      "executable": false
+    },
+    {
+      "path": "examples/agent-wave.md",
+      "sha256": "6668ee6ffe7a646e30b416df7ba533eaf46c80596d5b68f062c0045cbb1d515b",
+      "executable": false
+    },
+    {
+      "path": "examples/ai-runtime.md",
+      "sha256": "099d81eb881c5177807b0e274e30c509852609f765841c3b79e87be36a9036b3",
+      "executable": false
+    },
+    {
+      "path": "examples/ai-workflow.md",
+      "sha256": "5c48b34506e88ddc0222f80e970561593edab6002fd563c4997cf37125971b04",
+      "executable": false
+    },
+    {
+      "path": "examples/asme-hero.md",
+      "sha256": "c38c591e56b1516c563f1d16f1b207e4bf3e80ad4c8545a30be733db2d1a62da",
+      "executable": false
+    },
+    {
+      "path": "examples/bloom-ai-hero.md",
+      "sha256": "56caa1560340dcd2d25e41949247ddf7f17038c490fab6cc4d71078ae5122ea1",
+      "executable": false
+    },
+    {
+      "path": "examples/bold-studio.md",
+      "sha256": "c36332e6be3aa8bc6baf8997355c0f2fb69a667a20c16d1b0570da4c686e63a5",
+      "executable": false
+    },
+    {
+      "path": "examples/contact-cybernetic.md",
+      "sha256": "b4d7d05cf39c16e3924096f63e3e12af0f86ec72fe847609bf063e00177f775a",
+      "executable": false
+    },
+    {
+      "path": "examples/creative-studio.md",
+      "sha256": "3510b9a22229b0a5d37a379b78eca7432b57ab49443e7d3e0f7318ef3990b704",
+      "executable": false
+    },
+    {
+      "path": "examples/digital-epoch-hero.md",
+      "sha256": "ea63975912cf1a2da3b49ed16123dcb3c2c358e01e0143fc9ff74e04099474d5",
+      "executable": false
+    },
+    {
+      "path": "examples/digital-experiences.md",
+      "sha256": "23cde5ef5ae9e70544e6e5a414550ee3a376be964b0672ba1fe2373a55ea1a25",
+      "executable": false
+    },
+    {
+      "path": "examples/email-landing-page.md",
+      "sha256": "a5f52f7a550ae60441eeceb5797488daca1b33f621dc0791e130f8d00fda59ff",
+      "executable": false
+    },
+    {
+      "path": "examples/equilibrium.md",
+      "sha256": "161e4c3f2b337478f48d5ad20aad2b753cd04c1ffd77b5d5e302aa3f02e2caee",
+      "executable": false
+    },
+    {
+      "path": "examples/halo-usd-landing.md",
+      "sha256": "409c2ad47c1102706f0b00a24b6a109a6efa003ad9ec56d958aa953559412279",
+      "executable": false
+    },
+    {
+      "path": "examples/immersive-ocean.md",
+      "sha256": "15e65ded086c5975508cd95d8d3567ec1a7dfe1d9161caa58cc1c8b79ab496ba",
+      "executable": false
+    },
+    {
+      "path": "examples/INDEX.md",
+      "sha256": "7e9c738b1d52cd9c622a3ef55a4ff3f9d175461b157b4fb7bc94c989bd5cd13d",
+      "executable": false
+    },
+    {
+      "path": "examples/innovation-landing.md",
+      "sha256": "9660d9291d20c82bd42c8f19782a7d7b7407cb62b0dd9d7ed35e522414072d26",
+      "executable": false
+    },
+    {
+      "path": "examples/intelligence-layer.md",
+      "sha256": "a30aff9e68eec1e1372df3a584285b5f5d798aa3c74d5aa8c8d45716dec62808",
+      "executable": false
+    },
+    {
+      "path": "examples/intelligent-operations.md",
+      "sha256": "658e7cca01ddeadbb1458c0ff1669336f42b766eb1bfafb400a014b1c5193bb0",
+      "executable": false
+    },
+    {
+      "path": "examples/interactive-discovery.md",
+      "sha256": "7333dfa51324001c9236f02733c110efda9bcb5c0e01c6c5b60fe8de7debe742",
+      "executable": false
+    },
+    {
+      "path": "examples/mindloop-landing.md",
+      "sha256": "a069ff4bfde557832ab9fd300ba20a4c2a1eb15c33145ef902467d1e9882eb5b",
+      "executable": false
+    },
+    {
+      "path": "examples/modern-agency.md",
+      "sha256": "b27403daafbbb9dc34f288b1b7dbd99ebb5c6c820c610aebc5622bf6899c1a4b",
+      "executable": false
+    },
+    {
+      "path": "examples/mostar-guide.md",
+      "sha256": "80215595606cb1a32ca7aad380aff8bcd1bb2939709724dd73d9f130f33c6b41",
+      "executable": false
+    },
+    {
+      "path": "examples/neo-museum.md",
+      "sha256": "c65bbbee2ef2a9576f4b7ddf0262397307fbaa2dc4e78a0e51cedaf0eee8e133",
+      "executable": false
+    },
+    {
+      "path": "examples/neon-logic.md",
+      "sha256": "0631407180469afdfb282d1332478dcdd854876bf04c204aba0fe6c483029ca0",
+      "executable": false
+    },
+    {
+      "path": "examples/network-hero.md",
+      "sha256": "4f728b4b1af93d43dd943e209cbeda92325bafdd51a9a93f59e9374752e36aec",
+      "executable": false
+    },
+    {
+      "path": "examples/portal-hero.md",
+      "sha256": "3ae41f452b64309ea063e585975fb7db22955445a7a40a99ff85754b03a0d974",
+      "executable": false
+    },
+    {
+      "path": "examples/portfolio-cosmic-hero.md",
+      "sha256": "025ee3379694feb92cc21ac3b90a22cb03e4d84baf085f9435a6182bdac431a2",
+      "executable": false
+    },
+    {
+      "path": "examples/prisma-landing.md",
+      "sha256": "37f355f4525095c5a413bb940cad9a02002b9854937caf80acbfd07fbc050a3b",
+      "executable": false
+    },
+    {
+      "path": "examples/prompt-hero.md",
+      "sha256": "7af0da094b6dca1cfe0b3d8d835e8544148e9f74e31399022dd61ffeb8318d84",
+      "executable": false
+    },
+    {
+      "path": "examples/prosthetics-hero.md",
+      "sha256": "96b0c6b4837db2c3346c2760a7e2463df39ad37a4c1359869d55ee740ed63a88",
+      "executable": false
+    },
+    {
+      "path": "examples/retro-futurist.md",
+      "sha256": "9074e0715356d6d549e10c1640b85120868fd25c1e733a56c209436a75cfeee0",
+      "executable": false
+    },
+    {
+      "path": "examples/securify-hero.md",
+      "sha256": "85df280ff85e5bfec3615b3565f607791d7eb17f69a06b0b1d1ee07a6a10278e",
+      "executable": false
+    },
+    {
+      "path": "examples/stillmind.md",
+      "sha256": "1506beaf6322f06cb8a83b3ef44151e55bab9bac14974d37dcd002600dd571d6",
+      "executable": false
+    },
+    {
+      "path": "examples/tech-forward.md",
+      "sha256": "d87ad3125d7234cb98e7d73e1d362b8305596358d0c2c9b4f4b6b50e441ac783",
+      "executable": false
+    },
+    {
+      "path": "examples/velorah-hero.md",
+      "sha256": "b92ade10b23298b56847627b084aeeabce55e0a820ab66abb73634b06cdb6a7a",
+      "executable": false
+    },
+    {
+      "path": "examples/vex-ventures-hero.md",
+      "sha256": "1b6db7b00b4c02b635d9a5b7155170e9d0d1574008849b7121641a49b2abf060",
+      "executable": false
+    },
+    {
+      "path": "media/MEDIA.md",
+      "sha256": "9124e501ffad359fc876fd8bfd6d162713c52e72476c563068031ae8bd474a72",
+      "executable": false
+    },
+    {
+      "path": "media/sheet-1.jpg",
+      "sha256": "a43fe947afe64d70cb8baf57cef36dc314bc6b321b287fea44d4b9ecfb6e39e3",
+      "executable": false
+    },
+    {
+      "path": "media/sheet-2.jpg",
+      "sha256": "8cf3aa49ac6e3fd04fea1759d3d5dc46f2dc3bcd5789fb5f43fa8c8105364446",
+      "executable": false
+    },
+    {
+      "path": "media/sheet-3.jpg",
+      "sha256": "6d9e3f7828431372e86b3ec7cfa248e5e678afb5253506af20a1625c96bfef15",
+      "executable": false
+    },
+    {
+      "path": "media/sheet-4.jpg",
+      "sha256": "358ab3672ff61bd1a9d0ec91ebff0d0e3246a6cef29eb748fe15c28b4d7ae452",
+      "executable": false
+    },
+    {
+      "path": "media/sheet-5.jpg",
+      "sha256": "2aa5b60bcdaf83d8c41467008d15d3e4ada9f5f8093b099813161701290020a0",
+      "executable": false
+    },
+    {
+      "path": "media/sheet-6.jpg",
+      "sha256": "53ec8178915e7390230cc5faa152a6f443dbee01528649552bf87f8f731da2eb",
+      "executable": false
+    },
+    {
+      "path": "references/assets.md",
+      "sha256": "4900966ba4859650441c35e28ee25ba2dc39291f9de6428b3f597f2e7c683413",
+      "executable": false
+    },
+    {
+      "path": "references/builders.md",
+      "sha256": "587f1edc275c517e4d774c921c5581e3df6c718975e04ed7b6243caf0f706804",
+      "executable": false
+    },
+    {
+      "path": "references/craft.md",
+      "sha256": "30650c2c7e922a77204b8ee36720a790d665be65bbbbbb3e8374e6f5d5b900c7",
+      "executable": false
+    },
+    {
+      "path": "references/review.md",
+      "sha256": "4a9d300b304f3f2a9f01e42fff55c492a9e8e1b967744ebf74e0b4ca939b1bdc",
+      "executable": false
+    },
+    {
+      "path": "references/spec-template.md",
+      "sha256": "08ece97c3a9e24742266db748ce70e2bbc3d1ad3b32d22c72220c99f73f47823",
+      "executable": false
+    },
+    {
+      "path": "references/techniques/3d-and-webgl.md",
+      "sha256": "ce8fdd7f79d2a2793393589305c5f00200a23427767f232aadd3c7c6d374af5e",
+      "executable": false
+    },
+    {
+      "path": "references/techniques/depth-and-interaction.md",
+      "sha256": "76af94cdc8b6491e54f47c3690df93f6ae31321fb4c6606670c573a73e44c2eb",
+      "executable": false
+    },
+    {
+      "path": "references/techniques/INDEX.md",
+      "sha256": "5bb76f0e2abcf27178f7356ec0f67a2038efd0d88b050f7d2186d14cf54d6c86",
+      "executable": false
+    },
+    {
+      "path": "references/techniques/layout-and-ui.md",
+      "sha256": "31f976e7c11f41a27f5692838fd246b33307ebd806783b9581aae5abe3dd9738",
+      "executable": false
+    },
+    {
+      "path": "references/techniques/scroll.md",
+      "sha256": "5e0c8ee2da9decd8f0014259ce86384b64642d0e0b7a56a54d13675a2fac5423",
+      "executable": false
+    },
+    {
+      "path": "references/techniques/surfaces-and-buttons.md",
+      "sha256": "2923de3d50f4971a8c7a7c5abe8e57813831efe2baa9194061dcefd8b83e8936",
+      "executable": false
+    },
+    {
+      "path": "references/techniques/type-and-text-motion.md",
+      "sha256": "c1c8fedfe88ba0a85a1612ef3ae6f18909aac040e78dbd77451d548fd687bff7",
+      "executable": false
+    },
+    {
+      "path": "references/techniques/video-and-media.md",
+      "sha256": "7f1ab104b64539de041018f7d915ecb8e3a4d9c8a18b3181592814bff3af05cf",
+      "executable": false
+    },
+    {
+      "path": "scripts/shoot.py",
+      "sha256": "a53419cddb104cd18c34de5f2376b930859ce0312c27f0b081c4ae85faa10ff7",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "6cd724256c3089086ad084e840fc9de970e59a9f1a72acf776ef937cec53a806",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/motionsites-web-builder"
+}

@@ -4,5 +4,12 @@
   "createdAt": "2026-10-15T06:52:46Z",
   "pushedAt": "2026-11-06T17:24:16Z",
   "statsCheckedAt": "2026-11-13",
-  "license": "MIT"
+  "license": "MIT",
+  "commit": "4ac3d2ac2b151e1c23376f9ce7f3047a17050013",
+  "path": "skills/earshot",
+  "language": "hybrid",
+  "version": "4ac3d2ac2b15",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-13T09:14:21.544Z"
 }

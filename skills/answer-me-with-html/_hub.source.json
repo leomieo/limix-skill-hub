@@ -1,0 +1,41 @@
+{
+  "repository": "QingYunA/answer-me-with-html",
+  "commit": "edccab07c012e2141585f8ddb18a62e01664fa2b",
+  "path": "skills/answer-me-with-html",
+  "verified": true,
+  "coreSha256": "d0083f74722df3b25d661aa869468416027c37a32926091bfdd5dac284ea0a76",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "d0083f74722df3b25d661aa869468416027c37a32926091bfdd5dac284ea0a76",
+      "executable": false
+    },
+    {
+      "path": "licenses/OFL-Bangers.txt",
+      "sha256": "09ef36fcae68a2ba21cc319fd44c09ba40f43163076bcafc14fdfe4cc033e7a2",
+      "executable": false
+    },
+    {
+      "path": "references/settings.md",
+      "sha256": "5bd7371ad64479dbc0adb4734ca964332de4c11fd28ddda9182eabcf99c11996",
+      "executable": false
+    },
+    {
+      "path": "references/video.md",
+      "sha256": "b8ed842cdabc37e06973fc41719c678c1fff3852cbaa7d4c86840b0baff0adfc",
+      "executable": false
+    },
+    {
+      "path": "scripts/am.mjs",
+      "sha256": "f3bc1344c721482b639f8d61484817570950a3aa2e2b6a2368373a892098fb64",
+      "executable": true
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "752a1a34b40ae8e64e86f546ec699a691aff573179e1f96997e82757b2ee5d3f",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/answer-me-with-html"
+}

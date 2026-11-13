@@ -1,0 +1,21 @@
+{
+  "repository": "KKKKhazix/agent-autoloop",
+  "commit": "c9ec4a187cab49627947e7e33db265ec143db3b8",
+  "path": "skills/agent-autoloop",
+  "verified": true,
+  "coreSha256": "a00520304f9a961d0f56d256646f91682bddf684690f7f519c3bf6947b9e5900",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "a00520304f9a961d0f56d256646f91682bddf684690f7f519c3bf6947b9e5900",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "b7f53d07ea4ae2eef26a4f8b28cb7d4df95586e2aa713df408f1ffde9f5a0fea",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/agent-autoloop"
+}

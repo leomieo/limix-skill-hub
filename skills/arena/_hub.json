@@ -4,5 +4,12 @@
   "createdAt": "2026-09-27T13:20:04Z",
   "pushedAt": "2026-09-27T13:20:07Z",
   "statsCheckedAt": "2026-11-13",
-  "license": "MIT"
+  "license": "MIT",
+  "commit": "df07b8e518e10cdecd8cd7712d9958b6f396250e",
+  "path": "skills/arena",
+  "language": "hybrid",
+  "version": "df07b8e518e1",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-13T09:14:21.544Z"
 }

@@ -1,0 +1,478 @@
+{
+  "repository": "mromidev/claude-animated-shorts",
+  "commit": "e3b817b6afc6cd413466d43f11ba31209e034bbf",
+  "path": "",
+  "verified": true,
+  "coreSha256": "411dea3094044355c5023a7c97e178a0bd815051793f0e2cb3c6674999aeb34b",
+  "skipped": [
+    "references/sheets/short16_sheet.jpg",
+    "references/sheets/short17_sheet.jpg",
+    "references/sheets/short18_sheet.jpg",
+    "references/sheets/short19_sheet.jpg",
+    "references/sheets/short20_sheet.jpg",
+    "templates/bridge/world.ts"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "411dea3094044355c5023a7c97e178a0bd815051793f0e2cb3c6674999aeb34b",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "0c88b6c1afe23ba94a2326eb289868fa4bb24edfd6994ad0c6bb7f2f2ed517e2",
+      "executable": false
+    },
+    {
+      "path": "README.md",
+      "sha256": "9b515d97426ce7fbcc09cbd82466243ec5f9691001373d76478d8f5155403b05",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short01_0060.jpg",
+      "sha256": "258939744921e35553d796b2459ab50390f7f6ab8f0209f10fdc31e1b31499a4",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short01_0180.jpg",
+      "sha256": "db7c91ff7537f2628fd35d3eac1c974c8ed1cd993d91b717b37932073c73f90b",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short02_0060.jpg",
+      "sha256": "62dba6e82a915493930da582bd185420726d8cf8a141fe1d5689412968b8f967",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short02_0180.jpg",
+      "sha256": "9491e399ad87d146f3ef9d817f64b17d331a97ebfbf867bbcbb980a9489c23ff",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short03_0060.jpg",
+      "sha256": "e4390341a97984e55f0a3ee4ad493af88359778f5cf74c5e030486bc04b7eb79",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short03_0180.jpg",
+      "sha256": "04870630f2a1f88dd5ad803dce681f06ec6f42653e00a1377dd2a3e0755e5c48",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short04_0060.jpg",
+      "sha256": "d6dcc0a1acce0adf4a0fa7edf96061612b295d9c30b5b251db9f7bf155fefc50",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short04_0180.jpg",
+      "sha256": "ec121d887fdceb602ecfde3f42136c71844ef1d39798af6d019516a24a36ea6d",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short05_0060.jpg",
+      "sha256": "62d17736ea10cbc7eeeb86b2921b8860dcb89d9a650fc9bde1b95f3975402b69",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short05_0180.jpg",
+      "sha256": "66daa3a124fa32c5e2b88860d791bf9825255c08a3f02e1d09394f81e58c599a",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short06_0060.jpg",
+      "sha256": "7cd9502a6278cf4f2bed2a688998036ee591528a3ca71af008a9099d6b9058d7",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short06_0180.jpg",
+      "sha256": "ff1574c52e47f49cad07fc71e29ea5553820c8265000b3f3103348a29a2896e4",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short07_0060.jpg",
+      "sha256": "ca85eb536aee98e7ea091679b3c15cd65a66cf8c7f7ae966f0b067581a43aa36",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short07_0180.jpg",
+      "sha256": "a3e200f231712a64790a616c8a3ae044a7cab8e0035f623b104e0dea127f17bf",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short08_0060.jpg",
+      "sha256": "2e20387c21fedc81f42954917f6e5b143c866efa9e06bac9411811b1954eb5ca",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short08_0180.jpg",
+      "sha256": "e455266d08c73c9e3d145f815837dd22ce6f07aff9600a943134c5c7532f0a11",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short09_0060.jpg",
+      "sha256": "903b782b5a0bbe41537a2b475c8277ee2a6a8acd6b0368867a945148067ede76",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short09_0180.jpg",
+      "sha256": "665124d53868accf4a379b14a0a1a3fe845819f732b3ca1d72c6c9809a3d34c5",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short10_0060.jpg",
+      "sha256": "ee23aec3983ebc1a100a8040334fd670c8674644e4ca3771095c8e3865a1bd2a",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short10_0180.jpg",
+      "sha256": "b2e5b066a141158476819fa85d1226584b0d5d21027f188be9c8f870236af29b",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short11_0060.jpg",
+      "sha256": "e5d36b18109a11c3cadf67a89af951b62eb74209d269cc5232cefb5a6ce1b559",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short11_0180.jpg",
+      "sha256": "0c6a408c36aec98a28916101cb8e2ee14efffb3d6858db6b73eb25a89529bdd9",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short12_0060.jpg",
+      "sha256": "6765fcdc00e8e6307050a27d05b9138e9be155963ad8ba5f1b137a094c62fb1e",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short12_0180.jpg",
+      "sha256": "c04e2e63dcfaf3b1290224f00851adb10f0e53d1ece4d7e9c48e7812ca7bf4c5",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short13_0060.jpg",
+      "sha256": "a592cca22f4f9532491a32de02a67f6522452d89802a12e064942bb522cb4546",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short13_0180.jpg",
+      "sha256": "2be3d5e0a2388f7fb27b6a34fda27c34cdbd6015df2e8760735ddb6e9a82d45b",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short14_0060.jpg",
+      "sha256": "3b80a25c05faa477b804dc896c4979a2e2d107268545233069827ad4733a2727",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short14_0180.jpg",
+      "sha256": "3634b21befee6208864251e84e36d31849119944f5b513d0f181aacd735754bd",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short15_0060.jpg",
+      "sha256": "c3ce2b2055ecf17c76b243a5e6440c0c9863243312fb33ae675dab9f7a31e72b",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short16_0060.jpg",
+      "sha256": "3241d2f743639577152e9c895272dc1ada4486fdfea97446444e294c7bdf4b75",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short16_0180.jpg",
+      "sha256": "e58d92b0ed6fa9c6247583854dca635949967587c1a3bb6f9292a2b15c71da5d",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short17_0060.jpg",
+      "sha256": "107f33717a9f85a632cbbc1afcd54cedd35f0eb2fadb68ffdc15f2b5cd06b601",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short18_0060.jpg",
+      "sha256": "d1775ae274434ac8b64195cba14e3199a64debe86d8c5f49c5de8526b21ab0b0",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short18_0180.jpg",
+      "sha256": "c3955996741c62eed9ec6347c4e146955d5785482a148cdd82ab63a5445003b6",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short19_0060.jpg",
+      "sha256": "bd603e40756c5a965b530a19eb5c367284808b6295a4fe304d83cd8b8a560890",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short19_0180.jpg",
+      "sha256": "a06920dcb88dbd0548a702c6d00520f95fc3e0e29f4d43109fffe2c03d1771c9",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short20_0060.jpg",
+      "sha256": "dd5884b43c6ba1e36803ade47ea6acfbff0af3fffd3d918c286f64e9ba2a549f",
+      "executable": false
+    },
+    {
+      "path": "references/frames/short20_0180.jpg",
+      "sha256": "37f77563cfdea3a377c8756b6971acaf662474c620fdf5ef191f1dc1bba2dcd9",
+      "executable": false
+    },
+    {
+      "path": "references/reports/characters.md",
+      "sha256": "789cee3f3c1bb77535fe3d32b68ac0e3c48555157b2b0423835f03311302203b",
+      "executable": false
+    },
+    {
+      "path": "references/reports/CONTEXT.md",
+      "sha256": "01c9ea39ef3657207a5bc626485f09bb9c87dee25431126b2c2239a4a59159c5",
+      "executable": false
+    },
+    {
+      "path": "references/reports/depth.md",
+      "sha256": "a523e8f12a8ba6f37230957ea6596cd66640366d6b61243db5ba535c17ca295f",
+      "executable": false
+    },
+    {
+      "path": "references/reports/grade.md",
+      "sha256": "451d6938af4f945afb55a107a4d6c1e90d5b2ae1a1ff8350f305a407b9acde38",
+      "executable": false
+    },
+    {
+      "path": "references/reports/lighting.md",
+      "sha256": "524389ee191a741aae0ea902ce1b55982c3afd861c73d31c8f5c5a8aeb490321",
+      "executable": false
+    },
+    {
+      "path": "references/reports/motion.md",
+      "sha256": "7b4b41b44f3dcdae9285a13ef589c6efd4f0353065e0e5c68acf2bc1964f25e8",
+      "executable": false
+    },
+    {
+      "path": "references/reports/outlines.md",
+      "sha256": "27133318848da6e1a74975b43da5ba90cc00e30b9d50c0bd89b94d8aa845b897",
+      "executable": false
+    },
+    {
+      "path": "references/reports/textures.md",
+      "sha256": "c4bc6266b3709548368df2b404a6970a570d9a4347ea405bd58bb3f7a75fe85a",
+      "executable": false
+    },
+    {
+      "path": "references/sheets/short01_sheet.jpg",
+      "sha256": "bf43ee790079cea80789096db6ec533c9049a6f63fe3fcf04b4be83e8e7d059e",
+      "executable": false
+    },
+    {
+      "path": "references/sheets/short02_sheet.jpg",
+      "sha256": "b948f39146abda707c33adf7977e635417e7b38092b64791f4dd23065556572d",
+      "executable": false
+    },
+    {
+      "path": "references/sheets/short03_sheet.jpg",
+      "sha256": "a26030a68ce59b8e09b67effa7dbfc72817264ed7f07a75f0ea9d3a4a24f9fc3",
+      "executable": false
+    },
+    {
+      "path": "references/sheets/short04_sheet.jpg",
+      "sha256": "3e59dbdf1f68862a668991aa5cc5262232f28d2f5f724c2a3ea2506949f1ce8e",
+      "executable": false
+    },
+    {
+      "path": "references/sheets/short05_sheet.jpg",
+      "sha256": "4fe5acca3dec20a70cd382a9b316e3ba24447ff6fcd68eeeb595f190f7e36ef7",
+      "executable": false
+    },
+    {
+      "path": "references/sheets/short06_sheet.jpg",
+      "sha256": "3eaddf75cdeafda5435cb086b83c9857dbbc2b88f175cb83a3f2bcba86201a98",
+      "executable": false
+    },
+    {
+      "path": "references/sheets/short07_sheet.jpg",
+      "sha256": "39fefd3131bc0e0035c082bc303b056f84ee2c3c6de6a2b692285e08ad0d5416",
+      "executable": false
+    },
+    {
+      "path": "references/sheets/short08_sheet.jpg",
+      "sha256": "b1708b955dba5a4b858aebcbce256968006f5206e09a3a1993454b16bc021e86",
+      "executable": false
+    },
+    {
+      "path": "references/sheets/short09_sheet.jpg",
+      "sha256": "9c3a154849ef18263f16b803e2d2f73670249a9e366a04c4009329ce8339cd0c",
+      "executable": false
+    },
+    {
+      "path": "references/sheets/short10_sheet.jpg",
+      "sha256": "c15e95b9bd920ae4ea1df39c1dc8a9557daf6a309ce40df78e8f98da88bdcb6f",
+      "executable": false
+    },
+    {
+      "path": "references/sheets/short11_sheet.jpg",
+      "sha256": "9f8df409104b695fa573d478c4e6a6cbb91c08a4281548500c8bce11bb480aad",
+      "executable": false
+    },
+    {
+      "path": "references/sheets/short12_sheet.jpg",
+      "sha256": "7274de55c7789d6db9ef5736cef67b07f58f5154fc8fd280c86704b1d75abc62",
+      "executable": false
+    },
+    {
+      "path": "references/sheets/short13_sheet.jpg",
+      "sha256": "46918da534dae5fc5d68bca6071295a9e281108a7ddc705466e586913fa5f23e",
+      "executable": false
+    },
+    {
+      "path": "references/sheets/short14_sheet.jpg",
+      "sha256": "8843f6b80f9383115d6f07bb979c79abf50584eb0cdc9b02bfa62e6929b60564",
+      "executable": false
+    },
+    {
+      "path": "references/sheets/short15_sheet.jpg",
+      "sha256": "4b55ccbc4ba0fb6cc67da82510e8fc14125ee8fbe6463e8b7417d3cdcb0b29c7",
+      "executable": false
+    },
+    {
+      "path": "references/STYLE_BIBLE.md",
+      "sha256": "d7bc0a4c83689ecb8aa4ba045f1f8b03b3aa1bfab1d27aed2b0e06d8ca25de29",
+      "executable": false
+    },
+    {
+      "path": "templates/audio/cues.md",
+      "sha256": "baa8866f9b231764586050f378e2a28d4ce03140b6bf4b481d814ac5b5553489",
+      "executable": false
+    },
+    {
+      "path": "templates/audio/dsp.py",
+      "sha256": "3b456f4653fde5f30b8a22aa53903e5d4b2b3ca508908978f210fb6934214355",
+      "executable": false
+    },
+    {
+      "path": "templates/audio/instruments.py",
+      "sha256": "8f66ee6134daefc85021aadab1138a3ce480029c91fc4428d04cba6fd5737fee",
+      "executable": false
+    },
+    {
+      "path": "templates/audio/mix.py",
+      "sha256": "c429dac4233931c23c8ca3728e5861169716ae26ab0b68b7f10a07192fae1ddb",
+      "executable": false
+    },
+    {
+      "path": "templates/audio/music.py",
+      "sha256": "7b57f796841878d978feee6466e3be2788a417973d1d446697a741b3c5da8604",
+      "executable": false
+    },
+    {
+      "path": "templates/audio/sfx_gen.py",
+      "sha256": "656e0d04a8fbd05e1b8c9a8a96e201c6033783cb6961eba788544f05f294a651",
+      "executable": false
+    },
+    {
+      "path": "templates/audio/sfx.py",
+      "sha256": "3522996f4a4cc66e074e4380d52f8283a79ae3fb71b0d5374b30d5171d70e1ae",
+      "executable": false
+    },
+    {
+      "path": "templates/audio/timeline.py",
+      "sha256": "7f1fd4055cea6c30c723f3687645d7f109501ea61cd87c386061bf71152f3913",
+      "executable": false
+    },
+    {
+      "path": "templates/bridge/Bridge.tsx",
+      "sha256": "390fdbc2df2ae422dc722f959b59d5a2b9b91ab1338d868d2b438350722d5e6e",
+      "executable": false
+    },
+    {
+      "path": "templates/bridge/build.ts",
+      "sha256": "2e27cbdb078c26e3e29cb492c792d08605a134f77d2a87dd7c5c4a9360d32d9a",
+      "executable": false
+    },
+    {
+      "path": "templates/bridge/cardshade.ts",
+      "sha256": "b9dd6fbe552ebe93ea51f578460bed08b8b1582c1721c0a160e53aa0afaab4da",
+      "executable": false
+    },
+    {
+      "path": "templates/bridge/cast.ts",
+      "sha256": "721974a08e906f79a027ea81af4c3c46a70aad7770abbbf21ba715a0760f0517",
+      "executable": false
+    },
+    {
+      "path": "templates/bridge/grade.ts",
+      "sha256": "460b6deb3d08c9e5d0cbff1dd368ede3e59d05d841fbf6dcb0d582f30d70c13d",
+      "executable": false
+    },
+    {
+      "path": "templates/bridge/ink.ts",
+      "sha256": "6dadbd41a11501d10d008eeaf9497ae74c267dc90cd073899813e40cfbfc31e1",
+      "executable": false
+    },
+    {
+      "path": "templates/bridge/lensblur.ts",
+      "sha256": "74cd4ed67eb123fa3b482731e9539ca51af0158f386fa369f831cd7b82459af5",
+      "executable": false
+    },
+    {
+      "path": "templates/bridge/lights.ts",
+      "sha256": "2d5fb50df74902b59fbe8121514afab13174b19100c902ce5621732c04bbd1bd",
+      "executable": false
+    },
+    {
+      "path": "templates/bridge/paint.ts",
+      "sha256": "a01928e703951b6730354dd615e6f54326ab8e08b028ed2c96a5f68e67d445b2",
+      "executable": false
+    },
+    {
+      "path": "templates/bridge/shade.ts",
+      "sha256": "7ba7d865a5acc4fb41ab61ba09340f340248616c3f73680abf40b9ff5f1b3d3d",
+      "executable": false
+    },
+    {
+      "path": "templates/bridge/story.ts",
+      "sha256": "25f94c1c524c801093f53c53d7ad11a44864bb778b202c1dad0e3021b456da94",
+      "executable": false
+    },
+    {
+      "path": "templates/bridge/toon.ts",
+      "sha256": "ed6823daad4cc5cdb88a7215502af545fe621efc18d58ea175f7464cc02fd725",
+      "executable": false
+    },
+    {
+      "path": "templates/sandbox_index_example.tsx",
+      "sha256": "7868cda2831ea00a663eed038a46d46ecb7598c41ec202202b8370f007498066",
+      "executable": false
+    },
+    {
+      "path": "templates/SCRIPT_example.md",
+      "sha256": "f8ceb1eeddb64b47b98132be410558bf07ae7a53938807850d616b1605734fee",
+      "executable": false
+    },
+    {
+      "path": "templates/scripts/bridge_merge.py",
+      "sha256": "d322fb3eab9806a5535b8c4eae684c80ccf6cef70ada545c858183968dc4b612",
+      "executable": false
+    },
+    {
+      "path": "templates/scripts/bridge_shots.py",
+      "sha256": "36746bc192ae9f56fda5facb0d1c1015b7dea923c5a27a040ec27d448deea341",
+      "executable": false
+    },
+    {
+      "path": "templates/scripts/bridge-stills.mjs",
+      "sha256": "e43c3aa5526f8adf34cc5177fc2d0560c8610fb1f74e794c18c3bb80a5747e69",
+      "executable": false
+    },
+    {
+      "path": "templates/scripts/sbs_sheet.py",
+      "sha256": "f5f15c100a3d9b0bcec6be775daca38222e6ab4f6b40d8d9415baea0aaa7b947",
+      "executable": false
+    },
+    {
+      "path": "templates/scripts/short_qa.py",
+      "sha256": "9a71fa351b2db50bac669eebdd37c9d9f00ccd2b8b710ab472871e0ce4160550",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/claude-animated-shorts"
+}

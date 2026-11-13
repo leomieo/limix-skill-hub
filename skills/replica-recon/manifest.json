@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "name": "replica-recon",
+  "version": "77c9436fb3d1",
+  "source": {
+    "url": "https://github.com/Jakeschincariol/replica-skill",
+    "commit": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+    "sha256": "b1fd6a60cf0bcd481f6828453da24b9d9f0935ec6e883741e5f620259f13ff40",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Bộ 11 skill \"nhân bản\" (clone) bất kỳ ứng dụng nào theo quy trình clean-room, MIT, miễn phí, không cần đăng ký hay API key. replica-recon phân tích ngược ứng dụng muốn clone (màn hình, luồng, component, mô hình dữ liệu, bảng feature); replica-architect chọn stack và vẽ schema; replica-design dựng lại design system; replica-build rebuild từng màn hình; replica-backend thêm auth/DB/thanh toán; replica-test click qua mọi luồng để tìm bug; replica-diff chấm điểm độ tương đồng; replica-entrepreneur đọc review thật để tìm điểm người dùng ghét; replica-brand, replica-launch, replica-deploy đưa sản phẩm riêng lên domain của bạn. Dùng khi người dùng nói \"clone app X\", \"reverse engineer X\", \"làm phiên bản riêng của X\".",
+    "aliases": [
+      "Tái tạo ứng dụng",
+      "Nghiên cứu ứng dụng mẫu",
+      "replica-skill"
+    ],
+    "keywords": [
+      "replica",
+      "recon",
+      "Tái tạo ứng dụng",
+      "Nghiên cứu ứng dụng mẫu"
+    ],
+    "examples": [
+      "Dùng replica-recon cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "b1fd6a60cf0bcd481f6828453da24b9d9f0935ec6e883741e5f620259f13ff40"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "repository": "caru-ini/stack-diagram",
+  "commit": "9175bde8449cc8f5390d6eb72ecc2e1f5bfe21f3",
+  "path": "skills/stack-diagram",
+  "verified": true,
+  "coreSha256": "e78d88f663b76d20ce6bef862e9ea9088ffb19b409320dbff8c25c73020f14b6",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "e78d88f663b76d20ce6bef862e9ea9088ffb19b409320dbff8c25c73020f14b6",
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/Geist.woff2",
+      "sha256": "19f9c92546aa300c312235e3125af1b81394d8db9a4bc4a425cd5b641d2d54e1",
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/JetBrainsMono.woff2",
+      "sha256": "2c32b9b3ee358c119e210f6f5195f9bd34894d78a785ff2e95d60e718e400af4",
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/OFL-Geist.txt",
+      "sha256": "c683bfbcc7e087f5d37a54ef628f10387c451a83ddc459b151403a164ac46c90",
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/OFL-JetBrainsMono.txt",
+      "sha256": "8790c0909f720c509810f95268779450cd6b0aa75b6d24e32f0878afe068427c",
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/README.md",
+      "sha256": "9b858f504cefd75b79970b724dc55c4b8e16ecb3dc59bba059bdea38c5dff551",
+      "executable": false
+    },
+    {
+      "path": "assets/generic/browser.svg",
+      "sha256": "626b27b7681ff5ff0c25b1d235ca49883bdb59185fe2b4063b44ab9a147f88a8",
+      "executable": false
+    },
+    {
+      "path": "assets/generic/device.svg",
+      "sha256": "abe1c203068bef6c10727e434614fefcb68d3b02139838fcfd3a9b9d2fac7f91",
+      "executable": false
+    },
+    {
+      "path": "assets/generic/internet.svg",
+      "sha256": "f28c67cdda8b1b234f4993d1ac557b20fb8e5cb307e398c1cf720f54ef5dc3de",
+      "executable": false
+    },
+    {
+      "path": "assets/generic/server.svg",
+      "sha256": "81a828c927db27160a7af9d076e541686ae0b6ec96794638b7a265a4e3e26289",
+      "executable": false
+    },
+    {
+      "path": "assets/generic/user.svg",
+      "sha256": "a383d2e82346d3c14958eab164946898a0cf07f0f33defce7f55532ec1c9f1e9",
+      "executable": false
+    },
+    {
+      "path": "assets/template.html",
+      "sha256": "ea333400a25e58008e4ef98dd052a7a1de3271cea4f0a5ab2f2f3d3445fad02f",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "be10012fc23bb7f2e332d62312b80cfca01c3eb7abd8970ebb1cdf8ff5b04faa",
+      "executable": false
+    },
+    {
+      "path": "references/geometry.md",
+      "sha256": "0b823440933abb5c1c25dbd19f98e74bf3289e89b4adecb970c5e99c56e09f6e",
+      "executable": false
+    },
+    {
+      "path": "references/tsx.md",
+      "sha256": "7f39b64a61c64c2860ca78868a99b63c6f1ee909f686efd625d3bfd6d8751053",
+      "executable": false
+    },
+    {
+      "path": "scripts/build.py",
+      "sha256": "28049a14bbec3a1264a9b61a7d6abe435f1932393ba9b991068ea5690e83d3a7",
+      "executable": false
+    },
+    {
+      "path": "scripts/fetch_icons.py",
+      "sha256": "51b8318892ad1ba5f2895a44858f363dd76fb81001d49fc4d46a935c769a26fa",
+      "executable": false
+    },
+    {
+      "path": "scripts/render_png.py",
+      "sha256": "588873e0441cf4e796a1f916e00f90975c23c952def4a9477f01ef8ebb0f206b",
+      "executable": false
+    },
+    {
+      "path": "scripts/share.py",
+      "sha256": "a363482a18f6c0b2aab0b690cdb5bc02d6213c54fca158e1814082c5ba0bf4cc",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/stack-diagram"
+}

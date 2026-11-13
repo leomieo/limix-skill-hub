@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "name": "answer-me-with-html",
+  "version": "edccab07c012",
+  "source": {
+    "url": "https://github.com/QingYunA/answer-me-with-html",
+    "commit": "edccab07c012e2141585f8ddb18a62e01664fa2b",
+    "sha256": "d0083f74722df3b25d661aa869468416027c37a32926091bfdd5dac284ea0a76",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Skill trả lời câu hỏi khó bằng một trang HTML đọc được thay vì cả khối chữ — model chỉ viết nháp Markdown (khoảng 1/8 số token so với tự viết HTML), CLI đi kèm dựng trang hoàn chỉnh theo component (sequence, flow, state, er, class, api, tree, timeline, chart, annot, kv, callout, ask), có 3 theme (blueprint/shadcn/paper) sáng/tối, tự sửa lỗi nháp, nhúng code thật từ file dự án, kèm video giải thích kiểu 3b1b và chế độ always-on cho mọi kết luận.",
+    "aliases": [
+      "Báo cáo HTML",
+      "Giải thích bằng trang web"
+    ],
+    "keywords": [
+      "answer",
+      "me",
+      "with",
+      "html",
+      "Báo cáo HTML",
+      "Giải thích bằng trang web"
+    ],
+    "examples": [
+      "Dùng answer-me-with-html cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "d0083f74722df3b25d661aa869468416027c37a32926091bfdd5dac284ea0a76"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-13T09:14:21.544Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "scripts/am.mjs: credential-files (high)",
+      "scripts/am.mjs: secret-exfiltration (high)",
+      "scripts/am.mjs: base64-blob (medium)"
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

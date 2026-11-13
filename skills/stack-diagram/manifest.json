@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "name": "stack-diagram",
+  "version": "9175bde8449c",
+  "source": {
+    "url": "https://github.com/caru-ini/stack-diagram",
+    "commit": "9175bde8449cc8f5390d6eb72ecc2e1f5bfe21f3",
+    "sha256": "e78d88f663b76d20ce6bef862e9ea9088ffb19b409320dbff8c25c73020f14b6",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Skill vẽ sơ đồ kiến trúc (architecture diagram) với logo chính hãng chỉ từ một câu mô tả tech stack — agent tự tra logo từ svgl, devicon, gilbarbara/logos hoặc gói icon của chính AWS/Google Cloud/Azure (không recolor, không vẽ lại), tự định tuyến đường nối tránh xuyên chữ, render kiểm tra rồi giao file HTML độc lập (mặc định), PNG, hoặc React component không dependency; luôn xuất cả bản sáng và tối, dùng được cho cloud, monorepo tooling và ứng dụng AI.",
+    "aliases": [
+      "Sơ đồ kiến trúc",
+      "Vẽ sơ đồ hệ thống"
+    ],
+    "keywords": [
+      "stack",
+      "diagram",
+      "Sơ đồ kiến trúc",
+      "Vẽ sơ đồ hệ thống"
+    ],
+    "examples": [
+      "Dùng stack-diagram cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "e78d88f663b76d20ce6bef862e9ea9088ffb19b409320dbff8c25c73020f14b6"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "review-required",
+    "findings": [
+      "assets/fonts/Geist.woff2: binary-file (low)",
+      "assets/fonts/JetBrainsMono.woff2: binary-file (low)",
+      "scripts/render_png.py: privilege (medium)"
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

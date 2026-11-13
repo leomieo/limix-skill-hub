@@ -1,0 +1,16 @@
+{
+  "repository": "morganlinton/BeautifulRust",
+  "commit": "b9718436d77ee7bcf17cdcb6aa27628feb95d97a",
+  "path": null,
+  "verified": false,
+  "coreSha256": "90152967e3e37d0d915ff302779323fcc78eae9fd9ec7e834e8652dbc62a93aa",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "90152967e3e37d0d915ff302779323fcc78eae9fd9ec7e834e8652dbc62a93aa",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/beautiful-rust"
+}

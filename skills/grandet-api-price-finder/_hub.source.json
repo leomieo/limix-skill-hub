@@ -1,0 +1,96 @@
+{
+  "repository": "hanzohanzhe/Grandet",
+  "commit": "dcc1503994f6e0238119452f14fa251ea53ef573",
+  "path": "skills/grandet-api-price-finder",
+  "verified": true,
+  "coreSha256": "bcbd9e173d7d277a09dfd904e8bd60ad503fb5bc2e4e048f86243e9466d6312e",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "bcbd9e173d7d277a09dfd904e8bd60ad503fb5bc2e4e048f86243e9466d6312e",
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "a4ed21c5daf8d43b07db4d0ffa3eb5bae3c17267dcc5f66e3c403a520a764889",
+      "executable": false
+    },
+    {
+      "path": "data/price-snapshot.json",
+      "sha256": "d4731a2c49aad1bf4d2792914678836cf785c0dea51c1aa591bf39489772d6a4",
+      "executable": false
+    },
+    {
+      "path": "references/app-catalog.md",
+      "sha256": "0f79b30d568635ef38ff0f482deb88d24d96c55bebe67ddae6091ba6d93c8035",
+      "executable": false
+    },
+    {
+      "path": "references/entrypoints.md",
+      "sha256": "c019850e72aba08d0ce87f5efbb73c1007dd080aac49ccb666fa88e6c348af44",
+      "executable": false
+    },
+    {
+      "path": "references/free-credits.md",
+      "sha256": "744f233a81c86980b2d55355b3a4fcb38411d42b3dee8a9959c91cf6a332d1f1",
+      "executable": false
+    },
+    {
+      "path": "references/glossary.md",
+      "sha256": "d63cfeca57ae4a962c7c6f2288ee1de0e6604e72cf12215ec069e696250ab72a",
+      "executable": false
+    },
+    {
+      "path": "references/host-setup.md",
+      "sha256": "961b6532d306cb95ff64c0384b03ec5c0fe822313f4fb559ac3971ef771fd7e0",
+      "executable": false
+    },
+    {
+      "path": "references/http-fallback.md",
+      "sha256": "97f586a63b098bbef036ec56ab7f206bc79940da422c1d01dda91c7c16e77ee3",
+      "executable": false
+    },
+    {
+      "path": "references/installation.md",
+      "sha256": "372248df9a630479698c14209e19addb79ef4aadeb57304daf370a13bc473643",
+      "executable": false
+    },
+    {
+      "path": "references/quality-evidence.md",
+      "sha256": "b2ad9dbd86eee577b5b8fa0bfe4b47f037e8759319f8a6058ca96120ae9e2dc9",
+      "executable": false
+    },
+    {
+      "path": "references/response-format.md",
+      "sha256": "356b90bcccbcb957a67c12f3d581ed2ea5b7edb8ed62d26c825699ff75137a0c",
+      "executable": false
+    },
+    {
+      "path": "references/workloads.md",
+      "sha256": "bd919d01b969c27a048722141f2d840cfd6e7132a0c35064533af8cba221468b",
+      "executable": false
+    },
+    {
+      "path": "scripts/connect-mcp.mjs",
+      "sha256": "15950a43e06864f5b41d4dc6011d1bb2081a5d9743cda3ba9108ecde202f6dcc",
+      "executable": false
+    },
+    {
+      "path": "scripts/connect.mjs",
+      "sha256": "3c6d3688cd2ec3d582a2a373f1745f3e8c454e253380fb48afe3d1895d827d72",
+      "executable": false
+    },
+    {
+      "path": "scripts/offline-lookup.mjs",
+      "sha256": "c2f5915efaaaab2339a9a488a00778557454921d0151fc1e69cf11f58d4bd267",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "bad626286aa712d5aa25612c40a62b6e38a11e124e82b4e0787c32374759a4e4",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/grandet-api-price-finder"
+}

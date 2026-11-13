@@ -1,0 +1,2 @@
+# Source hashes describe the exact upstream bytes, including CRLF when present.
+/skills/** -text

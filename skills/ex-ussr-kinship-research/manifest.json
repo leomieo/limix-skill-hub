@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "name": "ex-ussr-kinship-research",
+  "version": "f4b6b3ffc99c",
+  "source": {
+    "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+    "commit": "f4b6b3ffc99ccdcb3e4b6bbfad3fca51b09bd23c",
+    "sha256": "eaf19cd9d5dd08052e017f1025da7862fa49f8cc888c01d626aa03de1f0c0c98",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Kỹ năng nghiên cứu phả hệ, lịch sử dòng họ và hồ sơ lưu trữ dựa trên bằng chứng độc lập (evidence-first genealogy). Xử lý dữ liệu sổ hộ tịch giáo hội, đăng ký dân sự, hồ sơ quân ngũ và di cư trên không gian Liên Xô cũ và Đông Âu. Áp dụng quy chuẩn logic nghiêm ngặt: phân tách bản ghi gốc với giải thích suy đoán, phân biệt người trùng tên, quản lý chuỗi bằng chứng có thể tái lập và xuất báo cáo phả hệ kèm định dạng GEDCOM.",
+    "aliases": [
+      "Nghiên cứu phả hệ",
+      "Hồ sơ lưu trữ lịch sử"
+    ],
+    "keywords": [
+      "ex",
+      "ussr",
+      "kinship",
+      "research",
+      "Nghiên cứu phả hệ",
+      "Hồ sơ lưu trữ lịch sử"
+    ],
+    "examples": [
+      "Dùng ex-ussr-kinship-research cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "eaf19cd9d5dd08052e017f1025da7862fa49f8cc888c01d626aa03de1f0c0c98"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-13T09:14:21.544Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "assets/cano-vital-record-request.template.docx: binary-file (low)",
+      "docs/cover.jpg: binary-file (low)",
+      "Incomplete upstream bundle: inspect excluded files before approving compatibility or activation."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "1 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

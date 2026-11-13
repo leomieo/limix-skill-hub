@@ -1,0 +1,16 @@
+{
+  "repository": "Jakeschincariol/founder-skill",
+  "commit": "fd9385b0cfe1b96bebce3898fbd506d73eff5a9d",
+  "path": null,
+  "verified": false,
+  "coreSha256": "d457c0f43c9da5cfd127fa312d021c332913507833513a1003dbb49503aba30e",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "d457c0f43c9da5cfd127fa312d021c332913507833513a1003dbb49503aba30e",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/founder-skill"
+}

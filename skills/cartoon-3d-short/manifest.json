@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "name": "cartoon-3d-short",
+  "version": "e3b817b6afc6",
+  "source": {
+    "url": "https://github.com/mromidev/claude-animated-shorts",
+    "commit": "e3b817b6afc6cd413466d43f11ba31209e034bbf",
+    "sha256": "411dea3094044355c5023a7c97e178a0bd815051793f0e2cb3c6674999aeb34b",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Skill Claude miễn phí làm video ngắn hoạt hình dạng \"2D characters in a colourful 3D world\" dài 55-70 giây dọc — nhân vật thẻ cartoon đầu-bean viền mực, thế giới 3D vẽ tay nét mực đen, camera lượn, thuyết minh giọng đọc, SFX + nhạc march tổng hợp — render bằng three.js trong Remotion trên máy bạn, không dùng AI video generator. Đã kiểm chứng qua short 67 giây \"The Bridge That Fell for a Song\" (cầu Broughton 1831, 74 lính đi đều). Dùng khi người dùng muốn video \"kiểu bridge video\", truyện lịch sử/khoa học ngắn có nhân vật cartoon 3D, hoặc nói \"dùng cartoon short skill\".",
+    "aliases": [
+      "Video hoạt hình ngắn",
+      "Dựng Shorts",
+      "claude-animated-shorts"
+    ],
+    "keywords": [
+      "cartoon",
+      "3d",
+      "short",
+      "Video hoạt hình ngắn",
+      "Dựng Shorts"
+    ],
+    "examples": [
+      "Dùng cartoon-3d-short cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "411dea3094044355c5023a7c97e178a0bd815051793f0e2cb3c6674999aeb34b"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write"
+  ],
+  "syncedAt": "2026-11-13T09:27:13.451Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "references/frames/short01_0060.jpg: binary-file (low)",
+      "references/frames/short01_0180.jpg: binary-file (low)",
+      "references/frames/short02_0060.jpg: binary-file (low)",
+      "references/frames/short02_0180.jpg: binary-file (low)",
+      "references/frames/short03_0060.jpg: binary-file (low)",
+      "references/frames/short03_0180.jpg: binary-file (low)",
+      "references/frames/short04_0060.jpg: binary-file (low)",
+      "references/frames/short04_0180.jpg: binary-file (low)",
+      "references/frames/short05_0060.jpg: binary-file (low)",
+      "references/frames/short05_0180.jpg: binary-file (low)",
+      "references/frames/short06_0060.jpg: binary-file (low)",
+      "references/frames/short06_0180.jpg: binary-file (low)",
+      "references/frames/short07_0060.jpg: binary-file (low)",
+      "references/frames/short07_0180.jpg: binary-file (low)",
+      "references/frames/short08_0060.jpg: binary-file (low)",
+      "references/frames/short08_0180.jpg: binary-file (low)",
+      "references/frames/short09_0060.jpg: binary-file (low)",
+      "references/frames/short09_0180.jpg: binary-file (low)",
+      "references/frames/short10_0060.jpg: binary-file (low)",
+      "references/frames/short10_0180.jpg: binary-file (low)",
+      "references/frames/short11_0060.jpg: binary-file (low)",
+      "references/frames/short11_0180.jpg: binary-file (low)",
+      "references/frames/short12_0060.jpg: binary-file (low)",
+      "references/frames/short12_0180.jpg: binary-file (low)",
+      "references/frames/short13_0060.jpg: binary-file (low)",
+      "references/frames/short13_0180.jpg: binary-file (low)",
+      "references/frames/short14_0060.jpg: binary-file (low)",
+      "references/frames/short14_0180.jpg: binary-file (low)",
+      "references/frames/short15_0060.jpg: binary-file (low)",
+      "references/frames/short16_0060.jpg: binary-file (low)",
+      "references/frames/short16_0180.jpg: binary-file (low)",
+      "references/frames/short17_0060.jpg: binary-file (low)",
+      "references/frames/short18_0060.jpg: binary-file (low)",
+      "references/frames/short18_0180.jpg: binary-file (low)",
+      "references/frames/short19_0060.jpg: binary-file (low)",
+      "references/frames/short19_0180.jpg: binary-file (low)",
+      "references/frames/short20_0060.jpg: binary-file (low)",
+      "references/frames/short20_0180.jpg: binary-file (low)",
+      "references/sheets/short01_sheet.jpg: binary-file (low)",
+      "references/sheets/short02_sheet.jpg: binary-file (low)",
+      "references/sheets/short03_sheet.jpg: binary-file (low)",
+      "references/sheets/short04_sheet.jpg: binary-file (low)",
+      "references/sheets/short05_sheet.jpg: binary-file (low)",
+      "references/sheets/short06_sheet.jpg: binary-file (low)",
+      "references/sheets/short07_sheet.jpg: binary-file (low)",
+      "references/sheets/short08_sheet.jpg: binary-file (low)",
+      "references/sheets/short09_sheet.jpg: binary-file (low)",
+      "references/sheets/short10_sheet.jpg: binary-file (low)",
+      "Incomplete upstream bundle: inspect excluded files before approving compatibility or activation."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "6 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

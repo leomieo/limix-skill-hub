@@ -1,0 +1,16 @@
+{
+  "repository": "Jakeschincariol/day-trader-skill",
+  "stars": 7494,
+  "createdAt": "2026-10-20T14:17:54Z",
+  "pushedAt": "2026-10-20T14:18:00Z",
+  "statsCheckedAt": "2026-11-13",
+  "license": "MIT",
+  "commit": "3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd",
+  "path": "trader-scanner",
+  "language": "hybrid",
+  "version": "3d0f4ef6986f",
+  "hybrid": true,
+  "legacyId": "day-trader-skill",
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-13T09:22:43.610Z"
+}

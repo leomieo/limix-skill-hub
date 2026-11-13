@@ -1,0 +1,21 @@
+{
+  "repository": "Leonxlnx/earshot",
+  "commit": "4ac3d2ac2b151e1c23376f9ce7f3047a17050013",
+  "path": "skills/earshot",
+  "verified": true,
+  "coreSha256": "57b984a602ae1881cb3cfe58cedf61cc89b5c443c0b315fe5b8767471cb6c1ec",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "57b984a602ae1881cb3cfe58cedf61cc89b5c443c0b315fe5b8767471cb6c1ec",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "d9177365c7471d18ecd623ce7b8849e26ab8d7e7fea13e1fcbda62397ecb9db8",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/earshot"
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "name": "logo-design",
+  "version": "bbf31e521d76",
+  "source": {
+    "url": "https://github.com/kaankiziltug/logo-design-skill",
+    "commit": "bbf31e521d765eb6d53242549bbee7c2e5bbd6bc",
+    "sha256": "65ec4bd58732e8cc11e244724e8666de78764b973f6d3b03b233904639cf47c6",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Skill thiết kế logo và brand mark chuyên nghiệp, từ brief đến file sản xuất — biến Claude (hoặc Gemini CLI, Codex CLI, Cursor, GitHub Copilot, OpenCode) thành nhà thiết kế bản sắc kỷ luật. Bao trùm: khai thác và design brief, word mapping, chọn loại mark (wordmark, monogram, letterform, pictorial, abstract, emblem, mascot, combination), dựng SVG hình học sạch, tinh chỉnh quang học (overshoot, bone effect, irradiation), màu và typography, lockup, kiểm thử (16px, một màu, đảo màu, squint, shelf test cạnh đối thủ), trình bày cho khách, xuất variant và brand guidelines. Kèm thư viện tra cứu 1.400+ logo SVG thực tế phân loại theo loại mark/kỹ thuật/hình học/chủ đề/mood/ngành, và tool Python không dependency: audit SVG, bảng concept, test sheet, presentation board theo ngành, render PNG, xuất favicon/app-icon/web-manifest. Luôn dừng ở checkpoint để khách chọn hướng trước khi làm full kit.",
+    "aliases": [
+      "Thiết kế logo",
+      "Nhận diện thương hiệu"
+    ],
+    "keywords": [
+      "logo",
+      "design",
+      "Thiết kế logo",
+      "Nhận diện thương hiệu"
+    ],
+    "examples": [
+      "Dùng logo-design cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "65ec4bd58732e8cc11e244724e8666de78764b973f6d3b03b233904639cf47c6"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "Incomplete upstream bundle: inspect excluded files before approving compatibility or activation."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "1266 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

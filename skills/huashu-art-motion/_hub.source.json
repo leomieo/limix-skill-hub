@@ -1,0 +1,1313 @@
+{
+  "repository": "alchaincyf/huashu-art-motion",
+  "commit": "1468196505a51728686db118d52561aa27a25124",
+  "path": "",
+  "verified": true,
+  "coreSha256": "961b5c245620dda55ddab724e1484cd38b677c6a1cc49057f950101e8f09789b",
+  "skipped": [
+    ".github/workflows/tests.yml",
+    ".gitignore",
+    "assets/showcase/clawd-dawn.gif",
+    "assets/showcase/clawd-trex.gif",
+    "assets/showcase/clawd-vangogh.gif",
+    "assets/showcase/egypt.gif",
+    "assets/showcase/mario-claude.gif",
+    "assets/showcase/mario-combo.gif",
+    "assets/showcase/mario-pipe.gif",
+    "assets/showcase/monet.gif",
+    "assets/showcase/pixel.gif",
+    "scripts/engine/demos/long_scroll/frames/monet_throw/06.png",
+    "scripts/engine/demos/long_scroll/frames/monet_throw/07.png",
+    "scripts/engine/demos/long_scroll/frames/monet_throw/08.png",
+    "scripts/engine/demos/long_scroll/frames/monet_throw/meta.json",
+    "scripts/engine/demos/long_scroll/frames/monet_walk/01.png",
+    "scripts/engine/demos/long_scroll/frames/monet_walk/02.png",
+    "scripts/engine/demos/long_scroll/frames/monet_walk/03.png",
+    "scripts/engine/demos/long_scroll/frames/monet_walk/04.png",
+    "scripts/engine/demos/long_scroll/frames/monet_walk/05.png",
+    "scripts/engine/demos/long_scroll/frames/monet_walk/06.png",
+    "scripts/engine/demos/long_scroll/frames/monet_walk/07.png",
+    "scripts/engine/demos/long_scroll/frames/monet_walk/08.png",
+    "scripts/engine/demos/long_scroll/frames/monet_walk/meta.json",
+    "scripts/engine/demos/long_scroll/lib/acts.js",
+    "scripts/engine/demos/long_scroll/lib/crossing.js",
+    "scripts/engine/demos/long_scroll/lib/world.js",
+    "scripts/engine/demos/long_scroll/lib/xing2_ding.js",
+    "scripts/engine/demos/long_scroll/lib/xing2_jia.js",
+    "scripts/engine/demos/long_scroll/lib/xing2_yi.js",
+    "scripts/engine/demos/long_scroll/segments/02_egypt.js",
+    "scripts/engine/demos/long_scroll/segments/14_8bit.js",
+    "scripts/engine/demos/long_scroll/segments/28_monet.js",
+    "scripts/engine/demos/t1_3b1b/eras.js",
+    "scripts/engine/demos/t1_3b1b/t1_s1.js",
+    "scripts/engine/demos/t1_3b1b/t1_s2.js",
+    "scripts/engine/demos/t1_3b1b/t1_s3.js",
+    "scripts/engine/demos/t2_keynote_ui/eras.js",
+    "scripts/engine/demos/t2_keynote_ui/t2_s1.js",
+    "scripts/engine/demos/t2_keynote_ui/t2_s2.js",
+    "scripts/engine/demos/t2_keynote_ui/t2_s3.js",
+    "scripts/engine/demos/t3_finance_chart/eras.js",
+    "scripts/engine/demos/t3_finance_chart/t3_s1.js",
+    "scripts/engine/demos/t3_finance_chart/t3_s2.js",
+    "scripts/engine/demos/t3_finance_chart/t3_s3.js",
+    "scripts/engine/demos/y1_kurzgesagt/eras.js",
+    "scripts/engine/demos/y1_kurzgesagt/kurzgesagt.js",
+    "scripts/engine/demos/y2_vox/eras.js",
+    "scripts/engine/demos/y2_vox/vox.js",
+    "scripts/engine/demos/y3_whiteboard/eras.js",
+    "scripts/engine/demos/y3_whiteboard/whiteboard.js",
+    "scripts/engine/demos/y4_storytime/eras.js",
+    "scripts/engine/demos/y4_storytime/s1_desk.js",
+    "scripts/engine/demos/y4_storytime/s2_screen.js",
+    "scripts/engine/demos/y4_storytime/s3_react.js",
+    "scripts/engine/demos/y4_storytime/s4_wide.js",
+    "scripts/engine/demos/y4_storytime/s5_close.js",
+    "scripts/engine/demos/y4_storytime/story.js",
+    "scripts/engine/demos/y4_storytime/vo_env.js",
+    "scripts/engine/demos/y4_storytime/world.js",
+    "scripts/engine/demos/y5_kinetic_type/eras.js",
+    "scripts/engine/demos/y5_kinetic_type/k1_title.js",
+    "scripts/engine/demos/y5_kinetic_type/k2_complete.js",
+    "scripts/engine/demos/y5_kinetic_type/k3_chat.js",
+    "scripts/engine/demos/y5_kinetic_type/k4_agent.js",
+    "scripts/engine/demos/y5_kinetic_type/kinetic.js",
+    "scripts/engine/engine.js",
+    "scripts/engine/eras_gallery.js",
+    "scripts/engine/eras_style_studies.js",
+    "scripts/engine/eras.js",
+    "scripts/engine/examples/assets/K线图_横屏.png",
+    "scripts/engine/examples/assets/终端_for循环求和.png",
+    "scripts/engine/examples/assets/终端_sum求和.png",
+    "scripts/engine/examples/assets/营收图_竖屏.png",
+    "scripts/engine/examples/assets/财经图表_横屏.png",
+    "scripts/engine/examples/t1_3b1b.json",
+    "scripts/engine/examples/t2_fullbleed_pulse.json",
+    "scripts/engine/examples/t2_keynote_ui.json",
+    "scripts/engine/examples/t3_finance_chart.json",
+    "scripts/engine/examples/y1_kurzgesagt.json",
+    "scripts/engine/examples/y2_vox.json",
+    "scripts/engine/examples/y3_whiteboard.json",
+    "scripts/engine/examples/y4_storytime.json",
+    "scripts/engine/examples/y5_kinetic_type.json",
+    "scripts/engine/index.html",
+    "scripts/engine/lib/brush.js",
+    "scripts/engine/lib/camera.js",
+    "scripts/engine/lib/chart.js",
+    "scripts/engine/lib/collage.js",
+    "scripts/engine/lib/diagram.js",
+    "scripts/engine/lib/finish.js",
+    "scripts/engine/lib/fonts.js",
+    "scripts/engine/lib/fonts/AlfaSlabOne-400.woff",
+    "scripts/engine/lib/fonts/Anton-400.woff",
+    "scripts/engine/lib/fonts/ArchivoBlack-400.woff",
+    "scripts/engine/lib/fonts/Bangers-400.woff",
+    "scripts/engine/lib/fonts/Caveat-600.woff",
+    "scripts/engine/lib/fonts/Cinzel-400.woff",
+    "scripts/engine/lib/fonts/Cinzel-700.woff",
+    "scripts/engine/lib/fonts/cmunrm.woff",
+    "scripts/engine/lib/fonts/cmunti.woff",
+    "scripts/engine/lib/fonts/CormorantGaramond-500.woff",
+    "scripts/engine/lib/fonts/CormorantGaramond-500i.woff",
+    "scripts/engine/lib/fonts/CormorantGaramond-700.woff",
+    "scripts/engine/lib/fonts/EBGaramond-400.woff",
+    "scripts/engine/lib/fonts/EBGaramond-400i.woff",
+    "scripts/engine/lib/fonts/EBGaramond-600.woff",
+    "scripts/engine/lib/fonts/Exo2-800i.woff",
+    "scripts/engine/lib/fonts/GochiHand-400.woff",
+    "scripts/engine/lib/fonts/IMFellEnglish-400.woff",
+    "scripts/engine/lib/fonts/IMFellEnglish-400i.woff",
+    "scripts/engine/lib/fonts/index.json",
+    "scripts/engine/lib/fonts/Inter-var.woff",
+    "scripts/engine/lib/fonts/JosefinSans-700.woff",
+    "scripts/engine/lib/fonts/Kalam-700.woff",
+    "scripts/engine/lib/fonts/LibreBaskerville-400.woff",
+    "scripts/engine/lib/fonts/LibreBaskerville-700.woff",
+    "scripts/engine/lib/fonts/LICENSES.md",
+    "scripts/engine/lib/fonts/LilitaOne-400.woff",
+    "scripts/engine/lib/fonts/LXGWWenKai-500.woff",
+    "scripts/engine/lib/fonts/Marcellus-400.woff",
+    "scripts/engine/lib/fonts/NotoSansSC-500.woff",
+    "scripts/engine/lib/fonts/NotoSansSC-700.woff",
+    "scripts/engine/lib/fonts/NotoSansSC-800.woff",
+    "scripts/engine/lib/fonts/NotoSansSC-900.woff",
+    "scripts/engine/lib/fonts/NotoSansSC-sub.woff",
+    "scripts/engine/lib/fonts/NotoSerifJP-600.woff",
+    "scripts/engine/lib/fonts/NotoSerifSC-sub.woff",
+    "scripts/engine/lib/fonts/OFL.txt",
+    "scripts/engine/lib/fonts/PlayfairDisplay-400i.woff",
+    "scripts/engine/lib/fonts/PlayfairDisplay-700.woff",
+    "scripts/engine/lib/fonts/PlayfairDisplay-700i.woff",
+    "scripts/engine/lib/fonts/Poppins-600.woff",
+    "scripts/engine/lib/fonts/Poppins-700.woff",
+    "scripts/engine/lib/fonts/Poppins-800.woff",
+    "scripts/engine/lib/fonts/PressStart2P-400.woff",
+    "scripts/engine/lib/fonts/Righteous-400.woff",
+    "scripts/engine/lib/fonts/RobotoCondensed-var.woff",
+    "scripts/engine/lib/fonts/Rye-400.woff",
+    "scripts/engine/lib/fonts/UnifrakturMaguntia-400.woff",
+    "scripts/engine/lib/kit.js",
+    "scripts/engine/lib/media.js",
+    "scripts/engine/lib/medium.js",
+    "scripts/engine/lib/motion.js",
+    "scripts/engine/lib/paint.js",
+    "scripts/engine/lib/palettes.js",
+    "scripts/engine/lib/post.js",
+    "scripts/engine/lib/render.js",
+    "scripts/engine/lib/rig_huashu.js",
+    "scripts/engine/lib/rig.js",
+    "scripts/engine/lib/THREE_LICENSE.txt",
+    "scripts/engine/lib/three.min.js",
+    "scripts/engine/lib/toon.js",
+    "scripts/engine/lib/typo.js",
+    "scripts/engine/lib/ui.js",
+    "scripts/engine/lib/util.js",
+    "scripts/engine/reference_films/painted_room/engine.js",
+    "scripts/engine/reference_films/painted_room/film.html",
+    "scripts/engine/reference_films/painted_room/film.js",
+    "scripts/engine/reference_films/painted_room/film2.js",
+    "scripts/engine/reference_films/painted_room/README.md",
+    "scripts/engine/reference_films/painted_room/render.py",
+    "scripts/engine/reference_films/painted_room/score.abc",
+    "scripts/engine/reference_films/rick_morty/index.html",
+    "scripts/engine/reference_films/rick_morty/render.py",
+    "scripts/engine/reference_films/rick_morty/room.js",
+    "scripts/engine/reference_films/rick_morty/svg-kit.js",
+    "scripts/engine/reference_films/spacex/eras_lin.js",
+    "scripts/engine/reference_films/spacex/eras_spacex.js",
+    "scripts/engine/reference_films/spacex/eras_vox.js",
+    "scripts/engine/reference_films/spacex/eras_wbx.js",
+    "scripts/engine/reference_films/spacex/README.md",
+    "scripts/engine/reference_films/spacex/spacex_lin/common.js",
+    "scripts/engine/reference_films/spacex/spacex_lin/presenter_meta.js",
+    "scripts/engine/reference_films/spacex/spacex_lin/scenes/s01.js",
+    "scripts/engine/reference_films/spacex/spacex_lin/scenes/s02.js",
+    "scripts/engine/reference_films/spacex/spacex_lin/scenes/s03.js",
+    "scripts/engine/reference_films/spacex/spacex_lin/scenes/s04.js",
+    "scripts/engine/reference_films/spacex/spacex_lin/scenes/s05.js",
+    "scripts/engine/reference_films/spacex/spacex_lin/scenes/s06.js",
+    "scripts/engine/reference_films/spacex/spacex_lin/scenes/s07.js",
+    "scripts/engine/reference_films/spacex/spacex_lin/scenes/s08.js",
+    "scripts/engine/reference_films/spacex/spacex_lin/scenes/s09.js",
+    "scripts/engine/reference_films/spacex/spacex_lin/scenes/s10.js",
+    "scripts/engine/reference_films/spacex/spacex_lin/scenes/s11.js",
+    "scripts/engine/reference_films/spacex/spacex_lin/scenes/s12.js",
+    "scripts/engine/reference_films/spacex/spacex_lin/tools/prep_presenter.py",
+    "scripts/engine/reference_films/spacex/spacex_vox/common.js",
+    "scripts/engine/reference_films/spacex/spacex_vox/scenes/s01.js",
+    "scripts/engine/reference_films/spacex/spacex_vox/scenes/s02.js",
+    "scripts/engine/reference_films/spacex/spacex_vox/scenes/s03.js",
+    "scripts/engine/reference_films/spacex/spacex_vox/scenes/s04.js",
+    "scripts/engine/reference_films/spacex/spacex_vox/scenes/s05.js",
+    "scripts/engine/reference_films/spacex/spacex_vox/scenes/s06.js",
+    "scripts/engine/reference_films/spacex/spacex_vox/scenes/s07.js",
+    "scripts/engine/reference_films/spacex/spacex_vox/scenes/s08.js",
+    "scripts/engine/reference_films/spacex/spacex_vox/scenes/s09.js",
+    "scripts/engine/reference_films/spacex/spacex_vox/scenes/s10.js",
+    "scripts/engine/reference_films/spacex/spacex_vox/scenes/s11.js",
+    "scripts/engine/reference_films/spacex/spacex_vox/scenes/s12.js",
+    "scripts/engine/reference_films/spacex/spacex_wb/assets/ARPHICPL.TXT",
+    "scripts/engine/reference_films/spacex/spacex_wb/assets/hand_1.png",
+    "scripts/engine/reference_films/spacex/spacex_wb/assets/hand_2.png",
+    "scripts/engine/reference_films/spacex/spacex_wb/assets/hand_3.png",
+    "scripts/engine/reference_films/spacex/spacex_wb/assets/make_hand.py",
+    "scripts/engine/reference_films/spacex/spacex_wb/assets/strokes.js",
+    "scripts/engine/reference_films/spacex/spacex_wb/common.js",
+    "scripts/engine/reference_films/spacex/spacex_wb/scenes/s01.js",
+    "scripts/engine/reference_films/spacex/spacex_wb/scenes/s02.js",
+    "scripts/engine/reference_films/spacex/spacex_wb/scenes/s03.js",
+    "scripts/engine/reference_films/spacex/spacex_wb/scenes/s04.js",
+    "scripts/engine/reference_films/spacex/spacex_wb/scenes/s05.js",
+    "scripts/engine/reference_films/spacex/spacex_wb/scenes/s06.js",
+    "scripts/engine/reference_films/spacex/spacex_wb/scenes/s07.js",
+    "scripts/engine/reference_films/spacex/spacex_wb/scenes/s08.js",
+    "scripts/engine/reference_films/spacex/spacex_wb/scenes/s09.js",
+    "scripts/engine/reference_films/spacex/spacex_wb/scenes/s10.js",
+    "scripts/engine/reference_films/spacex/spacex_wb/scenes/s11.js",
+    "scripts/engine/reference_films/spacex/spacex_wb/scenes/s12.js",
+    "scripts/engine/reference_films/spacex/spacex/rockets.js",
+    "scripts/engine/reference_films/spacex/spacex/scenes/s01.js",
+    "scripts/engine/reference_films/spacex/spacex/scenes/s02.js",
+    "scripts/engine/reference_films/spacex/spacex/scenes/s03.js",
+    "scripts/engine/reference_films/spacex/spacex/scenes/s04.js",
+    "scripts/engine/reference_films/spacex/spacex/scenes/s05.js",
+    "scripts/engine/reference_films/spacex/spacex/scenes/s06.js",
+    "scripts/engine/reference_films/spacex/spacex/scenes/s07.js",
+    "scripts/engine/reference_films/spacex/spacex/scenes/s08.js",
+    "scripts/engine/reference_films/spacex/spacex/scenes/s09.js",
+    "scripts/engine/reference_films/spacex/spacex/scenes/s10.js",
+    "scripts/engine/reference_films/spacex/spacex/scenes/s11.js",
+    "scripts/engine/reference_films/spacex/spacex/scenes/s12.js",
+    "scripts/engine/reference_films/spacex/spacex/timing.js",
+    "scripts/engine/reference_films/spacex/spacex/tm.js",
+    "scripts/engine/reference_films/spacex/transitions/cardFlip.js",
+    "scripts/engine/reference_films/spacex/transitions/deskPullOut.js",
+    "scripts/engine/reference_films/spacex/transitions/kzBloom.js",
+    "scripts/engine/reference_films/spacex/transitions/lin_page.js",
+    "scripts/engine/reference_films/spacex/transitions/paperSlide.js",
+    "scripts/engine/reference_films/spacex/transitions/vox_pull.js",
+    "scripts/engine/reference_films/spacex/transitions/vox_slap.js",
+    "scripts/engine/render.py",
+    "scripts/engine/scenes/01_cave.js",
+    "scripts/engine/scenes/02_egypt.js",
+    "scripts/engine/scenes/03_greek.js",
+    "scripts/engine/scenes/04_roman.js",
+    "scripts/engine/scenes/05_gothic.js",
+    "scripts/engine/scenes/06_renaissance.js",
+    "scripts/engine/scenes/08_impressionism.js",
+    "scripts/engine/scenes/09_postimp.js",
+    "scripts/engine/scenes/10_nouveau.js",
+    "scripts/engine/scenes/11_cubism.js",
+    "scripts/engine/scenes/12_bauhaus.js",
+    "scripts/engine/scenes/13_pop.js",
+    "scripts/engine/scenes/14_8bit.js",
+    "scripts/engine/scenes/15_raytrace.js",
+    "scripts/engine/scenes/16_2026.js",
+    "scripts/engine/scenes/17_ink.js",
+    "scripts/engine/scenes/18_klimt.js",
+    "scripts/engine/scenes/19_munch.js",
+    "scripts/engine/scenes/20_dunhuang.js",
+    "scripts/engine/scenes/21_kusama.js",
+    "scripts/engine/scenes/22_constructivism.js",
+    "scripts/engine/scenes/23_dali.js",
+    "scripts/engine/scenes/24_hopper.js",
+    "scripts/engine/scenes/25_ghibli.js",
+    "scripts/engine/scenes/26_vaporwave.js",
+    "scripts/engine/scenes/27_kirby.js",
+    "scripts/engine/scenes/28_monet.js",
+    "scripts/engine/scenes/29_seurat.js",
+    "scripts/engine/scenes/30_matisse.js",
+    "scripts/engine/scenes/31_haring.js",
+    "scripts/engine/scenes/32_rembrandt.js",
+    "scripts/engine/scenes/33_rubberhose.js",
+    "scripts/engine/scenes/34_shadowpuppet.js",
+    "scripts/engine/scenes/35_shinkai.js",
+    "scripts/engine/scenes/36_picasso_blue.js",
+    "scripts/engine/scenes/38_giotto.js",
+    "scripts/engine/scenes/39_piero.js",
+    "scripts/engine/scenes/40_raphael.js",
+    "scripts/engine/scenes/41_michelangelo.js",
+    "scripts/engine/scenes/42_guardi.js",
+    "scripts/engine/scenes/43_lorenzetti.js",
+    "scripts/engine/scenes/44_cortona.js",
+    "scripts/engine/scenes/45_renoir.js",
+    "scripts/engine/scenes/46_pissarro.js",
+    "scripts/engine/scenes/47_sisley.js",
+    "scripts/engine/scenes/48_gauguin.js",
+    "scripts/engine/scenes/49_chagall.js",
+    "scripts/engine/scenes/50_ma_yuan.js",
+    "scripts/engine/scenes/51_persian_miniature.js",
+    "scripts/engine/scenes/52_south_park.js",
+    "scripts/engine/scenes/53_pixar.js",
+    "scripts/engine/scenes/54_ghibli_lab.js",
+    "scripts/engine/scenes/55_dunhuang.js",
+    "scripts/engine/scenes/index.js",
+    "scripts/engine/spec_assets.py",
+    "scripts/engine/transitions.js",
+    "scripts/engine/时代作者规范.md",
+    "scripts/film_gate.py",
+    "scripts/font_subset.py",
+    "scripts/images.py",
+    "scripts/key_green.py",
+    "scripts/key_split.py",
+    "scripts/koubo.py",
+    "scripts/qa.py",
+    "scripts/storyboard_lint.py",
+    "scripts/subzone_gate.py",
+    "scripts/voice_review.py",
+    "tests/fixtures/y4_storytime_test_frames.json",
+    "tests/test_capabilities.py",
+    "tests/test_clip_theme.py",
+    "tests/test_clip_world.py",
+    "tests/test_film_gate_blank.py",
+    "tests/test_film_gate_color.py",
+    "tests/test_film_gate.py",
+    "tests/test_images.py",
+    "tests/test_local_server.py",
+    "tests/test_release.py",
+    "tests/test_storyboard_lint.py",
+    "tests/test_voice_review.py"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "961b5c245620dda55ddab724e1484cd38b677c6a1cc49057f950101e8f09789b",
+      "executable": false
+    },
+    {
+      "path": "assets/showcase/clawd-clips.md",
+      "sha256": "e986e40a1a8bfccdcf745a3afad0c5c40889f4263eaa6afaedd089dea23cd7fb",
+      "executable": false
+    },
+    {
+      "path": "assets/showcase/hero.png",
+      "sha256": "3b6b42bfb00f84925aebe2a10f85052dc6b4efb492e86f581f21f652b6686407",
+      "executable": false
+    },
+    {
+      "path": "assets/showcase/mario-clips.md",
+      "sha256": "e29421cc252a439a33c81f26c18fb89c1c5584e3ec9bb278e469ffc772b61f6e",
+      "executable": false
+    },
+    {
+      "path": "assets/全风格总览.jpg",
+      "sha256": "99512979c3ffd709ace498647cca95b4a31e45ebe435c0ce77f9522470f93f7e",
+      "executable": false
+    },
+    {
+      "path": "assets/动画语法/t1_3b1b_总览.jpg",
+      "sha256": "eeb77f3fb238b503612ad0075b17fa2a1315c629457eecdfd8f043e33ebc410a",
+      "executable": false
+    },
+    {
+      "path": "assets/动画语法/t2_keynote_ui_总览.jpg",
+      "sha256": "2f7cb8e070512210ca4f1fccb7e86742658946f33af90fd17b84e997cb9785b9",
+      "executable": false
+    },
+    {
+      "path": "assets/动画语法/t3_finance_chart_总览.jpg",
+      "sha256": "4a761592ff73623cba1a1c065ba98a9f6fa46ff016735671f82fb3cb22ec7ee0",
+      "executable": false
+    },
+    {
+      "path": "assets/动画语法/y1_kurzgesagt_总览.jpg",
+      "sha256": "c76e685e90dc1b99e741d126c495086006e1393be4f8a16145677af457e05235",
+      "executable": false
+    },
+    {
+      "path": "assets/动画语法/y2_vox_总览.jpg",
+      "sha256": "f70957fa84faf280eb29c4231d4bfddc0c43b07a23155b2d64ce83493359c765",
+      "executable": false
+    },
+    {
+      "path": "assets/动画语法/y3_whiteboard_总览.jpg",
+      "sha256": "cc28d7e021d8bc094387f4e65627ad940417459250502e586e3f2fe9603ae841",
+      "executable": false
+    },
+    {
+      "path": "assets/动画语法/y4_storytime_总览.jpg",
+      "sha256": "6cc308bee5624a6e11f063185af67bb1625332a44aabedb22f1329b1f60cfdc5",
+      "executable": false
+    },
+    {
+      "path": "assets/动画语法/y5_kinetic_type_总览.jpg",
+      "sha256": "fbc1612a831eeaa05f03bdef32b477dc459769834f57ad6331517ebfb92651b9",
+      "executable": false
+    },
+    {
+      "path": "assets/新风格v2_证据/38_giotto.jpg",
+      "sha256": "85f6911b2ae64b6dbb945c22d76f1fb4dddf8c0cb6e77f7b09ca56e0b245f127",
+      "executable": false
+    },
+    {
+      "path": "assets/新风格v2_证据/40_raphael.jpg",
+      "sha256": "570f368fd51286ac880f35c229a5f3785820b3036c45e723adb41a963ef395b0",
+      "executable": false
+    },
+    {
+      "path": "assets/新风格v2_证据/41_michelangelo.jpg",
+      "sha256": "916b9dfe205d1e4c83a2f8110cc55d5f41f36b3ed7e7cf2f35af341da675b304",
+      "executable": false
+    },
+    {
+      "path": "assets/新风格v2_证据/43_lorenzetti.jpg",
+      "sha256": "564cde057ef731861b67ba944af499fd76931229124269718c2f894f6ae19626",
+      "executable": false
+    },
+    {
+      "path": "assets/新风格v2_证据/44_cortona.jpg",
+      "sha256": "63fc0338750cfd012d63b9e987877d5a39f0cc69655e34edba88c212e450e989",
+      "executable": false
+    },
+    {
+      "path": "assets/新风格v2_证据/46_pissarro.jpg",
+      "sha256": "1832c57ba66d57c48971dc1b7166c7ca5f9840bc7744dd5b54179d15c341389d",
+      "executable": false
+    },
+    {
+      "path": "assets/新风格v2_证据/47_sisley.jpg",
+      "sha256": "7c46c04642f629a48d8289228c6084b5ce0b839110ea251dbc11d69afd9551b3",
+      "executable": false
+    },
+    {
+      "path": "assets/新风格v2_证据/48_gauguin.jpg",
+      "sha256": "0a1095b4d34b0e49b408be6091dcdefa25455b12f9aeccfa54f900f444fbd159",
+      "executable": false
+    },
+    {
+      "path": "assets/新风格v2_证据/50_ma_yuan.jpg",
+      "sha256": "31e7ddc85bd3db1a2e2ead25f6d25d98092da68a2c3b1ecc0b6a7eeb518be2f8",
+      "executable": false
+    },
+    {
+      "path": "assets/新风格v2_证据/51_persian_miniature.jpg",
+      "sha256": "de1a2b6c472da7163207dd7974e241732213c3fb73c8c1727075bdb2fd421222",
+      "executable": false
+    },
+    {
+      "path": "assets/新风格v2_证据/总览.jpg",
+      "sha256": "966ab7f6f423081edfb14509d165f2989a8d1a3cc440b0c3650b52d03e648156",
+      "executable": false
+    },
+    {
+      "path": "assets/角色/花叔形象_对比.jpg",
+      "sha256": "e2dd1082f5a6d6c66182b27b16a71ad9b6426e567ff4b406e4ebec007e044615",
+      "executable": false
+    },
+    {
+      "path": "assets/长卷穿越_总览.jpg",
+      "sha256": "3f925f5637553c2b5bc57052f65f8065dbd14837c9881bb5d8e2bb898f29dba4",
+      "executable": false
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "bbc7c909f0d67d8bf8ab7731d7817afbe87acb5bd6525b78ecbbed5517be0544",
+      "executable": false
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "742a1a6071f6be25e82f0524a520fd6d09961be3f87d7a85940cd816ce7309a1",
+      "executable": false
+    },
+    {
+      "path": "defaults/media.json",
+      "sha256": "8e1c98a9b5b8195f66c4060e05e5dded9bb95b797164a8b9c587bdfa5df4e0b4",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "6d6a2a9caf2e6d2b76974050427053b2892d8aa4c33fd168ce63a537fcee9d96",
+      "executable": false
+    },
+    {
+      "path": "README.en.md",
+      "sha256": "1e8469f9df9e9676edd0a5193b177430c23b3483265035fd10b163ce9c0321e4",
+      "executable": false
+    },
+    {
+      "path": "README.md",
+      "sha256": "c20ffc9dc918f3b565fe1fd22a806b0b75e3a38f366a86a33b3a75f3fe42cd1e",
+      "executable": false
+    },
+    {
+      "path": "references/01-拆解.md",
+      "sha256": "83dd492d5b1f616a6e45302b630a7fbcaa65a16120a8df443185df2ee615cb32",
+      "executable": false
+    },
+    {
+      "path": "references/02-机制.md",
+      "sha256": "8b5a7c248bd5d816d2408a4f79fc6dbe866e8f03104c7a71b9d2fa2c8a696cdc",
+      "executable": false
+    },
+    {
+      "path": "references/03-一帧先行四条路线.md",
+      "sha256": "cfc167ff5c13ed29f03fa967be4e775494e2f2d0a1879dfb8473cf2ea432c2d7",
+      "executable": false
+    },
+    {
+      "path": "references/04-纯代码绘制.md",
+      "sha256": "7d234b7fb904626cc99af0cb687d3bb7104263c089b3ee2cda59408dc5dfc0eb",
+      "executable": false
+    },
+    {
+      "path": "references/05-节奏与配乐.md",
+      "sha256": "1086c15ea216548777d2fa5552cd5c874ff89df2da84f9ffa160737930e3d98f",
+      "executable": false
+    },
+    {
+      "path": "references/06-口播驱动的艺术短片.md",
+      "sha256": "9275abd6451831515ed9aed24724062bf47dda5e5d2d804baa8313c137236bc8",
+      "executable": false
+    },
+    {
+      "path": "references/07-正面经验.md",
+      "sha256": "b151c1cc6932a3cbc66b03d847e8a1b547073dc5a28d836a05da5ae9a11cb79b",
+      "executable": false
+    },
+    {
+      "path": "references/08-风格作者规范.md",
+      "sha256": "b7db67c8418410dec8313b7212e2aa52f9db8d8395b26cc0b72c19ab1a376728",
+      "executable": false
+    },
+    {
+      "path": "references/09-视频动画语法.md",
+      "sha256": "2a2e3256fc5dd2ba1e0c96312e0fa63299ff3a5f0bb9d1bcf84539af902a26e1",
+      "executable": false
+    },
+    {
+      "path": "references/10-角色.md",
+      "sha256": "8fe37c83597892c42c8f292c00f302804fcc4a362ef47998abea038d96aa6166",
+      "executable": false
+    },
+    {
+      "path": "references/11-长卷穿越片.md",
+      "sha256": "42f2e441687116c8d2dd789b187ada572390e242976996727a209959163a6ad6",
+      "executable": false
+    },
+    {
+      "path": "references/12-口播整片与经验回流.md",
+      "sha256": "b85f6e8b665c13a5d98ea461c10af340679a6949101ee31dd64eee7e88aed415",
+      "executable": false
+    },
+    {
+      "path": "references/13-口播与语音复刻.md",
+      "sha256": "cb12d2002f9c7a8a41b9abd711bd44a99f9929bcd66351015232cea2eda024a6",
+      "executable": false
+    },
+    {
+      "path": "references/15-跨场景风格提炼.md",
+      "sha256": "377920a1eb20da5d90bfd7af3f31fc2183b193cac2558d3f828afbf6bc5ad645",
+      "executable": false
+    },
+    {
+      "path": "references/16-风格演示95分协议.md",
+      "sha256": "bfb400c87ec844fb04450b453c502c47455c5b4b90cf9e2800283886d7ee61ea",
+      "executable": false
+    },
+    {
+      "path": "references/18-媒介层与角色入画.md",
+      "sha256": "b0f0411c33d506ce8a932295150e49204c20cc5bfb36163fd0122beb093bff4d",
+      "executable": false
+    },
+    {
+      "path": "references/about-author.md",
+      "sha256": "f53cdc9ca43881fd95f75b16b9176190708117b138c3d4ff2560e78b9ca2b945",
+      "executable": false
+    },
+    {
+      "path": "references/capabilities.md",
+      "sha256": "8d0577a8128d661711a3ca26f1b60a1e3d06cc5b6191b7007326dccd0e35d2ed",
+      "executable": false
+    },
+    {
+      "path": "references/compatibility.md",
+      "sha256": "c5665580fab722a3ed784a71f5cca725fc56cebf8c8c3ad66219b24b6b97bb0e",
+      "executable": false
+    },
+    {
+      "path": "references/images.md",
+      "sha256": "313bee677064eb46ee13c88c74effeecdb536579d7e8a25e23ddf9a2a06357e3",
+      "executable": false
+    },
+    {
+      "path": "references/voice-model-review.md",
+      "sha256": "e8559c64b39ca361909d8a9ba4e31bcad4c273213aa075000908f1cbeaf8e790",
+      "executable": false
+    },
+    {
+      "path": "references/动画语法/t1_3b1b.md",
+      "sha256": "23fc11ea77a5f14b34768398f61240787e459debeac8f3fd5109f6ea5e43d827",
+      "executable": false
+    },
+    {
+      "path": "references/动画语法/t2_keynote_ui.md",
+      "sha256": "0e2779a2e755f0513a8ac025482e542a4d873b02f0b00f0e908216e26d5a9625",
+      "executable": false
+    },
+    {
+      "path": "references/动画语法/t3_finance_chart.md",
+      "sha256": "ea1e21c49b50653ad48d0bd4ab0d1b1e88a698ccfbfd8e257c7e8f767adf2c20",
+      "executable": false
+    },
+    {
+      "path": "references/动画语法/y1_kurzgesagt.md",
+      "sha256": "a859f871f717c0017b4e4520f4c2760a7719784b54d92de37afb12e1967717a8",
+      "executable": false
+    },
+    {
+      "path": "references/动画语法/y2_vox.md",
+      "sha256": "9d651c95263c2cf42a63350b42a4e887efb0cded06f697c3498484e294e26ad4",
+      "executable": false
+    },
+    {
+      "path": "references/动画语法/y3_whiteboard.md",
+      "sha256": "f2fda7768034d94928982193965f225a3c85a850eaf28f3f28459e85dbe0773d",
+      "executable": false
+    },
+    {
+      "path": "references/动画语法/y4_storytime.md",
+      "sha256": "b3c7ed7af47734bc5ca8465082ef3aa1e55d0d64c225d21cca34180e0dd000ae",
+      "executable": false
+    },
+    {
+      "path": "references/动画语法/y5_kinetic_type.md",
+      "sha256": "97b200e68231d71cd10cf3f1027b4db36e99ce9a06004891d644994883bb15e2",
+      "executable": false
+    },
+    {
+      "path": "references/动画语法/y6_presenter_explainer.md",
+      "sha256": "405318fc5aac9ce03cbc374af9633ec7d652dc8206ad3810919abdb174eff273",
+      "executable": false
+    },
+    {
+      "path": "references/口播API.md",
+      "sha256": "a9d2775fc97bf92f46cf0a6531f1921ccdcf195dd79475c575bf8f188ca5801e",
+      "executable": false
+    },
+    {
+      "path": "references/色板.md",
+      "sha256": "3a1588ded19aba078131423b22f97fb8835f1656c1c5643afbba505ff8f6f8ae",
+      "executable": false
+    },
+    {
+      "path": "references/角色精细度.md",
+      "sha256": "15d1607771c5553942cba89edd22a8e8af0f8dfdb16977fd180b7babe5a2dbb6",
+      "executable": false
+    },
+    {
+      "path": "references/镜头表模板.md",
+      "sha256": "aef6aae50eaae318f1090a8135640bebb36974f6bbc537bc34253959d3523cae",
+      "executable": false
+    },
+    {
+      "path": "references/镜头语言.md",
+      "sha256": "7afbf9266b4e530a183e7c682ffb55166645a3cd9e628f1b5ace4ebb22d8d2eb",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/_转场_迁移测试.md",
+      "sha256": "16e901fb8c6bb2b9ff6596bec30209471227b74440dc9d5f3ba7931c99238677",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/_重做进度.md",
+      "sha256": "2f83dabb5b810ce2b95b5012e15321d6dc2565a3bfff77f35a679683ea0bc82a",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/_音轨_艺术史速通.md",
+      "sha256": "f9c360503ec366bf0833687fd00eb2a276f1c8dc5e02ab93651e676195d10d60",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/01_cave.md",
+      "sha256": "ebdb5fc8f9a57d947ef3a325bfdaf275cbd906e36010945e05c7d2e7ef1f4d2c",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/02_egypt.md",
+      "sha256": "a3097d1936d0e482a56a9745e31f3ba9a508aa2db50fbbefba4d97cc4d481ebb",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/03_greek.md",
+      "sha256": "0caa761151cd76d1a31390f602dc6bc131dba745c6244a2b12ba037697077b50",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/04_roman.md",
+      "sha256": "4066fc1b3edfaa7ad4494646df5c6bef0a79d77cb0326d7487b2f833fbb2a81d",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/05_gothic.md",
+      "sha256": "2c33750ee754673f87828f1755c14d4c893cd0483e96ceb02fe8f0f33c3a440b",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/06_renaissance.md",
+      "sha256": "2fd2589f538747b7c2a178def2441e432a3ecc7bc5aee8e3a1f82c7a79792cc6",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/08_impressionism.md",
+      "sha256": "dd353d6e2ff550c3601a20bd529c8908118b4453d12b009e1e82761aa1822b65",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/09_postimp.md",
+      "sha256": "20aebeaf193cb1ac960c73e70a289e52f6a939949ce558ec06f7d816311fdd0a",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/10_nouveau.md",
+      "sha256": "ed5a38a201c7d4c69473a662d2e17b8a7081d09cdd2fcbeb57575da7bef3cc64",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/11_cubism.md",
+      "sha256": "0ab951ff470aa6bf6a001fe4bdd51d02367f03754a94f0dc443d27351a9aa6ba",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/12_bauhaus.md",
+      "sha256": "729623cbc414f11d1c1629dcae0d1e64452acd7fdfc5c07bd41f44149f13c59d",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/13_pop.md",
+      "sha256": "01e334a4b76ebfd0c71fa6997acafc6d02929498998f99e4544689bd5fb43913",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/14_8bit.md",
+      "sha256": "fa237f81d76cea3dae16929093814b92399829e33175aae3d26bd4cec39b6569",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/15_raytrace.md",
+      "sha256": "44498145e8b99156b2ee36446444424322f0ed6ee2e0384f34ff242fe89f68b1",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/16_2026.md",
+      "sha256": "4dfc199bdb1ed0b1fdc3ed9108bd5eb2e8078fdbb4de0e0bb5d00c6ba73f31f1",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/17_ink.md",
+      "sha256": "67f396530a9032b523151f649d0d8398562ff9f6acede3ef4aab85c831d2c032",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/18_klimt.md",
+      "sha256": "c4e96a0f531b8157e05592379a152a85a41acf2718f77883ce872e04865dfef9",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/19_munch.md",
+      "sha256": "8c629e8bd02fb82c3355c37fe040c863f067827fde269d91ac7ab97bc118939e",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/20_dunhuang.md",
+      "sha256": "3a5911346899c0f19cc5bee74bc4e8b4b1ffc9ae1c603a8a48b8277596057568",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/21_kusama.md",
+      "sha256": "f39173eb8e80dba26fcdf822a60bb5cd0da2678d8efa4a8b2d19cbb2e1468a4a",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/22_constructivism.md",
+      "sha256": "ff4adc806f0bf39d86136d805ef8e2cc48026fbcec3731fae22477fdafac846d",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/23_dali.md",
+      "sha256": "facf3f033d5dbe42ab663860490a32920423fc5950ddcabf5f44bf81b49b3f2f",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/24_hopper.md",
+      "sha256": "fd19a530f9e0544d74e7eee40a88c01fa7f675ae94d9cacf2e5af4e214c64c63",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/25_ghibli.md",
+      "sha256": "d094be1b497fd9635ef802f1997878696db98cfbc07ff81dd7bbc50442bf0a17",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/26_vaporwave.md",
+      "sha256": "30cf8e825125ff74f02bff93b975a74c96ceae9df09fae06fd7ef887fb64ec44",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/27_kirby.md",
+      "sha256": "e64b8a69ce706311b1e81aa7d0756c7d7390b2b3f84a17f18b67c3193bce2408",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/28_monet.md",
+      "sha256": "61b2bf9da6044e44ea0fa4758b3c380be8e60cfb72e2907e5afbbaa0c00d3513",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/29_seurat.md",
+      "sha256": "2c50cfb11d3bcb83b50b946126e1c0ba76f9fc3b94eab055023eea2880440f84",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/30_matisse.md",
+      "sha256": "4da4fb6d6828fa529e2827d20bf0c4e45822427348db42b7016ca4bdc336c60b",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/31_haring.md",
+      "sha256": "adcf02ce8c7dd9446e79e3393f61c411335c6f1734d584f3389f64283c5ab30b",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/32_rembrandt.md",
+      "sha256": "383f5953f5b61249c5735fef4e31f0ed05148a7ec038f580bf39ddf7dc6ba7f7",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/33_rubberhose.md",
+      "sha256": "c99886da03aa74351d78695641b403c92f5f9ab4b242feb2be45d8b8a7da9617",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/34_shadowpuppet.md",
+      "sha256": "6cd4f9a090bff6d325695e8e4656ad041871f2ff0418b4eab1a46d51bd7d7609",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/35_shinkai.md",
+      "sha256": "b327bf36ef2edc246576cbfb8f1f1857c52600691adbd651efbb1eeb75e7a554",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/36_picasso_blue.md",
+      "sha256": "7578a99b0dc416414eb2cfd5c6aa9055ded387531bfde65fd5c1f17f22e4404a",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/37_rick_morty.md",
+      "sha256": "321e3009c33faf400cf3242d87377d1777544a2ab2f59c9de8da11a141c3aed7",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/38_giotto.md",
+      "sha256": "591e4412ba5c0ef7568f1ccec0400c32bda1f7e31fda693d2397cb46b946ca2b",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/39_piero.md",
+      "sha256": "a722bd0b3ba3168620d3d0bd13d1b6b576fe3a38c48995ad98d0155651a6ef14",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/40_raphael.md",
+      "sha256": "fcd0352a413ccbe7a7baf9fceb7153fc70807fbdff534ac0bcb55e2129e82db9",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/41_michelangelo.md",
+      "sha256": "d902c85020ac27b74e94ff4658529bd4fb32e5092a1d723234fa4f39eee33645",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/42_guardi.md",
+      "sha256": "2ebe3d12fa81b0a84367f49ac955590d8a9b1daf78675ddab9badac15e44aa9a",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/43_lorenzetti.md",
+      "sha256": "d3e42f457027a2670b6e7d10798d55fa9fc42536e5cf68f90442a2c3b7405bbe",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/44_cortona.md",
+      "sha256": "9fb3935cd7d853ca9c0da0c18e6c5dbbe591e1ab54f5259b59b6f79654f75819",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/45_renoir.md",
+      "sha256": "b85f06fc351343902929c1ee6bfaad936d36b3fdafae0f1af95e66dbd36b14d3",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/46_pissarro.md",
+      "sha256": "9cd428ac8276c9b7134c04b9ecd49530c3c9989b7e6cc087de312f1d2faa372c",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/47_sisley.md",
+      "sha256": "787eb8a787b01e810ca369032ba8524fc425087c0c2fa2c36b09b7e290e0a576",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/48_gauguin.md",
+      "sha256": "5e785b76ff0e1d4b976ff7b80559d3faf9ad84a3bcb97de4d0148d45f118b37b",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/49_chagall.md",
+      "sha256": "2fca334d05347c1dcfbaaf7bfdd525c749ec175c076c5657bca9faa61f3bcde8",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/50_ma_yuan.md",
+      "sha256": "962b0d5b23727646cd36e3083f2b263be0b589ae1186da7856760cf232ec2ed5",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/51_persian_miniature.md",
+      "sha256": "619741242ba640ca931d5dda6bbb8d1b9d5a456e056dc7db956a1051090a818b",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/52_south_park.md",
+      "sha256": "639b0b2e5fb0894dc3b44a4da67cac3ed986dc043ded886153abd2fec75ea9d8",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/53_pixar.md",
+      "sha256": "c6b0eea92294aa08e53ed71a6068f96a6cccd29e679aa2bcf0df9478ef100aa2",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/55_dunhuang.md",
+      "sha256": "ebf193ac4995dff6f146cf54ff62def57da5f8794ab2bdb8e7d0f18714af35f6",
+      "executable": false
+    },
+    {
+      "path": "references/风格配方/INDEX.md",
+      "sha256": "3a79ab6eed9ddc93c08ecdd529103d9a7ade77c1d23aa36eb236215ad0ef9cea",
+      "executable": false
+    },
+    {
+      "path": "release-manifest.json",
+      "sha256": "659cc2c67fdfe2340e36bf35446abccc95a5db20d9a221cdbf26edc7d79f6708",
+      "executable": false
+    },
+    {
+      "path": "schemas/media.schema.json",
+      "sha256": "4b7d93ebb7edf5fa6219891f28325f68fc51f090eee756bc4cc3a3c746d48bda",
+      "executable": false
+    },
+    {
+      "path": "scripts/analyze/breakdown.py",
+      "sha256": "5badcd4e3f5694f5b8c5a6d7d353f830e972ae5c8a6f24ed75af634411eb75f3",
+      "executable": false
+    },
+    {
+      "path": "scripts/analyze/fetch_reference.py",
+      "sha256": "97c63efc636d38c7a4e341478bed9e3e575cd539249f878648ed42d777d393cc",
+      "executable": false
+    },
+    {
+      "path": "scripts/analyze/regress_clips.py",
+      "sha256": "a54b50d424ab2be6398ce2b0ad799cf7d6d621c0214be81c961e1e54672b3b67",
+      "executable": false
+    },
+    {
+      "path": "scripts/analyze/side_by_side.py",
+      "sha256": "7d809f5ced7167e03ed2ed65fab7ff6a2ad0d2d237c8aacf55cf91ab58b54ee0",
+      "executable": false
+    },
+    {
+      "path": "scripts/analyze/stress_clip.py",
+      "sha256": "8c9e32f3ba45dc86ca4b2617cafdd974fdfa42b338e811fb6ce2e860dbfa091d",
+      "executable": false
+    },
+    {
+      "path": "scripts/audio/synth_艺术史速通.py",
+      "sha256": "6476605af684b477d47b7f47c3c987059277de36b97bff5d77d167c27efdb40d",
+      "executable": false
+    },
+    {
+      "path": "scripts/capabilities.py",
+      "sha256": "fe688fd612841824e126b8ddaea1eea4bc8c31111f15422a3c60d98a9463ad83",
+      "executable": false
+    },
+    {
+      "path": "scripts/check_release.py",
+      "sha256": "508388bdcfe87d97d486de7d76fec87b893469779af14cc75e4b72b4c17ecc60",
+      "executable": false
+    },
+    {
+      "path": "scripts/clip_lint.py",
+      "sha256": "b17bdb832a82826e27c379c24e673538439c80b88371b15b67a43731d3a4393b",
+      "executable": false
+    },
+    {
+      "path": "scripts/deliver.py",
+      "sha256": "dbd1cd2495816b09257cec544e1b43bb2fa2530639ff11cff64526e065e178ae",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/audit_clip.py",
+      "sha256": "aaa925c5fbfeff284be6e4a4d21516497780052b84807ef0db8abd4522adb042",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/clip_schema.json",
+      "sha256": "7f0a41e9c257901c6905c3c8d3ca9ff12058400f8738bf116c0d22638cad3898",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/clip.html",
+      "sha256": "15b9ab6f7e3e29dddf8a0f8a181239f94f60c7b1c2e3defc05bdd57f0705dfd3",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/clip.js",
+      "sha256": "4be7a02d636b1e6ebf864822fec54c8e925ce415be2e2f1be1098ffb7a7b8799",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/clips/t1_3b1b.js",
+      "sha256": "84ed102301a066410aca1b0d06ba0459f7d5da09ae4831edf58a27f2152a6e7a",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/clips/t2_keynote_ui.js",
+      "sha256": "31c59a08e39f5799e1f59017fafa0c7d07f40a360e27737fcdefa69b2fae5e56",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/clips/t3_finance_chart.js",
+      "sha256": "f175d45ea92e0a680fea9e08ce9270a59a63a5b4bb3d00db5a894848e2407b36",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/clips/y1_kurzgesagt.js",
+      "sha256": "5f507ef90222f335048cb167535f910fda789d7cd2fba1fc8695c0c4a1f4c6b6",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/clips/y2_vox.js",
+      "sha256": "6c00ac3e587595b94732750a191827674a818c5f143d2ecfd328c9e4059bc589",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/clips/y3_whiteboard.js",
+      "sha256": "1536d7a276580edd44fab6199b69671aecbae30b39b5f89921d08e43a738ff2d",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/clips/y4_storytime.js",
+      "sha256": "2ba8c7a05296c489b948c1b2f050a479dcef5a7a19bb1550aca07478f97e25d6",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/clips/y5_kinetic_type.js",
+      "sha256": "2f46bd3710920d1f3496b6496680116cca8188987c5d82643da9eb1a0c45bbd9",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/compare.py",
+      "sha256": "7bf1d5ae2926de09f69431435e93ffa4c5357532b543217cd66bdc57e00256aa",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/_shared/hero.js",
+      "sha256": "96e9e520d1139aa617be7ad01901f6a9b6c31c7948f73b33ddd8d646c6cdf967",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/_shared/hero/c1_0.png",
+      "sha256": "827032c6aa741f9895895224a67f81538d70ef970b10da6c3ee93e8deece3018",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/_shared/hero/c1_1.png",
+      "sha256": "9ab883b0af1460fae56970739ee82bdb8f59717ae2d3f11b56ca0b5088876c5e",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/_shared/hero/c1_2.png",
+      "sha256": "94882c9cbb1cc7ea82afb736412d388bfb06e30b08ffec861192443b9fb1c28c",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/_shared/hero/c3_line.png",
+      "sha256": "b98528a02ccdfc1c7570e7a907990421d53d14e7f77068a31ba9ccfeb397a0da",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/eras.js",
+      "sha256": "4c35e6e800f7d01a11f796fe052c11ca957c6c46665fd2b23927a8390357f617",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_act/01.png",
+      "sha256": "74d6834868571bd257bffa91022aa649f0a80802d5b678ff59590539c99f7cf0",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_act/02.png",
+      "sha256": "19806884da80aba0b271556b529934359587b7e4a69bd6da7b57ccfd69bbeba6",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_act/03.png",
+      "sha256": "598557fa4ba263ecd000398614e552f2afe04a148f957ef020bd05d32cccf2f3",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_act/04.png",
+      "sha256": "fa08801ea3d6b79acafaa451ac697a060b059747ffd89c0375e6ee1b0901dbb3",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_act/05.png",
+      "sha256": "469a75afeab1a7c9602f27a7f5f9fe74ae4c88227f22ba8977c1a72cb2beaab0",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_act/06.png",
+      "sha256": "1d26ed214328655a20233ec2b09e6181f431e1a4b40a2f308e4a03a8ac02f1b7",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_act/07.png",
+      "sha256": "867c900356062c27187298641969dfce81a1fbebed7808692759fba3fa74c4cb",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_act/08.png",
+      "sha256": "ae74efabbd91cca2570d51c141672d991f6e895796dc01e81dc62099568d2f74",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_act/meta.json",
+      "sha256": "80dbaba87b9237958c392562338ac324687c50220ddb0c1572a8371f92131ff8",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_walk/01.png",
+      "sha256": "422152e3831b1df4fd5e2889b413ca6c84d1646b84dca704a9f7312cc4da6bf0",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_walk/02.png",
+      "sha256": "b5bcf6a167397e8b3c06a0f8570b2abccc55d5498390d9439b3a9f5f4c792ec4",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_walk/03.png",
+      "sha256": "2d3670bc129660ef46836ec9091ec08162119e7925825734821f3aed8f470700",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_walk/04.png",
+      "sha256": "fed712a2565ddde80c82f829bd6eeddc96eaa53193b0bfd21398460f21cb558a",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_walk/05.png",
+      "sha256": "b5a663297f578133699fa6d345b9c2d36634722ecb1bc5e3a642be5b85cf6b24",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_walk/06.png",
+      "sha256": "5ae2393b76809bb3dbc929d3def67802fd2889ab12799faaceb68077e471c3d2",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_walk/07.png",
+      "sha256": "69a61db4c6910896790bf93b4d661a4860928cdb52cdccbfd4d5a94055f9b81e",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_walk/08.png",
+      "sha256": "62afb8496eebe9c0f58790d85835ebc9a0502a341c2a5c92fc81a90ee4cde0a6",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/8bit_walk/meta.json",
+      "sha256": "3391931eb00392c13c9d6d555292c5c6ed62ee1761a74160bc0b791669784891",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_dodge/01.png",
+      "sha256": "298d124a5201b9a6c2d2957471163ab9ead605690f14e1d0737f566a37d5ff0b",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_dodge/02.png",
+      "sha256": "d7849492606178176783bebb932a593a8b84fa1d68e1669c1fd801e1f9646426",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_dodge/03.png",
+      "sha256": "282257c1b3f10db6813428e19e2cd118ad1367dd2ee119edd103908930a8bfe0",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_dodge/04.png",
+      "sha256": "277517af7b758bb9ffc2d45267de6cdf5a405bb80aee1aa5569298248414a0b1",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_dodge/05.png",
+      "sha256": "d3dbc34b29655a57cb26ea7886067b1539d97f317aef3cc29ab9c88e8018ee71",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_dodge/06.png",
+      "sha256": "0a50ce8323e4adb48c06ea493d5c6ee471a80c2028670b82b6266b5bd8451fa8",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_dodge/07.png",
+      "sha256": "114f1aaaf3c157d0aa6ea6437261888e40b224cf3a4b9bff47a4b8e19e382177",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_dodge/08.png",
+      "sha256": "1716833fa180c6d3aac3ffd4b884a8fe0029438f676619cd5194a820d9ed083e",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_dodge/meta.json",
+      "sha256": "7706f4d79fa8c336e31d7c2570b47d29d3b90b2e11ac9905323df1912493e8b5",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_walk8/01.png",
+      "sha256": "7500fb8df1c49afde25c8f7ff0d082de925373f4548679ab6a9788b405aa17a4",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_walk8/02.png",
+      "sha256": "7e9b5b0f6b6c78a6f4562f0c753663e909e7a0b8324fd17cb4bf0ff4d151f90a",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_walk8/03.png",
+      "sha256": "a0cfc27ca9b366ee07af25bfdcb2b030702945bd7ad039f9d0333d77cc3998a8",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_walk8/04.png",
+      "sha256": "234955761a0485643b4310d646ab23d02c0afda2f9cae98f1e83c5384eea7ab4",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_walk8/05.png",
+      "sha256": "977c7a00b05e1394391d17e74a9aa312f5a8d1f524f3b938ec1373948099e4df",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_walk8/06.png",
+      "sha256": "c09db144378ffc255e2ec1b3d8bdf1936e7e18f4f2496cad61d4138d5d5b7304",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_walk8/07.png",
+      "sha256": "1e6286142b4457fbd35014b813742da0bd42771524823067142186cc280a1725",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_walk8/08.png",
+      "sha256": "46dccbe4ede8a6c0620ad0ca96b4413ded56d7033cbbeffb8985588257c2d842",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/egypt_walk8/meta.json",
+      "sha256": "9df61edb22b06ad111462082881fca88427909c0540f33aeef71ccbd44dff3d6",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/monet_throw/01.png",
+      "sha256": "6777d07ffceee31b1f0a2da4e9b68f74f74bf648282dae517fe4b2aecd244553",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/monet_throw/02.png",
+      "sha256": "f594484eeaa48fe388986f78e940ecaf896a3fb3a21b2fd9cf05449dca04e923",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/monet_throw/03.png",
+      "sha256": "2490009faffca1452c7b2cecd5d4525b8f2921b60d46dd85b18dd50c0ffd7433",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/monet_throw/04.png",
+      "sha256": "150ef0221b74b27fcf7a9873df41df4a11a3ab2bfec21b7fd3964a596427481c",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine/demos/long_scroll/frames/monet_throw/05.png",
+      "sha256": "5aabc6f6164b99063eb8a8bd27cbc77de062f415179ec14fc8c44bb264e380af",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/huashu-art-motion"
+}

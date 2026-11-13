@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "name": "arena",
+  "version": "df07b8e518e1",
+  "source": {
+    "url": "https://github.com/Jakeschincariol/arena-skill",
+    "commit": "df07b8e518e10cdecd8cd7712d9958b6f396250e",
+    "sha256": "c06f9828566485d5bd6507150f454d6f37d49c2b02e5308b8f744a4a046bdf39",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Cho 100 phiên bản Claude/Agent thi đấu sinh tồn để giải một bài toán hóc búa. Khởi tạo N sub-agent (mặc định 100, --quick cho 16), mỗi agent nhận cùng một nhiệm vụ kèm thẻ chiến lược khác nhau (chế độ tư duy, workflow, kỹ thuật), sau đó chạy vòng đấu loại trực tiếp (single-elimination bracket): các agent phản biện, tấn công giải pháp của nhau, tự bào chữa và cải tiến, trọng tài chấm điểm theo rubric cho đến khi còn lại phương án tối ưu nhất. Dùng khi người dùng chưa hài lòng với kết quả, chê câu trả lời kém, yêu cầu thử lại hoặc muốn các agent cạnh tranh công bằng.",
+    "aliases": [
+      "Đấu trường phản biện",
+      "So sánh chiến lược"
+    ],
+    "keywords": [
+      "arena",
+      "Đấu trường phản biện",
+      "So sánh chiến lược"
+    ],
+    "examples": [
+      "Dùng arena cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "c06f9828566485d5bd6507150f454d6f37d49c2b02e5308b8f744a4a046bdf39"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write"
+  ],
+  "syncedAt": "2026-11-13T09:14:21.544Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

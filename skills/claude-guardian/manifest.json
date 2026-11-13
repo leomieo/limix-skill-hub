@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "name": "claude-guardian",
+  "version": "ec53265c8413",
+  "source": {
+    "url": "https://github.com/DUNHKpcc/Claude-Guardian",
+    "commit": "ec53265c84131e26b7097498a5fe0680fdeffed7",
+    "sha256": "0e98327c2ff1326d3ca2a493403b56d38e155a160b1732e80c99e344554a4246",
+    "license": "GPL-3.0"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Hướng dẫn và thiết lập môi trường vận hành an toàn cho tài khoản Claude và AI Agent: chuẩn bị đăng ký & kênh thanh toán, nhịp độ hoạt động tránh thuật toán quét bất thường, cấu hình mạng sạch trên máy cục bộ (Clash TUN, Windows Firewall, Mac PF) / Máy ảo (VM) / Máy chủ riêng ảo (VPS), xác minh IP xuất ra chỉ chạy IPv4, tối ưu hóa đường truyền, chẩn đoán xử lý lỗi 403/429/529 và dọn dẹp dấu vết thiết bị cũ. Mọi thay đổi hệ thống được phân cấp thẩm quyền A/B/C rõ ràng.",
+    "aliases": [
+      "Bảo vệ tài khoản agent",
+      "An toàn đường truyền"
+    ],
+    "keywords": [
+      "claude",
+      "guardian",
+      "Bảo vệ tài khoản agent",
+      "An toàn đường truyền"
+    ],
+    "examples": [
+      "Dùng claude-guardian cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "0e98327c2ff1326d3ca2a493403b56d38e155a160b1732e80c99e344554a4246"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "assets/killswitch/icon.icns: binary-file (low)",
+      "assets/killswitch/icon.ico: binary-file (low)",
+      "assets/killswitch/icon.png: binary-file (low)",
+      "assets/killswitch/icon.svg: base64-blob (medium)",
+      "assets/killswitch/windows-network-transaction.ps1: invisible-unicode (high)",
+      "assets/mac-killswitch/guardian-pf-killswitch.sh: privilege (medium)",
+      "assets/remote-hardening/flclash-crash-heal.sh: privilege (medium)",
+      "assets/remote-hardening/install-reverse-tunnel.sh: privilege (medium)",
+      "assets/vm-killswitch/enable-guest-ssh.sh: privilege (medium)",
+      "assets/vm-killswitch/install-flclash-killswitch.sh: privilege (medium)",
+      "assets/vm-killswitch/install-flclash-tun.sh: privilege (medium)",
+      "assets/vps-firewall/vps-guard.sh: privilege (medium)",
+      "references/advanced-route.md: secret-exfiltration (high)",
+      "references/advanced-route.md: privilege (medium)",
+      "references/advanced-route.md: exe-download (medium)",
+      "references/agent-remediation.md: privilege (medium)",
+      "references/cleanup-cli-usage.md: privilege (medium)",
+      "references/intake.md: prompt-injection (high)",
+      "references/killswitch-switch.md: privilege (medium)",
+      "references/line-optimization.md: privilege (medium)",
+      "references/local-firewall-prompts.md: privilege (medium)",
+      "references/routes-and-platforms.md: privilege (medium)",
+      "references/source-library.md: pipe-to-shell (high)",
+      "references/vm-guidance.md: privilege (medium)",
+      "references/vps-guidance.md: pipe-to-shell (high)",
+      "references/vps-guidance.md: privilege (medium)",
+      "references/vps-guidance.md: exe-download (medium)",
+      "scripts/killswitch_ui.py: privilege (medium)",
+      "scripts/native_clash_verge_mac.py: privilege (medium)",
+      "scripts/native_claude_state_mac.py: credential-files (high)",
+      "scripts/native_claude_state_mac.py: privilege (medium)",
+      "sources/manifest.json: pipe-to-shell (high)",
+      "sources/R02-images/dual-tunnel.png: binary-file (low)",
+      "sources/R02-images/single-relay.png: binary-file (low)",
+      "sources/R02-vps-line-optimization.md: privilege (medium)",
+      "sources/S03-claude-experience.pdf: binary-file (low)",
+      "sources/S06-macos-cleanup-sanitized.md: credential-files (high)",
+      "sources/S07-vps-script-catalog.md: pipe-to-shell (high)",
+      "sources/S07-vps-script-catalog.md: exe-download (medium)",
+      "sources/S08-extracted-text.md: pipe-to-shell (high)",
+      "sources/S08-extracted-text.md: credential-files (high)",
+      "sources/S08-extracted-text.md: privilege (medium)",
+      "sources/S08-extracted-text.md: exe-download (medium)",
+      "sources/S08-vps-claude-tutorial.pdf: binary-file (low)",
+      "sources/S10-windows-deployment-sanitized.md: pipe-to-shell (high)",
+      "sources/vps-recommendations/biz-aws-ec2-taipei.pdf: binary-file (low)",
+      "sources/vps-recommendations/biz-aws-lightsail-my.pdf: binary-file (low)",
+      "sources/vps-recommendations/biz-azure-jp-b2pts.pdf: binary-file (low)",
+      "Incomplete upstream bundle: inspect excluded files before approving compatibility or activation."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "1 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

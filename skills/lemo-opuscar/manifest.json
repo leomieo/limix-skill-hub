@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "name": "lemo-opuscar",
+  "version": "3a7132b996be",
+  "source": {
+    "url": "https://github.com/lemomo-ai/lemo-opuscar",
+    "commit": "3a7132b996be0241c1ea0ab180d519f06e6f10b6",
+    "sha256": "17c2f1c2a337becf28ec1e23eec46b42a6f0ffa2691b40d8b97b35d043b79f65",
+    "license": "CC-BY-4.0"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Chỉ đạo và sản xuất video ngắn hoàn toàn bằng mã nguồn (code) theo 99 phong cách nghệ thuật từ thư viện Lemo-Opuscar (sơn dầu đắp nổi Impasto, màu nước, tranh khắc gỗ Ukiyo-e, báo cáo vệ tinh, giải phẫu sản phẩm Teardown...). Dùng khi người dùng yêu cầu làm video, phim ngắn, hoạt họa, phim quảng cáo, video giải thích từ ảnh vệ tinh, dữ liệu CAD, quét laser hoặc tài liệu lưu trữ; hoặc khi cần tự tạo phong cách phim riêng biệt bằng Three.js, Canvas và WebGL mà không cần mô hình sinh video tốn kém.",
+    "aliases": [
+      "Dựng phim bằng mã",
+      "Phong cách phim ngắn"
+    ],
+    "keywords": [
+      "lemo",
+      "opuscar",
+      "Dựng phim bằng mã",
+      "Phong cách phim ngắn"
+    ],
+    "examples": [
+      "Dùng lemo-opuscar cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "17c2f1c2a337becf28ec1e23eec46b42a6f0ffa2691b40d8b97b35d043b79f65"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write"
+  ],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

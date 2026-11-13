@@ -1,0 +1,21 @@
+{
+  "repository": "janestreet/agent_skills",
+  "commit": "7c6715c29548a3b39d4a9545c698ee4fd17a7213",
+  "path": "socratic-tutor",
+  "verified": true,
+  "coreSha256": "9190b68440ad99be4d865c63b87939f23a362efac0776c5a67c93d1498bb5e37",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "9190b68440ad99be4d865c63b87939f23a362efac0776c5a67c93d1498bb5e37",
+      "executable": false
+    },
+    {
+      "path": "LICENSE.md",
+      "sha256": "92cd3e89e1331afd684eef3d4e98c3e53259f572cc57667b63da223f61ecbc84",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/socratic-tutor"
+}

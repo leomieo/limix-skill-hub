@@ -1,0 +1,1651 @@
+{
+  "repository": "andyhuo520/digital-human-koubo",
+  "commit": "f661a6c047bb74ea306ef58aeb1d461a52c01871",
+  "path": "skills/digital-human-koubo",
+  "verified": true,
+  "coreSha256": "2d2bf70388759deed3f8ebac0c5272d673a3bd6089d3bddbc599b7fc7f998765",
+  "skipped": [
+    "templates/lin-169/public/broll/.gitkeep",
+    "templates/lin-169/public/cut/.gitkeep",
+    "templates/lin-169/public/stickers/.gitkeep",
+    "templates/packaging/public/emoji/1f4b0.svg",
+    "templates/packaging/public/emoji/1f4bb.json",
+    "templates/packaging/public/emoji/1f4dd.svg",
+    "templates/packaging/public/emoji/1f4e3.json",
+    "templates/packaging/public/emoji/1f4f1.svg",
+    "templates/packaging/public/emoji/1f50b.json",
+    "templates/packaging/public/emoji/1f50d.svg",
+    "templates/packaging/public/emoji/1f525.json",
+    "templates/packaging/public/emoji/1f602.json",
+    "templates/packaging/public/emoji/1f605.json",
+    "templates/packaging/public/emoji/1f60d.json",
+    "templates/packaging/public/emoji/1f60e.json",
+    "templates/packaging/public/emoji/1f60f.json",
+    "templates/packaging/public/emoji/1f624.json",
+    "templates/packaging/public/emoji/1f62d.json",
+    "templates/packaging/public/emoji/1f62e.json",
+    "templates/packaging/public/emoji/1f631.json",
+    "templates/packaging/public/emoji/1f634.json",
+    "templates/packaging/public/emoji/1f635_200d_1f4ab.json",
+    "templates/packaging/public/emoji/1f645.svg",
+    "templates/packaging/public/emoji/1f64c.json",
+    "templates/packaging/public/emoji/1f64f.json",
+    "templates/packaging/public/emoji/1f680.json",
+    "templates/packaging/public/emoji/1f6d2.json",
+    "templates/packaging/public/emoji/1f911.json",
+    "templates/packaging/public/emoji/1f914.json",
+    "templates/packaging/public/emoji/1f916.json",
+    "templates/packaging/public/emoji/1f91d.json",
+    "templates/packaging/public/emoji/1f929.json",
+    "templates/packaging/public/emoji/1f92b.json",
+    "templates/packaging/public/emoji/1f92f.json",
+    "templates/packaging/public/emoji/1f937.svg",
+    "templates/packaging/public/emoji/1f972.json",
+    "templates/packaging/public/emoji/1f973.json",
+    "templates/packaging/public/emoji/1f9d1.svg",
+    "templates/packaging/public/emoji/1f9e0.json",
+    "templates/packaging/public/emoji/1fae1.json",
+    "templates/packaging/public/emoji/1fae3.json",
+    "templates/packaging/public/emoji/23f1.svg",
+    "templates/packaging/public/emoji/26a0.json",
+    "templates/packaging/public/emoji/26a1.json",
+    "templates/packaging/public/emoji/2705.json",
+    "templates/packaging/public/emoji/2728.json",
+    "templates/packaging/public/emoji/274c.json",
+    "templates/packaging/public/emoji/2764.json",
+    "templates/packaging/public/emoji/manifest.json",
+    "templates/packaging/README.md",
+    "templates/packaging/remotion.config.ts",
+    "templates/packaging/src/demos/Demos.tsx",
+    "templates/packaging/src/index.ts",
+    "templates/packaging/src/kit/Annotate.tsx",
+    "templates/packaging/src/kit/Beast.tsx",
+    "templates/packaging/src/kit/core.tsx",
+    "templates/packaging/src/kit/Depth.tsx",
+    "templates/packaging/src/kit/Explain.tsx",
+    "templates/packaging/src/kit/Map.tsx",
+    "templates/packaging/src/kit/NotoEmoji.tsx",
+    "templates/packaging/src/kit/Overlay.tsx",
+    "templates/packaging/src/kit/Polish.tsx",
+    "templates/packaging/src/kit/registry.tsx",
+    "templates/packaging/src/kit/Text.tsx",
+    "templates/packaging/src/kit/Wangan.tsx",
+    "templates/packaging/src/Root.tsx",
+    "templates/packaging/tsconfig.json",
+    "templates/reference/launch-169/package.json",
+    "templates/reference/launch-169/remotion.config.ts",
+    "templates/reference/launch-169/src/Film.tsx",
+    "templates/reference/launch-169/src/index.ts",
+    "templates/reference/launch-169/src/kit/Annotate.tsx",
+    "templates/reference/launch-169/src/kit/Beast.tsx",
+    "templates/reference/launch-169/src/kit/core.tsx",
+    "templates/reference/launch-169/src/kit/Depth.tsx",
+    "templates/reference/launch-169/src/kit/Explain.tsx",
+    "templates/reference/launch-169/src/kit/Map.tsx",
+    "templates/reference/launch-169/src/kit/NotoEmoji.tsx",
+    "templates/reference/launch-169/src/kit/Overlay.tsx",
+    "templates/reference/launch-169/src/kit/Polish.tsx",
+    "templates/reference/launch-169/src/kit/registry.tsx",
+    "templates/reference/launch-169/src/kit/Text.tsx",
+    "templates/reference/launch-169/src/kit/Wangan.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/AudioReactive.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/brand.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/Carousel3D.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/ChipReveal3D.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/CubeField.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/DataStory.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/DeviceSwing.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/DualBattery.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/FlowPipeline.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/FoldablePhone3D.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/Gallery3D.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/geist.ts",
+    "templates/reference/launch-169/src/ref/cinematic/IconTile.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/InfiniteZoom.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/KineticList.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/Liquid.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/Logo3D.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/motion.ts",
+    "templates/reference/launch-169/src/ref/cinematic/MotionKit.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/PaperCut3D.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/ParticleText.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/PromptToVideo.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/ProofBeats.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/relay/index.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/ReportBuild.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/RepoStack.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/sfx.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/SolarSystem3D.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/spring.ts",
+    "templates/reference/launch-169/src/ref/cinematic/StatSlam.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/TemplateWall.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/TerminalDemo.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/ToolBeats.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/VerticalPoem.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/VideoMontage.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/VoxelPortrait.tsx",
+    "templates/reference/launch-169/src/ref/cinematic/XRayReveal.tsx",
+    "templates/reference/launch-169/src/ref/icons.ts",
+    "templates/reference/launch-169/src/ref/icons/AnimatedIcon.tsx",
+    "templates/reference/launch-169/src/ref/icons/cn.ts",
+    "templates/reference/launch-169/src/ref/icons/la/a-arrow-down.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/a-arrow-up.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/accessibility.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/activity.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/air-vent.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/airplane.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/airplay.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/alarm-clock-check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/alarm-clock-minus.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/alarm-clock-plus.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/alarm-clock.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/alarm-smoke.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/align-center.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/align-horizontal.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/align-left.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/align-right.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/align-vertical.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/ambulance.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/angry.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/annoyed.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/archive.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-big-down-dash.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-big-down.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-big-left-dash.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-big-left.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-big-right-dash.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-big-right.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-big-up-dash.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-big-up.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-down-0-1.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-down-1-0.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-down-a-z.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-down-left.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-down-right.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-down-z-a.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-down.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-left.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-right.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-up-left.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-up-right.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/arrow-up.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/at-sign.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/atom.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/attach-file.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/audio-lines.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/axe.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/badge-alert.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/badge-percent.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/ban.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/banana.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/battery-charging.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/battery-full.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/battery-low.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/battery-medium.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/battery-plus.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/battery-warning.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/battery.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/bell-electric.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/bell.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/biceps-flexed.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/binary.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/blocks.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/bluetooth-connected.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/bluetooth-off.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/bluetooth-searching.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/bluetooth.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/bold.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/bone.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/book-text.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/bookmark-check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/bookmark-minus.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/bookmark-plus.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/bookmark-x.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/bookmark.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/bot-message-square.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/bot.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/box.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/boxes.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/brain.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/briefcase-business.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/calendar-check-2.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/calendar-check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/calendar-cog.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/calendar-days.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cart.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cast.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cctv.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chart-bar-decreasing.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chart-bar-increasing.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chart-column-decreasing.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chart-column-increasing.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chart-line.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chart-no-axes-column-decreasing.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chart-no-axes-column-increasing.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chart-pie.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chart-scatter.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chart-spline.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/check-check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chess-bishop.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chess-king.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chess-knight.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chess-pawn.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chevron-down.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chevron-first.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chevron-left.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chevron-right.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chevron-up.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chevrons-down-up.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chevrons-left-right.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chevrons-right-left.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chevrons-up-down.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/chrome.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cigarette-off.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cigarette.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/circle-check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/circle-chevron-down.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/circle-chevron-left.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/circle-chevron-right.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/circle-chevron-up.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/circle-dashed.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/circle-dollar-sign.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/circle-gauge.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/circle-help.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/clap.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/clipboard-check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/clock.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cloud-backup.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cloud-cog.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cloud-download.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cloud-lightning.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cloud-rain-wind.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cloud-rain.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cloud-snow.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cloud-sun.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cloud-sync.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cloud-upload.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/coffee.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cog.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/compass.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/concierge-bell.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/connect.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/construction.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/contrast.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cooking-pot.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/copy.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/corner-down-left.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/corner-down-right.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/corner-left-down.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/corner-left-up.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/corner-right-down.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/corner-right-up.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/corner-up-left.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/corner-up-right.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cpu.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/credit-card.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cup-soda.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/cursor-click.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/database-backup.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/delete.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/disc-3.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/discord.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/dollar-sign.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/download.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/downvote.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/dribbble.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/droplet.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/drum.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/earth.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/euro.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/ev-charger.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/expand.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/external-link.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/eye-off.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/eye.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/facebook.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/fan.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/feather.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/figma.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/file-chart-line.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/file-check-2.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/file-check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/file-cog.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/file-pen-line.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/file-stack.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/file-text.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/fingerprint.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/fish-symbol.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/flame.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/flask.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-archive.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-clock.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-code.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-cog.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-dot.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-down.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-git-2.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-git.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-heart.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-input.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-kanban.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-key.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-lock.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-minus.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-open.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-output.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-plus.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-root.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-sync.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-tree.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-up.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folder-x.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/folders.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/frame.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/frown.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/gallery-horizontal-end.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/gallery-thumbnails.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/gallery-vertical-end.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/gauge.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/gavel.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/georgian-lari.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/git-branch.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/git-commit-horizontal.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/git-commit-vertical.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/git-compare-arrows.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/git-compare.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/git-fork.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/git-graph.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/git-merge.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/git-pull-request-closed.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/git-pull-request-create.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/git-pull-request.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/github.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/gitlab.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/graduation-cap.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/grip-horizontal.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/grip-vertical.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/grip.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/hammer.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/hand-coins.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/hand-fist.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/hand-grab.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/hand-heart.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/hand-helping.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/hand-metal.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/hand.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/hard-drive-download.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/hard-drive-upload.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/hat-glasses.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/heart-handshake.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/heart-pulse.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/heart.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/history.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/home.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/hourglass.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/id-card.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/index.ts",
+    "templates/reference/launch-169/src/ref/icons/la/indian-rupee.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/instagram.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/italic.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/japanese-yen.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/key-circle.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/key-square.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/key.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/keyboard.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/languages.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/laptop-minimal-check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/laugh.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/layers.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/layout-grid.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/layout-panel-top.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/leaf.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/leafy-green.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/LICENSE",
+    "templates/reference/launch-169/src/ref/icons/la/link-2.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/link.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/linkedin.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/loader-circle.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/loader-pinwheel.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/loader.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/lock-keyhole-open.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/lock-keyhole.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/lock-open.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/lock.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/login.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/logout.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/mail-check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/mailbox.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/map-pin-check-inside.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/map-pin-check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/map-pin-house.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/map-pin-minus-inside.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/map-pin-minus.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/map-pin-off.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/map-pin-plus-inside.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/map-pin-plus.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/map-pin-x-inside.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/map-pin.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/maximize-2.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/maximize.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/meh.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/menu.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/message-circle-check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/message-circle-dashed.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/message-circle-more.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/message-circle-plus.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/message-circle-x.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/message-circle.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/message-square-check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/message-square-dashed.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/message-square-more.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/message-square-plus.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/message-square-x.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/message-square.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/mic-off.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/mic.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/minimize.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/monitor-check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/monitor-cog.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/moon.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/nfc.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/palette.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/panel-left-close.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/panel-left-open.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/panel-right-open.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/party-popper.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/pause.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/pen-tool.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/philippine-peso.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/phone-call.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/phone-forwarded.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/phone-incoming.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/phone-missed.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/phone-off.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/phone.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/pickaxe.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/plane-landing.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/plane-takeoff.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/play.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/plug-zap.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/plus.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/pound-sterling.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/projector.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/rabbit.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/radio-tower.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/radio.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/receipt-cent.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/receipt-euro.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/receipt-indian-rupee.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/receipt-japanese-yen.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/receipt-pound-sterling.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/receipt-russian-ruble.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/receipt-swiss-franc.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/receipt-text.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/receipt-turkish-lira.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/receipt.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/redo-dot.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/redo.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/refresh-ccw-dot.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/refresh-ccw.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/refresh-cw-off.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/refresh-cw.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/rocket.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/rocking-chair.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/roller-coaster.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/rotate-ccw.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/rotate-cw.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/route.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/router.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/russian-ruble.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/satellite-dish.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/saudi-riyal.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/scan-face.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/scan-text.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/search.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/send.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/server-cog.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/server-crash.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/server.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/settings.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/shield-check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/ship-wheel.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/ship.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/shower-head.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/shredder.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/shrink.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/sliders-horizontal.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/smartphone-charging.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/smartphone-nfc.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/smile-plus.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/smile.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/snowflake.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/soup.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/sparkles.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/spray-can.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/square-activity.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/square-arrow-down.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/square-arrow-left.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/square-arrow-right.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/square-arrow-up.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/square-chevron-down.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/square-chevron-left.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/square-chevron-right.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/square-chevron-up.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/square-pen.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/square-stack.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/stamp.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/stethoscope.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/sun-dim.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/sun-medium.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/sun-moon.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/sun.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/sunset.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/swiss-franc.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/switch-camera.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/syringe.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/telescope.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/terminal.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/thermometer.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/ticket.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/timer.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/tornado.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/train-track.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/tree-deciduous.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/tree-pine.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/trending-down.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/trending-up-down.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/trending-up.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/truck.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/turkish-lira.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/twitch.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/twitter.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/underline.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/undo-dot.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/undo.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/upload.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/upvote.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/user-check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/user-plus.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/user-round-check.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/user-round-cog.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/user-round-plus.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/user.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/users-round.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/users.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/vibrate.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/volume.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/wallet.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/washing-machine.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/waves-arrow-down.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/waves-arrow-up.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/waves-ladder.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/waves.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/waypoints.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/webhook.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/wifi-cog.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/wifi-low.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/wifi-pen.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/wifi-sync.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/wifi.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/wind-arrow-down.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/wind.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/workflow.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/wrench.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/x.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/youtube.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/zap-off.tsx",
+    "templates/reference/launch-169/src/ref/icons/la/zap.tsx",
+    "templates/reference/launch-169/src/ref/icons/motion-shim.tsx",
+    "templates/reference/launch-169/src/ref/icons/NotoEmoji.tsx",
+    "templates/reference/launch-169/src/ref/memt/Film.tsx",
+    "templates/reference/launch-169/src/ref/memt/kit.tsx",
+    "templates/reference/launch-169/src/ref/memt/MemParticle.tsx",
+    "templates/reference/launch-169/src/ref/memt/scenesA.tsx",
+    "templates/reference/launch-169/src/ref/memt/scenesB.tsx",
+    "templates/reference/launch-169/src/ref/memt/scenesC.tsx",
+    "templates/reference/launch-169/src/ref/types.ts",
+    "templates/reference/launch-169/src/ref/vo.json",
+    "templates/reference/launch-169/src/Root.tsx",
+    "templates/reference/launch-169/src/timeline.json",
+    "templates/reference/launch-169/tsconfig.json",
+    "templates/reference/multihost-169/package.json",
+    "templates/reference/multihost-169/pipeline/build_tasks.py",
+    "templates/reference/multihost-169/pipeline/build_tl.py",
+    "templates/reference/multihost-169/pipeline/plan.py",
+    "templates/reference/multihost-169/pipeline/qa.py",
+    "templates/reference/multihost-169/remotion.config.ts",
+    "templates/reference/multihost-169/src/index.ts",
+    "templates/reference/multihost-169/src/kit/Annotate.tsx",
+    "templates/reference/multihost-169/src/kit/Beast.tsx",
+    "templates/reference/multihost-169/src/kit/core.tsx",
+    "templates/reference/multihost-169/src/kit/Depth.tsx",
+    "templates/reference/multihost-169/src/kit/Explain.tsx",
+    "templates/reference/multihost-169/src/kit/Map.tsx",
+    "templates/reference/multihost-169/src/kit/NotoEmoji.tsx",
+    "templates/reference/multihost-169/src/kit/Overlay.tsx",
+    "templates/reference/multihost-169/src/kit/Polish.tsx",
+    "templates/reference/multihost-169/src/kit/registry.tsx",
+    "templates/reference/multihost-169/src/kit/Text.tsx",
+    "templates/reference/multihost-169/src/kit/Wangan.tsx",
+    "templates/reference/multihost-169/src/qa3.json",
+    "templates/reference/multihost-169/src/Root.tsx",
+    "templates/reference/multihost-169/src/tl.json",
+    "templates/reference/multihost-169/src/Tutorial.tsx",
+    "templates/reference/multihost-169/tsconfig.json",
+    "templates/reference/README.md",
+    "templates/reference/tutorial-169/package.json",
+    "templates/reference/tutorial-169/remotion.config.ts",
+    "templates/reference/tutorial-169/src/index.ts",
+    "templates/reference/tutorial-169/src/kit/Annotate.tsx",
+    "templates/reference/tutorial-169/src/kit/Beast.tsx",
+    "templates/reference/tutorial-169/src/kit/core.tsx",
+    "templates/reference/tutorial-169/src/kit/Depth.tsx",
+    "templates/reference/tutorial-169/src/kit/Explain.tsx",
+    "templates/reference/tutorial-169/src/kit/Map.tsx",
+    "templates/reference/tutorial-169/src/kit/NotoEmoji.tsx",
+    "templates/reference/tutorial-169/src/kit/Overlay.tsx",
+    "templates/reference/tutorial-169/src/kit/Polish.tsx",
+    "templates/reference/tutorial-169/src/kit/registry.tsx",
+    "templates/reference/tutorial-169/src/kit/Text.tsx",
+    "templates/reference/tutorial-169/src/kit/Wangan.tsx",
+    "templates/reference/tutorial-169/src/Root.tsx",
+    "templates/reference/tutorial-169/src/tl.json",
+    "templates/reference/tutorial-169/src/Tutorial.tsx",
+    "templates/reference/tutorial-169/tsconfig.json"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "2d2bf70388759deed3f8ebac0c5272d673a3bd6089d3bddbc599b7fc7f998765",
+      "executable": false
+    },
+    {
+      "path": "assets/avatar_ref.jpg",
+      "sha256": "7e8f6fab4e3f7679ac2e388ab4010e45485d0f2014491c615fa9a96819a8f226",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/ArchiveCards.jpg",
+      "sha256": "4f710879c47f208e32dd0d43e3489405acd8c19f4ae0c3eb53337ed2c3256254",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/CalloutLeader.jpg",
+      "sha256": "9a6d7314a9bac137b5ed95e2d2b268e4ff6f395bd6b1029f7d849d939a4c8324",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/ChapterCard.jpg",
+      "sha256": "4fdb0b78fb90b322e02893859a263ddbfbfa0941e549a37feee7e76f31427395",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/Charts.jpg",
+      "sha256": "8c153965e12e6cd725c4aef37bb0e35bd2ea53266d7065d3bb50f6602cec400b",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/ColdOpenFreeze.jpg",
+      "sha256": "2b188a047815433cfe0fb1dee764cf716833aced1ebd0c71523303ad70537f8f",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/CompareWipe.jpg",
+      "sha256": "7a6af81ae45df3cf59b4c5e6274656ce4a99fb001ef6ae790508070d2f397d74",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/Counter.jpg",
+      "sha256": "3856e6cfb4035a4d61e88d4430817ecbd51eb87d18209c2076bf7b721f6b476e",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/Danmaku.jpg",
+      "sha256": "56fdefd87891a1cd69747a1ec6a0769fa55ad041671f23a7fc131d529e542df8",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/DocFocus.jpg",
+      "sha256": "4819ff8eb0a5d04613527df7a8a7a0188238f915592801bc377a33df7b2b9ed8",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/EvidenceCard.jpg",
+      "sha256": "99e3f77a34256b5736b0735f55eb15416d6d68ba47e80795524ac55bdc010fd7",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/FreezeFrame.jpg",
+      "sha256": "8bb10dd1bc2fb42562e3d224c65e7adf39360f584a726d00c4143fc6ef05223a",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/GlassPanel.jpg",
+      "sha256": "066f3769d68d26a7a6bb4639eb47e538cca933ec053c7805015706eee7ae86dc",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/GlitchInterstitial.jpg",
+      "sha256": "eeac4a98a1871e5df1537998e555db273b32583f3c878061b0bf35626ace40b5",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/HandDraw.jpg",
+      "sha256": "71988d8ac166fa4702ec714274d0a824d698f741fb2af83b411dcbd1367db7ac",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/Highlight.jpg",
+      "sha256": "a1948f2b2a0f7e60222d26ae26bd4a65507f6e5bb09dafc7a7035d25b48ca137",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/HostFloaters.jpg",
+      "sha256": "22ee33d19e76681ca2099615bd6765f97881b17e47e314c46244afe6c3904206",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/KeywordStack.jpg",
+      "sha256": "c2bf91fb96478aa438ead556e53465a8711a31b22a0dfc8a8dd31634bbdada49",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/LowerThird.jpg",
+      "sha256": "483672c01115efb53f13ac736cfc3961503fa6270ece49a46515ab6719673636",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/MapRoute.jpg",
+      "sha256": "01e7fae5dfd9435befd9928afaf3d76d4a12fbbc29cfa1392f3bae76ac7842ec",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/MemeWindow.jpg",
+      "sha256": "c76496e220e8cbc9390906272fe6313e221e8f18dcf2282ab6309d9bda6e8057",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/NamePlate.jpg",
+      "sha256": "ac156ade64c1ff3702c92c650e7d9ed8816b3ea6385d9a6a4c44a05c657d855a",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/NumberSpike.jpg",
+      "sha256": "6d28632dca7e7cc5613638dd170f7631ffc46d96cb63f3e4bbd4497d8754f3f3",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/Odometer.jpg",
+      "sha256": "b411db09800333d320d98a9402720e4f2737cfc33aa0e69d40b5dc5d9237e283",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/PaperCollage.jpg",
+      "sha256": "4b12ceaa8abd155af6049ddf48aa6b98676a08e44629849a4bda9b70b7f13a87",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/PollPop.jpg",
+      "sha256": "eef6234126fa31199494fcce9869de923eb52eee395f2ea38f479a27353df2cd",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/ProgressChapters.jpg",
+      "sha256": "0568191d7da66f5128aa662c536f32635306a09a8fa3a1def998cf84f5e006f3",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/ProgressTracker.jpg",
+      "sha256": "b137a86f23e40a9bb06b29e84cf312844bdef538297f98dd595f55530169fef9",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/PunchInHost.jpg",
+      "sha256": "78a5c5ef3b117d6fa38b049dea0280e4cc6fae76a615b35dce9866c0723a786b",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/ReactionPop.jpg",
+      "sha256": "2f96dda3d7fa6031f7278d973b8024140f2a10a43773404538dc9ff03959c7aa",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/RecapBoard.jpg",
+      "sha256": "4ca4406db4a286d6e28ca61e78218f665b5798dab805b0edc00c09d35c22bf55",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/RetentionCaption.jpg",
+      "sha256": "060690f24d5f35c38fba45b2bb7b1dc5c6ca83cc7cf26dd9e9acba4ef265b125",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/ReviewCards.jpg",
+      "sha256": "ef887075bd81ef6f8cd1eb33ca4723f88bb65e3bfa899fe121fc73cc073aeda7",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/SearchTyping.jpg",
+      "sha256": "ddacad44a5b8a960ca4fe8fa0eae419448dbae04cf30e670c69209c267a9f7b7",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/SlamText.jpg",
+      "sha256": "bd3eac6ba6f26756c551ffebc3551dd647ab91519726148fbf04f2def8e42b4d",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/SourceDoc.jpg",
+      "sha256": "642f46583853d7391c6a539ff848dbba85db720acdcf6cd66b8d977ac01a3659",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/SpecCard.jpg",
+      "sha256": "2b780dc5fe36108959ed88a8a1adf6864c5e22e556d483df35357588ae02d962",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/TeaserColdOpen.jpg",
+      "sha256": "52b477b7ae4b220e5434a76b68c183cdef6be7d271b85a2d3959f9fc8968484e",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/TextBehind.jpg",
+      "sha256": "5ab9b6fa9c7c6877cd89417cb4514db09428e47962b4319f2dbf591cd4c09091",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/TiltAside.jpg",
+      "sha256": "a8f65e962e72054e0bb5dd06bbb9b50a1afbf619b75c18066caf29754d897293",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/TornStrip.jpg",
+      "sha256": "f24e71be28ea9f743a7a017a23e157358355460d5a39949bb255e9704d69571e",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/TypedNameTag.jpg",
+      "sha256": "27418d879be68201ba1f27293f2c953536c87281799b62962306a21728d23bc9",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/WordStack.jpg",
+      "sha256": "3070136d114598c7079dd2ff955e8ed46187f060a1043dc1491ac24a860ae0df",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/each/ZoomFocus.jpg",
+      "sha256": "91278ee576a88020926d9ff04f5fbb809a090fe3a0e35a5d69dc94c1a6eee362",
+      "executable": false
+    },
+    {
+      "path": "assets/packaging/图鉴.jpg",
+      "sha256": "76e3bcfc56fe05e2f9da41b749529a7f45ba65bda0dca4cfeafb77022e0db9f8",
+      "executable": false
+    },
+    {
+      "path": "assets/styles/A_xiaolin_explainer.jpg",
+      "sha256": "896e31b331ad0a947301a3f373f4aecd0a27e196fa894e590d58b28774f40a53",
+      "executable": false
+    },
+    {
+      "path": "assets/styles/B_huazi_koubo.jpg",
+      "sha256": "1e3e1ae803590333bf3b0d9346ae84d6334ac47405bf0bf33adff0ffdd74b8b6",
+      "executable": false
+    },
+    {
+      "path": "assets/styles/B_huazi_presets.jpg",
+      "sha256": "72e6547540bee6214409305fb833b00a510898f1ea703573af7e6ddab99a0ac7",
+      "executable": false
+    },
+    {
+      "path": "assets/styles/C_launch_side.jpg",
+      "sha256": "a90f2d0cf8e42f048a611d5808f5d8d9506de3e0cc4edac1b08ad5714de0ff05",
+      "executable": false
+    },
+    {
+      "path": "assets/styles/D_tutorial.jpg",
+      "sha256": "fd232afa36353d0aaa5e59a80e0dd91efae4579ff1bd18799f9958a238c81f88",
+      "executable": false
+    },
+    {
+      "path": "assets/styles/E_multi_host.jpg",
+      "sha256": "c2852309590a47088abb7e688347af5641f6990aa4707f6f82eb747a05ee1521",
+      "executable": false
+    },
+    {
+      "path": "persona.json",
+      "sha256": "a5575c0eea30eb53ffa1b72539250d24a3524fef130edaa2323c6eb986aedf1e",
+      "executable": false
+    },
+    {
+      "path": "references/cover.md",
+      "sha256": "43f68c6af0ae06ca2f18b9cb11591b1a222adb716b00708937c43b615a0d29fd",
+      "executable": false
+    },
+    {
+      "path": "references/edit-styles.md",
+      "sha256": "802539d5198068c5827d87747228c7d68f0a3077adae004a20320f0ea56edd1a",
+      "executable": false
+    },
+    {
+      "path": "references/huazi.md",
+      "sha256": "b070a1bc324ab82ac3d75300e1c1c66443bf07e866c331e6a4a4f631c871e493",
+      "executable": false
+    },
+    {
+      "path": "references/install.md",
+      "sha256": "226b0609901ec4adab4e4ef017400db2f69095e76075d4d6a1433ac8ca41a9f3",
+      "executable": false
+    },
+    {
+      "path": "references/lin-style.md",
+      "sha256": "58d097f9a11b3a67a122e93da5876dec99632fc6e159e4ce6ac1f22bf0e30b94",
+      "executable": false
+    },
+    {
+      "path": "references/new-avatar.md",
+      "sha256": "b4a698df6dbe8e1d2c34ed70cc79f02970a86a4a9320b08965ffb24d1d1a60dd",
+      "executable": false
+    },
+    {
+      "path": "references/packaging-playbook.md",
+      "sha256": "3e616a4826439d2a8558fa09b8f17c9e96be74a349122a68deca38ae9469f859",
+      "executable": false
+    },
+    {
+      "path": "references/packaging-presets.json",
+      "sha256": "b54162efe11d0b46b886d8e59237560e09981939ef8e122a5bf9ad4a6826f861",
+      "executable": false
+    },
+    {
+      "path": "references/packaging.md",
+      "sha256": "e17f6343df8989f602ec95a7cccddc0c2e954255e60094ba39bbc30a75b3813c",
+      "executable": false
+    },
+    {
+      "path": "references/research/1_english_top_pacing.md",
+      "sha256": "8252103df358b98fe27d173870de31baf31eaae703ca5f266aa848d7b09f90b6",
+      "executable": false
+    },
+    {
+      "path": "references/research/2_tech_review_polish.md",
+      "sha256": "bb21fc2c450b303d468c0a8dbcb8ace699690f66286fa870907c5d97545e8f53",
+      "executable": false
+    },
+    {
+      "path": "references/research/3_explainer_animation.md",
+      "sha256": "6d369afcbc5173c785f7f385d7f2f1e2b2013d06d90982ba1720cf0f07f40cfd",
+      "executable": false
+    },
+    {
+      "path": "references/research/4_chinese_wangan.md",
+      "sha256": "e105cff7ec5b0fce466e54f2b47851391aba90ec06debc982682a900d5b5c878",
+      "executable": false
+    },
+    {
+      "path": "references/style-menu.md",
+      "sha256": "707d85b0d1f6ff2afe991f8b12b83aff9449f57818d5c6c04914c4bc05d9f9ea",
+      "executable": false
+    },
+    {
+      "path": "references/voice.md",
+      "sha256": "f5fd57039a9025efe95f0420ff3d87b72056c459c7adabcedba91b31e9ae4b6f",
+      "executable": false
+    },
+    {
+      "path": "scripts/align.py",
+      "sha256": "6ea91e46ff249e708594082dc54482383eb63c615fd23ca87740f6569afb35dc",
+      "executable": false
+    },
+    {
+      "path": "scripts/assemble.py",
+      "sha256": "2a804ac640a992d823d543798f9bb49815e5d03fd075d076f672fbc02b42502c",
+      "executable": false
+    },
+    {
+      "path": "scripts/build_tasks.py",
+      "sha256": "162c8a658b6f159089e3af026945b18eff137e3e364a1c2241ba5796cd799cfa",
+      "executable": false
+    },
+    {
+      "path": "scripts/check_edit.py",
+      "sha256": "1dcc92ac316d84be25eed482bdb8696d7be525fa826117dd1120a3aec926587a",
+      "executable": false
+    },
+    {
+      "path": "scripts/cover_first.py",
+      "sha256": "86a5c78e9ec49fddccdd83b69078e12c2a3eb43ceb8df82f2657f026d2b20a1d",
+      "executable": false
+    },
+    {
+      "path": "scripts/cutout_video.py",
+      "sha256": "62a5464969d80f740b33919d9166ff016e3ba0a226be3c4672fddf7d4143c02b",
+      "executable": false
+    },
+    {
+      "path": "scripts/doctor.sh",
+      "sha256": "bd3d9e2286d3605b9eb27e1f9121ee8c2eb9722f92ac2000a30fdc090093c059",
+      "executable": true
+    },
+    {
+      "path": "scripts/face_center.swift",
+      "sha256": "5ff7ef88b8ae50770b8233b60df176d88b3e5d05f9177d7c959a0e2424ccce8f",
+      "executable": false
+    },
+    {
+      "path": "scripts/lin_mix.py",
+      "sha256": "9f059c3ac7829ffcf9ff4d890722e229be5699806d1df5d924e51b4e353a9687",
+      "executable": false
+    },
+    {
+      "path": "scripts/lin_scenes.py",
+      "sha256": "fda88417fc2ede845d64bd4df55d32d06dc25fa244e84b153fa2e42e98dca868",
+      "executable": false
+    },
+    {
+      "path": "scripts/lin_sfx.py",
+      "sha256": "3ad340408b4494978291c98fd1b2c2df06aa2d8b1fc40f445ddce8825dcbd695",
+      "executable": false
+    },
+    {
+      "path": "scripts/lin_subs.py",
+      "sha256": "10da931331bdec1ef92b364231d269da5390cdb226d8430dbf29c171c1ac44a5",
+      "executable": false
+    },
+    {
+      "path": "scripts/make_assets.py",
+      "sha256": "9938275686b8ad10c78d9147e8be0254140ab09f0e8be9f944780d0210b9438b",
+      "executable": false
+    },
+    {
+      "path": "scripts/make_cover.py",
+      "sha256": "4bd6e20cfce78131e256e7660dfb6f689f3d8d885b7fa786391bb514131af55c",
+      "executable": false
+    },
+    {
+      "path": "scripts/misread_check.py",
+      "sha256": "05f0c7b8c68817543bdf3e61b2a6f178b157da0834b4c0a90166e56cf7b68c24",
+      "executable": false
+    },
+    {
+      "path": "scripts/new_edit.sh",
+      "sha256": "32bbd60345c2ec64fff1c2a0df4d4b198027a39a4212db5ec03608275fdab992",
+      "executable": true
+    },
+    {
+      "path": "scripts/patch_words.py",
+      "sha256": "b5e96101f7b54d5441a0904745bc6d902effa5db9bb6e5052a6527fe35755ae4",
+      "executable": false
+    },
+    {
+      "path": "scripts/personmask.swift",
+      "sha256": "7ae6b21094537d3bf0ca63264ce14516962629ecdfc197cc94ccc851689d3a2d",
+      "executable": false
+    },
+    {
+      "path": "scripts/rangedl_mp4.py",
+      "sha256": "e3a403f2a3ac0296d557eaa7488d0f043a1d18fb9e2cc5878c4f73d807d85d5f",
+      "executable": false
+    },
+    {
+      "path": "scripts/rangedl.py",
+      "sha256": "064c807e035b54dbd2343a76c6ec2c2f79d8823a94d3615c2962c7e8710e029e",
+      "executable": false
+    },
+    {
+      "path": "scripts/voicefx/unify.py",
+      "sha256": "d0397049fd414919bd02437d7ba11a50026c94d6c6f3c5f87cbdbee6f1ad076c",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/package.json",
+      "sha256": "e029332248c2093337aeb9794ee8ff0ed1063a3ca20842df2d74bbe8d40deb47",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f30d.json",
+      "sha256": "13f5b9670f7e61909cc3d4c8f01a22212999e5266a344914e9605a457d53e76f",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f389.json",
+      "sha256": "eab1fd7070bffd2965c12a80d2d91cff76683af65019f142acf9a553ee877b5c",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f399.svg",
+      "sha256": "eb2c38cc9fdbeeb4cf532bda40588681258f3ba9624c5419035e112caf861d5a",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f3ac.json",
+      "sha256": "a7ccc88c8e6e60b922b428b23c52f4f335a85c2a7758673c7461c235e285c0ef",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f3af.json",
+      "sha256": "ae36f71945619fab24d26c18b01f8954a04648ee92d82d601a9a0b7e1e32a4c0",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f3c6.json",
+      "sha256": "3270e7b560f539cb92b454e9e1405ccd21d2210f212d96384a7aef488ab09765",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f440.json",
+      "sha256": "0dfcabf677099ebe20efacf98f680cf3aeac6f7b647228acda73917c65e2120f",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f444.svg",
+      "sha256": "5c7b1439dad0545c7d5f8b230c3b8beb2798b234fb2f76b8d869e88340bab111",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f44b.json",
+      "sha256": "11f8511c925e8ee908685b494a1cad1a2ea34f09a82c5c540d8e4805fe236dd6",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f44d.json",
+      "sha256": "a5803c4978c0760977aa08033ab0abcb5023945a47008261cd405815fc947698",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f44f.json",
+      "sha256": "fc1d22422ac8ce686e9851ea69410d43dc7d244cc9c3a33cc768ffd2653a79e3",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f4a1.json",
+      "sha256": "beccdc9a9a3d50ca382d3dfeecbade2f26af02c63fa2f1637c56b6ec449925de",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f4aa.json",
+      "sha256": "92a40376944e3caa1720edcea3d8a51274eabf1d5a48d2a974912c221fe19e80",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f4af.json",
+      "sha256": "8e48b464d7473e94e7b744a1774f4c3b7c7a6892faee8667f9e555ddf5160798",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f4b0.svg",
+      "sha256": "75b9bbdcac486261435af6d77b599e43265c8dcd017be9bfb704c9e12a2d41f2",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f4bb.json",
+      "sha256": "b351e45cbfc249c734fd6cf4fbd6f49715ce8020177357a89b3844cc061f62a4",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f4dd.svg",
+      "sha256": "0ebf504b74f00f0f6d080b2ab3ac0c6c27199ad114819751c4b0334eb5087d6f",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f4e3.json",
+      "sha256": "78e3f7594512ba6007d348a8a2ffd88dc825b2809a9efb71a3f7c648542a86c0",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f4f1.svg",
+      "sha256": "e363c1e6e9fa46e8064892468a5d188d4651f14dce222cd32798dd6621ba8840",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f50b.json",
+      "sha256": "2f8d755829fee08f48efb938ec37b1028764496bcd357497637f5fe369adbb42",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f50d.svg",
+      "sha256": "298c6b6c93d56ae301efebd909ccfe0b991510667d2068adab4d68ee4c296a30",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f525.json",
+      "sha256": "96199d8e8fea7d90196b95b9a9e56b13af43e3817efe037bd9aa1e5215579838",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f602.json",
+      "sha256": "ae479405485961c5c233d882bd2b8ddf54c24e7ddb48371e6346b04b6b57edca",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f605.json",
+      "sha256": "51c188f920622275409455006d4d6f38c3eaae5d7a9e490f094f9ea5fbb097fb",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f60d.json",
+      "sha256": "2351f649844d0211f0935346c6358b7cdd38e7f2fb42164b7ecedbb67f7954aa",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f60e.json",
+      "sha256": "17ca3ea161b36f64e17a55c9f92ff3aa794e3036ce799aa1b55748ed3d72a977",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f60f.json",
+      "sha256": "cae3d27a29c7a6845e3373d26c623195100e619997d371ac042732d9e3f0e8f9",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f624.json",
+      "sha256": "c862cad0b93e305dd38f45c3bdd61181136214bfcf06dc63e93ae8868e7e1cc6",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f62d.json",
+      "sha256": "9f8b1a18099511d53356d870edd0e042323e0d2b023321ee144821e197f551ec",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f62e.json",
+      "sha256": "daa0118bbc4f628aaabde5b0c96ebf3980c7aca265700bb0da809cb9f4d0ffbd",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f631.json",
+      "sha256": "159c6e05378b35fdb834c8981893162aad7935c3c7f52db5070caa0f47aca925",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f634.json",
+      "sha256": "1fa14c30659503270104b54a7eefd082d7ebc039fc0bab280a6bd173fba3dcdd",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f635_200d_1f4ab.json",
+      "sha256": "8bf11574fcefbb976cb353eb74e8add924cd9f36b2c6453728489aeac2dd5733",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f645.svg",
+      "sha256": "932252f7f8deab735b5871aeb059c31d75ac1efc24e7ed18146f067d293cfb19",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f64c.json",
+      "sha256": "a7f2d88118d720d0d1b68496561f8ef57e3a4e47c354b2bbdd53608784228b3f",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f64f.json",
+      "sha256": "96c6f33baf19eb1e0fdcc2e16cd32bec25797022c66f66203721354491f0fd2f",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f680.json",
+      "sha256": "2b6daf24cee4de340073838a7d97d07c097f2d3919b676d0e4e5fed8a2f23453",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f6d2.json",
+      "sha256": "8d3035e4d4559d77bdfae88fcb079498be6f53027b5f472a40aa733434fae95c",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f911.json",
+      "sha256": "586ddc8ddca3e2dc2270f08bb3aa6185bf86ec633e4e27f31167c6e5e61be62c",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f914.json",
+      "sha256": "46405d972ad78a2fc917fa8e5786b0ebcdfdf644114be3c0941b98cb7e1c47c5",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f916.json",
+      "sha256": "62c2d17f5d8bf02cd3508eed1fd8247f1c213b1e3da81de99efe9be848b68503",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f91d.json",
+      "sha256": "78d7d6671ec57c9aec7bca9ec81ae6ffcd9980e30c628d8ac498668d99fb7411",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f929.json",
+      "sha256": "11faaec0e83c4f3b7c75f773ea33f40a71991b00a0ce97c6d6453c072a619f11",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f92b.json",
+      "sha256": "6a0f5f035c5db84b2032c03647a3e6b3ea45a4d2e7eff90cbc2f3e49aab9ba54",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f92f.json",
+      "sha256": "553f0131420995a5f7d989fa3e243ce57fe2620a34e4866c2adf1dd000aeeecf",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f937.svg",
+      "sha256": "35821c6ca2151d6ba10e4a81a5e9b5500e20651b1fd8fa2fca1a1bc85d53158e",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f972.json",
+      "sha256": "f49be49669251d7f91976ea3ff819728299381b37d22e80e31c5f3effef1154b",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f973.json",
+      "sha256": "6cc02b10d9471287c26b188d5a9b64899da86543fde29b60ed5e5caf69776c3d",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f9d1.svg",
+      "sha256": "2edfa2dc220151672d473ea21a933683be42ecad3d702ce6f5c9ca274f0d502b",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1f9e0.json",
+      "sha256": "a1b6c1719bac2b476762f7cab1efcff7941e4b810cbb2be557496ea0d3b72180",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1fae1.json",
+      "sha256": "8867659c2abcd4c584ff2f14a0e223357142c20c7b40a1d9c1e18a8b0afd0ecd",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/1fae3.json",
+      "sha256": "7f649a4c946e96bcefc17cc2fba1332b0f7652971c72886809a9b18f60d85cbd",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/23f1.svg",
+      "sha256": "2aae7bbb7c57bd411ac81416c66ff02056d141e6c6e09a317834fdbab774b3df",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/26a0.json",
+      "sha256": "9cf176002ced202e175e3d9437495cd87b98974301cbee535b04ac1e9ef72888",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/26a1.json",
+      "sha256": "9a746760dea14bcfe68bfa995a571a63d20805631432cd24d286a122f1ff5a2e",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/2705.json",
+      "sha256": "6afa2843755236d432ebf032dd9b5370d663842ca6f0252c04152612cd27520f",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/2728.json",
+      "sha256": "60b0b7e80faadfadef6972fbf63b707f01b022fe7662573dca0bbf76785863ad",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/274c.json",
+      "sha256": "dc1f748a503825ca71e45629288bb166a0a39d180ab6e11ebb08d79c58f74506",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/2764.json",
+      "sha256": "7925790edd7ec4a4da6ccb9491c61a2e03705182e7db263f12d8e46a8fcddb79",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/public/emoji/manifest.json",
+      "sha256": "c079cdac013d0d317743d6945c7c369ca1335656e3202a634cac3212852b0e73",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/remotion.config.ts",
+      "sha256": "c6a9b3d1addb3a27288ee6b31c9e41c74472a824e08246458ba9853f02f3f768",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/src/edit.json",
+      "sha256": "96c6704e3677c608b78171d0089a5ae653834d002e4459b5f722cd4719d29a2d",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/src/Huazi.tsx",
+      "sha256": "5014c55878a086840ab10a5530ab25b8ca59272306a7142e0b92fbc9a46c63e6",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/src/icons/NotoEmoji.tsx",
+      "sha256": "7000943213daf9424e098ffd0f497a32abe0a1e8097c98037e20d5393d655c9c",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/src/index.ts",
+      "sha256": "b9900e8f2d9dd0508919db76ded7f60ef532157750339d786c3c395643fc6675",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/src/kit/Annotate.tsx",
+      "sha256": "a9aabbcb423d1fdd6e3e414201e48ec611eb82092b9500f85fa4f87bc3372fe4",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/src/kit/Beast.tsx",
+      "sha256": "01547dd4160ebf92279f8c71c6470b8bf0aca40f2af3b0ebafa62c02d1d47fff",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/src/kit/core.tsx",
+      "sha256": "c178392a6932e604bbaca07a3e36f8273a50f31900b0b3d2a5b69de4aed6c517",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/src/kit/Depth.tsx",
+      "sha256": "521e28c0a02869a205fd1bcc9a2988181ec55876063e7a7218caf5a649280b5d",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/src/kit/Explain.tsx",
+      "sha256": "e317c48d22fa9349f4c99cf52a5900c78e456aafdbfcae45df7f0b5ef9023695",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/src/kit/Map.tsx",
+      "sha256": "65cfeb109b78c3ac042539fa853b8a26a2953542a4e640081c1e376cd6f19510",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/src/kit/Overlay.tsx",
+      "sha256": "01fba21c16324efe68ddad5dc1da1f3fd9656813b6672eeef03be6d1ecafe118",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/src/kit/Polish.tsx",
+      "sha256": "5bdf10c85004efe8c330e6dd3b284ab1bec060c4acbef72e1f3cbdcf42a388de",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/src/kit/registry.tsx",
+      "sha256": "0f1f7343ad3ddf702c77c734e3c807c7d98185f13eaf13467b3a6dde0b55e8ac",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/src/kit/Text.tsx",
+      "sha256": "c10a4ab4b73223d7771ecd1426f7220d281d4b1052521f62b451be80d18682a6",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/src/kit/Wangan.tsx",
+      "sha256": "6141549c0e94b38fb45a01551ae0962fc7359a37d092bba2e27365e4b2b54e2a",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/src/Root.tsx",
+      "sha256": "294c753539ee49ab6d4f3a6e7d380d0b39591f084fc3029ed30b1db4b349e9e7",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/src/tl.json",
+      "sha256": "bdc2106b2054646a3bf6ab25a16ecb72a6830723e0967a8f1e5f5e8ff88efd05",
+      "executable": false
+    },
+    {
+      "path": "templates/huazi-916/tsconfig.json",
+      "sha256": "6aa4a9fc46246c7360b64294a192080061fa5d80b91221434caa8347dc1a5c28",
+      "executable": false
+    },
+    {
+      "path": "templates/lin-169/disp.example.txt",
+      "sha256": "198c3ee2a0cf3d59f5bc79becb719f54170a493df89bdaff56ecb97c0fe35ab5",
+      "executable": false
+    },
+    {
+      "path": "templates/lin-169/package.json",
+      "sha256": "60f4f33acf52f9b1ea311cd2fd90ea3bc17a2eae3def014770cee0c16d165d2c",
+      "executable": false
+    },
+    {
+      "path": "templates/lin-169/plan.example.json",
+      "sha256": "51c51b8bc9aadc6caef8941e42d606960b462ea6ae81a147a19d9c0e3e9fb4af",
+      "executable": false
+    },
+    {
+      "path": "templates/lin-169/README.md",
+      "sha256": "6582cbb60d9082fa5f3a93c6fb845beef8cf4c67dd1106de8ddde4a73a642fa4",
+      "executable": false
+    },
+    {
+      "path": "templates/lin-169/remotion.config.ts",
+      "sha256": "c6a9b3d1addb3a27288ee6b31c9e41c74472a824e08246458ba9853f02f3f768",
+      "executable": false
+    },
+    {
+      "path": "templates/lin-169/script.example.json",
+      "sha256": "ca070352afcec7358b790846e630792dd9d4c7c732a52455467d812f4a92475b",
+      "executable": false
+    },
+    {
+      "path": "templates/lin-169/src/cues.json",
+      "sha256": "03c821f48d16553d041f9e75fd004e84de771795d69a3aaf8058b8693fb5154a",
+      "executable": false
+    },
+    {
+      "path": "templates/lin-169/src/index.ts",
+      "sha256": "b9900e8f2d9dd0508919db76ded7f60ef532157750339d786c3c395643fc6675",
+      "executable": false
+    },
+    {
+      "path": "templates/lin-169/src/Lin.tsx",
+      "sha256": "61a4d5a64ed8f95963e53a3a60b06639b028ebe81da3cfb0ae4e26f5630bffa9",
+      "executable": false
+    },
+    {
+      "path": "templates/lin-169/src/Root.tsx",
+      "sha256": "396496bdfb4980c9cdc69ef963b9277ee68bcc282da6fa32a748aeb183095e4f",
+      "executable": false
+    },
+    {
+      "path": "templates/lin-169/src/scenes.json",
+      "sha256": "e6ef1416a6d3e94530a184ffcfc48ed0e08e690110314e33e77bd523455fe4d1",
+      "executable": false
+    },
+    {
+      "path": "templates/lin-169/tsconfig.json",
+      "sha256": "6aa4a9fc46246c7360b64294a192080061fa5d80b91221434caa8347dc1a5c28",
+      "executable": false
+    },
+    {
+      "path": "templates/packaging/package.json",
+      "sha256": "0df7e2748ec5c148a2f495e3a3f5585353831a50cd545adce2dfc371c4a546d2",
+      "executable": false
+    },
+    {
+      "path": "templates/packaging/public/emoji/1f30d.json",
+      "sha256": "13f5b9670f7e61909cc3d4c8f01a22212999e5266a344914e9605a457d53e76f",
+      "executable": false
+    },
+    {
+      "path": "templates/packaging/public/emoji/1f389.json",
+      "sha256": "eab1fd7070bffd2965c12a80d2d91cff76683af65019f142acf9a553ee877b5c",
+      "executable": false
+    },
+    {
+      "path": "templates/packaging/public/emoji/1f399.svg",
+      "sha256": "eb2c38cc9fdbeeb4cf532bda40588681258f3ba9624c5419035e112caf861d5a",
+      "executable": false
+    },
+    {
+      "path": "templates/packaging/public/emoji/1f3ac.json",
+      "sha256": "a7ccc88c8e6e60b922b428b23c52f4f335a85c2a7758673c7461c235e285c0ef",
+      "executable": false
+    },
+    {
+      "path": "templates/packaging/public/emoji/1f3af.json",
+      "sha256": "ae36f71945619fab24d26c18b01f8954a04648ee92d82d601a9a0b7e1e32a4c0",
+      "executable": false
+    },
+    {
+      "path": "templates/packaging/public/emoji/1f3c6.json",
+      "sha256": "3270e7b560f539cb92b454e9e1405ccd21d2210f212d96384a7aef488ab09765",
+      "executable": false
+    },
+    {
+      "path": "templates/packaging/public/emoji/1f440.json",
+      "sha256": "0dfcabf677099ebe20efacf98f680cf3aeac6f7b647228acda73917c65e2120f",
+      "executable": false
+    },
+    {
+      "path": "templates/packaging/public/emoji/1f444.svg",
+      "sha256": "5c7b1439dad0545c7d5f8b230c3b8beb2798b234fb2f76b8d869e88340bab111",
+      "executable": false
+    },
+    {
+      "path": "templates/packaging/public/emoji/1f44b.json",
+      "sha256": "11f8511c925e8ee908685b494a1cad1a2ea34f09a82c5c540d8e4805fe236dd6",
+      "executable": false
+    },
+    {
+      "path": "templates/packaging/public/emoji/1f44d.json",
+      "sha256": "a5803c4978c0760977aa08033ab0abcb5023945a47008261cd405815fc947698",
+      "executable": false
+    },
+    {
+      "path": "templates/packaging/public/emoji/1f44f.json",
+      "sha256": "fc1d22422ac8ce686e9851ea69410d43dc7d244cc9c3a33cc768ffd2653a79e3",
+      "executable": false
+    },
+    {
+      "path": "templates/packaging/public/emoji/1f4a1.json",
+      "sha256": "beccdc9a9a3d50ca382d3dfeecbade2f26af02c63fa2f1637c56b6ec449925de",
+      "executable": false
+    },
+    {
+      "path": "templates/packaging/public/emoji/1f4aa.json",
+      "sha256": "92a40376944e3caa1720edcea3d8a51274eabf1d5a48d2a974912c221fe19e80",
+      "executable": false
+    },
+    {
+      "path": "templates/packaging/public/emoji/1f4af.json",
+      "sha256": "8e48b464d7473e94e7b744a1774f4c3b7c7a6892faee8667f9e555ddf5160798",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "bf8256f13e2c5a8165f21a483f316c353afa863cbd3a173557741101a0e922be",
+      "executable": false
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "d3ce53e47efc434e3f424deed555fa60df592cd20c40dee1676698e84e5a6fe8",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/digital-human-koubo"
+}

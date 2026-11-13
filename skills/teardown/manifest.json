@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "name": "teardown",
+  "version": "a91262ac1109",
+  "source": {
+    "url": "https://github.com/elvarofficial/teardown",
+    "commit": "a91262ac1109051e014662d42ecb0b7bc1f113b1",
+    "sha256": "9395e463e8ff733c4cadafe8dafeceb72fd462a2a1fc89a58c17d3b756b5929b",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Xây mô phỏng 3D tương tác của một cỗ máy hay cơ cấu thật (động cơ, càng đáp, liên kết đi bộ, bơm, hộp số) thành một trang HTML offline có thể tháo rời — mọi bảng quanh mô hình đọc số thật từ chính model làm các chi tiết chuyển động, mỗi phân hệ một nút mở phần đang làm việc, có cắt tầng, góc máy và chuyến tham quan tự động khi không ai chạm; rồi quay lại từng khung thành video 60 fps có nhạc quy trình hóa đồng bộ trên cùng timeline. Cần Node.js 20+, ffmpeg cho video, Python 3 cho âm thanh. Dùng khi ai đó hỏi \"cái máy này hoạt động thế nào\", muốn visual explainer, simulator, cutaway, exploded view hoặc bài học 3D tương tác.",
+    "aliases": [
+      "Mô phỏng tháo rời",
+      "Minh họa máy móc 3D"
+    ],
+    "keywords": [
+      "teardown",
+      "Mô phỏng tháo rời",
+      "Minh họa máy móc 3D"
+    ],
+    "examples": [
+      "Dùng teardown cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "9395e463e8ff733c4cadafe8dafeceb72fd462a2a1fc89a58c17d3b756b5929b"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "sfx/samples/fs-258269-mouth-pop.ogg: binary-file (low)",
+      "sfx/samples/fs-323432-typing.ogg: binary-file (low)",
+      "sfx/samples/fs-329533-room-tone-in-an-apartment-livi.ogg: binary-file (low)",
+      "sfx/samples/fs-329569-roomtone-bedroom-yew.ogg: binary-file (low)",
+      "sfx/samples/fs-339521-vhs-rewind-forward-and-eject.ogg: binary-file (low)",
+      "sfx/samples/fs-349504-triangle-open-04.ogg: binary-file (low)",
+      "sfx/samples/fs-416777-digital-typing-wav.ogg: binary-file (low)",
+      "sfx/samples/fs-426767-apartment-room-tone-wav.ogg: binary-file (low)",
+      "sfx/samples/fs-447909-keyboard-typing.ogg: binary-file (low)",
+      "sfx/samples/fs-447910-plop.ogg: binary-file (low)",
+      "sfx/samples/fs-79388-keyboard-typing-wav.ogg: binary-file (low)",
+      "sfx/samples/fs-824189-pop-in-sfx.ogg: binary-file (low)",
+      "Incomplete upstream bundle: inspect excluded files before approving compatibility or activation."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "4 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

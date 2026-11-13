@@ -1,0 +1,8 @@
+# Local preservation copies; upstream bytes are also pinned by commit and file hashes.
+/source-cache/
+/migration-backups/
+/rollback-snapshots/
+/version-backups/
+/skills/.hybrid-*/
+/skills/.previous-*/
+/skills/.rollback-*/

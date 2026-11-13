@@ -1,0 +1,16 @@
+{
+  "repository": "Jakeschincariol/youtube-agent-skill",
+  "commit": "a2feb2104981a375ffd4f87ee04f4f5344ac43c6",
+  "path": null,
+  "verified": false,
+  "coreSha256": "ed487ba4b1fb2e166f8d2f42a9bdc64a65ded11a73cf4885f9af2941c33887fc",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "ed487ba4b1fb2e166f8d2f42a9bdc64a65ded11a73cf4885f9af2941c33887fc",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/youtube-agent-skill"
+}

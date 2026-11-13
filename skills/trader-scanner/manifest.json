@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "name": "trader-scanner",
+  "version": "3d0f4ef6986f",
+  "source": {
+    "url": "https://github.com/Jakeschincariol/day-trader-skill",
+    "commit": "3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd",
+    "sha256": "8db022339f3ddd3a5f0574152040d154c484ef4c56f5dbc4a4d6c5768b8c92f7",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Bộ 11 skill day-trading cho agent — quét hàng nghìn biểu đồ tìm setup (opening-range breakout, bull flag, oversold bounce), theo dõi tin tức ảnh hưởng giá, bấm giờ điểm vào, đặt stop/target trước khi vào lệnh, \"Cỗ máy thời gian\" mô phỏng 10.000 phiên để nói xác suất thật, quản lý rủi ro, quản lý ngân sách, gửi lệnh sang broker (mặc định paper trading, không bao giờ tự đặt lệnh không có sự đồng ý), cảnh báo giá và đọc báo cáo kết quả kinh doanh. Toàn bộ tool là Python thuần đọc dữ liệu công khai miễn phí (Yahoo Finance, Nasdaq Trader, SEC EDGAR, House Clerk) — không đăng ký, không API key. Lưu ý rủi ro: chỉ là danh sách biểu đồ khớp luật, không phải dự đoán; hầu hết người day-trade thua lỗ. Dùng khi người dùng nói \"scan thị trường\", \"tìm setup\", \"cổ phiếu đang breakout\", \"xây watchlist hôm nay\".",
+    "aliases": [
+      "Giao dịch có kiểm soát",
+      "Phân tích rủi ro giao dịch",
+      "day-trader-skill"
+    ],
+    "keywords": [
+      "trader",
+      "scanner",
+      "Giao dịch có kiểm soát",
+      "Phân tích rủi ro giao dịch"
+    ],
+    "examples": [
+      "Dùng trader-scanner cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "8db022339f3ddd3a5f0574152040d154c484ef4c56f5dbc4a4d6c5768b8c92f7"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write"
+  ],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

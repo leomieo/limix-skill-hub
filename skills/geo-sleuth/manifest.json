@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "name": "geo-sleuth",
+  "version": "d56c35789565",
+  "source": {
+    "url": "https://github.com/Oldcircle/geo-sleuth",
+    "commit": "d56c35789565e9459f0663e860c470e98e9c30d1",
+    "sha256": "18fc803dfbdccb92c7f92d783c266d33440266e5ffc43c79d227e760f1abc480",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Skill định vị ảnh chụp bằng agent — đưa cho agent một bức ảnh và bảo \"tìm nơi này được chụp ở đâu\", nó trả về tọa độ máy ảnh (kèm bán kính sai số), hướng ống kính và ảnh bằng chứng vệ tinh, giải trình từng bước bằng file lệnh đã chạy. Dữ liệu OpenStreetMap, độ cao địa hình, tile vệ tinh và street view thay cho chữ trong ảnh: khoảng cách mố cầu làm thước đo, bóng đổ làm la bàn, đường viền núi khớp với dữ liệu elevation. Chạy với Claude Code, Codex, Cursor, Gemini CLI, OpenCode, GitHub Copilot.",
+    "aliases": [
+      "Xác minh địa điểm ảnh",
+      "Điều tra vị trí"
+    ],
+    "keywords": [
+      "geo",
+      "sleuth",
+      "Xác minh địa điểm ảnh",
+      "Điều tra vị trí"
+    ],
+    "examples": [
+      "Dùng geo-sleuth cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "18fc803dfbdccb92c7f92d783c266d33440266e5ffc43c79d227e760f1abc480"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write"
+  ],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "regions/lk/clues.md: invisible-unicode (high)",
+      "regions/lk/region.json: invisible-unicode (high)"
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

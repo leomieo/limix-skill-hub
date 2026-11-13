@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "name": "beautiful-rust",
+  "version": "b9718436d77e",
+  "source": {
+    "url": "https://github.com/morganlinton/BeautifulRust",
+    "commit": "b9718436d77ee7bcf17cdcb6aa27628feb95d97a",
+    "sha256": "90152967e3e37d0d915ff302779323fcc78eae9fd9ec7e834e8652dbc62a93aa",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Bộ kỹ năng viết, thẩm định (review) và chuyển đổi mã Rust chuẩn mực (idiomatic Rust) cho coding agent: tổng hợp từ Google Rust Style Guide, Rust API Guidelines, Effective Rust, Rust Design Patterns và hướng dẫn của Microsoft. Bao gồm tư duy thiết kế Result/Option thay vì panic, quản lý quyền sở hữu (ownership/lifetimes), tránh phân bổ bộ nhớ thừa, cấu hình Clippy thực chiến và quy trình chuyển đổi mã từ C/C++/Python/Go sang Rust có đối soát test.",
+    "aliases": [
+      "Lập trình Rust",
+      "Đánh giá mã Rust"
+    ],
+    "keywords": [
+      "beautiful",
+      "rust",
+      "Lập trình Rust",
+      "Đánh giá mã Rust"
+    ],
+    "examples": [
+      "Dùng beautiful-rust cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "90152967e3e37d0d915ff302779323fcc78eae9fd9ec7e834e8652dbc62a93aa"
+  },
+  "requiredCapabilities": [],
+  "permissions": [],
+  "syncedAt": "2026-11-13T09:14:21.544Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "Legacy English wrapper has not been matched to upstream source.",
+      "No standalone upstream license evidence retained; verify redistribution terms before activation."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "No compatible upstream SKILL.md with the curated English name; legacy English wrapper retained.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

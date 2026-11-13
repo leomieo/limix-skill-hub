@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "name": "stageshow",
+  "version": "299140fafd08",
+  "source": {
+    "url": "https://github.com/benjitaylor/skills",
+    "commit": "299140fafd08df55a9c234e610c3f64af3f45531",
+    "sha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
+    "license": "MIT (stageshow/LICENSE trong repo)"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Skill build UI sản phẩm giả (\"faux product UI\") trông như sản phẩm thật — ảnh tĩnh, feature card, demo con trỏ, bento grid — viết bằng React + CSS thuần. Cửa sổ app/trình duyệt, dashboard, điện thoại, thông báo, terminal, bento grid, walkthrough con trỏ, được đóng khung/cắt/phối đúng kiểu một trang marketing, feature card hoặc docs hero cần. Dùng khi người dùng muốn UI giả/mock, demo sản phẩm, animation walkthrough, hero hoặc feature-card minh họa app, product shot kiểu trang marketing, hay con trỏ chuột hoạt động trong giao diện — kể cả khi họ không nói chữ \"faux UI\". Kèm kit React (Stage/Window/Phone/Act...) + 40 gold example làm chuẩn chất lượng và script film tự kiểm tra.",
+    "aliases": [
+      "Minh họa sản phẩm",
+      "Ảnh giới thiệu sản phẩm"
+    ],
+    "keywords": [
+      "stageshow",
+      "Minh họa sản phẩm",
+      "Ảnh giới thiệu sản phẩm"
+    ],
+    "examples": [
+      "Dùng stageshow cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write"
+  ],
+  "syncedAt": "2026-11-13T09:22:43.610Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "assets/app-icons.ts: base64-blob (medium)",
+      "examples/wikipedia/fuji.jpg: binary-file (low)",
+      "examples/wikipedia/kawaguchiko.jpg: binary-file (low)",
+      "No standalone upstream license evidence retained; verify redistribution terms before activation.",
+      "Incomplete upstream bundle: inspect excluded files before approving compatibility or activation."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "176 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

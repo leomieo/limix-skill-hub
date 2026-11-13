@@ -4,5 +4,12 @@
   "createdAt": "2026-11-01T05:35:12Z",
   "pushedAt": "2026-11-13T07:38:10Z",
   "statsCheckedAt": "2026-11-13",
-  "license": "MIT"
+  "license": "MIT",
+  "commit": "9175bde8449cc8f5390d6eb72ecc2e1f5bfe21f3",
+  "path": "skills/stack-diagram",
+  "language": "hybrid",
+  "version": "9175bde8449c",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-13T09:22:43.610Z"
 }

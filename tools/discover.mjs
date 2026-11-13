@@ -5,12 +5,13 @@
 //   GITHUB_TOKEN=... node tools/discover.mjs [--root <dir>] [--dry]
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { parseSkillMd, isSkillName } from "../lib/skill-md.mjs";
 import { scanSkill } from "../lib/security.mjs";
 
 const args = process.argv.slice(2);
 const flag = (name) => args.indexOf(name);
-const root = flag("--root") >= 0 ? path.resolve(args[flag("--root") + 1]) : path.resolve(new URL("..", import.meta.url).pathname);
+const root = flag("--root") >= 0 ? path.resolve(args[flag("--root") + 1]) : fileURLToPath(new URL("..", import.meta.url));
 const dry = flag("--dry") >= 0;
 const token = process.env.GITHUB_TOKEN ?? "";
 
@@ -79,6 +80,9 @@ async function processRepo(repo) {
     const parsed = parseSkillMd(text);
     if ("error" in parsed || !isSkillName(parsed.name)) { stats.rejected += 1; continue; }
     const id = parsed.name;
+    // Hybrid updates must use the migration/review pipeline, which retains snapshots and the Vietnamese layer.
+    const hybrid = await readJson(path.join(root, 'skills', id, 'manifest.json'), null);
+    if (hybrid) { console.log(`Hybrid update requires curation: ${id} at ${sha}`); continue; }
     const files = [];
     for (const n of blobs.slice(0, 200)) {
       const rel = n.path.slice(prefix.length);

@@ -1,0 +1,26 @@
+{
+  "repository": "Jakeschincariol/day-trader-skill",
+  "commit": "3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd",
+  "path": "trader-scanner",
+  "verified": true,
+  "coreSha256": "8db022339f3ddd3a5f0574152040d154c484ef4c56f5dbc4a4d6c5768b8c92f7",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "8db022339f3ddd3a5f0574152040d154c484ef4c56f5dbc4a4d6c5768b8c92f7",
+      "executable": false
+    },
+    {
+      "path": "scan.py",
+      "sha256": "2cc0d99a4f21d2b8a28b6917d527ca17e3a71dea0951365d5f82c6b5afcac913",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "857c8d5276809c8196b3cd7cb3300324768bfc562b2b6281b06d6865058e186c",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/day-trader-skill"
+}
