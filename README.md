@@ -1,88 +1,28 @@
 # Limix Skill Hub
 
-Kho kỹ năng (skill) trung tâm cho Limix Bot: tìm, quét an toàn, chấm điểm, cách ly, việt hóa và phát hành danh mục để ứng dụng tự đồng bộ.
+Kho Skills cho Limix Bot theo mô hình **English Core + Vietnamese Layer + Bilingual Discovery**.
 
-## Cấu trúc
-- `skills/<id>/` skill đã qua quét (chưa hẳn đã duyệt: xem `approval_status` trong `registry/catalog.json`)
-- `quarantine/<id>/` skill có mã nguy hiểm, **không bao giờ cài được**
-- `registry/catalog.json`, `versions.json`, `checksums.json` danh mục, các phiên bản và SHA-256 từng skill
-- `discovery/sources.json` nguồn tìm kiếm (topic, repo, user), giới hạn mỗi lần chạy
-- `lib/` quét bảo mật, phân loại (skill thuần / skill kèm tool / gói MCP), chấm điểm
-- `tools/discover.mjs` tìm hằng ngày; `tools/build-catalog.mjs` dựng lại danh mục
-- `.github/workflows/daily-discovery.yml` chạy 03:00 giờ Việt Nam (20:00 UTC)
+Xem toàn bộ kho tại [skills/](skills/) hoặc [danh mục đầy đủ](registry/catalog.json).
 
-## Quy tắc
-- Không bao giờ chạy mã tải về. Hub chỉ đọc file dưới dạng văn bản và băm SHA-256.
-- Mỗi skill được ghim vào một commit nguồn; ứng dụng kiểm tra lại checksum trước khi cài.
-- Skill kèm script/MCP luôn ở trạng thái `review-required`; tool không tự cài, chủ bot bật tay.
-- Không có giấy phép: tối đa 79 điểm, cần chủ bot xem xét.
-- Điểm 100: 25 chức năng và tài liệu, 25 bảo mật, 20 tương thích, 15 chạy thử thật, 10 bảo trì và nguồn gốc, 5 bản dịch.
-  Từ 90 xuất sắc, 80-89 khuyên dùng, 65-79 cần xem xét, dưới 65 từ chối.
-- `_hub.json` (nguồn) và `_hub.review.json` (bot quản lý: bản dịch `description_vi`, điểm chạy thử, `approval`) nằm trong từng thư mục skill và không được cài vào máy.
+## 10 skill/tool mới thêm
 
-## Hybrid Skills — lõi gốc và lớp tiếng Việt
+Sắp theo thứ tự thêm vào kho, mới nhất trước; cột “Ngày tạo” là ngày tạo repo nguồn. Sao dùng badge GitHub tự cập nhật.
 
-Mỗi thư mục `skills/<id>/` dùng `SKILL.md` gốc làm entrypoint kỹ thuật, `manifest.json` cho nguồn/commit/hash/trạng thái và metadata tìm kiếm song ngữ, `references/guide.vi.md` cho người dùng Việt Nam. Script và tài liệu nguồn được giữ nguyên byte theo danh sách `_hub.source.json`. Không tạo thêm bản dịch đầy đủ của core. Các tên thư mục cũ có thể đổi về `name` tiếng Anh gốc; xem `legacyId` trong `_hub.json`.
+| Skill/tool | Nguồn | Sao | Ngày tạo | Mô tả ngắn |
+|---|---|---:|---|---|
+| [ffmpeg-cli](skills/ffmpeg-cli/SKILL.md) | [FFmpeg/FFmpeg](https://github.com/FFmpeg/FFmpeg) | ![Sao](https://img.shields.io/github/stars/FFmpeg/FFmpeg?style=social) | 2011-04-14 | Xử lý audio/video; adapter của kho, chờ duyệt. |
+| [threejs-development](skills/threejs-development/SKILL.md) | [mrdoob/three.js](https://github.com/mrdoob/three.js) | ![Sao](https://img.shields.io/github/stars/mrdoob/three.js?style=social) | 2010-03-23 | Lập trình 3D trình duyệt; adapter của kho, chờ duyệt. |
+| [remotion-integration](skills/remotion-integration/SKILL.md) | [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | ![Sao](https://img.shields.io/github/stars/remotion-dev/remotion?style=social) | 2020-06-23 | Mục tham chiếu; chờ xem xét quyền phân phối skill. |
+| [hyperframes](skills/hyperframes/SKILL.md) | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | ![Sao](https://img.shields.io/github/stars/heygen-com/hyperframes?style=social) | 2026-03-10 | Core chính thức; cách ly để duyệt telemetry và phụ thuộc. |
+| [stickman-video-director](skills/stickman-video-director/SKILL.md) | [kaomei/stickman-video-director](https://github.com/kaomei/stickman-video-director) | ![Sao](https://img.shields.io/github/stars/kaomei/stickman-video-director?style=social) | 2026-08-03 | Đạo diễn video hoạt hình người que. |
+| [claude-guardian](skills/claude-guardian/SKILL.md) | [DUNHKpcc/Claude-Guardian](https://github.com/DUNHKpcc/Claude-Guardian) | ![Sao](https://img.shields.io/github/stars/DUNHKpcc/Claude-Guardian?style=social) | 2026-10-15 | Bảo vệ môi trường hoạt động của agent. |
+| [grandet-api-price-finder](skills/grandet-api-price-finder/SKILL.md) | [hanzohanzhe/Grandet](https://github.com/hanzohanzhe/Grandet) | ![Sao](https://img.shields.io/github/stars/hanzohanzhe/Grandet?style=social) | 2026-10-05 | Tìm và so sánh giá API mô hình AI. |
+| [motionmaxxing](skills/motionmaxxing/SKILL.md) | [Tejashmakwana/motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing) | ![Sao](https://img.shields.io/github/stars/Tejashmakwana/motionmaxxing?style=social) | 2026-10-06 | Thiết kế và thẩm định motion graphics. |
+| [reanimate](skills/reanimate/SKILL.md) | [NiazMorshed2007/reanimate](https://github.com/NiazMorshed2007/reanimate) | ![Sao](https://img.shields.io/github/stars/NiazMorshed2007/reanimate?style=social) | 2026-10-29 | Phân tích và tái tạo chuyển động giao diện. |
+| [arena](skills/arena/SKILL.md) | [Jakeschincariol/arena-skill](https://github.com/Jakeschincariol/arena-skill) | ![Sao](https://img.shields.io/github/stars/Jakeschincariol/arena-skill?style=social) | 2026-09-27 | Phản biện nhiều chiến lược bằng tournament. |
 
-Khi tìm kiếm, chỉ cần metadata ngắn; khi chọn mới đọc `SKILL.md`; reference chỉ đọc theo nhu cầu. Việc đổi ngôn ngữ hiển thị không đổi core hay script. Kho cung cấp tài liệu và metadata; không tự thay đổi bộ nạp context hoặc sandbox của ứng dụng Limix Bot.
+## Sử dụng
 
-**Trạng thái kiểm chứng:** `originalCoreVerified: true` chỉ xác nhận byte đã đối chiếu commit nguồn. Mục chưa khớp nguồn được giữ dưới dạng bản tiếng Anh cũ (có thể thêm frontmatter chuẩn cho extract chưa có), đánh dấu `quarantined` và `incompatible`; không phải bản gốc đã xác minh. Gói thiếu file do giới hạn dung lượng/số file được đánh dấu `incompatible`. Mọi script đều chưa được thực thi; `review-required` không đồng nghĩa đã an toàn hoặc sẵn sàng chạy. Cần kiểm tra license từng nguồn trước khi sử dụng/phân phối tiếp.
+Core và script giữ tiếng Anh; hướng dẫn Việt nằm riêng trong từng mục. Xem trạng thái và quyền trong manifest trước khi dùng; thêm vào kho không có nghĩa đã được duyệt hoặc chạy thử.
 
-Hướng dẫn bảo trì: [docs/hybrid-maintenance.md](docs/hybrid-maintenance.md). Báo cáo kiểm chứng: [migration-reports/hybrid-verification.json](migration-reports/hybrid-verification.json). Cột **Sao** dùng badge động GitHub; metadata lưu số liệu của lần đo gần nhất, không phải benchmark của model.
-
-| Skill | Nguồn | Sao | Tạo | Chạy | Phù hợp Limix Bot |
-|---|---|---:|---|---|---|
-| [anatomy](skills/anatomy/SKILL.md) | [wheresryan22/anatomy](https://github.com/wheresryan22/anatomy) | ![](https://img.shields.io/github/stars/wheresryan22/anatomy?style=social) | 2026-10-08 | 2026-11-12 (lần 1/30) | Minh họa kỹ thuật tương tác cho explainer/docs |
-| [unslop](skills/unslop/SKILL.md) | [heydamir/unslop](https://github.com/heydamir/unslop) | ![](https://img.shields.io/github/stars/heydamir/unslop?style=social) | 2026-10-29 | 2026-11-12 (lần 1/30) | Duyệt thẩm mỹ UI do agent tự dựng |
-| [geo-sleuth](skills/geo-sleuth/SKILL.md) | [Oldcircle/geo-sleuth](https://github.com/Oldcircle/geo-sleuth) | ![](https://img.shields.io/github/stars/Oldcircle/geo-sleuth?style=social) | 2026-09-18 | 2026-11-12 (lần 1/30) | Xác minh nơi chụp ảnh (dùng có điều kiện) |
-| [answer-me-with-html](skills/answer-me-with-html/SKILL.md) | [QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | ![](https://img.shields.io/github/stars/QingYunA/answer-me-with-html?style=social) | 2026-10-02 | 2026-11-12 (lần 1/30) | Báo cáo/giải thích dạng trang HTML |
-| [stack-diagram](skills/stack-diagram/SKILL.md) | [caru-ini/stack-diagram](https://github.com/caru-ini/stack-diagram) | ![](https://img.shields.io/github/stars/caru-ini/stack-diagram?style=social) | 2026-11-01 | 2026-11-12 (lần 1/30) | Sơ đồ kiến trúc có logo chính hãng |
-| [universal-modder](skills/mod-any-game/SKILL.md) | [rehan-remade/universal-modder](https://github.com/rehan-remade/universal-modder) | ![](https://img.shields.io/github/stars/rehan-remade/universal-modder?style=social) | 2026-09-30 | 2026-11-12 (lần 2/30) | Mod game PC bằng agent (13 skill + CLI `um`) |
-| [replica-skill](skills/replica-recon/SKILL.md) | [Jakeschincariol/replica-skill](https://github.com/Jakeschincariol/replica-skill) | ![](https://img.shields.io/github/stars/Jakeschincariol/replica-skill?style=social) | 2026-10-03 | 2026-11-12 (lần 2/30) | Clone sạch (clean-room) một app, từ recon đến deploy |
-| [pixelfx](skills/pixelfx/SKILL.md) | [patch-gg/pixelfx](https://github.com/patch-gg/pixelfx) | ![](https://img.shields.io/github/stars/patch-gg/pixelfx?style=social) | 2026-10-30 | 2026-11-12 (lần 2/30) | 244 hiệu ứng pixel art bằng code, xuất sprite sheet |
-| [janestreet-agent-skills](skills/janestreet-agent-skills/SKILL.md) | [janestreet/agent_skills](https://github.com/janestreet/agent_skills) | ![](https://img.shields.io/github/stars/janestreet/agent_skills?style=social) | 2026-11-03 | 2026-11-12 (lần 2/30) | Gia sư Socratic có cấu trúc (skill chính thức Jane Street) |
-| [logo-design-skill](skills/logo-design-skill/SKILL.md) | [kaankiziltug/logo-design-skill](https://github.com/kaankiziltug/logo-design-skill) | ![](https://img.shields.io/github/stars/kaankiziltug/logo-design-skill?style=social) | 2026-09-26 | 2026-11-12 (lần 2/30) | Thiết kế logo/brand có checkpoint + thư viện 1.400+ SVG |
-| [day-trader-skill](skills/trader-scanner/SKILL.md) | [Jakeschincariol/day-trader-skill](https://github.com/Jakeschincariol/day-trader-skill) | ![](https://img.shields.io/github/stars/Jakeschincariol/day-trader-skill?style=social) | 2026-10-20 | 2026-11-12 (lần 3/30) | Day-trading có kỷ luật rủi ro (broker mặc định paper, chờ duyệt) |
-| [ffmpeg-skill](skills/ffmpeg-skill/SKILL.md) | [kajisho5/ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill) | ![](https://img.shields.io/github/stars/kajisho5/ffmpeg-skill?style=social) | 2026-09-03 | 2026-11-12 (lần 3/30) | Dựng video cục bộ: 42 tool ffmpeg + self-check |
-| [tstack](skills/full-send/SKILL.md) | [t3dotgg/tstack](https://github.com/t3dotgg/tstack) | ![](https://img.shields.io/github/stars/t3dotgg/tstack?style=social) | 2026-10-24 | 2026-11-12 (lần 3/30) | Quy trình PR hằng ngày: council review, file-pr, babysit |
-| [teardown](skills/teardown/SKILL.md) | [elvarofficial/teardown](https://github.com/elvarofficial/teardown) | ![](https://img.shields.io/github/stars/elvarofficial/teardown?style=social) | 2026-10-30 | 2026-11-12 (lần 3/30) | Mô phỏng 3D tháo-rời của cỗ máy, explainer có số thật |
-| [oil-ui](skills/oil-ui/SKILL.md) | [oil-oil/oil-ui](https://github.com/oil-oil/oil-ui) | ![](https://img.shields.io/github/stars/oil-oil/oil-ui?style=social) | 2026-09-30 | 2026-11-12 (lần 3/30) | UI/UX cho sản phẩm: preview duyệt trước, kiểm tra screenshot |
-| [instagram-agent-skill](skills/instagram-agent-skill/SKILL.md) | [Jakeschincariol/instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill) | ![](https://img.shields.io/github/stars/Jakeschincariol/instagram-agent-skill?style=social) | 2026-09-13 | 2026-11-12 (lần 4/30) | 13 skill điều hành Instagram: hook chấm điểm, caption linter, humanizer |
-| [anything2explainer](skills/anything2explainer/SKILL.md) | [Vincentwei1021/anything2explainer](https://github.com/Vincentwei1021/anything2explainer) | ![](https://img.shields.io/github/stars/Vincentwei1021/anything2explainer?style=social) | 2026-09-08 | 2026-11-12 (lần 4/30) | Chủ đề → video explainer có thuyết minh, mọi frame vẽ bằng code (phi thương mại) |
-| [stageshow](skills/stageshow/SKILL.md) | [benjitaylor/skills](https://github.com/benjitaylor/skills) | ![](https://img.shields.io/github/stars/benjitaylor/skills?style=social) | 2026-10-26 | 2026-11-12 (lần 4/30) | Faux product UI marketing-grade: kit React + 40 gold example + gate tự kiểm |
-| [claude-animated-shorts](skills/cartoon-3d-short/SKILL.md) | [mromidev/claude-animated-shorts](https://github.com/mromidev/claude-animated-shorts) | ![](https://img.shields.io/github/stars/mromidev/claude-animated-shorts?style=social) | 2026-11-01 | 2026-11-12 (lần 4/30) | Short hoạt hình 2D/3D dọc 55-70s: three.js + Remotion, look đã đo bằng số |
-| [golive](skills/golive/SKILL.md) | [mikehasa/golive-skill](https://github.com/mikehasa/golive-skill) | ![](https://img.shields.io/github/stars/mikehasa/golive-skill?style=social) | 2026-09-23 | 2026-11-12 (lần 4/30) | App agent-built lên production: plan duyệt trước, verify, teardown |
-| [rea-video](skills/rea-video/SKILL.md) | [JuneYaooo/rea-video](https://github.com/JuneYaooo/rea-video) | ![](https://img.shields.io/github/stars/JuneYaooo/rea-video?style=social) | 2026-10-29 | 2026-11-12 (lần 5/30) | Bóc tách video từng khung hình (thực tế, AI, 3D, âm thanh, phụ đề) để tái hiện |
-| [huashu-art-motion](skills/huashu-art-motion/SKILL.md) | [alchaincyf/huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion) | ![](https://img.shields.io/github/stars/alchaincyf/huashu-art-motion?style=social) | 2026-10-06 | 2026-11-12 (lần 5/30) | Hoạt họa nghệ thuật bằng code: 36 phong cách, 9 cú pháp chuyển động, chặn AI slop |
-| [agent-autoloop](skills/agent-autoloop/SKILL.md) | [KKKKhazix/agent-autoloop](https://github.com/KKKKhazix/agent-autoloop) | ![](https://img.shields.io/github/stars/KKKKhazix/agent-autoloop?style=social) | 2026-11-03 | 2026-11-12 (lần 5/30) | Trung tâm tự động hóa Agent: chạy tác vụ ngầm, đẩy card xin duyệt khi cần |
-| [earshot](skills/earshot/SKILL.md) | [Leonxlnx/earshot](https://github.com/Leonxlnx/earshot) | ![](https://img.shields.io/github/stars/Leonxlnx/earshot?style=social) | 2026-10-15 | 2026-11-12 (lần 5/30) | "Đôi tai" cho coding agent: thẩm định âm thanh, LUFS, phổ tần và đồng bộ video |
-| [api-anything](skills/api-anything/SKILL.md) | [goodnight000/api-anything](https://github.com/goodnight000/api-anything) | ![](https://img.shields.io/github/stars/goodnight000/api-anything?style=social) | 2026-09-27 | 2026-11-12 (lần 5/30) | Biến website thành API cho agent: tự học request ngầm, lấy JSON thay vì cào HTML |
-| [lemo-opuscar](skills/lemo-opuscar/SKILL.md) | [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar) | ![](https://img.shields.io/github/stars/lemomo-ai/lemo-opuscar?style=social) | 2026-09-26 | 2026-11-13 (lần 6/30) | 99 phong cách phim ngắn bằng code (Three.js, Canvas) |
-| [youtube-agent-skill](skills/youtube-agent-skill/SKILL.md) | [Jakeschincariol/youtube-agent-skill](https://github.com/Jakeschincariol/youtube-agent-skill) | ![](https://img.shields.io/github/stars/Jakeschincariol/youtube-agent-skill?style=social) | 2026-09-16 | 2026-11-13 (lần 6/30) | Quản trị kênh YouTube: 21 hook scored, EDL, linter bìa |
-| [founder-skill](skills/founder-skill/SKILL.md) | [Jakeschincariol/founder-skill](https://github.com/Jakeschincariol/founder-skill) | ![](https://img.shields.io/github/stars/Jakeschincariol/founder-skill?style=social) | 2026-10-07 | 2026-11-13 (lần 6/30) | Kiểm định kinh doanh: hội đồng Hormozi/Thiel/Jobs, 100 khách ảo, CFO |
-| [digital-human-koubo](skills/digital-human-koubo/SKILL.md) | [andyhuo520/digital-human-koubo](https://github.com/andyhuo520/digital-human-koubo) | ![](https://img.shields.io/github/stars/andyhuo520/digital-human-koubo?style=social) | 2026-10-26 | 2026-11-13 (lần 6/30) | Video người ảo nói chuyện từ ảnh chân dung: 48 linh kiện đồ họa |
-| [beautiful-rust](skills/beautiful-rust/SKILL.md) | [morganlinton/BeautifulRust](https://github.com/morganlinton/BeautifulRust) | ![](https://img.shields.io/github/stars/morganlinton/BeautifulRust?style=social) | 2026-10-23 | 2026-11-13 (lần 6/30) | Lập trình Rust chuẩn mực: Google/Microsoft style guide, Clippy |
-| [elephant-goldfish-model](skills/egm-draft/SKILL.md) | [google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) | ![](https://img.shields.io/github/stars/google/elephant-goldfish-model?style=social) | 2026-09-13 | 2026-11-13 (lần 7/30) | Mô hình thiết kế & phản biện phần mềm đa tác tử của Google (Elephant nhớ ngữ cảnh, Goldfish review khách quan) |
-| [linkedin-agent-skill](skills/li-post/SKILL.md) | [Jakeschincariol/linkedin-agent-skill](https://github.com/Jakeschincariol/linkedin-agent-skill) | ![](https://img.shields.io/github/stars/Jakeschincariol/linkedin-agent-skill?style=social) | 2026-09-07 | 2026-11-13 (lần 7/30) | Bộ 11 kỹ năng điều hành LinkedIn: 21 công thức hook, linter khử AI slop, chấm điểm trang cá nhân |
-| [ex-ussr-kinship-research](skills/ex-ussr-kinship-research/SKILL.md) | [DenisSergeevitch/ex-ussr-kinship-research](https://github.com/DenisSergeevitch/ex-ussr-kinship-research) | ![](https://img.shields.io/github/stars/DenisSergeevitch/ex-ussr-kinship-research?style=social) | 2026-10-25 | 2026-11-13 (lần 7/30) | Kỹ năng nghiên cứu phả hệ & hồ sơ lưu trữ lịch sử theo chuỗi chứng cứ độc lập có thể tái lập |
-| [bang-motion](skills/bang-motion/SKILL.md) | [bangtutorial/bang-motion](https://github.com/bangtutorial/bang-motion) | ![](https://img.shields.io/github/stars/bangtutorial/bang-motion?style=social) | 2026-09-05 | 2026-11-13 (lần 7/30) | Thiết kế motion graphic & video quảng cáo bằng HTML/CSS/GSAP trên trình duyệt, không giật cục như PowerPoint |
-| [motionsites-web-builder](skills/motionsites-web-builder/SKILL.md) | [Motionsites-AI/claude-skill](https://github.com/Motionsites-AI/claude-skill) | ![](https://img.shields.io/github/stars/Motionsites-AI/claude-skill?style=social) | 2026-10-26 | 2026-11-13 (lần 7/30) | Xây dựng website & landing page chuẩn giải thưởng (Awwwards-level) với thư viện media điện ảnh và vòng lặp look-and-fix |
-| [arena](skills/arena/SKILL.md) | [Jakeschincariol/arena-skill](https://github.com/Jakeschincariol/arena-skill) | ![](https://img.shields.io/github/stars/Jakeschincariol/arena-skill?style=social) | 2026-09-27 | 2026-11-13 (lần 8/30) | Đấu trường sinh tồn đa tác tử (100 agents, tournament bracket) phản biện chéo và tìm lời giải tối ưu |
-| [reanimate](skills/reanimate/SKILL.md) | [NiazMorshed2007/reanimate](https://github.com/NiazMorshed2007/reanimate) | ![](https://img.shields.io/github/stars/NiazMorshed2007/reanimate?style=social) | 2026-10-29 | 2026-11-13 (lần 8/30) | Dịch ngược và tái lập chuyển động UI/WebGL/3D từng khung hình từ video/web mẫu với kiểm định sai số tự động |
-| [motionmaxxing](skills/motionmaxxing/SKILL.md) | [Tejashmakwana/motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing) | ![](https://img.shields.io/github/stars/Tejashmakwana/motionmaxxing?style=social) | 2026-10-06 | 2026-11-13 (lần 8/30) | Đạo diễn motion graphics chuẩn Senior Designer: khử sạch AI slop, 53 đường cong chuyển động thực nghiệm |
-| [grandet-api-price-finder](skills/grandet-api-price-finder/SKILL.md) | [hanzohanzhe/Grandet](https://github.com/hanzohanzhe/Grandet) | ![](https://img.shields.io/github/stars/hanzohanzhe/Grandet?style=social) | 2026-10-05 | 2026-11-13 (lần 8/30) | So sánh giá API và credit miễn phí theo thời gian thực từ hơn 1.800 nhà cung cấp và cổng chuyển tiếp LLM |
-| [claude-guardian](skills/claude-guardian/SKILL.md) | [DUNHKpcc/Claude-Guardian](https://github.com/DUNHKpcc/Claude-Guardian) | ![](https://img.shields.io/github/stars/DUNHKpcc/Claude-Guardian?style=social) | 2026-10-15 | 2026-11-13 (lần 8/30) | Vệ sĩ bảo vệ tài khoản và đường truyền mạng cho Agent: cô lập rủi ro IP/DNS/TUN, phân quyền 3 tầng A/B/C |
-| [stickman-video-director](skills/stickman-video-director/SKILL.md) | [kaomei/stickman-video-director](https://github.com/kaomei/stickman-video-director) | ![](https://img.shields.io/github/stars/kaomei/stickman-video-director?style=social) | 2026-08-03 | 2026-11-13 (theo yêu cầu) | Đạo diễn video hoạt hình người que đa phong cách: chế độ Đạo diễn lập kịch bản 5 pha & prompt AI, chế độ Tự hành render trực tiếp |
-
-## Video và 3D — bổ sung theo yêu cầu 13/11/2026
-
-Các mục do Hub biên soạn được ghi rõ nguồn gốc; không được coi là skill chính thức của upstream. Không có binary, runtime hoặc dịch vụ trả phí nào được cài/kích hoạt. Xem [báo cáo nhập](docs/video-tools-import-2026-11-13.md).
-
-| Mục | Nguồn | Loại nội dung | Trạng thái |
-|---|---|---|---|
-| [hyperframes](skills/hyperframes/SKILL.md) | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Core skill chính thức, 81 file nguồn nguyên byte; hướng dẫn Việt riêng | Cách ly: cần xem telemetry và skill bổ trợ |
-| [remotion-integration](skills/remotion-integration/SKILL.md) | [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | Mục tham chiếu tới skill chính thức; chưa sao chép bộ skill vì chờ xác minh quyền phân phối | Cách ly: chờ xem xét giấy phép |
-| [threejs-development](skills/threejs-development/SKILL.md) | [mrdoob/three.js](https://github.com/mrdoob/three.js) | Adapter do Hub biên soạn; README/license/metadata gốc nguyên byte | Chờ duyệt; chưa chạy trình duyệt 3D |
-| [ffmpeg-cli](skills/ffmpeg-cli/SKILL.md) | [FFmpeg/FFmpeg](https://github.com/FFmpeg/FFmpeg) | Adapter do Hub biên soạn; tài liệu CLI/license gốc nguyên byte | Chờ duyệt; chưa cài hoặc chạy FFmpeg |
-
-`ffmpeg-cli` dùng nguồn FFmpeg chính thức; `ffmpeg-skill` đã có vẫn thuộc repo bên thứ ba riêng. Không đổi nguồn hoặc giả lập lại tên skill cũ.
+[Hướng dẫn bảo trì](docs/hybrid-maintenance.md) · [Kiểm chứng](migration-reports/hybrid-verification.json)
