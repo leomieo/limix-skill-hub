@@ -32,7 +32,21 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "bcbd9e173d7d277a09dfd904e8bd60ad503fb5bc2e4e048f86243e9466d6312e"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "image-generation [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "powershell [mention-hint]",
+    "python [mention-hint]",
+    "reload [reference-hint]",
+    "subagents [mention-hint]",
+    "text-to-speech [mention-hint]",
+    "web-search [mention-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

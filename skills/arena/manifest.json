@@ -29,7 +29,14 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "c06f9828566485d5bd6507150f454d6f37d49c2b02e5308b8f744a4a046bdf39"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "arena [reference-hint]",
+    "bash [mention-hint]",
+    "node [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "subagents [mention-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

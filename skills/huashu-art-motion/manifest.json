@@ -31,7 +31,24 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "961b5c245620dda55ddab724e1484cd38b677c6a1cc49057f950101e8f09789b"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "8 [reference-hint]",
+    "Pillow * [installation-command-hint]",
+    "after-effects [mention-hint]",
+    "browser [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "ffprobe [mention-hint]",
+    "image-generation [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "playwright [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]",
+    "requests * [installation-command-hint]",
+    "text-to-speech [mention-hint]",
+    "three [mention-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

@@ -29,7 +29,18 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "19afd7f1841316ddff3f854ea8ead675c738e08b30c41e51a8f1822fa0111947"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "browser [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "image-generation [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "playwright [mention-hint]",
+    "react [mention-hint]",
+    "unslop [reference-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

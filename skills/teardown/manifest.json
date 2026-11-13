@@ -29,7 +29,24 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "9395e463e8ff733c4cadafe8dafeceb72fd462a2a1fc89a58c17d3b756b5929b"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "@fontsource-variable/inter 5.3.0 [declared; dependencies]",
+    "@fontsource/jetbrains-mono 5.3.0 [declared; dependencies]",
+    "browser [mention-hint]",
+    "esbuild 0.28.1 [declared; dependencies]",
+    "ffmpeg [mention-hint]",
+    "ffprobe [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "playwright 1.58.2 [declared; dependencies]",
+    "playwright [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "three 0.186.1 [declared; dependencies]",
+    "three [mention-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

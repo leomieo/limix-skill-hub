@@ -137,7 +137,7 @@ test('catalog exposes English and Vietnamese metadata, fails closed on tampering
   assert.match(skill.description_vi,/Tự động hóa/);
   assert.deepEqual(skill.aliases,['Tự động hóa trình duyệt']);
   assert.equal(skill.approval_status,'review-required');
-  assert.deepEqual(skill.requirements.capabilities, []);
+  assert.ok(skill.requirements.capabilities.some(c=>c.startsWith('node ')));
   assert.deepEqual(skill.requirements.missingPackageFiles, []);
   assert.equal(skill.requirements.environmentStatus, 'not-tested');
   assert.equal(skill.requirements.autoInstall, false);

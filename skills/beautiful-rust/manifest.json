@@ -30,7 +30,11 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "90152967e3e37d0d915ff302779323fcc78eae9fd9ec7e834e8652dbc62a93aa"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "java [mention-hint]",
+    "python [mention-hint]",
+    "rust [mention-hint]"
+  ],
   "permissions": [],
   "syncedAt": "2026-11-13T09:14:21.544Z",
   "security": {

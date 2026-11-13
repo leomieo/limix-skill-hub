@@ -31,7 +31,9 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "ba585e47cd901506b0e2de13025b0e39bc02462c136cf27491ad3efbdfe66020"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "browser [mention-hint]"
+  ],
   "permissions": [],
   "syncedAt": "2026-11-13T09:22:43.610Z",
   "security": {

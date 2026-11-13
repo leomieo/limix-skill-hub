@@ -29,7 +29,23 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "b6a4920dd10817326ebdd7bf4392aa2b7f69158377f589935f2fbe12a06a63f5"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "git [mention-hint]",
+    "neon * [installation-command-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "playwright [mention-hint]",
+    "profile [reference-hint]",
+    "projects [reference-hint]",
+    "react [mention-hint]",
+    "resend-cli * [installation-command-hint]",
+    "vercel * [installation-command-hint]",
+    "vercel latest [installation-command-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

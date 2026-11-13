@@ -30,7 +30,16 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "ee91eddc69cd38d52390499bc1c9dcd651c421bd5c07bbdc01fc41b56ef27b07"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "blender [mention-hint]",
+    "browser [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "python [mention-hint]",
+    "remotion [mention-hint]",
+    "text-to-speech [mention-hint]",
+    "three [mention-hint]"
+  ],
   "permissions": [],
   "syncedAt": "2026-11-13T09:22:43.610Z",
   "security": {

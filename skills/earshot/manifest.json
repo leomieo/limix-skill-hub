@@ -29,7 +29,11 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "57b984a602ae1881cb3cfe58cedf61cc89b5c443c0b315fe5b8767471cb6c1ec"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "ffmpeg [mention-hint]",
+    "powershell [mention-hint]",
+    "python [mention-hint]"
+  ],
   "permissions": [],
   "syncedAt": "2026-11-13T09:14:21.544Z",
   "security": {

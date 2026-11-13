@@ -30,7 +30,25 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "c4782d6002ed2fda3d4dd0acf82a925f7aaf78a11bbb9c6e981763c587cd36de"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "after-effects [mention-hint]",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "ffprobe [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "git [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "puppeteer [mention-hint]",
+    "puppeteer ^25.10.0 [declared; dependencies]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "remotion [mention-hint]",
+    "rust [mention-hint]",
+    "text-to-speech [mention-hint]",
+    "three [mention-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

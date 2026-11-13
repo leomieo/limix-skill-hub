@@ -30,7 +30,14 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "a00520304f9a961d0f56d256646f91682bddf684690f7f519c3bf6947b9e5900"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "@deepseek-ai/dsh next [installation-command-hint]",
+    "@larksuite/cli * [installation-command-hint]",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "node [mention-hint]",
+    "powershell [mention-hint]"
+  ],
   "permissions": [
     "network"
   ],

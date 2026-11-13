@@ -33,11 +33,19 @@
     "sourceSha256": "d476642ed52fe500fce636e16a8a2c7ec5b2a017a344bf124b6d8b06e0c66946"
   },
   "requiredCapabilities": [
-    "node",
-    "react",
-    "remotion-cli",
+    "browser [mention-hint]",
     "chromium-rendering",
-    "media-binaries"
+    "docker [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "ffprobe [mention-hint]",
+    "media-binaries",
+    "node",
+    "node [mention-hint]",
+    "react",
+    "react [mention-hint]",
+    "remotion [mention-hint]",
+    "remotion-cli",
+    "three [mention-hint]"
   ],
   "permissions": [
     "filesystem-read",

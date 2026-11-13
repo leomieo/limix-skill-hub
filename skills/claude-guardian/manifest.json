@@ -30,7 +30,25 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "0e98327c2ff1326d3ca2a493403b56d38e155a160b1732e80c99e344554a4246"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "@anthropic-ai/claude-code * [installation-command-hint]",
+    "bash [file-type-hint]",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "configs [reference-hint]",
+    "docker [mention-hint]",
+    "git [mention-hint]",
+    "login [reference-hint]",
+    "logout [reference-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "powershell [file-type-hint]",
+    "powershell [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "tmp [reference-hint]",
+    "usage [reference-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

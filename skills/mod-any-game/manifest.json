@@ -32,7 +32,21 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "6917f5983b8c99950f41012a2c225d2f8d3617664a6c79a914677c631afe0eaa"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "arsenal [reference-hint]",
+    "bash [mention-hint]",
+    "blender [mention-hint]",
+    "browser [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "ghidra [mention-hint]",
+    "java [mention-hint]",
+    "node [mention-hint]",
+    "powershell [mention-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]",
+    "rust [mention-hint]",
+    "zenkit * [installation-command-hint]"
+  ],
   "permissions": [
     "network"
   ],

@@ -32,7 +32,17 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "eaf19cd9d5dd08052e017f1025da7862fa49f8cc888c01d626aa03de1f0c0c98"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "Rotate [reference-hint]",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "git [mention-hint]",
+    "node [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "web-search [mention-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

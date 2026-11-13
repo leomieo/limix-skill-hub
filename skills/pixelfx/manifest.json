@@ -29,7 +29,16 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "b8210917cf4218fbc7d64a07ec4eed4b7888981df3a0224a4681f3547e0f09c5"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "@patchgg/cli * [installation-command-hint]",
+    "browser [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "git [mention-hint]",
+    "node [mention-hint]",
+    "powershell [mention-hint]",
+    "three [mention-hint]"
+  ],
   "permissions": [
     "network"
   ],

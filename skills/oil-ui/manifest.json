@@ -30,7 +30,25 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "ad6b97b768384b43d2a12cfbb431db0a70572466bb44256249365419d09eed91"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "bash [file-type-hint]",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "ffprobe [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "git [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "playwright [mention-hint]",
+    "powershell [mention-hint]",
+    "puppeteer [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]",
+    "three [mention-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

@@ -29,7 +29,16 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "9af29da87f816f4ca637e076909e94fce670ac964535bd9da03c3ad128bd4791"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "node [mention-hint]",
+    "playwright [mention-hint]",
+    "react [mention-hint]",
+    "three [mention-hint]"
+  ],
   "permissions": [
     "network"
   ],

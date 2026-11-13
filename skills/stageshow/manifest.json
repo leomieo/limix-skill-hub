@@ -29,7 +29,13 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "browser [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "react [mention-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

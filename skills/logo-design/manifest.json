@@ -30,7 +30,20 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "65ec4bd58732e8cc11e244724e8666de78764b973f6d3b03b233904639cf47c6"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "blender [mention-hint]",
+    "browser [mention-hint]",
+    "docker [mention-hint]",
+    "java [mention-hint]",
+    "node [mention-hint]",
+    "playwright [mention-hint]",
+    "puppeteer [mention-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]",
+    "rust [mention-hint]",
+    "three [mention-hint]"
+  ],
   "permissions": [],
   "syncedAt": "2026-11-13T09:22:43.610Z",
   "security": {

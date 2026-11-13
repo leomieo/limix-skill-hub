@@ -32,7 +32,10 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "0b0f8123b272b81aca017ea287d5360a5586b27413cd6ff4fa3db5bef4d9b583"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "ffmpeg [mention-hint]",
+    "ffprobe [mention-hint]"
+  ],
   "permissions": [
     "filesystem-read",
     "filesystem-write",

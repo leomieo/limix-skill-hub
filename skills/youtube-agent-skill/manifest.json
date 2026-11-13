@@ -31,7 +31,21 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "ed487ba4b1fb2e166f8d2f42a9bdc64a65ded11a73cf4885f9af2941c33887fc"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "python [mention-hint]",
+    "yt-audit [reference-hint]",
+    "yt-chapters [reference-hint]",
+    "yt-comment [reference-hint]",
+    "yt-edit [reference-hint]",
+    "yt-package [reference-hint]",
+    "yt-plan [reference-hint]",
+    "yt-retention [reference-hint]",
+    "yt-script [reference-hint]",
+    "yt-seo [reference-hint]",
+    "yt-shorts [reference-hint]",
+    "yt-viral [reference-hint]"
+  ],
   "permissions": [],
   "syncedAt": "2026-11-13T09:22:43.610Z",
   "security": {

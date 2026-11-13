@@ -32,7 +32,20 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "411dea3094044355c5023a7c97e178a0bd815051793f0e2cb3c6674999aeb34b"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "blender [mention-hint]",
+    "browser [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "ffprobe [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]",
+    "remotion [mention-hint]",
+    "subagents [mention-hint]",
+    "three [mention-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

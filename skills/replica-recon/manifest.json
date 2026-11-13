@@ -31,7 +31,12 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "b1fd6a60cf0bcd481f6828453da24b9d9f0935ec6e883741e5f620259f13ff40"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "browser [mention-hint]",
+    "playwright [mention-hint]",
+    "python [mention-hint]",
+    "replica-architect [reference-hint]"
+  ],
   "permissions": [],
   "syncedAt": "2026-11-13T09:22:43.610Z",
   "security": {

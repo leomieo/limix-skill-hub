@@ -8,6 +8,7 @@ import { parseSkillMd, isSkillName } from "../lib/skill-md.mjs";
 import { readSkillDir, folderChecksum } from "../lib/pack.mjs";
 import { scanSkill } from "../lib/security.mjs";
 import { classifySkill } from "../lib/classify.mjs";
+import { analyzeRequirements } from "../lib/requirements.mjs";
 import { scoreSkill } from "../lib/score.mjs";
 import { validateHybridManifest, verifyHybridSkill } from "../lib/hybrid.mjs";
 
@@ -39,6 +40,9 @@ async function entryFor(area, id) {
   if (hybrid?.vietnamese) { review.localized = true; review.description_vi = hybrid.vietnamese.description; review.language = "hybrid"; }
   const scan = scanSkill(content);
   const classification = classifySkill(content);
+  const requirements = analyzeRequirements(content, { capabilities: hybrid?.requiredCapabilities, inventory });
+  // Preserve the legacy app contract while exposing richer, evidence-backed data separately.
+  const runtimes = [...new Map([...classification.runtimes, ...requirements.runtimeHints].map(r => [r.name,r])).values()];
   const quarantined = area === "quarantine" || scan.status === "quarantined" || hybrid?.security.status === "quarantined";
   const score = scoreSkill({ parsed, scan: { ...scan, status: quarantined ? 'quarantined' : scan.status }, classification, meta, review });
   const approval = quarantined ? "quarantined" : "review-required";
@@ -65,17 +69,9 @@ async function entryFor(area, id) {
     security_findings: scan.findings.map(({ rule, severity, file, line }) => ({ rule, severity, file, line })),
     approval_status: approval,
     kind: classification.kind,
-    compatibility: { text: parsed.compatibility ?? null, runtimes: classification.runtimes },
-    dependencies: classification.runtimes.filter((r) => r.installerId).map((r) => r.installerId),
-    requirements: {
-      schemaVersion: 1,
-      capabilities: hybrid?.requiredCapabilities ?? [],
-      runtimeHints: classification.runtimes,
-      missingPackageFiles: inventory?.skipped ?? [],
-      packageCompleteness: inventory?.skipped?.length ? 'incomplete' : inventory?.verified ? 'retained-source-files-verified' : 'unverified',
-      environmentStatus: 'not-tested',
-      autoInstall: false,
-    },
+    compatibility: { text: parsed.compatibility ?? null, runtimes },
+    dependencies: [...new Set(runtimes.filter(r => r.installerId).map(r => r.installerId))],
+    requirements,
     permissions: { runs_code: classification.tools.length > 0, mcp: classification.mcp.length > 0, files: content.map((f) => f.path) },
     checksum: folderChecksum(content),
     file_hashes: Object.fromEntries(content.map((f) => [f.path, f.sha256])),

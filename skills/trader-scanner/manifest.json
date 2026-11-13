@@ -31,7 +31,23 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "8db022339f3ddd3a5f0574152040d154c484ef4c56f5dbc4a4d6c5768b8c92f7"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "trader-alerts [reference-hint]",
+    "trader-analyst [reference-hint]",
+    "trader-broker [reference-hint]",
+    "trader-budget [reference-hint]",
+    "trader-entry [reference-hint]",
+    "trader-exit [reference-hint]",
+    "trader-news [reference-hint]",
+    "trader-pelosi [reference-hint]",
+    "trader-risk [reference-hint]",
+    "trader-scanner [reference-hint]",
+    "trader-timemachine [reference-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

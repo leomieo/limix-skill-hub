@@ -32,7 +32,21 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "d0083f74722df3b25d661aa869468416027c37a32926091bfdd5dac284ea0a76"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "docker [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "git [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "plugin [reference-hint]",
+    "react [mention-hint]",
+    "reload-plugins [reference-hint]",
+    "text-to-speech [mention-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

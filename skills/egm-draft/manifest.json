@@ -31,7 +31,14 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "egm-brainstorm [reference-hint]",
+    "egm-review [reference-hint]",
+    "filesystem-read [mention-hint]",
+    "node [mention-hint]",
+    "python [mention-hint]",
+    "rust [mention-hint]"
+  ],
   "permissions": [],
   "syncedAt": "2026-11-13T09:22:43.610Z",
   "security": {

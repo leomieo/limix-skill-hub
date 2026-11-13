@@ -31,7 +31,11 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "b2c61b24ea4e43129157d1a7cff6aebda4c2e731c154ab3d8f0bd7b07c9362d6"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "image-generation [mention-hint]",
+    "node [mention-hint]",
+    "text-to-speech [mention-hint]"
+  ],
   "permissions": [],
   "syncedAt": "2026-11-13T09:22:43.610Z",
   "security": {

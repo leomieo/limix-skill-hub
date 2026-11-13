@@ -29,7 +29,19 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "3423ada45a05033bb6e320dfc3b3ac832569969a5afb059bbfc9096c5cf0c71b"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "anatomy [reference-hint]",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "git [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "playwright [mention-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

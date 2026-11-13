@@ -31,7 +31,12 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "acfc8eadc47fee812f2dbaf8c97a93c313661d46963291bcbf8f154b065abee0"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "li-audit [reference-hint]",
+    "li-human [reference-hint]"
+  ],
   "permissions": [],
   "syncedAt": "2026-11-13T09:22:43.610Z",
   "security": {

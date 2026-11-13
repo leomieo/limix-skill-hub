@@ -31,7 +31,25 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "d32d1413cd9d69d26ce82f41b61ae431c191cde1775f34b7c0c2573a7ce83858"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "git [mention-hint]",
+    "ig-audit [reference-hint]",
+    "ig-caption [reference-hint]",
+    "ig-carousel [reference-hint]",
+    "ig-comment [reference-hint]",
+    "ig-dm [reference-hint]",
+    "ig-human [reference-hint]",
+    "ig-plan [reference-hint]",
+    "ig-profile [reference-hint]",
+    "ig-reel [reference-hint]",
+    "ig-reply [reference-hint]",
+    "ig-repurpose [reference-hint]",
+    "ig-story [reference-hint]",
+    "ig-viral [reference-hint]",
+    "python [mention-hint]"
+  ],
   "permissions": [
     "network"
   ],

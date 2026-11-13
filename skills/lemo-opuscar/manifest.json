@@ -30,7 +30,19 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "17c2f1c2a337becf28ec1e23eec46b42a6f0ffa2691b40d8b97b35d043b79f65"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "bash [file-type-hint]",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "git [mention-hint]",
+    "node [mention-hint]",
+    "playwright [mention-hint]",
+    "python [mention-hint]",
+    "text-to-speech [mention-hint]",
+    "three [mention-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

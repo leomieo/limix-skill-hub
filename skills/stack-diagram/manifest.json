@@ -30,7 +30,20 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "e78d88f663b76d20ce6bef862e9ea9088ffb19b409320dbff8c25c73020f14b6"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "node [mention-hint]",
+    "playwright * [installation-command-hint]",
+    "playwright [mention-hint]",
+    "powershell [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]",
+    "subagents [mention-hint]",
+    "text-to-speech [mention-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

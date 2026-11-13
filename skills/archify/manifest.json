@@ -32,11 +32,24 @@
     "sourceSha256": "1382cfb7108b05e500b82af93c04fd7b694430d3908039bd92d634f01c1e7181"
   },
   "requiredCapabilities": [
-    "Node.js >=18",
     "Archify CLI bin/archify.mjs",
+    "Browser for HTML preview",
     "Complete pinned Archify package",
+    "Node.js >=18",
     "Renderer modules and schemas",
-    "Browser for HTML preview"
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "docker [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "git [mention-hint]",
+    "go [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "powershell [mention-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]",
+    "rust [mention-hint]"
   ],
   "permissions": [
     "shell",

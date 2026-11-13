@@ -29,7 +29,26 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "50710290ed55d2b8e1ea454a2a274345da5fa47c224a38582d2f853e824c3cd2"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "bash [file-type-hint]",
+    "bash [mention-hint]",
+    "blender [mention-hint]",
+    "browser [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "ffprobe [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "git [mention-hint]",
+    "image-generation [mention-hint]",
+    "motionmaxxing [reference-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]",
+    "text-to-speech [mention-hint]",
+    "three [mention-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

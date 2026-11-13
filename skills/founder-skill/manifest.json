@@ -30,7 +30,21 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "d457c0f43c9da5cfd127fa312d021c332913507833513a1003dbb49503aba30e"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "founder-board [reference-hint]",
+    "founder-brand [reference-hint]",
+    "founder-cfo [reference-hint]",
+    "founder-competitors [reference-hint]",
+    "founder-consumer [reference-hint]",
+    "founder-launch [reference-hint]",
+    "founder-marketing [reference-hint]",
+    "founder-offer [reference-hint]",
+    "founder-ops [reference-hint]",
+    "founder-plan [reference-hint]",
+    "founder-pricing [reference-hint]",
+    "python [mention-hint]",
+    "subagents [mention-hint]"
+  ],
   "permissions": [],
   "syncedAt": "2026-11-13T09:14:21.544Z",
   "security": {

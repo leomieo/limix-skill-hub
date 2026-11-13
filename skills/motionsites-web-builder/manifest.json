@@ -31,7 +31,20 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "bac1e1f79e5fd72b253c978e64f708a828b94c3512ec4d1e2eb13d3204e79035"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "7 [reference-hint]",
+    "bash [mention-hint]",
+    "blender [mention-hint]",
+    "browser [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "node [mention-hint]",
+    "playwright [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]",
+    "three [mention-hint]",
+    "video-generation [mention-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

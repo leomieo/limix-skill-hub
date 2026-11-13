@@ -30,7 +30,17 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "18fc803dfbdccb92c7f92d783c266d33440266e5ffc43c79d227e760f1abc480"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "node [mention-hint]",
+    "playwright [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "web-search [mention-hint]"
+  ],
   "permissions": [
     "shell",
     "filesystem-read",

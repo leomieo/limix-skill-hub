@@ -30,7 +30,13 @@
     "guide": "references/guide.vi.md",
     "sourceSha256": "a99294ab79ea751ab0acf3b10c3d280e6d23f917b12a0ec01d66915aab6ad1b4"
   },
-  "requiredCapabilities": [],
+  "requiredCapabilities": [
+    "browser [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "node [mention-hint]",
+    "puppeteer [mention-hint]",
+    "web-search [mention-hint]"
+  ],
   "permissions": [],
   "syncedAt": "2026-11-13T09:14:21.544Z",
   "security": {
