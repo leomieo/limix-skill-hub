@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "name": "threejs-development",
+  "version": "acf77e4c7ea4",
+  "source": {
+    "url": "https://github.com/mrdoob/three.js",
+    "commit": "acf77e4c7ea413a0a9638baacef3d78e254b2cac",
+    "sha256": "d9cefef4b283d5091c446fc3db56a0bdac9d156965ca540d89088b81a5872b1d",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Hướng dẫn tích hợp Three.js cho đồ họa 3D trên trình duyệt: scene, camera, mesh, WebGL/WebGPU và vòng lặp animation. Do Limix Skill Hub biên soạn dựa trên README và metadata nguồn; không phải skill chính thức của mrdoob.",
+    "aliases": [
+      "Lập trình 3D trình duyệt",
+      "Tạo cảnh Three.js",
+      "Đồ họa WebGL WebGPU"
+    ],
+    "keywords": [
+      "threejs-development",
+      "Lập trình 3D trình duyệt",
+      "Tạo cảnh Three.js",
+      "Đồ họa WebGL WebGPU"
+    ],
+    "examples": [
+      "Tạo một cảnh Three.js có khối lập phương xoay.",
+      "Sửa camera và kích thước canvas của dự án Three.js."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "d9cefef4b283d5091c446fc3db56a0bdac9d156965ca540d89088b81a5872b1d"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell",
+    "network"
+  ],
+  "syncedAt": "2026-11-13T13:49:51.587Z",
+  "security": {
+    "status": "review-required",
+    "findings": [
+      "Hub-authored adapter: upstream has no SKILL.md; review this workflow before activation."
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "No SKILL.md was found in the complete pinned upstream tree.",
+      "Only README.md, LICENSE and package.json are mirrored as byte-verified references; the three.js runtime and example assets are not bundled.",
+      "Static review only. No third-party scripts or dependency installers executed; runtime/provider acceptance NOT_TESTED."
+    ]
+  }
+}

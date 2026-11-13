@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "name": "ffmpeg-cli",
+  "version": "88c46fce27e3",
+  "source": {
+    "url": "https://github.com/FFmpeg/FFmpeg",
+    "commit": "88c46fce27e311c73772d9b83db4047dd83b1294",
+    "sha256": "0b0f8123b272b81aca017ea287d5360a5586b27413cd6ff4fa3db5bef4d9b583",
+    "license": "LGPL-2.1-or-later"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Hướng dẫn dùng FFmpeg/ffprobe để đọc metadata, chuyển đổi, cắt ghép và xử lý âm thanh/video. Do Limix Skill Hub biên soạn từ tài liệu của FFmpeg; khác với ffmpeg-skill đã có từ nhà phát triển bên thứ ba.",
+    "aliases": [
+      "Xử lý âm thanh video FFmpeg",
+      "Chuyển đổi định dạng video",
+      "Đọc metadata ffprobe"
+    ],
+    "keywords": [
+      "ffmpeg-cli",
+      "Xử lý âm thanh video FFmpeg",
+      "Chuyển đổi định dạng video",
+      "Đọc metadata ffprobe"
+    ],
+    "examples": [
+      "Dùng ffprobe đọc codec, độ phân giải và thời lượng video.",
+      "Chuyển video sang MP4 và giữ nguyên file đầu vào."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "0b0f8123b272b81aca017ea287d5360a5586b27413cd6ff4fa3db5bef4d9b583"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell",
+    "network"
+  ],
+  "syncedAt": "2026-11-13T13:49:51.607Z",
+  "security": {
+    "status": "review-required",
+    "findings": [
+      "Hub-authored adapter: the official FFmpeg repository has no SKILL.md; binary/runtime compatibility is untested."
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "No SKILL.md was found in the complete pinned upstream tree.",
+      "Only selected README, license and CLI documentation are included; no FFmpeg binaries, codec libraries or complete build are distributed.",
+      "Upstream licensing depends on build options and external libraries; preserve LICENSE.md and COPYING files and inspect the actual build.",
+      "Static review only. No third-party scripts or dependency installers executed; runtime/provider acceptance NOT_TESTED."
+    ]
+  }
+}

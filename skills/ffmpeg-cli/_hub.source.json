@@ -1,0 +1,66 @@
+{
+  "repository": "FFmpeg/FFmpeg",
+  "commit": "88c46fce27e311c73772d9b83db4047dd83b1294",
+  "path": null,
+  "verified": false,
+  "coreSha256": "0b0f8123b272b81aca017ea287d5360a5586b27413cd6ff4fa3db5bef4d9b583",
+  "skipped": [],
+  "coreOrigin": "hub-authored-adapter",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "executable": false,
+      "origin": "hub-authored",
+      "sha256": "0b0f8123b272b81aca017ea287d5360a5586b27413cd6ff4fa3db5bef4d9b583"
+    },
+    {
+      "path": "references/upstream/README.md",
+      "upstreamPath": "README.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "86474c8f0806772f831a9c7a4982fd2398507372c577d229b76f60bbb3e7dead"
+    },
+    {
+      "path": "references/upstream/LICENSE.md",
+      "upstreamPath": "LICENSE.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "e6dc72d5665a1ebd6dcc841de59278dad4ca77ecc47b03f1064a55c3e9ea8bb8"
+    },
+    {
+      "path": "references/upstream/COPYING.LGPLv2.1",
+      "upstreamPath": "COPYING.LGPLv2.1",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "246041b6ecf9bc32d718a62c57877c78b5eb397b6467e74ed7ae2626ab189c30"
+    },
+    {
+      "path": "references/upstream/COPYING.GPLv2",
+      "upstreamPath": "COPYING.GPLv2",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "path": "references/upstream/COPYING.GPLv3",
+      "upstreamPath": "COPYING.GPLv3",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "references/upstream/doc/ffmpeg.texi",
+      "upstreamPath": "doc/ffmpeg.texi",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "e9cd8ba011ea7720ff35c7ed5bac09a236d9087e48ef255613089615ef7c0191"
+    },
+    {
+      "path": "references/upstream/doc/ffprobe.texi",
+      "upstreamPath": "doc/ffprobe.texi",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "98680e67dae597644afb3bef76cea912d15bd3b0215dd538104215ccc8544262"
+    }
+  ]
+}

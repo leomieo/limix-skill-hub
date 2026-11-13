@@ -17,11 +17,11 @@ for (const entry of await readdir(path.join(root,'skills'),{withFileTypes:true})
     const inventory=JSON.parse(await readFile(path.join(dir,'_hub.source.json'),'utf8'));
     if (manifest.name!==id || meta.originalCoreVerified!==verified) throw Error('identity/provenance mismatch');
     for (const file of inventory.files) {
-      const cached=path.join(root,'source-cache',id,manifest.source.commit,file.path);
+      const cached=path.join(root,'source-cache',id,manifest.source.commit,file.upstreamPath ?? file.path);
       const bytes=await readFile(cached).catch(error=>{if(error.code==='ENOENT') return null; throw error;});
       if (bytes && sha256(bytes)!==file.sha256) throw Error('immutable cache mismatch');
     }
-    report.results.push({id,verified,files,commit:manifest.source.commit,security:manifest.security.status,compatibility:manifest.compatibility.status,skipped:inventory.skipped,license:manifest.source.license??null});
+    report.results.push({id,verified,origin:meta.coreOrigin ?? (verified ? 'upstream' : 'legacy-unverified'),files,commit:manifest.source.commit,security:manifest.security.status,compatibility:manifest.compatibility.status,skipped:inventory.skipped,license:manifest.source.license??null});
   } catch(error) { report.errors.push({id,error:error.message}); }
 }
 await mkdir(path.join(root,'migration-reports'),{recursive:true});

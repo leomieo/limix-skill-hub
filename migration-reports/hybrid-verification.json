@@ -1,10 +1,11 @@
 {
-  "checkedAt": "2026-11-13T09:29:39.949Z",
+  "checkedAt": "2026-11-13T13:50:43.330Z",
   "scope": "Static integrity and provenance only; no downloaded scripts executed.",
   "results": [
     {
       "id": "agent-autoloop",
       "verified": true,
+      "origin": "upstream",
       "files": 2,
       "commit": "c9ec4a187cab49627947e7e33db265ec143db3b8",
       "security": "quarantined",
@@ -15,6 +16,7 @@
     {
       "id": "anatomy",
       "verified": true,
+      "origin": "upstream",
       "files": 76,
       "commit": "1482e8469b0a9e0d8cc18ea2740a01423d29ae80",
       "security": "quarantined",
@@ -123,6 +125,7 @@
     {
       "id": "answer-me-with-html",
       "verified": true,
+      "origin": "upstream",
       "files": 6,
       "commit": "edccab07c012e2141585f8ddb18a62e01664fa2b",
       "security": "quarantined",
@@ -133,6 +136,7 @@
     {
       "id": "anything2explainer",
       "verified": true,
+      "origin": "upstream",
       "files": 196,
       "commit": "0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab",
       "security": "quarantined",
@@ -159,6 +163,7 @@
     {
       "id": "api-anything",
       "verified": true,
+      "origin": "upstream",
       "files": 4,
       "commit": "d40abd44f171c5cc444f1ac6b947afefa8605b78",
       "security": "review-required",
@@ -169,6 +174,7 @@
     {
       "id": "arena",
       "verified": true,
+      "origin": "upstream",
       "files": 5,
       "commit": "df07b8e518e10cdecd8cd7712d9958b6f396250e",
       "security": "review-required",
@@ -179,6 +185,7 @@
     {
       "id": "bang-motion",
       "verified": true,
+      "origin": "upstream",
       "files": 43,
       "commit": "c1aa65e921c970d858705fcb4a53a8294d1a4131",
       "security": "quarantined",
@@ -192,6 +199,7 @@
     {
       "id": "beautiful-rust",
       "verified": false,
+      "origin": "legacy-unverified",
       "files": 1,
       "commit": "b9718436d77ee7bcf17cdcb6aa27628feb95d97a",
       "security": "quarantined",
@@ -202,6 +210,7 @@
     {
       "id": "cartoon-3d-short",
       "verified": true,
+      "origin": "upstream",
       "files": 92,
       "commit": "e3b817b6afc6cd413466d43f11ba31209e034bbf",
       "security": "quarantined",
@@ -219,6 +228,7 @@
     {
       "id": "claude-guardian",
       "verified": true,
+      "origin": "upstream",
       "files": 120,
       "commit": "ec53265c84131e26b7097498a5fe0680fdeffed7",
       "security": "quarantined",
@@ -231,6 +241,7 @@
     {
       "id": "digital-human-koubo",
       "verified": true,
+      "origin": "upstream",
       "files": 198,
       "commit": "f661a6c047bb74ea306ef58aeb1d461a52c01871",
       "security": "quarantined",
@@ -891,6 +902,7 @@
     {
       "id": "earshot",
       "verified": true,
+      "origin": "upstream",
       "files": 2,
       "commit": "4ac3d2ac2b151e1c23376f9ce7f3047a17050013",
       "security": "review-required",
@@ -901,6 +913,7 @@
     {
       "id": "egm-draft",
       "verified": true,
+      "origin": "upstream",
       "files": 7,
       "commit": "270b10326bf366d823bc76fd662cf83808d5781e",
       "security": "review-required",
@@ -911,6 +924,7 @@
     {
       "id": "ex-ussr-kinship-research",
       "verified": true,
+      "origin": "upstream",
       "files": 91,
       "commit": "f4b6b3ffc99ccdcb3e4b6bbfad3fca51b09bd23c",
       "security": "quarantined",
@@ -921,8 +935,20 @@
       "license": "MIT"
     },
     {
+      "id": "ffmpeg-cli",
+      "verified": false,
+      "origin": "hub-authored-adapter",
+      "files": 8,
+      "commit": "88c46fce27e311c73772d9b83db4047dd83b1294",
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "LGPL-2.1-or-later"
+    },
+    {
       "id": "ffmpeg-skill",
       "verified": true,
+      "origin": "upstream",
       "files": 93,
       "commit": "92dabd8372dafd033055a3b22d3fb71b39ac3cfd",
       "security": "quarantined",
@@ -1244,6 +1270,7 @@
     {
       "id": "founder-skill",
       "verified": false,
+      "origin": "legacy-unverified",
       "files": 1,
       "commit": "fd9385b0cfe1b96bebce3898fbd506d73eff5a9d",
       "security": "quarantined",
@@ -1254,6 +1281,7 @@
     {
       "id": "full-send",
       "verified": true,
+      "origin": "upstream",
       "files": 3,
       "commit": "11e37a74d0a6868c121cd0910ab2b3bd9873b92a",
       "security": "review-required",
@@ -1264,6 +1292,7 @@
     {
       "id": "geo-sleuth",
       "verified": true,
+      "origin": "upstream",
       "files": 105,
       "commit": "d56c35789565e9459f0663e860c470e98e9c30d1",
       "security": "quarantined",
@@ -1274,6 +1303,7 @@
     {
       "id": "golive",
       "verified": true,
+      "origin": "upstream",
       "files": 23,
       "commit": "8fd3d8e96844c79c500aabaf215d1267fcde08c5",
       "security": "quarantined",
@@ -1284,6 +1314,7 @@
     {
       "id": "grandet-api-price-finder",
       "verified": true,
+      "origin": "upstream",
       "files": 17,
       "commit": "dcc1503994f6e0238119452f14fa251ea53ef573",
       "security": "quarantined",
@@ -1294,6 +1325,7 @@
     {
       "id": "huashu-art-motion",
       "verified": true,
+      "origin": "upstream",
       "files": 196,
       "commit": "1468196505a51728686db118d52561aa27a25124",
       "security": "quarantined",
@@ -1624,8 +1656,20 @@
       "license": "MIT"
     },
     {
+      "id": "hyperframes",
+      "verified": true,
+      "origin": "upstream",
+      "files": 81,
+      "commit": "d208281091b1c00db1724a2ee3db0055955eb41b",
+      "security": "quarantined",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "Apache-2.0"
+    },
+    {
       "id": "instagram-agent-skill",
       "verified": false,
+      "origin": "legacy-unverified",
       "files": 1,
       "commit": "d03c56bb598be770c60b201f94237e5d1a4268a6",
       "security": "quarantined",
@@ -1636,6 +1680,7 @@
     {
       "id": "lemo-opuscar",
       "verified": true,
+      "origin": "upstream",
       "files": 3,
       "commit": "3a7132b996be0241c1ea0ab180d519f06e6f10b6",
       "security": "review-required",
@@ -1646,6 +1691,7 @@
     {
       "id": "li-post",
       "verified": true,
+      "origin": "upstream",
       "files": 3,
       "commit": "add2c23882fe79180737d242ff80a5da205eda6a",
       "security": "review-required",
@@ -1656,6 +1702,7 @@
     {
       "id": "logo-design",
       "verified": true,
+      "origin": "upstream",
       "files": 197,
       "commit": "bbf31e521d765eb6d53242549bbee7c2e5bbd6bc",
       "security": "quarantined",
@@ -2933,6 +2980,7 @@
     {
       "id": "mod-any-game",
       "verified": true,
+      "origin": "upstream",
       "files": 20,
       "commit": "3c4ac6c38e411b8c543bce217eae197039516bfc",
       "security": "review-required",
@@ -2943,6 +2991,7 @@
     {
       "id": "motionmaxxing",
       "verified": true,
+      "origin": "upstream",
       "files": 98,
       "commit": "8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c",
       "security": "quarantined",
@@ -2961,6 +3010,7 @@
     {
       "id": "motionsites-web-builder",
       "verified": true,
+      "origin": "upstream",
       "files": 64,
       "commit": "faa30d512e3973e58675c72101a7ef42ed37ae83",
       "security": "review-required",
@@ -2971,6 +3021,7 @@
     {
       "id": "oil-ui",
       "verified": true,
+      "origin": "upstream",
       "files": 52,
       "commit": "28948c3d88e5d141fa0e943ff385560c5ffba979",
       "security": "quarantined",
@@ -2984,6 +3035,7 @@
     {
       "id": "pixelfx",
       "verified": true,
+      "origin": "upstream",
       "files": 3,
       "commit": "5294518ce7c72e48b6100a744596e0acf57f2826",
       "security": "quarantined",
@@ -2994,6 +3046,7 @@
     {
       "id": "rea-video",
       "verified": true,
+      "origin": "upstream",
       "files": 12,
       "commit": "ab8580e38a1255425b0d3b481866590766932079",
       "security": "review-required",
@@ -3004,6 +3057,7 @@
     {
       "id": "reanimate",
       "verified": false,
+      "origin": "legacy-unverified",
       "files": 1,
       "commit": "3f7a55a2986a84ca2173e86ee9127eefe31d046d",
       "security": "quarantined",
@@ -3012,8 +3066,20 @@
       "license": "MIT"
     },
     {
+      "id": "remotion-integration",
+      "verified": false,
+      "origin": "source-linked",
+      "files": 1,
+      "commit": "bc7b1c44215249948356d070b43ae6e58a6adde3",
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "skipped": [],
+      "license": "LicenseRef-Remotion"
+    },
+    {
       "id": "replica-recon",
       "verified": true,
+      "origin": "upstream",
       "files": 4,
       "commit": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
       "security": "review-required",
@@ -3024,6 +3090,7 @@
     {
       "id": "socratic-tutor",
       "verified": true,
+      "origin": "upstream",
       "files": 2,
       "commit": "7c6715c29548a3b39d4a9545c698ee4fd17a7213",
       "security": "review-required",
@@ -3034,6 +3101,7 @@
     {
       "id": "stack-diagram",
       "verified": true,
+      "origin": "upstream",
       "files": 19,
       "commit": "9175bde8449cc8f5390d6eb72ecc2e1f5bfe21f3",
       "security": "review-required",
@@ -3044,6 +3112,7 @@
     {
       "id": "stageshow",
       "verified": true,
+      "origin": "upstream",
       "files": 196,
       "commit": "299140fafd08df55a9c234e610c3f64af3f45531",
       "security": "quarantined",
@@ -3231,6 +3300,7 @@
     {
       "id": "stickman-video-director",
       "verified": false,
+      "origin": "legacy-unverified",
       "files": 1,
       "commit": "8f11b951546db0ba994b7ad90718f046655f5132",
       "security": "quarantined",
@@ -3241,6 +3311,7 @@
     {
       "id": "teardown",
       "verified": true,
+      "origin": "upstream",
       "files": 69,
       "commit": "a91262ac1109051e014662d42ecb0b7bc1f113b1",
       "security": "quarantined",
@@ -3254,8 +3325,20 @@
       "license": "MIT"
     },
     {
+      "id": "threejs-development",
+      "verified": false,
+      "origin": "hub-authored-adapter",
+      "files": 4,
+      "commit": "acf77e4c7ea413a0a9638baacef3d78e254b2cac",
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "MIT"
+    },
+    {
       "id": "trader-scanner",
       "verified": true,
+      "origin": "upstream",
       "files": 3,
       "commit": "3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd",
       "security": "review-required",
@@ -3266,6 +3349,7 @@
     {
       "id": "unslop",
       "verified": true,
+      "origin": "upstream",
       "files": 15,
       "commit": "97daa3eb365670ea3f87ed85356cbfcee18105a5",
       "security": "review-required",
@@ -3276,6 +3360,7 @@
     {
       "id": "youtube-agent-skill",
       "verified": false,
+      "origin": "legacy-unverified",
       "files": 1,
       "commit": "a2feb2104981a375ffd4f87ee04f4f5344ac43c6",
       "security": "quarantined",

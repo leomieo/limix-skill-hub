@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "name": "remotion-integration",
+  "version": "bc7b1c442152",
+  "source": {
+    "url": "https://github.com/remotion-dev/remotion",
+    "commit": "bc7b1c44215249948356d070b43ae6e58a6adde3",
+    "sha256": "d476642ed52fe500fce636e16a8a2c7ec5b2a017a344bf124b6d8b06e0c66946",
+    "license": "LicenseRef-Remotion"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Hướng dẫn tích hợp Remotion để tạo video bằng React; dẫn đến skill remotion-best-practices chính thức theo commit. Mục tham chiếu đang chờ xem xét giấy phép, chưa sao chép bộ skill của Remotion vào kho.",
+    "aliases": [
+      "Dựng video bằng React",
+      "Tạo video Remotion",
+      "remotion-best-practices"
+    ],
+    "keywords": [
+      "remotion-integration",
+      "Dựng video bằng React",
+      "Tạo video Remotion",
+      "remotion-best-practices"
+    ],
+    "examples": [
+      "Dùng Remotion dựng video giới thiệu sản phẩm bằng React.",
+      "Tìm hướng dẫn chính thức về composition và render Remotion."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "d476642ed52fe500fce636e16a8a2c7ec5b2a017a344bf124b6d8b06e0c66946"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell",
+    "network"
+  ],
+  "syncedAt": "2026-11-13T13:49:51.579Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "Source-linked record only: redistribution permission for the custom Remotion license has not been established; official skill files are not mirrored."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "Hub-authored reference adapter, not an upstream SKILL.md.",
+      "The official remotion-best-practices entrypoint was located and hashed, but is only linked here pending license review.",
+      "Static review only. No third-party scripts or dependency installers executed; runtime/provider acceptance NOT_TESTED."
+    ]
+  }
+}

@@ -1,0 +1,578 @@
+{
+  "repository": "heygen-com/hyperframes",
+  "commit": "d208281091b1c00db1724a2ee3db0055955eb41b",
+  "path": "skills/hyperframes",
+  "verified": true,
+  "coreSha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+  "skipped": [],
+  "coreOrigin": "upstream",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "upstreamPath": "SKILL.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243"
+    },
+    {
+      "path": "assets/frame-presets/biennale-yellow/caption-skin.html",
+      "upstreamPath": "assets/frame-presets/biennale-yellow/caption-skin.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "b0e4812d9cb5852969be276f8a98ffa2b293ba8cc902fababae3f3f6340088c3"
+    },
+    {
+      "path": "assets/frame-presets/biennale-yellow/frame-showcase.html",
+      "upstreamPath": "assets/frame-presets/biennale-yellow/frame-showcase.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "5ba04e47cf9897e023dcfa49e1ec26fe26bac0c5061097dc6e7cb1d9ed46d7d0"
+    },
+    {
+      "path": "assets/frame-presets/biennale-yellow/FRAME.md",
+      "upstreamPath": "assets/frame-presets/biennale-yellow/FRAME.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "76d22cced9c152b0edb520543cf34c4ce772a312caa7211c40d4315b53c053cf"
+    },
+    {
+      "path": "assets/frame-presets/blockframe/caption-skin.html",
+      "upstreamPath": "assets/frame-presets/blockframe/caption-skin.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "a1073a9910efb0bd146d9ee4513ef95bd72c4993db399ccb4decf2d10002faab"
+    },
+    {
+      "path": "assets/frame-presets/blockframe/frame-showcase.html",
+      "upstreamPath": "assets/frame-presets/blockframe/frame-showcase.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "8d2e4963713928b353d0aa28c2c83fce415df81b66a500c192b602c0aaf4ddf2"
+    },
+    {
+      "path": "assets/frame-presets/blockframe/FRAME.md",
+      "upstreamPath": "assets/frame-presets/blockframe/FRAME.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "ef8d9d47a209bed4ccc2d928c14a81cdaecb5129f5dc0cdc0dc40afc7ef92931"
+    },
+    {
+      "path": "assets/frame-presets/blue-professional/caption-skin.html",
+      "upstreamPath": "assets/frame-presets/blue-professional/caption-skin.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "e2524d610d0c833f6b71355357c13b26e670ec581c28ce37d12ead15ce4297b4"
+    },
+    {
+      "path": "assets/frame-presets/blue-professional/frame-showcase.html",
+      "upstreamPath": "assets/frame-presets/blue-professional/frame-showcase.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "715b130d086977a48925a3c79bb079fbc7270274c9c9a7761bf275df3020b0ba"
+    },
+    {
+      "path": "assets/frame-presets/blue-professional/FRAME.md",
+      "upstreamPath": "assets/frame-presets/blue-professional/FRAME.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "62e9a445885f6057084493de385a8ce20c3b4a299ae36a553ef54884f06bad68"
+    },
+    {
+      "path": "assets/frame-presets/bold-poster/caption-skin.html",
+      "upstreamPath": "assets/frame-presets/bold-poster/caption-skin.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "a19c81d30377687605e2345601efabba5315d0d4db13c3ab4748d7004778c24a"
+    },
+    {
+      "path": "assets/frame-presets/bold-poster/frame-showcase.html",
+      "upstreamPath": "assets/frame-presets/bold-poster/frame-showcase.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "57bbc3374b6a8b37ce59e36ed784c22bbb88fd44d039955221913b3e1bacf159"
+    },
+    {
+      "path": "assets/frame-presets/bold-poster/FRAME.md",
+      "upstreamPath": "assets/frame-presets/bold-poster/FRAME.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "af756ef993099f9ac78328f676eb79a6572ff0e9c2aacf12787471cd4525b171"
+    },
+    {
+      "path": "assets/frame-presets/broadside/caption-skin.html",
+      "upstreamPath": "assets/frame-presets/broadside/caption-skin.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "f074e1a9662d48ec0008aff7fffa1bdeeda40c5c5e05db9bd0fa6dd2ecdc7a6b"
+    },
+    {
+      "path": "assets/frame-presets/broadside/frame-showcase.html",
+      "upstreamPath": "assets/frame-presets/broadside/frame-showcase.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "8d23a2cbeb898568a5626b38ffc864236fb4a09930d59b17c34c45f34c8e4161"
+    },
+    {
+      "path": "assets/frame-presets/broadside/FRAME.md",
+      "upstreamPath": "assets/frame-presets/broadside/FRAME.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "3af0a1e5e61bece19841671672d7732082f03d5699b713475e90323a21dbcc89"
+    },
+    {
+      "path": "assets/frame-presets/capsule/caption-skin.html",
+      "upstreamPath": "assets/frame-presets/capsule/caption-skin.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "0e62f725051213512566b6f615c438b893a3b39507a5a2666a52938c8dd74e46"
+    },
+    {
+      "path": "assets/frame-presets/capsule/frame-showcase.html",
+      "upstreamPath": "assets/frame-presets/capsule/frame-showcase.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "b3a642b5df3bbfb1ff227f1b82ee3ea02b51f20a0d7c5c46c97d72b180cddb4f"
+    },
+    {
+      "path": "assets/frame-presets/capsule/FRAME.md",
+      "upstreamPath": "assets/frame-presets/capsule/FRAME.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "f06dba67a3859f7c732b5177f7bcc58c94592caa5d6bbbcc6730a7876f5baa7a"
+    },
+    {
+      "path": "assets/frame-presets/cartesian/caption-skin.html",
+      "upstreamPath": "assets/frame-presets/cartesian/caption-skin.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "e3e08147d1725d40576f4f97687ce0c6a4c32ee1b74dac2720f0ba652b9dfcfd"
+    },
+    {
+      "path": "assets/frame-presets/cartesian/frame-showcase.html",
+      "upstreamPath": "assets/frame-presets/cartesian/frame-showcase.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "d7867cee5e07c4f22345c566071f2ce0261b3fccca111a94dfbec5fde64f3e55"
+    },
+    {
+      "path": "assets/frame-presets/cartesian/FRAME.md",
+      "upstreamPath": "assets/frame-presets/cartesian/FRAME.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "3dc6a31813a333b2a7a1509ddbd3b4dabbbd7e12e6479b6cff10d69c185fec95"
+    },
+    {
+      "path": "assets/frame-presets/cobalt-grid/caption-skin.html",
+      "upstreamPath": "assets/frame-presets/cobalt-grid/caption-skin.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "5cc71d8f0669e80d12ccb6bb83722870eecfeccade0bf64f8fb165e23fbadf3f"
+    },
+    {
+      "path": "assets/frame-presets/cobalt-grid/frame-showcase.html",
+      "upstreamPath": "assets/frame-presets/cobalt-grid/frame-showcase.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "b135214cd2e310273a01e3f72b2828149f022803954a22a13cbf27aa1c2f518a"
+    },
+    {
+      "path": "assets/frame-presets/cobalt-grid/FRAME.md",
+      "upstreamPath": "assets/frame-presets/cobalt-grid/FRAME.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "62a6c9e6e5188cc29b9c0098e9bb8e72c23f152d9a99dd92c58139d26b69b19f"
+    },
+    {
+      "path": "assets/frame-presets/code-editorial/caption-skin.html",
+      "upstreamPath": "assets/frame-presets/code-editorial/caption-skin.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "724a20adff3824e4d31d5d51cc094337209a896a5ef3ae1e4e28aa502ee980e4"
+    },
+    {
+      "path": "assets/frame-presets/code-editorial/fonts/EBGaramond-400.woff2",
+      "upstreamPath": "assets/frame-presets/code-editorial/fonts/EBGaramond-400.woff2",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "b63448e2680a0dbde70ebb2f3de78f6c515122835491f938e8a8595b46f29210"
+    },
+    {
+      "path": "assets/frame-presets/code-editorial/fonts/EBGaramond-700.woff2",
+      "upstreamPath": "assets/frame-presets/code-editorial/fonts/EBGaramond-700.woff2",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "5d0f8a497a48fd2a3611d07acc844f65c9fbb35419eafa4e1295f5f0f95f86e4"
+    },
+    {
+      "path": "assets/frame-presets/code-editorial/fonts/Inter-400.woff2",
+      "upstreamPath": "assets/frame-presets/code-editorial/fonts/Inter-400.woff2",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "8909904ab6c872eb994093482a88a28eca2cd95912d7b6fecd72103b0dc07edc"
+    },
+    {
+      "path": "assets/frame-presets/code-editorial/fonts/Inter-700.woff2",
+      "upstreamPath": "assets/frame-presets/code-editorial/fonts/Inter-700.woff2",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "6f56409fd3d64bb85f7d070bce20749db2d66b6d63cec586cc22d1c761be2491"
+    },
+    {
+      "path": "assets/frame-presets/code-editorial/fonts/JetBrainsMono-400.woff2",
+      "upstreamPath": "assets/frame-presets/code-editorial/fonts/JetBrainsMono-400.woff2",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "14425ba9c695763c1547f48a206b7aa60350a33ae23de09f0407877f3fcd89eb"
+    },
+    {
+      "path": "assets/frame-presets/code-editorial/fonts/JetBrainsMono-700.woff2",
+      "upstreamPath": "assets/frame-presets/code-editorial/fonts/JetBrainsMono-700.woff2",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "d0d4e818808f2a0ba39b2b09d1989366f63494e295f003c7ef436697378507e8"
+    },
+    {
+      "path": "assets/frame-presets/code-editorial/fonts/OFL-eb-garamond.txt",
+      "upstreamPath": "assets/frame-presets/code-editorial/fonts/OFL-eb-garamond.txt",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "f03c8eda63076cd52317dcd40aa04db8472d4cb592dfaafa385129dfdafc7f9c"
+    },
+    {
+      "path": "assets/frame-presets/code-editorial/fonts/OFL-inter.txt",
+      "upstreamPath": "assets/frame-presets/code-editorial/fonts/OFL-inter.txt",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345"
+    },
+    {
+      "path": "assets/frame-presets/code-editorial/fonts/OFL-jetbrains-mono.txt",
+      "upstreamPath": "assets/frame-presets/code-editorial/fonts/OFL-jetbrains-mono.txt",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "403581b69dac5cff4079205e01c6b467e56af449ecbd7247693ddb1baafa005b"
+    },
+    {
+      "path": "assets/frame-presets/code-editorial/frame-showcase.html",
+      "upstreamPath": "assets/frame-presets/code-editorial/frame-showcase.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "08d711f5409a6af3fb6de05febe47fee77e4c8e85517bf2d087e2277b524e4ab"
+    },
+    {
+      "path": "assets/frame-presets/code-editorial/FRAME.md",
+      "upstreamPath": "assets/frame-presets/code-editorial/FRAME.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "c24f6925cf938b88a93368443091440648e715c75ac38bd90abdaab6130bb4ad"
+    },
+    {
+      "path": "assets/frame-presets/coral/caption-skin.html",
+      "upstreamPath": "assets/frame-presets/coral/caption-skin.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "44904b0567292521391fb576f07de7d2f5d8bce81d0369460f1054d093a06877"
+    },
+    {
+      "path": "assets/frame-presets/coral/frame-showcase.html",
+      "upstreamPath": "assets/frame-presets/coral/frame-showcase.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "8ddf31ae13a4e57fe9730892fbbcb171cae67a204b5cb00b00374984f49b8f76"
+    },
+    {
+      "path": "assets/frame-presets/coral/FRAME.md",
+      "upstreamPath": "assets/frame-presets/coral/FRAME.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "8530ecb36d1bb2d53392d88d972df35beeba19a5bcb3260fc9b18a58de7cdfe8"
+    },
+    {
+      "path": "assets/frame-presets/creative-mode/caption-skin.html",
+      "upstreamPath": "assets/frame-presets/creative-mode/caption-skin.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "2a45f759d64f5f6713ad2d529468df5bb345afe7d441d46c6316072348c1061b"
+    },
+    {
+      "path": "assets/frame-presets/creative-mode/frame-showcase.html",
+      "upstreamPath": "assets/frame-presets/creative-mode/frame-showcase.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "32c1371fcd526c56edb515e5b255ad736a3e330ba3ff2631c61576064b384ef0"
+    },
+    {
+      "path": "assets/frame-presets/creative-mode/FRAME.md",
+      "upstreamPath": "assets/frame-presets/creative-mode/FRAME.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "c1a1359502d9fc79ef267305291fe0f651219c72d88088cee32327dd933dead8"
+    },
+    {
+      "path": "assets/frame-presets/daisy-days/caption-skin.html",
+      "upstreamPath": "assets/frame-presets/daisy-days/caption-skin.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "5af839f607efb817d96956f3b016fd6fd065851f69ac1ac223a8634737bd497e"
+    },
+    {
+      "path": "assets/frame-presets/daisy-days/frame-showcase.html",
+      "upstreamPath": "assets/frame-presets/daisy-days/frame-showcase.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "4fb93e5fa3ba12367f303996b6ca8b62f8e18c721d02e8032274df12d49d96f3"
+    },
+    {
+      "path": "assets/frame-presets/daisy-days/FRAME.md",
+      "upstreamPath": "assets/frame-presets/daisy-days/FRAME.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "42d827dbd279990052e171d04380b5e6bbc111ae391dc283deb7a452e70b9b97"
+    },
+    {
+      "path": "assets/frame-presets/editorial-forest/caption-skin.html",
+      "upstreamPath": "assets/frame-presets/editorial-forest/caption-skin.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "50427bf7fcec9c8ac22f195a0e7fc442ad85e733198837ee0b9b8050296a0fa5"
+    },
+    {
+      "path": "assets/frame-presets/editorial-forest/frame-showcase.html",
+      "upstreamPath": "assets/frame-presets/editorial-forest/frame-showcase.html",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "bb87b88b91184f4fee7f02eea63ed35d9d378fa89fad8988326e31e82a43dbb1"
+    },
+    {
+      "path": "assets/frame-presets/editorial-forest/FRAME.md",
+      "upstreamPath": "assets/frame-presets/editorial-forest/FRAME.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "ceeb2ab768367da1e1f3e1eca36ab9feeb3de3e4d15493319b0044c3d869329c"
+    },
+    {
+      "path": "references/captions.md",
+      "upstreamPath": "references/captions.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "e7e2af7eace992487baa455bfa703fb3d770fb29f36732541554e60a46896d54"
+    },
+    {
+      "path": "references/film.md",
+      "upstreamPath": "references/film.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "b684403f725cf720b9f192bafd420ca55f24060114004234a4e46a715de7a183"
+    },
+    {
+      "path": "references/format.md",
+      "upstreamPath": "references/format.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "1eae5b314fab5e36e7ff5f41e9a3f95db4b5efb179ad8ef7cc74ef9235d49d62"
+    },
+    {
+      "path": "references/look.md",
+      "upstreamPath": "references/look.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "5128a54cdb75bca2f627170e4a3a9667f4f11cf1579301fc16c53862c29c3ad3"
+    },
+    {
+      "path": "references/motion.md",
+      "upstreamPath": "references/motion.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "bd55ea56343346060cd612a30874996e82f48ac5051ecb2bd1ab01efe4e2fc71"
+    },
+    {
+      "path": "references/overlays.md",
+      "upstreamPath": "references/overlays.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "d87fa3d13e8e0dace593f4aafb68c085b7f4393eee468c7695a74d5665150da3"
+    },
+    {
+      "path": "references/path-tracing.md",
+      "upstreamPath": "references/path-tracing.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "c45284156bfb77b5151cf6e5b34d47cad8e7da871147e842b4ebe358b187c6b7"
+    },
+    {
+      "path": "references/plugin-installation.md",
+      "upstreamPath": "references/plugin-installation.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "16e9c38acd7c2cb261db619edf9fb40b74bfb7e84ae625a4ae933a8dd423102e"
+    },
+    {
+      "path": "references/review.md",
+      "upstreamPath": "references/review.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "90886b58db02aaa53e6b91c433748629eda061b18465804b56ebbbab92508e56"
+    },
+    {
+      "path": "references/runtimes.md",
+      "upstreamPath": "references/runtimes.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "438b527d08c6aaef96f9750d4be68e8b558aebeb6ce96cf39c5338bd170032e5"
+    },
+    {
+      "path": "references/skill-lifecycle.md",
+      "upstreamPath": "references/skill-lifecycle.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "094f8bc2d2ec3db9f306d9ab2a2d9a60a65e00bbeeb2f1aa4760d92b1f438b6d"
+    },
+    {
+      "path": "references/sound.md",
+      "upstreamPath": "references/sound.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "be9e39ef947678b3ffed452063ce414af4a7d7c534b1e6c440bb5ce474d28ab4"
+    },
+    {
+      "path": "references/spec.md",
+      "upstreamPath": "references/spec.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "6fa0658c5cf5c23058f70a6549cc952d683979052a0934760ba748bbec88fbc0"
+    },
+    {
+      "path": "references/story.md",
+      "upstreamPath": "references/story.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "3c2b96bb7f262652f4bf5efdef1ae806b47fd259c6704cb131938c5254965f22"
+    },
+    {
+      "path": "references/storyboard-format.md",
+      "upstreamPath": "references/storyboard-format.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "f79e3be44cf2e506cdd2d1c46926319a0067f11889fe8aaf3a55759a9c61fb86"
+    },
+    {
+      "path": "references/storyboard.md",
+      "upstreamPath": "references/storyboard.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "b71197f1234c435e7c91ad22e6ce348542a9e4cddede41dba09c8986edc6598b"
+    },
+    {
+      "path": "references/types/3d.md",
+      "upstreamPath": "references/types/3d.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "1194492ec496e2146ae1e772fd5de6e23d850d25523f80ea61540331d748291e"
+    },
+    {
+      "path": "references/types/character.md",
+      "upstreamPath": "references/types/character.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "e8b4f6fd622acff593e2d7e478aa4e18ace1f9f785d16e42db5faf57ed525498"
+    },
+    {
+      "path": "references/types/data.md",
+      "upstreamPath": "references/types/data.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "c5fda22433aca573b871eeff956cd57e3773d6b16ffd9b3cc5726937912c1b7a"
+    },
+    {
+      "path": "references/types/explainer.md",
+      "upstreamPath": "references/types/explainer.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "ef2bd945bd347e760fd483515189c58e8000bd2cbc5f4b1c2d3e5d34e4d81f4e"
+    },
+    {
+      "path": "references/types/launch.md",
+      "upstreamPath": "references/types/launch.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "1405b663227018d3dd7bfef895bcea3d3dd6c596078316bec30e8686d014f661"
+    },
+    {
+      "path": "references/types/music.md",
+      "upstreamPath": "references/types/music.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "868df2814d2a8e8f2bc884372d674320aee43c995fc67d25a109ebfdecb58b4a"
+    },
+    {
+      "path": "references/types/vertical.md",
+      "upstreamPath": "references/types/vertical.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "fed9f5a1a3ceb204bb54e0dda0fd50befe611d0ab388a5036fc80cbc117a691b"
+    },
+    {
+      "path": "scripts/bake-basemap.mjs",
+      "upstreamPath": "scripts/bake-basemap.mjs",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "fea86ab2e2aab59fa81e4b26d77c0edcaadaf4c41b4455cf359c06047088c40c"
+    },
+    {
+      "path": "scripts/lib/main-module.mjs",
+      "upstreamPath": "scripts/lib/main-module.mjs",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "61811e09110856e1439c29875e4a4ad7701ae45d4045f9d1dcb6a7929698e4c0"
+    },
+    {
+      "path": "scripts/lib/main-module.test.mjs",
+      "upstreamPath": "scripts/lib/main-module.test.mjs",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "3d0ee22dd8b7acbdf8997c11449f29f13bafe6b20668a478ba504f66ec1ef151"
+    },
+    {
+      "path": "scripts/lib/windows-exe-search.mjs",
+      "upstreamPath": "scripts/lib/windows-exe-search.mjs",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "6a301aa13e97d3e2e3ba7520c350ebec1b09ecafba24afd6a6866d5c3eb3b10f"
+    },
+    {
+      "path": "scripts/lib/windows-exe-search.test.mjs",
+      "upstreamPath": "scripts/lib/windows-exe-search.test.mjs",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "11b83c0772e2021fe775ed616ec15418dd155d9c2d377624d0dbc36d0a1db681"
+    },
+    {
+      "path": "scripts/locate.mjs",
+      "upstreamPath": "scripts/locate.mjs",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "c6583d7867b32a2f6f0c144f79b9abd27b9792c4bffa1256547d58cbcf5c0248"
+    },
+    {
+      "path": "scripts/plugin-cli.mjs",
+      "upstreamPath": "scripts/plugin-cli.mjs",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "762d363af5740659ba2ef39977c4607d636291a7e8d327fc8a23fc98c8019de8"
+    },
+    {
+      "path": "scripts/plugin-cli.test.mjs",
+      "upstreamPath": "scripts/plugin-cli.test.mjs",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "4c696e32f0f861c99399bce92365389fd34035d7be202da22aa48d5ba0e3de1d"
+    },
+    {
+      "path": "LICENSE",
+      "upstreamPath": "LICENSE",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "4259155fb06f127687ee7b0a8a3682d45132db0f2da26cbc0b7a2d1e796436b8"
+    }
+  ]
+}

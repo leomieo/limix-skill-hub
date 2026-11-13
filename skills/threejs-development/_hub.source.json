@@ -1,0 +1,38 @@
+{
+  "repository": "mrdoob/three.js",
+  "commit": "acf77e4c7ea413a0a9638baacef3d78e254b2cac",
+  "path": null,
+  "verified": false,
+  "coreSha256": "d9cefef4b283d5091c446fc3db56a0bdac9d156965ca540d89088b81a5872b1d",
+  "skipped": [],
+  "coreOrigin": "hub-authored-adapter",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "executable": false,
+      "origin": "hub-authored",
+      "sha256": "d9cefef4b283d5091c446fc3db56a0bdac9d156965ca540d89088b81a5872b1d"
+    },
+    {
+      "path": "references/upstream/README.md",
+      "upstreamPath": "README.md",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "d553d824625a07d7690de93af6f8daf13d6aaed42700929d7ce4e725fa5ef10d"
+    },
+    {
+      "path": "references/upstream/LICENSE",
+      "upstreamPath": "LICENSE",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "references/upstream/package.json",
+      "upstreamPath": "package.json",
+      "executable": false,
+      "origin": "upstream",
+      "sha256": "87f2c99a8718e5fdd6f5e51427fde52c6075f2f698ddf8f7b4e162882df93940"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "name": "hyperframes",
+  "version": "d208281091b1",
+  "source": {
+    "url": "https://github.com/heygen-com/hyperframes",
+    "commit": "d208281091b1c00db1724a2ee3db0055955eb41b",
+    "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+    "license": "Apache-2.0"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Tạo và chỉnh sửa video bằng HTML/CSS, animation có timeline và render từng frame với HyperFrames. Giữ nguyên skill chính thức; hỗ trợ phim giới thiệu, explainer, phụ đề và đồ họa chuyển động.",
+    "aliases": [
+      "Dựng video bằng HTML",
+      "Đồ họa chuyển động HyperFrames"
+    ],
+    "keywords": [
+      "hyperframes",
+      "Dựng video bằng HTML",
+      "Đồ họa chuyển động HyperFrames"
+    ],
+    "examples": [
+      "Dùng Hyperframes dựng video giới thiệu sản phẩm 15 giây bằng HTML.",
+      "Kiểm tra timeline, phụ đề và bố cục video Hyperframes hiện có."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell",
+    "network"
+  ],
+  "syncedAt": "2026-11-13T13:49:51.514Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "assets/frame-presets/code-editorial/fonts/EBGaramond-400.woff2: binary-file (low)",
+      "assets/frame-presets/code-editorial/fonts/EBGaramond-700.woff2: binary-file (low)",
+      "assets/frame-presets/code-editorial/fonts/Inter-400.woff2: binary-file (low)",
+      "assets/frame-presets/code-editorial/fonts/Inter-700.woff2: binary-file (low)",
+      "assets/frame-presets/code-editorial/fonts/JetBrainsMono-400.woff2: binary-file (low)",
+      "assets/frame-presets/code-editorial/fonts/JetBrainsMono-700.woff2: binary-file (low)",
+      "Upstream core requests a usage telemetry event on activation; review account linkage and opt-out before running.",
+      "Companion skills hyperframes-cli, hyperframes-registry and media-use are referenced upstream but are not bundled in this entry."
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "Official English core and all 81 retained source files are pinned and byte-verified.",
+      "This is the standalone core skill, not the complete HyperFrames plugin. Companion skill references must be resolved before applicable tasks.",
+      "Static review only. No third-party scripts or dependency installers executed; runtime/provider acceptance NOT_TESTED."
+    ]
+  }
+}

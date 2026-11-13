@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "hub": "leomieo/limix-skill-hub",
-  "count": 41,
+  "count": 45,
   "skills": [
     {
       "id": "agent-autoloop",
@@ -5761,6 +5761,187 @@
       "area": "quarantine"
     },
     {
+      "id": "ffmpeg-cli",
+      "name": "ffmpeg-cli",
+      "description": "Hub-authored FFmpeg and ffprobe workflow for media inspection, conversion, trimming and audio/video processing. Based on official upstream documentation, not an upstream agent skill.",
+      "description_vi": "Hướng dẫn dùng FFmpeg/ffprobe để đọc metadata, chuyển đổi, cắt ghép và xử lý âm thanh/video. Do Limix Skill Hub biên soạn từ tài liệu của FFmpeg; khác với ffmpeg-skill đã có từ nhà phát triển bên thứ ba.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "ffmpeg-cli",
+        "version": "88c46fce27e3",
+        "source": {
+          "url": "https://github.com/FFmpeg/FFmpeg",
+          "commit": "88c46fce27e311c73772d9b83db4047dd83b1294",
+          "sha256": "0b0f8123b272b81aca017ea287d5360a5586b27413cd6ff4fa3db5bef4d9b583",
+          "license": "LGPL-2.1-or-later"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Hướng dẫn dùng FFmpeg/ffprobe để đọc metadata, chuyển đổi, cắt ghép và xử lý âm thanh/video. Do Limix Skill Hub biên soạn từ tài liệu của FFmpeg; khác với ffmpeg-skill đã có từ nhà phát triển bên thứ ba.",
+          "aliases": [
+            "Xử lý âm thanh video FFmpeg",
+            "Chuyển đổi định dạng video",
+            "Đọc metadata ffprobe"
+          ],
+          "keywords": [
+            "ffmpeg-cli",
+            "Xử lý âm thanh video FFmpeg",
+            "Chuyển đổi định dạng video",
+            "Đọc metadata ffprobe"
+          ],
+          "examples": [
+            "Dùng ffprobe đọc codec, độ phân giải và thời lượng video.",
+            "Chuyển video sang MP4 và giữ nguyên file đầu vào."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "0b0f8123b272b81aca017ea287d5360a5586b27413cd6ff4fa3db5bef4d9b583"
+        },
+        "requiredCapabilities": [],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell",
+          "network"
+        ],
+        "syncedAt": "2026-11-13T13:49:51.607Z",
+        "security": {
+          "status": "review-required",
+          "findings": [
+            "Hub-authored adapter: the official FFmpeg repository has no SKILL.md; binary/runtime compatibility is untested."
+          ]
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "No SKILL.md was found in the complete pinned upstream tree.",
+            "Only selected README, license and CLI documentation are included; no FFmpeg binaries, codec libraries or complete build are distributed.",
+            "Upstream licensing depends on build options and external libraries; preserve LICENSE.md and COPYING files and inspect the actual build.",
+            "Static review only. No third-party scripts or dependency installers executed; runtime/provider acceptance NOT_TESTED."
+          ]
+        }
+      },
+      "aliases": [
+        "Xử lý âm thanh video FFmpeg",
+        "Chuyển đổi định dạng video",
+        "Đọc metadata ffprobe"
+      ],
+      "keywords": [
+        "ffmpeg-cli",
+        "Xử lý âm thanh video FFmpeg",
+        "Chuyển đổi định dạng video",
+        "Đọc metadata ffprobe"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "88c46fce27e3",
+      "source": {
+        "repository": "FFmpeg/FFmpeg",
+        "commit": "88c46fce27e311c73772d9b83db4047dd83b1294",
+        "path": null
+      },
+      "stars": 67179,
+      "created_at": "2011-04-14T14:12:38Z",
+      "pushed_at": "2026-11-13T10:30:29Z",
+      "stats_checked": "2026-11-13",
+      "license": "LGPL-2.1-or-later",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 73,
+      "score_parts": {
+        "function": 19,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 8,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "references/upstream/COPYING.GPLv2"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "references/upstream/COPYING.GPLv3"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "references/upstream/COPYING.LGPLv2.1"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "references/upstream/doc/ffmpeg.texi"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "references/upstream/doc/ffprobe.texi"
+        }
+      ],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          }
+        ]
+      },
+      "dependencies": [
+        "ffmpeg"
+      ],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "SKILL.md",
+          "manifest.json",
+          "references/guide.vi.md",
+          "references/source.en.md",
+          "references/upstream/COPYING.GPLv2",
+          "references/upstream/COPYING.GPLv3",
+          "references/upstream/COPYING.LGPLv2.1",
+          "references/upstream/LICENSE.md",
+          "references/upstream/README.md",
+          "references/upstream/doc/ffmpeg.texi",
+          "references/upstream/doc/ffprobe.texi"
+        ]
+      },
+      "checksum": "c58542aea4dca925fdc4366a62672d867bd4fc72abe66aea42786fd1ef5c55f9",
+      "file_hashes": {
+        "SKILL.md": "0b0f8123b272b81aca017ea287d5360a5586b27413cd6ff4fa3db5bef4d9b583",
+        "manifest.json": "ac68df0750c012edf3ba730c8e096414ad0804c52cebad0a33f919a103c43208",
+        "references/guide.vi.md": "aaa6ad96fdee5effe089afdac70bc39d1cc72d605fb222ed5b93fb11aeb0508c",
+        "references/source.en.md": "0c9c75ccd343cbd78fee7ab161e59c899d96a244eb19bd3c96eea1c2dd45d06a",
+        "references/upstream/COPYING.GPLv2": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+        "references/upstream/COPYING.GPLv3": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+        "references/upstream/COPYING.LGPLv2.1": "246041b6ecf9bc32d718a62c57877c78b5eb397b6467e74ed7ae2626ab189c30",
+        "references/upstream/LICENSE.md": "e6dc72d5665a1ebd6dcc841de59278dad4ca77ecc47b03f1064a55c3e9ea8bb8",
+        "references/upstream/README.md": "86474c8f0806772f831a9c7a4982fd2398507372c577d229b76f60bbb3e7dead",
+        "references/upstream/doc/ffmpeg.texi": "e9cd8ba011ea7720ff35c7ed5bac09a236d9087e48ef255613089615ef7c0191",
+        "references/upstream/doc/ffprobe.texi": "98680e67dae597644afb3bef76cea912d15bd3b0215dd538104215ccc8544262"
+      },
+      "notes": [
+        "Giấy phép lạ, cần xem lại điều khoản."
+      ],
+      "last_checked": "2026-11-13T13:49:51.612Z",
+      "area": "skills"
+    },
+    {
       "id": "ffmpeg-skill",
       "name": "ffmpeg-skill",
       "description": "Edit video and audio with local FFmpeg: cut, join, reframe, speed, captions, overlays, silence removal, sync, loudness, HDR to SDR, platform exports and checks. Use whenever the user mentions a video or audio file (mp4, mov, wav, m4a), footage, captions, a reel or short, YouTube/TikTok delivery, LUFS or ffmpeg, even without saying \"edit\". Needs FFmpeg 6.1+ and Python 3.10+; stdlib only, no cloud.",
@@ -8452,6 +8633,352 @@
       },
       "notes": [],
       "last_checked": "2026-11-13T09:22:43.610Z",
+      "area": "quarantine"
+    },
+    {
+      "id": "hyperframes",
+      "name": "hyperframes",
+      "description": "Read first to make, edit, animate or render any video with HyperFrames (HTML rendered to video), including launch films, explainers, music videos, charts, maps, vertical clips, title cards, captions and overlays. Holds the render contract, the work loop and what each kind of video needs.",
+      "description_vi": "Tạo và chỉnh sửa video bằng HTML/CSS, animation có timeline và render từng frame với HyperFrames. Giữ nguyên skill chính thức; hỗ trợ phim giới thiệu, explainer, phụ đề và đồ họa chuyển động.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "hyperframes",
+        "version": "d208281091b1",
+        "source": {
+          "url": "https://github.com/heygen-com/hyperframes",
+          "commit": "d208281091b1c00db1724a2ee3db0055955eb41b",
+          "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+          "license": "Apache-2.0"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Tạo và chỉnh sửa video bằng HTML/CSS, animation có timeline và render từng frame với HyperFrames. Giữ nguyên skill chính thức; hỗ trợ phim giới thiệu, explainer, phụ đề và đồ họa chuyển động.",
+          "aliases": [
+            "Dựng video bằng HTML",
+            "Đồ họa chuyển động HyperFrames"
+          ],
+          "keywords": [
+            "hyperframes",
+            "Dựng video bằng HTML",
+            "Đồ họa chuyển động HyperFrames"
+          ],
+          "examples": [
+            "Dùng Hyperframes dựng video giới thiệu sản phẩm 15 giây bằng HTML.",
+            "Kiểm tra timeline, phụ đề và bố cục video Hyperframes hiện có."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243"
+        },
+        "requiredCapabilities": [],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell",
+          "network"
+        ],
+        "syncedAt": "2026-11-13T13:49:51.514Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "assets/frame-presets/code-editorial/fonts/EBGaramond-400.woff2: binary-file (low)",
+            "assets/frame-presets/code-editorial/fonts/EBGaramond-700.woff2: binary-file (low)",
+            "assets/frame-presets/code-editorial/fonts/Inter-400.woff2: binary-file (low)",
+            "assets/frame-presets/code-editorial/fonts/Inter-700.woff2: binary-file (low)",
+            "assets/frame-presets/code-editorial/fonts/JetBrainsMono-400.woff2: binary-file (low)",
+            "assets/frame-presets/code-editorial/fonts/JetBrainsMono-700.woff2: binary-file (low)",
+            "Upstream core requests a usage telemetry event on activation; review account linkage and opt-out before running.",
+            "Companion skills hyperframes-cli, hyperframes-registry and media-use are referenced upstream but are not bundled in this entry."
+          ]
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "Official English core and all 81 retained source files are pinned and byte-verified.",
+            "This is the standalone core skill, not the complete HyperFrames plugin. Companion skill references must be resolved before applicable tasks.",
+            "Static review only. No third-party scripts or dependency installers executed; runtime/provider acceptance NOT_TESTED."
+          ]
+        }
+      },
+      "aliases": [
+        "Dựng video bằng HTML",
+        "Đồ họa chuyển động HyperFrames"
+      ],
+      "keywords": [
+        "hyperframes",
+        "Dựng video bằng HTML",
+        "Đồ họa chuyển động HyperFrames"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "d208281091b1",
+      "source": {
+        "repository": "heygen-com/hyperframes",
+        "commit": "d208281091b1c00db1724a2ee3db0055955eb41b",
+        "path": "skills/hyperframes"
+      },
+      "stars": 83716,
+      "created_at": "2026-03-10T01:51:06Z",
+      "pushed_at": "2026-11-13T13:41:02Z",
+      "stats_checked": "2026-11-13",
+      "license": "Apache-2.0",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 19,
+        "security": 21,
+        "compatibility": 8,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/frame-presets/code-editorial/fonts/EBGaramond-400.woff2"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/frame-presets/code-editorial/fonts/EBGaramond-700.woff2"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/frame-presets/code-editorial/fonts/Inter-400.woff2"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/frame-presets/code-editorial/fonts/Inter-700.woff2"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/frame-presets/code-editorial/fonts/JetBrainsMono-400.woff2"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/frame-presets/code-editorial/fonts/JetBrainsMono-700.woff2"
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "ffmpeg"
+      ],
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "assets/frame-presets/biennale-yellow/FRAME.md",
+          "assets/frame-presets/biennale-yellow/caption-skin.html",
+          "assets/frame-presets/biennale-yellow/frame-showcase.html",
+          "assets/frame-presets/blockframe/FRAME.md",
+          "assets/frame-presets/blockframe/caption-skin.html",
+          "assets/frame-presets/blockframe/frame-showcase.html",
+          "assets/frame-presets/blue-professional/FRAME.md",
+          "assets/frame-presets/blue-professional/caption-skin.html",
+          "assets/frame-presets/blue-professional/frame-showcase.html",
+          "assets/frame-presets/bold-poster/FRAME.md",
+          "assets/frame-presets/bold-poster/caption-skin.html",
+          "assets/frame-presets/bold-poster/frame-showcase.html",
+          "assets/frame-presets/broadside/FRAME.md",
+          "assets/frame-presets/broadside/caption-skin.html",
+          "assets/frame-presets/broadside/frame-showcase.html",
+          "assets/frame-presets/capsule/FRAME.md",
+          "assets/frame-presets/capsule/caption-skin.html",
+          "assets/frame-presets/capsule/frame-showcase.html",
+          "assets/frame-presets/cartesian/FRAME.md",
+          "assets/frame-presets/cartesian/caption-skin.html",
+          "assets/frame-presets/cartesian/frame-showcase.html",
+          "assets/frame-presets/cobalt-grid/FRAME.md",
+          "assets/frame-presets/cobalt-grid/caption-skin.html",
+          "assets/frame-presets/cobalt-grid/frame-showcase.html",
+          "assets/frame-presets/code-editorial/FRAME.md",
+          "assets/frame-presets/code-editorial/caption-skin.html",
+          "assets/frame-presets/code-editorial/fonts/EBGaramond-400.woff2",
+          "assets/frame-presets/code-editorial/fonts/EBGaramond-700.woff2",
+          "assets/frame-presets/code-editorial/fonts/Inter-400.woff2",
+          "assets/frame-presets/code-editorial/fonts/Inter-700.woff2",
+          "assets/frame-presets/code-editorial/fonts/JetBrainsMono-400.woff2",
+          "assets/frame-presets/code-editorial/fonts/JetBrainsMono-700.woff2",
+          "assets/frame-presets/code-editorial/fonts/OFL-eb-garamond.txt",
+          "assets/frame-presets/code-editorial/fonts/OFL-inter.txt",
+          "assets/frame-presets/code-editorial/fonts/OFL-jetbrains-mono.txt",
+          "assets/frame-presets/code-editorial/frame-showcase.html",
+          "assets/frame-presets/coral/FRAME.md",
+          "assets/frame-presets/coral/caption-skin.html",
+          "assets/frame-presets/coral/frame-showcase.html",
+          "assets/frame-presets/creative-mode/FRAME.md",
+          "assets/frame-presets/creative-mode/caption-skin.html",
+          "assets/frame-presets/creative-mode/frame-showcase.html",
+          "assets/frame-presets/daisy-days/FRAME.md",
+          "assets/frame-presets/daisy-days/caption-skin.html",
+          "assets/frame-presets/daisy-days/frame-showcase.html",
+          "assets/frame-presets/editorial-forest/FRAME.md",
+          "assets/frame-presets/editorial-forest/caption-skin.html",
+          "assets/frame-presets/editorial-forest/frame-showcase.html",
+          "manifest.json",
+          "references/captions.md",
+          "references/film.md",
+          "references/format.md",
+          "references/guide.vi.md",
+          "references/look.md",
+          "references/motion.md",
+          "references/overlays.md",
+          "references/path-tracing.md",
+          "references/plugin-installation.md",
+          "references/review.md",
+          "references/runtimes.md",
+          "references/skill-lifecycle.md",
+          "references/sound.md",
+          "references/source.en.md",
+          "references/spec.md",
+          "references/story.md",
+          "references/storyboard-format.md",
+          "references/storyboard.md",
+          "references/types/3d.md",
+          "references/types/character.md",
+          "references/types/data.md",
+          "references/types/explainer.md",
+          "references/types/launch.md",
+          "references/types/music.md",
+          "references/types/vertical.md",
+          "scripts/bake-basemap.mjs",
+          "scripts/lib/main-module.mjs",
+          "scripts/lib/main-module.test.mjs",
+          "scripts/lib/windows-exe-search.mjs",
+          "scripts/lib/windows-exe-search.test.mjs",
+          "scripts/locate.mjs",
+          "scripts/plugin-cli.mjs",
+          "scripts/plugin-cli.test.mjs"
+        ]
+      },
+      "checksum": "f4a95533152c267302101a878b714b254c040428ab1413aeff856e6243f35bd6",
+      "file_hashes": {
+        "LICENSE": "4259155fb06f127687ee7b0a8a3682d45132db0f2da26cbc0b7a2d1e796436b8",
+        "SKILL.md": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+        "assets/frame-presets/biennale-yellow/FRAME.md": "76d22cced9c152b0edb520543cf34c4ce772a312caa7211c40d4315b53c053cf",
+        "assets/frame-presets/biennale-yellow/caption-skin.html": "b0e4812d9cb5852969be276f8a98ffa2b293ba8cc902fababae3f3f6340088c3",
+        "assets/frame-presets/biennale-yellow/frame-showcase.html": "5ba04e47cf9897e023dcfa49e1ec26fe26bac0c5061097dc6e7cb1d9ed46d7d0",
+        "assets/frame-presets/blockframe/FRAME.md": "ef8d9d47a209bed4ccc2d928c14a81cdaecb5129f5dc0cdc0dc40afc7ef92931",
+        "assets/frame-presets/blockframe/caption-skin.html": "a1073a9910efb0bd146d9ee4513ef95bd72c4993db399ccb4decf2d10002faab",
+        "assets/frame-presets/blockframe/frame-showcase.html": "8d2e4963713928b353d0aa28c2c83fce415df81b66a500c192b602c0aaf4ddf2",
+        "assets/frame-presets/blue-professional/FRAME.md": "62e9a445885f6057084493de385a8ce20c3b4a299ae36a553ef54884f06bad68",
+        "assets/frame-presets/blue-professional/caption-skin.html": "e2524d610d0c833f6b71355357c13b26e670ec581c28ce37d12ead15ce4297b4",
+        "assets/frame-presets/blue-professional/frame-showcase.html": "715b130d086977a48925a3c79bb079fbc7270274c9c9a7761bf275df3020b0ba",
+        "assets/frame-presets/bold-poster/FRAME.md": "af756ef993099f9ac78328f676eb79a6572ff0e9c2aacf12787471cd4525b171",
+        "assets/frame-presets/bold-poster/caption-skin.html": "a19c81d30377687605e2345601efabba5315d0d4db13c3ab4748d7004778c24a",
+        "assets/frame-presets/bold-poster/frame-showcase.html": "57bbc3374b6a8b37ce59e36ed784c22bbb88fd44d039955221913b3e1bacf159",
+        "assets/frame-presets/broadside/FRAME.md": "3af0a1e5e61bece19841671672d7732082f03d5699b713475e90323a21dbcc89",
+        "assets/frame-presets/broadside/caption-skin.html": "f074e1a9662d48ec0008aff7fffa1bdeeda40c5c5e05db9bd0fa6dd2ecdc7a6b",
+        "assets/frame-presets/broadside/frame-showcase.html": "8d23a2cbeb898568a5626b38ffc864236fb4a09930d59b17c34c45f34c8e4161",
+        "assets/frame-presets/capsule/FRAME.md": "f06dba67a3859f7c732b5177f7bcc58c94592caa5d6bbbcc6730a7876f5baa7a",
+        "assets/frame-presets/capsule/caption-skin.html": "0e62f725051213512566b6f615c438b893a3b39507a5a2666a52938c8dd74e46",
+        "assets/frame-presets/capsule/frame-showcase.html": "b3a642b5df3bbfb1ff227f1b82ee3ea02b51f20a0d7c5c46c97d72b180cddb4f",
+        "assets/frame-presets/cartesian/FRAME.md": "3dc6a31813a333b2a7a1509ddbd3b4dabbbd7e12e6479b6cff10d69c185fec95",
+        "assets/frame-presets/cartesian/caption-skin.html": "e3e08147d1725d40576f4f97687ce0c6a4c32ee1b74dac2720f0ba652b9dfcfd",
+        "assets/frame-presets/cartesian/frame-showcase.html": "d7867cee5e07c4f22345c566071f2ce0261b3fccca111a94dfbec5fde64f3e55",
+        "assets/frame-presets/cobalt-grid/FRAME.md": "62a6c9e6e5188cc29b9c0098e9bb8e72c23f152d9a99dd92c58139d26b69b19f",
+        "assets/frame-presets/cobalt-grid/caption-skin.html": "5cc71d8f0669e80d12ccb6bb83722870eecfeccade0bf64f8fb165e23fbadf3f",
+        "assets/frame-presets/cobalt-grid/frame-showcase.html": "b135214cd2e310273a01e3f72b2828149f022803954a22a13cbf27aa1c2f518a",
+        "assets/frame-presets/code-editorial/FRAME.md": "c24f6925cf938b88a93368443091440648e715c75ac38bd90abdaab6130bb4ad",
+        "assets/frame-presets/code-editorial/caption-skin.html": "724a20adff3824e4d31d5d51cc094337209a896a5ef3ae1e4e28aa502ee980e4",
+        "assets/frame-presets/code-editorial/fonts/EBGaramond-400.woff2": "b63448e2680a0dbde70ebb2f3de78f6c515122835491f938e8a8595b46f29210",
+        "assets/frame-presets/code-editorial/fonts/EBGaramond-700.woff2": "5d0f8a497a48fd2a3611d07acc844f65c9fbb35419eafa4e1295f5f0f95f86e4",
+        "assets/frame-presets/code-editorial/fonts/Inter-400.woff2": "8909904ab6c872eb994093482a88a28eca2cd95912d7b6fecd72103b0dc07edc",
+        "assets/frame-presets/code-editorial/fonts/Inter-700.woff2": "6f56409fd3d64bb85f7d070bce20749db2d66b6d63cec586cc22d1c761be2491",
+        "assets/frame-presets/code-editorial/fonts/JetBrainsMono-400.woff2": "14425ba9c695763c1547f48a206b7aa60350a33ae23de09f0407877f3fcd89eb",
+        "assets/frame-presets/code-editorial/fonts/JetBrainsMono-700.woff2": "d0d4e818808f2a0ba39b2b09d1989366f63494e295f003c7ef436697378507e8",
+        "assets/frame-presets/code-editorial/fonts/OFL-eb-garamond.txt": "f03c8eda63076cd52317dcd40aa04db8472d4cb592dfaafa385129dfdafc7f9c",
+        "assets/frame-presets/code-editorial/fonts/OFL-inter.txt": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345",
+        "assets/frame-presets/code-editorial/fonts/OFL-jetbrains-mono.txt": "403581b69dac5cff4079205e01c6b467e56af449ecbd7247693ddb1baafa005b",
+        "assets/frame-presets/code-editorial/frame-showcase.html": "08d711f5409a6af3fb6de05febe47fee77e4c8e85517bf2d087e2277b524e4ab",
+        "assets/frame-presets/coral/FRAME.md": "8530ecb36d1bb2d53392d88d972df35beeba19a5bcb3260fc9b18a58de7cdfe8",
+        "assets/frame-presets/coral/caption-skin.html": "44904b0567292521391fb576f07de7d2f5d8bce81d0369460f1054d093a06877",
+        "assets/frame-presets/coral/frame-showcase.html": "8ddf31ae13a4e57fe9730892fbbcb171cae67a204b5cb00b00374984f49b8f76",
+        "assets/frame-presets/creative-mode/FRAME.md": "c1a1359502d9fc79ef267305291fe0f651219c72d88088cee32327dd933dead8",
+        "assets/frame-presets/creative-mode/caption-skin.html": "2a45f759d64f5f6713ad2d529468df5bb345afe7d441d46c6316072348c1061b",
+        "assets/frame-presets/creative-mode/frame-showcase.html": "32c1371fcd526c56edb515e5b255ad736a3e330ba3ff2631c61576064b384ef0",
+        "assets/frame-presets/daisy-days/FRAME.md": "42d827dbd279990052e171d04380b5e6bbc111ae391dc283deb7a452e70b9b97",
+        "assets/frame-presets/daisy-days/caption-skin.html": "5af839f607efb817d96956f3b016fd6fd065851f69ac1ac223a8634737bd497e",
+        "assets/frame-presets/daisy-days/frame-showcase.html": "4fb93e5fa3ba12367f303996b6ca8b62f8e18c721d02e8032274df12d49d96f3",
+        "assets/frame-presets/editorial-forest/FRAME.md": "ceeb2ab768367da1e1f3e1eca36ab9feeb3de3e4d15493319b0044c3d869329c",
+        "assets/frame-presets/editorial-forest/caption-skin.html": "50427bf7fcec9c8ac22f195a0e7fc442ad85e733198837ee0b9b8050296a0fa5",
+        "assets/frame-presets/editorial-forest/frame-showcase.html": "bb87b88b91184f4fee7f02eea63ed35d9d378fa89fad8988326e31e82a43dbb1",
+        "manifest.json": "9d168090164f5a7f135de8e947efaad49e16ae5ff29edd919a8286204973090e",
+        "references/captions.md": "e7e2af7eace992487baa455bfa703fb3d770fb29f36732541554e60a46896d54",
+        "references/film.md": "b684403f725cf720b9f192bafd420ca55f24060114004234a4e46a715de7a183",
+        "references/format.md": "1eae5b314fab5e36e7ff5f41e9a3f95db4b5efb179ad8ef7cc74ef9235d49d62",
+        "references/guide.vi.md": "0cb2069aa228150462356c4d2c2239fb3de447c69ca2eadf254984ea5ca728a1",
+        "references/look.md": "5128a54cdb75bca2f627170e4a3a9667f4f11cf1579301fc16c53862c29c3ad3",
+        "references/motion.md": "bd55ea56343346060cd612a30874996e82f48ac5051ecb2bd1ab01efe4e2fc71",
+        "references/overlays.md": "d87fa3d13e8e0dace593f4aafb68c085b7f4393eee468c7695a74d5665150da3",
+        "references/path-tracing.md": "c45284156bfb77b5151cf6e5b34d47cad8e7da871147e842b4ebe358b187c6b7",
+        "references/plugin-installation.md": "16e9c38acd7c2cb261db619edf9fb40b74bfb7e84ae625a4ae933a8dd423102e",
+        "references/review.md": "90886b58db02aaa53e6b91c433748629eda061b18465804b56ebbbab92508e56",
+        "references/runtimes.md": "438b527d08c6aaef96f9750d4be68e8b558aebeb6ce96cf39c5338bd170032e5",
+        "references/skill-lifecycle.md": "094f8bc2d2ec3db9f306d9ab2a2d9a60a65e00bbeeb2f1aa4760d92b1f438b6d",
+        "references/sound.md": "be9e39ef947678b3ffed452063ce414af4a7d7c534b1e6c440bb5ce474d28ab4",
+        "references/source.en.md": "04e42835e9aec27ddf25c4d9d840fa384fd60f7c5d1f018b58e945080f05c9c9",
+        "references/spec.md": "6fa0658c5cf5c23058f70a6549cc952d683979052a0934760ba748bbec88fbc0",
+        "references/story.md": "3c2b96bb7f262652f4bf5efdef1ae806b47fd259c6704cb131938c5254965f22",
+        "references/storyboard-format.md": "f79e3be44cf2e506cdd2d1c46926319a0067f11889fe8aaf3a55759a9c61fb86",
+        "references/storyboard.md": "b71197f1234c435e7c91ad22e6ce348542a9e4cddede41dba09c8986edc6598b",
+        "references/types/3d.md": "1194492ec496e2146ae1e772fd5de6e23d850d25523f80ea61540331d748291e",
+        "references/types/character.md": "e8b4f6fd622acff593e2d7e478aa4e18ace1f9f785d16e42db5faf57ed525498",
+        "references/types/data.md": "c5fda22433aca573b871eeff956cd57e3773d6b16ffd9b3cc5726937912c1b7a",
+        "references/types/explainer.md": "ef2bd945bd347e760fd483515189c58e8000bd2cbc5f4b1c2d3e5d34e4d81f4e",
+        "references/types/launch.md": "1405b663227018d3dd7bfef895bcea3d3dd6c596078316bec30e8686d014f661",
+        "references/types/music.md": "868df2814d2a8e8f2bc884372d674320aee43c995fc67d25a109ebfdecb58b4a",
+        "references/types/vertical.md": "fed9f5a1a3ceb204bb54e0dda0fd50befe611d0ab388a5036fc80cbc117a691b",
+        "scripts/bake-basemap.mjs": "fea86ab2e2aab59fa81e4b26d77c0edcaadaf4c41b4455cf359c06047088c40c",
+        "scripts/lib/main-module.mjs": "61811e09110856e1439c29875e4a4ad7701ae45d4045f9d1dcb6a7929698e4c0",
+        "scripts/lib/main-module.test.mjs": "3d0ee22dd8b7acbdf8997c11449f29f13bafe6b20668a478ba504f66ec1ef151",
+        "scripts/lib/windows-exe-search.mjs": "6a301aa13e97d3e2e3ba7520c350ebec1b09ecafba24afd6a6866d5c3eb3b10f",
+        "scripts/lib/windows-exe-search.test.mjs": "11b83c0772e2021fe775ed616ec15418dd155d9c2d377624d0dbc36d0a1db681",
+        "scripts/locate.mjs": "c6583d7867b32a2f6f0c144f79b9abd27b9792c4bffa1256547d58cbcf5c0248",
+        "scripts/plugin-cli.mjs": "762d363af5740659ba2ef39977c4607d636291a7e8d327fc8a23fc98c8019de8",
+        "scripts/plugin-cli.test.mjs": "4c696e32f0f861c99399bce92365389fd34035d7be202da22aa48d5ba0e3de1d"
+      },
+      "notes": [],
+      "last_checked": "2026-11-13T13:49:51.563Z",
       "area": "quarantine"
     },
     {
@@ -12083,6 +12610,146 @@
       "area": "quarantine"
     },
     {
+      "id": "remotion-integration",
+      "name": "remotion-integration",
+      "description": "Source-linked Remotion integration guide for React video work. The official remotion-best-practices package requires license review before mirroring or activation.",
+      "description_vi": "Hướng dẫn tích hợp Remotion để tạo video bằng React; dẫn đến skill remotion-best-practices chính thức theo commit. Mục tham chiếu đang chờ xem xét giấy phép, chưa sao chép bộ skill của Remotion vào kho.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "remotion-integration",
+        "version": "bc7b1c442152",
+        "source": {
+          "url": "https://github.com/remotion-dev/remotion",
+          "commit": "bc7b1c44215249948356d070b43ae6e58a6adde3",
+          "sha256": "d476642ed52fe500fce636e16a8a2c7ec5b2a017a344bf124b6d8b06e0c66946",
+          "license": "LicenseRef-Remotion"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Hướng dẫn tích hợp Remotion để tạo video bằng React; dẫn đến skill remotion-best-practices chính thức theo commit. Mục tham chiếu đang chờ xem xét giấy phép, chưa sao chép bộ skill của Remotion vào kho.",
+          "aliases": [
+            "Dựng video bằng React",
+            "Tạo video Remotion",
+            "remotion-best-practices"
+          ],
+          "keywords": [
+            "remotion-integration",
+            "Dựng video bằng React",
+            "Tạo video Remotion",
+            "remotion-best-practices"
+          ],
+          "examples": [
+            "Dùng Remotion dựng video giới thiệu sản phẩm bằng React.",
+            "Tìm hướng dẫn chính thức về composition và render Remotion."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "d476642ed52fe500fce636e16a8a2c7ec5b2a017a344bf124b6d8b06e0c66946"
+        },
+        "requiredCapabilities": [],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell",
+          "network"
+        ],
+        "syncedAt": "2026-11-13T13:49:51.579Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "Source-linked record only: redistribution permission for the custom Remotion license has not been established; official skill files are not mirrored."
+          ]
+        },
+        "compatibility": {
+          "status": "incompatible",
+          "notes": [
+            "Hub-authored reference adapter, not an upstream SKILL.md.",
+            "The official remotion-best-practices entrypoint was located and hashed, but is only linked here pending license review.",
+            "Static review only. No third-party scripts or dependency installers executed; runtime/provider acceptance NOT_TESTED."
+          ]
+        }
+      },
+      "aliases": [
+        "Dựng video bằng React",
+        "Tạo video Remotion",
+        "remotion-best-practices"
+      ],
+      "keywords": [
+        "remotion-integration",
+        "Dựng video bằng React",
+        "Tạo video Remotion",
+        "remotion-best-practices"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "bc7b1c442152",
+      "source": {
+        "repository": "remotion-dev/remotion",
+        "commit": "bc7b1c44215249948356d070b43ae6e58a6adde3",
+        "path": null
+      },
+      "stars": 72922,
+      "created_at": "2020-06-23T19:49:10Z",
+      "pushed_at": "2026-11-13T13:42:36Z",
+      "stats_checked": "2026-11-13",
+      "license": "LicenseRef-Remotion",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 19,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 8,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [],
+      "approval_status": "quarantined",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          }
+        ]
+      },
+      "dependencies": [
+        "node"
+      ],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "SKILL.md",
+          "manifest.json",
+          "references/guide.vi.md",
+          "references/source.en.md"
+        ]
+      },
+      "checksum": "6ae97797c1c5caf10acc13db4aba028166ab1e6495d8a315ac4df87cffe1a631",
+      "file_hashes": {
+        "SKILL.md": "d476642ed52fe500fce636e16a8a2c7ec5b2a017a344bf124b6d8b06e0c66946",
+        "manifest.json": "a71495ff34dd85805d8850efa4c07d614c02c168a19cfd9ef9b4e89ad84aec68",
+        "references/guide.vi.md": "f57803646401091cb752da3083b8adecaf7dcf12fa60ff001f4694b61b7f917a",
+        "references/source.en.md": "e1d2989b792afad6dce36859f4e94b07bc8c53bb2dceaa3d254c4fd5d1d5f6a8"
+      },
+      "notes": [
+        "Giấy phép lạ, cần xem lại điều khoản."
+      ],
+      "last_checked": "2026-11-13T13:49:51.581Z",
+      "area": "quarantine"
+    },
+    {
       "id": "replica-recon",
       "name": "replica-recon",
       "description": "Reverse-engineers any app into a recon map: screen inventory, user flows, component list, inferred data model and a feature matrix, from public pages, screenshots, app store listings, help docs and the user's own account. The first step of the Replica pack. Use when the user says \"clone this app\", \"reverse engineer X\", \"how does X work\", \"map out X\", \"what screens does X have\", \"I want to build my own version of X\", \"copy this app\", or pastes an app's URL or App Store link and wants to rebuild it.",
@@ -14148,6 +14815,156 @@
       "notes": [],
       "last_checked": "2026-11-13T09:22:43.610Z",
       "area": "quarantine"
+    },
+    {
+      "id": "threejs-development",
+      "name": "threejs-development",
+      "description": "Hub-authored Three.js integration workflow for browser 3D scenes, cameras, meshes, animation and renderer debugging. Not an official upstream agent skill.",
+      "description_vi": "Hướng dẫn tích hợp Three.js cho đồ họa 3D trên trình duyệt: scene, camera, mesh, WebGL/WebGPU và vòng lặp animation. Do Limix Skill Hub biên soạn dựa trên README và metadata nguồn; không phải skill chính thức của mrdoob.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "threejs-development",
+        "version": "acf77e4c7ea4",
+        "source": {
+          "url": "https://github.com/mrdoob/three.js",
+          "commit": "acf77e4c7ea413a0a9638baacef3d78e254b2cac",
+          "sha256": "d9cefef4b283d5091c446fc3db56a0bdac9d156965ca540d89088b81a5872b1d",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Hướng dẫn tích hợp Three.js cho đồ họa 3D trên trình duyệt: scene, camera, mesh, WebGL/WebGPU và vòng lặp animation. Do Limix Skill Hub biên soạn dựa trên README và metadata nguồn; không phải skill chính thức của mrdoob.",
+          "aliases": [
+            "Lập trình 3D trình duyệt",
+            "Tạo cảnh Three.js",
+            "Đồ họa WebGL WebGPU"
+          ],
+          "keywords": [
+            "threejs-development",
+            "Lập trình 3D trình duyệt",
+            "Tạo cảnh Three.js",
+            "Đồ họa WebGL WebGPU"
+          ],
+          "examples": [
+            "Tạo một cảnh Three.js có khối lập phương xoay.",
+            "Sửa camera và kích thước canvas của dự án Three.js."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "d9cefef4b283d5091c446fc3db56a0bdac9d156965ca540d89088b81a5872b1d"
+        },
+        "requiredCapabilities": [],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell",
+          "network"
+        ],
+        "syncedAt": "2026-11-13T13:49:51.587Z",
+        "security": {
+          "status": "review-required",
+          "findings": [
+            "Hub-authored adapter: upstream has no SKILL.md; review this workflow before activation."
+          ]
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "No SKILL.md was found in the complete pinned upstream tree.",
+            "Only README.md, LICENSE and package.json are mirrored as byte-verified references; the three.js runtime and example assets are not bundled.",
+            "Static review only. No third-party scripts or dependency installers executed; runtime/provider acceptance NOT_TESTED."
+          ]
+        }
+      },
+      "aliases": [
+        "Lập trình 3D trình duyệt",
+        "Tạo cảnh Three.js",
+        "Đồ họa WebGL WebGPU"
+      ],
+      "keywords": [
+        "threejs-development",
+        "Lập trình 3D trình duyệt",
+        "Tạo cảnh Three.js",
+        "Đồ họa WebGL WebGPU"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "acf77e4c7ea4",
+      "source": {
+        "repository": "mrdoob/three.js",
+        "commit": "acf77e4c7ea413a0a9638baacef3d78e254b2cac",
+        "path": null
+      },
+      "stars": 118285,
+      "created_at": "2010-03-23T18:58:01Z",
+      "pushed_at": "2026-11-13T10:38:01Z",
+      "stats_checked": "2026-11-13",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 75,
+      "score_parts": {
+        "function": 19,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "references/upstream/LICENSE"
+        }
+      ],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          }
+        ]
+      },
+      "dependencies": [
+        "node"
+      ],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "SKILL.md",
+          "manifest.json",
+          "references/guide.vi.md",
+          "references/source.en.md",
+          "references/upstream/LICENSE",
+          "references/upstream/README.md",
+          "references/upstream/package.json"
+        ]
+      },
+      "checksum": "0f1f7396f28edbc94d620e5c313bffc5e396db5b1bcffe3f759257a4d65fe7ef",
+      "file_hashes": {
+        "SKILL.md": "d9cefef4b283d5091c446fc3db56a0bdac9d156965ca540d89088b81a5872b1d",
+        "manifest.json": "341c3abee07c141b894feacb260248d676bda5b7b352d1f2d6795e644eb3661b",
+        "references/guide.vi.md": "ad838c56c55ffa6db0d788bb75e1c6254efa5cb29a0f2ae540914de6461ad85e",
+        "references/source.en.md": "2b303d514345f4ee932d25cfbaaa6042347bc86e3a6a0297b113ca4e9b268d1e",
+        "references/upstream/LICENSE": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+        "references/upstream/README.md": "d553d824625a07d7690de93af6f8daf13d6aaed42700929d7ce4e725fa5ef10d",
+        "references/upstream/package.json": "87f2c99a8718e5fdd6f5e51427fde52c6075f2f698ddf8f7b4e162882df93940"
+      },
+      "notes": [],
+      "last_checked": "2026-11-13T13:49:51.591Z",
+      "area": "skills"
     },
     {
       "id": "trader-scanner",

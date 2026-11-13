@@ -73,3 +73,16 @@ Hướng dẫn bảo trì: [docs/hybrid-maintenance.md](docs/hybrid-maintenance.
 | [grandet-api-price-finder](skills/grandet-api-price-finder/SKILL.md) | [hanzohanzhe/Grandet](https://github.com/hanzohanzhe/Grandet) | ![](https://img.shields.io/github/stars/hanzohanzhe/Grandet?style=social) | 2026-10-05 | 2026-11-13 (lần 8/30) | So sánh giá API và credit miễn phí theo thời gian thực từ hơn 1.800 nhà cung cấp và cổng chuyển tiếp LLM |
 | [claude-guardian](skills/claude-guardian/SKILL.md) | [DUNHKpcc/Claude-Guardian](https://github.com/DUNHKpcc/Claude-Guardian) | ![](https://img.shields.io/github/stars/DUNHKpcc/Claude-Guardian?style=social) | 2026-10-15 | 2026-11-13 (lần 8/30) | Vệ sĩ bảo vệ tài khoản và đường truyền mạng cho Agent: cô lập rủi ro IP/DNS/TUN, phân quyền 3 tầng A/B/C |
 | [stickman-video-director](skills/stickman-video-director/SKILL.md) | [kaomei/stickman-video-director](https://github.com/kaomei/stickman-video-director) | ![](https://img.shields.io/github/stars/kaomei/stickman-video-director?style=social) | 2026-08-03 | 2026-11-13 (theo yêu cầu) | Đạo diễn video hoạt hình người que đa phong cách: chế độ Đạo diễn lập kịch bản 5 pha & prompt AI, chế độ Tự hành render trực tiếp |
+
+## Video và 3D — bổ sung theo yêu cầu 13/11/2026
+
+Các mục do Hub biên soạn được ghi rõ nguồn gốc; không được coi là skill chính thức của upstream. Không có binary, runtime hoặc dịch vụ trả phí nào được cài/kích hoạt. Xem [báo cáo nhập](docs/video-tools-import-2026-11-13.md).
+
+| Mục | Nguồn | Loại nội dung | Trạng thái |
+|---|---|---|---|
+| [hyperframes](skills/hyperframes/SKILL.md) | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Core skill chính thức, 81 file nguồn nguyên byte; hướng dẫn Việt riêng | Cách ly: cần xem telemetry và skill bổ trợ |
+| [remotion-integration](skills/remotion-integration/SKILL.md) | [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | Mục tham chiếu tới skill chính thức; chưa sao chép bộ skill vì chờ xác minh quyền phân phối | Cách ly: chờ xem xét giấy phép |
+| [threejs-development](skills/threejs-development/SKILL.md) | [mrdoob/three.js](https://github.com/mrdoob/three.js) | Adapter do Hub biên soạn; README/license/metadata gốc nguyên byte | Chờ duyệt; chưa chạy trình duyệt 3D |
+| [ffmpeg-cli](skills/ffmpeg-cli/SKILL.md) | [FFmpeg/FFmpeg](https://github.com/FFmpeg/FFmpeg) | Adapter do Hub biên soạn; tài liệu CLI/license gốc nguyên byte | Chờ duyệt; chưa cài hoặc chạy FFmpeg |
+
+`ffmpeg-cli` dùng nguồn FFmpeg chính thức; `ffmpeg-skill` đã có vẫn thuộc repo bên thứ ba riêng. Không đổi nguồn hoặc giả lập lại tên skill cũ.
