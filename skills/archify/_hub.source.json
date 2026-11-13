@@ -1,0 +1,572 @@
+{
+  "repository": "tt-a1i/archify",
+  "commit": "e37848822238e3a61b12739185cdadd49843a620",
+  "path": "archify",
+  "verified": true,
+  "coreSha256": "1382cfb7108b05e500b82af93c04fd7b694430d3908039bd92d634f01c1e7181",
+  "skipped": [
+    "explainer/reader.css",
+    "explainer/reader.js",
+    "explainer/render.mjs",
+    "explainer/sources.mjs",
+    "explainer/validate.mjs",
+    "explainer/vendor/pele/chunks/42UTT654.js",
+    "explainer/vendor/pele/chunks/EEIX5ZYH.js",
+    "explainer/vendor/pele/chunks/EJ5KOXYD.js",
+    "explainer/vendor/pele/chunks/IZOKQ2GT.js",
+    "explainer/vendor/pele/chunks/L4LY553T.js",
+    "explainer/vendor/pele/chunks/MSKIJHB2.js",
+    "explainer/vendor/pele/chunks/UKSIWDDN.js",
+    "explainer/vendor/pele/chunks/UPTXNAXN.js",
+    "explainer/vendor/pele/chunks/XTDUIGUI.js",
+    "explainer/vendor/pele/chunks/YAYTP6L5.js",
+    "explainer/vendor/pele/LICENSE",
+    "explainer/writing.mjs",
+    "LICENSE",
+    "LICENSE-MIT",
+    "locales/ar.json",
+    "locales/en.json",
+    "locales/es.json",
+    "locales/ko.json",
+    "locales/README.md",
+    "locales/zh-CN.json",
+    "locales/zh-TW.json",
+    "migrations/workflow-v2.mjs",
+    "NOTICE",
+    "package-lock.json",
+    "package.json",
+    "recipes/scenarios.mjs",
+    "references/architecture-layout-repair.md",
+    "references/authoring-contract.md",
+    "references/authoring-defaults.md",
+    "references/brand-marks.md",
+    "references/delivery-contract.md",
+    "references/explainer-authoring.md",
+    "references/repository-authoring.md",
+    "references/update-awareness.md",
+    "references/viewer-runtime.md",
+    "renderers/architecture/grid.mjs",
+    "renderers/architecture/labels.mjs",
+    "renderers/architecture/render-architecture.mjs",
+    "renderers/architecture/routing.mjs",
+    "renderers/class/README.md",
+    "renderers/class/render-class.mjs",
+    "renderers/dataflow/dataflow-compiler.mjs",
+    "renderers/dataflow/joint-label-routing.mjs",
+    "renderers/dataflow/label-capacity.mjs",
+    "renderers/dataflow/README.md",
+    "renderers/dataflow/render-dataflow.mjs",
+    "renderers/erd/grid.mjs",
+    "renderers/erd/README.md",
+    "renderers/erd/render-erd.mjs",
+    "renderers/explainer/render-explainer.mjs",
+    "renderers/lifecycle/README.md",
+    "renderers/lifecycle/render-lifecycle.mjs",
+    "renderers/sequence/README.md",
+    "renderers/sequence/render-sequence.mjs",
+    "renderers/shared/atomic-output.mjs",
+    "renderers/shared/automatic-labels.mjs",
+    "renderers/shared/brand-marks.mjs",
+    "renderers/shared/cli.mjs",
+    "renderers/shared/desktop-readability.mjs",
+    "renderers/shared/diagnostics.mjs",
+    "renderers/shared/engineering-profiles.mjs",
+    "renderers/shared/generated-brand-marks.mjs",
+    "renderers/shared/generated-validators.mjs",
+    "renderers/shared/geometry.mjs",
+    "renderers/shared/i18n.mjs",
+    "renderers/shared/layout-report.mjs",
+    "renderers/shared/legend.mjs",
+    "renderers/shared/node-card-style.mjs",
+    "renderers/shared/output-path.mjs",
+    "renderers/shared/owned-temp-directory.mjs",
+    "renderers/shared/path-semantics.mjs",
+    "renderers/shared/portable-path.mjs",
+    "renderers/shared/repository-evidence.mjs",
+    "renderers/shared/repository-location.mjs",
+    "renderers/shared/route-quality.mjs",
+    "renderers/shared/sidecar-path.mjs",
+    "renderers/shared/software-notices.mjs",
+    "renderers/shared/spatial-grid.mjs",
+    "renderers/shared/svg-path-analysis.mjs",
+    "renderers/shared/text-fit.mjs",
+    "renderers/shared/utils.mjs",
+    "renderers/shared/validator.mjs",
+    "renderers/timeline/README.md",
+    "renderers/timeline/render-timeline.mjs",
+    "renderers/tree/README.md",
+    "renderers/tree/render-tree.mjs",
+    "renderers/waterfall/README.md",
+    "renderers/waterfall/render-waterfall.mjs",
+    "renderers/workflow/README.md",
+    "renderers/workflow/render-workflow.mjs",
+    "renderers/workflow/workflow-compiler.mjs",
+    "renderers/workflow/workflow-migration-geometry.mjs",
+    "renderers/workflow/workflow-placement-repair.mjs",
+    "schemas/architecture.schema.json",
+    "schemas/class.schema.json",
+    "schemas/common.schema.json",
+    "schemas/dataflow.schema.json",
+    "schemas/erd.schema.json",
+    "schemas/explainer.schema.json",
+    "schemas/lifecycle.schema.json",
+    "schemas/README.md",
+    "schemas/sequence.schema.json",
+    "schemas/timeline.schema.json",
+    "schemas/tree.schema.json",
+    "schemas/waterfall.schema.json",
+    "schemas/workflow.schema.json",
+    "scripts/check-render-output.mjs",
+    "scripts/check-update.mjs",
+    "scripts/delivery-update-child.mjs",
+    "scripts/generate-brand-marks.mjs",
+    "scripts/generate-validators.mjs",
+    "scripts/render-examples.mjs",
+    "scripts/update-contract.mjs",
+    "skill-release.json",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "1382cfb7108b05e500b82af93c04fd7b694430d3908039bd92d634f01c1e7181",
+      "executable": false
+    },
+    {
+      "path": "assets/JetBrainsMono-OFL.txt",
+      "sha256": "c1ab7c666206842a02b35b30770dac0d7a10156ed401c9defc3f02a754d89e90",
+      "executable": false
+    },
+    {
+      "path": "assets/template.html",
+      "sha256": "9689eeec1a5918aea571eb84d66ea28c7b5bcdcbcf2ae71666bad19d44cc89bc",
+      "executable": false
+    },
+    {
+      "path": "bin/archify.mjs",
+      "sha256": "3cebcee3fa339e3b98deacae8cb9a5570525e003d8823368d304d904ba9ceecd",
+      "executable": true
+    },
+    {
+      "path": "bin/delivery-update.mjs",
+      "sha256": "24d92f908d91ece10ddcefe979f7950f9250023813c41777022ae5d948aa8e2c",
+      "executable": false
+    },
+    {
+      "path": "bin/finalize.mjs",
+      "sha256": "766e053afaeaca8045b8a0558f50cb6b685dfe21cb9d00e7776d407d6db364e8",
+      "executable": false
+    },
+    {
+      "path": "bin/open-artifact.mjs",
+      "sha256": "b0ab5f37c4f4556f76040dc862744afe9d4b65f319f35e1f9b505e0344b9c409",
+      "executable": false
+    },
+    {
+      "path": "bin/preview.mjs",
+      "sha256": "a37f4f0985339933e8d89ef664d27988afac557b52084ec04407848b936989bd",
+      "executable": false
+    },
+    {
+      "path": "bin/recover-output.mjs",
+      "sha256": "b3f7db21b3fc5341326207c1259aa787730120f42179eff50e481b0c6ad1e2d4",
+      "executable": false
+    },
+    {
+      "path": "bin/visual-check.mjs",
+      "sha256": "72a8eec9793588552da4013f228eb3fb5ad4936a3d3cf31920de883b77ca3dfd",
+      "executable": false
+    },
+    {
+      "path": "brand-marks/catalog.json",
+      "sha256": "e1a6c555cbf8ea36fb8100a4a25824e7ab87bebe9871e450ba05b6dea3b036d6",
+      "executable": false
+    },
+    {
+      "path": "brand-marks/README.md",
+      "sha256": "8b771a16322ce9ea47fdc00b9935e33adf0f3af608f2d735235443e15ef622e2",
+      "executable": false
+    },
+    {
+      "path": "delta/architecture-delta.mjs",
+      "sha256": "479c55681f6a5b24d187d6e45a585792384e5dc56aa583131d189366b950a1c5",
+      "executable": false
+    },
+    {
+      "path": "examples/agent-run.lifecycle.json",
+      "sha256": "5ba36f5ce91ed428cb48b599e275424916d82b619b9a3231cbd1bbc3966fc54b",
+      "executable": false
+    },
+    {
+      "path": "examples/agent-tool-call.workflow.json",
+      "sha256": "d67965d50872c97e4ff3476271e645bf19fab6b3ab44e111bdb44b063e3aa36f",
+      "executable": false
+    },
+    {
+      "path": "examples/archify-dev-activity.timeline.json",
+      "sha256": "e9c8d76528e8c38a68d9a8df2499c462f6b9633292ea43bf33350546ef2fd3a3",
+      "executable": false
+    },
+    {
+      "path": "examples/archify-repository.tree.json",
+      "sha256": "970617ee844ecfb1bb792c677aa8b85688abfd2cf8ab2365dc03ea9e26e6b9c7",
+      "executable": false
+    },
+    {
+      "path": "examples/async-job-roundtrip.sequence.json",
+      "sha256": "b8c6c52f1763ede2933c77deb8da59b3e06917bc41d27e66df896136456b859a",
+      "executable": false
+    },
+    {
+      "path": "examples/brand-aware-delivery.architecture.json",
+      "sha256": "211c126ebdc5f0124617b1067cecfb858143a1a18fd10621d01f5765c7de3b5d",
+      "executable": false
+    },
+    {
+      "path": "examples/cache-miss-request.sequence.json",
+      "sha256": "f8486daa803fff6c295cecca4604c561fbbf9acb2e83326022b5a87639e8afe6",
+      "executable": false
+    },
+    {
+      "path": "examples/checkout-platform.base.architecture.json",
+      "sha256": "81d55a2e86fc39f6473b32dfba986a12d3b7a705a95821844865b1dc831c9fe7",
+      "executable": false
+    },
+    {
+      "path": "examples/checkout-platform.head.architecture.json",
+      "sha256": "eb4ae056035dd3316414a5d7f6599525107b5d1af7bedbd905460ade77daf5c6",
+      "executable": false
+    },
+    {
+      "path": "examples/checkout-request.waterfall.json",
+      "sha256": "55a5f74699a0f0e44018a4a000556d43c90430b95f39accac6141af8318b5133",
+      "executable": false
+    },
+    {
+      "path": "examples/class-payment-processors-rendered.html",
+      "sha256": "56d2f75d3e147acd4de44d23d1715d2d3a6c5f057c08b50dd3e1d35b7dd8a66e",
+      "executable": false
+    },
+    {
+      "path": "examples/class-payments-rendered.html",
+      "sha256": "4749922e51166b7f855fd4f2070459a27641a1b429d52d5bcbdb9fa8e641d152",
+      "executable": false
+    },
+    {
+      "path": "examples/dataflow-product-analytics.html",
+      "sha256": "f41d292adca854bf46e0114d1cb4e73566a667533c659467538a7fa4788d9897",
+      "executable": false
+    },
+    {
+      "path": "examples/delivery.explainer.json",
+      "sha256": "188cf8777816ac034dd5a92b04bf427b0f1a8dbfa0956ae072b2d4091427806c",
+      "executable": false
+    },
+    {
+      "path": "examples/deployment-release.lifecycle.json",
+      "sha256": "e3dc105d03c1c9881160006cdace23cb5d8533803e337caf0ec287c64e775275",
+      "executable": false
+    },
+    {
+      "path": "examples/erd-orders-rendered.html",
+      "sha256": "e97a501766ff355602f9e123ff2a11784d09ee473b9db296a79267a3508533d2",
+      "executable": false
+    },
+    {
+      "path": "examples/event-stream.dataflow.json",
+      "sha256": "3bdd77674282009c7c68d588cf8a3c495bc98a3be1b9c45327fd1801a6f83a23",
+      "executable": false
+    },
+    {
+      "path": "examples/example-rebuild.waterfall.json",
+      "sha256": "77d610013a5aab031df739c207b66ebc26e1740371b51da06956ecf06b5e9929",
+      "executable": false
+    },
+    {
+      "path": "examples/holiday-planning.workflow.json",
+      "sha256": "b98354f921ca45842fed235db09fd4f19d94adc16865876f438c0d699d05e1ea",
+      "executable": false
+    },
+    {
+      "path": "examples/incident-response.workflow.json",
+      "sha256": "630be98449925d2716ecb8439f404b2bff5fe65ba905b0ad0baea6d96890c526",
+      "executable": false
+    },
+    {
+      "path": "examples/lifecycle-agent-run.html",
+      "sha256": "ed4d735dc926b3c27324d0c174fe0607377722674d150b34a2fedce47459e111",
+      "executable": false
+    },
+    {
+      "path": "examples/locales/de.json",
+      "sha256": "77975293855578923fbbee29f478d9d84002c04d6a7b3e22cd9db8cf3fb414ba",
+      "executable": false
+    },
+    {
+      "path": "examples/locales/fr.json",
+      "sha256": "ea1af868932eb22761094a4950b769fd0634430fe706fc4ea4335eca7f0529bb",
+      "executable": false
+    },
+    {
+      "path": "examples/locales/fr.partial.json",
+      "sha256": "8958a8354ffccce2ce63ac21b3f8a0f131086f532832445a3fe7feff02200397",
+      "executable": false
+    },
+    {
+      "path": "examples/locales/it.json",
+      "sha256": "be8cd15fcd0311521dc8ae1f35bbcf8e33a180e20e5ce94fd0d65dec4e147e6b",
+      "executable": false
+    },
+    {
+      "path": "examples/locales/ja.json",
+      "sha256": "bb6d66d7e1126c5c622423317a536728820d3fe686be90d0c9cc8f6ca4ff3e67",
+      "executable": false
+    },
+    {
+      "path": "examples/locales/pt.json",
+      "sha256": "8e3c6a054183e96465bd882bc23d38eafe19c0484eda5709f4e2b37e132e0731",
+      "executable": false
+    },
+    {
+      "path": "examples/locales/ru.json",
+      "sha256": "ea673bf7156d87ac43d754839155a1a145aafa481b5de540e04d1f8d3ec008d3",
+      "executable": false
+    },
+    {
+      "path": "examples/orders.erd.json",
+      "sha256": "1777a374647084466f4d7ce3a968004be6ab70ac9cf82459b96bed7c556cdfdd",
+      "executable": false
+    },
+    {
+      "path": "examples/payment-incident.timeline.json",
+      "sha256": "c1f535b3cc915ddd47ecd7df4e3ef02c441c8c3191daced5cf4422cff8dec95f",
+      "executable": false
+    },
+    {
+      "path": "examples/payment-platform.tree.json",
+      "sha256": "1e99f37b3845d67fa97c9a2ff33109981c23bfdb0d03ba05b7d92944dcdfc61f",
+      "executable": false
+    },
+    {
+      "path": "examples/payment-processors.class.json",
+      "sha256": "98742b997db4782981460e8110e5fba899d8500c92c086aa867c5c62c3b89222",
+      "executable": false
+    },
+    {
+      "path": "examples/payments.class.json",
+      "sha256": "afba837f97a041e14687cbe8893523232c4afad7afd922d9b128606d1b3f12c8",
+      "executable": false
+    },
+    {
+      "path": "examples/product-analytics.dataflow.json",
+      "sha256": "8a635db9e51a5b1a8d2955b9d66f5b9a450e0a298432ce8f2e2f0be11f372e05",
+      "executable": false
+    },
+    {
+      "path": "examples/production-deployment.architecture.json",
+      "sha256": "610a5614667e8f108bdcf1769c9d7af5c3ce0fb62be3ea50550b10eb752e4bda",
+      "executable": false
+    },
+    {
+      "path": "examples/release-delivery.workflow.json",
+      "sha256": "dbd5c174af66296caec372e7214cf4df7158b50a563508e16826b95ab8d1cd6c",
+      "executable": false
+    },
+    {
+      "path": "examples/sequence-cache-miss-request.html",
+      "sha256": "49e750c91bb8a21a63db5f80f147bf4867cf938f75cbdd5a5da1e11b36a3d3ba",
+      "executable": false
+    },
+    {
+      "path": "examples/subscription-billing-rendered.html",
+      "sha256": "0cab0e29a347b6427cebb20c6c1d236e59cd7689ce7790e029101f7927c5a944",
+      "executable": false
+    },
+    {
+      "path": "examples/subscription-billing.erd.json",
+      "sha256": "89945699d92b9cc0ab91263cf38a07c350867d260eacd5d8ba1dc835fe2d22ed",
+      "executable": false
+    },
+    {
+      "path": "examples/timeline-archify-dev-activity-rendered.html",
+      "sha256": "f66dd976211353de010a43aec72205f6aad7dc53f1433a22e41c6eed391230b1",
+      "executable": false
+    },
+    {
+      "path": "examples/timeline-payment-incident-rendered.html",
+      "sha256": "46494b119b8637449a402ec05990b2b63a0ffc3b883a85a3d622656ce909260e",
+      "executable": false
+    },
+    {
+      "path": "examples/tree-archify-repository-rendered.html",
+      "sha256": "e1a68b7c1ae795994f29c8c9a3efcb91f616e637d0c8d5b95c179c2597345683",
+      "executable": false
+    },
+    {
+      "path": "examples/tree-payment-platform-rendered.html",
+      "sha256": "b79f07651f7d26eb8651e4c321d8396963d125ed66d2ec9bd86365284ddb472e",
+      "executable": false
+    },
+    {
+      "path": "examples/waterfall-checkout-request-rendered.html",
+      "sha256": "74cb226d2a44be1482a824d08e6ca21d3b0353065118623c692ea651cd9e9759",
+      "executable": false
+    },
+    {
+      "path": "examples/waterfall-example-rebuild-rendered.html",
+      "sha256": "6a7840b16ed9e8175f2f6eaa2ffbd9518e06a96b5ca0a5dafaaad874ca80ec70",
+      "executable": false
+    },
+    {
+      "path": "examples/web-app-rendered.html",
+      "sha256": "ffabd084c754ee97ed9e9355ba19fab449533432537d6b8cdb5c6d276293741a",
+      "executable": false
+    },
+    {
+      "path": "examples/web-app.architecture.json",
+      "sha256": "95e051b27a9e4a3307e194c0f666fca4af51470be7e2228d400ff48aea5b353b",
+      "executable": false
+    },
+    {
+      "path": "examples/workflow-agent-tool-call-rendered.html",
+      "sha256": "6ee1999c899c2b7bed3b69b14e23dfbf9c7ff096441870361c690b469ad43e29",
+      "executable": false
+    },
+    {
+      "path": "explainer/browser-check.mjs",
+      "sha256": "cbbebfca2cb58cde0791f349e4f13490c0d085ce2f8653279139cf2aed334677",
+      "executable": false
+    },
+    {
+      "path": "explainer/charts.mjs",
+      "sha256": "bb49c5e8e5d6ba70a511d292dbac6a47953a010b67a8563e5f68222c7b220390",
+      "executable": false
+    },
+    {
+      "path": "explainer/check.mjs",
+      "sha256": "151211edd6f1b842ee63b1aef8682cb68e6237ce3b9e7a81e09667420f2b9b3b",
+      "executable": false
+    },
+    {
+      "path": "explainer/diagrams.mjs",
+      "sha256": "bb4aae343968db5a5ad70c368ad41dcc9d2ac93f3ace02645059daf33cab16ba",
+      "executable": false
+    },
+    {
+      "path": "explainer/diff.mjs",
+      "sha256": "0851a6b9715a3f277308cb88c84a5ef5fc943f09a9e0a391a573438fe8a30fbb",
+      "executable": false
+    },
+    {
+      "path": "explainer/inline.mjs",
+      "sha256": "e024b719a365077b547cb3d50ac9909db7e080ca5bde62387e5d62ead3f819f3",
+      "executable": false
+    },
+    {
+      "path": "explainer/layout.mjs",
+      "sha256": "656232369fe0394e35f827c1b5295fb8f14d315e7fa53d5f16248440519736c8",
+      "executable": false
+    },
+    {
+      "path": "explainer/page-bundle.mjs",
+      "sha256": "1d4fc3f65b4eb4207a0c3b86a2968310f931a9b945fcd1fc3021ce98a29f7310",
+      "executable": false
+    },
+    {
+      "path": "explainer/parse.mjs",
+      "sha256": "dd0d05672e92453b1b1cea31372792cbe03aecdd80f21e2f3aa0eda49d3be853",
+      "executable": false
+    },
+    {
+      "path": "explainer/patch.mjs",
+      "sha256": "b2721021de474431537705d696325ea01eb946e9095e8476fad1802d2fb5be4d",
+      "executable": false
+    },
+    {
+      "path": "explainer/prepare.mjs",
+      "sha256": "d8ff050738d7c858d62641b069455482814de0c4bdf7c0872d0a2a663b1b0643",
+      "executable": false
+    },
+    {
+      "path": "explainer/revision.mjs",
+      "sha256": "29032cab30c03b2e4c48730f40175e0e59aa4794893c02e5ae38668776c18288",
+      "executable": false
+    },
+    {
+      "path": "explainer/vendor/pele/chunks/3DKXF73K.js",
+      "sha256": "5901afffb8349d0cb095e93494e8d3f36f09497b28a9255e066c52b6ce0a6c31",
+      "executable": false
+    },
+    {
+      "path": "explainer/vendor/pele/chunks/DKTLEL5E.js",
+      "sha256": "91864eed78a6a3cc9791d20fb9b61fd8f458c12101662883cd23e755fd2a4cb6",
+      "executable": false
+    },
+    {
+      "path": "explainer/vendor/pele/chunks/GUJTEFZK.js",
+      "sha256": "e8584ce5872c50c6370efc1fbce911848506d84ff6fa88e4f079f412b5e2f068",
+      "executable": false
+    },
+    {
+      "path": "explainer/vendor/pele/chunks/RVARI57O.js",
+      "sha256": "3dc7661b060578920eab83aafd1fa261886e7e331d44f8f5d2f34bd0804027a3",
+      "executable": false
+    },
+    {
+      "path": "explainer/vendor/pele/core.js",
+      "sha256": "ac428c1ca244f030f363e0d0f12e623df92c1439d2a211310d1ff73f0ed224a4",
+      "executable": false
+    },
+    {
+      "path": "explainer/vendor/pele/diagrams/pie.js",
+      "sha256": "a2bc92d2f8842b476cdb8a039455493db2c71d6a4e3a1b3dc97cfc1f409056d1",
+      "executable": false
+    },
+    {
+      "path": "explainer/vendor/pele/diagrams/quadrantChart.js",
+      "sha256": "9ac8fc714b3973854efdd960fb6831c973e72624bb9b0bc091ada8958794ebfb",
+      "executable": false
+    },
+    {
+      "path": "explainer/vendor/pele/diagrams/radar.js",
+      "sha256": "379748e709992f9e242028ad4a1b103f75ad693a84331c8fc33df0f258a7a9fe",
+      "executable": false
+    },
+    {
+      "path": "explainer/vendor/pele/diagrams/sankey.js",
+      "sha256": "a789e591ba81fd434418a64561005caf50760f11cbaa9d4dd589e777bbfe8e36",
+      "executable": false
+    },
+    {
+      "path": "explainer/vendor/pele/diagrams/venn.js",
+      "sha256": "e4bc9943916a8ce8b07d0848eda99d38f7e8334708998a5d951acf27a5f4a059",
+      "executable": false
+    },
+    {
+      "path": "explainer/vendor/pele/diagrams/xychart.js",
+      "sha256": "817de14381d9ba413dc70947824ff2538ba532c232592035a5b836094434e4bb",
+      "executable": false
+    },
+    {
+      "path": "explainer/vendor/pele/README.md",
+      "sha256": "47cb1894b1d248c49b7d79590a97fba294b090a7f2bac178a85baa79f2dae0d6",
+      "executable": false
+    },
+    {
+      "path": "locales/manifest.json",
+      "sha256": "9a377676b5d16f97a6a1f9326aadbb447321e9ceb5744718181796ce3dcce0d8",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "executable": false
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "665eb53e6fcf09cee183c9f23c8052645dc95570d9ccbbf53dc0f5213a1b5edd",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/archify"
+}

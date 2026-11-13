@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "hub": "leomieo/limix-skill-hub",
-  "count": 45,
+  "count": 46,
   "skills": [
     {
       "id": "agent-autoloop",
@@ -2046,6 +2046,458 @@
       "notes": [],
       "last_checked": "2026-11-13T09:14:21.544Z",
       "area": "skills"
+    },
+    {
+      "id": "archify",
+      "name": "archify",
+      "description": "Create validated architecture, workflow, sequence, data-flow, lifecycle/state, ERD, class, tree, timeline, and waterfall diagrams as explorable standalone HTML with dark/light themes, motion and image/SVG/WebM export. Accept requirements or Mermaid; inspect repository evidence for code-backed diagrams. Use when visualizing systems, API calls, pipelines, schemas, histories, timings, or everyday steps, parts, relationships and states. Also turn an answer into a one-page explainer, with the conclusion first, structured panels, native diagrams and charts, when the user asks for a page, an explainer or an answer to share (做成一页, 用页面讲), or proactively when the user's rules opt in with an [archify explainer: ...] line. Not for dashboards.",
+      "description_vi": "Tạo sơ đồ kiến trúc, workflow, sequence, data-flow, trạng thái, ERD, class, cây và timeline tương tác dưới dạng HTML độc lập; hỗ trợ Mermaid và báo cáo giải thích một trang. Core chính thức giữ nguyên tiếng Anh. Gói hiện bị giới hạn dung lượng, chưa đủ runtime để kích hoạt.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "archify",
+        "version": "e37848822238",
+        "source": {
+          "url": "https://github.com/tt-a1i/archify",
+          "commit": "e37848822238e3a61b12739185cdadd49843a620",
+          "sha256": "1382cfb7108b05e500b82af93c04fd7b694430d3908039bd92d634f01c1e7181",
+          "license": "Apache-2.0"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Tạo sơ đồ kiến trúc, workflow, sequence, data-flow, trạng thái, ERD, class, cây và timeline tương tác dưới dạng HTML độc lập; hỗ trợ Mermaid và báo cáo giải thích một trang. Core chính thức giữ nguyên tiếng Anh. Gói hiện bị giới hạn dung lượng, chưa đủ runtime để kích hoạt.",
+          "aliases": [
+            "Vẽ sơ đồ kiến trúc",
+            "Sơ đồ tương tác",
+            "Giải thích bằng một trang"
+          ],
+          "keywords": [
+            "archify",
+            "Vẽ sơ đồ kiến trúc",
+            "Sơ đồ tương tác",
+            "Giải thích bằng một trang"
+          ],
+          "examples": [
+            "Dùng archify cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "1382cfb7108b05e500b82af93c04fd7b694430d3908039bd92d634f01c1e7181"
+        },
+        "requiredCapabilities": [
+          "node",
+          "filesystem-read",
+          "filesystem-write",
+          "browser-preview"
+        ],
+        "permissions": [
+          "shell",
+          "filesystem-read",
+          "filesystem-write"
+        ],
+        "syncedAt": "2026-11-13T22:35:49.669Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "assets/template.html: base64-blob (medium)",
+            "examples/class-payment-processors-rendered.html: base64-blob (medium)",
+            "examples/class-payments-rendered.html: base64-blob (medium)",
+            "examples/dataflow-product-analytics.html: base64-blob (medium)",
+            "examples/erd-orders-rendered.html: base64-blob (medium)",
+            "examples/lifecycle-agent-run.html: base64-blob (medium)",
+            "examples/sequence-cache-miss-request.html: base64-blob (medium)",
+            "examples/subscription-billing-rendered.html: base64-blob (medium)",
+            "examples/timeline-archify-dev-activity-rendered.html: base64-blob (medium)",
+            "examples/timeline-payment-incident-rendered.html: base64-blob (medium)",
+            "examples/tree-archify-repository-rendered.html: base64-blob (medium)",
+            "examples/tree-payment-platform-rendered.html: base64-blob (medium)",
+            "examples/waterfall-checkout-request-rendered.html: base64-blob (medium)",
+            "examples/waterfall-example-rebuild-rendered.html: base64-blob (medium)",
+            "examples/web-app-rendered.html: base64-blob (medium)",
+            "examples/workflow-agent-tool-call-rendered.html: base64-blob (medium)",
+            "Bundle size limits excluded runtime modules and references. Not ready for activation; use the pinned upstream release for a complete installation."
+          ]
+        },
+        "compatibility": {
+          "status": "incompatible",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "120 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Vẽ sơ đồ kiến trúc",
+        "Sơ đồ tương tác",
+        "Giải thích bằng một trang"
+      ],
+      "keywords": [
+        "archify",
+        "Vẽ sơ đồ kiến trúc",
+        "Sơ đồ tương tác",
+        "Giải thích bằng một trang"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "e37848822238",
+      "source": {
+        "repository": "tt-a1i/archify",
+        "commit": "e37848822238e3a61b12739185cdadd49843a620",
+        "path": "archify"
+      },
+      "stars": 96213,
+      "created_at": "2026-04-15T05:27:37Z",
+      "pushed_at": "2026-11-13T18:15:49Z",
+      "stats_checked": null,
+      "license": "Apache-2.0",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 25,
+        "security": 0,
+        "compatibility": 8,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "NOTICE"
+        },
+        {
+          "rule": "base64-blob",
+          "severity": "medium",
+          "file": "assets/template.html",
+          "line": 146
+        },
+        {
+          "rule": "base64-blob",
+          "severity": "medium",
+          "file": "examples/class-payment-processors-rendered.html",
+          "line": 146
+        },
+        {
+          "rule": "base64-blob",
+          "severity": "medium",
+          "file": "examples/class-payments-rendered.html",
+          "line": 146
+        },
+        {
+          "rule": "base64-blob",
+          "severity": "medium",
+          "file": "examples/dataflow-product-analytics.html",
+          "line": 146
+        },
+        {
+          "rule": "base64-blob",
+          "severity": "medium",
+          "file": "examples/erd-orders-rendered.html",
+          "line": 146
+        },
+        {
+          "rule": "base64-blob",
+          "severity": "medium",
+          "file": "examples/lifecycle-agent-run.html",
+          "line": 146
+        },
+        {
+          "rule": "base64-blob",
+          "severity": "medium",
+          "file": "examples/sequence-cache-miss-request.html",
+          "line": 146
+        },
+        {
+          "rule": "base64-blob",
+          "severity": "medium",
+          "file": "examples/subscription-billing-rendered.html",
+          "line": 146
+        },
+        {
+          "rule": "base64-blob",
+          "severity": "medium",
+          "file": "examples/timeline-archify-dev-activity-rendered.html",
+          "line": 146
+        },
+        {
+          "rule": "base64-blob",
+          "severity": "medium",
+          "file": "examples/timeline-payment-incident-rendered.html",
+          "line": 146
+        },
+        {
+          "rule": "base64-blob",
+          "severity": "medium",
+          "file": "examples/tree-archify-repository-rendered.html",
+          "line": 146
+        },
+        {
+          "rule": "base64-blob",
+          "severity": "medium",
+          "file": "examples/tree-payment-platform-rendered.html",
+          "line": 146
+        },
+        {
+          "rule": "base64-blob",
+          "severity": "medium",
+          "file": "examples/waterfall-checkout-request-rendered.html",
+          "line": 146
+        },
+        {
+          "rule": "base64-blob",
+          "severity": "medium",
+          "file": "examples/waterfall-example-rebuild-rendered.html",
+          "line": 146
+        },
+        {
+          "rule": "base64-blob",
+          "severity": "medium",
+          "file": "examples/web-app-rendered.html",
+          "line": 146
+        },
+        {
+          "rule": "base64-blob",
+          "severity": "medium",
+          "file": "examples/workflow-agent-tool-call-rendered.html",
+          "line": 146
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "docker",
+            "installerId": "docker"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "ffmpeg",
+        "docker"
+      ],
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "NOTICE",
+          "SKILL.md",
+          "assets/JetBrainsMono-OFL.txt",
+          "assets/template.html",
+          "bin/archify.mjs",
+          "bin/delivery-update.mjs",
+          "bin/finalize.mjs",
+          "bin/open-artifact.mjs",
+          "bin/preview.mjs",
+          "bin/recover-output.mjs",
+          "bin/visual-check.mjs",
+          "brand-marks/README.md",
+          "brand-marks/catalog.json",
+          "delta/architecture-delta.mjs",
+          "examples/agent-run.lifecycle.json",
+          "examples/agent-tool-call.workflow.json",
+          "examples/archify-dev-activity.timeline.json",
+          "examples/archify-repository.tree.json",
+          "examples/async-job-roundtrip.sequence.json",
+          "examples/brand-aware-delivery.architecture.json",
+          "examples/cache-miss-request.sequence.json",
+          "examples/checkout-platform.base.architecture.json",
+          "examples/checkout-platform.head.architecture.json",
+          "examples/checkout-request.waterfall.json",
+          "examples/class-payment-processors-rendered.html",
+          "examples/class-payments-rendered.html",
+          "examples/dataflow-product-analytics.html",
+          "examples/delivery.explainer.json",
+          "examples/deployment-release.lifecycle.json",
+          "examples/erd-orders-rendered.html",
+          "examples/event-stream.dataflow.json",
+          "examples/example-rebuild.waterfall.json",
+          "examples/holiday-planning.workflow.json",
+          "examples/incident-response.workflow.json",
+          "examples/lifecycle-agent-run.html",
+          "examples/locales/de.json",
+          "examples/locales/fr.json",
+          "examples/locales/fr.partial.json",
+          "examples/locales/it.json",
+          "examples/locales/ja.json",
+          "examples/locales/pt.json",
+          "examples/locales/ru.json",
+          "examples/orders.erd.json",
+          "examples/payment-incident.timeline.json",
+          "examples/payment-platform.tree.json",
+          "examples/payment-processors.class.json",
+          "examples/payments.class.json",
+          "examples/product-analytics.dataflow.json",
+          "examples/production-deployment.architecture.json",
+          "examples/release-delivery.workflow.json",
+          "examples/sequence-cache-miss-request.html",
+          "examples/subscription-billing-rendered.html",
+          "examples/subscription-billing.erd.json",
+          "examples/timeline-archify-dev-activity-rendered.html",
+          "examples/timeline-payment-incident-rendered.html",
+          "examples/tree-archify-repository-rendered.html",
+          "examples/tree-payment-platform-rendered.html",
+          "examples/waterfall-checkout-request-rendered.html",
+          "examples/waterfall-example-rebuild-rendered.html",
+          "examples/web-app-rendered.html",
+          "examples/web-app.architecture.json",
+          "examples/workflow-agent-tool-call-rendered.html",
+          "explainer/browser-check.mjs",
+          "explainer/charts.mjs",
+          "explainer/check.mjs",
+          "explainer/diagrams.mjs",
+          "explainer/diff.mjs",
+          "explainer/inline.mjs",
+          "explainer/layout.mjs",
+          "explainer/page-bundle.mjs",
+          "explainer/parse.mjs",
+          "explainer/patch.mjs",
+          "explainer/prepare.mjs",
+          "explainer/revision.mjs",
+          "explainer/vendor/pele/README.md",
+          "explainer/vendor/pele/chunks/3DKXF73K.js",
+          "explainer/vendor/pele/chunks/DKTLEL5E.js",
+          "explainer/vendor/pele/chunks/GUJTEFZK.js",
+          "explainer/vendor/pele/chunks/RVARI57O.js",
+          "explainer/vendor/pele/core.js",
+          "explainer/vendor/pele/diagrams/pie.js",
+          "explainer/vendor/pele/diagrams/quadrantChart.js",
+          "explainer/vendor/pele/diagrams/radar.js",
+          "explainer/vendor/pele/diagrams/sankey.js",
+          "explainer/vendor/pele/diagrams/venn.js",
+          "explainer/vendor/pele/diagrams/xychart.js",
+          "locales/manifest.json",
+          "manifest.json",
+          "references/guide.vi.md",
+          "references/requirements.en.md"
+        ]
+      },
+      "checksum": "f89cf191813ef162b0e8bd31955326d3ce55a6b11024b0ac597e363dfaee07f9",
+      "file_hashes": {
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "NOTICE": "665eb53e6fcf09cee183c9f23c8052645dc95570d9ccbbf53dc0f5213a1b5edd",
+        "SKILL.md": "1382cfb7108b05e500b82af93c04fd7b694430d3908039bd92d634f01c1e7181",
+        "assets/JetBrainsMono-OFL.txt": "c1ab7c666206842a02b35b30770dac0d7a10156ed401c9defc3f02a754d89e90",
+        "assets/template.html": "9689eeec1a5918aea571eb84d66ea28c7b5bcdcbcf2ae71666bad19d44cc89bc",
+        "bin/archify.mjs": "3cebcee3fa339e3b98deacae8cb9a5570525e003d8823368d304d904ba9ceecd",
+        "bin/delivery-update.mjs": "24d92f908d91ece10ddcefe979f7950f9250023813c41777022ae5d948aa8e2c",
+        "bin/finalize.mjs": "766e053afaeaca8045b8a0558f50cb6b685dfe21cb9d00e7776d407d6db364e8",
+        "bin/open-artifact.mjs": "b0ab5f37c4f4556f76040dc862744afe9d4b65f319f35e1f9b505e0344b9c409",
+        "bin/preview.mjs": "a37f4f0985339933e8d89ef664d27988afac557b52084ec04407848b936989bd",
+        "bin/recover-output.mjs": "b3f7db21b3fc5341326207c1259aa787730120f42179eff50e481b0c6ad1e2d4",
+        "bin/visual-check.mjs": "72a8eec9793588552da4013f228eb3fb5ad4936a3d3cf31920de883b77ca3dfd",
+        "brand-marks/README.md": "8b771a16322ce9ea47fdc00b9935e33adf0f3af608f2d735235443e15ef622e2",
+        "brand-marks/catalog.json": "e1a6c555cbf8ea36fb8100a4a25824e7ab87bebe9871e450ba05b6dea3b036d6",
+        "delta/architecture-delta.mjs": "479c55681f6a5b24d187d6e45a585792384e5dc56aa583131d189366b950a1c5",
+        "examples/agent-run.lifecycle.json": "5ba36f5ce91ed428cb48b599e275424916d82b619b9a3231cbd1bbc3966fc54b",
+        "examples/agent-tool-call.workflow.json": "d67965d50872c97e4ff3476271e645bf19fab6b3ab44e111bdb44b063e3aa36f",
+        "examples/archify-dev-activity.timeline.json": "e9c8d76528e8c38a68d9a8df2499c462f6b9633292ea43bf33350546ef2fd3a3",
+        "examples/archify-repository.tree.json": "970617ee844ecfb1bb792c677aa8b85688abfd2cf8ab2365dc03ea9e26e6b9c7",
+        "examples/async-job-roundtrip.sequence.json": "b8c6c52f1763ede2933c77deb8da59b3e06917bc41d27e66df896136456b859a",
+        "examples/brand-aware-delivery.architecture.json": "211c126ebdc5f0124617b1067cecfb858143a1a18fd10621d01f5765c7de3b5d",
+        "examples/cache-miss-request.sequence.json": "f8486daa803fff6c295cecca4604c561fbbf9acb2e83326022b5a87639e8afe6",
+        "examples/checkout-platform.base.architecture.json": "81d55a2e86fc39f6473b32dfba986a12d3b7a705a95821844865b1dc831c9fe7",
+        "examples/checkout-platform.head.architecture.json": "eb4ae056035dd3316414a5d7f6599525107b5d1af7bedbd905460ade77daf5c6",
+        "examples/checkout-request.waterfall.json": "55a5f74699a0f0e44018a4a000556d43c90430b95f39accac6141af8318b5133",
+        "examples/class-payment-processors-rendered.html": "56d2f75d3e147acd4de44d23d1715d2d3a6c5f057c08b50dd3e1d35b7dd8a66e",
+        "examples/class-payments-rendered.html": "4749922e51166b7f855fd4f2070459a27641a1b429d52d5bcbdb9fa8e641d152",
+        "examples/dataflow-product-analytics.html": "f41d292adca854bf46e0114d1cb4e73566a667533c659467538a7fa4788d9897",
+        "examples/delivery.explainer.json": "188cf8777816ac034dd5a92b04bf427b0f1a8dbfa0956ae072b2d4091427806c",
+        "examples/deployment-release.lifecycle.json": "e3dc105d03c1c9881160006cdace23cb5d8533803e337caf0ec287c64e775275",
+        "examples/erd-orders-rendered.html": "e97a501766ff355602f9e123ff2a11784d09ee473b9db296a79267a3508533d2",
+        "examples/event-stream.dataflow.json": "3bdd77674282009c7c68d588cf8a3c495bc98a3be1b9c45327fd1801a6f83a23",
+        "examples/example-rebuild.waterfall.json": "77d610013a5aab031df739c207b66ebc26e1740371b51da06956ecf06b5e9929",
+        "examples/holiday-planning.workflow.json": "b98354f921ca45842fed235db09fd4f19d94adc16865876f438c0d699d05e1ea",
+        "examples/incident-response.workflow.json": "630be98449925d2716ecb8439f404b2bff5fe65ba905b0ad0baea6d96890c526",
+        "examples/lifecycle-agent-run.html": "ed4d735dc926b3c27324d0c174fe0607377722674d150b34a2fedce47459e111",
+        "examples/locales/de.json": "77975293855578923fbbee29f478d9d84002c04d6a7b3e22cd9db8cf3fb414ba",
+        "examples/locales/fr.json": "ea1af868932eb22761094a4950b769fd0634430fe706fc4ea4335eca7f0529bb",
+        "examples/locales/fr.partial.json": "8958a8354ffccce2ce63ac21b3f8a0f131086f532832445a3fe7feff02200397",
+        "examples/locales/it.json": "be8cd15fcd0311521dc8ae1f35bbcf8e33a180e20e5ce94fd0d65dec4e147e6b",
+        "examples/locales/ja.json": "bb6d66d7e1126c5c622423317a536728820d3fe686be90d0c9cc8f6ca4ff3e67",
+        "examples/locales/pt.json": "8e3c6a054183e96465bd882bc23d38eafe19c0484eda5709f4e2b37e132e0731",
+        "examples/locales/ru.json": "ea673bf7156d87ac43d754839155a1a145aafa481b5de540e04d1f8d3ec008d3",
+        "examples/orders.erd.json": "1777a374647084466f4d7ce3a968004be6ab70ac9cf82459b96bed7c556cdfdd",
+        "examples/payment-incident.timeline.json": "c1f535b3cc915ddd47ecd7df4e3ef02c441c8c3191daced5cf4422cff8dec95f",
+        "examples/payment-platform.tree.json": "1e99f37b3845d67fa97c9a2ff33109981c23bfdb0d03ba05b7d92944dcdfc61f",
+        "examples/payment-processors.class.json": "98742b997db4782981460e8110e5fba899d8500c92c086aa867c5c62c3b89222",
+        "examples/payments.class.json": "afba837f97a041e14687cbe8893523232c4afad7afd922d9b128606d1b3f12c8",
+        "examples/product-analytics.dataflow.json": "8a635db9e51a5b1a8d2955b9d66f5b9a450e0a298432ce8f2e2f0be11f372e05",
+        "examples/production-deployment.architecture.json": "610a5614667e8f108bdcf1769c9d7af5c3ce0fb62be3ea50550b10eb752e4bda",
+        "examples/release-delivery.workflow.json": "dbd5c174af66296caec372e7214cf4df7158b50a563508e16826b95ab8d1cd6c",
+        "examples/sequence-cache-miss-request.html": "49e750c91bb8a21a63db5f80f147bf4867cf938f75cbdd5a5da1e11b36a3d3ba",
+        "examples/subscription-billing-rendered.html": "0cab0e29a347b6427cebb20c6c1d236e59cd7689ce7790e029101f7927c5a944",
+        "examples/subscription-billing.erd.json": "89945699d92b9cc0ab91263cf38a07c350867d260eacd5d8ba1dc835fe2d22ed",
+        "examples/timeline-archify-dev-activity-rendered.html": "f66dd976211353de010a43aec72205f6aad7dc53f1433a22e41c6eed391230b1",
+        "examples/timeline-payment-incident-rendered.html": "46494b119b8637449a402ec05990b2b63a0ffc3b883a85a3d622656ce909260e",
+        "examples/tree-archify-repository-rendered.html": "e1a68b7c1ae795994f29c8c9a3efcb91f616e637d0c8d5b95c179c2597345683",
+        "examples/tree-payment-platform-rendered.html": "b79f07651f7d26eb8651e4c321d8396963d125ed66d2ec9bd86365284ddb472e",
+        "examples/waterfall-checkout-request-rendered.html": "74cb226d2a44be1482a824d08e6ca21d3b0353065118623c692ea651cd9e9759",
+        "examples/waterfall-example-rebuild-rendered.html": "6a7840b16ed9e8175f2f6eaa2ffbd9518e06a96b5ca0a5dafaaad874ca80ec70",
+        "examples/web-app-rendered.html": "ffabd084c754ee97ed9e9355ba19fab449533432537d6b8cdb5c6d276293741a",
+        "examples/web-app.architecture.json": "95e051b27a9e4a3307e194c0f666fca4af51470be7e2228d400ff48aea5b353b",
+        "examples/workflow-agent-tool-call-rendered.html": "6ee1999c899c2b7bed3b69b14e23dfbf9c7ff096441870361c690b469ad43e29",
+        "explainer/browser-check.mjs": "cbbebfca2cb58cde0791f349e4f13490c0d085ce2f8653279139cf2aed334677",
+        "explainer/charts.mjs": "bb49c5e8e5d6ba70a511d292dbac6a47953a010b67a8563e5f68222c7b220390",
+        "explainer/check.mjs": "151211edd6f1b842ee63b1aef8682cb68e6237ce3b9e7a81e09667420f2b9b3b",
+        "explainer/diagrams.mjs": "bb4aae343968db5a5ad70c368ad41dcc9d2ac93f3ace02645059daf33cab16ba",
+        "explainer/diff.mjs": "0851a6b9715a3f277308cb88c84a5ef5fc943f09a9e0a391a573438fe8a30fbb",
+        "explainer/inline.mjs": "e024b719a365077b547cb3d50ac9909db7e080ca5bde62387e5d62ead3f819f3",
+        "explainer/layout.mjs": "656232369fe0394e35f827c1b5295fb8f14d315e7fa53d5f16248440519736c8",
+        "explainer/page-bundle.mjs": "1d4fc3f65b4eb4207a0c3b86a2968310f931a9b945fcd1fc3021ce98a29f7310",
+        "explainer/parse.mjs": "dd0d05672e92453b1b1cea31372792cbe03aecdd80f21e2f3aa0eda49d3be853",
+        "explainer/patch.mjs": "b2721021de474431537705d696325ea01eb946e9095e8476fad1802d2fb5be4d",
+        "explainer/prepare.mjs": "d8ff050738d7c858d62641b069455482814de0c4bdf7c0872d0a2a663b1b0643",
+        "explainer/revision.mjs": "29032cab30c03b2e4c48730f40175e0e59aa4794893c02e5ae38668776c18288",
+        "explainer/vendor/pele/README.md": "47cb1894b1d248c49b7d79590a97fba294b090a7f2bac178a85baa79f2dae0d6",
+        "explainer/vendor/pele/chunks/3DKXF73K.js": "5901afffb8349d0cb095e93494e8d3f36f09497b28a9255e066c52b6ce0a6c31",
+        "explainer/vendor/pele/chunks/DKTLEL5E.js": "91864eed78a6a3cc9791d20fb9b61fd8f458c12101662883cd23e755fd2a4cb6",
+        "explainer/vendor/pele/chunks/GUJTEFZK.js": "e8584ce5872c50c6370efc1fbce911848506d84ff6fa88e4f079f412b5e2f068",
+        "explainer/vendor/pele/chunks/RVARI57O.js": "3dc7661b060578920eab83aafd1fa261886e7e331d44f8f5d2f34bd0804027a3",
+        "explainer/vendor/pele/core.js": "ac428c1ca244f030f363e0d0f12e623df92c1439d2a211310d1ff73f0ed224a4",
+        "explainer/vendor/pele/diagrams/pie.js": "a2bc92d2f8842b476cdb8a039455493db2c71d6a4e3a1b3dc97cfc1f409056d1",
+        "explainer/vendor/pele/diagrams/quadrantChart.js": "9ac8fc714b3973854efdd960fb6831c973e72624bb9b0bc091ada8958794ebfb",
+        "explainer/vendor/pele/diagrams/radar.js": "379748e709992f9e242028ad4a1b103f75ad693a84331c8fc33df0f258a7a9fe",
+        "explainer/vendor/pele/diagrams/sankey.js": "a789e591ba81fd434418a64561005caf50760f11cbaa9d4dd589e777bbfe8e36",
+        "explainer/vendor/pele/diagrams/venn.js": "e4bc9943916a8ce8b07d0848eda99d38f7e8334708998a5d951acf27a5f4a059",
+        "explainer/vendor/pele/diagrams/xychart.js": "817de14381d9ba413dc70947824ff2538ba532c232592035a5b836094434e4bb",
+        "locales/manifest.json": "9a377676b5d16f97a6a1f9326aadbb447321e9ceb5744718181796ce3dcce0d8",
+        "manifest.json": "d3f5fde79ff370b5f3b8273ebf9a0e0a9333c9f854026a595bef242009d869b4",
+        "references/guide.vi.md": "dd02965cc7505e198096ae84616d06c19ec01520102bc26dff864ed092e0728c",
+        "references/requirements.en.md": "c99aff1c98c26992543831dc0e32dadfd5226dec07934b6018df09ef05ca5a38"
+      },
+      "notes": [],
+      "last_checked": "2026-11-13T22:35:49.669Z",
+      "area": "quarantine"
     },
     {
       "id": "arena",

@@ -10,6 +10,7 @@ Sắp theo thứ tự thêm vào kho, mới nhất trước; cột “Ngày tạ
 
 | Skill/tool | Nguồn | Sao | Ngày tạo | Mô tả ngắn |
 |---|---|---:|---|---|
+| [archify](skills/archify/SKILL.md) | [tt-a1i/archify](https://github.com/tt-a1i/archify) | ![Sao](https://img.shields.io/github/stars/tt-a1i/archify?style=social) | 2026-04-15 | Sơ đồ HTML tương tác; cách ly vì gói chưa đủ runtime. |
 | [ffmpeg-cli](skills/ffmpeg-cli/SKILL.md) | [FFmpeg/FFmpeg](https://github.com/FFmpeg/FFmpeg) | ![Sao](https://img.shields.io/github/stars/FFmpeg/FFmpeg?style=social) | 2011-04-14 | Xử lý audio/video; adapter của kho, chờ duyệt. |
 | [threejs-development](skills/threejs-development/SKILL.md) | [mrdoob/three.js](https://github.com/mrdoob/three.js) | ![Sao](https://img.shields.io/github/stars/mrdoob/three.js?style=social) | 2010-03-23 | Lập trình 3D trình duyệt; adapter của kho, chờ duyệt. |
 | [remotion-integration](skills/remotion-integration/SKILL.md) | [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | ![Sao](https://img.shields.io/github/stars/remotion-dev/remotion?style=social) | 2020-06-23 | Mục tham chiếu; chờ xem xét quyền phân phối skill. |
@@ -19,7 +20,6 @@ Sắp theo thứ tự thêm vào kho, mới nhất trước; cột “Ngày tạ
 | [grandet-api-price-finder](skills/grandet-api-price-finder/SKILL.md) | [hanzohanzhe/Grandet](https://github.com/hanzohanzhe/Grandet) | ![Sao](https://img.shields.io/github/stars/hanzohanzhe/Grandet?style=social) | 2026-10-05 | Tìm và so sánh giá API mô hình AI. |
 | [motionmaxxing](skills/motionmaxxing/SKILL.md) | [Tejashmakwana/motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing) | ![Sao](https://img.shields.io/github/stars/Tejashmakwana/motionmaxxing?style=social) | 2026-10-06 | Thiết kế và thẩm định motion graphics. |
 | [reanimate](skills/reanimate/SKILL.md) | [NiazMorshed2007/reanimate](https://github.com/NiazMorshed2007/reanimate) | ![Sao](https://img.shields.io/github/stars/NiazMorshed2007/reanimate?style=social) | 2026-10-29 | Phân tích và tái tạo chuyển động giao diện. |
-| [arena](skills/arena/SKILL.md) | [Jakeschincariol/arena-skill](https://github.com/Jakeschincariol/arena-skill) | ![Sao](https://img.shields.io/github/stars/Jakeschincariol/arena-skill?style=social) | 2026-09-27 | Phản biện nhiều chiến lược bằng tournament. |
 
 ## Sử dụng
 

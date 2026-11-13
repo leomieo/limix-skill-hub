@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "name": "archify",
+  "version": "e37848822238",
+  "source": {
+    "url": "https://github.com/tt-a1i/archify",
+    "commit": "e37848822238e3a61b12739185cdadd49843a620",
+    "sha256": "1382cfb7108b05e500b82af93c04fd7b694430d3908039bd92d634f01c1e7181",
+    "license": "Apache-2.0"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Tạo sơ đồ kiến trúc, workflow, sequence, data-flow, trạng thái, ERD, class, cây và timeline tương tác dưới dạng HTML độc lập; hỗ trợ Mermaid và báo cáo giải thích một trang. Core chính thức giữ nguyên tiếng Anh. Gói hiện bị giới hạn dung lượng, chưa đủ runtime để kích hoạt.",
+    "aliases": [
+      "Vẽ sơ đồ kiến trúc",
+      "Sơ đồ tương tác",
+      "Giải thích bằng một trang"
+    ],
+    "keywords": [
+      "archify",
+      "Vẽ sơ đồ kiến trúc",
+      "Sơ đồ tương tác",
+      "Giải thích bằng một trang"
+    ],
+    "examples": [
+      "Dùng archify cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "1382cfb7108b05e500b82af93c04fd7b694430d3908039bd92d634f01c1e7181"
+  },
+  "requiredCapabilities": [
+    "node",
+    "filesystem-read",
+    "filesystem-write",
+    "browser-preview"
+  ],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write"
+  ],
+  "syncedAt": "2026-11-13T22:35:49.669Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "assets/template.html: base64-blob (medium)",
+      "examples/class-payment-processors-rendered.html: base64-blob (medium)",
+      "examples/class-payments-rendered.html: base64-blob (medium)",
+      "examples/dataflow-product-analytics.html: base64-blob (medium)",
+      "examples/erd-orders-rendered.html: base64-blob (medium)",
+      "examples/lifecycle-agent-run.html: base64-blob (medium)",
+      "examples/sequence-cache-miss-request.html: base64-blob (medium)",
+      "examples/subscription-billing-rendered.html: base64-blob (medium)",
+      "examples/timeline-archify-dev-activity-rendered.html: base64-blob (medium)",
+      "examples/timeline-payment-incident-rendered.html: base64-blob (medium)",
+      "examples/tree-archify-repository-rendered.html: base64-blob (medium)",
+      "examples/tree-payment-platform-rendered.html: base64-blob (medium)",
+      "examples/waterfall-checkout-request-rendered.html: base64-blob (medium)",
+      "examples/waterfall-example-rebuild-rendered.html: base64-blob (medium)",
+      "examples/web-app-rendered.html: base64-blob (medium)",
+      "examples/workflow-agent-tool-call-rendered.html: base64-blob (medium)",
+      "Bundle size limits excluded runtime modules and references. Not ready for activation; use the pinned upstream release for a complete installation."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "120 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}
