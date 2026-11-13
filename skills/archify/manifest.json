@@ -32,10 +32,11 @@
     "sourceSha256": "1382cfb7108b05e500b82af93c04fd7b694430d3908039bd92d634f01c1e7181"
   },
   "requiredCapabilities": [
-    "node",
-    "filesystem-read",
-    "filesystem-write",
-    "browser-preview"
+    "Node.js >=18",
+    "Archify CLI bin/archify.mjs",
+    "Complete pinned Archify package",
+    "Renderer modules and schemas",
+    "Browser for HTML preview"
   ],
   "permissions": [
     "shell",
@@ -70,7 +71,10 @@
     "notes": [
       "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
       "120 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
-      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "Node.js >=18 required by pinned upstream package.json; no npm dependencies or optionalDependencies declared there.",
+      "120 upstream package paths are missing. Restore the complete pinned Archify package, including renderers, schemas and references; installing Node.js alone does not repair it.",
+      "Full machine-readable missing file list: registry/catalog.json requirements.missingPackageFiles and _hub.source.json skipped. No automatic installation authorized."
     ]
   }
 }

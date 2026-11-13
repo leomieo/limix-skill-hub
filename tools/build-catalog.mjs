@@ -32,6 +32,7 @@ async function entryFor(area, id) {
   const content = files.filter((f) => !f.path.startsWith("_hub"));
   const manifestFile = files.find((file) => file.path === "manifest.json");
   const hybrid = manifestFile ? validateHybridManifest(JSON.parse(manifestFile.text)) : null;
+  const inventory = hybrid ? await readJson(path.join(dir, '_hub.source.json'), null) : null;
   if (hybrid) await verifyHybridSkill(dir);
   if (hybrid && (hybrid.name !== id || hybrid.source.sha256 !== skillFile.sha256)) return { error: "Hybrid source hash/name does not match English core" };
   if (!meta.license && parsed.license) meta.license = parsed.license;
@@ -66,6 +67,15 @@ async function entryFor(area, id) {
     kind: classification.kind,
     compatibility: { text: parsed.compatibility ?? null, runtimes: classification.runtimes },
     dependencies: classification.runtimes.filter((r) => r.installerId).map((r) => r.installerId),
+    requirements: {
+      schemaVersion: 1,
+      capabilities: hybrid?.requiredCapabilities ?? [],
+      runtimeHints: classification.runtimes,
+      missingPackageFiles: inventory?.skipped ?? [],
+      packageCompleteness: inventory?.skipped?.length ? 'incomplete' : inventory?.verified ? 'retained-source-files-verified' : 'unverified',
+      environmentStatus: 'not-tested',
+      autoInstall: false,
+    },
     permissions: { runs_code: classification.tools.length > 0, mcp: classification.mcp.length > 0, files: content.map((f) => f.path) },
     checksum: folderChecksum(content),
     file_hashes: Object.fromEntries(content.map((f) => [f.path, f.sha256])),
