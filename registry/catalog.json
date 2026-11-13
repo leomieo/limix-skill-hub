@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "hub": "leomieo/limix-skill-hub",
-  "count": 30,
+  "count": 35,
   "skills": [
     {
       "id": "agent-autoloop",
@@ -50,11 +50,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "35341f6e0adebb757f26b8cc6ceca1286de58f1a8984854c1a3ec2c9e6223f05",
+      "checksum": "5868eb12198078ab3b885f67d593f015bd120470101367ea1918c4fc3f1014c5",
       "file_hashes": {
-        "PHAN-TICH.md": "693f828c1fca648348b9ec12762670da499981a0b6f6aa35a25b30cd9762f6f9",
-        "SKILL.en.md": "b5d60af5b6db77b7c383bfd75317d776cf63dda7d79805241fe011349e01f549",
-        "SKILL.md": "e6a4dc6104cd882b23958f0efa45262fbe9b82e9973d0f58f62d3a3dd9db2c1e"
+        "PHAN-TICH.md": "a1cd57f3bde59d22d62b50d3079c70cd29f5f7b61945e63f0abea59215a12817",
+        "SKILL.en.md": "75f801c9e257423eb21a70c9ec0ecc519040c6ba8df9ad37c038d8c9af461370",
+        "SKILL.md": "6b30d669771dac5e251f3b8a95880abbb6667c61fe4bac70a1d316c5d0ae3e0c"
       },
       "notes": [],
       "last_checked": null,
@@ -114,11 +114,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "3718761b0eec4e1065c262e242442e419f06d7bbbddf5d0b8644787feef6c27a",
+      "checksum": "572f7e821368047aa23e454c7e0f0fd22dce908bb92ac5c87bea8869c78a0f4e",
       "file_hashes": {
-        "PHAN-TICH.md": "16e6af2f71e7161120c5124f80659596cd1498a96d401d2979fe8376ee46e84e",
-        "SKILL.en.md": "c912706cf4963590f5d66a73dc9bee35c43336df1c683cc2c884e4626fe1442e",
-        "SKILL.md": "bcf4dda072b5ff76d3a0e941d1866a43a834ee7f86e1680272794d84c0fc9c8d"
+        "PHAN-TICH.md": "6869b571c97e1fdd91f69f3318b67e308bcc9049bfe27bf3e6e9750b0338e906",
+        "SKILL.en.md": "70c60d97585e25f2b332794ffdc04aab45a2c7086b6dfa7b2b6e6739d7125644",
+        "SKILL.md": "37cbecc148fb256203f5904955f1f1507910d10108d57f86a4cb666b945e341a"
       },
       "notes": [],
       "last_checked": null,
@@ -183,11 +183,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "5876f924684602f62290959b824ed74113c65a0a9950dd58c8ebe65c92bf59cd",
+      "checksum": "0bebd5a55022577196c706b037219754308ebc67afb1dcde2931e75f49a6b32e",
       "file_hashes": {
-        "PHAN-TICH.md": "932616ff4edf328633783d83d97e41642bee3998b510c75e11dbf28abb7a9a29",
-        "SKILL.en.md": "ab8bb95322defafe0f430bdc892a3af031fa6063a4a03adb65cf8456c2a1e1a1",
-        "SKILL.md": "39954f13b806ff5d17da3c31219868bfd6d017d78bdc85fe6f6d0d20c71ada1d"
+        "PHAN-TICH.md": "35264b58e9c07066c396046c9b8132fd5add66a147e33a167ca707cfe479407c",
+        "SKILL.en.md": "249aa087c59f637002da38d050d5165158029865c43864ff5c6c46e2bfbc9eb6",
+        "SKILL.md": "9ff4de9ec0f92940fde3bee8ce8ad350134d74e5f1737778eae038d4a3d64653"
       },
       "notes": [],
       "last_checked": null,
@@ -256,11 +256,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "69609b5bea4238edfe271245b12f563c9e6e0d265efa67e1d3d5055e07661cbb",
+      "checksum": "3305513e4eb4a01c7e12435a2a9dfa1cebb46db9ee085a93df988febd79c322d",
       "file_hashes": {
-        "PHAN-TICH.md": "6a56f39b398580f466b1c489efb4e972c3ff55af5edaa5af2032a64008ded062",
-        "SKILL.en.md": "9f4c9e9da7c4f9e13b628e69f17369e3eef9f5cf2ca2c6283fd513403df068a4",
-        "SKILL.md": "d048fc2fe4bdd8d9c1a6e20788e825a520fd7a920204990e436778a9827fbb4e"
+        "PHAN-TICH.md": "1d3e493ca234a34314f277b92b883d1877143ac04e1d778c96c7521051e91880",
+        "SKILL.en.md": "6e9b38c71c21a351e378bae76d1167e86abe478a2489d6dce3a54f8beef8c698",
+        "SKILL.md": "eaaeac294abfa37a1f47fbd7b78132a9997745f430ed2ac9943253d0c15e3c9c"
       },
       "notes": [
         "Giấy phép lạ, cần xem lại điều khoản."
@@ -322,11 +322,84 @@
           "SKILL.md"
         ]
       },
-      "checksum": "235f7d256352b8b0ea8d01366a198a9d5b5c5c9e50733f9f89a861e455d87486",
+      "checksum": "c15de53e5351e5b39fd73dc411957aa08612239474923668914e6b1698aa4866",
       "file_hashes": {
-        "PHAN-TICH.md": "5d7253a83981f5fd67c2679e746e1237c74d6cb5408085985f4d863724a2c4fc",
-        "SKILL.en.md": "a99294ab79ea751ab0acf3b10c3d280e6d23f917b12a0ec01d66915aab6ad1b4",
-        "SKILL.md": "7fc9d3da8d014cee1d616b71b242b777fe58a6da4fc480df876db51972af397e"
+        "PHAN-TICH.md": "dd29ef74ed3b1892116fc65770bfa59a9a0d98c080642b270f0e283fcfbd4e36",
+        "SKILL.en.md": "b919d2aa8e046713d861c243a16d4946b5f93dfacdd613e6ff9259c31a318f29",
+        "SKILL.md": "14f318d9fb6f6aba86387abb00ec12612ce0987a5d0fa55168e45370f3de31a3"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
+      "id": "bang-motion",
+      "name": "bang-motion",
+      "description": "Tạo đồ họa chuyển động (motion graphics) điện ảnh chạy trực tiếp trên trình duyệt bằng HTML5, CSS và GSAP (hỗ trợ Three.js khi cần). Chuyên tạo video quảng cáo (promo), đoạn mở đầu (opener/intro), bumper, kinetic typography và video giải thích (explainer) tỷ lệ 16:9 hoặc 9:16. Sản phẩm chuyển động tự nhiên như video thực thụ, không bị thô cứng như slide PowerPoint. Xuất ra tệp index.html độc lập xem ngay hoặc kết xuất video MP4.",
+      "description_vi": "Tạo đồ họa chuyển động (motion graphics) điện ảnh chạy trực tiếp trên trình duyệt bằng HTML5, CSS và GSAP (hỗ trợ Three.js khi cần). Chuyên tạo video quảng cáo (promo), đoạn mở đầu (opener/intro), bumper, kinetic typography và video giải thích (explainer) tỷ lệ 16:9 hoặc 9:16. Sản phẩm chuyển động tự nhiên như video thực thụ, không bị thô cứng như slide PowerPoint. Xuất ra tệp index.html độc lập xem ngay hoặc kết xuất video MP4.",
+      "version": "0",
+      "source": {
+        "repository": "bangtutorial/bang-motion",
+        "commit": null,
+        "path": null
+      },
+      "stars": 2098,
+      "created_at": "2026-09-05T21:07:55Z",
+      "pushed_at": "2026-09-15T04:45:32Z",
+      "stats_checked": "2026-11-13",
+      "license": "MIT",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 75,
+      "score_parts": {
+        "function": 19,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "ffmpeg"
+      ],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "8ff7e5bcdc3c59d5d991ff1a7465b4b0af80cd3f5a9b435bf363715ea834260e",
+      "file_hashes": {
+        "PHAN-TICH.md": "81384f8b9fdc44fb413d3c0a04defdd27ce79ffb8e92eb452616ec448aaad05e",
+        "SKILL.en.md": "95581e2cf8d8423fdc90ad314ba5d1d8f1a3de543fc55bb64ebdf1a86e5d4f24",
+        "SKILL.md": "f74a5ee23743ab67372a511a8d376e53174fb068ee61abba8c95c40f3104ea63"
       },
       "notes": [],
       "last_checked": null,
@@ -390,11 +463,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "c49a89b3dce1c4b4bf7b5c1509f900cfda6471ce18a42554a7fcc3b41bb7ed3e",
+      "checksum": "27df148d878612b4b4455f60b713cc4d63613631dc6cf3380b08e4f3a9f02f6c",
       "file_hashes": {
-        "PHAN-TICH.md": "2d0dee08e492a9539cebf0f3f80eaf6bb5be68c3168f73b2bb2e8dba1a7e655a",
-        "SKILL.en.md": "b7702ac5e3922f65bb5c1cbd52f2114dae276d9600f68562687977f2fd046a9d",
-        "SKILL.md": "468711e45e54650374e383ac5c3ee0a865f5d22b59412f8ed744fc04172ff590"
+        "PHAN-TICH.md": "ce57a1a3602ae9cf89152416c0258d90da2fef98f31c5d584da6de155e9c7921",
+        "SKILL.en.md": "90152967e3e37d0d915ff302779323fcc78eae9fd9ec7e834e8652dbc62a93aa",
+        "SKILL.md": "7d135f12aa37a1fb62d82a27cbdf3f713d7946da51250f69dbfd0511f1f175ee"
       },
       "notes": [],
       "last_checked": null,
@@ -463,11 +536,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "1342f26e8208cf6f2d68a8e54fd28f910bd8c3bdb7d75683f22783d240b0a1c5",
+      "checksum": "7eb073ab4a07963306c265d25b2b522d20cc702a8e6607428e079c7abaa57fcc",
       "file_hashes": {
-        "PHAN-TICH.md": "7bbc915069b3164c5cab389fa5f5a8b2b2c2f8dea706e5a5cb1f6bc72ee8ab4a",
-        "SKILL.en.md": "411dea3094044355c5023a7c97e178a0bd815051793f0e2cb3c6674999aeb34b",
-        "SKILL.md": "6c9cea689699984c4ef161ca8a7f6c6034c76abdadbc3ccb18c7cf5d13a92510"
+        "PHAN-TICH.md": "d5d29c98e5ea8715acd65ee875e79588dc7a0fa2790783649de83fecc883aa94",
+        "SKILL.en.md": "288b71077113f14060ed003aec62813f71e46a6102e310ac06b586bab0ce3085",
+        "SKILL.md": "9ca0eb5e3e6ab8b8bc90978c057af1405391863967dd1e978a257fd92c032a15"
       },
       "notes": [],
       "last_checked": null,
@@ -525,11 +598,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "34a84a13193560d234a1fcfe0c7612bd531f29b3c76b59e31ed9c938bcfa2696",
+      "checksum": "a5110e6a2a5906bbd6a49b2ca8fd40b87295ada8a0fb4fb60aa9ecaa827ffba3",
       "file_hashes": {
-        "PHAN-TICH.md": "6a7332b5311b8320e01a589e347c9c87cc439de1180b5761c7b5f024d2f13390",
-        "SKILL.en.md": "8db022339f3ddd3a5f0574152040d154c484ef4c56f5dbc4a4d6c5768b8c92f7",
-        "SKILL.md": "5f3978bd6c2f82ffff32c418b47f82ec3a55355006ad4f6eb38edda8f5133fae"
+        "PHAN-TICH.md": "563a442b82ee1ebcc049717e2f7fc34cc89b3ae023ca8458e9d1237f8fa03fc8",
+        "SKILL.en.md": "55f2e20c2f2fa0e6dd7d777f7fb0032cd2e140b410caae781224714d09b3222d",
+        "SKILL.md": "a7b56712bd99f4cde31ff9c621d6a7ab831266ff28b62d796d51b0016d0deefb"
       },
       "notes": [],
       "last_checked": null,
@@ -598,11 +671,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "3b01ae3ab2f74984727295216b8a37b27d81cda478f7847511737f6f30c2f150",
+      "checksum": "22696074c5e7e15aad6e74a25c051cf55e33ce2c323c6e125bc907b886db49b4",
       "file_hashes": {
-        "PHAN-TICH.md": "d254e1d862a8b40aa27315b0b05dc02866fca7fc72a26c80804973fc52a88fb4",
-        "SKILL.en.md": "ff1d6fa8242452e376db41e424f62836d4ce4291bc1961172643ad9105d768c0",
-        "SKILL.md": "684ae22feec2c469e2080c89f64f24311e4d11ee651b60f5b70c324c697eeadc"
+        "PHAN-TICH.md": "e9f9808a98fa263f2c33296d5aa63da927504d8a6966052b3431068172926b19",
+        "SKILL.en.md": "629ef656e8340a35a4aab10dadd298fedb6a02a1c1df69159e8ecbdd4b4ac9f2",
+        "SKILL.md": "f723ce75dc785a3e109a59ceabeaf5c22a9f27c2ef55e1f2771fb43a194456f5"
       },
       "notes": [],
       "last_checked": null,
@@ -666,11 +739,130 @@
           "SKILL.md"
         ]
       },
-      "checksum": "e3a32beb3e81cb5f116180317db60a39b8f5303798aee739781d2b974f39974e",
+      "checksum": "f54eb26daa5eb0436d9305020d4aaa6948ca855abe3b5c47eb6bab39a2fde6dc",
       "file_hashes": {
-        "PHAN-TICH.md": "b5296f77988a0111488c5e2facfb1aa15286781a604af65b20c2640e62e82169",
-        "SKILL.en.md": "57b984a602ae1881cb3cfe58cedf61cc89b5c443c0b315fe5b8767471cb6c1ec",
-        "SKILL.md": "0f2cad9548bde2d241ab0e1f6dee02af7466fc2f15fe4342f3e0cffd780760e9"
+        "PHAN-TICH.md": "ed34fbb236ebc850fe8fcf69656a6797d987d9a0ee1ff91959e17dbd5a6b5796",
+        "SKILL.en.md": "9870fc3baefb616fa3cf83cd10c3aca333f0008aa546e6dea07a7b9d64c991f9",
+        "SKILL.md": "9ee3ff26743c708c8f2cb96c398a637e8792d3591e9962e0189d72a3d7e04674"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
+      "id": "elephant-goldfish-model",
+      "name": "elephant-goldfish-model",
+      "description": "Mô hình thiết kế và thẩm định kiến trúc phần mềm đa tác tử của Google: Elephant lưu giữ toàn diện ngữ cảnh dự án để soạn thảo tài liệu thiết kế (design draft/spec); Goldfish được sinh ra trong phiên làm việc độc lập hoàn toàn không có lịch sử hội thoại cũ để thẩm định khách quan, bóc tách điểm mù và giả định ngầm. Quy trình gồm 5 pha review chuyên sâu: Initial Zoom Out, Comprehension, Design Critique, Intermediate Zoom Out và Implementation Readiness.",
+      "description_vi": "Mô hình thiết kế và thẩm định kiến trúc phần mềm đa tác tử của Google: Elephant lưu giữ toàn diện ngữ cảnh dự án để soạn thảo tài liệu thiết kế (design draft/spec); Goldfish được sinh ra trong phiên làm việc độc lập hoàn toàn không có lịch sử hội thoại cũ để thẩm định khách quan, bóc tách điểm mù và giả định ngầm. Quy trình gồm 5 pha review chuyên sâu: Initial Zoom Out, Comprehension, Design Critique, Intermediate Zoom Out và Implementation Readiness.",
+      "version": "0",
+      "source": {
+        "repository": "google/elephant-goldfish-model",
+        "commit": null,
+        "path": null
+      },
+      "stars": 18177,
+      "created_at": "2026-09-13T16:31:06Z",
+      "pushed_at": "2026-11-12T21:42:19Z",
+      "stats_checked": "2026-11-13",
+      "license": "Apache-2.0",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 75,
+      "score_parts": {
+        "function": 19,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": []
+      },
+      "dependencies": [],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "874f9964d57fa4aa293c81966ffd7db5690a15f09e50df18200658d6df8c78d5",
+      "file_hashes": {
+        "PHAN-TICH.md": "6bdf3b7622f9d60888b5efa399558b1bfa9f60f01ef823d67a2c5b8b315b54eb",
+        "SKILL.en.md": "8a36108136f4adde6a0cc96ecf39782642eb5b0c8990d2b92df2ca5eac9531a2",
+        "SKILL.md": "f17db8be2eac9abbba9e55edaa94da8b5965461e8465a0197b0a223ff7f78416"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
+      "id": "ex-ussr-kinship-research",
+      "name": "ex-ussr-kinship-research",
+      "description": "Kỹ năng nghiên cứu phả hệ, lịch sử dòng họ và hồ sơ lưu trữ dựa trên bằng chứng độc lập (evidence-first genealogy). Xử lý dữ liệu sổ hộ tịch giáo hội, đăng ký dân sự, hồ sơ quân ngũ và di cư trên không gian Liên Xô cũ và Đông Âu. Áp dụng quy chuẩn logic nghiêm ngặt: phân tách bản ghi gốc với giải thích suy đoán, phân biệt người trùng tên, quản lý chuỗi bằng chứng có thể tái lập và xuất báo cáo phả hệ kèm định dạng GEDCOM.",
+      "description_vi": "Kỹ năng nghiên cứu phả hệ, lịch sử dòng họ và hồ sơ lưu trữ dựa trên bằng chứng độc lập (evidence-first genealogy). Xử lý dữ liệu sổ hộ tịch giáo hội, đăng ký dân sự, hồ sơ quân ngũ và di cư trên không gian Liên Xô cũ và Đông Âu. Áp dụng quy chuẩn logic nghiêm ngặt: phân tách bản ghi gốc với giải thích suy đoán, phân biệt người trùng tên, quản lý chuỗi bằng chứng có thể tái lập và xuất báo cáo phả hệ kèm định dạng GEDCOM.",
+      "version": "0",
+      "source": {
+        "repository": "DenisSergeevitch/ex-ussr-kinship-research",
+        "commit": null,
+        "path": null
+      },
+      "stars": 2383,
+      "created_at": "2026-10-25T10:05:56Z",
+      "pushed_at": "2026-11-12T22:24:06Z",
+      "stats_checked": "2026-11-13",
+      "license": "MIT",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 75,
+      "score_parts": {
+        "function": 19,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ]
+      },
+      "dependencies": [],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "18b0b98db70a02e019549cd3333c1ccee08e4e8ea97a89e4d410876cd71d68a9",
+      "file_hashes": {
+        "PHAN-TICH.md": "9fed1a224ea0c249902c86f0c7d5b05858897239df6fca43e66b79ff2ab0dd1b",
+        "SKILL.en.md": "dabda3723c075da0a6e62bb5075628d82e2d3c9c1b7e770bdf408319f3cefc43",
+        "SKILL.md": "58766f4a035df6b075cbdf48e77b27ddd29db0139b045b10494d6d21ecb489a0"
       },
       "notes": [],
       "last_checked": null,
@@ -739,11 +931,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "9f7d1703000940448fe688ace3a80bb904055997a815cbc5702889cdddf89b99",
+      "checksum": "d7860ea919793210cc65850356b3bcaaf3c5e81bc0fe3ea520d674b91538bc3f",
       "file_hashes": {
-        "PHAN-TICH.md": "f0b8b9d945bdf8a378586427c486623377c7cb7b091450843d5bb3dd9defc265",
-        "SKILL.en.md": "7732e4f7bd93a829e4e3885a96f995a0a53ce2863201fd4c525d6be0cfeb646a",
-        "SKILL.md": "fd20c0f43d7f916c11f4db07118142b2be186b6a89c3ea610a6d49f3a7b712d9"
+        "PHAN-TICH.md": "f0edaaccc03eac15f85b80984e822be9cd0ec6136d01df3d7ed006722f3f9e32",
+        "SKILL.en.md": "7369efcb05a7fbc86cbe41cb4bd2172dd1961fc8ad18de9409e128a84bec6312",
+        "SKILL.md": "5cc8c54fc0748520044faf95855c42b42d954a4c9aa9cb84efacc7f71856ab11"
       },
       "notes": [],
       "last_checked": null,
@@ -801,11 +993,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "55fa988e3a4dc71c4cd841fda3e8f63791d720a1b728d8b31048f049bda62e0f",
+      "checksum": "6b2bfd73f50350f57c2c75cb754aab115eacbcb1f646494610b5da3623d54bb2",
       "file_hashes": {
-        "PHAN-TICH.md": "520fccba062f547b8c5b77b524cb2891e92f2f319734f6013cf5953279609fd6",
-        "SKILL.en.md": "d695d9a7bafe48e4364c9dbeeb3cef51df09415aef815736bd0aa9bcfa8cc078",
-        "SKILL.md": "a243c4b64b93e02f7fc01b42156afbe040644a3e8dabc01482e4848fc61dcd4b"
+        "PHAN-TICH.md": "71bfd65ab36a545ced57daf929b53ed8466d95a91c05984af97e65790140c0a8",
+        "SKILL.en.md": "d457c0f43c9da5cfd127fa312d021c332913507833513a1003dbb49503aba30e",
+        "SKILL.md": "c1b5369621b9087433ffe858e19f3103b0956883b44a7bbc35f338be40d3fcd1"
       },
       "notes": [],
       "last_checked": null,
@@ -869,11 +1061,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "42e68980ca378098f10a8f6b1f5a15ac535d832268464105df4e504914be69df",
+      "checksum": "76b2f77f6a7b93eb8a1c7eff25deef12fac97a53fd497d3bc974d162661a6c6c",
       "file_hashes": {
-        "PHAN-TICH.md": "02874b417943522da4110265fa09baa2f4d0a545367e2435b914c86ab1d68069",
-        "SKILL.en.md": "f4c7c2aa0c0a463ecd84624c34bd8ab872be82fae58d1551db7107a3132a82ef",
-        "SKILL.md": "9d13df50c9d11b38c8cd66ed4b51fb1aa035aedaf7ecac6cee51f0a07bd72745"
+        "PHAN-TICH.md": "a87b920b248224997112cf339c85366b8a316f645d18c0f623e62e0284e2de1c",
+        "SKILL.en.md": "0847d4eb62592ec99671adad201f8c7426cd25784edec829f6b932fbbb75e283",
+        "SKILL.md": "24f09c9d1661d1d36ce61b5d28acd4582cc07a0cec89dcc454ff7ea9bbd8cd71"
       },
       "notes": [],
       "last_checked": null,
@@ -933,11 +1125,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "60d56fa0dd1411ed870fb714846a46c581bc7d4076e816a8174bda0add5197a4",
+      "checksum": "78d2fc6bcd3ac2417a2d69488f66575714218d754611e9c5eb3d425d816e6298",
       "file_hashes": {
-        "PHAN-TICH.md": "cccc89cd5c35c9c2a7ee39653687acf2cd2582e4ac600e94c77102251847eba8",
-        "SKILL.en.md": "b6a4920dd10817326ebdd7bf4392aa2b7f69158377f589935f2fbe12a06a63f5",
-        "SKILL.md": "e0daeeb46612d4bf5e794aeb9516fa68c8d651e358d9fd96173172cb84861888"
+        "PHAN-TICH.md": "add3dbcb189d553bc1bd25e49984f3fd97f9b63144b1daa185226273a4f2adf3",
+        "SKILL.en.md": "fb926b31855593070a3b689b93185df808ab5dc0995edd2d20160c5f281066f3",
+        "SKILL.md": "1e081a0b5d5bfda1ffcce5b65c6667f3f5ec45da5b088bcfee1652e0ffb2665c"
       },
       "notes": [],
       "last_checked": null,
@@ -1006,11 +1198,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "f8ebc6c04d2b84fec15f84516fbb789c9fc388f28e11c723c913c952e6a32918",
+      "checksum": "d43d007cffe3a207631f6695604a7950a7e60645f70124b9360d863a0557b4e9",
       "file_hashes": {
-        "PHAN-TICH.md": "7ef9d5c91b0a6be8a122ed1836d321e893e1d2a6d88627f6fb8cba5eb1035696",
-        "SKILL.en.md": "301dd285239e38bc2f1ae0b73d32e799568e80c49b98f8a95e9bc58930777b3d",
-        "SKILL.md": "0a752d6388c757c85ce6917e62a83c4d7fa2704777b93c8183267e576e88db56"
+        "PHAN-TICH.md": "20f3b3ac1c029add6a1de1ea0635dbdf9037ed7eb3fe34867e8607118bc34303",
+        "SKILL.en.md": "a67b7f15b3727eae3f4d5d0f1c061c14cbe3447bd76232f02aa534c5dd5cc6af",
+        "SKILL.md": "80f769a47063ac35030268676a544182c35d28d245b32c9116b2b6cce12da12f"
       },
       "notes": [],
       "last_checked": null,
@@ -1068,11 +1260,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "e456a8c7b46130995711680db09bc7e06bee6cda7260f1697760bbc4a413c6fe",
+      "checksum": "fcb0a1e6f5429493d8ecab83c53fa5a70e9bc2eb947ec62af09e6654252b8e93",
       "file_hashes": {
-        "PHAN-TICH.md": "48e72672384cc98bf33c0b0d19446092791dd032122df54f65a213c85a78e551",
-        "SKILL.en.md": "35ce1ae07784e596656d83a3a50d40a0e78c377818b0efd51a0a9822c14c9374",
-        "SKILL.md": "19cce4c4e3c5917f945db269a668cbff83260951a0dda1064e2a75832eafa7a1"
+        "PHAN-TICH.md": "784a3415f0fe4b923422508d4de0fc4b967f82e447fbcc6724b496ce77125121",
+        "SKILL.en.md": "0fd285d481dee9f8954ea8022899e4c8c568b699c09e0b0ca70f2cbbefd20fe6",
+        "SKILL.md": "96db05197383f233229b6a48d78f299cf497124ce050bf4aa02277206954ff7e"
       },
       "notes": [],
       "last_checked": null,
@@ -1141,11 +1333,68 @@
           "SKILL.md"
         ]
       },
-      "checksum": "055a84fac34dd7a50dbc9e4ca10d21ae72782d2932f8f1648ea0ab00f58c23e1",
+      "checksum": "38ebbdd9d1c91d0745cd0588a2c17b703088d2f6a584ef35359646d6ddfc1fc3",
       "file_hashes": {
-        "PHAN-TICH.md": "f900215c6e90982b522ddffd43b3f99ad59fbbc3d0cafa9d2a3ffd5c0a91509f",
-        "SKILL.en.md": "17c2f1c2a337becf28ec1e23eec46b42a6f0ffa2691b40d8b97b35d043b79f65",
-        "SKILL.md": "bfe3102bb655d31fc4b1f90fc07f6bc1a5db7f9fd199ce19b62f092e3a387055"
+        "PHAN-TICH.md": "70ff40ec6c1c1f39e5cd5525044624db410528243c9c63e12b111ff6c59015b8",
+        "SKILL.en.md": "3b7f4e05364d478e1e56a40916a87b27536f8c8740fe90e5641e67aa0ef32122",
+        "SKILL.md": "755503e94710333105dd2ea22ca72b673e5e53d92f521afb60d4de7417eb7c96"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
+      "id": "linkedin-agent-skill",
+      "name": "linkedin-agent-skill",
+      "description": "Bộ 11 kỹ năng toàn diện cho AI agent vận hành tài khoản LinkedIn: viết bài từ ý tưởng thô theo 21 công thức hook đã được kiểm chứng, linter khử văn phong AI (loại bỏ em dash, từ sáo rỗng, ký tự ẩn watermark), chấm điểm hồ sơ cá nhân theo thang điểm 100, lập kế hoạch nội dung tuần và tối ưu tương tác bình luận.",
+      "description_vi": "Bộ 11 kỹ năng toàn diện cho AI agent vận hành tài khoản LinkedIn: viết bài từ ý tưởng thô theo 21 công thức hook đã được kiểm chứng, linter khử văn phong AI (loại bỏ em dash, từ sáo rỗng, ký tự ẩn watermark), chấm điểm hồ sơ cá nhân theo thang điểm 100, lập kế hoạch nội dung tuần và tối ưu tương tác bình luận.",
+      "version": "0",
+      "source": {
+        "repository": "Jakeschincariol/linkedin-agent-skill",
+        "commit": null,
+        "path": null
+      },
+      "stars": 3508,
+      "created_at": "2026-09-07T22:58:16Z",
+      "pushed_at": "2026-09-17T11:27:52Z",
+      "stats_checked": "2026-11-13",
+      "license": "MIT",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 75,
+      "score_parts": {
+        "function": 19,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": []
+      },
+      "dependencies": [],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "3525147d177a83b8b9c9a6d6303c6cf69e8feea15af009a78046424ea443f1d7",
+      "file_hashes": {
+        "PHAN-TICH.md": "c58ce235e504ee92ece95226a7d786b0206e526c5aee6b52692153369b83051c",
+        "SKILL.en.md": "cc60b26b35454506d84e1fca172c439ddb0771815b35937016262e622d541e40",
+        "SKILL.md": "b795df113502e186994605c78fe5b1cad543b87190551817c628381b0fbe4924"
       },
       "notes": [],
       "last_checked": null,
@@ -1203,11 +1452,73 @@
           "SKILL.md"
         ]
       },
-      "checksum": "c48d75ce4fa56552e58f0f4cb96ff583fa1ed5838f7461f2b9d63b1c77faed74",
+      "checksum": "511cd6765e3a3779b86bbf5363e27ac2ee1d1320c45df17b21dcfcd5e62134a4",
       "file_hashes": {
-        "PHAN-TICH.md": "d8e14f45d5beae76ba0dac28802dece09f461057c7bcade8adfd8f111a6b577a",
-        "SKILL.en.md": "65ec4bd58732e8cc11e244724e8666de78764b973f6d3b03b233904639cf47c6",
-        "SKILL.md": "06772c09aa0dc8427ae12e894a2f281be78b59e75423fef7e6fa3a1d5dd849a5"
+        "PHAN-TICH.md": "e48cc246bfed74823bd374ece4ba0ad298b2c5571f3d9c2de9784163d009a6f8",
+        "SKILL.en.md": "e78ba6a5cf33757f2fdadd0426fa6c235c607b8c9dbbb9123fe5395651d97d4b",
+        "SKILL.md": "f1d6c96db650ed84bd0a1e94d8dad44889a42b86cb1862eafd387f94693fde5b"
+      },
+      "notes": [],
+      "last_checked": null,
+      "area": "skills"
+    },
+    {
+      "id": "motionsites-web-builder",
+      "name": "motionsites-web-builder",
+      "description": "Xây dựng website, landing page và phần hero mang đậm tính điện ảnh đạt chuẩn giải thưởng Awwwards/FWA. Áp dụng quy trình thiết kế bài bản: học hỏi từ 40 mẫu thiết kế đỉnh cao của MotionSites, tích hợp tài nguyên video và đồ họa 3D trong suốt, chỉ định thông số thiết kế bằng con số chính xác (clamp, tracking, easings) và vòng lặp tự kiểm tra qua ảnh chụp màn hình (screenshot look-and-fix loop).",
+      "description_vi": "Xây dựng website, landing page và phần hero mang đậm tính điện ảnh đạt chuẩn giải thưởng Awwwards/FWA. Áp dụng quy trình thiết kế bài bản: học hỏi từ 40 mẫu thiết kế đỉnh cao của MotionSites, tích hợp tài nguyên video và đồ họa 3D trong suốt, chỉ định thông số thiết kế bằng con số chính xác (clamp, tracking, easings) và vòng lặp tự kiểm tra qua ảnh chụp màn hình (screenshot look-and-fix loop).",
+      "version": "0",
+      "source": {
+        "repository": "Motionsites-AI/claude-skill",
+        "commit": null,
+        "path": null
+      },
+      "stars": 2034,
+      "created_at": "2026-10-26T06:58:45Z",
+      "pushed_at": "2026-10-26T07:04:24Z",
+      "stats_checked": "2026-11-13",
+      "license": "MIT",
+      "language": "vi",
+      "category": "other",
+      "tags": [],
+      "quality_score": 75,
+      "score_parts": {
+        "function": 19,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ]
+      },
+      "dependencies": [],
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "PHAN-TICH.md",
+          "SKILL.en.md",
+          "SKILL.md"
+        ]
+      },
+      "checksum": "4d62cb085b8a0873f7c5fa36a98854aa227f0eecd2589490f44364a8857e9036",
+      "file_hashes": {
+        "PHAN-TICH.md": "c88a28ae44eb20ddf098079498a643abd9048787e9d25d86aafb42b5f48d8ed2",
+        "SKILL.en.md": "cbbc017915544148c5f8ab6a776c7c8ba526f3327d892d5c3de5d1c665f9b870",
+        "SKILL.md": "4d8dcd1276279dabddd6c66dc854f2392e8e208349ca4e86675ade81755694ea"
       },
       "notes": [],
       "last_checked": null,
@@ -1265,11 +1576,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "3038d598d44318255a50cbd4e020e0d7bec1f79af5e743aaab838d7c6a1fd948",
+      "checksum": "3bd9898979dfbee2782ac5a2e43d00c7e8b062db0788699c4edd7a13986c350b",
       "file_hashes": {
-        "PHAN-TICH.md": "2b9b7f964e9543533315ed37af54a156442d001ec13caacb19db6877af85ae7b",
-        "SKILL.en.md": "38ec1a5721c6de2331819cb2be2b6a8c130f7cd09e5d4708fc1cef0fa8863601",
-        "SKILL.md": "ef5c69595320879790a3fe071d04c05c60873977298710040dabd5e25be66ecb"
+        "PHAN-TICH.md": "2f9116887129fcc3f24f06e3df52a1f08c4c2a560c8ccef235e662a1ed602a68",
+        "SKILL.en.md": "8bfada751f15e3dc6db5a07c6a15e63b9d4a0149c66bd75a7d3763b920f5e98a",
+        "SKILL.md": "4b9ca1f86cf35907f134c8ec3a2ca882c251d7dc55e24abeb352e7333284ee60"
       },
       "notes": [],
       "last_checked": null,
@@ -1353,11 +1664,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "93e21116b2bea6c1a92dc7995fe7e4a55f44bbb423f72763a2f1c0671ceb4f40",
+      "checksum": "afae098392741b01d512a5193635df513b9978e9b84f9349a1ad877cb3c3cd75",
       "file_hashes": {
-        "PHAN-TICH.md": "01462d298cfa93ef5400e9bf64b08d6fd0092632ba77d457e2100d7d16542a2e",
-        "SKILL.en.md": "b8210917cf4218fbc7d64a07ec4eed4b7888981df3a0224a4681f3547e0f09c5",
-        "SKILL.md": "d48a32cbd4799c1f94d83b5f29fbed60d8da27ec225c3891f0893bb3eee09081"
+        "PHAN-TICH.md": "ca9cd1c4674d16b52e8d7d9f8b4a91a5ceacd14cb2b1183b3f4df8a858a1e856",
+        "SKILL.en.md": "73afb532e4a56101fa476b6be7eeff312aedae5bd8616c6db1501babed65bab6",
+        "SKILL.md": "92949ef548c3873ce1104cf31af374b68b0db41e95ccb4cceddeecbe49e2a1de"
       },
       "notes": [],
       "last_checked": null,
@@ -1421,11 +1732,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "75ec9dbd16b6e8716f7e1d3cf6c722ec24e5a9c2d78adfef07371380eb493fd8",
+      "checksum": "91c4a53fd8eaab4bcbc917f49a23c28c58fabaddc1b9e02dade2cd52c2331419",
       "file_hashes": {
-        "PHAN-TICH.md": "8c837371d512b29a0ca4495dfbf33c259f157dc5a813760238ee3b0180dc522c",
-        "SKILL.en.md": "a6212efbac84dc9b076fad83d2b6803f3e68b7ad6c1bff8e5d40c19a81c5a212",
-        "SKILL.md": "157598d3a609ff26e1475af23f70830865b2ee096a4215c9378f06243f313b35"
+        "PHAN-TICH.md": "3bb33c9a87d6f1ba0a2c23a03ac80123e93d9cd5923782f62758cdb7ce16adc4",
+        "SKILL.en.md": "d3eff9cf3bc7d900c7e197fdc1870f8f8ce55ceb138a3c31583f8a8f3edef83a",
+        "SKILL.md": "bd0ad8cbc1df5af712c0ee57a1a5d822895d00c62c3466693ca99d285b477911"
       },
       "notes": [],
       "last_checked": null,
@@ -1483,11 +1794,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "d3ebe5aa53b8632023a7644672ce14e6c25c7c28687faaaf88b14801ddce19e9",
+      "checksum": "a7a43f4dc01737bc5e89aa501f47e81db26a4e924b7d92179874eb475ed4c541",
       "file_hashes": {
-        "PHAN-TICH.md": "1c5d520d38c43930a8b99ed967c070c42be56bfd7ecfbf6d312db067e3df2abf",
-        "SKILL.en.md": "b1fd6a60cf0bcd481f6828453da24b9d9f0935ec6e883741e5f620259f13ff40",
-        "SKILL.md": "be32f4153e25d285c07db350c38d1327fafbac269fbc3d9edc11dbee69f3d544"
+        "PHAN-TICH.md": "95d56527647bf7ad9dfcaac7cdb6590fd7ef0b1f60214f75a82cd5971e561009",
+        "SKILL.en.md": "3cf2c24334e9a396d120dbe246f554e8b033f7bea883c4c39704717a787ffd38",
+        "SKILL.md": "341d05de69c56e534ab5cba2ed46895d4826795051d08bfd1c1cf788398b3522"
       },
       "notes": [],
       "last_checked": null,
@@ -1540,11 +1851,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "ababec44e61148f14b54bdf51f582c15e1b6be98e93c72ea488a3dc7cfe84162",
+      "checksum": "a3ebf4fd10b4732419849f00778790446d22eec5c22aa3be8b6e224bc7e57aa2",
       "file_hashes": {
-        "PHAN-TICH.md": "45887560bebc7f58d4be601c100d21e87cffc0b5d7e4b64e8a6bcf9f07b634e2",
-        "SKILL.en.md": "9190b68440ad99be4d865c63b87939f23a362efac0776c5a67c93d1498bb5e37",
-        "SKILL.md": "9e6002b8ba03d9db7663fbad9a1a2e9af75c4b46160470936b2121f41f9cf39f"
+        "PHAN-TICH.md": "d11954cd8b31fd5ed51d16a9d2f68b0c454d4c297c5e82efd25a5a3ee1e06113",
+        "SKILL.en.md": "d3b4d2a0d971e7f77b505c7023e74b0d21150479c7cce1aa536f64a923009828",
+        "SKILL.md": "7eca66aa0b57d85b841b19484f516cd6ec512f091f600e94047546a42e5c2085"
       },
       "notes": [],
       "last_checked": null,
@@ -1608,11 +1919,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "1d2a2fba03f6da5bebe7bb8f5cd8f0bc30f9ff2363e8d9cc4837b609010344da",
+      "checksum": "a22bd912b7b982e8e413ccf968f743d32cc75810f198df28b33eb60c01496d2f",
       "file_hashes": {
-        "PHAN-TICH.md": "64ac8837d0eef80fdb4d6655ebcccc89110ca2d38b780baf3a091967e7ce1e57",
-        "SKILL.en.md": "8afd0a7de1d5d4a769cb4c78f250523dbc1e33e25dd5ecc24f6fceca53480fa6",
-        "SKILL.md": "3e3db82f000e45beb3e9c830902d6e112fd52dd8f03526b31ae9b8e80c9eb9b4"
+        "PHAN-TICH.md": "8c7ddd19938290dde17f365cca2a6d159be191e97edeaaf90b37c07d52d3a4a4",
+        "SKILL.en.md": "4952d1ae91b4984fcc108fecfe81995b5fc43661e9abcb5973919de976188b5c",
+        "SKILL.md": "2327ae4a4494921c4a594343fcb7c111260b2fcd58a9f16e0493831826b5e703"
       },
       "notes": [],
       "last_checked": null,
@@ -1672,11 +1983,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "9e37652899c5279ab546abe6af53828ea2d837171b459a4dd594715d796a5b91",
+      "checksum": "3a23fa4fac3f0bdb12151797defeb79c7206790fecc126185f3d9beae659d080",
       "file_hashes": {
-        "PHAN-TICH.md": "008a4d41dd9c49b6dbdedf41b11d701260067ed713558faed3e2fc970f2c58db",
-        "SKILL.en.md": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
-        "SKILL.md": "38eb552721574ca1318c5f4a5af3b68c1fc582254d1df5867e9bda298cf9190d"
+        "PHAN-TICH.md": "573c8a4918bd21cdd74bcccb8405ff6a239f998abfd35e5a538e48a0ef0f2500",
+        "SKILL.en.md": "d466a95fa2c14a24313176c60582c2a3b6824faff8d6fa813e76bc17b420d40e",
+        "SKILL.md": "32da378e5aeb98bfb75472671ee54482a39860986523a17a30e99e75d4ef54b3"
       },
       "notes": [
         "Giấy phép lạ, cần xem lại điều khoản."
@@ -1747,11 +2058,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "9894597339a0c3097c71d8434d48cecaf9280a933ac86d3459c5c12071bb3a8e",
+      "checksum": "0b276a4bd97ce93205440443dc09848a35506163c261d475d4745f84780fe13b",
       "file_hashes": {
-        "PHAN-TICH.md": "e88ba9678ea508372275602b3201ca24fde72dbb2c4ccdd11ffb6f52c030ceff",
-        "SKILL.en.md": "9395e463e8ff733c4cadafe8dafeceb72fd462a2a1fc89a58c17d3b756b5929b",
-        "SKILL.md": "276c73254ed3388d4011987bcc4d20a6ca5ba673ff8b012ab7e9412fe437d008"
+        "PHAN-TICH.md": "db046f656d218b6e5f12c7f31fe902a0ca09986facaed975fc1b12d73dd69ed8",
+        "SKILL.en.md": "3f06d6c8de13d4b7401c2603cba78d8c495b2830b2b8e66d44f2cc1bf4298bb6",
+        "SKILL.md": "4b3789d6e4a19ca2eda418edc959356cb9b6b735237d030640b8fcd2b7a93fb9"
       },
       "notes": [],
       "last_checked": null,
@@ -1809,11 +2120,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "a5da63502a2e82787a8d447eca86e11b9953823959eaa13444986946f55ef87f",
+      "checksum": "e388a3b476020e3b08d092d6509fd162fb7be336900b1ad03fab6b92c16b1eb5",
       "file_hashes": {
-        "PHAN-TICH.md": "87d7b9fb5a703bfe722722a5ddd27c6d54332b8f827b86ba94791aa7d505ad4e",
-        "SKILL.en.md": "ba585e47cd901506b0e2de13025b0e39bc02462c136cf27491ad3efbdfe66020",
-        "SKILL.md": "d2d48d580f4659bc778c2659c2d60bab33717a6f8f494ee5903377aae11cf5ee"
+        "PHAN-TICH.md": "4a0db4b9d5a3a1b14eaecc0c1273469678d790ee65fb175796521ff702c10111",
+        "SKILL.en.md": "3a69e47be4e62fac076f2675dd206d562ff3b6f9548459edd7d8e254ed94beb8",
+        "SKILL.md": "ecd64156b57728504d8c8c1aea6911a62c118d470a298885c82109e23c1884cc"
       },
       "notes": [],
       "last_checked": null,
@@ -1892,11 +2203,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "e04840d0cbc99a57a0e6d54b80e245b9e752e804b53cc984dc320712c2d2d1b5",
+      "checksum": "22e17ef7d1f59a1009eb6c1ec3d0af68540c88ebe2b1977ec7a6bbf327f90367",
       "file_hashes": {
-        "PHAN-TICH.md": "1b2dc2bba7ebc448edaf46c6e64954e468da3d954553871b6e332fd02f0a7bff",
-        "SKILL.en.md": "6917f5983b8c99950f41012a2c225d2f8d3617664a6c79a914677c631afe0eaa",
-        "SKILL.md": "827b9c9bc3b4df1e8d5106ce019cba6610698caf115dac841602f7edd7f6a4b4"
+        "PHAN-TICH.md": "c6043e69cf052b4b3cdc084ad543c8c708ab0b069d944afbf87d1dd912bb4a15",
+        "SKILL.en.md": "74155823aff6fe0aa798ff22544b81c332ff42f264b84fc0b49d6dd69627be26",
+        "SKILL.md": "481d238ac3783e4ffbf1b57f39ce3024cf1e151cddddb10fecb4cf2d52268045"
       },
       "notes": [],
       "last_checked": null,
@@ -1961,11 +2272,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "156ef8c0649732b0ed343480463228139d14b663d5cfbdfdef5b1e7d4db2845b",
+      "checksum": "3f3bb20c46220d8b284d91a374954dde34a6be8d10ef7c1a41aa79a9909bc584",
       "file_hashes": {
-        "PHAN-TICH.md": "e53c3553f885d8dd519e6b6e6b4d167d657faa24d62a975a3a7d01c15280562d",
-        "SKILL.en.md": "f445aa5db68ce1563cec6246dc747051c6c27ad7ff41f079c25b618025c609e2",
-        "SKILL.md": "c3f734e601a3aa0b0cc5936dbd014e056d2c964e6d2f29c4c185b0613bba8d0a"
+        "PHAN-TICH.md": "14f198a8d210592727c100cc1047d7bf674642f08169743ab76e0f59bed31320",
+        "SKILL.en.md": "fea510750d33a2546b864bbd6fc055437171ad048a4ed0e847d20d7088786d1c",
+        "SKILL.md": "7661db33c38c48c636f8942d216d56330e62866c81d5a27c821714a166c3f021"
       },
       "notes": [],
       "last_checked": null,
@@ -2023,11 +2334,11 @@
           "SKILL.md"
         ]
       },
-      "checksum": "53ebc97721724b948e172a4cb0dbbce6e07057e1a195008dfedcc5079a43b345",
+      "checksum": "cc32449cd2fc9c99240bc0a8e55e61039c8ced225884728324b9b1eb5ed9ef26",
       "file_hashes": {
-        "PHAN-TICH.md": "220d682502b883b9bbc718ae38a0db363fe06e46b19ac2f4db7a133168eedb9c",
-        "SKILL.en.md": "86f1e5917b90de188316fdf7242aca7c3ccf97d8cb06adfd2ed025a7084e654f",
-        "SKILL.md": "7ca18b1d514606864324ee28dc14002b71e37c4eadcd7341583572c993ea835e"
+        "PHAN-TICH.md": "6ad4a16f25704aa4199e6de7fb4e3b37e2c4a3d570f7c34cdd40f2511802c18d",
+        "SKILL.en.md": "ed487ba4b1fb2e166f8d2f42a9bdc64a65ded11a73cf4885f9af2941c33887fc",
+        "SKILL.md": "89ad11a983758bcca064fea0d6c59263abb0f5ae44a1ac19e9b0da2f7be26945"
       },
       "notes": [],
       "last_checked": null,
