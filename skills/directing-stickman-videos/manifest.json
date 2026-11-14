@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "name": "directing-stickman-videos",
+  "version": "b0866bcfd49d",
+  "source": {
+    "url": "https://github.com/kaomei/stickman-video-director",
+    "commit": "b0866bcfd49d1121cd235c2445fa3d8cce307f53",
+    "sha256": "e627f4ce8df64d72f8cdefb0aa517d554bcd8b6ee09cee5b0bd07f9f637775fe",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Lập storyboard và prompt video người que ở chế độ Director; dựng video có thuyết minh, phụ đề và hoạt họa ở chế độ Autopilot. Bản nguồn có nhiều tuyến phong cách A1–A6 và B1–B6; gói Hub hiện chưa đầy đủ nên giữ cách ly.",
+    "aliases": [
+      "Video người que",
+      "Đạo diễn hoạt hình",
+      "stickman-video-director"
+    ],
+    "keywords": [
+      "stickman",
+      "video",
+      "storyboard",
+      "autopilot",
+      "người que",
+      "hoạt hình",
+      "thuyết minh",
+      "phụ đề",
+      "stickman-video-director"
+    ],
+    "examples": [
+      "Lập storyboard video người que 60 giây, dọc 9:16, Style 1 nền sáng về tiết kiệm điện.",
+      "Kiểm tra yêu cầu môi trường cho Autopilot B2 trước khi tạo video."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "e627f4ce8df64d72f8cdefb0aa517d554bcd8b6ee09cee5b0bd07f9f637775fe"
+  },
+  "requiredCapabilities": [
+    "@napi-rs/canvas 0.1.100 [declared; dependencies]",
+    "Pillow ==11.3.0 [declared; requirements]",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "ffprobe [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "git [mention-hint]",
+    "image-generation [mention-hint]",
+    "node >=20 [declared; engines]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "numpy ==2.0.2 [declared; requirements]",
+    "opencv-python-headless ==4.13.0.92 [declared; requirements]",
+    "powershell [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]",
+    "rust [mention-hint]",
+    "sharp 0.35.5 [declared; dependencies]",
+    "text-to-speech [mention-hint]",
+    "video-generation [mention-hint]"
+  ],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-14T03:42:09.893Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "references/a6-reference-prompts.md: prompt-injection (high)",
+      "references/b4-audio-direction.md: prompt-injection (high)",
+      "references/b4-opening-direction.md: prompt-injection (high)",
+      "assets/b5/example/assets/rig/spider-approved.svg: base64-blob (medium)",
+      "assets/b5/local-baselines/jensen-v13/scene/assets/rig/spider-approved.svg: base64-blob (medium)",
+      "Incomplete curated text/code bundle: binary showcases/fonts and files beyond Hub limits are excluded. Review upstream content and restore all required assets before activation."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "518 upstream files were excluded by binary-media/path/file-count limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "Canonical upstream name is directing-stickman-videos; replaces the unverified stickman-video-director wrapper. No upstream tests/scripts, dependency installation, media rendering or provider calls were run."
+    ]
+  }
+}

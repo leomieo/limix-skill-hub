@@ -1,0 +1,1511 @@
+{
+  "repository": "kaomei/stickman-video-director",
+  "commit": "b0866bcfd49d1121cd235c2445fa3d8cce307f53",
+  "path": "skills/directing-stickman-videos",
+  "verified": true,
+  "coreOrigin": "upstream",
+  "coreSha256": "e627f4ce8df64d72f8cdefb0aa517d554bcd8b6ee09cee5b0bd07f9f637775fe",
+  "skipped": [
+    "assets/a6/apartment-style-example.png",
+    "assets/a6/cafe-face-and-light.jpg",
+    "assets/a6/shop-full-body.jpg",
+    "assets/b1/approved-2026-10-23-contact-sheet.png",
+    "assets/b1/approved-2026-10-23-motion-sheet.png",
+    "assets/b1/approved-2026-10-23.mp4",
+    "assets/b1/approved-2026-10-24-longform-contact-sheet.jpg",
+    "assets/b1/calendar-crayon.png",
+    "assets/b1/camera-handdrawn.png",
+    "assets/b1/character-acting-reference.png",
+    "assets/b1/character-pose-sheet-v6.png",
+    "assets/b1/clapper-crayon.png",
+    "assets/b1/idea-bulb-crayon.png",
+    "assets/b1/idea-note-crayon.png",
+    "assets/b1/open-source-crayon.png",
+    "assets/b1/portrait-approved-2026-11-13.jpg",
+    "assets/b1/portrait-approved-2026-11-13.mp4",
+    "assets/b1/script-page-crayon.png",
+    "assets/b1/youtube-crayon.png",
+    "assets/b2/approved-style-board.jpg",
+    "assets/b2/portrait-approved-2026-11-13.jpg",
+    "assets/b2/portrait-approved-2026-11-13.mp4",
+    "assets/b2/public-showcases/b2-colorful-phone-weather.mp4",
+    "assets/b2/public-showcases/b2-colorful-sleep.mp4",
+    "assets/b3/accepted-chair-motion.mp4",
+    "assets/b3/accepted-chair.png",
+    "assets/b3/accepted-dog-motion.mp4",
+    "assets/b3/accepted-dog.png",
+    "assets/b3/accepted-implementation-board.jpg",
+    "assets/b3/portrait-approved-2026-11-13.jpg",
+    "assets/b3/portrait-approved-2026-11-13.mp4",
+    "assets/b3/public-showcases/b3-tv-dog.mp4",
+    "assets/b3/public-showcases/b3-tv-night-signal.mp4",
+    "assets/b4/portrait-opening-approved.jpg",
+    "assets/b4/portrait-opening-approved.mp4",
+    "assets/b4/reference-01-motor-room.png",
+    "assets/b4/reference-02-rooftop.png",
+    "assets/b4/reference-03-driver.png",
+    "assets/b4/reference-04-street.png",
+    "assets/b4/reference-05-opposite-rooftop.png",
+    "assets/b5/approved-sample.mp4",
+    "assets/b5/example/assets/fonts/Anton-0.ttf",
+    "assets/b5/example/assets/fonts/Instrument-Sans-1.ttf",
+    "assets/b5/example/assets/paper.png",
+    "assets/b5/example/assets/type/07c214e64c0aa1494a.png",
+    "assets/b5/example/assets/type/07d2aa4161ff85f4fe.png",
+    "assets/b5/example/assets/type/084c4c65545ec01d02.png",
+    "assets/b5/example/assets/type/0f914a67989647a0cb.png",
+    "assets/b5/example/assets/type/14e72fe0130f7b9490.png",
+    "assets/b5/example/assets/type/167f48c2ce48cfe093.png",
+    "assets/b5/example/assets/type/17a95b93edfb608501.png",
+    "assets/b5/example/assets/type/1af314fde0a377efee.png",
+    "assets/b5/example/assets/type/1f62cf8aa826ec184c.png",
+    "assets/b5/example/assets/type/22fb8fbfd68f5943a1.png",
+    "assets/b5/example/assets/type/26ed9accf2c3ecd5dd.png",
+    "assets/b5/example/assets/type/28cb1334e7240100ed.png",
+    "assets/b5/example/assets/type/2a24ce12ad2706c758.png",
+    "assets/b5/example/assets/type/31f8f74e44ac93caa1.png",
+    "assets/b5/example/assets/type/3583bf8d2e412c2944.png",
+    "assets/b5/example/assets/type/3bda46361138600558.png",
+    "assets/b5/example/assets/type/3d1b0e8355660cf481.png",
+    "assets/b5/example/assets/type/4124ba6778d7a09441.png",
+    "assets/b5/example/assets/type/43e211d5dceca6df7d.png",
+    "assets/b5/example/assets/type/53155f0050894d8adc.png",
+    "assets/b5/example/assets/type/5449bca173d60fe861.png",
+    "assets/b5/example/assets/type/54be7c8d90281e4936.png",
+    "assets/b5/example/assets/type/5739da8cfe46a0a612.png",
+    "assets/b5/example/assets/type/582a155733fe6d9ef4.png",
+    "assets/b5/example/assets/type/603ac3a45aea7da796.png",
+    "assets/b5/example/assets/type/65f7567a7e90275063.png",
+    "assets/b5/example/assets/type/67c82db8fe5c423913.png",
+    "assets/b5/example/assets/type/69b4facd7b9f3b42c0.png",
+    "assets/b5/example/assets/type/6a40af164fb9219755.png",
+    "assets/b5/example/assets/type/6ade5513e007704634.png",
+    "assets/b5/example/assets/type/6fcad86c0a86f55b2f.png",
+    "assets/b5/example/assets/type/701c9e88836e45b4dc.png",
+    "assets/b5/example/assets/type/7672d4bab79746a150.png",
+    "assets/b5/example/assets/type/76f97013f418fb21ec.png",
+    "assets/b5/example/assets/type/773f254c2be04c3fb2.png",
+    "assets/b5/example/assets/type/7d54cbff6f53e646f0.png",
+    "assets/b5/example/assets/type/7feab2f8cf6cffb7c2.png",
+    "assets/b5/example/assets/type/86c4f136b2a80964e1.png",
+    "assets/b5/example/assets/type/8ce8f8856caded0aa7.png",
+    "assets/b5/example/assets/type/91f604e94bda6d28c8.png",
+    "assets/b5/example/assets/type/9ae1a584b5d5c05fe6.png",
+    "assets/b5/example/assets/type/9c99cce26bda7c9459.png",
+    "assets/b5/example/assets/type/a0c96230d521748b45.png",
+    "assets/b5/example/assets/type/a3580d068dbead7c86.png",
+    "assets/b5/example/assets/type/aa190d706efe4caf26.png",
+    "assets/b5/example/assets/type/aa20106fd69e599410.png",
+    "assets/b5/example/assets/type/aec05d612f2b97868f.png",
+    "assets/b5/example/assets/type/b10605b1e54ff03a27.png",
+    "assets/b5/example/assets/type/b3ab75fb9400ba65ce.png",
+    "assets/b5/example/assets/type/b5c236c40fc55cee01.png",
+    "assets/b5/example/assets/type/b7d98fa608a6b848d4.png",
+    "assets/b5/example/assets/type/b8868d3390fe501b8a.png",
+    "assets/b5/example/assets/type/be4d173b09dff2203b.png",
+    "assets/b5/example/assets/type/c93437235840b7b06c.png",
+    "assets/b5/example/assets/type/ca7f85bb72ce877c95.png",
+    "assets/b5/example/assets/type/d415d50c73d3b9bfb2.png",
+    "assets/b5/example/assets/type/e442f79aad0412dd40.png",
+    "assets/b5/example/assets/type/e5f447b8fd79b4352d.png",
+    "assets/b5/example/assets/type/e8fa60ae848091a9fb.png",
+    "assets/b5/example/assets/type/e9ac70bba53d9b31ab.png",
+    "assets/b5/example/assets/type/ea26d0cf7d4efd617b.png",
+    "assets/b5/example/assets/type/ef063e074e237b32c2.png",
+    "assets/b5/example/assets/type/f3b175bdb0869d48d3.png",
+    "assets/b5/example/assets/type/fe0f58ca54a15a4696.png",
+    "assets/b5/local-baselines/jensen-v13/approved-sample.mp4",
+    "assets/b5/local-baselines/jensen-v13/reference/expression-sheet.jpg",
+    "assets/b5/local-baselines/jensen-v13/reference/frame-0.8.png",
+    "assets/b5/local-baselines/jensen-v13/reference/frame-26.8.png",
+    "assets/b5/local-baselines/jensen-v13/reference/frame-44.8.png",
+    "assets/b5/local-baselines/jensen-v13/reference/frame-59.9.png",
+    "assets/b5/local-baselines/jensen-v13/reference/frame-9.6.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/fonts/Anton-0.ttf",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/fonts/Instrument-Sans-1.ttf",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/paper.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/rig/jensen-approved.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/00a038f7e9bd300032.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/00c1c374be0ef5f6c1.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/0254d6cae0260d9397.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/04f2636dd35f158b7d.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/0528f15cb9510ebdf7.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/0698359e642dce2869.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/073878ebea191579f0.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/07a18dc89994a1123e.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/07c214e64c0aa1494a.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/07d2aa4161ff85f4fe.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/084c4c65545ec01d02.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/0c691256e86180eae2.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/0f914a67989647a0cb.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/10e4f7adbc47f35132.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/1311868c88f033436d.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/146e30086f5c448568.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/14e72fe0130f7b9490.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/15093ee750b4ab1fe0.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/153425f3a1939b5607.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/1536b48325f9c948ab.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/167f48c2ce48cfe093.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/16d1bbba108586f153.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/17a95b93edfb608501.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/1ac3e18c84d8338355.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/1af314fde0a377efee.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/1c4230a142280fb542.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/1d9dfa3f6168e0ef13.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/1e01a9e3b1fa76227c.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/1f62cf8aa826ec184c.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/21c2dacf8986615311.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/22fb8fbfd68f5943a1.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/24eb1d6b4f76dcf30d.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/26e58de481f51265f5.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/26ed9accf2c3ecd5dd.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/26f9e6946283c194b8.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/28cb1334e7240100ed.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/28d4d4f787eeb4249d.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/29c2ddf4aaacf066a3.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/2a24ce12ad2706c758.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/2d1691d1dabeeb92be.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/2e9edd0cbfad37b0ea.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/30777916d24d1a3678.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/31d2c8ddf7c71453d7.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/31f8f74e44ac93caa1.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/328e36607ccf1b3e6d.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/3459324aa57a199187.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/3522aeadb56dac5f75.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/3583bf8d2e412c2944.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/37aa6a12cea37001c0.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/382884b95a72bc0f4b.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/38c9bbb0a0f54968ba.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/3b014207caec9e07f5.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/3bda46361138600558.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/3d1b0e8355660cf481.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/3ec7423c101122613c.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/4079e508bb6db3a27f.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/409029fb6909920856.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/4124ba6778d7a09441.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/43e211d5dceca6df7d.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/45cd3ceac6a8d2043c.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/45f02fdf6c0254d4be.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/480f383d497bdc34ec.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/48dc00c791c354415e.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/4a1ddb558d83639839.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/4a60c0d627d54c6c5b.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/4bafa845b9385c6514.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/52d38c70f837bfc9b4.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/52de479dddd3025635.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/53155f0050894d8adc.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/5449bca173d60fe861.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/5486e35e8a7d72122c.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/54be7c8d90281e4936.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/5739da8cfe46a0a612.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/582a155733fe6d9ef4.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/5906ac7c09b1a5dac0.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/5c74dd62dfbd9d495c.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/5f0c704919841412e8.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/603ac3a45aea7da796.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/61b8be5c77c6fe6e06.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/6238fe93f9e043482c.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/632874ab59c8acfaf1.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/6529ae8b743fca1946.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/65f7567a7e90275063.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/66eeb09a97fcdfe664.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/67c82db8fe5c423913.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/69a713fba7a9dcc5c7.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/69b4facd7b9f3b42c0.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/6a236381068d528ae2.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/6a40af164fb9219755.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/6ade5513e007704634.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/6f3b86b22a72c08e17.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/6f8b4001efd1bdaca5.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/6fcad86c0a86f55b2f.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/701c9e88836e45b4dc.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/71a32accb373be480c.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/7417196857d35bba45.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/7503f5c3a4e56bb7ac.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/752ec567ac1cc29839.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/7672d4bab79746a150.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/76f97013f418fb21ec.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/773f254c2be04c3fb2.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/78c4e7c9b9b9889ea8.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/78d36d20fb2c301085.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/7990c19893ed5107bc.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/7997121d3b91af034a.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/7999bbe40713a96e50.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/7a99aefb6c65b6f214.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/7d54cbff6f53e646f0.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/7feab2f8cf6cffb7c2.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/828863612b50e689fc.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/84e211c6301565384b.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/8546a3494effa89618.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/86c4f136b2a80964e1.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/8747c74c3ba6b4992d.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/8b4e1943850c463421.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/8ce8f8856caded0aa7.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/8d431339f40c927048.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/8e34ec1c6862f53381.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/8ec8c1926b8c796d78.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/90eaee2b923dbe541f.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/91f604e94bda6d28c8.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/92fff60816f270f849.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/97157dd6303804aef0.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/9ae1a584b5d5c05fe6.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/9c99cce26bda7c9459.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/9e25ede3bedcbdeb0c.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/9e3fecab58f60884c3.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/9e74de8babce5b8db4.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/a0c96230d521748b45.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/a2f707af5c7e3a26f4.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/a3580d068dbead7c86.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/a35920c3e7fb558c59.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/a3b463b23b348b40dd.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/a3d3015a46d40f8262.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/a63ca3653d28702788.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/a9537b7567beb0b44e.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/aa190d706efe4caf26.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/aa20106fd69e599410.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/ab5dbbf94662450e75.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/ad85897962d1c8c6ac.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/adc31207c2155dd123.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/aec05d612f2b97868f.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/b10605b1e54ff03a27.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/b3ab75fb9400ba65ce.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/b5c236c40fc55cee01.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/b612db14b1acf68cb6.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/b7d98fa608a6b848d4.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/b8868d3390fe501b8a.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/bd95352fe8d761ae38.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/be4d173b09dff2203b.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/bec01a55e9666869c5.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/c13738fd0868e632d2.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/c4f86c26076970f58a.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/c5f3aafaec3d950a23.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/c80e4606e99251cbd4.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/c87c216baa84430320.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/c93437235840b7b06c.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/ca5bc19dea5ce6716d.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/ca7f85bb72ce877c95.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/d1acdc4c87d26f5490.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/d26fca5bf32c2c4ecc.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/d34d8404d021ad5bec.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/d415d50c73d3b9bfb2.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/d4c47a714d469a5373.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/d4eb1327364d75c871.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/d52e241b569bdf8f33.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/d5a15f48ef0ff82949.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/d68ec3fcb134087c4c.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/d82649e66e6a045940.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/db43c56e2241f1eaa9.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/dbdd9695fbbc372d94.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/dc30d78567b0e43ef0.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/dc9b72cc802a2b2e66.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/dd41d05601ccaf29e0.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/de2e757883404edfad.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/e0d36f91956ef7ae92.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/e442f79aad0412dd40.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/e513bdab41f40d08fa.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/e52c56e96fb5c2ed93.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/e5f447b8fd79b4352d.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/e626d9dbdb40dbeab4.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/e6844e22a0091901cd.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/e701ae6792c6dba2e5.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/e71701e82f33aaf1b2.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/e76fcc27cba513351f.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/e8fa60ae848091a9fb.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/e9ac70bba53d9b31ab.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/ea26d0cf7d4efd617b.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/ed0f80724ab808205a.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/ef063e074e237b32c2.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/f110596754454ceab0.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/f3b175bdb0869d48d3.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/fe0f58ca54a15a4696.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/fe11d5341aae09ce77.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/fe41497375279de0e0.png",
+    "assets/b5/local-baselines/jensen-v13/scene/assets/type/fea8db2c65f09a71e8.png",
+    "assets/b5/reference/0000.png",
+    "assets/b5/reference/0055.png",
+    "assets/b5/reference/0128.png",
+    "assets/b5/reference/0226.png",
+    "assets/b5/reference/0335.png",
+    "assets/b5/reference/0390.png",
+    "assets/b5/reference/0510.png",
+    "assets/b5/reference/0580.png",
+    "assets/b5/reference/0641.png",
+    "assets/b5/reference/contact-sheet.jpg",
+    "assets/b6/characters/kiosk_keeper/front/body.png",
+    "assets/b6/characters/kiosk_keeper/front/cuff-left.png",
+    "assets/b6/characters/kiosk_keeper/front/cuff-right.png",
+    "assets/b6/characters/kiosk_keeper/front/head.png",
+    "assets/b6/characters/kiosk_keeper/hand.png",
+    "assets/b6/characters/kiosk_keeper/shoe-left.png",
+    "assets/b6/characters/kiosk_keeper/shoe-right.png",
+    "assets/b6/characters/kiosk_keeper/side/body.png",
+    "assets/b6/characters/kiosk_keeper/side/cuff-left.png",
+    "assets/b6/characters/kiosk_keeper/side/cuff-right.png",
+    "assets/b6/characters/kiosk_keeper/side/head.png",
+    "assets/b6/characters/kiosk_keeper/three_quarter/body.png",
+    "assets/b6/characters/kiosk_keeper/three_quarter/cuff-left.png",
+    "assets/b6/characters/kiosk_keeper/three_quarter/cuff-right.png",
+    "assets/b6/characters/kiosk_keeper/three_quarter/head.png",
+    "assets/b6/characters/parcel_runner/front/body.png",
+    "assets/b6/characters/parcel_runner/front/cuff-left.png",
+    "assets/b6/characters/parcel_runner/front/cuff-right.png",
+    "assets/b6/characters/parcel_runner/front/head.png",
+    "assets/b6/characters/parcel_runner/hand.png",
+    "assets/b6/characters/parcel_runner/shoe-left.png",
+    "assets/b6/characters/parcel_runner/shoe-right.png",
+    "assets/b6/characters/parcel_runner/side/body.png",
+    "assets/b6/characters/parcel_runner/side/cuff-left.png",
+    "assets/b6/characters/parcel_runner/side/cuff-right.png",
+    "assets/b6/characters/parcel_runner/side/head.png",
+    "assets/b6/characters/parcel_runner/three_quarter/body.png",
+    "assets/b6/characters/parcel_runner/three_quarter/cuff-left.png",
+    "assets/b6/characters/parcel_runner/three_quarter/cuff-right.png",
+    "assets/b6/characters/parcel_runner/three_quarter/head.png",
+    "assets/b6/characters/two-character-three-view-sheet.jpg",
+    "assets/b6/hong-kong-v90/audio/master.m4a",
+    "assets/b6/hong-kong-v90/source/work/eiffel-preview-20s/space-camera-v29/layers/ink-stroke.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-arm-fix-v60/assets/owner-original-garment.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-environment-v67/assets/briefcase-left.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-environment-v67/assets/briefcase-right.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-environment-v67/assets/briefcase-upper.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-environment-v67/assets/coral-left.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-environment-v67/assets/coral-right.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-environment-v67/assets/coral-upper.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-environment-v67/assets/street-separated.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-kitchen-motion-v64/assets/chef-body.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-kitchen-motion-v64/assets/chef-head.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-kitchen-motion-v64/assets/chef-left-hand.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-kitchen-motion-v64/assets/chef-right-hand.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-kitchen-motion-v64/assets/kitchen-clean.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-kitchen-motion-v64/assets/pot-lid.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-motion-v52/assets/awning.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-motion-v52/assets/cafe-clean-generated.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-motion-v52/assets/crates.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-motion-v52/assets/grocery-bag.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-motion-v52/assets/hero-hand.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-motion-v52/assets/owner-hand.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-motion-v52/assets/owner-head.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-motion-v52/assets/receipt.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-motion-v52/assets/street-body.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-motion-v52/assets/street-head.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-motion-v52/assets/street-shoe-a.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-motion-v52/assets/street-shoe-b.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-motion-v52/assets/taxi.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-patrons-v65/assets/newspaper.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-patrons-v65/assets/paper-left-hand.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-patrons-v65/assets/patrons-clean.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-patrons-v65/assets/tea-cup.png",
+    "assets/b6/hong-kong-v90/source/work/hk-1990s-patrons-v65/assets/tea-shirt.png",
+    "assets/b6/hong-kong-v90/source/work/hk-empty-gun-preview-v71/assets/bun-whole.png",
+    "assets/b6/hong-kong-v90/source/work/hk-empty-gun-preview-v71/assets/near-counter.png",
+    "assets/b6/hong-kong-v90/source/work/hk-empty-gun-preview-v71/assets/patron-cup.png",
+    "assets/b6/hong-kong-v90/source/work/hk-empty-gun-preview-v71/assets/patron-paper.png",
+    "assets/b6/hong-kong-v90/source/work/hk-empty-gun-preview-v71/assets/plate.png",
+    "assets/b6/hong-kong-v90/source/work/hk-empty-gun-preview-v71/assets/room-clean.png",
+    "assets/b6/hong-kong-v90/source/work/hk-empty-gun-preview-v71/assets/strong-bite.png",
+    "assets/b6/hong-kong-v90/source/work/hk-empty-gun-preview-v71/assets/strong-body.png",
+    "assets/b6/hong-kong-v90/source/work/hk-empty-gun-preview-v71/assets/strong-head-blink.png",
+    "assets/b6/hong-kong-v90/source/work/hk-empty-gun-preview-v71/assets/strong-head.png",
+    "assets/b6/hong-kong-v90/source/work/hk-empty-gun-preview-v71/assets/strong-speak.png",
+    "assets/b6/hong-kong-v90/source/work/hk-empty-gun-preview-v71/assets/strong-tight-blink.png",
+    "assets/b6/hong-kong-v90/source/work/hk-empty-gun-preview-v71/assets/strong-tight.png",
+    "assets/b6/hong-kong-v90/source/work/hk-empty-gun-preview-v71/assets/table-front.png",
+    "assets/b6/hong-kong-v90/source/work/hk-v76-multiscene/assets/arcade-wide.png",
+    "assets/b6/hong-kong-v90/source/work/hk-v88-ending-camera/animate.py",
+    "assets/b6/hong-kong-v90/source/work/hk-v89-counter-opening/animate.py",
+    "assets/b6/hong-kong-v90/source/work/hk-v90-unified-arms/animate.py",
+    "assets/b6/hong-kong-v90/source/work/hk-v90-unified-arms/rig.py",
+    "assets/b6/hong-kong-v90/story.json",
+    "assets/b6/manifest.json",
+    "assets/b6/paint/buyer-body.png",
+    "assets/b6/paint/buyer-greedy-head.png",
+    "assets/b6/paint/buyer-head.png",
+    "assets/b6/paint/buyer-side-body.png",
+    "assets/b6/paint/buyer-side-head.png",
+    "assets/b6/paint/carriage-body.png",
+    "assets/b6/paint/carriage-rig.json",
+    "assets/b6/paint/coins.png",
+    "assets/b6/paint/foreground-lamp.png",
+    "assets/b6/paint/foreign-panorama.png",
+    "assets/b6/paint/hero-back-body.png",
+    "assets/b6/paint/hero-back-head.png",
+    "assets/b6/paint/hero-body.png",
+    "assets/b6/paint/hero-front-head.png",
+    "assets/b6/paint/hero-hand.png",
+    "assets/b6/paint/hero-head.png",
+    "assets/b6/paint/hero-side-body.png",
+    "assets/b6/paint/hero-side-head.png",
+    "assets/b6/paint/horse-leg-0.png",
+    "assets/b6/paint/horse-leg-1.png",
+    "assets/b6/paint/horse-leg-2.png",
+    "assets/b6/paint/horse-leg-3.png",
+    "assets/b6/paint/hotel-panorama.png",
+    "assets/b6/paint/ink-stroke.png",
+    "assets/b6/paint/letter.png",
+    "assets/b6/paint/paris-panorama.png",
+    "assets/b6/paint/shoe-left.png",
+    "assets/b6/paint/shoe-right.png",
+    "assets/b6/paint/study-panorama.png",
+    "assets/b6/paint/table.png",
+    "assets/b6/paint/wheel-0.png",
+    "assets/b6/paint/wheel-1.png",
+    "assets/b6/production/example-captions.json",
+    "assets/b6/production/example-landscape.json",
+    "assets/b6/production/example-scene.py",
+    "assets/b6/production/example-story.json",
+    "assets/b6/production/puppet-test-scene.py",
+    "assets/b6/production/scene.py",
+    "assets/b6/reference/approved-character-v21b.png",
+    "assets/b6/reference/eiffel-16x9.mp4",
+    "assets/b6/reference/eiffel-portrait-v44.mp4",
+    "assets/b6/reference/hong-kong-v90-20s.mp4",
+    "assets/b6/reference/landscape-v45-excerpt.mp4",
+    "assets/b6/reference/portrait-v44-excerpt.mp4",
+    "assets/b6/starter/landscape.json",
+    "assets/b6/starter/portrait.json",
+    "assets/b6/starter/scene.mjs",
+    "assets/b6/starter/story.json",
+    "assets/b6/style-standard.json",
+    "assets/fonts/Anton.ttf",
+    "assets/fonts/ArchivoBlack.ttf",
+    "assets/fonts/Caveat.ttf",
+    "assets/fonts/NotoSans.ttf",
+    "assets/fonts/Nunito.ttf",
+    "assets/fonts/README.md",
+    "examples/b1/narration.m4a",
+    "examples/b1/project.json",
+    "tests/audio-bed-coverage.test.mjs",
+    "tests/b-style-motion-windows.test.mjs",
+    "tests/b-style-portrait-cache.test.mjs",
+    "tests/b-style-portrait-paint.test.mjs",
+    "tests/b-style-portrait-scope.test.mjs",
+    "tests/b-style-portrait.test.mjs",
+    "tests/b-style-quality.test.mjs",
+    "tests/b-style-reference-cli.test.mjs",
+    "tests/b-style-reference-review.test.mjs",
+    "tests/b3-reference-pack.test.mjs",
+    "tests/b3-runtime.test.mjs",
+    "tests/b3-semantic-motion.test.mjs",
+    "tests/b4-asset-origin.test.mjs",
+    "tests/b4-audio-policy.test.mjs",
+    "tests/b4-opening-audio-check.test.mjs",
+    "tests/b4-opening-policy.test.mjs",
+    "tests/b4-opening-runtime.test.mjs",
+    "tests/b4-picture-review.test.mjs",
+    "tests/b4-portrait-runtime.test.mjs",
+    "tests/b4-production-check.test.mjs",
+    "tests/b4-runtime.test.mjs",
+    "tests/b4-style-lock.test.mjs",
+    "tests/b4-typography-review.test.mjs",
+    "tests/b4-typography-scope.test.mjs",
+    "tests/b5-left-stage-contract.test.mjs",
+    "tests/b5-local-baseline.test.mjs",
+    "tests/b5-production-quality.test.mjs",
+    "tests/b5-visual-review.test.mjs",
+    "tests/b5-windows-paths.test.mjs",
+    "tests/b6_asset_isolation_test.py",
+    "tests/b6_caption_test.py",
+    "tests/b6_helper_trust_test.py",
+    "tests/b6_hong_kong_test.py",
+    "tests/b6_motion_review_test.py",
+    "tests/b6_production_test.py",
+    "tests/b6_puppet_test.py",
+    "tests/b6_resource_paths_test.py",
+    "tests/b6_space_test.py",
+    "tests/b6_test_fonts.py",
+    "tests/b6-fonts.test.mjs",
+    "tests/b6-hong-kong.test.mjs",
+    "tests/b6-production.test.mjs",
+    "tests/b6-runtime.test.mjs",
+    "tests/character-explainer.test.mjs",
+    "tests/fixtures/a6-coastal-station.plan.json",
+    "tests/fixtures/a6-night-library.plan.json",
+    "tests/helpers/reference-review.mjs",
+    "tests/provider-routing.test.mjs",
+    "tests/runtime.test.mjs",
+    "tests/test_a6_references.py"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "e627f4ce8df64d72f8cdefb0aa517d554bcd8b6ee09cee5b0bd07f9f637775fe",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "39db520f9483ddb84418c21d59547f39da00083bf2dae1039166299d64f715c3",
+      "executable": false
+    },
+    {
+      "path": "assets/a6/SOURCE-NOTES.md",
+      "sha256": "c239b47ffd7090094372db7165df3db8dabc4ee7ed3c5b6b5dc92f8b15e34524",
+      "executable": false
+    },
+    {
+      "path": "assets/b1/ATTRIBUTION.md",
+      "sha256": "4bf56f1c7e963b32a09dcb7205df176d7458ab0f0980fae12514c9b391302ba1",
+      "executable": false
+    },
+    {
+      "path": "assets/b1/LUCIDE-LICENSE.txt",
+      "sha256": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/CREDITS.md",
+      "sha256": "2d7451c7e5a5137cf5b6c1b5065c1d9dd589698ae53d00e23bd7c4a6728b81b3",
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/OFL-Anton.txt",
+      "sha256": "dbd945e828dd179a73d9cc376742cdc6a1c9ff399ed127bf544aa3de8913f1a9",
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/OFL-ArchivoBlack.txt",
+      "sha256": "4cafdbbd100af37a23805af09b7068e4daafb4516dc3d6d52436f4a9d7b4c0d3",
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/OFL-Caveat.txt",
+      "sha256": "163a2b400e16916ad3196296c946c526d0efce6baf22a2164269ffc62fb9f671",
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/OFL-NotoSans.txt",
+      "sha256": "e2e177a32561584d4fc13aaa3cd8e53758a12910f013fe9ca125419111722029",
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/OFL-Nunito.txt",
+      "sha256": "ee9491ad3ea5d390878695bd6cce49beb3cacd5c4312f8ab574b541e9f7afa21",
+      "executable": false
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "7e9bb450f9ba4b6e5b9d20998e2fa2deda05ffe489f09c19019c9630ac706699",
+      "executable": false
+    },
+    {
+      "path": "package.json",
+      "sha256": "fe21d082fdb070b7dda57c5a954d7f43ff4bb757cb28ff3b5379dd6198a877ce",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/requirements.txt",
+      "sha256": "79ad000c4ade96364a6ccf8873de0a534d039909319917e2c15bc14982485d3c",
+      "executable": false
+    },
+    {
+      "path": "scripts/a6_finish.py",
+      "sha256": "b903f5da67c845a30bd3233e8ad866e0e6c948993c21f7397d969e89241eeecf",
+      "executable": false
+    },
+    {
+      "path": "scripts/a6_reference_check.py",
+      "sha256": "af9317a9db40485f36df2db9adff82121e1066ad2b242113952e18756286b851",
+      "executable": false
+    },
+    {
+      "path": "scripts/align_captions.py",
+      "sha256": "ba3f4308fd99238e95195f796a4ae4cdebb992c25b976816433d45dbd19e9913",
+      "executable": false
+    },
+    {
+      "path": "scripts/autopilot-core.mjs",
+      "sha256": "e7d1f8986152efae1855ce9efe6131efa271751c9a8ba626bba384ebc3c5a3c1",
+      "executable": false
+    },
+    {
+      "path": "scripts/autopilot-render.mjs",
+      "sha256": "c7e15dbebfd906ba869ca6486efa07e79fbc0f6bbde54a0f60fefc5d700a1b98",
+      "executable": false
+    },
+    {
+      "path": "scripts/autopilot.mjs",
+      "sha256": "4887ca22fd2c0af36748f933bb0c1f2462679eb2f16fad7346bc5c64425bbd37",
+      "executable": false
+    },
+    {
+      "path": "scripts/b-style-motion-geometry.mjs",
+      "sha256": "5d9506be5e8e9c84bf134b05fd9fdc69e99d864dc50174e061e30b94b1bb12f2",
+      "executable": false
+    },
+    {
+      "path": "scripts/b-style-portrait-paint.mjs",
+      "sha256": "3db788102aefb354e307329e15ccc68ce682c3b72cce4adbc8aa9041f9636dae",
+      "executable": false
+    },
+    {
+      "path": "scripts/b-style-portrait.mjs",
+      "sha256": "dcd44f1d06f06d172ccee7fb0df3ce7b4a5a53d88a05f1c2e03416f0d180a3a4",
+      "executable": false
+    },
+    {
+      "path": "scripts/b-style-quality.mjs",
+      "sha256": "144b51e596eb50329ecef61425cc7af8eac064873e11bcce7e2c61f111c180bf",
+      "executable": false
+    },
+    {
+      "path": "scripts/b-style-reference-review.mjs",
+      "sha256": "bd59a3d11f56a92ebbbdec1758086268172ced5b9a1f7d9ccfd28d4be5e0bc8f",
+      "executable": false
+    },
+    {
+      "path": "scripts/b3-graphics.mjs",
+      "sha256": "421624f237830dbe2cd4bb9c03068f38a9657d76f86799fc1e944cabcb1e4628",
+      "executable": false
+    },
+    {
+      "path": "scripts/b3-semantic-motion.mjs",
+      "sha256": "9a81c7b36ca238019d21f8d629d742be740ff12184e089dce43c8d4732724991",
+      "executable": false
+    },
+    {
+      "path": "scripts/b4-asset-origin.mjs",
+      "sha256": "b41996ef17de1e597e1b41fed2ac355b91b316dec162b1f14158a33e82f9eb79",
+      "executable": false
+    },
+    {
+      "path": "scripts/b4-font-coverage.mjs",
+      "sha256": "60f89f7f554341fb6505ab8b146b2ee3cbebafa28dfa58c782c7d2a24eb4ff3d",
+      "executable": false
+    },
+    {
+      "path": "scripts/b4-opening-audio-check.mjs",
+      "sha256": "95f120adf0042cd38cf7f33e785c6aac072c0f9d7fa87b09141a36da8429abee",
+      "executable": false
+    },
+    {
+      "path": "scripts/b4-opening-visual-check.mjs",
+      "sha256": "2ebeff67d02ff4a43e569afd6ceded147b7f1ca36df967ed1c137273be6faad6",
+      "executable": false
+    },
+    {
+      "path": "scripts/b4-opening.mjs",
+      "sha256": "bd15bd94b932219e3e3754905d772033d5a301abbf0cb5be916f97c450b897fe",
+      "executable": false
+    },
+    {
+      "path": "scripts/b4-picture-review.mjs",
+      "sha256": "ff28e1477e40711bcbbf2e5b65a2cf2ffa2efee575d36e71d1843c63411559bb",
+      "executable": false
+    },
+    {
+      "path": "scripts/b4-production-check.mjs",
+      "sha256": "6cfa5fbff019bbbcab718c5f50a9fd144f87c7b949cccd9d04eb76437e0e2891",
+      "executable": false
+    },
+    {
+      "path": "scripts/b4-runtime.mjs",
+      "sha256": "8410e0244b49a627816a65f428729561d2ea9e3cea8a18a0cb108bedcb3e645c",
+      "executable": false
+    },
+    {
+      "path": "scripts/b4-style-lock.mjs",
+      "sha256": "2355036616a454db08a3ab84256164b66c4e13fdf45dd3e14d32de1a71c57f6d",
+      "executable": false
+    },
+    {
+      "path": "scripts/b4-typography-review.mjs",
+      "sha256": "6a9e11edd85ca86eef815dfc0f89d092bfc5d8fb4c83efa257302eee4489af34",
+      "executable": false
+    },
+    {
+      "path": "scripts/b5-production-quality.mjs",
+      "sha256": "e1728d152d05e30c25af65d9494270e4c84d0980ec085c1e31c60ee469719b9b",
+      "executable": false
+    },
+    {
+      "path": "scripts/b5-visual-review.mjs",
+      "sha256": "033036ab16080f1a597e83ee77b6c2a6564019021df288c958fcc4994ac54dd2",
+      "executable": false
+    },
+    {
+      "path": "scripts/b6_asset_roles.py",
+      "sha256": "ade90e92cad1751bd0b010d508501bba73a41a1ffe6c6018dadd4a368ace9c14",
+      "executable": false
+    },
+    {
+      "path": "scripts/b6_caption.py",
+      "sha256": "5fc03a3f38dce9f55609f2059077125ecc30b7f5fa1d31580f9e007fcf23200b",
+      "executable": false
+    },
+    {
+      "path": "scripts/b6_character_example.py",
+      "sha256": "5035030fcb812a3f04a114b4281137c9b195f763a28e94237b30f6505e831f49",
+      "executable": false
+    },
+    {
+      "path": "scripts/b6_hong_kong.py",
+      "sha256": "7186a24d58bd2f8fe5b5bf17428f62586d7971d2eaccb062bcee49a6d3322777",
+      "executable": false
+    },
+    {
+      "path": "scripts/b6_motion_review.py",
+      "sha256": "e9873884fd348f4f1461e7b04a5301c6fd8aa2f14397468d248652ea2c25e56b",
+      "executable": false
+    },
+    {
+      "path": "scripts/b6_production_example.py",
+      "sha256": "09f1eaaf7a272cf03f256880ba1cf213eddfe31fac8ed90b98f3af98c3d5e2c0",
+      "executable": false
+    },
+    {
+      "path": "scripts/b6_production.py",
+      "sha256": "1d71441c447ec4e1434942d7e8bffb23495d36b64eecc59eafed383e02b415a5",
+      "executable": false
+    },
+    {
+      "path": "scripts/b6_puppet.py",
+      "sha256": "adc4bd4ddcbe2bb184381d080e99ebe1f4bd1beb3b0b6b1a841930ae15d5bed8",
+      "executable": false
+    },
+    {
+      "path": "scripts/b6_space.py",
+      "sha256": "d006c622d63017d7d6ec1a75a56678204fc70486dae944d2b27170d8ae8d5e50",
+      "executable": false
+    },
+    {
+      "path": "scripts/b6-dynamic-meme.mjs",
+      "sha256": "3d607d6a8ba11387ecb0ab8d0cc36e1e49d8087e126d963fd1b59bef833ceb53",
+      "executable": false
+    },
+    {
+      "path": "scripts/b6-fonts.mjs",
+      "sha256": "4e1f87c17e92be763cd1a8159d07ec595946e08c7f9190bf0149db0c98a7408c",
+      "executable": false
+    },
+    {
+      "path": "scripts/b6-hong-kong.mjs",
+      "sha256": "231b9286f6a68f43999d010bd544252ba1537df8d64c5c36637ccf7afd0016ef",
+      "executable": false
+    },
+    {
+      "path": "scripts/b6-production.mjs",
+      "sha256": "25be719be5a4693826c04328c050af81ad701942133afca64dd1761bdf6a0718",
+      "executable": false
+    },
+    {
+      "path": "scripts/b6-scene.mjs",
+      "sha256": "688a7f53a6270a3d614a2867c7489d13d0788870eca0dc21de8ad33aaf20ed16",
+      "executable": false
+    },
+    {
+      "path": "scripts/character-explainer.mjs",
+      "sha256": "f5b2dafc0c965942a3835f86a8fd9102c332719eec7551ac464c48d67f1de309",
+      "executable": false
+    },
+    {
+      "path": "scripts/gemini-media.mjs",
+      "sha256": "634115a29e4afd7f24da817c34332c988ff0142daedf80e036047abe65255b96",
+      "executable": false
+    },
+    {
+      "path": "references/a6-finishing.md",
+      "sha256": "45de4a202e79774b8f6db883478bc5572133fc359c732c87982b03e9fd16d83d",
+      "executable": false
+    },
+    {
+      "path": "references/a6-reference-prompts.md",
+      "sha256": "f13e52a0648c7e3a48a04fc8b8659b966e5aef4b51aff29e3047784928a4af50",
+      "executable": false
+    },
+    {
+      "path": "references/amber-noir.md",
+      "sha256": "0d13c0ee6f8718cf7ca3d5a3dafacded9195788494755cfc09dc12ef8c2d9f35",
+      "executable": false
+    },
+    {
+      "path": "references/autopilot-production-qa.md",
+      "sha256": "298364ea4407fb4fa4c1904183b932f93106014bbe09883a0612b63a488599c0",
+      "executable": false
+    },
+    {
+      "path": "references/autopilot-runtime.md",
+      "sha256": "0b67baf6f274c13a85f6204d6394fa86b2ec151b38fe14e49a23de03072409bd",
+      "executable": false
+    },
+    {
+      "path": "references/autopilot-sound-system.md",
+      "sha256": "f98d05968b633a866d0acf00b7a1878d0d65c5d1d558768ab0cf82900e5d8c07",
+      "executable": false
+    },
+    {
+      "path": "references/autopilot.md",
+      "sha256": "58a27e3685974dcbf0b64bb00597bd422eb06b92cb19fd8697447bc511696457",
+      "executable": false
+    },
+    {
+      "path": "references/b1-b2-b3-native-portrait.md",
+      "sha256": "b86c2e7a6fe892f262bbf72cd834d0cbe688bd78965e1580a61aed3ded9a7faa",
+      "executable": false
+    },
+    {
+      "path": "references/b1-b2-b3-reference-acceptance.md",
+      "sha256": "0882060a9fa4c61a4796f577cdedb05a5751dfedd9e71d16b5984ab82252ca04",
+      "executable": false
+    },
+    {
+      "path": "references/b1-minimal-handdrawn.md",
+      "sha256": "614482714787fb7e7f008430c05cffb689815baaf4551e8a08ac5d353c8cc476",
+      "executable": false
+    },
+    {
+      "path": "references/b1-production-qa.md",
+      "sha256": "0faac5d6ccbd834fe2fedd297cdd0d08b2da148afea3bebb6f47f7e4414b99fc",
+      "executable": false
+    },
+    {
+      "path": "references/b2-colorful-handdrawn.md",
+      "sha256": "2346e92a46d80d4f8d13aa0c53b325d3ccacde8788b1b01d1732009a84529786",
+      "executable": false
+    },
+    {
+      "path": "references/b3-semantic-motion.md",
+      "sha256": "f083a8faf8bacc5e6584f000d3a40a0c74b8cd3b201f3a767b349971108be441",
+      "executable": false
+    },
+    {
+      "path": "references/b3-television.md",
+      "sha256": "8ef96a73fbfe542f116e1f1b6188ac908674a40b01840606a28ba858bbb7cdb0",
+      "executable": false
+    },
+    {
+      "path": "references/b4-asset-origin.md",
+      "sha256": "282971f3058cc8fcd577598df18714c81211aac1adb261c1f678436d8aa7dfcf",
+      "executable": false
+    },
+    {
+      "path": "references/b4-audio-direction.md",
+      "sha256": "9ce491941e88042154e16b1971b194e93d0601e053c94ba145275b91424fb932",
+      "executable": false
+    },
+    {
+      "path": "references/b4-opening-direction.md",
+      "sha256": "e1a398445b0d0e9442d11d47a6ca60675a529b83db623d3b2e05ec6052f87761",
+      "executable": false
+    },
+    {
+      "path": "references/b4-picture-animation.md",
+      "sha256": "4f0f2781e75898a45f66af4c01514e33e55588e1f02cfeaf42592df1631e7d72",
+      "executable": false
+    },
+    {
+      "path": "references/b4-repeatability-check.md",
+      "sha256": "648c9a54db64624266c9777e6129e92b32b8fcb8ca4adf421757fff9e90faeda",
+      "executable": false
+    },
+    {
+      "path": "references/b4-survival-storytelling.md",
+      "sha256": "7b3cf92f6ed29fb14f501a936ff69677b5309c7852c69f0611ed2762f6c1f217",
+      "executable": false
+    },
+    {
+      "path": "references/b4-typography-acceptance.md",
+      "sha256": "350e9cf3954be7b35fb016c82ea468396c5ff01ba452e533766a0861bb43e4ac",
+      "executable": false
+    },
+    {
+      "path": "references/b5-accepted-baselines.md",
+      "sha256": "2a9773a87c927fea3ba3a5a055d9a368f82655997740a2b525632c1b5772aef2",
+      "executable": false
+    },
+    {
+      "path": "references/b5-avatar-motion.md",
+      "sha256": "528ae337c549bc5e1a0a7229ce971b2571c7e6391507dfb22eca464c9aa1f5d1",
+      "executable": false
+    },
+    {
+      "path": "references/b5-character-explainer.md",
+      "sha256": "1e2f9a9f66ff0405415bb94bcf8502840e9b567a3bd9a67b6f9dfb28cc82189e",
+      "executable": false
+    },
+    {
+      "path": "references/b5-left-stage-motion.md",
+      "sha256": "27a4d88210137874742077bee2f386f32fe99f75e162e993b916539709a2701b",
+      "executable": false
+    },
+    {
+      "path": "references/b5-production-gate.md",
+      "sha256": "3da96cb8e40cf321cf05708064151b8a4de1f7e4e94170fb9a9e17b955d8bb98",
+      "executable": false
+    },
+    {
+      "path": "references/b5-sound-qa.md",
+      "sha256": "9968b4952bd80fe6398931860dfdeae222ddebb17a8ee4fea86025d9f31d3af2",
+      "executable": false
+    },
+    {
+      "path": "references/b5-visual-acceptance.md",
+      "sha256": "23eb4a4c477f10979e969e97b993365ab2752cedc6aa821e0a126005f2b90058",
+      "executable": false
+    },
+    {
+      "path": "references/b6-art-direction.md",
+      "sha256": "ac5df46a9ed3a0bab9f63f9036e419cd490af24e9d0937f13b58a8d375e6d23d",
+      "executable": false
+    },
+    {
+      "path": "references/b6-character-binding.md",
+      "sha256": "5d0bafbcbf73fab2de5d585f72e3470634838ae26bf3a83f4a6c552d7df5d163",
+      "executable": false
+    },
+    {
+      "path": "references/b6-code-runtime.md",
+      "sha256": "162560cb74c0ab36e3f9f932c46f7a29860c3b98ff2b5966ab4cde30641fc911",
+      "executable": false
+    },
+    {
+      "path": "references/b6-dynamic-meme.md",
+      "sha256": "4e1364a32229d9d35b2c1ca5daba95709b89a2acaaeaf59cbdbbddbf88bf9ec0",
+      "executable": false
+    },
+    {
+      "path": "references/b6-hong-kong-v90.md",
+      "sha256": "cd1e642ab78eec006edce50949b0e3d9ff7a3a7c478fdacc59a247f9f889353b",
+      "executable": false
+    },
+    {
+      "path": "references/b6-installed-production.md",
+      "sha256": "85afa411c273f273dce678027f2995dd496987d7bd06a67e85781781aed1a57e",
+      "executable": false
+    },
+    {
+      "path": "references/b6-motion-review.md",
+      "sha256": "4dbae42a2a545c9612c4e6fd5ab725a4bb3f19324268fa55822217397629c18a",
+      "executable": false
+    },
+    {
+      "path": "references/b6-native-formats.md",
+      "sha256": "f063570f96c9a678d76f990a38ce022d03adab98d9f95441ee08ba306be8879f",
+      "executable": false
+    },
+    {
+      "path": "references/b6-puppet-api.md",
+      "sha256": "78965411eb90f207c106eae369e0118254001b33baba07c35bd2d916f7b7fd54",
+      "executable": false
+    },
+    {
+      "path": "references/b6-sample-1-acceptance.md",
+      "sha256": "c9f77bf938a2d3e1a9fd95742e2a652f33061b85797bc228724ac9ca23a380aa",
+      "executable": false
+    },
+    {
+      "path": "references/cozy-storytelling.md",
+      "sha256": "a0b3f5890857582bb1e7bfa819cefcc7ffd55af72ab8997e1b286b7ad27f1419",
+      "executable": false
+    },
+    {
+      "path": "references/examples.md",
+      "sha256": "c183e159304eb6dc12f9ad0b06f037a3f880282bc0b75bf06a2863705ddf00f4",
+      "executable": false
+    },
+    {
+      "path": "references/getting-started.md",
+      "sha256": "9baf1429ed6871fef6dc964df40925522abcfa8c0aa7256baf71ab7203a020ff",
+      "executable": false
+    },
+    {
+      "path": "references/historical-cartoon.md",
+      "sha256": "74ad606ea2d8a237806661b0ee5e81ead4759aae003cee50bf328f2b383a38bd",
+      "executable": false
+    },
+    {
+      "path": "references/installation-troubleshooting.md",
+      "sha256": "cc388985ba94213700b7a2167fd1e3b7897b6378d458c72f7e42478ab5a41da1",
+      "executable": false
+    },
+    {
+      "path": "references/mode-execution-boundaries.md",
+      "sha256": "6c48774892eaaeb93b8ea5d7e8b15e09ff0bf5cfc047cbeda42b699e3a583576",
+      "executable": false
+    },
+    {
+      "path": "references/omni-flash-prompt-contract.md",
+      "sha256": "54003ad011d60a9d8fc7f923f97f1ee4b260e1a5d6b24d53106ee601efb16487",
+      "executable": false
+    },
+    {
+      "path": "references/prehistoric-dark-comedy.md",
+      "sha256": "1a3a58a22b392cc087a0aa645b3f8478a3136e7e7f35d086ddb588ac091df860",
+      "executable": false
+    },
+    {
+      "path": "references/storyboard-template.md",
+      "sha256": "486338e79397c73443fb390ff03883e5712834b1ddf542c3af54a8dbf6cb870b",
+      "executable": false
+    },
+    {
+      "path": "references/style-catalog.md",
+      "sha256": "717a32d850865e3473ca1e791269a66d364c73eee34e7637341db1dc2b91dd9c",
+      "executable": false
+    },
+    {
+      "path": "references/thumbnail-publishing-kit.md",
+      "sha256": "cdc5f85098cc6a91492ad0057a44f6d6827247c84a68f5952addb3aeda3d4506",
+      "executable": false
+    },
+    {
+      "path": "references/voice-continuity.md",
+      "sha256": "ac14fce4f8e4176815d05260de8eeea22345c0920d8e3e2b3911a380affe2ed3",
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "e422b632f26c6ad2eaa0860328f88bbe6a721ff50031c800c5277255b83cc6d6",
+      "executable": false
+    },
+    {
+      "path": "assets/a6/reference-manifest.json",
+      "sha256": "96055d97fd11315484f8d8b9d40c3e42daabb3ae694fae43e9d07f9919dbbeb5",
+      "executable": false
+    },
+    {
+      "path": "assets/b1/approved-baseline.json",
+      "sha256": "71a45ae39cfde9e90eefdf32676ad9be7082bfb5e0a85589face9967eca37e73",
+      "executable": false
+    },
+    {
+      "path": "assets/b1/approved-production-standard.json",
+      "sha256": "1208febb532b602ebf2cd54543461f90c171eab263d68ee4021a195ae27cd8b5",
+      "executable": false
+    },
+    {
+      "path": "assets/b1/portrait-approved-2026-11-13.json",
+      "sha256": "5f6c186adac142a0899facf3be0d1d3ee13cec834742443856fc766be88d49e7",
+      "executable": false
+    },
+    {
+      "path": "assets/b2/approved-style-board.json",
+      "sha256": "dbea4f18703402538f9f8b6f00fb1b7d87df73dedaf3e9f4fb0a6299d2bde169",
+      "executable": false
+    },
+    {
+      "path": "assets/b2/portrait-approved-2026-11-13.json",
+      "sha256": "0cb1f5b55bc0e6ca0852515f7adbf35bfbaee080d4ee6e031f7e714f3e4e7070",
+      "executable": false
+    },
+    {
+      "path": "assets/b2/public-showcase.json",
+      "sha256": "74f54f25a831363269767d22cccb1591b204169b03da3059c9408fb54b48554f",
+      "executable": false
+    },
+    {
+      "path": "assets/b3/portrait-approved-2026-11-13.json",
+      "sha256": "7497540839149321bdbb9cee7f62d579f4a37298a757e26e9ed1480872ce8e74",
+      "executable": false
+    },
+    {
+      "path": "assets/b3/public-showcase.json",
+      "sha256": "1a0b7d071d0bbf3523e0a4c1e21f6986fc0b06794260559feb19cdfdc8add261",
+      "executable": false
+    },
+    {
+      "path": "assets/b3/reference-manifest.json",
+      "sha256": "a5150d31d42ab5769b8b8dabe323a41a5db83fe64f1ab016af7d46d1b5cd9fe0",
+      "executable": false
+    },
+    {
+      "path": "assets/b4/approved-style.json",
+      "sha256": "4ade4010ac32c47e28737d2e3c8d62ea4a320d563f69578c54bad5a21b9a9b95",
+      "executable": false
+    },
+    {
+      "path": "assets/b4/portrait-opening-approved.json",
+      "sha256": "132280fac39c5d23e2f56ca0893e8601fcc4626b2db8cc37733d4d1201ef3a35",
+      "executable": false
+    },
+    {
+      "path": "assets/b4/style-lock.txt",
+      "sha256": "a724ce29b03624c13e70a8ae5a8c8209e83a48b697b28244263d3eefa0193795",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/baseline-lock.json",
+      "sha256": "daceb76836e8248161139551ed30457e538507b121456a102cdadaf28cbae985",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/example/assets/fonts/Anton-OFL.txt",
+      "sha256": "dbd945e828dd179a73d9cc376742cdc6a1c9ff399ed127bf544aa3de8913f1a9",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/example/assets/fonts/Instrument-Sans-OFL.txt",
+      "sha256": "7166ff6294ff1e52c8a6f6bb6a3952fa4cf917c1a0e6653fadc0a5bab12c1736",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/example/assets/rig/spider-approved.svg",
+      "sha256": "10c7aa42249a9a35867828027374efba8446fbb06836b43658bc4363ec5858a2",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/example/caption-groups.json",
+      "sha256": "083159844f1287bda2dee2469317ec16a3bcd35a6ea403cb28556ff33170926c",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/example/config.json",
+      "sha256": "906740fe2235d9ecda6a951bb746c48b16d9455436ead1780b7961dff367753b",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/example/events.cjs",
+      "sha256": "1e05c6588d24078e8e64265bdd8506a26d8af8417c93477c34ea4edfcd85d54d",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/example/font-atlas.json",
+      "sha256": "a709e48cfb4e0bb8d90ee96357521b9debec334280b50ab4298fd13162e93757",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/example/presenter-gestures.cjs",
+      "sha256": "6dbe228baec01612ea7c37e9eeec8d185846eca5a5ed98e012b8e1279fc1cc3d",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/example/renderer.cjs",
+      "sha256": "828610a6ab20bfb1c55ad1cdda14d94103ade8d3607dc14eb2344dfe47f9dd7b",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/example/speech-levels.json",
+      "sha256": "64e473cf83d1e7aba66d8dae5dc0986a8bc0b4390134aa35793f8edf5c9ee7ed",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/example/stage-legacy.cjs",
+      "sha256": "b4538f27e615d662d3d11e5e8321bbd9625743f398783fd671cba9078fd88821",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/example/stage-v7.cjs",
+      "sha256": "5a8450412cd26f36d068d22070f8baebec49b96fb04a12e645ace6ada95503a6",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/example/stage.cjs",
+      "sha256": "c2fd1d133d287b24f76692d5c69008ed7a97c2c58e14d58a2231dfe4c4a47f84",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/example/word-timings.json",
+      "sha256": "c61e8b4bb39b14c7c53328ea847e1171d39f0f13d048a272df16b40708bc51c5",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/acceptance.json",
+      "sha256": "95d0ee9b6e3c9cb6ee19ea03c95064b3973928ecd264f24f851dd99a1482260a",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/baseline-lock.json",
+      "sha256": "846799dfc213850384d70887e56a3429c938c6a28e85dbe79805dc009ab4f211",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/README.md",
+      "sha256": "805fac7a899b7bde946a9695fb07669c051594efc1c4c5af6a3d3c92b7595ef7",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/acting-rig.cjs",
+      "sha256": "a57e2e66c4c35f86fe8fc998f00cea168485e84b2ac97a3fb3301048190602c0",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/actor.cjs",
+      "sha256": "319a738264e48bcd7f5efc671d5dcc453ba17b8171885363ff7ba0fa062d7c26",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/assets/fonts/Anton-OFL.txt",
+      "sha256": "dbd945e828dd179a73d9cc376742cdc6a1c9ff399ed127bf544aa3de8913f1a9",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/assets/fonts/Instrument-Sans-OFL.txt",
+      "sha256": "7166ff6294ff1e52c8a6f6bb6a3952fa4cf917c1a0e6653fadc0a5bab12c1736",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/assets/rig/spider-approved.svg",
+      "sha256": "10c7aa42249a9a35867828027374efba8446fbb06836b43658bc4363ec5858a2",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/caption-groups.json",
+      "sha256": "5e3a553886a0051db43ac343f3bbc6e5e70e43108d256231afc07ba36e3ffe18",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/config.json",
+      "sha256": "f8690a38a8f7997fde0cf1f9ca6693ff4aca864c1265eccc36b1dd1cb091d22c",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/font-atlas.json",
+      "sha256": "4e237bfa7bce6db645d78232beab2fde398c1b49d6f2d4ba926c7bf4ef28cca6",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/limbs-v2.cjs",
+      "sha256": "ea1ec82e1117cb2e613fbb80ffeb5d9b1895ac461515670a0c747acd1f3ea2f1",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/limbs-v3.cjs",
+      "sha256": "5f0bb49de65bd3ffc4139f502b3b389f0b460f087aea32e9a1ee198cf854fc9d",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/presenter-gestures.cjs",
+      "sha256": "6dbe228baec01612ea7c37e9eeec8d185846eca5a5ed98e012b8e1279fc1cc3d",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/presenter-new.cjs",
+      "sha256": "d13c186bf053dad180c13eb3a6bf91bb3e65673d2325349428fd2495ee6098e1",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/proof-v3.cjs",
+      "sha256": "b5586161ccfe5aacc6a475301ae20090677823bb57340c9fcef7a8f25d7fa03c",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/renderer.cjs",
+      "sha256": "8a20b1bb663ccbe5a21e7d1e9ed09993835678497452f39e16061a572c0af92e",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/speech-levels.json",
+      "sha256": "c79b121c21b7cd843b96255506f8ad0b14c142b5ada5b7eeb7e0c58ceb6c5d2d",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/stage-acting.cjs",
+      "sha256": "f522fbcd7c61384c6fdeffc6a0ec865a25357db9950c93dfee2ce9e62a63d7ef",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/stage-causal.cjs",
+      "sha256": "149bb294dcdda5029752e8ef3cdd2c6fc1be55308b7ca933eec74895c3fff8d0",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/stage-gag-proof.cjs",
+      "sha256": "25b21e274001dfc0d8a01177c6af9c3885dfae81cda5958b44542131b2e4fdb1",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/stage-layout.cjs",
+      "sha256": "eb51a0c148a97e32e0399765f4d1311448b40c6b80f25a011c665b913ef7ad47",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/stage-semantic.cjs",
+      "sha256": "21435ace9d3a762acb901c2d9026d000dfbb34b320a4ea8c8e80a87d57f3aa4a",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/local-baselines/jensen-v13/scene/word-timings.json",
+      "sha256": "bc2917950dbec325845c152d18bacb9cb7d6863ac50a9dbec751580abec24373",
+      "executable": false
+    },
+    {
+      "path": "assets/b5/sound-spotting.json",
+      "sha256": "c112c0dad33a6ce732994b98d8faae8f52cf08ca3722e0be9559d6988d0ed050",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/characters/action-envelope-report.json",
+      "sha256": "77a4fd05d7dcc43912c61bc21c990b68ac7a2b7ab3e17f99eeb36df2505f2d23",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/characters/asset-provenance.json",
+      "sha256": "950300698bc09f04d7ca3d8e0ab95e5134b09b69da97740e7869c991d74e3cdc",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/characters/asset-validation.json",
+      "sha256": "c7aeb85c1dfc883a931134983a66f56a95f8096bdec9389239ec8afc8a41e618",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/characters/kiosk_keeper/package.json",
+      "sha256": "baf5909ab0cc84ffcb449fdad3f9ea87bacdaa8410e27b1f2c57259f460623cc",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/characters/parcel_runner/package.json",
+      "sha256": "ea4daf4c49186aa1ff9455d1511dc4c41360a609683dabbac02fb3f8e94fb1d9",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/gallery.json",
+      "sha256": "ddb8c5448d85f4f488cc386336fadb0cfb14399b5024363744a86c0f9c89d624",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/captions.json",
+      "sha256": "b12c443bc82b597cc9a26fd44c8ccf292791cecbbc12c3f6691ef3e3a2475155",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/character-bindings.json",
+      "sha256": "fa5c604305f5e40148c4b4616a797cfcc0bd8a86593891bc6575f4c252b3ab87",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/manifest.json",
+      "sha256": "e0e5f6dc0517f09b19c088383e38a1e8bae7af4c3e9bffd8bf796ab779d5d02d",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/project.json",
+      "sha256": "0a72e56eaa011f3daa4f5aceac281b7a8ff1d633807a0da475eb2ec562254236",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/run.py",
+      "sha256": "7186a24d58bd2f8fe5b5bf17428f62586d7971d2eaccb062bcee49a6d3322777",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/scene-plan.json",
+      "sha256": "482fc624e72892f5ec5a75c4277df88cfdb46536dd7b3cfce7613267dacf7db7",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source-provenance.json",
+      "sha256": "2bdd622a196e335b529549dbb8075750d7c879e7861bca010653efc4e0835277",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/eiffel-emotion-full-v41/animate.py",
+      "sha256": "a8d7f65f17d2bde1429a384acd84fe25dd85c7081aad8e73cf732d3e6828c4c0",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/eiffel-preview-20s/space-camera-v29/animate.py",
+      "sha256": "bfc790dcfe91fbf1e7847189cc66eaf75d0f0e132b833a6a9603bc08470ae659",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-1990s-action-v59/animate.py",
+      "sha256": "8a01816d0cd86b4f3b0e8193dd4e162c3bd935b0b577e6375e88c7f6008abc96",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-1990s-arm-fix-v60/animate.py",
+      "sha256": "75a714320463c426ca796561d6c4fdcfa45298f422abc02fe9288ef932cc3340",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-1990s-environment-v67/animate.py",
+      "sha256": "f5de0d8a832f6b47923319821218cd943454ad46e385ff890b052c11a670c292",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-1990s-environment-v67/assets/layers.json",
+      "sha256": "e1eb6f4ce8c6fafa1566ffd009d4aed6d9f4917239454e23be803a60298126c1",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-1990s-fast-entry-v58/animate.py",
+      "sha256": "676c6a84d9fa030ec4714401c6c5e3dee052e30bbb146f0da17d7a5f36923374",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-1990s-kitchen-motion-v64/animate.py",
+      "sha256": "6445503f6d43274e88696a88e504ccc0781c438ae62e10e53eeaeaf2de1e7339",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-1990s-kitchen-motion-v64/assets/layers.json",
+      "sha256": "7980ac6cc8e4d7677d76d055af9ae73e104272e1e79f938274ed2b907f571bea",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-1990s-limbs-v56/animate.py",
+      "sha256": "9fac7d108952caff2563fb74cab3e1a488cb7356e13feb6f09376e3bac548b7a",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-1990s-overhaul-v57/animate.py",
+      "sha256": "6d11bdafe5153dbea96dd8ac9932750264067cdf26b74ae6e6349aa5f6f57354",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-1990s-overhaul-v57/character.py",
+      "sha256": "1467c8938de18b573965a984d362a42c315b9cdad504ab4497af665d72fa2f1e",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-1990s-patrons-v65/animate.py",
+      "sha256": "e4c84144d42bc15a44e555a00a1ec1cfa528e6a42b16bd581c0375b1b5da3250",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-1990s-patrons-v65/assets/layers.json",
+      "sha256": "57b405926eca4b6ffebd1d1c11b586623c366334e031e1c9c3bd2193ee3e4824",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-1990s-surprise-pose-v63/animate.py",
+      "sha256": "656159a2bde528815d5e51a748cb7961a51570992da088c93cecd5cc25a8d47f",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-1990s-taxi-v68/animate.py",
+      "sha256": "8b38d7d160463273471e25c1bb36af8913968a707a8b527e53192819f77e9fee",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-v68-extension-v75/animate.py",
+      "sha256": "51571f9e4759438749e3646127ddc092f1dedee64e5f3f839c223c4940d7e12a",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-v68-extension-v75/timeline.json",
+      "sha256": "d33103f28ee42f3ae9ed57921c7ce6d000e6014c415168f2620853eefbdfc007",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-v77-actions/animate.py",
+      "sha256": "3d6a0547b57408f836efe8056cd20f56c6cca4f8af9f4ad465e03362c06d3084",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-v77-actions/timeline.json",
+      "sha256": "b22a2a4a757c05d3d5acb9b50d79f202d511411eee55b2954b17aada7490e2ca",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-v78-arm-clarity/animate.py",
+      "sha256": "30e8163f354d5fba4c8ab6da7ba9c8d66043750cc905af5f03ec4599b0ae41a7",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-v80-native-rate/captions.json",
+      "sha256": "89b41751b4293097e66f5017c11bdbfbf84bc4011510fd7955f1178698cd32eb",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-v86-booth-arms/animate.py",
+      "sha256": "701a7aa43a24f5e4447a320ed78bf58d7e68925b325cc97cef39c683eb860793",
+      "executable": false
+    },
+    {
+      "path": "assets/b6/hong-kong-v90/source/work/hk-v87-arm-readability/animate.py",
+      "sha256": "a421216b32caa8ac920c2363290085f365f012ba33aaec13ed5869fad0d5e915",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/directing-stickman-videos"
+}

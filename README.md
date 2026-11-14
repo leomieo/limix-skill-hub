@@ -10,6 +10,7 @@ Sắp theo thứ tự thêm vào kho, mới nhất trước; cột “Ngày tạ
 
 | Skill/tool | Nguồn | Sao | Ngày tạo | Mô tả ngắn |
 |---|---|---:|---|---|
+| [directing-stickman-videos](skills/directing-stickman-videos/SKILL.md) | [kaomei/stickman-video-director](https://github.com/kaomei/stickman-video-director) | ![Sao](https://img.shields.io/github/stars/kaomei/stickman-video-director?style=social) | 2026-08-03 | Storyboard và video người que; core gốc, hướng dẫn Việt, requirements có bằng chứng. Cách ly vì gói chưa đủ. |
 | [improve-architecture](skills/improve-architecture/SKILL.md) | [daveebbelaar/bama](https://github.com/daveebbelaar/bama) | ![Sao](https://img.shields.io/github/stars/daveebbelaar/bama?style=social) | 2026-10-24 | Rà soát điểm khó bảo trì trong ứng dụng Swift/macOS; đề xuất module và refactor từng bước có bằng chứng giữ nguyên hành vi. Trạng thái: review-required. |
 | [build-and-verify](skills/build-and-verify/SKILL.md) | [daveebbelaar/bama](https://github.com/daveebbelaar/bama) | ![Sao](https://img.shields.io/github/stars/daveebbelaar/bama?style=social) | 2026-10-24 | Build ứng dụng SwiftUI trên macOS và kiểm tra ảnh cửa sổ sáng/tối, bố cục cùng tương tác trước khi bàn giao. Trạng thái: review-required. |
 | [ux-design](skills/ux-design/SKILL.md) | [daveebbelaar/bama](https://github.com/daveebbelaar/bama) | ![Sao](https://img.shields.io/github/stars/daveebbelaar/bama?style=social) | 2026-10-24 | Rà soát UX một tính năng macOS: tên gọi, luồng thao tác, cách mở giao diện, trạng thái, câu chữ và khả năng tiếp cận. Trạng thái: review-required. |
@@ -19,7 +20,6 @@ Sắp theo thứ tự thêm vào kho, mới nhất trước; cột “Ngày tạ
 | [ffmpeg-cli](skills/ffmpeg-cli/SKILL.md) | [FFmpeg/FFmpeg](https://github.com/FFmpeg/FFmpeg) | ![Sao](https://img.shields.io/github/stars/FFmpeg/FFmpeg?style=social) | 2011-04-14 | Xử lý audio/video; adapter của kho, chờ duyệt. |
 | [threejs-development](skills/threejs-development/SKILL.md) | [mrdoob/three.js](https://github.com/mrdoob/three.js) | ![Sao](https://img.shields.io/github/stars/mrdoob/three.js?style=social) | 2010-03-23 | Lập trình 3D trình duyệt; adapter của kho, chờ duyệt. |
 | [remotion-integration](skills/remotion-integration/SKILL.md) | [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | ![Sao](https://img.shields.io/github/stars/remotion-dev/remotion?style=social) | 2020-06-23 | Mục tham chiếu; chờ xem xét quyền phân phối skill. |
-| [hyperframes](skills/hyperframes/SKILL.md) | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | ![Sao](https://img.shields.io/github/stars/heygen-com/hyperframes?style=social) | 2026-03-10 | Core chính thức; cách ly để duyệt telemetry và phụ thuộc. |
 
 ## Sử dụng
 

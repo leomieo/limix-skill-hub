@@ -1362,5 +1362,13 @@
       "checksum": "692c365004927e8acd466361a5b0b6dbdea3b5d89b1b4ab3fb564182d86dc515",
       "at": "2026-11-14T01:04:06.413Z"
     }
+  ],
+  "directing-stickman-videos": [
+    {
+      "version": "b0866bcfd49d",
+      "commit": "b0866bcfd49d1121cd235c2445fa3d8cce307f53",
+      "checksum": "ac124b31c8de74660a5ea6c613a759a037d892953476d03394c456804c75e3a3",
+      "at": "2026-11-14T03:42:09.893Z"
+    }
   ]
 }
