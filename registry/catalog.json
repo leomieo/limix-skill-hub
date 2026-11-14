@@ -87,9 +87,9 @@
         "commit": "c9ec4a187cab49627947e7e33db265ec143db3b8",
         "path": "skills/agent-autoloop"
       },
-      "stars": 5126,
+      "stars": 5156,
       "created_at": "2026-11-03T08:02:11Z",
-      "pushed_at": "2026-11-14T01:03:13Z",
+      "pushed_at": "2026-11-14T02:01:22Z",
       "stats_checked": "2026-11-14",
       "license": "MIT",
       "language": "hybrid",
@@ -366,7 +366,7 @@
         "commit": "1482e8469b0a9e0d8cc18ea2740a01423d29ae80",
         "path": ""
       },
-      "stars": 27131,
+      "stars": 27152,
       "created_at": "2026-10-08T10:12:49Z",
       "pushed_at": "2026-10-18T20:20:24Z",
       "stats_checked": "2026-11-14",
@@ -1353,7 +1353,7 @@
         "commit": "edccab07c012e2141585f8ddb18a62e01664fa2b",
         "path": "skills/answer-me-with-html"
       },
-      "stars": 6308,
+      "stars": 6309,
       "created_at": "2026-10-02T09:57:40Z",
       "pushed_at": "2026-11-11T19:55:14Z",
       "stats_checked": "2026-11-14",
@@ -1870,7 +1870,7 @@
         "commit": "0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab",
         "path": ""
       },
-      "stars": 3287,
+      "stars": 3293,
       "created_at": "2026-09-08T17:19:54Z",
       "pushed_at": "2026-11-09T15:26:15Z",
       "stats_checked": "2026-11-14",
@@ -4704,7 +4704,7 @@
         "commit": "d40abd44f171c5cc444f1ac6b947afefa8605b78",
         "path": "skills/api-anything"
       },
-      "stars": 3159,
+      "stars": 3162,
       "created_at": "2026-09-27T11:44:26Z",
       "pushed_at": "2026-11-13T06:19:51Z",
       "stats_checked": "2026-11-14",
@@ -4998,9 +4998,9 @@
         "commit": "e37848822238e3a61b12739185cdadd49843a620",
         "path": "archify"
       },
-      "stars": 96227,
+      "stars": 96246,
       "created_at": "2026-04-15T05:27:37Z",
-      "pushed_at": "2026-11-13T18:15:49Z",
+      "pushed_at": "2026-11-14T03:05:03Z",
       "stats_checked": "2026-11-14",
       "license": "Apache-2.0",
       "language": "hybrid",
@@ -6331,7 +6331,7 @@
         "commit": "df07b8e518e10cdecd8cd7712d9958b6f396250e",
         "path": "skills/arena"
       },
-      "stars": 1485,
+      "stars": 1486,
       "created_at": "2026-09-27T13:20:04Z",
       "pushed_at": "2026-09-27T13:20:07Z",
       "stats_checked": "2026-11-14",
@@ -6744,7 +6744,7 @@
         "commit": "c1aa65e921c970d858705fcb4a53a8294d1a4131",
         "path": ""
       },
-      "stars": 2124,
+      "stars": 2130,
       "created_at": "2026-09-05T21:07:55Z",
       "pushed_at": "2026-09-15T04:45:32Z",
       "stats_checked": "2026-11-14",
@@ -7898,7 +7898,7 @@
         "commit": "22dc792ea040a35270c219c669f626594267aa1f",
         "path": "skills/ship/build-and-verify"
       },
-      "stars": 1805,
+      "stars": 1809,
       "created_at": "2026-10-24T08:44:36Z",
       "pushed_at": "2026-11-05T13:09:56Z",
       "stats_checked": "2026-11-14",
@@ -8151,7 +8151,7 @@
         "commit": "e3b817b6afc6cd413466d43f11ba31209e034bbf",
         "path": ""
       },
-      "stars": 3265,
+      "stars": 3282,
       "created_at": "2026-11-01T05:50:38Z",
       "pushed_at": "2026-11-01T05:57:14Z",
       "stats_checked": "2026-11-14",
@@ -9710,7 +9710,7 @@
         "commit": "ec53265c84131e26b7097498a5fe0680fdeffed7",
         "path": "skills/claude-guardian"
       },
-      "stars": 2043,
+      "stars": 2053,
       "created_at": "2026-10-15T06:09:53Z",
       "pushed_at": "2026-11-11T15:34:09Z",
       "stats_checked": "2026-11-14",
@@ -16454,9 +16454,9 @@
         "commit": "b0866bcfd49d1121cd235c2445fa3d8cce307f53",
         "path": "skills/directing-stickman-videos"
       },
-      "stars": 6087,
+      "stars": 6116,
       "created_at": "2026-08-03T07:44:33Z",
-      "pushed_at": "2026-11-13T13:43:06Z",
+      "pushed_at": "2026-11-14T03:35:27Z",
       "stats_checked": "2026-11-14",
       "license": "MIT",
       "language": "hybrid",
@@ -19975,7 +19975,7 @@
         "commit": "4ac3d2ac2b151e1c23376f9ce7f3047a17050013",
         "path": "skills/earshot"
       },
-      "stars": 4758,
+      "stars": 4768,
       "created_at": "2026-10-15T06:52:46Z",
       "pushed_at": "2026-11-06T17:24:16Z",
       "stats_checked": "2026-11-14",
@@ -20197,9 +20197,9 @@
         "commit": "270b10326bf366d823bc76fd662cf83808d5781e",
         "path": "skills/egm-draft"
       },
-      "stars": 18629,
+      "stars": 18676,
       "created_at": "2026-09-13T16:31:06Z",
-      "pushed_at": "2026-11-13T17:16:33Z",
+      "pushed_at": "2026-11-14T03:30:16Z",
       "stats_checked": "2026-11-14",
       "license": "Apache-2.0",
       "language": "hybrid",
@@ -20478,7 +20478,7 @@
         "commit": "f4b6b3ffc99ccdcb3e4b6bbfad3fca51b09bd23c",
         "path": ""
       },
-      "stars": 2419,
+      "stars": 2421,
       "created_at": "2026-10-25T10:05:56Z",
       "pushed_at": "2026-11-13T21:38:35Z",
       "stats_checked": "2026-11-14",
@@ -22660,7 +22660,7 @@
         "commit": "88c46fce27e311c73772d9b83db4047dd83b1294",
         "path": null
       },
-      "stars": 67210,
+      "stars": 67214,
       "created_at": "2011-04-14T14:12:38Z",
       "pushed_at": "2026-11-13T22:56:31Z",
       "stats_checked": "2026-11-14",
@@ -22972,9 +22972,9 @@
         "commit": "92dabd8372dafd033055a3b22d3fb71b39ac3cfd",
         "path": ""
       },
-      "stars": 5434,
+      "stars": 5456,
       "created_at": "2026-09-03T14:33:38Z",
-      "pushed_at": "2026-11-14T00:20:32Z",
+      "pushed_at": "2026-11-14T03:35:40Z",
       "stats_checked": "2026-11-14",
       "license": "MIT",
       "language": "hybrid",
@@ -24576,7 +24576,7 @@
         "commit": "80f551625282c47c2984bde35280c32d0aa4be58",
         "path": "plugin/skills/find-reverse-engineered"
       },
-      "stars": 1380,
+      "stars": 1388,
       "created_at": "2026-10-11T17:30:10Z",
       "pushed_at": "2026-11-13T14:56:08Z",
       "stats_checked": "2026-11-14",
@@ -24845,7 +24845,7 @@
         "commit": "fd9385b0cfe1b96bebce3898fbd506d73eff5a9d",
         "path": null
       },
-      "stars": 3551,
+      "stars": 3557,
       "created_at": "2026-10-07T01:07:13Z",
       "pushed_at": "2026-10-07T01:07:17Z",
       "stats_checked": "2026-11-14",
@@ -25159,7 +25159,7 @@
         "commit": "11e37a74d0a6868c121cd0910ab2b3bd9873b92a",
         "path": "skills/full-send"
       },
-      "stars": 3644,
+      "stars": 3646,
       "created_at": "2026-10-24T05:00:20Z",
       "pushed_at": "2026-11-11T11:33:03Z",
       "stats_checked": "2026-11-14",
@@ -25342,7 +25342,7 @@
         "commit": "d56c35789565e9459f0663e860c470e98e9c30d1",
         "path": "skills/geo-sleuth"
       },
-      "stars": 6971,
+      "stars": 6982,
       "created_at": "2026-09-18T08:51:34Z",
       "pushed_at": "2026-11-09T13:31:34Z",
       "stats_checked": "2026-11-14",
@@ -28607,7 +28607,7 @@
         "commit": "8fd3d8e96844c79c500aabaf215d1267fcde08c5",
         "path": "skills/golive"
       },
-      "stars": 1532,
+      "stars": 1533,
       "created_at": "2026-09-23T13:37:26Z",
       "pushed_at": "2026-10-11T21:04:01Z",
       "stats_checked": "2026-11-14",
@@ -29253,7 +29253,7 @@
         "commit": "dcc1503994f6e0238119452f14fa251ea53ef573",
         "path": "skills/grandet-api-price-finder"
       },
-      "stars": 1346,
+      "stars": 1352,
       "created_at": "2026-10-05T06:50:33Z",
       "pushed_at": "2026-11-07T20:59:58Z",
       "stats_checked": "2026-11-14",
@@ -29802,7 +29802,7 @@
         "commit": "1468196505a51728686db118d52561aa27a25124",
         "path": ""
       },
-      "stars": 6872,
+      "stars": 6874,
       "created_at": "2026-10-06T04:49:37Z",
       "pushed_at": "2026-11-10T01:40:26Z",
       "stats_checked": "2026-11-14",
@@ -32215,9 +32215,9 @@
         "commit": "d208281091b1c00db1724a2ee3db0055955eb41b",
         "path": "skills/hyperframes"
       },
-      "stars": 83951,
+      "stars": 83994,
       "created_at": "2026-03-10T01:51:06Z",
-      "pushed_at": "2026-11-14T01:03:55Z",
+      "pushed_at": "2026-11-14T03:42:28Z",
       "stats_checked": "2026-11-14",
       "license": "Apache-2.0",
       "language": "hybrid",
@@ -33312,7 +33312,7 @@
         "commit": "22dc792ea040a35270c219c669f626594267aa1f",
         "path": "skills/code/improve-architecture"
       },
-      "stars": 1805,
+      "stars": 1809,
       "created_at": "2026-10-24T08:44:36Z",
       "pushed_at": "2026-11-05T13:09:56Z",
       "stats_checked": "2026-11-14",
@@ -33513,7 +33513,7 @@
         "commit": "d03c56bb598be770c60b201f94237e5d1a4268a6",
         "path": null
       },
-      "stars": 6337,
+      "stars": 6349,
       "created_at": "2026-09-13T14:09:50Z",
       "pushed_at": "2026-09-13T14:10:31Z",
       "stats_checked": "2026-11-14",
@@ -33965,7 +33965,7 @@
         "commit": "3a7132b996be0241c1ea0ab180d519f06e6f10b6",
         "path": "plugin/skills/lemo-opuscar"
       },
-      "stars": 15724,
+      "stars": 15750,
       "created_at": "2026-09-26T10:10:41Z",
       "pushed_at": "2026-11-12T11:29:03Z",
       "stats_checked": "2026-11-14",
@@ -34316,7 +34316,7 @@
         "commit": "add2c23882fe79180737d242ff80a5da205eda6a",
         "path": "skills/li-post"
       },
-      "stars": 3539,
+      "stars": 3541,
       "created_at": "2026-09-07T22:58:16Z",
       "pushed_at": "2026-09-17T11:27:52Z",
       "stats_checked": "2026-11-14",
@@ -34530,7 +34530,7 @@
         "commit": "bbf31e521d765eb6d53242549bbee7c2e5bbd6bc",
         "path": "skills/logo-design"
       },
-      "stars": 6848,
+      "stars": 6854,
       "created_at": "2026-09-26T08:23:34Z",
       "pushed_at": "2026-11-13T16:32:36Z",
       "stats_checked": "2026-11-14",
@@ -37570,7 +37570,7 @@
         "commit": "3c4ac6c38e411b8c543bce217eae197039516bfc",
         "path": ".agents/skills/mod-any-game"
       },
-      "stars": 9667,
+      "stars": 9672,
       "created_at": "2026-09-30T05:00:35Z",
       "pushed_at": "2026-11-14T00:36:57Z",
       "stats_checked": "2026-11-14",
@@ -38114,7 +38114,7 @@
         "commit": "8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c",
         "path": ""
       },
-      "stars": 1587,
+      "stars": 1588,
       "created_at": "2026-10-06T18:18:49Z",
       "pushed_at": "2026-10-06T18:20:43Z",
       "stats_checked": "2026-11-14",
@@ -40124,7 +40124,7 @@
         "commit": "faa30d512e3973e58675c72101a7ef42ed37ae83",
         "path": "plugins/motionsites-web-builder/skills/motionsites-web-builder"
       },
-      "stars": 2069,
+      "stars": 2071,
       "created_at": "2026-10-26T06:58:45Z",
       "pushed_at": "2026-10-26T07:04:24Z",
       "stats_checked": "2026-11-14",
@@ -40953,7 +40953,7 @@
         "commit": "fe67ff1acab728141644a4a9741295469b4feee6",
         "path": "skills/new-term-radar"
       },
-      "stars": 2171,
+      "stars": 2172,
       "created_at": "2026-10-12T07:11:01Z",
       "pushed_at": "2026-11-02T23:42:54Z",
       "stats_checked": "2026-11-14",
@@ -41212,7 +41212,7 @@
         "commit": "28948c3d88e5d141fa0e943ff385560c5ffba979",
         "path": ""
       },
-      "stars": 3264,
+      "stars": 3269,
       "created_at": "2026-09-30T03:55:35Z",
       "pushed_at": "2026-11-11T04:56:08Z",
       "stats_checked": "2026-11-14",
@@ -43078,7 +43078,7 @@
         "commit": "5294518ce7c72e48b6100a744596e0acf57f2826",
         "path": "skills/pixelfx"
       },
-      "stars": 7333,
+      "stars": 7348,
       "created_at": "2026-10-30T06:43:25Z",
       "pushed_at": "2026-11-13T08:43:39Z",
       "stats_checked": "2026-11-14",
@@ -43383,9 +43383,9 @@
         "commit": "ab8580e38a1255425b0d3b481866590766932079",
         "path": "skills/rea-video"
       },
-      "stars": 7989,
+      "stars": 8044,
       "created_at": "2026-10-29T16:15:01Z",
-      "pushed_at": "2026-11-13T17:41:27Z",
+      "pushed_at": "2026-11-14T03:37:29Z",
       "stats_checked": "2026-11-14",
       "license": "Apache-2.0",
       "language": "hybrid",
@@ -43755,7 +43755,7 @@
         "commit": "3f7a55a2986a84ca2173e86ee9127eefe31d046d",
         "path": null
       },
-      "stars": 1629,
+      "stars": 1632,
       "created_at": "2026-10-29T06:20:59Z",
       "pushed_at": "2026-10-31T12:49:35Z",
       "stats_checked": "2026-11-14",
@@ -44071,7 +44071,7 @@
         "commit": "bc7b1c44215249948356d070b43ae6e58a6adde3",
         "path": null
       },
-      "stars": 73012,
+      "stars": 73033,
       "created_at": "2020-06-23T19:49:10Z",
       "pushed_at": "2026-11-13T21:34:41Z",
       "stats_checked": "2026-11-14",
@@ -44383,7 +44383,7 @@
         "commit": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
         "path": "replica-recon"
       },
-      "stars": 9253,
+      "stars": 9262,
       "created_at": "2026-10-03T12:07:49Z",
       "pushed_at": "2026-10-03T12:07:53Z",
       "stats_checked": "2026-11-14",
@@ -44598,7 +44598,7 @@
         "commit": "7c6715c29548a3b39d4a9545c698ee4fd17a7213",
         "path": "socratic-tutor"
       },
-      "stars": 8278,
+      "stars": 8323,
       "created_at": "2026-11-03T16:50:21Z",
       "pushed_at": "2026-11-03T18:14:13Z",
       "stats_checked": "2026-11-14",
@@ -44758,7 +44758,7 @@
         "commit": "9175bde8449cc8f5390d6eb72ecc2e1f5bfe21f3",
         "path": "skills/stack-diagram"
       },
-      "stars": 2481,
+      "stars": 2484,
       "created_at": "2026-11-01T05:35:12Z",
       "pushed_at": "2026-11-13T07:38:10Z",
       "stats_checked": "2026-11-14",
@@ -45304,7 +45304,7 @@
         "commit": "299140fafd08df55a9c234e610c3f64af3f45531",
         "path": "stageshow"
       },
-      "stars": 3271,
+      "stars": 3274,
       "created_at": "2026-10-26T06:08:56Z",
       "pushed_at": "2026-11-05T03:34:26Z",
       "stats_checked": "2026-11-14",
@@ -47050,7 +47050,7 @@
         "commit": "a91262ac1109051e014662d42ecb0b7bc1f113b1",
         "path": ""
       },
-      "stars": 3438,
+      "stars": 3448,
       "created_at": "2026-10-30T09:29:01Z",
       "pushed_at": "2026-10-31T14:01:06Z",
       "stats_checked": "2026-11-14",
@@ -48509,7 +48509,7 @@
         "commit": "acf77e4c7ea413a0a9638baacef3d78e254b2cac",
         "path": null
       },
-      "stars": 118327,
+      "stars": 118334,
       "created_at": "2010-03-23T18:58:01Z",
       "pushed_at": "2026-11-14T00:08:25Z",
       "stats_checked": "2026-11-14",
@@ -49022,7 +49022,7 @@
         "commit": "3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd",
         "path": "trader-scanner"
       },
-      "stars": 7626,
+      "stars": 7637,
       "created_at": "2026-10-20T14:17:54Z",
       "pushed_at": "2026-10-20T14:18:00Z",
       "stats_checked": "2026-11-14",
@@ -49517,7 +49517,7 @@
         "commit": "97daa3eb365670ea3f87ed85356cbfcee18105a5",
         "path": "skills/unslop"
       },
-      "stars": 15671,
+      "stars": 15718,
       "created_at": "2026-10-29T15:41:21Z",
       "pushed_at": "2026-11-08T21:18:33Z",
       "stats_checked": "2026-11-14",
@@ -49936,7 +49936,7 @@
         "commit": "22dc792ea040a35270c219c669f626594267aa1f",
         "path": "skills/design/ux-design"
       },
-      "stars": 1805,
+      "stars": 1809,
       "created_at": "2026-10-24T08:44:36Z",
       "pushed_at": "2026-11-05T13:09:56Z",
       "stats_checked": "2026-11-14",
@@ -50124,7 +50124,7 @@
         "commit": "a2feb2104981a375ffd4f87ee04f4f5344ac43c6",
         "path": null
       },
-      "stars": 5821,
+      "stars": 5835,
       "created_at": "2026-09-16T13:32:05Z",
       "pushed_at": "2026-09-16T13:32:08Z",
       "stats_checked": "2026-11-14",
