@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "name": "find-reverse-engineered",
+  "version": "80f551625282",
+  "source": {
+    "url": "https://github.com/alexgaoth/awesome-reverse-engineered",
+    "commit": "80f551625282c47c2984bde35280c32d0aa4be58",
+    "sha256": "1098f0f4b5449dd0925f03dfeec912fc724bf25ef29a04346a417f66e32885ef",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Tìm dự án mã nguồn mở reverse engineering phù hợp cho ứng dụng, giao thức hoặc định dạng thiếu API chính thức; đối chiếu license và hoạt động.",
+    "aliases": [
+      "Tìm công cụ reverse engineering",
+      "Tra cứu giao thức"
+    ],
+    "keywords": [
+      "find",
+      "reverse",
+      "engineered",
+      "Tìm công cụ reverse engineering",
+      "Tra cứu giao thức"
+    ],
+    "examples": [
+      "Dùng find-reverse-engineered cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "1098f0f4b5449dd0925f03dfeec912fc724bf25ef29a04346a417f66e32885ef"
+  },
+  "requiredCapabilities": [
+    "Filesystem cache ~/.cache/awesome-reverse-engineered; SKILL.md tool description",
+    "Network access to external index and GitHub; scripts/re_index.py",
+    "Optional GITHUB_TOKEN or gh auth token; scripts/re_index.py github_readme(), lines 142-160",
+    "Python 3 standard library; SKILL.md tool description and scripts/re_index.py imports",
+    "bash [mention-hint]",
+    "node [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "rust [mention-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "network",
+    "shell"
+  ],
+  "syncedAt": "2026-11-14T01:04:07.974Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "Core có ví dụ curl tải script từ nhánh main rồi pipe vào python3. Đây là đường tải mã chưa pin; không chạy. Chỉ giữ byte để duyệt thủ công.",
+      "Script có mạng, cache và khả năng clone repo; không có hành động nào trong số đó được thực thi trong đợt tuyển chọn.",
+      "Manual review: scripts/re_index.py github_readme() reads GITHUB_TOKEN or invokes gh auth token, then sets Authorization for api.github.com. load() downloads a mutable main-branch index, writes a user-home cache, and clone uses git subprocess with the chosen URL. No execution performed; scanner does not recognize curl | python3, so quarantine is manual."
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "Core có ví dụ curl tải script từ nhánh main rồi pipe vào python3. Đây là đường tải mã chưa pin; không chạy. Chỉ giữ byte để duyệt thủ công.",
+      "Script có mạng, cache và khả năng clone repo; không có hành động nào trong số đó được thực thi trong đợt tuyển chọn.",
+      "Manual review: scripts/re_index.py github_readme() reads GITHUB_TOKEN or invokes gh auth token, then sets Authorization for api.github.com. load() downloads a mutable main-branch index, writes a user-home cache, and clone uses git subprocess with the chosen URL. No execution performed; scanner does not recognize curl | python3, so quarantine is manual."
+    ]
+  }
+}

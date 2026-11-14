@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "name": "ux-design",
+  "version": "22dc792ea040",
+  "source": {
+    "url": "https://github.com/daveebbelaar/bama",
+    "commit": "22dc792ea040a35270c219c669f626594267aa1f",
+    "sha256": "01c31aec1b244c0504e82745d2642e503eb7562a5ab859752b41dac277c1c3ca",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Rà soát UX một tính năng macOS: tên gọi, luồng thao tác, cách mở giao diện, trạng thái, câu chữ và khả năng tiếp cận.",
+    "aliases": [
+      "Rà soát UX macOS",
+      "Thiết kế luồng thao tác"
+    ],
+    "keywords": [
+      "ux",
+      "design",
+      "Rà soát UX macOS",
+      "Thiết kế luồng thao tác"
+    ],
+    "examples": [
+      "Dùng ux-design cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "01c31aec1b244c0504e82745d2642e503eb7562a5ab859752b41dac277c1c3ca"
+  },
+  "requiredCapabilities": [
+    "VoiceOver and Accessibility Inspector for runtime audit; SKILL.md accessibility section",
+    "filesystem-read [mention-hint]",
+    "macOS SwiftUI project for implementation; SKILL.md:3"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write"
+  ],
+  "syncedAt": "2026-11-14T01:04:06.413Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "Đầu ra là UX block và glossary; chưa kiểm tra VoiceOver hoặc giao diện thật."
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "repository": "alexgaoth/awesome-reverse-engineered",
+  "commit": "80f551625282c47c2984bde35280c32d0aa4be58",
+  "path": "plugin/skills/find-reverse-engineered",
+  "verified": true,
+  "coreSha256": "1098f0f4b5449dd0925f03dfeec912fc724bf25ef29a04346a417f66e32885ef",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "1098f0f4b5449dd0925f03dfeec912fc724bf25ef29a04346a417f66e32885ef",
+      "executable": false
+    },
+    {
+      "path": "scripts/re_index.py",
+      "sha256": "576d82d147baebfd13c4c4d82b11c8c5687aaf036313c116de4eba9022dd4a32",
+      "executable": true
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "e249e59dd9c62c832854d823c600d650899c66acecd8c78807e79aafa72358ac",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/find-reverse-engineered"
+}

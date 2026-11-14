@@ -1,0 +1,31 @@
+{
+  "repository": "daveebbelaar/bama",
+  "commit": "22dc792ea040a35270c219c669f626594267aa1f",
+  "path": "skills/ship/build-and-verify",
+  "verified": true,
+  "coreSha256": "0b5bcb4c27917b9b97aa049e35ed48a7b2a9c21028dd1573099c0c456b67d656",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "0b5bcb4c27917b9b97aa049e35ed48a7b2a9c21028dd1573099c0c456b67d656",
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "73f845097946ec38a4350653791f51641e28ee6587646ac6ca48cdae9edc8af7",
+      "executable": false
+    },
+    {
+      "path": "existing-app.md",
+      "sha256": "80c29d5319db730c3f46f8037553ed282c65767b680f308950b3403c47c9f902",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "a7161a15136a8849f39038e9cb983f391ff86e2983b0ab51884ceee0cd1fce6b",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/build-and-verify"
+}

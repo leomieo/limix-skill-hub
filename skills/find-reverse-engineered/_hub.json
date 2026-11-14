@@ -1,0 +1,17 @@
+{
+  "repository": "alexgaoth/awesome-reverse-engineered",
+  "stars": 1380,
+  "createdAt": "2026-10-11T17:30:10Z",
+  "pushedAt": "2026-11-13T14:56:08Z",
+  "statsCheckedAt": "2026-11-14T01:04:07.974Z",
+  "license": "MIT",
+  "addedAt": "2026-11-14T01:04:07.974Z",
+  "batchDate": "2026-11-14",
+  "commit": "80f551625282c47c2984bde35280c32d0aa4be58",
+  "path": "plugin/skills/find-reverse-engineered",
+  "language": "hybrid",
+  "version": "80f551625282",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-14T01:04:07.974Z"
+}

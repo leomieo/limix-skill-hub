@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-13T22:35:55.433Z",
+  "checkedAt": "2026-11-14T01:04:59.240Z",
   "scope": "Static integrity and provenance only; no downloaded scripts executed.",
   "results": [
     {
@@ -336,6 +336,17 @@
       "commit": "b9718436d77ee7bcf17cdcb6aa27628feb95d97a",
       "security": "quarantined",
       "compatibility": "incompatible",
+      "skipped": [],
+      "license": "MIT"
+    },
+    {
+      "id": "build-and-verify",
+      "verified": true,
+      "origin": "upstream",
+      "files": 4,
+      "commit": "22dc792ea040a35270c219c669f626594267aa1f",
+      "security": "review-required",
+      "compatibility": "unchecked",
       "skipped": [],
       "license": "MIT"
     },
@@ -1400,6 +1411,17 @@
       "license": "MIT"
     },
     {
+      "id": "find-reverse-engineered",
+      "verified": true,
+      "origin": "upstream",
+      "files": 3,
+      "commit": "80f551625282c47c2984bde35280c32d0aa4be58",
+      "security": "quarantined",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "MIT"
+    },
+    {
       "id": "founder-skill",
       "verified": false,
       "origin": "legacy-unverified",
@@ -1797,6 +1819,17 @@
       "compatibility": "unchecked",
       "skipped": [],
       "license": "Apache-2.0"
+    },
+    {
+      "id": "improve-architecture",
+      "verified": true,
+      "origin": "upstream",
+      "files": 4,
+      "commit": "22dc792ea040a35270c219c669f626594267aa1f",
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "MIT"
     },
     {
       "id": "instagram-agent-skill",
@@ -3151,6 +3184,17 @@
       "license": "MIT"
     },
     {
+      "id": "new-term-radar",
+      "verified": true,
+      "origin": "upstream",
+      "files": 2,
+      "commit": "fe67ff1acab728141644a4a9741295469b4feee6",
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "skipped": [],
+      "license": "MIT"
+    },
+    {
       "id": "oil-ui",
       "verified": true,
       "origin": "upstream",
@@ -3488,6 +3532,17 @@
       "compatibility": "unchecked",
       "skipped": [],
       "license": "CC-BY-4.0"
+    },
+    {
+      "id": "ux-design",
+      "verified": true,
+      "origin": "upstream",
+      "files": 7,
+      "commit": "22dc792ea040a35270c219c669f626594267aa1f",
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "MIT"
     },
     {
       "id": "youtube-agent-skill",

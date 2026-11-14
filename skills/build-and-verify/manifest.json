@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "name": "build-and-verify",
+  "version": "22dc792ea040",
+  "source": {
+    "url": "https://github.com/daveebbelaar/bama",
+    "commit": "22dc792ea040a35270c219c669f626594267aa1f",
+    "sha256": "0b5bcb4c27917b9b97aa049e35ed48a7b2a9c21028dd1573099c0c456b67d656",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Build ứng dụng SwiftUI trên macOS và kiểm tra ảnh cửa sổ sáng/tối, bố cục cùng tương tác trước khi bàn giao.",
+    "aliases": [
+      "Build và kiểm tra macOS",
+      "Kiểm tra SwiftUI"
+    ],
+    "keywords": [
+      "build",
+      "and",
+      "verify",
+      "Build và kiểm tra macOS",
+      "Kiểm tra SwiftUI"
+    ],
+    "examples": [
+      "Dùng build-and-verify cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "0b5bcb4c27917b9b97aa049e35ed48a7b2a9c21028dd1573099c0c456b67d656"
+  },
+  "requiredCapabilities": [
+    "Project build.sh, tools/snap.sh, tools/grid-lint.sh, tools/check-layout.swift, tools/selftest.sh; SKILL.md build/snapshot/grid/interaction sections",
+    "Related layout-grid, mac-design, test-mac-app skills; SKILL.md cross-skill references",
+    "Screen Recording permission for snapshots; SKILL.md Screen Recording section",
+    "bash [mention-hint]",
+    "macOS and Swift toolchain; SKILL.md:3",
+    "tmp [reference-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell"
+  ],
+  "syncedAt": "2026-11-14T01:04:03.878Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "Gói là quy trình, không chứa template app hoặc các script của dự án đích. Cần chuẩn bị các file và skill liên quan trước khi chạy. Không phù hợp chạy trực tiếp trên Windows."
+    ]
+  }
+}

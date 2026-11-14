@@ -1,0 +1,46 @@
+{
+  "repository": "daveebbelaar/bama",
+  "commit": "22dc792ea040a35270c219c669f626594267aa1f",
+  "path": "skills/design/ux-design",
+  "verified": true,
+  "coreSha256": "01c31aec1b244c0504e82745d2642e503eb7562a5ab859752b41dac277c1c3ca",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "01c31aec1b244c0504e82745d2642e503eb7562a5ab859752b41dac277c1c3ca",
+      "executable": false
+    },
+    {
+      "path": "accessibility.md",
+      "sha256": "49ee25f0532f7c6e14d439e749318ed3a3100d5f4a9d5b486547310f14cdf3f0",
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "165eda9a1d8c2e6c362673fdfcf5727fa546d126d7c91eae14a201ffdf87fe3c",
+      "executable": false
+    },
+    {
+      "path": "ai-features.md",
+      "sha256": "87436bd4c5be9e0221f97f58ad2a745f7df0103652dd6561e1c207813b9d5c3d",
+      "executable": false
+    },
+    {
+      "path": "presentation.md",
+      "sha256": "bc409ccce38acd68744dc9aa0d3ff8809b599ef7a117a1ded1ab7f8d65aaf694",
+      "executable": false
+    },
+    {
+      "path": "writing.md",
+      "sha256": "6e654e8eb2e7acad5c7e06c39b209b57bd278150fcb7b95c1fbd822e9e31059b",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "a7161a15136a8849f39038e9cb983f391ff86e2983b0ab51884ceee0cd1fce6b",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/ux-design"
+}

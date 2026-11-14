@@ -1,0 +1,17 @@
+{
+  "repository": "zhuyansen/new-term-radar",
+  "stars": 2171,
+  "createdAt": "2026-10-12T07:11:01Z",
+  "pushedAt": "2026-11-02T23:42:54Z",
+  "statsCheckedAt": "2026-11-14T01:04:09.131Z",
+  "license": "MIT",
+  "addedAt": "2026-11-14T01:04:09.131Z",
+  "batchDate": "2026-11-14",
+  "commit": "fe67ff1acab728141644a4a9741295469b4feee6",
+  "path": "skills/new-term-radar",
+  "language": "hybrid",
+  "version": "fe67ff1acab7",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-14T01:04:09.131Z"
+}

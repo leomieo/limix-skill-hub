@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "name": "improve-architecture",
+  "version": "22dc792ea040",
+  "source": {
+    "url": "https://github.com/daveebbelaar/bama",
+    "commit": "22dc792ea040a35270c219c669f626594267aa1f",
+    "sha256": "eab9f3e36f4db654b008dc794a080774eda2bb0bb3abd946c0b0a42cafd16c71",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Rà soát điểm khó bảo trì trong ứng dụng Swift/macOS; đề xuất module và refactor từng bước có bằng chứng giữ nguyên hành vi.",
+    "aliases": [
+      "Rà soát kiến trúc",
+      "Refactor Swift"
+    ],
+    "keywords": [
+      "improve",
+      "architecture",
+      "Rà soát kiến trúc",
+      "Refactor Swift"
+    ],
+    "examples": [
+      "Dùng improve-architecture cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "eab9f3e36f4db654b008dc794a080774eda2bb0bb3abd946c0b0a42cafd16c71"
+  },
+  "requiredCapabilities": [
+    "Git history and shell; SKILL.md Survey step 2",
+    "bash [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "macOS Swift codebase; SKILL.md:3"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell"
+  ],
+  "syncedAt": "2026-11-14T01:04:02.903Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "Chỉ refactor sau khi chọn đề xuất; phải có bằng chứng hành vi trước và sau."
+    ]
+  }
+}

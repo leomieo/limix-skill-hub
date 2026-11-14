@@ -1,0 +1,21 @@
+{
+  "repository": "zhuyansen/new-term-radar",
+  "commit": "fe67ff1acab728141644a4a9741295469b4feee6",
+  "path": "skills/new-term-radar",
+  "verified": true,
+  "coreSha256": "ccbc6791aa9e36ed7b6aded9f84e4d746217f45bbd4d6a7b70ba561839b0de05",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "ccbc6791aa9e36ed7b6aded9f84e4d746217f45bbd4d6a7b70ba561839b0de05",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "2f5c50168c2ad0221649b52a9166f41614b77c0f740901edd44113499c52299f",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/new-term-radar"
+}

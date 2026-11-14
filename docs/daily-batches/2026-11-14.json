@@ -1,0 +1,160 @@
+{
+  "date": "2026-11-14",
+  "timeZone": "Asia/Ho_Chi_Minh",
+  "baseCommit": "916e5e0ec7d57b7ffd111014a3749c580c4d9bd0",
+  "priorDayEvidence": "Git history for Vietnam 2026-11-14 showed only Archify added at cd0ef9b; 916e5e0 updated metadata, not new skills. This is the first curated five-skill batch for the date.",
+  "selection": "Five distinct new skills from three active, licensed repositories created within two months. Three BAMA skills cover complementary coding, QA and UX tasks. No claim of globally best skills or star growth.",
+  "scope": "Content only. No upstream code, provider, API or model execution.",
+  "skills": [
+    {
+      "id": "improve-architecture",
+      "repo": "daveebbelaar/bama",
+      "sha": "22dc792ea040a35270c219c669f626594267aa1f",
+      "vi": "Rà soát điểm khó bảo trì trong ứng dụng Swift/macOS; đề xuất module và refactor từng bước có bằng chứng giữ nguyên hành vi.",
+      "aliases": [
+        "Rà soát kiến trúc",
+        "Refactor Swift"
+      ],
+      "needs": [
+        "macOS Swift codebase; SKILL.md:3",
+        "Git history and shell; SKILL.md Survey step 2"
+      ],
+      "notes": [
+        "Chỉ refactor sau khi chọn đề xuất; phải có bằng chứng hành vi trước và sau."
+      ],
+      "stars": 1805,
+      "createdAt": "2026-10-24T08:44:36Z",
+      "pushedAt": "2026-11-05T13:09:56Z",
+      "license": "MIT",
+      "path": "skills/code/improve-architecture",
+      "files": 4,
+      "skipped": [],
+      "coreSha256": "eab9f3e36f4db654b008dc794a080774eda2bb0bb3abd946c0b0a42cafd16c71",
+      "status": "review-required",
+      "compatibility": "unchecked",
+      "idempotence": "unchanged"
+    },
+    {
+      "id": "build-and-verify",
+      "repo": "daveebbelaar/bama",
+      "sha": "22dc792ea040a35270c219c669f626594267aa1f",
+      "vi": "Build ứng dụng SwiftUI trên macOS và kiểm tra ảnh cửa sổ sáng/tối, bố cục cùng tương tác trước khi bàn giao.",
+      "aliases": [
+        "Build và kiểm tra macOS",
+        "Kiểm tra SwiftUI"
+      ],
+      "needs": [
+        "macOS and Swift toolchain; SKILL.md:3",
+        "Project build.sh, tools/snap.sh, tools/grid-lint.sh, tools/check-layout.swift, tools/selftest.sh; SKILL.md build/snapshot/grid/interaction sections",
+        "Related layout-grid, mac-design, test-mac-app skills; SKILL.md cross-skill references",
+        "Screen Recording permission for snapshots; SKILL.md Screen Recording section"
+      ],
+      "notes": [
+        "Gói là quy trình, không chứa template app hoặc các script của dự án đích. Cần chuẩn bị các file và skill liên quan trước khi chạy. Không phù hợp chạy trực tiếp trên Windows."
+      ],
+      "stars": 1805,
+      "createdAt": "2026-10-24T08:44:36Z",
+      "pushedAt": "2026-11-05T13:09:56Z",
+      "license": "MIT",
+      "path": "skills/ship/build-and-verify",
+      "files": 4,
+      "skipped": [],
+      "coreSha256": "0b5bcb4c27917b9b97aa049e35ed48a7b2a9c21028dd1573099c0c456b67d656",
+      "status": "review-required",
+      "compatibility": "unchecked",
+      "idempotence": "unchanged"
+    },
+    {
+      "id": "ux-design",
+      "repo": "daveebbelaar/bama",
+      "sha": "22dc792ea040a35270c219c669f626594267aa1f",
+      "vi": "Rà soát UX một tính năng macOS: tên gọi, luồng thao tác, cách mở giao diện, trạng thái, câu chữ và khả năng tiếp cận.",
+      "aliases": [
+        "Rà soát UX macOS",
+        "Thiết kế luồng thao tác"
+      ],
+      "needs": [
+        "macOS SwiftUI project for implementation; SKILL.md:3",
+        "VoiceOver and Accessibility Inspector for runtime audit; SKILL.md accessibility section"
+      ],
+      "notes": [
+        "Đầu ra là UX block và glossary; chưa kiểm tra VoiceOver hoặc giao diện thật."
+      ],
+      "stars": 1805,
+      "createdAt": "2026-10-24T08:44:36Z",
+      "pushedAt": "2026-11-05T13:09:56Z",
+      "license": "MIT",
+      "path": "skills/design/ux-design",
+      "files": 7,
+      "skipped": [],
+      "coreSha256": "01c31aec1b244c0504e82745d2642e503eb7562a5ab859752b41dac277c1c3ca",
+      "status": "review-required",
+      "compatibility": "unchecked",
+      "idempotence": "unchanged"
+    },
+    {
+      "id": "find-reverse-engineered",
+      "repo": "alexgaoth/awesome-reverse-engineered",
+      "sha": "80f551625282c47c2984bde35280c32d0aa4be58",
+      "vi": "Tìm dự án mã nguồn mở reverse engineering phù hợp cho ứng dụng, giao thức hoặc định dạng thiếu API chính thức; đối chiếu license và hoạt động.",
+      "aliases": [
+        "Tìm công cụ reverse engineering",
+        "Tra cứu giao thức"
+      ],
+      "needs": [
+        "Python 3 standard library; SKILL.md tool description and scripts/re_index.py imports",
+        "Network access to external index and GitHub; scripts/re_index.py",
+        "Filesystem cache ~/.cache/awesome-reverse-engineered; SKILL.md tool description"
+      ],
+      "quarantine": true,
+      "notes": [
+        "Core có ví dụ curl tải script từ nhánh main rồi pipe vào python3. Đây là đường tải mã chưa pin; không chạy. Chỉ giữ byte để duyệt thủ công.",
+        "Script có mạng, cache và khả năng clone repo; không có hành động nào trong số đó được thực thi trong đợt tuyển chọn.",
+        "Manual review: scripts/re_index.py github_readme() reads GITHUB_TOKEN or invokes gh auth token, then sets Authorization for api.github.com. load() downloads a mutable main-branch index, writes a user-home cache, and clone uses git subprocess with the chosen URL. No execution performed; scanner does not recognize curl | python3, so quarantine is manual."
+      ],
+      "stars": 1380,
+      "createdAt": "2026-10-11T17:30:10Z",
+      "pushedAt": "2026-11-13T14:56:08Z",
+      "license": "MIT",
+      "path": "plugin/skills/find-reverse-engineered",
+      "files": 3,
+      "skipped": [],
+      "coreSha256": "1098f0f4b5449dd0925f03dfeec912fc724bf25ef29a04346a417f66e32885ef",
+      "status": "quarantined",
+      "compatibility": "unchecked",
+      "idempotence": "unchanged"
+    },
+    {
+      "id": "new-term-radar",
+      "repo": "zhuyansen/new-term-radar",
+      "sha": "fe67ff1acab728141644a4a9741295469b4feee6",
+      "vi": "Thu thập tên mô hình và sản phẩm AI mới rồi ưu tiên từ khóa theo dữ liệu nguồn; cần Python, gói CLI và khóa API có phí.",
+      "aliases": [
+        "Radar thuật ngữ AI",
+        "Nghiên cứu từ khóa mới"
+      ],
+      "needs": [
+        "Python >=3.10 and uv/uvx or pip; SKILL.md Before you run anything step 1",
+        "new-term-radar==0.6.1 external PyPI package, not bundled; SKILL.md Before you run anything step 1",
+        "AISA_API_KEY required; SKILL.md Before you run anything step 3",
+        "Optional TRUSTMRR_API_KEY and GOANYAPI_API_KEY; SKILL.md Before you run anything steps 4-5"
+      ],
+      "quarantine": true,
+      "notes": [
+        "Gói skill chỉ có hướng dẫn, không có runtime CLI hoặc các skill ai-listening/seo-new-keywords-research đi kèm. PyPI package và API ngoài chưa xác minh.",
+        "Có API tính phí và liên kết giới thiệu; phải duyệt chi phí, dịch vụ và quyền riêng tư trước khi kích hoạt. Không thu thập khóa trong đợt này."
+      ],
+      "stars": 2171,
+      "createdAt": "2026-10-12T07:11:01Z",
+      "pushedAt": "2026-11-02T23:42:54Z",
+      "license": "MIT",
+      "path": "skills/new-term-radar",
+      "files": 2,
+      "skipped": [],
+      "coreSha256": "ccbc6791aa9e36ed7b6aded9f84e4d746217f45bbd4d6a7b70ba561839b0de05",
+      "status": "quarantined",
+      "compatibility": "incompatible",
+      "idempotence": "unchanged"
+    }
+  ]
+}

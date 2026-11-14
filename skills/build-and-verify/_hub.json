@@ -1,0 +1,17 @@
+{
+  "repository": "daveebbelaar/bama",
+  "stars": 1805,
+  "createdAt": "2026-10-24T08:44:36Z",
+  "pushedAt": "2026-11-05T13:09:56Z",
+  "statsCheckedAt": "2026-11-14T01:04:03.877Z",
+  "license": "MIT",
+  "addedAt": "2026-11-14T01:04:03.877Z",
+  "batchDate": "2026-11-14",
+  "commit": "22dc792ea040a35270c219c669f626594267aa1f",
+  "path": "skills/ship/build-and-verify",
+  "language": "hybrid",
+  "version": "22dc792ea040",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-14T01:04:03.878Z"
+}
