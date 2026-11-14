@@ -1,0 +1,205 @@
+{
+  "repository": "storytold/craft-anything",
+  "commit": "8374ad71544f2cc44698ea74ef990aa31600bac6",
+  "path": "crates/setup/src",
+  "verified": true,
+  "coreSha256": "67af4e9bd3658d277eb057789bdff0d60fbae8df94995d18e444546f1ae1f529",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "67af4e9bd3658d277eb057789bdff0d60fbae8df94995d18e444546f1ae1f529",
+      "executable": false,
+      "upstreamPath": "crates/setup/src/skill.md"
+    },
+    {
+      "path": "references/recovery.md",
+      "sha256": "f983ea2dfb9ea0706fcc49fe274964d79f84eda68cf0fc58e60541eb16376a3a",
+      "executable": false,
+      "upstreamPath": "crates/setup/src/skill_recovery.md"
+    },
+    {
+      "path": "LICENSE-MIT",
+      "sha256": "777b5f0c65bd9c289cb234e32857b594745d5c76d613034870aa05bd00d32622",
+      "executable": false,
+      "upstreamPath": "LICENSE-MIT"
+    },
+    {
+      "path": "LICENSE-APACHE",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "executable": false,
+      "upstreamPath": "LICENSE-APACHE"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "16958e6200bd35164e2cab1dbfa3120d48123163dadc2c5b72c6c26ffb493d82",
+      "executable": false,
+      "upstreamPath": "NOTICE"
+    },
+    {
+      "path": "ATTRIBUTION.md",
+      "sha256": "277ac4c86c7889bfe5dab9a7321954de1e7ace36311c4bd36008dd25cc4b0265",
+      "executable": false,
+      "upstreamPath": "ATTRIBUTION.md"
+    },
+    {
+      "path": "upstream-evidence/README.md",
+      "sha256": "888315ba70b9192dbc7223fb40dd20ca6428230119ad05b3e80bd6c5ee43da12",
+      "executable": false,
+      "upstreamPath": "README.md"
+    },
+    {
+      "path": "upstream-evidence/Cargo.lock",
+      "sha256": "7ba39014d3cfd196cf1349abc6a94acde884b1bc9617eb6babb64a41a6611a84",
+      "executable": false,
+      "upstreamPath": "Cargo.lock"
+    },
+    {
+      "path": "upstream-evidence/crates/setup/src/skill.rs",
+      "sha256": "3807457626178f46f227adbbf400d88796da618d751d44f11268c31c2dea17cf",
+      "executable": false,
+      "upstreamPath": "crates/setup/src/skill.rs"
+    },
+    {
+      "path": "upstream-evidence/crates/engines/src/lib.rs",
+      "sha256": "119868cdb40c3d0413080f6293d8500b68e795e5e09e1b7ee03f8924624fdce0",
+      "executable": false,
+      "upstreamPath": "crates/engines/src/lib.rs"
+    },
+    {
+      "path": "upstream-evidence/crates/engines/src/table.rs",
+      "sha256": "9c2c9abaf2d4554f1c14a6ef1186d0ae927c1a1ed59da7d9725618f7f052a53d",
+      "executable": false,
+      "upstreamPath": "crates/engines/src/table.rs"
+    },
+    {
+      "path": "upstream-evidence/Cargo.toml",
+      "sha256": "887f2804724ced524732bd9833d6ddd5eb7e6549921e93bba2d60d6491d1e649",
+      "executable": false,
+      "upstreamPath": "Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/apps/craft-anything-cli/Cargo.toml",
+      "sha256": "7aa523658f2d41906cc792291791b7978af334872522ed72a77a2282759db50b",
+      "executable": false,
+      "upstreamPath": "apps/craft-anything-cli/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/apps/craft-anything-web/Cargo.toml",
+      "sha256": "bd5bab65cc92ba3557ebf92d7dd18d5253c0eb1e33b47e2af980e4ce58bc5e95",
+      "executable": false,
+      "upstreamPath": "apps/craft-anything-web/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/apps/craft-anything/Cargo.toml",
+      "sha256": "6248f275de66798109e3230e8f5d966a01e5ee47a35fe0468cd9f6b486c86ad2",
+      "executable": false,
+      "upstreamPath": "apps/craft-anything/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/crates/ai/Cargo.toml",
+      "sha256": "bdcddf587ff42a28b396728e1a4d9411e186b7a578ca622f59ffb2de6d14607a",
+      "executable": false,
+      "upstreamPath": "crates/ai/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/crates/analysis/Cargo.toml",
+      "sha256": "cd6219c95e8ca8833a073759e975e14b85462b81480be45c28de32c6404d156f",
+      "executable": false,
+      "upstreamPath": "crates/analysis/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/crates/disasm/Cargo.toml",
+      "sha256": "1bc59c6efe35f62051893cd9da9e6e02db95b401bc5d2f470929c64684939c93",
+      "executable": false,
+      "upstreamPath": "crates/disasm/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/crates/engine/Cargo.toml",
+      "sha256": "280a2ef40b1caa957855dffa21fe28771f4688fbbb6aa48041b711f96c0c3999",
+      "executable": false,
+      "upstreamPath": "crates/engine/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/crates/engines/Cargo.toml",
+      "sha256": "dd3ea48037da822b938fec19af3b35e0131a7126fc600733e3af7aca77045e6e",
+      "executable": false,
+      "upstreamPath": "crates/engines/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/crates/evidence/Cargo.toml",
+      "sha256": "5545505174d9b1f1b69bceb2e5664c8bfbc028107adcaf2f6f67604302bbbed4",
+      "executable": false,
+      "upstreamPath": "crates/evidence/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/crates/formats/Cargo.toml",
+      "sha256": "668ccbf2500bcccb83bbc0c56cb6799ad14c3d8708f60e15eb665e36758ca7a8",
+      "executable": false,
+      "upstreamPath": "crates/formats/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/crates/js/Cargo.toml",
+      "sha256": "5a128cadacd00570cd3937d2ec28530d1459cc3c25443bcfa66fee69c7199bf0",
+      "executable": false,
+      "upstreamPath": "crates/js/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/crates/mcp/Cargo.toml",
+      "sha256": "9ff37aff26e1f63ccfe1e51b3cb8115bd8844611d810e890a89ff719ff3c4685",
+      "executable": false,
+      "upstreamPath": "crates/mcp/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/crates/platform/Cargo.toml",
+      "sha256": "dd83671caa5243bedd0a3b09296a436d6828f371a7580535f85d1c396256b365",
+      "executable": false,
+      "upstreamPath": "crates/platform/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/crates/setup/Cargo.toml",
+      "sha256": "910077f9f9ff64f166590cfa1a533cd568c7cfbc35946504be0f9666f1673006",
+      "executable": false,
+      "upstreamPath": "crates/setup/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/crates/testkit/Cargo.toml",
+      "sha256": "a54e5be4e24b56f7659afeecf597326c17c1441ee3e3cea99ceebfbc803ab3fc",
+      "executable": false,
+      "upstreamPath": "crates/testkit/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/crates/ui-egui/Cargo.toml",
+      "sha256": "b948957b4dea8e6b2229f7e3a1244ee727b1b8c576b2ecf7e46dcbc06442a6c3",
+      "executable": false,
+      "upstreamPath": "crates/ui-egui/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/examples/wasm-plugin-readme-check/Cargo.toml",
+      "sha256": "d74a041f3f59c59f05596f6a2c3d94bbc85d914719cd744bc102686bccd2b4d1",
+      "executable": false,
+      "upstreamPath": "examples/wasm-plugin-readme-check/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/examples/wasm-plugin-wordcount/Cargo.toml",
+      "sha256": "8daf25460fcf41706e2dd7ea6fe1a95e38ec596285a465b4e9e44fd064dff604",
+      "executable": false,
+      "upstreamPath": "examples/wasm-plugin-wordcount/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/vendor/wgpu-hal/Cargo.toml",
+      "sha256": "d31a0d4da70d9011897483e87a1eebc43fbc112c491756fa0d271d946a42b59c",
+      "executable": false,
+      "upstreamPath": "vendor/wgpu-hal/Cargo.toml"
+    },
+    {
+      "path": "upstream-evidence/xtask/Cargo.toml",
+      "sha256": "83c7e485eb59545f24f377ef8736d5453a210d64696821450f6cce5b15d1f96a",
+      "executable": false,
+      "upstreamPath": "xtask/Cargo.toml"
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/craft-anything",
+  "coreOrigin": "upstream-embedded",
+  "distributionMappingEvidence": "crates/setup/src/skill.rs:22-23"
+}

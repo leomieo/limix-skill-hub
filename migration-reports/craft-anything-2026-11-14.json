@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-11-14T10:50:37.228Z",
+  "source": "storytold/craft-anything",
+  "commit": "8374ad71544f2cc44698ea74ef990aa31600bac6",
+  "coreSha256": "67af4e9bd3658d277eb057789bdff0d60fbae8df94995d18e444546f1ae1f529",
+  "distributionMapping": "crates/setup/src/skill.rs::files(); embedded source files mapped without editing bytes",
+  "sourceFiles": 32,
+  "checks": {
+    "upstreamByteHashes": "PASS",
+    "hybridIntegrity": "PASS",
+    "idempotentSkillSync": "PASS",
+    "idempotentCatalog": "PASS",
+    "existingCatalogEntriesUnchanged": "PASS",
+    "readmeExactlyTenItems": "PASS",
+    "repositoryTests": "24 PASS; 0 FAIL",
+    "globalHybridVerification": "52 PASS; 0 errors",
+    "stagedSourceHashes": "32/32 PASS",
+    "rollbackInversePatchExactBaselineTree": "PASS in isolated Git index"
+  },
+  "requirements": {
+    "required": [
+      "craft-anything MCP / craft-anything-cli"
+    ],
+    "buildOnly": "Rust >=1.97, Cargo; egui/eframe for desktop; 89 Cargo modules / 267 declarations with scope and source lines in references/requirements.review.json",
+    "optional": "18 engines recorded with source line evidence; select only for relevant workflows",
+    "missingPackageFiles": [],
+    "applicationBinaryIncluded": false
+  },
+  "security": "quarantined",
+  "compatibility": "unchecked",
+  "backup": "Pre-change Git bundle saved outside repository; byte-preserved source cache and pre-migration snapshot kept locally. Use Git revert for published rollback; no reset or force push.",
+  "limitations": [
+    "Static checks only. No upstream script, setup, build, binary, target program or provider was executed.",
+    "Cargo manifests and lockfile are inert evidence, not a complete build distribution. Full source is available at the pinned upstream commit.",
+    "Hub scanner does not parse Cargo declarations; explicit capability summaries and references/requirements.review.json supplement it. Limix Bot application ingestion/display was not tested.",
+    "No performance, security-runtime, model or provider benchmark claims."
+  ]
+}

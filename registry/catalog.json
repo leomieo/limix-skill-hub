@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "hub": "leomieo/limix-skill-hub",
-  "count": 51,
+  "count": 52,
   "skills": [
     {
       "id": "agent-autoloop",
@@ -12999,6 +12999,776 @@
         "Giấy phép lạ, cần xem lại điều khoản."
       ],
       "last_checked": "2026-11-13T09:22:43.610Z",
+      "area": "quarantine"
+    },
+    {
+      "id": "craft-anything",
+      "name": "craft-anything",
+      "description": "Investigate how shipped software works (programs, apps, packages, firmware, web bundles) with evidence-backed answers through the Craft Anything MCP tools, keeping a durable brief, plan, hypotheses, findings and handoff in the project.",
+      "description_vi": "Điều tra chương trình, ứng dụng, firmware và web bundle đã phát hành bằng Craft Anything MCP; ghi kế hoạch, giả thuyết, bằng chứng và bàn giao. Cần CLI/MCP bên ngoài; chưa kiểm tra môi trường thực tế.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "craft-anything",
+        "version": "8374ad71544f",
+        "source": {
+          "url": "https://github.com/storytold/craft-anything",
+          "commit": "8374ad71544f2cc44698ea74ef990aa31600bac6",
+          "sha256": "67af4e9bd3658d277eb057789bdff0d60fbae8df94995d18e444546f1ae1f529",
+          "license": "MIT OR Apache-2.0"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Điều tra chương trình, ứng dụng, firmware và web bundle đã phát hành bằng Craft Anything MCP; ghi kế hoạch, giả thuyết, bằng chứng và bàn giao. Cần CLI/MCP bên ngoài; chưa kiểm tra môi trường thực tế.",
+          "aliases": [
+            "Điều tra phần mềm",
+            "Phân tích ứng dụng đã phát hành"
+          ],
+          "keywords": [
+            "craft-anything",
+            "reverse engineering",
+            "MCP",
+            "evidence",
+            "điều tra phần mềm",
+            "phân tích nhị phân",
+            "ứng dụng",
+            "firmware"
+          ],
+          "examples": [
+            "Phân tích cấu trúc một ứng dụng đã phát hành và trích dẫn bằng chứng cho từng kết luận.",
+            "So sánh hai phiên bản chương trình; chỉ phân tích tĩnh, không chạy chương trình."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "67af4e9bd3658d277eb057789bdff0d60fbae8df94995d18e444546f1ae1f529"
+        },
+        "requiredCapabilities": [
+          "Android platform tools (adb); upstream-evidence/crates/engines/src/table.rs:417 (optional external engine; selected workflows only)",
+          "Apktool; upstream-evidence/crates/engines/src/table.rs:439 (optional external engine; selected workflows only)",
+          "Binwalk; upstream-evidence/crates/engines/src/table.rs:476 (optional external engine; selected workflows only)",
+          "Cargo module arboard; upstream-evidence/Cargo.toml:45 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module base64; upstream-evidence/crates/engine/Cargo.toml:34 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module bitflags; upstream-evidence/Cargo.toml:35 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module bzip2-rs; upstream-evidence/crates/formats/Cargo.toml:30 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module clap; upstream-evidence/apps/craft-anything-cli/Cargo.toml:23 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-ai; upstream-evidence/Cargo.toml:22 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-analysis; upstream-evidence/Cargo.toml:18 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-disasm; upstream-evidence/Cargo.toml:16 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-engine; upstream-evidence/Cargo.toml:21 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-engines; upstream-evidence/Cargo.toml:20 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-evidence; upstream-evidence/Cargo.toml:14 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-formats; upstream-evidence/Cargo.toml:15 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-js; upstream-evidence/Cargo.toml:17 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-mcp; upstream-evidence/Cargo.toml:23 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-platform; upstream-evidence/Cargo.toml:19 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-setup; upstream-evidence/Cargo.toml:24 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-testkit; upstream-evidence/Cargo.toml:26 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-ui-egui; upstream-evidence/Cargo.toml:25 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-update; upstream-evidence/crates/ui-egui/Cargo.toml:30 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module ctrlc; upstream-evidence/apps/craft-anything-cli/Cargo.toml:24 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module dirs; upstream-evidence/crates/ai/Cargo.toml:25 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module eframe; upstream-evidence/Cargo.toml:39 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module egui; upstream-evidence/Cargo.toml:40 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module egui_extras; upstream-evidence/Cargo.toml:41 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module egui_kittest; upstream-evidence/Cargo.toml:42 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module hex; upstream-evidence/Cargo.toml:34 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module iced-x86; upstream-evidence/Cargo.toml:61 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module image; upstream-evidence/crates/engine/Cargo.toml:37 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module keyring; upstream-evidence/crates/ai/Cargo.toml:28 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module log; upstream-evidence/Cargo.toml:37 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module lzma-rs; upstream-evidence/crates/formats/Cargo.toml:29 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module miniz_oxide; upstream-evidence/Cargo.toml:57 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module muda; upstream-evidence/crates/ui-egui/Cargo.toml:42 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module nix; upstream-evidence/crates/platform/Cargo.toml:34 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module objc2-core-graphics; upstream-evidence/crates/platform/Cargo.toml:31 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module object; upstream-evidence/Cargo.toml:60 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module oxc_allocator; upstream-evidence/Cargo.toml:49 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module oxc_ast; upstream-evidence/Cargo.toml:50 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module oxc_ast_visit; upstream-evidence/Cargo.toml:51 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module oxc_codegen; upstream-evidence/Cargo.toml:55 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module oxc_parser; upstream-evidence/Cargo.toml:52 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module oxc_semantic; upstream-evidence/Cargo.toml:56 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module oxc_span; upstream-evidence/Cargo.toml:53 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module oxc_syntax; upstream-evidence/Cargo.toml:54 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module p256; upstream-evidence/crates/formats/Cargo.toml:25 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module p384; upstream-evidence/crates/formats/Cargo.toml:26 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module png; upstream-evidence/crates/engine/Cargo.toml:35 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module pollster; upstream-evidence/crates/ui-egui/Cargo.toml:36 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module portable-pty; upstream-evidence/crates/platform/Cargo.toml:21 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module proc-macro2; upstream-evidence/xtask/Cargo.toml:12 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module process-wrap; upstream-evidence/crates/platform/Cargo.toml:19 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module proptest; upstream-evidence/Cargo.toml:47 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module rand; upstream-evidence/crates/testkit/Cargo.toml:21 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module rayon; upstream-evidence/Cargo.toml:46 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module rcgen; upstream-evidence/crates/engines/Cargo.toml:36 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module regex; upstream-evidence/Cargo.toml:67 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module rfd; upstream-evidence/Cargo.toml:43 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module rsa; upstream-evidence/crates/formats/Cargo.toml:24 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module rustc-demangle; upstream-evidence/Cargo.toml:64 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module rustls; upstream-evidence/crates/engines/Cargo.toml:37 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module ruzstd; upstream-evidence/crates/formats/Cargo.toml:31 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module schemars; upstream-evidence/Cargo.toml:36 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module semver; upstream-evidence/crates/formats/Cargo.toml:19 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module serde; upstream-evidence/Cargo.toml:30 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module serde_json; upstream-evidence/Cargo.toml:31 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module serde_path_to_error; upstream-evidence/Cargo.toml:32 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module sha1; upstream-evidence/crates/engine/Cargo.toml:44 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module sha2; upstream-evidence/Cargo.toml:33 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module syn; upstream-evidence/xtask/Cargo.toml:11 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module sys-locale; upstream-evidence/crates/ui-egui/Cargo.toml:38 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module tempfile; upstream-evidence/apps/craft-anything-cli/Cargo.toml:30 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module thiserror; upstream-evidence/Cargo.toml:29 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module toml; upstream-evidence/Cargo.toml:38 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module toml_edit; upstream-evidence/crates/setup/Cargo.toml:23 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module ureq; upstream-evidence/crates/ai/Cargo.toml:24 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module vt100; upstream-evidence/crates/platform/Cargo.toml:22 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module wasm-bindgen-futures; upstream-evidence/apps/craft-anything-web/Cargo.toml:31 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module wasm-bindgen; upstream-evidence/apps/craft-anything-web/Cargo.toml:30 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module wasmparser; upstream-evidence/Cargo.toml:65 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module wasmprinter; upstream-evidence/Cargo.toml:66 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module wasmtime; upstream-evidence/crates/engines/Cargo.toml:30 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module web-sys; upstream-evidence/apps/craft-anything-web/Cargo.toml:32 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module windows; upstream-evidence/crates/platform/Cargo.toml:38 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module winresource; upstream-evidence/apps/craft-anything-cli/Cargo.toml:34 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module wit-bindgen; upstream-evidence/examples/wasm-plugin-readme-check/Cargo.toml:16 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module xcap; upstream-evidence/crates/platform/Cargo.toml:27 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module yaml-rust2; upstream-evidence/crates/setup/Cargo.toml:24 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module yaxpeax-arch; upstream-evidence/Cargo.toml:63 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module yaxpeax-arm; upstream-evidence/Cargo.toml:62 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Complete Cargo module declarations, dev/build/optional/workspace scopes and source lines: references/requirements.review.json; resolved versions: upstream-evidence/Cargo.lock (external application source build only)",
+          "Frida; upstream-evidence/crates/engines/src/table.rs:472 (optional external engine; selected workflows only)",
+          "GDB; upstream-evidence/crates/engines/src/table.rs:473 (optional external engine; selected workflows only)",
+          "Ghidra; upstream-evidence/crates/engines/src/table.rs:406 (optional external engine; selected workflows only)",
+          "ILSpy command line (ilspycmd); upstream-evidence/crates/engines/src/table.rs:478 (optional external engine; selected workflows only)",
+          "JADX; upstream-evidence/crates/engines/src/table.rs:428 (optional external engine; selected workflows only)",
+          "Java runtime; upstream-evidence/crates/engines/src/table.rs:481 (optional external engine; selected workflows only)",
+          "LLDB; upstream-evidence/crates/engines/src/table.rs:474 (optional external engine; selected workflows only)",
+          "Optional external engines/platform pins; upstream-evidence/crates/engines/src/table.rs (per workflow; not all required)",
+          "Rizin; upstream-evidence/crates/engines/src/table.rs:494 (optional external engine; selected workflows only)",
+          "Rust >=1.97 and Cargo; upstream-evidence/Cargo.toml:9; upstream-evidence/README.md:199-212 (external application source build only)",
+          "Unblob; upstream-evidence/crates/engines/src/table.rs:477 (optional external engine; selected workflows only)",
+          "Vineflower; upstream-evidence/crates/engines/src/table.rs:506 (optional external engine; selected workflows only)",
+          "Wireshark (tshark); upstream-evidence/crates/engines/src/table.rs:490 (optional external engine; selected workflows only)",
+          "a Chromium-based browser; upstream-evidence/crates/engines/src/table.rs:450 (optional external engine; selected workflows only)",
+          "browser [mention-hint]",
+          "craft-anything MCP server; SKILL.md:16-38 (required external application, live tool schemas)",
+          "craft-anything-cli; SKILL.md:20; references/recovery.md:6-19 (external CLI / MCP host)",
+          "egui / eframe; upstream-evidence/Cargo.toml:39-40 (external desktop application build only)",
+          "ghidra [mention-hint]",
+          "git [mention-hint]",
+          "java [mention-hint]",
+          "mitmproxy (mitmdump); upstream-evidence/crates/engines/src/table.rs:475 (optional external engine; selected workflows only)",
+          "node [mention-hint]",
+          "objdump (GNU binutils or LLVM); upstream-evidence/crates/engines/src/table.rs:491 (optional external engine; selected workflows only)",
+          "python [mention-hint]",
+          "rtl_433; upstream-evidence/crates/engines/src/table.rs:503 (optional external engine; selected workflows only)",
+          "rust [mention-hint]"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell",
+          "network"
+        ],
+        "syncedAt": "2026-11-14T10:48:53.899Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "upstream-evidence/README.md: privilege (medium)",
+            "External CLI/MCP and optional engines are not installed or runtime-tested by this curation. Explicit review required before activation."
+          ]
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "The complete two-file installed skill is retained byte-for-byte using crates/setup/src/skill.rs::files(): skill.md -> SKILL.md, skill_recovery.md -> references/recovery.md.",
+            "upstream-evidence contains inert provenance/build evidence only. It is not a buildable source distribution. The external Craft Anything CLI/MCP application must be installed separately; no missing skill package files were identified.",
+            "Required: craft-anything MCP tools exposed by craft-anything-cli mcp. Use live schemas; toolsets and Clean room/Deep restrictions are controlled by upstream.",
+            "Rust >=1.97 and Cargo are for building the external application from its full source, not prerequisites when using a prebuilt binary. Cargo manifests/lock retain full build dependency evidence; Hub scanner does not parse Cargo.",
+            "Optional external engines depend on selected workflows (see references/requirements.review.json and upstream-evidence/crates/engines/src/table.rs). No scripts, setup, install, build, target program, tool server or provider were executed.",
+            "Quarantined pending review. Static integrity and metadata do not establish runtime safety, availability or compatibility."
+          ]
+        }
+      },
+      "aliases": [
+        "Điều tra phần mềm",
+        "Phân tích ứng dụng đã phát hành"
+      ],
+      "keywords": [
+        "craft-anything",
+        "reverse engineering",
+        "MCP",
+        "evidence",
+        "điều tra phần mềm",
+        "phân tích nhị phân",
+        "ứng dụng",
+        "firmware"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "8374ad71544f",
+      "source": {
+        "repository": "storytold/craft-anything",
+        "commit": "8374ad71544f2cc44698ea74ef990aa31600bac6",
+        "path": "crates/setup/src"
+      },
+      "stars": 31913,
+      "created_at": "2026-10-31T14:50:00Z",
+      "pushed_at": "2026-11-14T10:42:47Z",
+      "stats_checked": "2026-11-14",
+      "license": "MIT OR Apache-2.0",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 19,
+        "security": 15,
+        "compatibility": 10,
+        "testing": 0,
+        "maintenance": 8,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE-APACHE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE-MIT"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "NOTICE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "upstream-evidence/Cargo.lock"
+        },
+        {
+          "rule": "privilege",
+          "severity": "medium",
+          "file": "upstream-evidence/README.md",
+          "line": 203
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "java",
+            "installerId": "jdk"
+          },
+          {
+            "name": "ghidra",
+            "installerId": "ghidra"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "jdk",
+        "ghidra"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "Android platform tools (adb); upstream-evidence/crates/engines/src/table.rs:417 (optional external engine; selected workflows only)",
+          "Apktool; upstream-evidence/crates/engines/src/table.rs:439 (optional external engine; selected workflows only)",
+          "Binwalk; upstream-evidence/crates/engines/src/table.rs:476 (optional external engine; selected workflows only)",
+          "Cargo module arboard; upstream-evidence/Cargo.toml:45 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module base64; upstream-evidence/crates/engine/Cargo.toml:34 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module bitflags; upstream-evidence/Cargo.toml:35 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module bzip2-rs; upstream-evidence/crates/formats/Cargo.toml:30 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module clap; upstream-evidence/apps/craft-anything-cli/Cargo.toml:23 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-ai; upstream-evidence/Cargo.toml:22 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-analysis; upstream-evidence/Cargo.toml:18 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-disasm; upstream-evidence/Cargo.toml:16 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-engine; upstream-evidence/Cargo.toml:21 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-engines; upstream-evidence/Cargo.toml:20 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-evidence; upstream-evidence/Cargo.toml:14 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-formats; upstream-evidence/Cargo.toml:15 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-js; upstream-evidence/Cargo.toml:17 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-mcp; upstream-evidence/Cargo.toml:23 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-platform; upstream-evidence/Cargo.toml:19 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-setup; upstream-evidence/Cargo.toml:24 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-testkit; upstream-evidence/Cargo.toml:26 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-anything-ui-egui; upstream-evidence/Cargo.toml:25 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module craft-update; upstream-evidence/crates/ui-egui/Cargo.toml:30 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module ctrlc; upstream-evidence/apps/craft-anything-cli/Cargo.toml:24 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module dirs; upstream-evidence/crates/ai/Cargo.toml:25 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module eframe; upstream-evidence/Cargo.toml:39 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module egui; upstream-evidence/Cargo.toml:40 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module egui_extras; upstream-evidence/Cargo.toml:41 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module egui_kittest; upstream-evidence/Cargo.toml:42 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module hex; upstream-evidence/Cargo.toml:34 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module iced-x86; upstream-evidence/Cargo.toml:61 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module image; upstream-evidence/crates/engine/Cargo.toml:37 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module keyring; upstream-evidence/crates/ai/Cargo.toml:28 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module log; upstream-evidence/Cargo.toml:37 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module lzma-rs; upstream-evidence/crates/formats/Cargo.toml:29 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module miniz_oxide; upstream-evidence/Cargo.toml:57 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module muda; upstream-evidence/crates/ui-egui/Cargo.toml:42 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module nix; upstream-evidence/crates/platform/Cargo.toml:34 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module objc2-core-graphics; upstream-evidence/crates/platform/Cargo.toml:31 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module object; upstream-evidence/Cargo.toml:60 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module oxc_allocator; upstream-evidence/Cargo.toml:49 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module oxc_ast; upstream-evidence/Cargo.toml:50 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module oxc_ast_visit; upstream-evidence/Cargo.toml:51 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module oxc_codegen; upstream-evidence/Cargo.toml:55 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module oxc_parser; upstream-evidence/Cargo.toml:52 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module oxc_semantic; upstream-evidence/Cargo.toml:56 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module oxc_span; upstream-evidence/Cargo.toml:53 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module oxc_syntax; upstream-evidence/Cargo.toml:54 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module p256; upstream-evidence/crates/formats/Cargo.toml:25 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module p384; upstream-evidence/crates/formats/Cargo.toml:26 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module png; upstream-evidence/crates/engine/Cargo.toml:35 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module pollster; upstream-evidence/crates/ui-egui/Cargo.toml:36 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module portable-pty; upstream-evidence/crates/platform/Cargo.toml:21 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module proc-macro2; upstream-evidence/xtask/Cargo.toml:12 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module process-wrap; upstream-evidence/crates/platform/Cargo.toml:19 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module proptest; upstream-evidence/Cargo.toml:47 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module rand; upstream-evidence/crates/testkit/Cargo.toml:21 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module rayon; upstream-evidence/Cargo.toml:46 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module rcgen; upstream-evidence/crates/engines/Cargo.toml:36 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module regex; upstream-evidence/Cargo.toml:67 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module rfd; upstream-evidence/Cargo.toml:43 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module rsa; upstream-evidence/crates/formats/Cargo.toml:24 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module rustc-demangle; upstream-evidence/Cargo.toml:64 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module rustls; upstream-evidence/crates/engines/Cargo.toml:37 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module ruzstd; upstream-evidence/crates/formats/Cargo.toml:31 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module schemars; upstream-evidence/Cargo.toml:36 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module semver; upstream-evidence/crates/formats/Cargo.toml:19 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module serde; upstream-evidence/Cargo.toml:30 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module serde_json; upstream-evidence/Cargo.toml:31 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module serde_path_to_error; upstream-evidence/Cargo.toml:32 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module sha1; upstream-evidence/crates/engine/Cargo.toml:44 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module sha2; upstream-evidence/Cargo.toml:33 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module syn; upstream-evidence/xtask/Cargo.toml:11 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module sys-locale; upstream-evidence/crates/ui-egui/Cargo.toml:38 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module tempfile; upstream-evidence/apps/craft-anything-cli/Cargo.toml:30 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module thiserror; upstream-evidence/Cargo.toml:29 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module toml; upstream-evidence/Cargo.toml:38 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module toml_edit; upstream-evidence/crates/setup/Cargo.toml:23 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module ureq; upstream-evidence/crates/ai/Cargo.toml:24 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module vt100; upstream-evidence/crates/platform/Cargo.toml:22 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module wasm-bindgen-futures; upstream-evidence/apps/craft-anything-web/Cargo.toml:31 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module wasm-bindgen; upstream-evidence/apps/craft-anything-web/Cargo.toml:30 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module wasmparser; upstream-evidence/Cargo.toml:65 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module wasmprinter; upstream-evidence/Cargo.toml:66 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module wasmtime; upstream-evidence/crates/engines/Cargo.toml:30 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module web-sys; upstream-evidence/apps/craft-anything-web/Cargo.toml:32 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module windows; upstream-evidence/crates/platform/Cargo.toml:38 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module winresource; upstream-evidence/apps/craft-anything-cli/Cargo.toml:34 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module wit-bindgen; upstream-evidence/examples/wasm-plugin-readme-check/Cargo.toml:16 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module xcap; upstream-evidence/crates/platform/Cargo.toml:27 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module yaml-rust2; upstream-evidence/crates/setup/Cargo.toml:24 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module yaxpeax-arch; upstream-evidence/Cargo.toml:63 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Cargo module yaxpeax-arm; upstream-evidence/Cargo.toml:62 (external source build only; full versions/workspace/feature/dev/target scopes in references/requirements.review.json)",
+          "Complete Cargo module declarations, dev/build/optional/workspace scopes and source lines: references/requirements.review.json; resolved versions: upstream-evidence/Cargo.lock (external application source build only)",
+          "Frida; upstream-evidence/crates/engines/src/table.rs:472 (optional external engine; selected workflows only)",
+          "GDB; upstream-evidence/crates/engines/src/table.rs:473 (optional external engine; selected workflows only)",
+          "Ghidra; upstream-evidence/crates/engines/src/table.rs:406 (optional external engine; selected workflows only)",
+          "ILSpy command line (ilspycmd); upstream-evidence/crates/engines/src/table.rs:478 (optional external engine; selected workflows only)",
+          "JADX; upstream-evidence/crates/engines/src/table.rs:428 (optional external engine; selected workflows only)",
+          "Java runtime; upstream-evidence/crates/engines/src/table.rs:481 (optional external engine; selected workflows only)",
+          "LLDB; upstream-evidence/crates/engines/src/table.rs:474 (optional external engine; selected workflows only)",
+          "Optional external engines/platform pins; upstream-evidence/crates/engines/src/table.rs (per workflow; not all required)",
+          "Rizin; upstream-evidence/crates/engines/src/table.rs:494 (optional external engine; selected workflows only)",
+          "Rust >=1.97 and Cargo; upstream-evidence/Cargo.toml:9; upstream-evidence/README.md:199-212 (external application source build only)",
+          "Unblob; upstream-evidence/crates/engines/src/table.rs:477 (optional external engine; selected workflows only)",
+          "Vineflower; upstream-evidence/crates/engines/src/table.rs:506 (optional external engine; selected workflows only)",
+          "Wireshark (tshark); upstream-evidence/crates/engines/src/table.rs:490 (optional external engine; selected workflows only)",
+          "a Chromium-based browser; upstream-evidence/crates/engines/src/table.rs:450 (optional external engine; selected workflows only)",
+          "browser [mention-hint]",
+          "craft-anything MCP server; SKILL.md:16-38 (required external application, live tool schemas)",
+          "craft-anything-cli; SKILL.md:20; references/recovery.md:6-19 (external CLI / MCP host)",
+          "egui / eframe; upstream-evidence/Cargo.toml:39-40 (external desktop application build only)",
+          "ghidra [mention-hint]",
+          "git [mention-hint]",
+          "java [mention-hint]",
+          "mitmproxy (mitmdump); upstream-evidence/crates/engines/src/table.rs:475 (optional external engine; selected workflows only)",
+          "node [mention-hint]",
+          "objdump (GNU binutils or LLVM); upstream-evidence/crates/engines/src/table.rs:491 (optional external engine; selected workflows only)",
+          "python [mention-hint]",
+          "rtl_433; upstream-evidence/crates/engines/src/table.rs:503 (optional external engine; selected workflows only)",
+          "rust [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "java",
+            "installerId": "jdk"
+          },
+          {
+            "name": "ghidra",
+            "installerId": "ghidra"
+          }
+        ],
+        "detected": [
+          {
+            "name": "java",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "jdk",
+            "evidence": [
+              {
+                "file": "references/requirements.review.json",
+                "line": 3647
+              },
+              {
+                "file": "upstream-evidence/README.md",
+                "line": 191
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "upstream-evidence/README.md",
+                "line": 264
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "upstream-evidence/README.md",
+                "line": 265
+              }
+            ]
+          },
+          {
+            "name": "rust",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "ATTRIBUTION.md",
+                "line": 3
+              },
+              {
+                "file": "references/requirements.review.json",
+                "line": 28
+              },
+              {
+                "file": "upstream-evidence/Cargo.toml",
+                "line": 9
+              },
+              {
+                "file": "upstream-evidence/README.md",
+                "line": 21
+              },
+              {
+                "file": "upstream-evidence/apps/craft-anything-web/Cargo.toml",
+                "line": 17
+              },
+              {
+                "file": "upstream-evidence/crates/ai/Cargo.toml",
+                "line": 28
+              },
+              {
+                "file": "upstream-evidence/crates/engine/Cargo.toml",
+                "line": 33
+              },
+              {
+                "file": "upstream-evidence/crates/formats/Cargo.toml",
+                "line": 18
+              },
+              {
+                "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+                "line": 21
+              },
+              {
+                "file": "upstream-evidence/vendor/wgpu-hal/Cargo.toml",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 84
+              },
+              {
+                "file": "references/requirements.review.json",
+                "line": 3575
+              },
+              {
+                "file": "upstream-evidence/Cargo.toml",
+                "line": 86
+              },
+              {
+                "file": "upstream-evidence/README.md",
+                "line": 195
+              },
+              {
+                "file": "upstream-evidence/apps/craft-anything-web/Cargo.toml",
+                "line": 3
+              },
+              {
+                "file": "upstream-evidence/crates/engine/Cargo.toml",
+                "line": 32
+              },
+              {
+                "file": "upstream-evidence/crates/engines/Cargo.toml",
+                "line": 3
+              }
+            ]
+          },
+          {
+            "name": "ghidra",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "ghidra",
+            "evidence": [
+              {
+                "file": "references/requirements.review.json",
+                "line": 3539
+              },
+              {
+                "file": "upstream-evidence/README.md",
+                "line": 140
+              },
+              {
+                "file": "upstream-evidence/crates/engines/Cargo.toml",
+                "line": 3
+              }
+            ]
+          },
+          {
+            "name": "git",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "upstream-evidence/README.md",
+                "line": 209
+              }
+            ]
+          }
+        ],
+        "diagnostics": [
+          {
+            "file": "upstream-evidence/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/apps/craft-anything-cli/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/apps/craft-anything-web/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/apps/craft-anything/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/crates/ai/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/crates/analysis/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/crates/disasm/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/crates/engine/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/crates/engines/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/crates/evidence/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/crates/formats/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/crates/js/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/crates/mcp/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/crates/platform/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/crates/setup/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/crates/testkit/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/examples/wasm-plugin-readme-check/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/examples/wasm-plugin-wordcount/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/vendor/wgpu-hal/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          },
+          {
+            "file": "upstream-evidence/xtask/Cargo.toml",
+            "issue": "dependency-format-needs-manual-review"
+          }
+        ],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 29,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "ATTRIBUTION.md",
+          "LICENSE-APACHE",
+          "LICENSE-MIT",
+          "NOTICE",
+          "SKILL.md",
+          "manifest.json",
+          "references/guide.vi.md",
+          "references/recovery.md",
+          "references/requirements.review.json",
+          "upstream-evidence/Cargo.lock",
+          "upstream-evidence/Cargo.toml",
+          "upstream-evidence/README.md",
+          "upstream-evidence/apps/craft-anything-cli/Cargo.toml",
+          "upstream-evidence/apps/craft-anything-web/Cargo.toml",
+          "upstream-evidence/apps/craft-anything/Cargo.toml",
+          "upstream-evidence/crates/ai/Cargo.toml",
+          "upstream-evidence/crates/analysis/Cargo.toml",
+          "upstream-evidence/crates/disasm/Cargo.toml",
+          "upstream-evidence/crates/engine/Cargo.toml",
+          "upstream-evidence/crates/engines/Cargo.toml",
+          "upstream-evidence/crates/engines/src/lib.rs",
+          "upstream-evidence/crates/engines/src/table.rs",
+          "upstream-evidence/crates/evidence/Cargo.toml",
+          "upstream-evidence/crates/formats/Cargo.toml",
+          "upstream-evidence/crates/js/Cargo.toml",
+          "upstream-evidence/crates/mcp/Cargo.toml",
+          "upstream-evidence/crates/platform/Cargo.toml",
+          "upstream-evidence/crates/setup/Cargo.toml",
+          "upstream-evidence/crates/setup/src/skill.rs",
+          "upstream-evidence/crates/testkit/Cargo.toml",
+          "upstream-evidence/crates/ui-egui/Cargo.toml",
+          "upstream-evidence/examples/wasm-plugin-readme-check/Cargo.toml",
+          "upstream-evidence/examples/wasm-plugin-wordcount/Cargo.toml",
+          "upstream-evidence/vendor/wgpu-hal/Cargo.toml",
+          "upstream-evidence/xtask/Cargo.toml"
+        ]
+      },
+      "checksum": "f1607a29af113ad6a405b67074c026e11b1b8ffb5b46b2bdb7ff827e113d07ae",
+      "file_hashes": {
+        "ATTRIBUTION.md": "277ac4c86c7889bfe5dab9a7321954de1e7ace36311c4bd36008dd25cc4b0265",
+        "LICENSE-APACHE": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+        "LICENSE-MIT": "777b5f0c65bd9c289cb234e32857b594745d5c76d613034870aa05bd00d32622",
+        "NOTICE": "16958e6200bd35164e2cab1dbfa3120d48123163dadc2c5b72c6c26ffb493d82",
+        "SKILL.md": "67af4e9bd3658d277eb057789bdff0d60fbae8df94995d18e444546f1ae1f529",
+        "manifest.json": "fb1ae8ef70585694d7895981e8640b6f354b358019092c68722341cf241516d5",
+        "references/guide.vi.md": "759128239f7dc400af92db1fa5c6138bfbb4d14880ae2bae14335dc7627651e2",
+        "references/recovery.md": "f983ea2dfb9ea0706fcc49fe274964d79f84eda68cf0fc58e60541eb16376a3a",
+        "references/requirements.review.json": "aa10ff873701ba7dab035d01ee0dd2e675d389e46becec3d0982d7d7d7ab6e2c",
+        "upstream-evidence/Cargo.lock": "7ba39014d3cfd196cf1349abc6a94acde884b1bc9617eb6babb64a41a6611a84",
+        "upstream-evidence/Cargo.toml": "887f2804724ced524732bd9833d6ddd5eb7e6549921e93bba2d60d6491d1e649",
+        "upstream-evidence/README.md": "888315ba70b9192dbc7223fb40dd20ca6428230119ad05b3e80bd6c5ee43da12",
+        "upstream-evidence/apps/craft-anything-cli/Cargo.toml": "7aa523658f2d41906cc792291791b7978af334872522ed72a77a2282759db50b",
+        "upstream-evidence/apps/craft-anything-web/Cargo.toml": "bd5bab65cc92ba3557ebf92d7dd18d5253c0eb1e33b47e2af980e4ce58bc5e95",
+        "upstream-evidence/apps/craft-anything/Cargo.toml": "6248f275de66798109e3230e8f5d966a01e5ee47a35fe0468cd9f6b486c86ad2",
+        "upstream-evidence/crates/ai/Cargo.toml": "bdcddf587ff42a28b396728e1a4d9411e186b7a578ca622f59ffb2de6d14607a",
+        "upstream-evidence/crates/analysis/Cargo.toml": "cd6219c95e8ca8833a073759e975e14b85462b81480be45c28de32c6404d156f",
+        "upstream-evidence/crates/disasm/Cargo.toml": "1bc59c6efe35f62051893cd9da9e6e02db95b401bc5d2f470929c64684939c93",
+        "upstream-evidence/crates/engine/Cargo.toml": "280a2ef40b1caa957855dffa21fe28771f4688fbbb6aa48041b711f96c0c3999",
+        "upstream-evidence/crates/engines/Cargo.toml": "dd3ea48037da822b938fec19af3b35e0131a7126fc600733e3af7aca77045e6e",
+        "upstream-evidence/crates/engines/src/lib.rs": "119868cdb40c3d0413080f6293d8500b68e795e5e09e1b7ee03f8924624fdce0",
+        "upstream-evidence/crates/engines/src/table.rs": "9c2c9abaf2d4554f1c14a6ef1186d0ae927c1a1ed59da7d9725618f7f052a53d",
+        "upstream-evidence/crates/evidence/Cargo.toml": "5545505174d9b1f1b69bceb2e5664c8bfbc028107adcaf2f6f67604302bbbed4",
+        "upstream-evidence/crates/formats/Cargo.toml": "668ccbf2500bcccb83bbc0c56cb6799ad14c3d8708f60e15eb665e36758ca7a8",
+        "upstream-evidence/crates/js/Cargo.toml": "5a128cadacd00570cd3937d2ec28530d1459cc3c25443bcfa66fee69c7199bf0",
+        "upstream-evidence/crates/mcp/Cargo.toml": "9ff37aff26e1f63ccfe1e51b3cb8115bd8844611d810e890a89ff719ff3c4685",
+        "upstream-evidence/crates/platform/Cargo.toml": "dd83671caa5243bedd0a3b09296a436d6828f371a7580535f85d1c396256b365",
+        "upstream-evidence/crates/setup/Cargo.toml": "910077f9f9ff64f166590cfa1a533cd568c7cfbc35946504be0f9666f1673006",
+        "upstream-evidence/crates/setup/src/skill.rs": "3807457626178f46f227adbbf400d88796da618d751d44f11268c31c2dea17cf",
+        "upstream-evidence/crates/testkit/Cargo.toml": "a54e5be4e24b56f7659afeecf597326c17c1441ee3e3cea99ceebfbc803ab3fc",
+        "upstream-evidence/crates/ui-egui/Cargo.toml": "b948957b4dea8e6b2229f7e3a1244ee727b1b8c576b2ecf7e46dcbc06442a6c3",
+        "upstream-evidence/examples/wasm-plugin-readme-check/Cargo.toml": "d74a041f3f59c59f05596f6a2c3d94bbc85d914719cd744bc102686bccd2b4d1",
+        "upstream-evidence/examples/wasm-plugin-wordcount/Cargo.toml": "8daf25460fcf41706e2dd7ea6fe1a95e38ec596285a465b4e9e44fd064dff604",
+        "upstream-evidence/vendor/wgpu-hal/Cargo.toml": "d31a0d4da70d9011897483e87a1eebc43fbc112c491756fa0d271d946a42b59c",
+        "upstream-evidence/xtask/Cargo.toml": "83c7e485eb59545f24f377ef8736d5453a210d64696821450f6cce5b15d1f96a"
+      },
+      "notes": [
+        "Giấy phép lạ, cần xem lại điều khoản."
+      ],
+      "last_checked": "2026-11-14T10:48:53.899Z",
       "area": "quarantine"
     },
     {

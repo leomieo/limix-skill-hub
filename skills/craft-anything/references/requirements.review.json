@@ -1,0 +1,3701 @@
+{
+  "schemaVersion": 1,
+  "commit": "8374ad71544f2cc44698ea74ef990aa31600bac6",
+  "environmentStatus": "not-tested",
+  "autoInstall": false,
+  "analysisStatus": "static-review-required",
+  "required": [
+    {
+      "name": "craft-anything",
+      "kind": "mcp-server",
+      "evidence": {
+        "file": "SKILL.md",
+        "line": 16
+      }
+    },
+    {
+      "name": "craft-anything-cli",
+      "kind": "tool",
+      "scope": "MCP host / recovery CLI",
+      "evidence": {
+        "file": "SKILL.md",
+        "line": 20
+      }
+    }
+  ],
+  "buildOnly": [
+    {
+      "name": "Rust",
+      "version": ">=1.97",
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 9
+      }
+    },
+    {
+      "name": "Cargo",
+      "evidence": {
+        "file": "upstream-evidence/README.md",
+        "line": 211
+      }
+    }
+  ],
+  "optionalEnginesEvidence": {
+    "file": "upstream-evidence/crates/engines/src/table.rs",
+    "explanation": "Every ENGINES table entry is preserved verbatim, including platform pins and manual installation notes. These are workflow-specific optional tools, not mandatory dependencies for every skill invocation."
+  },
+  "frameworks": [
+    {
+      "name": "egui / eframe",
+      "scope": "external desktop app build only",
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 39
+      }
+    }
+  ],
+  "cargoDeclarations": [
+    {
+      "name": "craft-anything-evidence",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ path = \"crates/evidence\" }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 14,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-formats",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ path = \"crates/formats\" }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 15,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-disasm",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ path = \"crates/disasm\" }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 16,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-js",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ path = \"crates/js\" }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-analysis",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ path = \"crates/analysis\" }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 18,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-platform",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ path = \"crates/platform\" }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 19,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-engines",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ path = \"crates/engines\" }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 20,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-engine",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ path = \"crates/engine\" }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 21,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-ai",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ path = \"crates/ai\" }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 22,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-mcp",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ path = \"crates/mcp\" }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 23,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-setup",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ path = \"crates/setup\" }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 24,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-ui-egui",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ path = \"crates/ui-egui\" }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 25,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-testkit",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ path = \"crates/testkit\" }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 26,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "thiserror",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"2\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 29,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "serde",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ version = \"1\", features = [\"derive\", \"rc\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 30,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"1\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 31,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_path_to_error",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.1\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 32,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "sha2",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.10\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 33,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "hex",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.4\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 34,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "bitflags",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ version = \"2\", features = [\"serde\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 35,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "schemars",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"1\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 36,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "log",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.4\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 37,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "toml",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.9\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 38,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "eframe",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ version = \"0.36\", default-features = false }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 39,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "egui",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.36\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 40,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "egui_extras",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ version = \"0.36\", default-features = false }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 41,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "egui_kittest",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.36\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 42,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "rfd",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.17\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 43,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "arboard",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ version = \"3.6\", default-features = false, features = [\"image-data\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 45,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "rayon",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"1\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 46,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "proptest",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"1\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 47,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "oxc_allocator",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.153\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 49,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "oxc_ast",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.153\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 50,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "oxc_ast_visit",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.153\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 51,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "oxc_parser",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.153\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 52,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "oxc_span",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.153\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 53,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "oxc_syntax",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.153\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 54,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "oxc_codegen",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.153\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 55,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "oxc_semantic",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.153\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 56,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "miniz_oxide",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.8\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 57,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "object",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ version = \"0.36\", default-features = false, features = [\"read\", \"std\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 60,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "iced-x86",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ version = \"1.21\", default-features = false, features = [\"std\", \"decoder\", \"intel\", \"instr_info\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 61,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "yaxpeax-arm",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ version = \"0.5\", default-features = false, features = [\"std\", \"alloc\", \"fmt\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 62,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "yaxpeax-arch",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ version = \"0.3\", default-features = false, features = [\"std\", \"alloc\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 63,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "rustc-demangle",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"0.1\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 64,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "wasmparser",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ version = \"0.261\", default-features = false, features = [\"std\", \"validate\", \"features\", \"component-model\", \"simd\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 65,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "wasmprinter",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "{ version = \"0.261\", default-features = false, features = [\"component-model\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 66,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "regex",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "workspace.dependencies",
+      "specification": "\"1\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/Cargo.toml",
+        "line": 67,
+        "upstreamPath": "Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-engine",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-cli/Cargo.toml",
+        "line": 13,
+        "upstreamPath": "apps/craft-anything-cli/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-engines",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-cli/Cargo.toml",
+        "line": 14,
+        "upstreamPath": "apps/craft-anything-cli/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-evidence",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-cli/Cargo.toml",
+        "line": 15,
+        "upstreamPath": "apps/craft-anything-cli/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-platform",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-cli/Cargo.toml",
+        "line": 16,
+        "upstreamPath": "apps/craft-anything-cli/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-mcp",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-cli/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "apps/craft-anything-cli/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-ai",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-cli/Cargo.toml",
+        "line": 18,
+        "upstreamPath": "apps/craft-anything-cli/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-setup",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-cli/Cargo.toml",
+        "line": 19,
+        "upstreamPath": "apps/craft-anything-cli/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-cli/Cargo.toml",
+        "line": 20,
+        "upstreamPath": "apps/craft-anything-cli/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-cli/Cargo.toml",
+        "line": 21,
+        "upstreamPath": "apps/craft-anything-cli/Cargo.toml"
+      }
+    },
+    {
+      "name": "log",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-cli/Cargo.toml",
+        "line": 22,
+        "upstreamPath": "apps/craft-anything-cli/Cargo.toml"
+      }
+    },
+    {
+      "name": "clap",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ version = \"4\", features = [\"derive\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-cli/Cargo.toml",
+        "line": 23,
+        "upstreamPath": "apps/craft-anything-cli/Cargo.toml"
+      }
+    },
+    {
+      "name": "ctrlc",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ version = \"3\", features = [\"termination\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-cli/Cargo.toml",
+        "line": 24,
+        "upstreamPath": "apps/craft-anything-cli/Cargo.toml"
+      }
+    },
+    {
+      "name": "tempfile",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "\"3\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-cli/Cargo.toml",
+        "line": 30,
+        "upstreamPath": "apps/craft-anything-cli/Cargo.toml"
+      }
+    },
+    {
+      "name": "winresource",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "build-dependencies",
+      "specification": "\"0.1\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-cli/Cargo.toml",
+        "line": 34,
+        "upstreamPath": "apps/craft-anything-cli/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-evidence",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-web/Cargo.toml",
+        "line": 18,
+        "upstreamPath": "apps/craft-anything-web/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-formats",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-web/Cargo.toml",
+        "line": 19,
+        "upstreamPath": "apps/craft-anything-web/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-analysis",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-web/Cargo.toml",
+        "line": 20,
+        "upstreamPath": "apps/craft-anything-web/Cargo.toml"
+      }
+    },
+    {
+      "name": "egui",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-web/Cargo.toml",
+        "line": 21,
+        "upstreamPath": "apps/craft-anything-web/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-web/Cargo.toml",
+        "line": 22,
+        "upstreamPath": "apps/craft-anything-web/Cargo.toml"
+      }
+    },
+    {
+      "name": "log",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-web/Cargo.toml",
+        "line": 23,
+        "upstreamPath": "apps/craft-anything-web/Cargo.toml"
+      }
+    },
+    {
+      "name": "eframe",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(target_arch = \"wasm32\")'.dependencies",
+      "specification": "{ workspace = true, features = [\"default_fonts\", \"wgpu\", \"accesskit\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-web/Cargo.toml",
+        "line": 27,
+        "upstreamPath": "apps/craft-anything-web/Cargo.toml"
+      }
+    },
+    {
+      "name": "rfd",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(target_arch = \"wasm32\")'.dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-web/Cargo.toml",
+        "line": 29,
+        "upstreamPath": "apps/craft-anything-web/Cargo.toml"
+      }
+    },
+    {
+      "name": "wasm-bindgen",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(target_arch = \"wasm32\")'.dependencies",
+      "specification": "\"0.2\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-web/Cargo.toml",
+        "line": 30,
+        "upstreamPath": "apps/craft-anything-web/Cargo.toml"
+      }
+    },
+    {
+      "name": "wasm-bindgen-futures",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(target_arch = \"wasm32\")'.dependencies",
+      "specification": "\"0.4\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-web/Cargo.toml",
+        "line": 31,
+        "upstreamPath": "apps/craft-anything-web/Cargo.toml"
+      }
+    },
+    {
+      "name": "web-sys",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(target_arch = \"wasm32\")'.dependencies",
+      "specification": "{ version = \"0.3\", features = [\"Window\", \"Document\", \"Element\", \"HtmlCanvasElement\", \"Location\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything-web/Cargo.toml",
+        "line": 32,
+        "upstreamPath": "apps/craft-anything-web/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-engine",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything/Cargo.toml",
+        "line": 14,
+        "upstreamPath": "apps/craft-anything/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-platform",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything/Cargo.toml",
+        "line": 15,
+        "upstreamPath": "apps/craft-anything/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-ai",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything/Cargo.toml",
+        "line": 16,
+        "upstreamPath": "apps/craft-anything/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-setup",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "apps/craft-anything/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-ui-egui",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything/Cargo.toml",
+        "line": 18,
+        "upstreamPath": "apps/craft-anything/Cargo.toml"
+      }
+    },
+    {
+      "name": "eframe",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true, features = [\"default_fonts\", \"wgpu\", \"accesskit\", \"wayland\", \"x11\", \"persistence\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything/Cargo.toml",
+        "line": 19,
+        "upstreamPath": "apps/craft-anything/Cargo.toml"
+      }
+    },
+    {
+      "name": "log",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything/Cargo.toml",
+        "line": 20,
+        "upstreamPath": "apps/craft-anything/Cargo.toml"
+      }
+    },
+    {
+      "name": "rfd",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything/Cargo.toml",
+        "line": 23,
+        "upstreamPath": "apps/craft-anything/Cargo.toml"
+      }
+    },
+    {
+      "name": "winresource",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "build-dependencies",
+      "specification": "\"0.1\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything/Cargo.toml",
+        "line": 30,
+        "upstreamPath": "apps/craft-anything/Cargo.toml"
+      }
+    },
+    {
+      "name": "tempfile",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "\"3\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/apps/craft-anything/Cargo.toml",
+        "line": 33,
+        "upstreamPath": "apps/craft-anything/Cargo.toml"
+      }
+    },
+    {
+      "name": "schemars",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 13,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-evidence",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 14,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-engine",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 15,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-engines",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 16,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-formats",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-platform",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 18,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 19,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 20,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "log",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 21,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "regex",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 22,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "toml",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 23,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "ureq",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"3\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 24,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "dirs",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"6\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 25,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "keyring",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(target_os = \"linux\")'.dependencies",
+      "specification": "{ version = \"3\", default-features = false, features = [\"async-secret-service\", \"async-io\", \"crypto-rust\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 28,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "keyring",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(target_os = \"macos\")'.dependencies",
+      "specification": "{ version = \"3\", default-features = false, features = [\"apple-native\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 31,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "keyring",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(windows)'.dependencies",
+      "specification": "{ version = \"3\", default-features = false, features = [\"windows-native\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 34,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "tempfile",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "\"3\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 37,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-testkit",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ai/Cargo.toml",
+        "line": 38,
+        "upstreamPath": "crates/ai/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-evidence",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/analysis/Cargo.toml",
+        "line": 13,
+        "upstreamPath": "crates/analysis/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-formats",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/analysis/Cargo.toml",
+        "line": 14,
+        "upstreamPath": "crates/analysis/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-disasm",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/analysis/Cargo.toml",
+        "line": 15,
+        "upstreamPath": "crates/analysis/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-js",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/analysis/Cargo.toml",
+        "line": 16,
+        "upstreamPath": "crates/analysis/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/analysis/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "crates/analysis/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/analysis/Cargo.toml",
+        "line": 18,
+        "upstreamPath": "crates/analysis/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-testkit",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/analysis/Cargo.toml",
+        "line": 21,
+        "upstreamPath": "crates/analysis/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-formats",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/disasm/Cargo.toml",
+        "line": 13,
+        "upstreamPath": "crates/disasm/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/disasm/Cargo.toml",
+        "line": 14,
+        "upstreamPath": "crates/disasm/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/disasm/Cargo.toml",
+        "line": 15,
+        "upstreamPath": "crates/disasm/Cargo.toml"
+      }
+    },
+    {
+      "name": "thiserror",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/disasm/Cargo.toml",
+        "line": 16,
+        "upstreamPath": "crates/disasm/Cargo.toml"
+      }
+    },
+    {
+      "name": "iced-x86",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/disasm/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "crates/disasm/Cargo.toml"
+      }
+    },
+    {
+      "name": "yaxpeax-arm",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/disasm/Cargo.toml",
+        "line": 18,
+        "upstreamPath": "crates/disasm/Cargo.toml"
+      }
+    },
+    {
+      "name": "yaxpeax-arch",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/disasm/Cargo.toml",
+        "line": 19,
+        "upstreamPath": "crates/disasm/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-testkit",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/disasm/Cargo.toml",
+        "line": 22,
+        "upstreamPath": "crates/disasm/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-evidence",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 13,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-formats",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 14,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-disasm",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 15,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-js",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 16,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-analysis",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-platform",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 18,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-engines",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 19,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 20,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 21,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_path_to_error",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 22,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "schemars",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 23,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "bitflags",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 24,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "thiserror",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 25,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "log",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 26,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "toml",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 27,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "sha2",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 28,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "hex",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 29,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "regex",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 30,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "dirs",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"6\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 31,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "base64",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"0.22\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 34,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "png",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"0.17\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 35,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "image",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ version = \"0.25\", default-features = false, features = [\"jpeg\", \"webp\", \"gif\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 37,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "sha1",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "\"0.10\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 44,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-testkit",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 45,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "tempfile",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "\"3\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engine/Cargo.toml",
+        "line": 46,
+        "upstreamPath": "crates/engine/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-evidence",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 13,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-platform",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 14,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-formats",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 15,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 16,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "log",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 18,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "sha2",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 19,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "hex",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 20,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "thiserror",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 21,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "ureq",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"3\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 22,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "base64",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"0.22\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 24,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "sha1",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"0.10\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 26,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "toml",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 27,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "wasmtime",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ version = \"49\", optional = true, default-features = false, features = [\"std\", \"runtime\", \"cranelift\", \"component-model\", \"wat\"] }",
+      "optional": true,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 30,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "rcgen",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "{ version = \"0.14\", default-features = false, features = [\"crypto\", \"ring\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 36,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "rustls",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "{ version = \"0.23\", default-features = false, features = [\"ring\", \"std\", \"tls12\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 37,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "tempfile",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "\"3\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 38,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-testkit",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/Cargo.toml",
+        "line": 39,
+        "upstreamPath": "crates/engines/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/evidence/Cargo.toml",
+        "line": 13,
+        "upstreamPath": "crates/evidence/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/evidence/Cargo.toml",
+        "line": 14,
+        "upstreamPath": "crates/evidence/Cargo.toml"
+      }
+    },
+    {
+      "name": "sha2",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/evidence/Cargo.toml",
+        "line": 15,
+        "upstreamPath": "crates/evidence/Cargo.toml"
+      }
+    },
+    {
+      "name": "hex",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/evidence/Cargo.toml",
+        "line": 16,
+        "upstreamPath": "crates/evidence/Cargo.toml"
+      }
+    },
+    {
+      "name": "thiserror",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/evidence/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "crates/evidence/Cargo.toml"
+      }
+    },
+    {
+      "name": "thiserror",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 13,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 14,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 15,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "miniz_oxide",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 16,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "object",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "rustc-demangle",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 18,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "semver",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"1\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 19,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "sha2",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 20,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "wasmparser",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 21,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "wasmprinter",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 22,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "rsa",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ version = \"0.9\", default-features = false, features = [\"sha2\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 24,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "p256",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ version = \"0.13\", default-features = false, features = [\"ecdsa\", \"sha256\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 25,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "p384",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ version = \"0.13\", default-features = false, features = [\"ecdsa\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 26,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "sha1",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ version = \"0.10\", default-features = false, features = [\"oid\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 27,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "lzma-rs",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"0.3\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 29,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "bzip2-rs",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"0.1\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 30,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "ruzstd",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ version = \"0.9.1\", default-features = false, features = [\"std\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 31,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-testkit",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/formats/Cargo.toml",
+        "line": 34,
+        "upstreamPath": "crates/formats/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-formats",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/js/Cargo.toml",
+        "line": 13,
+        "upstreamPath": "crates/js/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/js/Cargo.toml",
+        "line": 14,
+        "upstreamPath": "crates/js/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/js/Cargo.toml",
+        "line": 15,
+        "upstreamPath": "crates/js/Cargo.toml"
+      }
+    },
+    {
+      "name": "thiserror",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/js/Cargo.toml",
+        "line": 16,
+        "upstreamPath": "crates/js/Cargo.toml"
+      }
+    },
+    {
+      "name": "sha2",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/js/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "crates/js/Cargo.toml"
+      }
+    },
+    {
+      "name": "hex",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/js/Cargo.toml",
+        "line": 18,
+        "upstreamPath": "crates/js/Cargo.toml"
+      }
+    },
+    {
+      "name": "oxc_allocator",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/js/Cargo.toml",
+        "line": 19,
+        "upstreamPath": "crates/js/Cargo.toml"
+      }
+    },
+    {
+      "name": "oxc_ast",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/js/Cargo.toml",
+        "line": 20,
+        "upstreamPath": "crates/js/Cargo.toml"
+      }
+    },
+    {
+      "name": "oxc_ast_visit",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/js/Cargo.toml",
+        "line": 21,
+        "upstreamPath": "crates/js/Cargo.toml"
+      }
+    },
+    {
+      "name": "oxc_parser",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/js/Cargo.toml",
+        "line": 22,
+        "upstreamPath": "crates/js/Cargo.toml"
+      }
+    },
+    {
+      "name": "oxc_span",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/js/Cargo.toml",
+        "line": 23,
+        "upstreamPath": "crates/js/Cargo.toml"
+      }
+    },
+    {
+      "name": "oxc_syntax",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true, features = [\"to_js_string\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/js/Cargo.toml",
+        "line": 24,
+        "upstreamPath": "crates/js/Cargo.toml"
+      }
+    },
+    {
+      "name": "oxc_codegen",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/js/Cargo.toml",
+        "line": 25,
+        "upstreamPath": "crates/js/Cargo.toml"
+      }
+    },
+    {
+      "name": "oxc_semantic",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/js/Cargo.toml",
+        "line": 26,
+        "upstreamPath": "crates/js/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-testkit",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/js/Cargo.toml",
+        "line": 29,
+        "upstreamPath": "crates/js/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-evidence",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/mcp/Cargo.toml",
+        "line": 13,
+        "upstreamPath": "crates/mcp/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-engine",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/mcp/Cargo.toml",
+        "line": 14,
+        "upstreamPath": "crates/mcp/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-platform",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/mcp/Cargo.toml",
+        "line": 15,
+        "upstreamPath": "crates/mcp/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/mcp/Cargo.toml",
+        "line": 16,
+        "upstreamPath": "crates/mcp/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/mcp/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "crates/mcp/Cargo.toml"
+      }
+    },
+    {
+      "name": "log",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/mcp/Cargo.toml",
+        "line": 18,
+        "upstreamPath": "crates/mcp/Cargo.toml"
+      }
+    },
+    {
+      "name": "tempfile",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "\"3\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/mcp/Cargo.toml",
+        "line": 21,
+        "upstreamPath": "crates/mcp/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-evidence",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/platform/Cargo.toml",
+        "line": 13,
+        "upstreamPath": "crates/platform/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/platform/Cargo.toml",
+        "line": 14,
+        "upstreamPath": "crates/platform/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/platform/Cargo.toml",
+        "line": 15,
+        "upstreamPath": "crates/platform/Cargo.toml"
+      }
+    },
+    {
+      "name": "log",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/platform/Cargo.toml",
+        "line": 16,
+        "upstreamPath": "crates/platform/Cargo.toml"
+      }
+    },
+    {
+      "name": "sha2",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/platform/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "crates/platform/Cargo.toml"
+      }
+    },
+    {
+      "name": "hex",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/platform/Cargo.toml",
+        "line": 18,
+        "upstreamPath": "crates/platform/Cargo.toml"
+      }
+    },
+    {
+      "name": "process-wrap",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ version = \"10\", default-features = false, features = [\"std\", \"process-group\", \"job-object\", \"kill-on-drop\", \"creation-flags\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/platform/Cargo.toml",
+        "line": 19,
+        "upstreamPath": "crates/platform/Cargo.toml"
+      }
+    },
+    {
+      "name": "portable-pty",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"0.9\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/platform/Cargo.toml",
+        "line": 21,
+        "upstreamPath": "crates/platform/Cargo.toml"
+      }
+    },
+    {
+      "name": "vt100",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"0.16\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/platform/Cargo.toml",
+        "line": 22,
+        "upstreamPath": "crates/platform/Cargo.toml"
+      }
+    },
+    {
+      "name": "xcap",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(any(windows, target_os = \"macos\"))'.dependencies",
+      "specification": "\"0.9\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/platform/Cargo.toml",
+        "line": 27,
+        "upstreamPath": "crates/platform/Cargo.toml"
+      }
+    },
+    {
+      "name": "objc2-core-graphics",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(target_os = \"macos\")'.dependencies",
+      "specification": "\"0.3\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/platform/Cargo.toml",
+        "line": 31,
+        "upstreamPath": "crates/platform/Cargo.toml"
+      }
+    },
+    {
+      "name": "nix",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(unix)'.dependencies",
+      "specification": "{ version = \"0.31\", default-features = false, features = [\"signal\", \"process\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/platform/Cargo.toml",
+        "line": 34,
+        "upstreamPath": "crates/platform/Cargo.toml"
+      }
+    },
+    {
+      "name": "windows",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(windows)'.dependencies",
+      "specification": "{ version = \"0.62\", default-features = false, features = [\"Win32_System_Threading\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/platform/Cargo.toml",
+        "line": 38,
+        "upstreamPath": "crates/platform/Cargo.toml"
+      }
+    },
+    {
+      "name": "tempfile",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "\"3\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/platform/Cargo.toml",
+        "line": 41,
+        "upstreamPath": "crates/platform/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-evidence",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/setup/Cargo.toml",
+        "line": 13,
+        "upstreamPath": "crates/setup/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-engine",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/setup/Cargo.toml",
+        "line": 14,
+        "upstreamPath": "crates/setup/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-engines",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/setup/Cargo.toml",
+        "line": 15,
+        "upstreamPath": "crates/setup/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-formats",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/setup/Cargo.toml",
+        "line": 16,
+        "upstreamPath": "crates/setup/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-platform",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/setup/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "crates/setup/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/setup/Cargo.toml",
+        "line": 18,
+        "upstreamPath": "crates/setup/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/setup/Cargo.toml",
+        "line": 19,
+        "upstreamPath": "crates/setup/Cargo.toml"
+      }
+    },
+    {
+      "name": "log",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/setup/Cargo.toml",
+        "line": 20,
+        "upstreamPath": "crates/setup/Cargo.toml"
+      }
+    },
+    {
+      "name": "schemars",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/setup/Cargo.toml",
+        "line": 21,
+        "upstreamPath": "crates/setup/Cargo.toml"
+      }
+    },
+    {
+      "name": "toml",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/setup/Cargo.toml",
+        "line": 22,
+        "upstreamPath": "crates/setup/Cargo.toml"
+      }
+    },
+    {
+      "name": "toml_edit",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"0.25\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/setup/Cargo.toml",
+        "line": 23,
+        "upstreamPath": "crates/setup/Cargo.toml"
+      }
+    },
+    {
+      "name": "yaml-rust2",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"0.10\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/setup/Cargo.toml",
+        "line": 24,
+        "upstreamPath": "crates/setup/Cargo.toml"
+      }
+    },
+    {
+      "name": "tempfile",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "\"3\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/setup/Cargo.toml",
+        "line": 27,
+        "upstreamPath": "crates/setup/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/testkit/Cargo.toml",
+        "line": 14,
+        "upstreamPath": "crates/testkit/Cargo.toml"
+      }
+    },
+    {
+      "name": "miniz_oxide",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/testkit/Cargo.toml",
+        "line": 15,
+        "upstreamPath": "crates/testkit/Cargo.toml"
+      }
+    },
+    {
+      "name": "rsa",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ version = \"0.9\", features = [\"sha2\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/testkit/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "crates/testkit/Cargo.toml"
+      }
+    },
+    {
+      "name": "p256",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ version = \"0.13\", features = [\"ecdsa\", \"sha256\", \"pem\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/testkit/Cargo.toml",
+        "line": 18,
+        "upstreamPath": "crates/testkit/Cargo.toml"
+      }
+    },
+    {
+      "name": "sha2",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"0.10\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/testkit/Cargo.toml",
+        "line": 19,
+        "upstreamPath": "crates/testkit/Cargo.toml"
+      }
+    },
+    {
+      "name": "sha1",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"0.10\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/testkit/Cargo.toml",
+        "line": 20,
+        "upstreamPath": "crates/testkit/Cargo.toml"
+      }
+    },
+    {
+      "name": "rand",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"0.8\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/testkit/Cargo.toml",
+        "line": 21,
+        "upstreamPath": "crates/testkit/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-engine",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 15,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-engines",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 16,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-ai",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-setup",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 18,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-platform",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 19,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "egui",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 20,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "egui_extras",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true, features = [\"svg\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 22,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "eframe",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true, features = [\"default_fonts\", \"wgpu\", \"accesskit\", \"links\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 24,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 25,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 26,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "log",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 27,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-update",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(not(target_arch = \"wasm32\"))'.dependencies",
+      "specification": "{ git = \"https://github.com/storytold/craft-libs\", rev = \"6ac2a6a34ae83fc0f0bfb25a569ba6388b72266a\" }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 30,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "rfd",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(not(target_arch = \"wasm32\"))'.dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 33,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "arboard",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(not(target_arch = \"wasm32\"))'.dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 35,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "pollster",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(not(target_arch = \"wasm32\"))'.dependencies",
+      "specification": "\"0.4\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 36,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "sys-locale",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(not(target_arch = \"wasm32\"))'.dependencies",
+      "specification": "\"0.3.2\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 38,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "muda",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(target_os = \"macos\")'.dependencies",
+      "specification": "{ version = \"0.21.2\", default-features = false }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 42,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-testkit",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 45,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "egui_kittest",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "{ workspace = true, features = [\"wgpu\", \"snapshot\", \"eframe\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 46,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "tempfile",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dev-dependencies",
+      "specification": "\"3\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 47,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "eframe",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "target.'cfg(not(target_arch = \"wasm32\"))'.dev-dependencies",
+      "specification": "{ workspace = true, features = [\"x11\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/crates/ui-egui/Cargo.toml",
+        "line": 51,
+        "upstreamPath": "crates/ui-egui/Cargo.toml"
+      }
+    },
+    {
+      "name": "wit-bindgen",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"0.63\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/examples/wasm-plugin-readme-check/Cargo.toml",
+        "line": 16,
+        "upstreamPath": "examples/wasm-plugin-readme-check/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"1\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/examples/wasm-plugin-readme-check/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "examples/wasm-plugin-readme-check/Cargo.toml"
+      }
+    },
+    {
+      "name": "wit-bindgen",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"0.63\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/examples/wasm-plugin-wordcount/Cargo.toml",
+        "line": 16,
+        "upstreamPath": "examples/wasm-plugin-wordcount/Cargo.toml"
+      }
+    },
+    {
+      "name": "serde_json",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "\"1\"",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/examples/wasm-plugin-wordcount/Cargo.toml",
+        "line": 17,
+        "upstreamPath": "examples/wasm-plugin-wordcount/Cargo.toml"
+      }
+    },
+    {
+      "name": "craft-anything-engine",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/xtask/Cargo.toml",
+        "line": 9,
+        "upstreamPath": "xtask/Cargo.toml"
+      }
+    },
+    {
+      "name": "toml",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ workspace = true }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/xtask/Cargo.toml",
+        "line": 10,
+        "upstreamPath": "xtask/Cargo.toml"
+      }
+    },
+    {
+      "name": "syn",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ version = \"2\", features = [\"full\", \"visit\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/xtask/Cargo.toml",
+        "line": 11,
+        "upstreamPath": "xtask/Cargo.toml"
+      }
+    },
+    {
+      "name": "proc-macro2",
+      "kind": "module",
+      "ecosystem": "cargo",
+      "scope": "dependencies",
+      "specification": "{ version = \"1\", features = [\"span-locations\"] }",
+      "optional": false,
+      "evidence": {
+        "file": "upstream-evidence/xtask/Cargo.toml",
+        "line": 12,
+        "upstreamPath": "xtask/Cargo.toml"
+      }
+    }
+  ],
+  "lockfile": "upstream-evidence/Cargo.lock",
+  "missingPackageFiles": [],
+  "limits": [
+    "Cargo declarations are retained as raw specifications, not a resolved dependency graph. Workspace links, target conditions and features require manual review against the full upstream repository.",
+    "No external application binary or build source bundle is included. This is a complete installed skill plus selected inert evidence, not a CLI installer.",
+    "Languages/formats mentioned as analysis targets are not automatically runtime dependencies. No requirement was installed or tested."
+  ],
+  "optionalEngines": [
+    {
+      "name": "Ghidra",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 406
+      }
+    },
+    {
+      "name": "Android platform tools (adb)",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 417
+      }
+    },
+    {
+      "name": "JADX",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 428
+      }
+    },
+    {
+      "name": "Apktool",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 439
+      }
+    },
+    {
+      "name": "a Chromium-based browser",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 450
+      }
+    },
+    {
+      "name": "Frida",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 472
+      }
+    },
+    {
+      "name": "GDB",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 473
+      }
+    },
+    {
+      "name": "LLDB",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 474
+      }
+    },
+    {
+      "name": "mitmproxy (mitmdump)",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 475
+      }
+    },
+    {
+      "name": "Binwalk",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 476
+      }
+    },
+    {
+      "name": "Unblob",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 477
+      }
+    },
+    {
+      "name": "ILSpy command line (ilspycmd)",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 478
+      }
+    },
+    {
+      "name": "Java runtime",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 481
+      }
+    },
+    {
+      "name": "Wireshark (tshark)",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 490
+      }
+    },
+    {
+      "name": "objdump (GNU binutils or LLVM)",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 491
+      }
+    },
+    {
+      "name": "Rizin",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 494
+      }
+    },
+    {
+      "name": "rtl_433",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 503
+      }
+    },
+    {
+      "name": "Vineflower",
+      "kind": "tool",
+      "scope": "optional; selected workflows only",
+      "evidence": {
+        "file": "upstream-evidence/crates/engines/src/table.rs",
+        "line": 506
+      }
+    }
+  ]
+}

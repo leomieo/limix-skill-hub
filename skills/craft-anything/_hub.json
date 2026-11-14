@@ -1,0 +1,19 @@
+{
+  "repository": "storytold/craft-anything",
+  "stars": 31913,
+  "createdAt": "2026-10-31T14:50:00Z",
+  "pushedAt": "2026-11-14T10:42:47Z",
+  "statsCheckedAt": "2026-11-14",
+  "license": "MIT OR Apache-2.0",
+  "addedAt": "2026-11-14T10:48:53.899Z",
+  "batchDate": "2026-11-14",
+  "coreOrigin": "upstream-embedded",
+  "distributionMapping": "crates/setup/src/skill.rs::files()",
+  "commit": "8374ad71544f2cc44698ea74ef990aa31600bac6",
+  "path": "crates/setup/src",
+  "language": "hybrid",
+  "version": "8374ad71544f",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-14T10:48:53.899Z"
+}

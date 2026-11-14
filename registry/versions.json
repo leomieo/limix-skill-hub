@@ -1370,5 +1370,13 @@
       "checksum": "ac124b31c8de74660a5ea6c613a759a037d892953476d03394c456804c75e3a3",
       "at": "2026-11-14T03:42:09.893Z"
     }
+  ],
+  "craft-anything": [
+    {
+      "version": "8374ad71544f",
+      "commit": "8374ad71544f2cc44698ea74ef990aa31600bac6",
+      "checksum": "f1607a29af113ad6a405b67074c026e11b1b8ffb5b46b2bdb7ff827e113d07ae",
+      "at": "2026-11-14T10:48:53.899Z"
+    }
   ]
 }
