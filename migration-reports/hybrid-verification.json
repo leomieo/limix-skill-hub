@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-14T10:49:53.386Z",
+  "checkedAt": "2026-11-15T11:28:48.662Z",
   "scope": "Static integrity and provenance only; no downloaded scripts executed.",
   "results": [
     {
@@ -2348,6 +2348,17 @@
         "tests/test_storyboard_lint.py",
         "tests/test_voice_review.py"
       ],
+      "license": "MIT"
+    },
+    {
+      "id": "humanizer",
+      "verified": true,
+      "origin": "upstream",
+      "files": 3,
+      "commit": "b48c832f0f809c1b5658edbb838c2521b72f2413",
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "skipped": [],
       "license": "MIT"
     },
     {

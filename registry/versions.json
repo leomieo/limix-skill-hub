@@ -1378,5 +1378,19 @@
       "checksum": "f1607a29af113ad6a405b67074c026e11b1b8ffb5b46b2bdb7ff827e113d07ae",
       "at": "2026-11-14T10:48:53.899Z"
     }
+  ],
+  "humanizer": [
+    {
+      "version": "b48c832f0f80",
+      "commit": "b48c832f0f809c1b5658edbb838c2521b72f2413",
+      "checksum": "099518f02951cc74311c1791f9d26522ff79ab891eb4bcef82a49756607d8a73",
+      "at": "2026-11-15T11:27:23.743Z"
+    },
+    {
+      "version": "b48c832f0f80",
+      "commit": "b48c832f0f809c1b5658edbb838c2521b72f2413",
+      "checksum": "b4f99af501b8187b84b888d6242e45c8d72639336ea34e26b6001192f6eec361",
+      "at": "2026-11-15T11:27:23.743Z"
+    }
   ]
 }

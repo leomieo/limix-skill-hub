@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "name": "humanizer",
+  "version": "b48c832f0f80",
+  "source": {
+    "url": "https://github.com/blader/humanizer",
+    "commit": "b48c832f0f809c1b5658edbb838c2521b72f2413",
+    "sha256": "804a119e924ac30295b298213e0b71b3e38b2667b8ef4fb7b69e9246369b9045",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Biên tập văn bản để bớt dấu vết văn phong AI, giữ nguyên ý, dữ kiện và giọng người viết.",
+    "aliases": [
+      "Viết tự nhiên",
+      "Khử văn phong AI"
+    ],
+    "keywords": [
+      "humanizer",
+      "writing",
+      "editing",
+      "biên tập",
+      "văn phong tự nhiên"
+    ],
+    "examples": [
+      "Biên tập đoạn sau cho tự nhiên, giữ nguyên số liệu và ý nghĩa."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "804a119e924ac30295b298213e0b71b3e38b2667b8ef4fb7b69e9246369b9045"
+  },
+  "requiredCapabilities": [
+    "Filesystem read/write only in file mode (SKILL.md:53).",
+    "Text editing by the host language model; no external runtime, CLI, MCP, API key or package required for the Markdown skill (SKILL.md:32-55)."
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write"
+  ],
+  "syncedAt": "2026-11-15T11:27:23.743Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "Static provenance verified; model behavior and Limix Bot activation not tested.",
+      "Packaged canonical Markdown skill, license and agent metadata. Repository CI, plugin manifests and package validation script are distribution/development tooling, not required skill assets."
+    ]
+  }
+}

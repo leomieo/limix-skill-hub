@@ -10,6 +10,7 @@ Sắp theo thứ tự thêm vào kho, mới nhất trước; cột “Ngày tạ
 
 | Skill/tool | Nguồn | Sao | Ngày tạo | Mô tả ngắn |
 |---|---|---:|---|---|
+| [humanizer](skills/humanizer/SKILL.md) | [blader/humanizer](https://github.com/blader/humanizer) | ![Sao](https://img.shields.io/github/stars/blader/humanizer?style=social) | 2026-01-18 | Biên tập văn phong AI, giữ ý và dữ kiện; core MIT, không cần runtime riêng, chờ duyệt. |
 | [craft-anything](skills/craft-anything/SKILL.md) | [storytold/craft-anything](https://github.com/storytold/craft-anything) | ![Sao](https://img.shields.io/github/stars/storytold/craft-anything?style=social) | 2026-10-31 | Điều tra phần mềm bằng MCP, core gốc và hướng dẫn Việt; cần CLI riêng, cách ly chờ duyệt. |
 | [directing-stickman-videos](skills/directing-stickman-videos/SKILL.md) | [kaomei/stickman-video-director](https://github.com/kaomei/stickman-video-director) | ![Sao](https://img.shields.io/github/stars/kaomei/stickman-video-director?style=social) | 2026-08-03 | Storyboard và video người que; core gốc, hướng dẫn Việt, requirements có bằng chứng. Cách ly vì gói chưa đủ. |
 | [improve-architecture](skills/improve-architecture/SKILL.md) | [daveebbelaar/bama](https://github.com/daveebbelaar/bama) | ![Sao](https://img.shields.io/github/stars/daveebbelaar/bama?style=social) | 2026-10-24 | Rà soát điểm khó bảo trì trong ứng dụng Swift/macOS; đề xuất module và refactor từng bước có bằng chứng giữ nguyên hành vi. Trạng thái: review-required. |
@@ -19,7 +20,6 @@ Sắp theo thứ tự thêm vào kho, mới nhất trước; cột “Ngày tạ
 | [new-term-radar](skills/new-term-radar/SKILL.md) | [zhuyansen/new-term-radar](https://github.com/zhuyansen/new-term-radar) | ![Sao](https://img.shields.io/github/stars/zhuyansen/new-term-radar?style=social) | 2026-10-12 | Thu thập tên mô hình và sản phẩm AI mới rồi ưu tiên từ khóa theo dữ liệu nguồn; cần Python, gói CLI và khóa API có phí. Trạng thái: quarantined. |
 | [archify](skills/archify/SKILL.md) | [tt-a1i/archify](https://github.com/tt-a1i/archify) | ![Sao](https://img.shields.io/github/stars/tt-a1i/archify?style=social) | 2026-04-15 | Sơ đồ HTML tương tác; cách ly vì gói chưa đủ runtime. |
 | [ffmpeg-cli](skills/ffmpeg-cli/SKILL.md) | [FFmpeg/FFmpeg](https://github.com/FFmpeg/FFmpeg) | ![Sao](https://img.shields.io/github/stars/FFmpeg/FFmpeg?style=social) | 2011-04-14 | Xử lý audio/video; adapter của kho, chờ duyệt. |
-| [threejs-development](skills/threejs-development/SKILL.md) | [mrdoob/three.js](https://github.com/mrdoob/three.js) | ![Sao](https://img.shields.io/github/stars/mrdoob/three.js?style=social) | 2010-03-23 | Lập trình 3D trình duyệt; adapter của kho, chờ duyệt. |
 
 ## Sử dụng
 
