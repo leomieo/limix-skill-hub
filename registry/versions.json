@@ -1392,5 +1392,13 @@
       "checksum": "b4f99af501b8187b84b888d6242e45c8d72639336ea34e26b6001192f6eec361",
       "at": "2026-11-15T11:27:23.743Z"
     }
+  ],
+  "find-skills": [
+    {
+      "version": "b716f9dc2ba3",
+      "commit": "b716f9dc2ba36b6aa8f0080615e5a3a6caeac63b",
+      "checksum": "07fb00f91490ba64afa8b75ab38598a5e011e185d287e18fb9679871347277e4",
+      "at": "2026-11-16T00:26:45.918Z"
+    }
   ]
 }

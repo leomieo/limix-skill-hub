@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "hub": "leomieo/limix-skill-hub",
-  "count": 53,
+  "count": 54,
   "skills": [
     {
       "id": "agent-autoloop",
@@ -25525,6 +25525,262 @@
       "notes": [],
       "last_checked": "2026-11-14T01:04:07.974Z",
       "area": "quarantine"
+    },
+    {
+      "id": "find-skills",
+      "name": "find-skills",
+      "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
+      "description_vi": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "find-skills",
+        "version": "b716f9dc2ba3",
+        "source": {
+          "url": "https://github.com/vercel-labs/skills",
+          "commit": "b716f9dc2ba36b6aa8f0080615e5a3a6caeac63b",
+          "sha256": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
+          "aliases": [
+            "Tìm kỹ năng AI",
+            "Khám phá skill",
+            "Tra cứu skill GitHub"
+          ],
+          "keywords": [
+            "find",
+            "skills",
+            "Tìm kỹ năng AI",
+            "Khám phá skill",
+            "Tra cứu skill GitHub"
+          ],
+          "examples": [
+            "Dùng find-skills cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f"
+        },
+        "requiredCapabilities": [
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "docker [mention-hint]",
+          "node [mention-hint]",
+          "playwright [mention-hint]",
+          "react [mention-hint]"
+        ],
+        "permissions": [
+          "network"
+        ],
+        "syncedAt": "2026-11-16T00:26:45.918Z",
+        "security": {
+          "status": "review-required",
+          "findings": []
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Tìm kỹ năng AI",
+        "Khám phá skill",
+        "Tra cứu skill GitHub"
+      ],
+      "keywords": [
+        "find",
+        "skills",
+        "Tìm kỹ năng AI",
+        "Khám phá skill",
+        "Tra cứu skill GitHub"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "b716f9dc2ba3",
+      "source": {
+        "repository": "vercel-labs/skills",
+        "commit": "b716f9dc2ba36b6aa8f0080615e5a3a6caeac63b",
+        "path": "skills/find-skills"
+      },
+      "stars": 39517,
+      "created_at": "2026-01-14T21:31:18Z",
+      "pushed_at": "2026-11-12T23:25:25Z",
+      "stats_checked": "2026-11-16",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 81,
+      "score_parts": {
+        "function": 25,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "recommended",
+      "security_status": "clean",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        }
+      ],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "docker",
+            "installerId": "docker"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "docker"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "docker [mention-hint]",
+          "node [mention-hint]",
+          "playwright [mention-hint]",
+          "react [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "docker",
+            "installerId": "docker"
+          }
+        ],
+        "detected": [
+          {
+            "name": "react",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 39
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 23
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 55
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 112
+              }
+            ]
+          },
+          {
+            "name": "docker",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "docker",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 113
+              }
+            ]
+          },
+          {
+            "name": "playwright",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 112
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 1,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "manifest.json",
+          "references/guide.vi.md"
+        ]
+      },
+      "checksum": "07fb00f91490ba64afa8b75ab38598a5e011e185d287e18fb9679871347277e4",
+      "file_hashes": {
+        "LICENSE": "661142e53c313d2bb5e1b055f5c0a39001450ff1b5e27b89dc4bc7de9a6352ca",
+        "SKILL.md": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f",
+        "manifest.json": "6a72e161ea948c918b281a5aace5dfe9815eadc69cce0e80a4ffce1a763e2efc",
+        "references/guide.vi.md": "bf0db4cf2a6a683b0a21ead3ce9e5c6d21ee531a9e49c0fd7373eb294c914708"
+      },
+      "notes": [],
+      "last_checked": "2026-11-16T00:26:45.918Z",
+      "area": "skills"
     },
     {
       "id": "founder-skill",

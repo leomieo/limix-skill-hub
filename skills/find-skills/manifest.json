@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "name": "find-skills",
+  "version": "b716f9dc2ba3",
+  "source": {
+    "url": "https://github.com/vercel-labs/skills",
+    "commit": "b716f9dc2ba36b6aa8f0080615e5a3a6caeac63b",
+    "sha256": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
+    "aliases": [
+      "Tìm kỹ năng AI",
+      "Khám phá skill",
+      "Tra cứu skill GitHub"
+    ],
+    "keywords": [
+      "find",
+      "skills",
+      "Tìm kỹ năng AI",
+      "Khám phá skill",
+      "Tra cứu skill GitHub"
+    ],
+    "examples": [
+      "Dùng find-skills cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f"
+  },
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "docker [mention-hint]",
+    "node [mention-hint]",
+    "playwright [mention-hint]",
+    "react [mention-hint]"
+  ],
+  "permissions": [
+    "network"
+  ],
+  "syncedAt": "2026-11-16T00:26:45.918Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

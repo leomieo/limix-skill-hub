@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-15T11:28:48.662Z",
+  "checkedAt": "2026-11-16T00:28:52.718Z",
   "scope": "Static integrity and provenance only; no downloaded scripts executed.",
   "results": [
     {
@@ -1958,6 +1958,17 @@
       "files": 3,
       "commit": "80f551625282c47c2984bde35280c32d0aa4be58",
       "security": "quarantined",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "MIT"
+    },
+    {
+      "id": "find-skills",
+      "verified": true,
+      "origin": "upstream",
+      "files": 2,
+      "commit": "b716f9dc2ba36b6aa8f0080615e5a3a6caeac63b",
+      "security": "review-required",
       "compatibility": "unchecked",
       "skipped": [],
       "license": "MIT"

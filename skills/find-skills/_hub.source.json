@@ -1,0 +1,21 @@
+{
+  "repository": "vercel-labs/skills",
+  "commit": "b716f9dc2ba36b6aa8f0080615e5a3a6caeac63b",
+  "path": "skills/find-skills",
+  "verified": true,
+  "coreSha256": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "661142e53c313d2bb5e1b055f5c0a39001450ff1b5e27b89dc4bc7de9a6352ca",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/find-skills"
+}
