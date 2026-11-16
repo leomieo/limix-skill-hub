@@ -1,6 +1,6 @@
 {
   "repository": "remotion-dev/remotion",
-  "stars": 73435,
+  "stars": 73439,
   "createdAt": "2020-06-23T19:49:10Z",
   "pushedAt": "2026-11-15T20:36:12Z",
   "license": "LicenseRef-Remotion",
@@ -11,6 +11,6 @@
   "originalCoreVerified": false,
   "coreOrigin": "source-linked",
   "version": "bc7b1c442152",
-  "statsCheckedAt": "2026-11-15",
+  "statsCheckedAt": "2026-11-16",
   "last_checked": "2026-11-13T13:49:51.581Z"
 }

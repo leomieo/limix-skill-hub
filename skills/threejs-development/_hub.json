@@ -1,8 +1,8 @@
 {
   "repository": "mrdoob/three.js",
-  "stars": 118522,
+  "stars": 118524,
   "createdAt": "2010-03-23T18:58:01Z",
-  "pushedAt": "2026-11-15T20:50:33Z",
+  "pushedAt": "2026-11-15T23:53:53Z",
   "license": "MIT",
   "commit": "acf77e4c7ea413a0a9638baacef3d78e254b2cac",
   "path": null,
@@ -11,6 +11,6 @@
   "originalCoreVerified": false,
   "coreOrigin": "hub-authored-adapter",
   "version": "acf77e4c7ea4",
-  "statsCheckedAt": "2026-11-15",
+  "statsCheckedAt": "2026-11-16",
   "last_checked": "2026-11-13T13:49:51.591Z"
 }
