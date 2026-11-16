@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-16T00:28:52.718Z",
+  "checkedAt": "2026-11-16T00:52:59.423Z",
   "scope": "Static integrity and provenance only; no downloaded scripts executed.",
   "results": [
     {
@@ -380,6 +380,17 @@
         "sources/vps-recommendations/home-aaitr.pdf"
       ],
       "license": "GPL-3.0"
+    },
+    {
+      "id": "code-review",
+      "verified": true,
+      "origin": "upstream",
+      "files": 2,
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "MIT"
     },
     {
       "id": "craft-anything",
@@ -3783,6 +3794,17 @@
       "license": "MIT"
     },
     {
+      "id": "prisma-client-api",
+      "verified": true,
+      "origin": "upstream",
+      "files": 2,
+      "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "MIT"
+    },
+    {
       "id": "rea-video",
       "verified": true,
       "origin": "upstream",
@@ -4035,6 +4057,28 @@
         "teaching/text-settle.tsx"
       ],
       "license": "MIT (stageshow/LICENSE trong repo)"
+    },
+    {
+      "id": "supabase-postgres-best-practices",
+      "verified": true,
+      "origin": "upstream",
+      "files": 2,
+      "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "MIT"
+    },
+    {
+      "id": "systematic-debugging",
+      "verified": true,
+      "origin": "upstream",
+      "files": 2,
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "MIT"
     },
     {
       "id": "teardown",

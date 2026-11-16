@@ -1,0 +1,22 @@
+{
+  "repository": "supabase/agent-skills",
+  "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+  "path": "skills/supabase-postgres-best-practices/SKILL.md",
+  "verified": true,
+  "coreSha256": "4d7d1bd60f2ad7fd0d510269279519059dcc630d832f4c241d90735244c70525",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "4d7d1bd60f2ad7fd0d510269279519059dcc630d832f4c241d90735244c70525",
+      "executable": false,
+      "upstreamPath": "skills/supabase-postgres-best-practices/SKILL.md"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "d5f32eb9349125b311fd66f435a13eff089a7166b1e78e31b12e361edfb2466a",
+      "executable": false,
+      "upstreamPath": "LICENSE"
+    }
+  ]
+}

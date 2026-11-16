@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "name": "code-review",
+  "version": "5863806dd4e1",
+  "source": {
+    "url": "https://github.com/mattpocock/skills",
+    "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+    "sha256": "36847f010579f3bccd54c49793e1fd043f10cc49b4607bac5a3067522e528b91",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Systematic code review workflow focused on correctness, regressions and actionable findings.",
+    "aliases": [
+      "Rà soát mã nguồn",
+      "Code review"
+    ],
+    "keywords": [
+      "code-review",
+      "Rà soát mã nguồn",
+      "Code review"
+    ],
+    "examples": [
+      "Dùng code-review cho tác vụ lập trình và giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "36847f010579f3bccd54c49793e1fd043f10cc49b4607bac5a3067522e528b91"
+  },
+  "requiredCapabilities": [
+    "filesystem-read",
+    "filesystem-write",
+    "git [mention-hint]",
+    "setup-matt-pocock-skills [reference-hint]",
+    "shell",
+    "subagents [mention-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell"
+  ],
+  "syncedAt": "2026-11-16T00:51:32.200Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and LICENSE are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed; runtime/provider acceptance remains untested."
+    ]
+  }
+}

@@ -77,7 +77,8 @@
       "references/b4-opening-direction.md: prompt-injection (high)",
       "assets/b5/example/assets/rig/spider-approved.svg: base64-blob (medium)",
       "assets/b5/local-baselines/jensen-v13/scene/assets/rig/spider-approved.svg: base64-blob (medium)",
-      "Incomplete curated text/code bundle: binary showcases/fonts and files beyond Hub limits are excluded. Review upstream content and restore all required assets before activation."
+      "Incomplete curated text/code bundle: binary showcases/fonts and files beyond Hub limits are excluded. Review upstream content and restore all required assets before activation.",
+      "Incomplete upstream bundle: inspect excluded files before approving compatibility or activation."
     ]
   },
   "compatibility": {

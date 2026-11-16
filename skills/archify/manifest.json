@@ -76,7 +76,8 @@
       "examples/waterfall-example-rebuild-rendered.html: base64-blob (medium)",
       "examples/web-app-rendered.html: base64-blob (medium)",
       "examples/workflow-agent-tool-call-rendered.html: base64-blob (medium)",
-      "Bundle size limits excluded runtime modules and references. Not ready for activation; use the pinned upstream release for a complete installation."
+      "Bundle size limits excluded runtime modules and references. Not ready for activation; use the pinned upstream release for a complete installation.",
+      "Incomplete upstream bundle: inspect excluded files before approving compatibility or activation."
     ]
   },
   "compatibility": {

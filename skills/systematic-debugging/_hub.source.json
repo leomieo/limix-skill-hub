@@ -1,0 +1,22 @@
+{
+  "repository": "obra/superpowers",
+  "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+  "path": "skills/systematic-debugging/SKILL.md",
+  "verified": true,
+  "coreSha256": "51c6435d98c83c42c96ba7c35725a0b2c376cd487fb1a4e6bd0ddbe7e33ef202",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "51c6435d98c83c42c96ba7c35725a0b2c376cd487fb1a4e6bd0ddbe7e33ef202",
+      "executable": false,
+      "upstreamPath": "skills/systematic-debugging/SKILL.md"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "0da33ed814ee87e72db078f489c4447af72f13d9f25d9e17476f32efd77705fc",
+      "executable": false,
+      "upstreamPath": "LICENSE"
+    }
+  ]
+}

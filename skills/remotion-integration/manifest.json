@@ -57,7 +57,8 @@
   "security": {
     "status": "quarantined",
     "findings": [
-      "Source-linked record only: redistribution permission for the custom Remotion license has not been established; official skill files are not mirrored."
+      "Source-linked record only: redistribution permission for the custom Remotion license has not been established; official skill files are not mirrored.",
+      "No standalone upstream license evidence retained; verify redistribution terms before activation."
     ]
   },
   "compatibility": {

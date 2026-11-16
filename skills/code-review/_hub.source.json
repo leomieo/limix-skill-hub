@@ -1,0 +1,22 @@
+{
+  "repository": "mattpocock/skills",
+  "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+  "path": "skills/engineering/code-review/SKILL.md",
+  "verified": true,
+  "coreSha256": "36847f010579f3bccd54c49793e1fd043f10cc49b4607bac5a3067522e528b91",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "36847f010579f3bccd54c49793e1fd043f10cc49b4607bac5a3067522e528b91",
+      "executable": false,
+      "upstreamPath": "skills/engineering/code-review/SKILL.md"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "4981c5f6a90eb3a969dacabb9350f5a75695ff3910b39b6534952908dfdc5ff7",
+      "executable": false,
+      "upstreamPath": "LICENSE"
+    }
+  ]
+}

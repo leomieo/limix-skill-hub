@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "hub": "leomieo/limix-skill-hub",
-  "count": 54,
+  "count": 58,
   "skills": [
     {
       "id": "agent-autoloop",
@@ -4962,7 +4962,8 @@
             "examples/waterfall-example-rebuild-rendered.html: base64-blob (medium)",
             "examples/web-app-rendered.html: base64-blob (medium)",
             "examples/workflow-agent-tool-call-rendered.html: base64-blob (medium)",
-            "Bundle size limits excluded runtime modules and references. Not ready for activation; use the pinned upstream release for a complete installation."
+            "Bundle size limits excluded runtime modules and references. Not ready for activation; use the pinned upstream release for a complete installation.",
+            "Incomplete upstream bundle: inspect excluded files before approving compatibility or activation."
           ]
         },
         "compatibility": {
@@ -6152,7 +6153,7 @@
           "references/requirements.en.md"
         ]
       },
-      "checksum": "2aeb4e68384a3cb6dc44efc33ca30079044361214f58b582603eb57eaf67803c",
+      "checksum": "2db8ab2abb3ef17ed46647f67926988b53db8f7f917266c083a3d20cbc3f8bbc",
       "file_hashes": {
         "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
         "NOTICE": "665eb53e6fcf09cee183c9f23c8052645dc95570d9ccbbf53dc0f5213a1b5edd",
@@ -6242,7 +6243,7 @@
         "explainer/vendor/pele/diagrams/venn.js": "e4bc9943916a8ce8b07d0848eda99d38f7e8334708998a5d951acf27a5f4a059",
         "explainer/vendor/pele/diagrams/xychart.js": "817de14381d9ba413dc70947824ff2538ba532c232592035a5b836094434e4bb",
         "locales/manifest.json": "9a377676b5d16f97a6a1f9326aadbb447321e9ceb5744718181796ce3dcce0d8",
-        "manifest.json": "081783a67bf47093ea17280656b9a12388e6710b0ab9061960c06a2ebbfce9d6",
+        "manifest.json": "defea8144d1f624a47bd59971976f34f760ad106531da134ec916762d00e3973",
         "references/guide.vi.md": "dd02965cc7505e198096ae84616d06c19ec01520102bc26dff864ed092e0728c",
         "references/requirements.en.md": "c99aff1c98c26992543831dc0e32dadfd5226dec07934b6018df09ef05ca5a38"
       },
@@ -13002,6 +13003,202 @@
       "area": "quarantine"
     },
     {
+      "id": "code-review",
+      "name": "code-review",
+      "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+      "description_vi": "Systematic code review workflow focused on correctness, regressions and actionable findings.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "code-review",
+        "version": "5863806dd4e1",
+        "source": {
+          "url": "https://github.com/mattpocock/skills",
+          "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+          "sha256": "36847f010579f3bccd54c49793e1fd043f10cc49b4607bac5a3067522e528b91",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Systematic code review workflow focused on correctness, regressions and actionable findings.",
+          "aliases": [
+            "Rà soát mã nguồn",
+            "Code review"
+          ],
+          "keywords": [
+            "code-review",
+            "Rà soát mã nguồn",
+            "Code review"
+          ],
+          "examples": [
+            "Dùng code-review cho tác vụ lập trình và giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "36847f010579f3bccd54c49793e1fd043f10cc49b4607bac5a3067522e528b91"
+        },
+        "requiredCapabilities": [
+          "filesystem-read",
+          "filesystem-write",
+          "git [mention-hint]",
+          "setup-matt-pocock-skills [reference-hint]",
+          "shell",
+          "subagents [mention-hint]"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell"
+        ],
+        "syncedAt": "2026-11-16T00:51:32.200Z",
+        "security": {
+          "status": "review-required",
+          "findings": []
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "English SKILL.md and LICENSE are byte-identical to the pinned GitHub commit.",
+            "No upstream scripts were executed; runtime/provider acceptance remains untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Rà soát mã nguồn",
+        "Code review"
+      ],
+      "keywords": [
+        "code-review",
+        "Rà soát mã nguồn",
+        "Code review"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "5863806dd4e1",
+      "source": {
+        "repository": "mattpocock/skills",
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "path": "skills/engineering/code-review/SKILL.md"
+      },
+      "stars": null,
+      "created_at": null,
+      "pushed_at": null,
+      "stats_checked": null,
+      "license": null,
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 69,
+      "score_parts": {
+        "function": 23,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 0,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        }
+      ],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": []
+      },
+      "dependencies": [],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "filesystem-read",
+          "filesystem-write",
+          "git [mention-hint]",
+          "setup-matt-pocock-skills [reference-hint]",
+          "shell",
+          "subagents [mention-hint]"
+        ],
+        "runtimeHints": [],
+        "detected": [
+          {
+            "name": "subagents",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 3
+              }
+            ]
+          },
+          {
+            "name": "setup-matt-pocock-skills",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 13
+              }
+            ]
+          },
+          {
+            "name": "git",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 21
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 1,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "manifest.json",
+          "references/guide.vi.md"
+        ]
+      },
+      "checksum": "cf36691e1e2e874122f4a42596bc340ba8b08b7d7a6c04a60be1735248b894e7",
+      "file_hashes": {
+        "LICENSE": "4981c5f6a90eb3a969dacabb9350f5a75695ff3910b39b6534952908dfdc5ff7",
+        "SKILL.md": "36847f010579f3bccd54c49793e1fd043f10cc49b4607bac5a3067522e528b91",
+        "manifest.json": "94841703acb97caef37a9ffb7d2c806acd94b5072a12212530e4ce235bcbf8df",
+        "references/guide.vi.md": "0892cecd92794663b593cd9a8600eb2e26431f8dd599345d8f712bb1d80b5db1"
+      },
+      "notes": [
+        "Không có giấy phép: cần chủ bot xem xét trước khi dùng."
+      ],
+      "last_checked": "2026-11-16T00:51:32.201Z",
+      "area": "skills"
+    },
+    {
       "id": "craft-anything",
       "name": "craft-anything",
       "description": "Investigate how shipped software works (programs, apps, packages, firmware, web bundles) with evidence-backed answers through the Craft Anything MCP tools, keeping a durable brief, plan, hypotheses, findings and handoff in the project.",
@@ -17185,7 +17382,8 @@
             "references/b4-opening-direction.md: prompt-injection (high)",
             "assets/b5/example/assets/rig/spider-approved.svg: base64-blob (medium)",
             "assets/b5/local-baselines/jensen-v13/scene/assets/rig/spider-approved.svg: base64-blob (medium)",
-            "Incomplete curated text/code bundle: binary showcases/fonts and files beyond Hub limits are excluded. Review upstream content and restore all required assets before activation."
+            "Incomplete curated text/code bundle: binary showcases/fonts and files beyond Hub limits are excluded. Review upstream content and restore all required assets before activation.",
+            "Incomplete upstream bundle: inspect excluded files before approving compatibility or activation."
           ]
         },
         "compatibility": {
@@ -20466,7 +20664,7 @@
           "scripts/gemini-media.mjs"
         ]
       },
-      "checksum": "ac124b31c8de74660a5ea6c613a759a037d892953476d03394c456804c75e3a3",
+      "checksum": "de1e846ac58d599a4cf9fd0ff33e0fcc9577666c5805c082147ca4e5fa01a4c1",
       "file_hashes": {
         "LICENSE": "39db520f9483ddb84418c21d59547f39da00083bf2dae1039166299d64f715c3",
         "SKILL.md": "e627f4ce8df64d72f8cdefb0aa517d554bcd8b6ee09cee5b0bd07f9f637775fe",
@@ -20571,7 +20769,7 @@
         "assets/fonts/OFL-Caveat.txt": "163a2b400e16916ad3196296c946c526d0efce6baf22a2164269ffc62fb9f671",
         "assets/fonts/OFL-NotoSans.txt": "e2e177a32561584d4fc13aaa3cd8e53758a12910f013fe9ca125419111722029",
         "assets/fonts/OFL-Nunito.txt": "ee9491ad3ea5d390878695bd6cce49beb3cacd5c4312f8ab574b541e9f7afa21",
-        "manifest.json": "7f3382484adb2e0f8476bffcf4587c28a17663f952c0aaa4019d58729d50e98a",
+        "manifest.json": "a8ada63682a587e322c6872d9c42da46e73238a582454c32188b078b177ae372",
         "package-lock.json": "7e9bb450f9ba4b6e5b9d20998e2fa2deda05ffe489f09c19019c9630ac706699",
         "package.json": "fe21d082fdb070b7dda57c5a954d7f43ff4bb757cb28ff3b5379dd6198a877ce",
         "references/a6-finishing.md": "45de4a202e79774b8f6db883478bc5572133fc359c732c87982b03e9fd16d83d",
@@ -44495,6 +44693,158 @@
       "area": "quarantine"
     },
     {
+      "id": "prisma-client-api",
+      "name": "prisma-client-api",
+      "description": "Prisma Client API reference covering model queries, filters, operators, and client methods. Use when writing database queries, using CRUD operations, filtering data, or configuring Prisma Client. Triggers on \"prisma query\", \"findMany\", \"create\", \"update\", \"delete\", \"$transaction\".",
+      "description_vi": "Prisma Client API guidance for existing Prisma applications.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "prisma-client-api",
+        "version": "a6f192959cf4",
+        "source": {
+          "url": "https://github.com/prisma/skills",
+          "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+          "sha256": "0fa1fead6f9c8d8e1f19b4884e3fb62fd614f2f26c0d3aae9b37a4e8579f4cde",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Prisma Client API guidance for existing Prisma applications.",
+          "aliases": [
+            "API Prisma Client",
+            "Lập trình Prisma"
+          ],
+          "keywords": [
+            "prisma-client-api",
+            "API Prisma Client",
+            "Lập trình Prisma"
+          ],
+          "examples": [
+            "Dùng prisma-client-api cho tác vụ lập trình và giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "0fa1fead6f9c8d8e1f19b4884e3fb62fd614f2f26c0d3aae9b37a4e8579f4cde"
+        },
+        "requiredCapabilities": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell"
+        ],
+        "syncedAt": "2026-11-16T00:51:32.251Z",
+        "security": {
+          "status": "review-required",
+          "findings": []
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "English SKILL.md and LICENSE are byte-identical to the pinned GitHub commit.",
+            "No upstream scripts were executed; runtime/provider acceptance remains untested."
+          ]
+        }
+      },
+      "aliases": [
+        "API Prisma Client",
+        "Lập trình Prisma"
+      ],
+      "keywords": [
+        "prisma-client-api",
+        "API Prisma Client",
+        "Lập trình Prisma"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "a6f192959cf4",
+      "source": {
+        "repository": "prisma/skills",
+        "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "path": "prisma-client-api/SKILL.md"
+      },
+      "stars": null,
+      "created_at": null,
+      "pushed_at": null,
+      "stats_checked": null,
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 75,
+      "score_parts": {
+        "function": 25,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 4,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        }
+      ],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": []
+      },
+      "dependencies": [],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell"
+        ],
+        "runtimeHints": [],
+        "detected": [],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 1,
+          "detection": "no-external-requirement-detected"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "manifest.json",
+          "references/guide.vi.md"
+        ]
+      },
+      "checksum": "cc481f90e1e0418c3306ed60a3af1bc51b20cbd85941a473b596e1e599c5f55b",
+      "file_hashes": {
+        "LICENSE": "19f3eca09b407ce9a8595676a3bc526c43c9181eb254b9c01bedb0c411d2ac67",
+        "SKILL.md": "0fa1fead6f9c8d8e1f19b4884e3fb62fd614f2f26c0d3aae9b37a4e8579f4cde",
+        "manifest.json": "04e02f725c5063ecd2324d259d0a4951ac83ea4c1beba88aff57bf7f8f9c04a7",
+        "references/guide.vi.md": "b36c5eed33ffe41fc5e19a89f02bf9f34e4832a57801638e198ec5f1bfe168a2"
+      },
+      "notes": [],
+      "last_checked": "2026-11-16T00:51:32.251Z",
+      "area": "skills"
+    },
+    {
       "id": "rea-video",
       "name": "rea-video",
       "description": "逆向拆解一条视频是怎么做出来的——逐镜头判断实拍 / 影视片段 / AI 生成 / 3D 渲染 / 2D 动画 / 定格动画 / 代码模板渲染 / 录屏截图 / 静态图推拉 / 静帧，以及实拍是否经过 AI 加工（换脸、对口型、风格化），标出后期叠加层（逐句字幕时间轴、花字、标题、贴纸 / GIF / 表情包、画中画）和用户真实素材，拆解人声、背景音乐、音效（卡在哪个画面事件上）与剪辑节奏，并给出可执行的复刻方案（可用 capsule-cinema、ChatCut 等复刻）。当用户给出参考视频、问\"这条视频怎么做的 / 是不是 AI / 用了什么素材 / 怎么复刻 / 想二创或做一条同款\"时使用。",
@@ -45229,7 +45579,8 @@
         "security": {
           "status": "quarantined",
           "findings": [
-            "Source-linked record only: redistribution permission for the custom Remotion license has not been established; official skill files are not mirrored."
+            "Source-linked record only: redistribution permission for the custom Remotion license has not been established; official skill files are not mirrored.",
+            "No standalone upstream license evidence retained; verify redistribution terms before activation."
           ]
         },
         "compatibility": {
@@ -45482,10 +45833,10 @@
           "references/source.en.md"
         ]
       },
-      "checksum": "8c26a1cbfe47b3f064aef00b06676b53919eaea4dd8c00f38f43e4bae6a6d164",
+      "checksum": "d5f994583dd86e0105b51cab3a18e6ddb568454f4776980db984d5f253a11971",
       "file_hashes": {
         "SKILL.md": "d476642ed52fe500fce636e16a8a2c7ec5b2a017a344bf124b6d8b06e0c66946",
-        "manifest.json": "878ae3df13366e61f11eecd4453cee2770708d2606d7be3c5f9898c10380b916",
+        "manifest.json": "6e33e4c5bc6ca18e2d22cce450d8a7528c18ad1f952f74d5d70cc39ae0db356c",
         "references/guide.vi.md": "67bd33f85810c16692c4428fea8fae8f8f3849132e0be8f36bd0e93270cbb346",
         "references/requirements.en.md": "5df13b5b631a8ec8c96c05c6359d704128b579f5aec29b295ffbbdcaee1f24b1",
         "references/source.en.md": "df891bbe825b22664bb1dde08e123e9ae39b3d8ccd6632b8c7fe0b7b0f07b0df"
@@ -48134,6 +48485,341 @@
       ],
       "last_checked": "2026-11-13T09:22:43.610Z",
       "area": "quarantine"
+    },
+    {
+      "id": "supabase-postgres-best-practices",
+      "name": "supabase-postgres-best-practices",
+      "description": "Postgres best practices maintained by Supabase, for Postgres running anywhere. Load this skill BEFORE writing or changing anything that lives in a Postgres database: creating or altering tables and columns (including choosing column types), schema design, migrations and declarative schema files, RLS policies and the tests that verify them, indexes, triggers, database functions, queues and scheduled jobs (pg_cron, pgmq), vector/semantic search (pgvector), and restoring dumps (pg_restore) or importing data. Also load it when diagnosing slow queries, high CPU, timeouts, EXPLAIN plans, connection exhaustion, locking, bloat, or rows visible to the wrong user or tenant. This is not just a performance guide — schema, migration, security, and SQL authoring tasks need these rules too, even for a one-column change or a single query.",
+      "description_vi": "Postgres performance and schema guidance for Supabase projects.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "supabase-postgres-best-practices",
+        "version": "c9be0e931b79",
+        "source": {
+          "url": "https://github.com/supabase/agent-skills",
+          "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "sha256": "4d7d1bd60f2ad7fd0d510269279519059dcc630d832f4c241d90735244c70525",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Postgres performance and schema guidance for Supabase projects.",
+          "aliases": [
+            "Thực hành PostgreSQL Supabase",
+            "Tối ưu Supabase"
+          ],
+          "keywords": [
+            "supabase-postgres-best-practices",
+            "Thực hành PostgreSQL Supabase",
+            "Tối ưu Supabase"
+          ],
+          "examples": [
+            "Dùng supabase-postgres-best-practices cho tác vụ lập trình và giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "4d7d1bd60f2ad7fd0d510269279519059dcc630d832f4c241d90735244c70525"
+        },
+        "requiredCapabilities": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell"
+        ],
+        "syncedAt": "2026-11-16T00:51:32.231Z",
+        "security": {
+          "status": "review-required",
+          "findings": []
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "English SKILL.md and LICENSE are byte-identical to the pinned GitHub commit.",
+            "No upstream scripts were executed; runtime/provider acceptance remains untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Thực hành PostgreSQL Supabase",
+        "Tối ưu Supabase"
+      ],
+      "keywords": [
+        "supabase-postgres-best-practices",
+        "Thực hành PostgreSQL Supabase",
+        "Tối ưu Supabase"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "c9be0e931b79",
+      "source": {
+        "repository": "supabase/agent-skills",
+        "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+        "path": "skills/supabase-postgres-best-practices/SKILL.md"
+      },
+      "stars": null,
+      "created_at": null,
+      "pushed_at": null,
+      "stats_checked": null,
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 75,
+      "score_parts": {
+        "function": 25,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 4,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        }
+      ],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": []
+      },
+      "dependencies": [],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell"
+        ],
+        "runtimeHints": [],
+        "detected": [],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 1,
+          "detection": "no-external-requirement-detected"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "manifest.json",
+          "references/guide.vi.md"
+        ]
+      },
+      "checksum": "906c3f779e0754a14e15bc94651c837b018b49973854f7d1880907941878253d",
+      "file_hashes": {
+        "LICENSE": "d5f32eb9349125b311fd66f435a13eff089a7166b1e78e31b12e361edfb2466a",
+        "SKILL.md": "4d7d1bd60f2ad7fd0d510269279519059dcc630d832f4c241d90735244c70525",
+        "manifest.json": "a384049612625d3493005dd35f0844df3fba7acdb84738c4c3abdc0832318d78",
+        "references/guide.vi.md": "c2171e9fe932227b85a302cd635686499d2394309628ed114ec89cd4677301d5"
+      },
+      "notes": [],
+      "last_checked": "2026-11-16T00:51:32.231Z",
+      "area": "skills"
+    },
+    {
+      "id": "systematic-debugging",
+      "name": "systematic-debugging",
+      "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
+      "description_vi": "Evidence-driven debugging workflow for isolating root causes before changing code.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "systematic-debugging",
+        "version": "22f0b463e7a5",
+        "source": {
+          "url": "https://github.com/obra/superpowers",
+          "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+          "sha256": "51c6435d98c83c42c96ba7c35725a0b2c376cd487fb1a4e6bd0ddbe7e33ef202",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Evidence-driven debugging workflow for isolating root causes before changing code.",
+          "aliases": [
+            "Gỡ lỗi có hệ thống",
+            "Điều tra lỗi"
+          ],
+          "keywords": [
+            "systematic-debugging",
+            "Gỡ lỗi có hệ thống",
+            "Điều tra lỗi"
+          ],
+          "examples": [
+            "Dùng systematic-debugging cho tác vụ lập trình và giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "51c6435d98c83c42c96ba7c35725a0b2c376cd487fb1a4e6bd0ddbe7e33ef202"
+        },
+        "requiredCapabilities": [
+          "bash [mention-hint]",
+          "filesystem-read",
+          "filesystem-write",
+          "git [mention-hint]",
+          "shell"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell"
+        ],
+        "syncedAt": "2026-11-16T00:51:32.215Z",
+        "security": {
+          "status": "review-required",
+          "findings": []
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "English SKILL.md and LICENSE are byte-identical to the pinned GitHub commit.",
+            "No upstream scripts were executed; runtime/provider acceptance remains untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Gỡ lỗi có hệ thống",
+        "Điều tra lỗi"
+      ],
+      "keywords": [
+        "systematic-debugging",
+        "Gỡ lỗi có hệ thống",
+        "Điều tra lỗi"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "22f0b463e7a5",
+      "source": {
+        "repository": "obra/superpowers",
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "path": "skills/systematic-debugging/SKILL.md"
+      },
+      "stars": null,
+      "created_at": null,
+      "pushed_at": null,
+      "stats_checked": null,
+      "license": null,
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 71,
+      "score_parts": {
+        "function": 25,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 0,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        }
+      ],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": []
+      },
+      "dependencies": [],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "bash [mention-hint]",
+          "filesystem-read",
+          "filesystem-write",
+          "git [mention-hint]",
+          "shell"
+        ],
+        "runtimeHints": [],
+        "detected": [
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 88
+              }
+            ]
+          },
+          {
+            "name": "git",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 66
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 1,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "manifest.json",
+          "references/guide.vi.md"
+        ]
+      },
+      "checksum": "977fe11aa7259eb04618790f8e91b1c1cb7b94ac13dae5e9db1a72105990f82b",
+      "file_hashes": {
+        "LICENSE": "0da33ed814ee87e72db078f489c4447af72f13d9f25d9e17476f32efd77705fc",
+        "SKILL.md": "51c6435d98c83c42c96ba7c35725a0b2c376cd487fb1a4e6bd0ddbe7e33ef202",
+        "manifest.json": "43a6e89439af918bb7ef5773653bc9f19bcf56c91bff6618881e6c3c2a3e0f9d",
+        "references/guide.vi.md": "47fd2ec6d283846871cfc8f70286c81f64323236802e46b09959eef00082e955"
+      },
+      "notes": [
+        "Không có giấy phép: cần chủ bot xem xét trước khi dùng."
+      ],
+      "last_checked": "2026-11-16T00:51:32.215Z",
+      "area": "skills"
     },
     {
       "id": "teardown",

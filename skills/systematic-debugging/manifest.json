@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "name": "systematic-debugging",
+  "version": "22f0b463e7a5",
+  "source": {
+    "url": "https://github.com/obra/superpowers",
+    "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+    "sha256": "51c6435d98c83c42c96ba7c35725a0b2c376cd487fb1a4e6bd0ddbe7e33ef202",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Evidence-driven debugging workflow for isolating root causes before changing code.",
+    "aliases": [
+      "Gỡ lỗi có hệ thống",
+      "Điều tra lỗi"
+    ],
+    "keywords": [
+      "systematic-debugging",
+      "Gỡ lỗi có hệ thống",
+      "Điều tra lỗi"
+    ],
+    "examples": [
+      "Dùng systematic-debugging cho tác vụ lập trình và giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "51c6435d98c83c42c96ba7c35725a0b2c376cd487fb1a4e6bd0ddbe7e33ef202"
+  },
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "filesystem-read",
+    "filesystem-write",
+    "git [mention-hint]",
+    "shell"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell"
+  ],
+  "syncedAt": "2026-11-16T00:51:32.215Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and LICENSE are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed; runtime/provider acceptance remains untested."
+    ]
+  }
+}

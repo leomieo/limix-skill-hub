@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "name": "prisma-client-api",
+  "version": "a6f192959cf4",
+  "source": {
+    "url": "https://github.com/prisma/skills",
+    "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+    "sha256": "0fa1fead6f9c8d8e1f19b4884e3fb62fd614f2f26c0d3aae9b37a4e8579f4cde",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Prisma Client API guidance for existing Prisma applications.",
+    "aliases": [
+      "API Prisma Client",
+      "Lập trình Prisma"
+    ],
+    "keywords": [
+      "prisma-client-api",
+      "API Prisma Client",
+      "Lập trình Prisma"
+    ],
+    "examples": [
+      "Dùng prisma-client-api cho tác vụ lập trình và giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "0fa1fead6f9c8d8e1f19b4884e3fb62fd614f2f26c0d3aae9b37a4e8579f4cde"
+  },
+  "requiredCapabilities": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell"
+  ],
+  "syncedAt": "2026-11-16T00:51:32.251Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and LICENSE are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed; runtime/provider acceptance remains untested."
+    ]
+  }
+}

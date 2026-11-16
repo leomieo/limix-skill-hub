@@ -1287,6 +1287,12 @@
       "commit": "bc7b1c44215249948356d070b43ae6e58a6adde3",
       "checksum": "8c26a1cbfe47b3f064aef00b06676b53919eaea4dd8c00f38f43e4bae6a6d164",
       "at": "2026-11-13T13:49:51.581Z"
+    },
+    {
+      "version": "bc7b1c442152",
+      "commit": "bc7b1c44215249948356d070b43ae6e58a6adde3",
+      "checksum": "d5f994583dd86e0105b51cab3a18e6ddb568454f4776980db984d5f253a11971",
+      "at": "2026-11-13T13:49:51.581Z"
     }
   ],
   "threejs-development": [
@@ -1320,6 +1326,12 @@
       "version": "e37848822238",
       "commit": "e37848822238e3a61b12739185cdadd49843a620",
       "checksum": "2aeb4e68384a3cb6dc44efc33ca30079044361214f58b582603eb57eaf67803c",
+      "at": "2026-11-13T22:35:49.669Z"
+    },
+    {
+      "version": "e37848822238",
+      "commit": "e37848822238e3a61b12739185cdadd49843a620",
+      "checksum": "2db8ab2abb3ef17ed46647f67926988b53db8f7f917266c083a3d20cbc3f8bbc",
       "at": "2026-11-13T22:35:49.669Z"
     }
   ],
@@ -1369,6 +1381,12 @@
       "commit": "b0866bcfd49d1121cd235c2445fa3d8cce307f53",
       "checksum": "ac124b31c8de74660a5ea6c613a759a037d892953476d03394c456804c75e3a3",
       "at": "2026-11-14T03:42:09.893Z"
+    },
+    {
+      "version": "b0866bcfd49d",
+      "commit": "b0866bcfd49d1121cd235c2445fa3d8cce307f53",
+      "checksum": "de1e846ac58d599a4cf9fd0ff33e0fcc9577666c5805c082147ca4e5fa01a4c1",
+      "at": "2026-11-14T03:42:09.893Z"
     }
   ],
   "craft-anything": [
@@ -1399,6 +1417,38 @@
       "commit": "b716f9dc2ba36b6aa8f0080615e5a3a6caeac63b",
       "checksum": "07fb00f91490ba64afa8b75ab38598a5e011e185d287e18fb9679871347277e4",
       "at": "2026-11-16T00:26:45.918Z"
+    }
+  ],
+  "code-review": [
+    {
+      "version": "5863806dd4e1",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "checksum": "cf36691e1e2e874122f4a42596bc340ba8b08b7d7a6c04a60be1735248b894e7",
+      "at": "2026-11-16T00:51:32.201Z"
+    }
+  ],
+  "prisma-client-api": [
+    {
+      "version": "a6f192959cf4",
+      "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+      "checksum": "cc481f90e1e0418c3306ed60a3af1bc51b20cbd85941a473b596e1e599c5f55b",
+      "at": "2026-11-16T00:51:32.251Z"
+    }
+  ],
+  "supabase-postgres-best-practices": [
+    {
+      "version": "c9be0e931b79",
+      "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "checksum": "906c3f779e0754a14e15bc94651c837b018b49973854f7d1880907941878253d",
+      "at": "2026-11-16T00:51:32.231Z"
+    }
+  ],
+  "systematic-debugging": [
+    {
+      "version": "22f0b463e7a5",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "checksum": "977fe11aa7259eb04618790f8e91b1c1cb7b94ac13dae5e9db1a72105990f82b",
+      "at": "2026-11-16T00:51:32.215Z"
     }
   ]
 }

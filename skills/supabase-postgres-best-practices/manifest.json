@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "name": "supabase-postgres-best-practices",
+  "version": "c9be0e931b79",
+  "source": {
+    "url": "https://github.com/supabase/agent-skills",
+    "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+    "sha256": "4d7d1bd60f2ad7fd0d510269279519059dcc630d832f4c241d90735244c70525",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Postgres performance and schema guidance for Supabase projects.",
+    "aliases": [
+      "Thực hành PostgreSQL Supabase",
+      "Tối ưu Supabase"
+    ],
+    "keywords": [
+      "supabase-postgres-best-practices",
+      "Thực hành PostgreSQL Supabase",
+      "Tối ưu Supabase"
+    ],
+    "examples": [
+      "Dùng supabase-postgres-best-practices cho tác vụ lập trình và giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "4d7d1bd60f2ad7fd0d510269279519059dcc630d832f4c241d90735244c70525"
+  },
+  "requiredCapabilities": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell"
+  ],
+  "syncedAt": "2026-11-16T00:51:32.231Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and LICENSE are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed; runtime/provider acceptance remains untested."
+    ]
+  }
+}

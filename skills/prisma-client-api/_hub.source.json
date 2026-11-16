@@ -1,0 +1,22 @@
+{
+  "repository": "prisma/skills",
+  "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+  "path": "prisma-client-api/SKILL.md",
+  "verified": true,
+  "coreSha256": "0fa1fead6f9c8d8e1f19b4884e3fb62fd614f2f26c0d3aae9b37a4e8579f4cde",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "0fa1fead6f9c8d8e1f19b4884e3fb62fd614f2f26c0d3aae9b37a4e8579f4cde",
+      "executable": false,
+      "upstreamPath": "prisma-client-api/SKILL.md"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "19f3eca09b407ce9a8595676a3bc526c43c9181eb254b9c01bedb0c411d2ac67",
+      "executable": false,
+      "upstreamPath": "LICENSE"
+    }
+  ]
+}
