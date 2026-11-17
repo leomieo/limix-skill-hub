@@ -1,0 +1,519 @@
+{
+  "date": "2026-11-17",
+  "timeZone": "Asia/Ho_Chi_Minh",
+  "baseCommit": "f77ba4930f68c7aaea5a9ffbf452aa737e2497fd",
+  "selection": "Five distinct new source repositories; not a claim of globally best skills. blender-core selected as the foundational Blender entrypoint.",
+  "scope": "Quarantined source intake; three non-English cores cannot satisfy English Core policy. Incomplete bundles remain incompatible. No upstream code executed.",
+  "results": [
+    {
+      "id": "yomiyasu",
+      "repository": "nanaism/yomiyasu",
+      "commit": "db78b9bc5e868549b517a037df7a4d1c93edac23",
+      "path": "skills/yomiyasu",
+      "stars": 3317,
+      "createdAt": "2026-09-30T11:49:32Z",
+      "statsCheckedAt": "2026-11-17T01:12:03.935Z",
+      "license": "MIT",
+      "files": 42,
+      "skipped": [],
+      "security": {
+        "status": "quarantined",
+        "findings": [
+          "assets/algo-artis.png: binary-file (low)",
+          "Daily intake: full manual/runtime approval not performed. Tiếng Nhật; Python 3 cho lint/check. Core gốc là tiếng Nhật, chưa đáp ứng English Core."
+        ]
+      },
+      "compatibility": {
+        "status": "incompatible",
+        "notes": [
+          "Upstream SKILL.md and retained source files are byte-identical to the pinned GitHub commit; this does not certify English language or bundle completeness.",
+          "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+          "Tiếng Nhật; Python 3 cho lint/check. Core gốc là tiếng Nhật, chưa đáp ứng English Core."
+        ]
+      },
+      "idempotence": "unchanged",
+      "scan": {
+        "status": "clean",
+        "high": 0,
+        "medium": 0,
+        "findings": [
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "LICENSE"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "assets/algo-artis.png"
+          }
+        ]
+      }
+    },
+    {
+      "id": "blender-core",
+      "repository": "EL4CTEO/blender-skills",
+      "commit": "b1b21dfb73bc40b874ebf2aa12645931bfed3523",
+      "path": "skills/blender-core",
+      "stars": 1359,
+      "createdAt": "2026-10-14T19:08:14Z",
+      "statsCheckedAt": "2026-11-17T01:12:03.935Z",
+      "license": "MIT",
+      "files": 7,
+      "skipped": [],
+      "security": {
+        "status": "quarantined",
+        "findings": [
+          "Daily intake: full manual/runtime approval not performed. Blender 5.2+; Python/bpy; MCP tùy chọn. Các skill chuyên biệt được nhắc tới chưa đóng gói trong mục này."
+        ]
+      },
+      "compatibility": {
+        "status": "unchecked",
+        "notes": [
+          "Upstream SKILL.md and retained source files are byte-identical to the pinned GitHub commit; this does not certify English language or bundle completeness.",
+          "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+          "Blender 5.2+; Python/bpy; MCP tùy chọn. Các skill chuyên biệt được nhắc tới chưa đóng gói trong mục này."
+        ]
+      },
+      "idempotence": "unchanged",
+      "scan": {
+        "status": "clean",
+        "high": 0,
+        "medium": 0,
+        "findings": [
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "LICENSE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "live-panel",
+      "repository": "ythx-101/live-panel-skill",
+      "commit": "d5aa86d8a5729cea2c78f083df672977f168a147",
+      "path": "",
+      "stars": 862,
+      "createdAt": "2026-10-03T16:53:36Z",
+      "statsCheckedAt": "2026-11-17T01:12:03.935Z",
+      "license": "MIT",
+      "files": 61,
+      "skipped": [
+        ".gitignore",
+        "examples/excalidraw-aqua/preview.webp",
+        "examples/funnel/funnel.mp4",
+        "examples/funnel/preview.webp",
+        "examples/loop-poteto/loop-poteto.mp4",
+        "examples/loop-poteto/preview-dark.webp",
+        "examples/loop-poteto/preview-light.webp",
+        "examples/ring/ring.mp4",
+        "scripts/scaffold.py",
+        "scripts/verify_view.py"
+      ],
+      "security": {
+        "status": "quarantined",
+        "findings": [
+          "assets/fonts/Excalifont-Regular-Latin.woff2: binary-file (low)",
+          "assets/fonts/SmileySans-Oblique.woff2: binary-file (low)",
+          "examples/agent-architecture/agent-architecture.mp4: binary-file (low)",
+          "examples/agent-architecture/preview.webp: binary-file (low)",
+          "examples/airbnb/airbnb.mp4: binary-file (low)",
+          "examples/airbnb/preview.webp: binary-file (low)",
+          "examples/codex-agents/codex-agents.mp4: binary-file (low)",
+          "examples/codex-agents/preview.webp: binary-file (low)",
+          "examples/excalidraw-gardener/preview.webp: binary-file (low)",
+          "examples/excalidraw-import/agent-loop.mp4: binary-file (low)",
+          "examples/minimal/preview.webp: binary-file (low)",
+          "examples/ring/preview.webp: binary-file (low)",
+          "llms.txt: exe-download (medium)",
+          "Daily intake: full manual/runtime approval not performed. Node.js, trình duyệt và công cụ render; giữ NOTICE và giấy phép tài nguyên.",
+          "Incomplete bundle: .gitignore, examples/excalidraw-aqua/preview.webp, examples/funnel/funnel.mp4, examples/funnel/preview.webp, examples/loop-poteto/loop-poteto.mp4, examples/loop-poteto/preview-dark.webp, examples/loop-poteto/preview-light.webp, examples/ring/ring.mp4, scripts/scaffold.py, scripts/verify_view.py"
+        ]
+      },
+      "compatibility": {
+        "status": "incompatible",
+        "notes": [
+          "Upstream SKILL.md and retained source files are byte-identical to the pinned GitHub commit; this does not certify English language or bundle completeness.",
+          "10 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+          "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+          "Node.js, trình duyệt và công cụ render; giữ NOTICE và giấy phép tài nguyên."
+        ]
+      },
+      "idempotence": "unchanged",
+      "scan": {
+        "status": "warning",
+        "high": 0,
+        "medium": 1,
+        "findings": [
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "CITATION.cff"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "LICENSE"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "NOTICE"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "assets/fonts/Excalifont-Regular-Latin.woff2"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "assets/fonts/SmileySans-Oblique.woff2"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "examples/agent-architecture/agent-architecture.mp4"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "examples/agent-architecture/preview.webp"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "examples/airbnb/airbnb.mp4"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "examples/airbnb/preview.webp"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "examples/codex-agents/codex-agents.mp4"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "examples/codex-agents/preview.webp"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "examples/excalidraw-gardener/preview.webp"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "examples/excalidraw-import/agent-loop.excalidraw"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "examples/excalidraw-import/agent-loop.mp4"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "examples/minimal/preview.webp"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "examples/ring/preview.webp"
+          },
+          {
+            "rule": "exe-download",
+            "severity": "medium",
+            "label": "Tải file chạy được (.exe/.ps1/.sh/.msi) từ mạng",
+            "file": "llms.txt",
+            "line": 45,
+            "excerpt": "- [scripts/fetch_fonts.sh](https://github.com/ythx-101/live-panel-skill/blob/main/scripts/fetch_fonts.sh): downloads the Xiaolai handwriting font"
+          }
+        ]
+      }
+    },
+    {
+      "id": "house-plan-designer",
+      "repository": "ZWD11/house-plan-designer",
+      "commit": "dd5a61070ea0a251fb13a141cd9a282be36fd292",
+      "path": "",
+      "stars": 698,
+      "createdAt": "2026-10-06T16:02:38Z",
+      "statsCheckedAt": "2026-11-17T01:12:03.935Z",
+      "license": "MIT",
+      "files": 101,
+      "skipped": [
+        ".gitignore",
+        "assets/template.html"
+      ],
+      "security": {
+        "status": "quarantined",
+        "findings": [
+          "assets/icon.png: binary-file (low)",
+          "reference/example-3d.png: binary-file (low)",
+          "reference/example-ceiling.jpg: binary-file (low)",
+          "reference/example-freemodel.jpg: binary-file (low)",
+          "reference/example-input.jpg: binary-file (low)",
+          "reference/example-library.jpg: binary-file (low)",
+          "reference/example-mep-edit.jpg: binary-file (low)",
+          "reference/example-mep2d.jpg: binary-file (low)",
+          "reference/example-mep3d.jpg: binary-file (low)",
+          "reference/example-office-3d.jpg: binary-file (low)",
+          "reference/example-office-hall.jpg: binary-file (low)",
+          "reference/example-office-wc.jpg: binary-file (low)",
+          "reference/example-overlay.png: binary-file (low)",
+          "reference/example-pathtraced.jpg: binary-file (low)",
+          "reference/example-plan2d.png: binary-file (low)",
+          "reference/example-resize.jpg: binary-file (low)",
+          "reference/example-smart.jpg: binary-file (low)",
+          "reference/example-style.jpg: binary-file (low)",
+          "reference/example-villa-diorama.jpg: binary-file (low)",
+          "reference/example-villa-night.jpg: binary-file (low)",
+          "reference/example-walk-cam.jpg: binary-file (low)",
+          "reference/example-walk-markers.jpg: binary-file (low)",
+          "Daily intake: full manual/runtime approval not performed. Python, Node.js, trình duyệt; core chủ yếu tiếng Trung, chưa đáp ứng English Core.",
+          "Incomplete bundle: .gitignore, assets/template.html"
+        ]
+      },
+      "compatibility": {
+        "status": "incompatible",
+        "notes": [
+          "Upstream SKILL.md and retained source files are byte-identical to the pinned GitHub commit; this does not certify English language or bundle completeness.",
+          "2 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+          "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+          "Python, Node.js, trình duyệt; core chủ yếu tiếng Trung, chưa đáp ứng English Core."
+        ]
+      },
+      "idempotence": "unchanged",
+      "scan": {
+        "status": "clean",
+        "high": 0,
+        "medium": 0,
+        "findings": [
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "LICENSE"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "assets/icon.png"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-3d.png"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-ceiling.jpg"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-freemodel.jpg"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-input.jpg"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-library.jpg"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-mep-edit.jpg"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-mep2d.jpg"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-mep3d.jpg"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-office-3d.jpg"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-office-hall.jpg"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-office-wc.jpg"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-overlay.png"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-pathtraced.jpg"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-plan2d.png"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-resize.jpg"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-smart.jpg"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-style.jpg"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-villa-diorama.jpg"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-villa-night.jpg"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-walk-cam.jpg"
+          },
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "reference/example-walk-markers.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ste",
+      "repository": "dualface/ste-zh",
+      "commit": "f7c104315045849e7bce357664273b4e99bc5119",
+      "path": "",
+      "stars": 902,
+      "createdAt": "2026-10-05T16:45:04Z",
+      "statsCheckedAt": "2026-11-17T09:13:27.821Z",
+      "license": "MIT",
+      "files": 7,
+      "skipped": [],
+      "security": {
+        "status": "quarantined",
+        "findings": [
+          "Daily intake: full manual/runtime approval not performed. Core tiếng Trung; chưa đáp ứng English Core; không tự kích hoạt trên toàn phiên."
+        ]
+      },
+      "compatibility": {
+        "status": "incompatible",
+        "notes": [
+          "Upstream SKILL.md and retained source files are byte-identical to the pinned GitHub commit; this does not certify English language or bundle completeness.",
+          "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+          "Core tiếng Trung; chưa đáp ứng English Core; không tự kích hoạt trên toàn phiên."
+        ]
+      },
+      "idempotence": "unchanged",
+      "scan": {
+        "status": "clean",
+        "high": 0,
+        "medium": 0,
+        "findings": [
+          {
+            "rule": "binary-file",
+            "severity": "low",
+            "label": "Có file nhị phân/chạy được trong kỹ năng",
+            "file": "LICENSE"
+          }
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "tests": "npm test: 24 pass, 0 fail, 0 skipped",
+    "integrity": "63/63 passed; 55 upstream verified; 37 quarantined",
+    "dailyCount": 5,
+    "duplicateNames": false,
+    "duplicateRepositories": false,
+    "rollback": "Baseline git bundle retained locally; repository rollback via revert of intake commit. Existing migration rollback unit tests passed.",
+    "unverified": [
+      "upstream scripts and dependencies not executed",
+      "runtime/model/provider behavior",
+      "complete English-core compliance (three non-English sources)",
+      "full bundles for live-panel and house-plan-designer",
+      "third-party example visual rights in live-panel"
+    ],
+    "stagedSourceHashes": 218,
+    "catalogIdempotence": "requirements: 0 local manifests updated; catalog: 63 skills, 0 problems; no registry diff",
+    "priorCatalogEntries": "58/58 retained exactly",
+    "gitDiffCheck": "3 upstream OFL license trailing-whitespace findings, retained intentionally to preserve source bytes",
+    "baselineBundle": "git bundle verify: okay, complete history"
+  }
+}

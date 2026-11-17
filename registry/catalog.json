@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "hub": "leomieo/limix-skill-hub",
-  "count": 58,
+  "count": 63,
   "skills": [
     {
       "id": "agent-autoloop",
@@ -7811,6 +7811,511 @@
       },
       "notes": [],
       "last_checked": "2026-11-13T09:14:21.544Z",
+      "area": "quarantine"
+    },
+    {
+      "id": "blender-core",
+      "name": "blender-core",
+      "description": "Foundation for any Blender 5.2+ task an agent drives - running bpy via MCP (live) or headless CLI, context overrides, locale-safe node lookup, enum discovery, 5.x API changes, verification. Use first for any Blender, bpy, .blend or 3D-asset request; routes to the specialized blender-* skills.",
+      "description_vi": "Nền tảng điều khiển Blender bằng bpy, MCP hoặc CLI, kiểm tra môi trường và ngữ cảnh.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "blender-core",
+        "version": "b1b21dfb73bc",
+        "source": {
+          "url": "https://github.com/EL4CTEO/blender-skills",
+          "commit": "b1b21dfb73bc40b874ebf2aa12645931bfed3523",
+          "sha256": "85c6161bf7a8e648735bd04957caba76f5e9c7b8506b38afd8496cc795563789",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Nền tảng điều khiển Blender bằng bpy, MCP hoặc CLI, kiểm tra môi trường và ngữ cảnh.",
+          "aliases": [
+            "Nền tảng điều khiển Blender bằng bpy"
+          ],
+          "keywords": [
+            "blender",
+            "core",
+            "Nền tảng điều khiển Blender bằng bpy"
+          ],
+          "examples": [
+            "Dùng blender-core cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "85c6161bf7a8e648735bd04957caba76f5e9c7b8506b38afd8496cc795563789"
+        },
+        "requiredCapabilities": [
+          "bash [mention-hint]",
+          "blender [mention-hint]",
+          "ffmpeg [mention-hint]",
+          "node [mention-hint]",
+          "powershell [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell",
+          "network"
+        ],
+        "syncedAt": "2026-11-17T01:12:03.935Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "Daily intake: full manual/runtime approval not performed. Blender 5.2+; Python/bpy; MCP tùy chọn. Các skill chuyên biệt được nhắc tới chưa đóng gói trong mục này."
+          ]
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "Upstream SKILL.md and retained source files are byte-identical to the pinned GitHub commit; this does not certify English language or bundle completeness.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+            "Blender 5.2+; Python/bpy; MCP tùy chọn. Các skill chuyên biệt được nhắc tới chưa đóng gói trong mục này."
+          ]
+        }
+      },
+      "aliases": [
+        "Nền tảng điều khiển Blender bằng bpy"
+      ],
+      "keywords": [
+        "blender",
+        "core",
+        "Nền tảng điều khiển Blender bằng bpy"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "b1b21dfb73bc",
+      "source": {
+        "repository": "EL4CTEO/blender-skills",
+        "commit": "b1b21dfb73bc40b874ebf2aa12645931bfed3523",
+        "path": "skills/blender-core"
+      },
+      "stars": 1359,
+      "created_at": "2026-10-14T19:08:14Z",
+      "pushed_at": "2026-11-13T23:17:51Z",
+      "stats_checked": "2026-11-17T01:12:03.935Z",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 21,
+        "security": 21,
+        "compatibility": 14,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": "Blender 5.2 LTS or newer, verified on 5.3. Optional blender-mcp server for live sessions.",
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "ffmpeg"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "bash [mention-hint]",
+          "blender [mention-hint]",
+          "ffmpeg [mention-hint]",
+          "node [mention-hint]",
+          "powershell [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          }
+        ],
+        "detected": [
+          {
+            "name": "_bpyx",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/env_report.py",
+                "line": 14
+              }
+            ]
+          },
+          {
+            "name": "addon_utils",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/env_report.py",
+                "line": 10
+              }
+            ]
+          },
+          {
+            "name": "argparse",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/_bpyx.py",
+                "line": 10
+              }
+            ]
+          },
+          {
+            "name": "bpy",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/_bpyx.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/env_report.py",
+                "line": 11
+              }
+            ]
+          },
+          {
+            "name": "glob",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/run_in_blender.py",
+                "line": 13
+              }
+            ]
+          },
+          {
+            "name": "json",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/_bpyx.py",
+                "line": 11
+              },
+              {
+                "file": "scripts/run_in_blender.py",
+                "line": 14
+              }
+            ]
+          },
+          {
+            "name": "os",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/env_report.py",
+                "line": 7
+              },
+              {
+                "file": "scripts/run_in_blender.py",
+                "line": 15
+              }
+            ]
+          },
+          {
+            "name": "re",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/run_in_blender.py",
+                "line": 16
+              }
+            ]
+          },
+          {
+            "name": "shutil",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/run_in_blender.py",
+                "line": 17
+              }
+            ]
+          },
+          {
+            "name": "subprocess",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/run_in_blender.py",
+                "line": 18
+              }
+            ]
+          },
+          {
+            "name": "sys",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/_bpyx.py",
+                "line": 12
+              },
+              {
+                "file": "scripts/env_report.py",
+                "line": 8
+              },
+              {
+                "file": "scripts/run_in_blender.py",
+                "line": 19
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 3
+              },
+              {
+                "file": "references/api-changes-5x.md",
+                "line": 43
+              },
+              {
+                "file": "scripts/_bpyx.py",
+                "line": 99
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/_bpyx.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/env_report.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/run_in_blender.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 19
+              },
+              {
+                "file": "references/api-changes-5x.md",
+                "line": 12
+              },
+              {
+                "file": "references/bpy-patterns.md",
+                "line": 4
+              },
+              {
+                "file": "scripts/_bpyx.py",
+                "line": 7
+              },
+              {
+                "file": "scripts/env_report.py",
+                "line": 41
+              },
+              {
+                "file": "scripts/run_in_blender.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 56
+              }
+            ]
+          },
+          {
+            "name": "blender",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 2
+              },
+              {
+                "file": "references/api-changes-5x.md",
+                "line": 3
+              },
+              {
+                "file": "references/bpy-patterns.md",
+                "line": 1
+              },
+              {
+                "file": "scripts/_bpyx.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/env_report.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/run_in_blender.py",
+                "line": 2
+              }
+            ]
+          },
+          {
+            "name": "ffmpeg",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "ffmpeg",
+            "evidence": [
+              {
+                "file": "references/api-changes-5x.md",
+                "line": 57
+              }
+            ]
+          },
+          {
+            "name": "powershell",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 56
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 6,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "manifest.json",
+          "references/api-changes-5x.md",
+          "references/bpy-patterns.md",
+          "references/guide.vi.md",
+          "scripts/_bpyx.py",
+          "scripts/env_report.py",
+          "scripts/run_in_blender.py"
+        ]
+      },
+      "checksum": "4da81ebb53d31d9612b9ef6f3a74b59b67e5eceb567cc67836c7a549a027e207",
+      "file_hashes": {
+        "LICENSE": "d81d0037e3a29a01ccfefaae420d5ba73e905cabf3995700e9075c7205c06cc5",
+        "SKILL.md": "85c6161bf7a8e648735bd04957caba76f5e9c7b8506b38afd8496cc795563789",
+        "manifest.json": "4633c8e0f55357c0e31427debdd11ae5c638993facc76ed819fcee9e85687100",
+        "references/api-changes-5x.md": "e34f2e39a97833d75b6177c2e281ff9481405efd88bfd2d67003560f0c421fe1",
+        "references/bpy-patterns.md": "ba7bbc708bf198bdcdfa59d9d41d830a4ae119c24ae9457830b73d9e818e2af8",
+        "references/guide.vi.md": "2a48c1ea862b20870799fd48ed9d0698e091e63d2f5715b0226bd077da842001",
+        "scripts/_bpyx.py": "90f44d70198b199cd922e4e57f7e55c56a3041d3a498ef7d444b019f9795d2ff",
+        "scripts/env_report.py": "e628feed806dd265e0c1ce803d92591aac208a9f463d8c47cbb939476d3b347a",
+        "scripts/run_in_blender.py": "e97e078c1b52475d386af2b8f9d27c7578a55c250ccd43ff50bed9c33d380355"
+      },
+      "notes": [],
+      "last_checked": "2026-11-17T01:12:03.935Z",
       "area": "quarantine"
     },
     {
@@ -30878,6 +31383,2339 @@
       "area": "quarantine"
     },
     {
+      "id": "house-plan-designer",
+      "name": "house-plan-designer",
+      "description": "把用户给的户型图（图片：房产平台 / 家装设计平台户型图、售楼处户型图、手绘带尺寸的平面图；CAD 图纸：设计院 / 装修公司导出的矢量 PDF、DXF、原始结构图、建筑平面图，黑底 CAD 截图）自动还原成可交互的装修设计器网页（单文件 HTML，2D 平面 + 3D 鸟瞰/漫游 + 家具布置 + 水电/吊顶/铺装/拆改图层 + 电路 / 水管 / 网线自动排布 + 报价 + PDF 施工图），初始户型就是这张图。触发词：户型图生成设计器、户型图转 3D、把户型图做成网页、CAD 图纸转设计器、DXF/PDF 户型图、原始结构图、户型还原、做一个装修设计网页、户型图 2D/3D 展示、电路布线图、水电管线排布、floor plan to 3D。",
+      "description_vi": "Dựng thiết kế nhà 2D/3D từ bản vẽ, kiểm tra kích thước, cửa và nội thất.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "house-plan-designer",
+        "version": "dd5a61070ea0",
+        "source": {
+          "url": "https://github.com/ZWD11/house-plan-designer",
+          "commit": "dd5a61070ea0a251fb13a141cd9a282be36fd292",
+          "sha256": "f882351a38f58ecb1354a3b5e4b65bf9d08b54b631b64d128f1b938d25022582",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Dựng thiết kế nhà 2D/3D từ bản vẽ, kiểm tra kích thước, cửa và nội thất.",
+          "aliases": [
+            "Dựng thiết kế nhà 2D/3D từ bản vẽ"
+          ],
+          "keywords": [
+            "house",
+            "plan",
+            "designer",
+            "Dựng thiết kế nhà 2D/3D từ bản vẽ"
+          ],
+          "examples": [
+            "Dùng house-plan-designer cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "f882351a38f58ecb1354a3b5e4b65bf9d08b54b631b64d128f1b938d25022582"
+        },
+        "requiredCapabilities": [
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "docker [mention-hint]",
+          "ezdxf * [installation-command-hint]",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "git [mention-hint]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "numpy * [installation-command-hint]",
+          "opencv-python * [installation-command-hint]",
+          "pillow * [installation-command-hint]",
+          "playwright [mention-hint]",
+          "puppeteer [mention-hint]",
+          "puppeteer-core ^23.11.1 [declared; dependencies]",
+          "pymupdf * [installation-command-hint]",
+          "pypdf * [installation-command-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]",
+          "scipy * [installation-command-hint]",
+          "three [mention-hint]"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell",
+          "network"
+        ],
+        "syncedAt": "2026-11-17T01:12:03.935Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "assets/icon.png: binary-file (low)",
+            "reference/example-3d.png: binary-file (low)",
+            "reference/example-ceiling.jpg: binary-file (low)",
+            "reference/example-freemodel.jpg: binary-file (low)",
+            "reference/example-input.jpg: binary-file (low)",
+            "reference/example-library.jpg: binary-file (low)",
+            "reference/example-mep-edit.jpg: binary-file (low)",
+            "reference/example-mep2d.jpg: binary-file (low)",
+            "reference/example-mep3d.jpg: binary-file (low)",
+            "reference/example-office-3d.jpg: binary-file (low)",
+            "reference/example-office-hall.jpg: binary-file (low)",
+            "reference/example-office-wc.jpg: binary-file (low)",
+            "reference/example-overlay.png: binary-file (low)",
+            "reference/example-pathtraced.jpg: binary-file (low)",
+            "reference/example-plan2d.png: binary-file (low)",
+            "reference/example-resize.jpg: binary-file (low)",
+            "reference/example-smart.jpg: binary-file (low)",
+            "reference/example-style.jpg: binary-file (low)",
+            "reference/example-villa-diorama.jpg: binary-file (low)",
+            "reference/example-villa-night.jpg: binary-file (low)",
+            "reference/example-walk-cam.jpg: binary-file (low)",
+            "reference/example-walk-markers.jpg: binary-file (low)",
+            "Daily intake: full manual/runtime approval not performed. Python, Node.js, trình duyệt; core chủ yếu tiếng Trung, chưa đáp ứng English Core.",
+            "Incomplete bundle: .gitignore, assets/template.html"
+          ]
+        },
+        "compatibility": {
+          "status": "incompatible",
+          "notes": [
+            "Upstream SKILL.md and retained source files are byte-identical to the pinned GitHub commit; this does not certify English language or bundle completeness.",
+            "2 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+            "Python, Node.js, trình duyệt; core chủ yếu tiếng Trung, chưa đáp ứng English Core."
+          ]
+        }
+      },
+      "aliases": [
+        "Dựng thiết kế nhà 2D/3D từ bản vẽ"
+      ],
+      "keywords": [
+        "house",
+        "plan",
+        "designer",
+        "Dựng thiết kế nhà 2D/3D từ bản vẽ"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "dd5a61070ea0",
+      "source": {
+        "repository": "ZWD11/house-plan-designer",
+        "commit": "dd5a61070ea0a251fb13a141cd9a282be36fd292",
+        "path": ""
+      },
+      "stars": 698,
+      "created_at": "2026-10-06T16:02:38Z",
+      "pushed_at": "2026-11-13T10:03:57Z",
+      "stats_checked": "2026-11-17T01:12:03.935Z",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 21,
+        "security": 21,
+        "compatibility": 8,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/icon.png"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-3d.png"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-ceiling.jpg"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-freemodel.jpg"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-input.jpg"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-library.jpg"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-mep-edit.jpg"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-mep2d.jpg"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-mep3d.jpg"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-office-3d.jpg"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-office-hall.jpg"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-office-wc.jpg"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-overlay.png"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-pathtraced.jpg"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-plan2d.png"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-resize.jpg"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-smart.jpg"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-style.jpg"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-villa-diorama.jpg"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-villa-night.jpg"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-walk-cam.jpg"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "reference/example-walk-markers.jpg"
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "docker",
+            "installerId": "docker"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "docker"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "docker [mention-hint]",
+          "ezdxf * [installation-command-hint]",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "git [mention-hint]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "numpy * [installation-command-hint]",
+          "opencv-python * [installation-command-hint]",
+          "pillow * [installation-command-hint]",
+          "playwright [mention-hint]",
+          "puppeteer [mention-hint]",
+          "puppeteer-core ^23.11.1 [declared; dependencies]",
+          "pymupdf * [installation-command-hint]",
+          "pypdf * [installation-command-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]",
+          "scipy * [installation-command-hint]",
+          "three [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "docker",
+            "installerId": "docker"
+          }
+        ],
+        "detected": [
+          {
+            "name": "filesystem-read",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/browser.mjs",
+                "line": 59
+              },
+              {
+                "file": "scripts/qa.mjs",
+                "line": 25
+              },
+              {
+                "file": "scripts/walktest.mjs",
+                "line": 25
+              }
+            ]
+          },
+          {
+            "name": "filesystem-write",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/check.mjs",
+                "line": 168
+              },
+              {
+                "file": "scripts/closeup.mjs",
+                "line": 31
+              },
+              {
+                "file": "scripts/dev/birdshot.mjs",
+                "line": 21
+              },
+              {
+                "file": "scripts/dev/dumprooms.mjs",
+                "line": 19
+              },
+              {
+                "file": "scripts/dev/eval.mjs",
+                "line": 9
+              },
+              {
+                "file": "scripts/dev/grab.mjs",
+                "line": 9
+              },
+              {
+                "file": "scripts/dev/ptshots.mjs",
+                "line": 17
+              },
+              {
+                "file": "scripts/dev/sharetest.mjs",
+                "line": 32
+              },
+              {
+                "file": "scripts/dev/shot3d.mjs",
+                "line": 13
+              },
+              {
+                "file": "scripts/qa.mjs",
+                "line": 898
+              },
+              {
+                "file": "scripts/qa_furniture.mjs",
+                "line": 42
+              },
+              {
+                "file": "scripts/qa_styles.mjs",
+                "line": 34
+              }
+            ]
+          },
+          {
+            "name": "three",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 341
+              }
+            ]
+          },
+          {
+            "name": "argparse",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/align2.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/analyze.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/bench.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/build.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/cadpair.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/cadshot.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/cadsplit.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/cadvec.py",
+                "line": 34
+              },
+              {
+                "file": "scripts/coverage.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/dimocr.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/dimticks.py",
+                "line": 11
+              },
+              {
+                "file": "scripts/doorcheck.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/dxf_prepare.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/dxfaudit.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/dxfinventory.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/furnoverlay.py",
+                "line": 12
+              },
+              {
+                "file": "scripts/rectify.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/wallaudit.py",
+                "line": 19
+              }
+            ]
+          },
+          {
+            "name": "axismap",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "reference/example-gen-furnished.py",
+                "line": 6
+              },
+              {
+                "file": "reference/example-gen-precise.py",
+                "line": 7
+              }
+            ]
+          },
+          {
+            "name": "collections",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/cadpair.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/cadsplit.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/cadvec.py",
+                "line": 35
+              },
+              {
+                "file": "scripts/dimocr.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/dimtext.py",
+                "line": 10
+              }
+            ]
+          },
+          {
+            "name": "cv2",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/analyze.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/cadshot.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/cadsplit.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/cadvec.py",
+                "line": 37
+              },
+              {
+                "file": "scripts/dimocr.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/dimtext.py",
+                "line": 12
+              },
+              {
+                "file": "scripts/dimticks.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/dxfaudit.py",
+                "line": 162
+              },
+              {
+                "file": "scripts/dxfaudit.py",
+                "line": 170
+              },
+              {
+                "file": "scripts/dxfaudit.py",
+                "line": 198
+              }
+            ]
+          },
+          {
+            "name": "dimticks",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/align2.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/dimocr.py",
+                "line": 20
+              }
+            ]
+          },
+          {
+            "name": "dxf_prepare",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "reference/example-gen-office-dxf.py",
+                "line": 227
+              },
+              {
+                "file": "scripts/dxfaudit.py",
+                "line": 29
+              }
+            ]
+          },
+          {
+            "name": "ezdxf",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "reference/example-gen-office-dxf.py",
+                "line": 228
+              },
+              {
+                "file": "reference/example-gen-office-dxf.py",
+                "line": 229
+              },
+              {
+                "file": "scripts/cadsplit.py",
+                "line": 132
+              },
+              {
+                "file": "scripts/cadsplit.py",
+                "line": 133
+              },
+              {
+                "file": "scripts/cadsplit.py",
+                "line": 643
+              },
+              {
+                "file": "scripts/cadvec.py",
+                "line": 119
+              },
+              {
+                "file": "scripts/cadvec.py",
+                "line": 120
+              },
+              {
+                "file": "scripts/dev/make_test_dxf.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/dxf_prepare.py",
+                "line": 8
+              },
+              {
+                "file": "scripts/dxf_prepare.py",
+                "line": 9
+              },
+              {
+                "file": "scripts/dxfaudit.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/dxfaudit.py",
+                "line": 34
+              },
+              {
+                "file": "scripts/dxfaudit.py",
+                "line": 35
+              },
+              {
+                "file": "scripts/dxfaudit.py",
+                "line": 93
+              },
+              {
+                "file": "scripts/dxfinventory.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/dxfinventory.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/dxfinventory.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/qa_files.py",
+                "line": 27
+              }
+            ]
+          },
+          {
+            "name": "fitz",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/cadpair.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/cadsplit.py",
+                "line": 58
+              },
+              {
+                "file": "scripts/cadvec.py",
+                "line": 81
+              },
+              {
+                "file": "scripts/wallaudit.py",
+                "line": 49
+              }
+            ]
+          },
+          {
+            "name": "imgio",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/align2.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/analyze.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/build.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/cadshot.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/coverage.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/dimocr.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/dimticks.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/doorcheck.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/furnoverlay.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/gridmm.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/rectify.py",
+                "line": 34
+              },
+              {
+                "file": "scripts/wallaudit.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/wallfit.py",
+                "line": 19
+              }
+            ]
+          },
+          {
+            "name": "importlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/cadvec.py",
+                "line": 736
+              }
+            ]
+          },
+          {
+            "name": "json",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "reference/example-gen-building.py",
+                "line": 18
+              },
+              {
+                "file": "reference/example-gen-cad.py",
+                "line": 4
+              },
+              {
+                "file": "reference/example-gen-duplex.py",
+                "line": 18
+              },
+              {
+                "file": "reference/example-gen-furnished.py",
+                "line": 3
+              },
+              {
+                "file": "reference/example-gen-office-dxf.py",
+                "line": 5
+              },
+              {
+                "file": "reference/example-gen-precise.py",
+                "line": 4
+              },
+              {
+                "file": "reference/example-gen-villa.py",
+                "line": 5
+              },
+              {
+                "file": "reference/example-gen.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/dev/compare.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/dev/make_test_dxf.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/dev/mk_dxf_template.py",
+                "line": 3
+              }
+            ]
+          },
+          {
+            "name": "math",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "reference/example-gen-furnished.py",
+                "line": 108
+              },
+              {
+                "file": "reference/example-gen-furnished.py",
+                "line": 207
+              },
+              {
+                "file": "scripts/dimtext.py",
+                "line": 9
+              }
+            ]
+          },
+          {
+            "name": "numpy",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "reference/example-gen-office-dxf.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/align2.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/analyze.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/cadshot.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/cadsplit.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/cadvec.py",
+                "line": 36
+              },
+              {
+                "file": "scripts/coverage.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/dimocr.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/dimtext.py",
+                "line": 11
+              },
+              {
+                "file": "scripts/dimticks.py",
+                "line": 12
+              },
+              {
+                "file": "scripts/doorcheck.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/dxfaudit.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/imgio.py",
+                "line": 35
+              },
+              {
+                "file": "scripts/rectify.py",
+                "line": 32
+              },
+              {
+                "file": "scripts/wallaudit.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/wallfit.py",
+                "line": 17
+              }
+            ]
+          },
+          {
+            "name": "pathlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "reference/example-gen-office-dxf.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/dxf_prepare.py",
+                "line": 7
+              },
+              {
+                "file": "scripts/dxfaudit.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/dxfinventory.py",
+                "line": 17
+              }
+            ]
+          },
+          {
+            "name": "PIL",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/align2.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/analyze.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/build.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/cadpair.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/cadshot.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/coverage.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/dimocr.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/dimticks.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/doorcheck.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/dxfaudit.py",
+                "line": 36
+              },
+              {
+                "file": "scripts/dxfinventory.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/furnoverlay.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/gridmm.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/imgio.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/qa_files.py",
+                "line": 11
+              },
+              {
+                "file": "scripts/rectify.py",
+                "line": 33
+              },
+              {
+                "file": "scripts/wallaudit.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/wallfit.py",
+                "line": 18
+              }
+            ]
+          },
+          {
+            "name": "puppeteer-core",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "scripts/browser.mjs",
+                "line": 7
+              }
+            ]
+          },
+          {
+            "name": "pypdf",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/qa_files.py",
+                "line": 38
+              }
+            ]
+          },
+          {
+            "name": "PyPDF2",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/qa_files.py",
+                "line": 40
+              }
+            ]
+          },
+          {
+            "name": "re",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/furnoverlay.py",
+                "line": 48
+              }
+            ]
+          },
+          {
+            "name": "rectify",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/rectify.py",
+                "line": 29
+              }
+            ]
+          },
+          {
+            "name": "scipy",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/rectify.py",
+                "line": 121
+              }
+            ]
+          },
+          {
+            "name": "sys",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/axismap.py",
+                "line": 9
+              },
+              {
+                "file": "scripts/axismap.py",
+                "line": 54
+              },
+              {
+                "file": "scripts/gridmm.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/qa_files.py",
+                "line": 10
+              },
+              {
+                "file": "scripts/wallfit.py",
+                "line": 16
+              }
+            ]
+          },
+          {
+            "name": "wallfit",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/wallfit.py",
+                "line": 7
+              }
+            ]
+          },
+          {
+            "name": "zipfile",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/build.py",
+                "line": 79
+              }
+            ]
+          },
+          {
+            "name": "ezdxf",
+            "kind": "package",
+            "status": "installation-command-hint",
+            "ecosystem": "pip",
+            "version": "*",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 329
+              },
+              {
+                "file": "SKILL.md",
+                "line": 14
+              },
+              {
+                "file": "reference/env-cloud.md",
+                "line": 5
+              }
+            ]
+          },
+          {
+            "name": "numpy",
+            "kind": "package",
+            "status": "installation-command-hint",
+            "ecosystem": "pip",
+            "version": "*",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 329
+              },
+              {
+                "file": "SKILL.md",
+                "line": 14
+              },
+              {
+                "file": "reference/env-cloud.md",
+                "line": 5
+              }
+            ]
+          },
+          {
+            "name": "opencv-python",
+            "kind": "package",
+            "status": "installation-command-hint",
+            "ecosystem": "pip",
+            "version": "*",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 329
+              },
+              {
+                "file": "SKILL.md",
+                "line": 14
+              },
+              {
+                "file": "reference/env-cloud.md",
+                "line": 5
+              }
+            ]
+          },
+          {
+            "name": "pillow",
+            "kind": "package",
+            "status": "installation-command-hint",
+            "ecosystem": "pip",
+            "version": "*",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 329
+              },
+              {
+                "file": "SKILL.md",
+                "line": 14
+              },
+              {
+                "file": "reference/env-cloud.md",
+                "line": 5
+              }
+            ]
+          },
+          {
+            "name": "puppeteer-core",
+            "kind": "package",
+            "status": "declared",
+            "version": "^23.11.1",
+            "scope": "dependencies",
+            "ecosystem": "npm",
+            "evidence": [
+              {
+                "file": "scripts/package.json",
+                "line": 6
+              }
+            ]
+          },
+          {
+            "name": "pymupdf",
+            "kind": "package",
+            "status": "installation-command-hint",
+            "ecosystem": "pip",
+            "version": "*",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 329
+              },
+              {
+                "file": "SKILL.md",
+                "line": 14
+              },
+              {
+                "file": "reference/env-cloud.md",
+                "line": 5
+              }
+            ]
+          },
+          {
+            "name": "pypdf",
+            "kind": "package",
+            "status": "installation-command-hint",
+            "ecosystem": "pip",
+            "version": "*",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 329
+              },
+              {
+                "file": "SKILL.md",
+                "line": 14
+              },
+              {
+                "file": "reference/env-cloud.md",
+                "line": 5
+              }
+            ]
+          },
+          {
+            "name": "scipy",
+            "kind": "package",
+            "status": "installation-command-hint",
+            "ecosystem": "pip",
+            "version": "*",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 14
+              },
+              {
+                "file": "reference/env-cloud.md",
+                "line": 5
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "scripts/browser.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/check.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/clicktest.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/closeup.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/dev/birdshot.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/dev/dumprooms.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/dev/eval.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/dev/fps.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/dev/grab.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/dev/libshot.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/dev/ptshots.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/dev/sharetest.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/dev/shot3d.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/dev/swinfo.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/dev/swwall.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/dev/uitest.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/dev/walk_lights.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/elecaudit.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/qa.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/qa_furniture.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/qa_styles.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/walktest.mjs",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 330
+              },
+              {
+                "file": "SKILL.md",
+                "line": 14
+              },
+              {
+                "file": "reference/delivery.md",
+                "line": 14
+              },
+              {
+                "file": "reference/env-cloud.md",
+                "line": 6
+              },
+              {
+                "file": "reference/example-gen-building.py",
+                "line": 7
+              },
+              {
+                "file": "reference/example-gen-duplex.py",
+                "line": 16
+              },
+              {
+                "file": "reference/furnishing.md",
+                "line": 38
+              },
+              {
+                "file": "reference/route-building.md",
+                "line": 64
+              },
+              {
+                "file": "reference/workflow-check.md",
+                "line": 7
+              },
+              {
+                "file": "scripts/browser.mjs",
+                "line": 48
+              },
+              {
+                "file": "scripts/cadvec.py",
+                "line": 759
+              },
+              {
+                "file": "scripts/check.mjs",
+                "line": 3
+              },
+              {
+                "file": "scripts/clicktest.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/closeup.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/dev/fps.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/dev/libshot.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/dev/sharetest.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/dev/shot3d.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/dev/walk_lights.mjs",
+                "line": 3
+              },
+              {
+                "file": "scripts/elecaudit.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/qa.mjs",
+                "line": 3
+              },
+              {
+                "file": "scripts/qa_furniture.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/qa_styles.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/walktest.mjs",
+                "line": 5
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "reference/example-gen-building.py",
+                "line": 1
+              },
+              {
+                "file": "reference/example-gen-cad.py",
+                "line": 1
+              },
+              {
+                "file": "reference/example-gen-duplex.py",
+                "line": 1
+              },
+              {
+                "file": "reference/example-gen-furnished.py",
+                "line": 1
+              },
+              {
+                "file": "reference/example-gen-office-dxf.py",
+                "line": 1
+              },
+              {
+                "file": "reference/example-gen-precise.py",
+                "line": 1
+              },
+              {
+                "file": "reference/example-gen-villa.py",
+                "line": 1
+              },
+              {
+                "file": "reference/example-gen.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/align2.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/analyze.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/axismap.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/bench.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/build.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/cadpair.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/cadshot.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/cadsplit.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/cadvec.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/coverage.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/dev/compare.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/dev/make_test_dxf.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/dev/mk_dxf_template.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/dimocr.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/dimtext.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/dimticks.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/doorcheck.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/dxf_prepare.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/dxfaudit.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/dxfinventory.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/furnoverlay.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/gridmm.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/imgio.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/qa_files.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/rectify.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/wallaudit.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/wallfit.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 114
+              },
+              {
+                "file": "SKILL.md",
+                "line": 14
+              },
+              {
+                "file": "reference/cad-conventions.md",
+                "line": 18
+              },
+              {
+                "file": "reference/delivery.md",
+                "line": 6
+              },
+              {
+                "file": "reference/env-cloud.md",
+                "line": 5
+              },
+              {
+                "file": "reference/example-gen-building.py",
+                "line": 4
+              },
+              {
+                "file": "reference/example-gen-duplex.py",
+                "line": 16
+              },
+              {
+                "file": "reference/furnishing.md",
+                "line": 57
+              },
+              {
+                "file": "reference/route-building.md",
+                "line": 6
+              },
+              {
+                "file": "reference/route-cad.md",
+                "line": 6
+              },
+              {
+                "file": "reference/route-dual.md",
+                "line": 20
+              },
+              {
+                "file": "reference/route-dxf-layout.md",
+                "line": 10
+              },
+              {
+                "file": "reference/route-image.md",
+                "line": 20
+              },
+              {
+                "file": "reference/workflow-check.md",
+                "line": 6
+              },
+              {
+                "file": "scripts/align2.py",
+                "line": 9
+              },
+              {
+                "file": "scripts/analyze.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/bench.py",
+                "line": 12
+              },
+              {
+                "file": "scripts/build.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/cadpair.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/cadshot.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/cadsplit.py",
+                "line": 10
+              },
+              {
+                "file": "scripts/cadvec.py",
+                "line": 9
+              },
+              {
+                "file": "scripts/coverage.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/dev/compare.py",
+                "line": 2
+              },
+              {
+                "file": "scripts/dev/make_test_dxf.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/dev/mk_dxf_template.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/dimocr.py",
+                "line": 8
+              },
+              {
+                "file": "scripts/dimticks.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/doorcheck.py",
+                "line": 7
+              },
+              {
+                "file": "scripts/dxfaudit.py",
+                "line": 3
+              },
+              {
+                "file": "scripts/dxfinventory.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/furnoverlay.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/gridmm.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/qa.mjs",
+                "line": 897
+              },
+              {
+                "file": "scripts/qa_files.py",
+                "line": 2
+              },
+              {
+                "file": "scripts/rectify.py",
+                "line": 9
+              },
+              {
+                "file": "scripts/wallaudit.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/wallfit.py",
+                "line": 11
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 113
+              },
+              {
+                "file": "SKILL.md",
+                "line": 57
+              },
+              {
+                "file": "reference/delivery.md",
+                "line": 5
+              },
+              {
+                "file": "reference/env-cloud.md",
+                "line": 13
+              },
+              {
+                "file": "reference/furnishing.md",
+                "line": 56
+              },
+              {
+                "file": "reference/route-building.md",
+                "line": 5
+              },
+              {
+                "file": "reference/route-cad.md",
+                "line": 5
+              },
+              {
+                "file": "reference/route-dual.md",
+                "line": 17
+              },
+              {
+                "file": "reference/route-dxf-layout.md",
+                "line": 8
+              },
+              {
+                "file": "reference/route-image.md",
+                "line": 19
+              },
+              {
+                "file": "reference/workflow-check.md",
+                "line": 5
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 330
+              },
+              {
+                "file": "SKILL.md",
+                "line": 14
+              },
+              {
+                "file": "reference/delivery.md",
+                "line": 18
+              },
+              {
+                "file": "reference/env-cloud.md",
+                "line": 6
+              },
+              {
+                "file": "scripts/browser.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/check.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/clicktest.mjs",
+                "line": 4
+              },
+              {
+                "file": "scripts/closeup.mjs",
+                "line": 5
+              },
+              {
+                "file": "scripts/dev/birdshot.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/dev/dumprooms.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/dev/eval.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/dev/fps.mjs",
+                "line": 3
+              },
+              {
+                "file": "scripts/dev/grab.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/dev/libshot.mjs",
+                "line": 3
+              },
+              {
+                "file": "scripts/dev/ptshots.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/dev/sharetest.mjs",
+                "line": 3
+              },
+              {
+                "file": "scripts/dev/shot3d.mjs",
+                "line": 3
+              },
+              {
+                "file": "scripts/dev/swinfo.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/dev/swwall.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/dev/uitest.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/dev/walk_lights.mjs",
+                "line": 4
+              },
+              {
+                "file": "scripts/elecaudit.mjs",
+                "line": 4
+              },
+              {
+                "file": "scripts/package.json",
+                "line": 6
+              },
+              {
+                "file": "scripts/qa.mjs",
+                "line": 13
+              },
+              {
+                "file": "scripts/qa_furniture.mjs",
+                "line": 3
+              },
+              {
+                "file": "scripts/qa_styles.mjs",
+                "line": 3
+              },
+              {
+                "file": "scripts/walktest.mjs",
+                "line": 16
+              }
+            ]
+          },
+          {
+            "name": "docker",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "docker",
+            "evidence": [
+              {
+                "file": "reference/env-cloud.md",
+                "line": 18
+              },
+              {
+                "file": "scripts/browser.mjs",
+                "line": 59
+              }
+            ]
+          },
+          {
+            "name": "git",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 321
+              }
+            ]
+          },
+          {
+            "name": "playwright",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 335
+              },
+              {
+                "file": "SKILL.md",
+                "line": 15
+              },
+              {
+                "file": "reference/env-cloud.md",
+                "line": 11
+              },
+              {
+                "file": "scripts/browser.mjs",
+                "line": 2
+              }
+            ]
+          },
+          {
+            "name": "puppeteer",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 330
+              },
+              {
+                "file": "SKILL.md",
+                "line": 14
+              },
+              {
+                "file": "reference/env-cloud.md",
+                "line": 6
+              },
+              {
+                "file": "scripts/browser.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/package.json",
+                "line": 6
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 78,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [
+          ".gitignore",
+          "assets/template.html"
+        ],
+        "packageCompleteness": "incomplete",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "README.md",
+          "SKILL.md",
+          "assets/icon.png",
+          "manifest.json",
+          "reference/cad-conventions.md",
+          "reference/catalog-sizes.json",
+          "reference/delivery.md",
+          "reference/env-cloud.md",
+          "reference/example-3d.png",
+          "reference/example-ceiling.jpg",
+          "reference/example-freemodel.jpg",
+          "reference/example-gen-building.py",
+          "reference/example-gen-cad.py",
+          "reference/example-gen-duplex.py",
+          "reference/example-gen-furnished.py",
+          "reference/example-gen-office-dxf.py",
+          "reference/example-gen-precise.py",
+          "reference/example-gen-villa.py",
+          "reference/example-gen.py",
+          "reference/example-input.jpg",
+          "reference/example-library.jpg",
+          "reference/example-mep-edit.jpg",
+          "reference/example-mep2d.jpg",
+          "reference/example-mep3d.jpg",
+          "reference/example-office-3d.jpg",
+          "reference/example-office-hall.jpg",
+          "reference/example-office-wc.jpg",
+          "reference/example-overlay.png",
+          "reference/example-pathtraced.jpg",
+          "reference/example-plan2d.png",
+          "reference/example-resize.jpg",
+          "reference/example-smart.jpg",
+          "reference/example-spec.json",
+          "reference/example-style.jpg",
+          "reference/example-villa-diorama.jpg",
+          "reference/example-villa-night.jpg",
+          "reference/example-walk-cam.jpg",
+          "reference/example-walk-markers.jpg",
+          "reference/example-walk-route.json",
+          "reference/furnishing.md",
+          "reference/mep-rules.md",
+          "reference/route-building.md",
+          "reference/route-cad.md",
+          "reference/route-dual.md",
+          "reference/route-dxf-layout.md",
+          "reference/route-image.md",
+          "reference/route-office.md",
+          "reference/route-villa.md",
+          "reference/spec-format.md",
+          "reference/workflow-check.md",
+          "references/guide.vi.md",
+          "scripts/align2.py",
+          "scripts/analyze.py",
+          "scripts/axismap.py",
+          "scripts/bench.py",
+          "scripts/browser.mjs",
+          "scripts/build.py",
+          "scripts/cadpair.py",
+          "scripts/cadshot.py",
+          "scripts/cadsplit.py",
+          "scripts/cadvec.py",
+          "scripts/check.mjs",
+          "scripts/clicktest.mjs",
+          "scripts/closeup.mjs",
+          "scripts/coverage.py",
+          "scripts/dev/birdshot.mjs",
+          "scripts/dev/compare.py",
+          "scripts/dev/dumprooms.mjs",
+          "scripts/dev/eval.mjs",
+          "scripts/dev/fps.mjs",
+          "scripts/dev/grab.mjs",
+          "scripts/dev/libshot.mjs",
+          "scripts/dev/make_test_dxf.py",
+          "scripts/dev/mk_dxf_template.py",
+          "scripts/dev/ptshots.mjs",
+          "scripts/dev/sharetest.mjs",
+          "scripts/dev/shot3d.mjs",
+          "scripts/dev/swinfo.mjs",
+          "scripts/dev/swwall.mjs",
+          "scripts/dev/uitest.mjs",
+          "scripts/dev/walk_lights.mjs",
+          "scripts/dimocr.py",
+          "scripts/dimtext.py",
+          "scripts/dimticks.py",
+          "scripts/doorcheck.py",
+          "scripts/dxf_prepare.py",
+          "scripts/dxfaudit.py",
+          "scripts/dxfinventory.py",
+          "scripts/elecaudit.mjs",
+          "scripts/furnoverlay.py",
+          "scripts/gridmm.py",
+          "scripts/imgio.py",
+          "scripts/package-lock.json",
+          "scripts/package.json",
+          "scripts/qa.mjs",
+          "scripts/qa_files.py",
+          "scripts/qa_furniture.mjs",
+          "scripts/qa_styles.mjs",
+          "scripts/rectify.py",
+          "scripts/walktest.mjs",
+          "scripts/wallaudit.py",
+          "scripts/wallfit.py"
+        ]
+      },
+      "checksum": "45738e35b7307b21bbf739128b1dcab2e4d51489c1d828fea2a94b27308c5029",
+      "file_hashes": {
+        "LICENSE": "c4cc143edbe5e2d4bdcf75e94c3bb2091195f2327bc164d0ebfc384694358de7",
+        "README.md": "c030f8404ee8b54ec645548f2e7d50900929b5261aed2ab1ea20099152f23380",
+        "SKILL.md": "f882351a38f58ecb1354a3b5e4b65bf9d08b54b631b64d128f1b938d25022582",
+        "assets/icon.png": "56ff34c847dd2e7d6746f76516a06334261e4b14234812402b45f235b424c3c1",
+        "manifest.json": "0e146f848ffdb41b1e66cd8bc05b3f99b10ea8aa8a01feae6d5f0bbceb073151",
+        "reference/cad-conventions.md": "cdb080e1f14f2c030f10469ea61c1f91fe15953ed78ee10eda4620baa4715378",
+        "reference/catalog-sizes.json": "52b14e4986ac5c30ec3f5648983d8d2a818a008186b05ecb5360d23adfacf688",
+        "reference/delivery.md": "ee4ca418c701286f62b85a1122b3070850bb9235f787527583196ace7fdb1a56",
+        "reference/env-cloud.md": "886b58d513e7eae4393f889f74a69490560cddf03a366ee48877cdb2f7395cbd",
+        "reference/example-3d.png": "a19cd3e9908f41a0886c3f49ac855ee4b5d3d1f70a654cf7a3986b4990219ccc",
+        "reference/example-ceiling.jpg": "6a1e67fdb43e2fbb3b73d3e7c398f3aab1d1a5b875deb56af6a29887a2ae02b4",
+        "reference/example-freemodel.jpg": "604f1d5c690acb19eeacb32e2c0312e711f704013cc41d5dd8683f9f8018b612",
+        "reference/example-gen-building.py": "95f02b7a604eb36181e44075a4baa8439b48194bc0fedfc5712953f3d5f7c303",
+        "reference/example-gen-cad.py": "4f1eb8d193daa304a8e7feafd7905caab4dab41fa2cb4898574f05d67af274e2",
+        "reference/example-gen-duplex.py": "09c31b1657a79475f5fb664745af2fa27ceeb12e0b477752b59b6c6200362418",
+        "reference/example-gen-furnished.py": "fd7056e68e2f5c40af4d435bce32fd1b3f8df43e0e517d67e195b5ddee06fa12",
+        "reference/example-gen-office-dxf.py": "b98b4bb26b8e4c84fdef07769c90d0ffb8b8ac563a6634fffe255c09a8df627e",
+        "reference/example-gen-precise.py": "e960dd4151de6b919cd24d8f0ad804c508dc3d71f0df55fd9ead6923b7809dfb",
+        "reference/example-gen-villa.py": "52c41eeca0196006b35e3855c4ee3dd3adc6030d889b3591408acfe83d89ed80",
+        "reference/example-gen.py": "c33812b98ae3205bdf81ec8e5ead4e25fa66b052481ff864955c56543f2a8e64",
+        "reference/example-input.jpg": "a86124a6de82ad97a98033bb0d603638040d1dac2545873384cfba47bf801426",
+        "reference/example-library.jpg": "4f0c4cd642f1bc3c22a42d8a397a368c65b2734cbe17b56d729df35ffab58269",
+        "reference/example-mep-edit.jpg": "52c0c8d3ce1ab67fb904225823bec0e3e4742f063ec09f032f0cf3af4ec8c3fc",
+        "reference/example-mep2d.jpg": "39b29dc084f888b24f56274a598f3d847b75b5eb9cef84b8317d9b3a05830a82",
+        "reference/example-mep3d.jpg": "c65fd932a71ecdd9357930b5d12a8f0dfc1793e3d1c42c3e2be3f86e9a1116ef",
+        "reference/example-office-3d.jpg": "61f5d5c9af51ba25522a707569d73cd0e614892d6d2e5f55d264d67ea21242de",
+        "reference/example-office-hall.jpg": "fe5c72c40f3bde37c6afbe8fa319e579e7b1ad8d4e02ecd6ec741ce7c3d1616a",
+        "reference/example-office-wc.jpg": "b630b933f0180d9b43d61961afc5ce97ff7bdf262e736b7337d40738b71d623f",
+        "reference/example-overlay.png": "b44a7f95bccde096af1f579b910e0cecfaf4e25c6128e44634a49bffe74f14b7",
+        "reference/example-pathtraced.jpg": "5d83dedf655447784f7198f677dea7d7bd78a53f6bb2c1c982f6284615b37110",
+        "reference/example-plan2d.png": "a5dab53d0dad59323aabc29645074d418026121d29388424bf39537ea987944e",
+        "reference/example-resize.jpg": "4d32bdeff8c1aba2fd99bb5712f83c1e323e58b37d81568c32dbe9221d4685e8",
+        "reference/example-smart.jpg": "dcb40f00fcde5515bc089582c145c2eb146d9548e99bb86d0c663d9dad6bf7d5",
+        "reference/example-spec.json": "b5226c5b02d21b06e9e464421503167dbe2df5d7d1dd68d0a214ba5e0bb7bb5f",
+        "reference/example-style.jpg": "5b9465b6c061cac0f41dfc2b884b514e054d35d66eaa838e8112d6390b3273d1",
+        "reference/example-villa-diorama.jpg": "1f7e84faf1879e56fd175020bad1b04c98acf890eece0a3b23551c4cb919470e",
+        "reference/example-villa-night.jpg": "d0377a1199a5d31a814f4630467454b692d328160e46faf7e2a394c42687437b",
+        "reference/example-walk-cam.jpg": "0507095915b59afc950841a568cf6a1608b1ccfb23650bfbab09058c5445980d",
+        "reference/example-walk-markers.jpg": "210e56f76ee551dd9537b45fb66af8ef686df5d87e6408d2680b3863e3e9eb6d",
+        "reference/example-walk-route.json": "4063403450d5fc88ea891593923e7489706b88c7adc5cf9d3af1cfa629f3de16",
+        "reference/furnishing.md": "b53a36254ea61608ea5b65c4500cfd4731a88e6775d92e1fb1cfd50feb50989c",
+        "reference/mep-rules.md": "bdf457b717004bcf1dbe735d9504d2e6c5c1ed0e6bd8dbdf08324eb9f028c4e3",
+        "reference/route-building.md": "848e9991524f658d62d27e3373467a69913d72b3c5bdb84db3ecadf6432d1bfd",
+        "reference/route-cad.md": "a0a6fbc0fe5ef926d8d08be1c22c8cdfb6622d50c0eb2e70d24a55e67cfb58b4",
+        "reference/route-dual.md": "de7e621b1ccc6c6611767db049b151d740880b24e1a868e7efd2e8e2ed9931f9",
+        "reference/route-dxf-layout.md": "4b654a3f47442b57c8fce74347c6311da96a4d65989b2d816e6812d4cccd07d0",
+        "reference/route-image.md": "0cc26a8dfcb2c1d0cbc370d030b62cdc8dc4d881c6987f3fe090766b59351e4c",
+        "reference/route-office.md": "3d4d832e6be9e9db34aefd30c5b29a6ff6045a03935ce7c79420fb743ef35630",
+        "reference/route-villa.md": "324ac2045a1fb20ee5a25e73e237dc7429d88d256ac756e22345ab16fa323b16",
+        "reference/spec-format.md": "e88bf8e527a7d2f91d1dfe68261a8343eb5f4151b8153b2e2200b97b4eb77f26",
+        "reference/workflow-check.md": "ef464ae305d2e822e3832918ec412c785eee484b70e6c1fc789e6b84130e323d",
+        "references/guide.vi.md": "5352235122d43816cc3b480dce2b4f5bce37e5b7e4dd55fe4087ba2f833b71a5",
+        "scripts/align2.py": "49d8934ab58f809c806dd588afe43e1901f809294f2e02e766aa6fa61e74b985",
+        "scripts/analyze.py": "ee49b71465e0a3d0ee5209723f99a201ece1a68ab746bc4b15effd9e562a8010",
+        "scripts/axismap.py": "e3514600ff4924b9077ca338b9f5990578ffc0ce390e692836c017a7c572bead",
+        "scripts/bench.py": "85268749f877b17db518fe6ede1b2eb94a750194e90131924c9c5bf78abdd0d3",
+        "scripts/browser.mjs": "cdbb291c11ea5a601474a6212e84252786a6639fc3184f5ad5803b1d76d66514",
+        "scripts/build.py": "0476e5291a7a3b5cd3ac016671517a99d844075555cee56e95697b6f4e7d4b10",
+        "scripts/cadpair.py": "501215c9ca3e05ff5534e0e2d8b14d3940968f57d8a42704ede20e92e68fcb8e",
+        "scripts/cadshot.py": "8931873054a91a51c6b790e116769169b8046eee86288865c43524bc6fd064a7",
+        "scripts/cadsplit.py": "4b37fbf86b5591f2ad4cbc849d2c4c4324426eb28102dc4814813a8a117c83ed",
+        "scripts/cadvec.py": "fdae8fcf760db68652db349342751fecac17be175bf17ac68a6207a998371c3d",
+        "scripts/check.mjs": "6f6803e27b3e563f78284819a2d136364fe2d7d1159242722bdc602af90faff4",
+        "scripts/clicktest.mjs": "82930fdcffa600da32ff8767bc074bcd4a75a19640d5156b6407707ea82b37f6",
+        "scripts/closeup.mjs": "e989151aa96c11d3b595898471cb04b814151691b7c8114ee59942371041f223",
+        "scripts/coverage.py": "fc15c53d82d0845f0a595463e337c6343a363901d9f0dfe4761ad74ee2d57af8",
+        "scripts/dev/birdshot.mjs": "1a87f0ce2bb1e591d617fa453dba20c082375f703620eca0cb7315143515751b",
+        "scripts/dev/compare.py": "315e1ccd9719165cd6dd9ac349755558a225e8626a8c9f6478238d272488c0bb",
+        "scripts/dev/dumprooms.mjs": "88618b5f2cf1e3a1298a2c0c975e60b026205e24e0511ac5dd98bec2698113d4",
+        "scripts/dev/eval.mjs": "0048003e0a9be955059b81e40f5ee677a067cbd4e67d7c2f71099469681a537f",
+        "scripts/dev/fps.mjs": "071c59a8f38d250067fbccdfed82d33a9b6894c15a23c3a74b17cba6feb50c60",
+        "scripts/dev/grab.mjs": "85f4bd02019900c00463146f585112b56eddf98bb4061720fb29e8750fadf41a",
+        "scripts/dev/libshot.mjs": "e0fbaf14cee413ae162f507f1ec2d63bd2c97b891dd8550ff9750764b8ec2127",
+        "scripts/dev/make_test_dxf.py": "2152c1e128595979b6eae88434712162b6fc05d8f81330649de7cca221dc810f",
+        "scripts/dev/mk_dxf_template.py": "82a45c33a7c6a0883cd227199e37ddca9f4da4ea490d7e4f30b19ac16adfa24b",
+        "scripts/dev/ptshots.mjs": "d93b671204a60044a64e93052307ee5e6c791c7500bb46bb4aa47e6253e966e3",
+        "scripts/dev/sharetest.mjs": "d01ebcc5909d4d67eb141935c4216b308ab3119345f0bd8c8bb286083a4cec62",
+        "scripts/dev/shot3d.mjs": "0f25c3aab3c9578e59ff5a16bbe83ac0ed4519c664ca59c3a9bd93ed5c89341e",
+        "scripts/dev/swinfo.mjs": "bee7cdd87de99b5135901c17a64eb3eae866e3adbfb9d2fde7b905aba9837985",
+        "scripts/dev/swwall.mjs": "4b7e4eaf68f1c08b3ebea405e76f9d4e225592716c9a1cb265b0822e5d8fec57",
+        "scripts/dev/uitest.mjs": "5162c73c867a060fb75dbcdaa0894555f33c678b10c89a796d9e2b0145cf65a8",
+        "scripts/dev/walk_lights.mjs": "368af7afd37cf9ad6a991f401e25899dba8753dc081f8f0accd7ce2e01042579",
+        "scripts/dimocr.py": "be53dde458ecadb64675cebe39e6b0916c58bbef58fbf02fd7def79401d4b530",
+        "scripts/dimtext.py": "f7ea11fb7437b7a1515f352b521ed3258dbf8d7f662ab64cf946a9f6ffb080c7",
+        "scripts/dimticks.py": "ffa5867baaf954171dd90aa10034486fba601023a88a14f21e74eb87909cbb58",
+        "scripts/doorcheck.py": "fe0af5ed6434d5604737f5d2a85baed1d23dadf58a91c7d5b2e4fc256f2390c9",
+        "scripts/dxf_prepare.py": "302552bf0a3a2f3f821d4ec8b1781f5db4600f625732ea1ec961b4027f4c1035",
+        "scripts/dxfaudit.py": "5ee20fac96e01386e8efa9bd74193d5394fc018399e2d0c0c3f085c2003f6fb8",
+        "scripts/dxfinventory.py": "40a2b350963d2c7e232cdfea8ad3db34f41ee26a2922d50ad3edab3d2754b7f6",
+        "scripts/elecaudit.mjs": "744592d1b4fc66d429f7162839a5d775dc56db02b542e56642a64609577eb6cf",
+        "scripts/furnoverlay.py": "ec64cafb092b907306e085c106607a3ed91edb8f7f398b2708bdee1d5ed6a624",
+        "scripts/gridmm.py": "f2272acc3e1325cf5833f0f5e20bb9bd04691ab35ed103f9b9c441843689c9c1",
+        "scripts/imgio.py": "066bf71d1859d396e847176c48c1d80c2fd3d9be2123fd0ba99c268fb730496b",
+        "scripts/package-lock.json": "ff1ff6989b4278ee4cdfaa8d979bb8070e5e3c5b1157502f0d16ed0a6047a08d",
+        "scripts/package.json": "99a9a7c488ff031defab92196c4e47a4834bf3a1266a1a24d1fe40ae70a08bd0",
+        "scripts/qa.mjs": "4492ad7ef7a94559cd7bbbb0879a887f182d9e056c203e45306c194d26fa618b",
+        "scripts/qa_files.py": "4599e699347350cc73a00922586c6b5500fdfa7edb90ca28447576090fa15c5f",
+        "scripts/qa_furniture.mjs": "979a33c811b604915543d124dc78310fffebb3b26dfc402aa0a13027d1d05111",
+        "scripts/qa_styles.mjs": "6f68f0a41a765f413a14ee938b2157678e83c951c10140c78a16962828a09a8f",
+        "scripts/rectify.py": "e04c2b6c94f94f9163cadfe34e879693b20f024a1e08059e630a7efc74917c4f",
+        "scripts/walktest.mjs": "c0b5e032974007ad8a5eba4a8ca947e27bff526c8b2a8d9838f49c96e02b23ed",
+        "scripts/wallaudit.py": "12cfedab1d44937d6549baccfbc16150a0ac52d0fb15fa184cf8a3b7df02ce1f",
+        "scripts/wallfit.py": "18543f1f15066d8aab031245c0595b11bd3583509e611f22f34132e5c965b10f"
+      },
+      "notes": [],
+      "last_checked": "2026-11-17T01:12:03.935Z",
+      "area": "quarantine"
+    },
+    {
       "id": "huashu-art-motion",
       "name": "huashu-art-motion",
       "description": "艺术与视频动画：拆解复刻动画；36种既有实做风格＋16种可迁移研究配方；9种解说动画语法，8种可按口播参数渲片段；含口播整片参考代码及框景检查；人用AI生帧；可选已有录音、系统声音与语音复刻，按需配置。",
@@ -35829,6 +38667,1091 @@
       "notes": [],
       "last_checked": "2026-11-13T09:22:43.610Z",
       "area": "skills"
+    },
+    {
+      "id": "live-panel",
+      "name": "live-panel",
+      "description": "Build a terminal-style, always-running animated architecture diagram (a \"live panel\") from a JSON config and render it to an mp4. Use when the user wants a system, agent or org architecture diagram that looks like a monitoring dashboard in a terminal window - fixed layout, glowing packets on the wires, scrolling log, counters, bars that flip state - as a screen-recording-style video or a live web page, instead of a static picture or a step-by-step reveal. 中文：当用户要做\"活的\"架构图、agent 树或系统监控面板风格的动画（mp4 视频或循环网页）时使用——终端里一直在跑的监控面板外观，固定布局、线上流动的数据包、滚动日志、翻转的计数器和状态条；不是静态图，也不是分步演示。",
+      "description_vi": "Tạo sơ đồ kiến trúc chuyển động kiểu bảng giám sát và xuất video MP4.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "live-panel",
+        "version": "d5aa86d8a572",
+        "source": {
+          "url": "https://github.com/ythx-101/live-panel-skill",
+          "commit": "d5aa86d8a5729cea2c78f083df672977f168a147",
+          "sha256": "1d5d0e7241ca0b3782f35317cf33dbb290c19a9bdd672e545b9a08c28959a468",
+          "license": "MIT AND OFL-1.1 AND ISC; example visual rights require separate review"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Tạo sơ đồ kiến trúc chuyển động kiểu bảng giám sát và xuất video MP4.",
+          "aliases": [
+            "Tạo sơ đồ kiến trúc chuyển động kiểu bảng giám sát và xuất video MP4."
+          ],
+          "keywords": [
+            "live",
+            "panel",
+            "Tạo sơ đồ kiến trúc chuyển động kiểu bảng giám sát và xuất video MP4."
+          ],
+          "examples": [
+            "Dùng live-panel cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "1d5d0e7241ca0b3782f35317cf33dbb290c19a9bdd672e545b9a08c28959a468"
+        },
+        "requiredCapabilities": [
+          "Applications [reference-hint]",
+          "bash [file-type-hint]",
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "ffmpeg [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "git [mention-hint]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]",
+          "react [mention-hint]",
+          "remotion [mention-hint]",
+          "subagents [mention-hint]"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell",
+          "network"
+        ],
+        "syncedAt": "2026-11-17T01:12:03.935Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "assets/fonts/Excalifont-Regular-Latin.woff2: binary-file (low)",
+            "assets/fonts/SmileySans-Oblique.woff2: binary-file (low)",
+            "examples/agent-architecture/agent-architecture.mp4: binary-file (low)",
+            "examples/agent-architecture/preview.webp: binary-file (low)",
+            "examples/airbnb/airbnb.mp4: binary-file (low)",
+            "examples/airbnb/preview.webp: binary-file (low)",
+            "examples/codex-agents/codex-agents.mp4: binary-file (low)",
+            "examples/codex-agents/preview.webp: binary-file (low)",
+            "examples/excalidraw-gardener/preview.webp: binary-file (low)",
+            "examples/excalidraw-import/agent-loop.mp4: binary-file (low)",
+            "examples/minimal/preview.webp: binary-file (low)",
+            "examples/ring/preview.webp: binary-file (low)",
+            "llms.txt: exe-download (medium)",
+            "Daily intake: full manual/runtime approval not performed. Node.js, trình duyệt và công cụ render; giữ NOTICE và giấy phép tài nguyên.",
+            "Incomplete bundle: .gitignore, examples/excalidraw-aqua/preview.webp, examples/funnel/funnel.mp4, examples/funnel/preview.webp, examples/loop-poteto/loop-poteto.mp4, examples/loop-poteto/preview-dark.webp, examples/loop-poteto/preview-light.webp, examples/ring/ring.mp4, scripts/scaffold.py, scripts/verify_view.py",
+            "NOTICE reserves third-party example visual designs; redistribution rights for these examples are not independently established."
+          ]
+        },
+        "compatibility": {
+          "status": "incompatible",
+          "notes": [
+            "Upstream SKILL.md and retained source files are byte-identical to the pinned GitHub commit; this does not certify English language or bundle completeness.",
+            "10 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+            "Node.js, trình duyệt và công cụ render; giữ NOTICE và giấy phép tài nguyên."
+          ]
+        }
+      },
+      "aliases": [
+        "Tạo sơ đồ kiến trúc chuyển động kiểu bảng giám sát và xuất video MP4."
+      ],
+      "keywords": [
+        "live",
+        "panel",
+        "Tạo sơ đồ kiến trúc chuyển động kiểu bảng giám sát và xuất video MP4."
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "d5aa86d8a572",
+      "source": {
+        "repository": "ythx-101/live-panel-skill",
+        "commit": "d5aa86d8a5729cea2c78f083df672977f168a147",
+        "path": ""
+      },
+      "stars": 862,
+      "created_at": "2026-10-03T16:53:36Z",
+      "pushed_at": "2026-11-12T18:52:35Z",
+      "stats_checked": "2026-11-17T01:12:03.935Z",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 23,
+        "security": 15,
+        "compatibility": 8,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "CITATION.cff"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "NOTICE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/fonts/Excalifont-Regular-Latin.woff2"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/fonts/SmileySans-Oblique.woff2"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "examples/agent-architecture/agent-architecture.mp4"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "examples/agent-architecture/preview.webp"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "examples/airbnb/airbnb.mp4"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "examples/airbnb/preview.webp"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "examples/codex-agents/codex-agents.mp4"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "examples/codex-agents/preview.webp"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "examples/excalidraw-gardener/preview.webp"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "examples/excalidraw-import/agent-loop.excalidraw"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "examples/excalidraw-import/agent-loop.mp4"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "examples/minimal/preview.webp"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "examples/ring/preview.webp"
+        },
+        {
+          "rule": "exe-download",
+          "severity": "medium",
+          "file": "llms.txt",
+          "line": 45
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "ffmpeg"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "Applications [reference-hint]",
+          "bash [file-type-hint]",
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "ffmpeg [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "git [mention-hint]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]",
+          "react [mention-hint]",
+          "remotion [mention-hint]",
+          "subagents [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          }
+        ],
+        "detected": [
+          {
+            "name": "filesystem-read",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 34
+              }
+            ]
+          },
+          {
+            "name": "subagents",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 18
+              }
+            ]
+          },
+          {
+            "name": "Applications",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 86
+              },
+              {
+                "file": "README.md",
+                "line": 93
+              }
+            ]
+          },
+          {
+            "name": "react",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 232
+              }
+            ]
+          },
+          {
+            "name": "remotion",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 230
+              },
+              {
+                "file": "llms.txt",
+                "line": 18
+              }
+            ]
+          },
+          {
+            "name": "argparse",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check_frames.py",
+                "line": 8
+              },
+              {
+                "file": "scripts/excalidraw_import.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 8
+              }
+            ]
+          },
+          {
+            "name": "base64",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/livepanel.py",
+                "line": 2
+              },
+              {
+                "file": "scripts/livepanel.py",
+                "line": 73
+              }
+            ]
+          },
+          {
+            "name": "check_frames",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "tests/test_cycle_replay.py",
+                "line": 15
+              }
+            ]
+          },
+          {
+            "name": "collections",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/excalidraw_import.py",
+                "line": 28
+              }
+            ]
+          },
+          {
+            "name": "fontTools",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/livepanel.py",
+                "line": 80
+              }
+            ]
+          },
+          {
+            "name": "io",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/livepanel.py",
+                "line": 79
+              }
+            ]
+          },
+          {
+            "name": "json",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "examples/excalidraw-aqua/build_config.py",
+                "line": 5
+              },
+              {
+                "file": "examples/excalidraw-gardener/build_config.py",
+                "line": 6
+              },
+              {
+                "file": "tests/test_cycle_replay.py",
+                "line": 6
+              },
+              {
+                "file": "tests/test_offline.py",
+                "line": 2
+              }
+            ]
+          },
+          {
+            "name": "livepanel",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check_frames.py",
+                "line": 11
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 11
+              },
+              {
+                "file": "tests/test_cycle_replay.py",
+                "line": 14
+              }
+            ]
+          },
+          {
+            "name": "os",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "tests/test_cycle_replay.py",
+                "line": 7
+              }
+            ]
+          },
+          {
+            "name": "pathlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "examples/excalidraw-aqua/build_config.py",
+                "line": 6
+              },
+              {
+                "file": "examples/excalidraw-gardener/build_config.py",
+                "line": 7
+              },
+              {
+                "file": "scripts/check_frames.py",
+                "line": 9
+              },
+              {
+                "file": "scripts/livepanel.py",
+                "line": 3
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 9
+              },
+              {
+                "file": "tests/test_cycle_replay.py",
+                "line": 11
+              },
+              {
+                "file": "tests/test_offline.py",
+                "line": 7
+              }
+            ]
+          },
+          {
+            "name": "subprocess",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "tests/test_offline.py",
+                "line": 3
+              }
+            ]
+          },
+          {
+            "name": "sys",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "tests/test_cycle_replay.py",
+                "line": 8
+              },
+              {
+                "file": "tests/test_offline.py",
+                "line": 4
+              }
+            ]
+          },
+          {
+            "name": "tempfile",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "tests/test_cycle_replay.py",
+                "line": 9
+              },
+              {
+                "file": "tests/test_offline.py",
+                "line": 5
+              }
+            ]
+          },
+          {
+            "name": "unittest",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "tests/test_cycle_replay.py",
+                "line": 10
+              },
+              {
+                "file": "tests/test_offline.py",
+                "line": 6
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/fetch_fonts.sh",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "assets/views/excalidraw.js",
+                "line": 1
+              },
+              {
+                "file": "assets/views/funnel.js",
+                "line": 1
+              },
+              {
+                "file": "assets/views/loop.js",
+                "line": 1
+              },
+              {
+                "file": "assets/views/ring.js",
+                "line": 1
+              },
+              {
+                "file": "assets/views/sketchboard.js",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 136
+              },
+              {
+                "file": "assets/views/excalidraw.js",
+                "line": 155
+              },
+              {
+                "file": "assets/views/loop.js",
+                "line": 187
+              },
+              {
+                "file": "assets/views/ring.js",
+                "line": 52
+              },
+              {
+                "file": "examples/excalidraw-aqua/build_config.py",
+                "line": 91
+              },
+              {
+                "file": "examples/excalidraw-aqua/config-3x4.json",
+                "line": 329
+              },
+              {
+                "file": "examples/excalidraw-aqua/config-4x5.json",
+                "line": 329
+              },
+              {
+                "file": "examples/excalidraw-gardener/build_config.py",
+                "line": 82
+              },
+              {
+                "file": "examples/excalidraw-gardener/config-3x4.json",
+                "line": 367
+              },
+              {
+                "file": "examples/excalidraw-gardener/config-4x5.json",
+                "line": 367
+              },
+              {
+                "file": "examples/excalidraw-import/config.json",
+                "line": 232
+              },
+              {
+                "file": "examples/loop-poteto/config.json",
+                "line": 34
+              },
+              {
+                "file": "references/verify-view.md",
+                "line": 25
+              },
+              {
+                "file": "references/view-rules.md",
+                "line": 9
+              },
+              {
+                "file": "references/views.md",
+                "line": 54
+              },
+              {
+                "file": "scripts/excalidraw_import.py",
+                "line": 9
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "examples/excalidraw-aqua/build_config.py",
+                "line": 1
+              },
+              {
+                "file": "examples/excalidraw-gardener/build_config.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/check_frames.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/excalidraw_import.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/livepanel.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 1
+              },
+              {
+                "file": "tests/test_cycle_replay.py",
+                "line": 1
+              },
+              {
+                "file": "tests/test_offline.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 21
+              },
+              {
+                "file": "SKILL.md",
+                "line": 28
+              },
+              {
+                "file": "examples/excalidraw-aqua/README.md",
+                "line": 4
+              },
+              {
+                "file": "examples/excalidraw-aqua/build_config.py",
+                "line": 1
+              },
+              {
+                "file": "examples/excalidraw-aqua/config-3x4.json",
+                "line": 32
+              },
+              {
+                "file": "examples/excalidraw-aqua/config-4x5.json",
+                "line": 32
+              },
+              {
+                "file": "examples/excalidraw-gardener/README.md",
+                "line": 7
+              },
+              {
+                "file": "examples/excalidraw-gardener/build_config.py",
+                "line": 1
+              },
+              {
+                "file": "examples/hybrid-agent/config.json",
+                "line": 220
+              },
+              {
+                "file": "llms.txt",
+                "line": 9
+              },
+              {
+                "file": "references/verify-view.md",
+                "line": 9
+              },
+              {
+                "file": "references/views.md",
+                "line": 287
+              },
+              {
+                "file": "scripts/check_frames.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/excalidraw_import.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 1
+              },
+              {
+                "file": "tests/test_cycle_replay.py",
+                "line": 4
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 58
+              },
+              {
+                "file": "examples/airbnb/config.json",
+                "line": 44
+              },
+              {
+                "file": "examples/codex-agents/config.json",
+                "line": 42
+              },
+              {
+                "file": "references/verify-view.md",
+                "line": 7
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 16
+              },
+              {
+                "file": "SKILL.md",
+                "line": 35
+              },
+              {
+                "file": "llms.txt",
+                "line": 7
+              },
+              {
+                "file": "references/verify-view.md",
+                "line": 8
+              },
+              {
+                "file": "references/views.md",
+                "line": 286
+              },
+              {
+                "file": "scripts/check_frames.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/livepanel.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 5
+              },
+              {
+                "file": "tests/test_cycle_replay.py",
+                "line": 1
+              },
+              {
+                "file": "tests/test_offline.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "ffmpeg",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "ffmpeg",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 21
+              },
+              {
+                "file": "SKILL.md",
+                "line": 35
+              },
+              {
+                "file": "llms.txt",
+                "line": 9
+              },
+              {
+                "file": "scripts/check_frames.py",
+                "line": 36
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 2
+              }
+            ]
+          },
+          {
+            "name": "git",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 59
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 45,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [
+          ".gitignore",
+          "examples/excalidraw-aqua/preview.webp",
+          "examples/funnel/funnel.mp4",
+          "examples/funnel/preview.webp",
+          "examples/loop-poteto/loop-poteto.mp4",
+          "examples/loop-poteto/preview-dark.webp",
+          "examples/loop-poteto/preview-light.webp",
+          "examples/ring/ring.mp4",
+          "scripts/scaffold.py",
+          "scripts/verify_view.py"
+        ],
+        "packageCompleteness": "incomplete",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "CITATION.cff",
+          "LICENSE",
+          "NOTICE",
+          "README.md",
+          "SKILL.md",
+          "assets/fonts/Excalifont-OFL.txt",
+          "assets/fonts/Excalifont-Regular-Latin.woff2",
+          "assets/fonts/SmileySans-OFL.txt",
+          "assets/fonts/SmileySans-Oblique.woff2",
+          "assets/fonts/Xiaolai-OFL.txt",
+          "assets/template.html",
+          "assets/views/LUCIDE-LICENSE.txt",
+          "assets/views/ROUGH-LICENSE.txt",
+          "assets/views/excalidraw.js",
+          "assets/views/funnel.js",
+          "assets/views/loop.js",
+          "assets/views/ring.js",
+          "assets/views/sketchboard.js",
+          "examples/agent-architecture/agent-architecture.mp4",
+          "examples/agent-architecture/config.json",
+          "examples/agent-architecture/preview.webp",
+          "examples/airbnb/airbnb.mp4",
+          "examples/airbnb/config.json",
+          "examples/airbnb/preview.webp",
+          "examples/codex-agents/codex-agents.mp4",
+          "examples/codex-agents/config.json",
+          "examples/codex-agents/preview.webp",
+          "examples/excalidraw-aqua/README.md",
+          "examples/excalidraw-aqua/build_config.py",
+          "examples/excalidraw-aqua/config-3x4.json",
+          "examples/excalidraw-aqua/config-4x5.json",
+          "examples/excalidraw-gardener/README.md",
+          "examples/excalidraw-gardener/build_config.py",
+          "examples/excalidraw-gardener/config-3x4.json",
+          "examples/excalidraw-gardener/config-4x5.json",
+          "examples/excalidraw-gardener/preview.webp",
+          "examples/excalidraw-import/agent-loop.excalidraw",
+          "examples/excalidraw-import/agent-loop.mp4",
+          "examples/excalidraw-import/config.json",
+          "examples/funnel-karpathy/config.json",
+          "examples/funnel/config.json",
+          "examples/hybrid-agent/README.md",
+          "examples/hybrid-agent/config.json",
+          "examples/loop-poteto/config.json",
+          "examples/minimal/config.json",
+          "examples/minimal/preview.webp",
+          "examples/ring/config.json",
+          "examples/ring/preview.webp",
+          "llms.txt",
+          "manifest.json",
+          "references/config-schema.md",
+          "references/guide.vi.md",
+          "references/motion-grammar.md",
+          "references/verify-view.md",
+          "references/view-rules.md",
+          "references/views.md",
+          "scripts/check_frames.py",
+          "scripts/excalidraw_import.py",
+          "scripts/fetch_fonts.sh",
+          "scripts/livepanel.py",
+          "scripts/render.py",
+          "tests/test_cycle_replay.py",
+          "tests/test_offline.py"
+        ]
+      },
+      "checksum": "3b39962b85ac62ec34ca88fc44f872c5f1c8b6683776c6436b70f23c2770b889",
+      "file_hashes": {
+        "CITATION.cff": "47c6e4287d7228487166932d46b2d343c15ecfc93746724c6949e4f246c556cc",
+        "LICENSE": "d9a271454ec62391b2b304fba4c45068887fd7ef1a872dca544c6938ef7fef2b",
+        "NOTICE": "4969c67367b6e3fdef8e4940c9a4192988a5b656ece5ac58cced407312713326",
+        "README.md": "4e226d480d15c0f6f2f4318f198022d486961e7d3a5ee397382d5b80bf78360a",
+        "SKILL.md": "1d5d0e7241ca0b3782f35317cf33dbb290c19a9bdd672e545b9a08c28959a468",
+        "assets/fonts/Excalifont-OFL.txt": "5ca7f62335c5dbf01be2930b95c9f55b932a913ba3655b84bb77b43e4a697aef",
+        "assets/fonts/Excalifont-Regular-Latin.woff2": "e4423b318e11432aff2e6e865e300b7ca270f92321a3f56632268fede01c1b48",
+        "assets/fonts/SmileySans-OFL.txt": "9401f4050f1b66c26b6ccdc8b0e14a3c1cc37aac122eda84386f25854a9bec72",
+        "assets/fonts/SmileySans-Oblique.woff2": "731f22973349404b15a88a99ef3b5dd4104c0965c23b7e485c1f11e84fea99e2",
+        "assets/fonts/Xiaolai-OFL.txt": "0df7e09be4c2c850a48bd8beb9cd64b343aad49cd5d3f6cfb2ad2e3d28a56ca4",
+        "assets/template.html": "a046fdfeda4309ce3feb42dc71560847ef7b96f447e1218488523c1b96d246d0",
+        "assets/views/LUCIDE-LICENSE.txt": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+        "assets/views/ROUGH-LICENSE.txt": "dca9a392272606ac748ac0976a2a1133f14eef841c27beaa51a844d53c56a09d",
+        "assets/views/excalidraw.js": "07c03a113c421d57ce84cdd7ef0030366737c190761c5532dda23e163be95a5c",
+        "assets/views/funnel.js": "b0f5f09f1c99e73ebc0b732bb3771caccd75b5591b2c2ba4caa3b61fc172f47d",
+        "assets/views/loop.js": "745eb49d212161cb16026ce733b93d460ed2674da5d241e24505f0e7e6240a34",
+        "assets/views/ring.js": "3deee7ec9dfcfd336d380f9e40e1823e79f146c6827d41429370107893e0df98",
+        "assets/views/sketchboard.js": "081bb4e43c4f3f0a5e0dc1dd73f570c154ac5f673bfc03c52cd79bcd3c36c0df",
+        "examples/agent-architecture/agent-architecture.mp4": "d4d28641e7609f3cf6afed8fc81db36047a7062762eff369f4850b130767166c",
+        "examples/agent-architecture/config.json": "ae643887d9768354659583d5b2f03dcedee21a9676f405c64789875dd3a095f4",
+        "examples/agent-architecture/preview.webp": "5136d2e688420dba041cb3e1d9f4ef77ab05caab3544814106ce81ed92c510ed",
+        "examples/airbnb/airbnb.mp4": "048bd1945166a27f793b72fac3333c80dc170cdf5fe76a1bab40cc5d16d3307a",
+        "examples/airbnb/config.json": "7d07752b3d7999c23c533a3953e75151127a08dbf19d9d1a59e7adc0448da5f6",
+        "examples/airbnb/preview.webp": "e896187d6ecf958d91905abb96649cc434f20369a98f72527ac328577ee5870f",
+        "examples/codex-agents/codex-agents.mp4": "f896f6839fe598382a5a7c2c04b76663fda881396bec2a371833c6370e3153de",
+        "examples/codex-agents/config.json": "d9303a45d268d27b853bfbd1a44f82eb7a6e8fbfecc1ae87550b9967c69df765",
+        "examples/codex-agents/preview.webp": "3b5ea8a2c09a4b918ea77c8eeabe4e9d2bbbe54e1bba8ac0e5da0b7a53070a72",
+        "examples/excalidraw-aqua/README.md": "d7161c247e383e36f5be49fdb92fd97e665f2adf04a7b813fe8bd6c89be15dde",
+        "examples/excalidraw-aqua/build_config.py": "75ec8f99f19107b1c915d51491382b720990570551f2f45d72385a39a37448a1",
+        "examples/excalidraw-aqua/config-3x4.json": "de7f99f9731982a3f37ccaa8e52eede94a63c8b53e0971fe4058625f4725be86",
+        "examples/excalidraw-aqua/config-4x5.json": "c163d894f91b1c52ac792df1d084642560d3edb7bf86fe9d3b6c071ecbd67a55",
+        "examples/excalidraw-gardener/README.md": "06e86dcba4d05604fffcfaf48ed7a12f67ec3b9cf6739d6f87a055118e13ee32",
+        "examples/excalidraw-gardener/build_config.py": "9b4e71a5c5ca21907131e2dae1bab54bcc18ef3c359ffc7b9bc78db5cbd5f45b",
+        "examples/excalidraw-gardener/config-3x4.json": "0f1398cc0208979c6e8f65442d09393b79988bf884878f2f1c740b6fe7e34a54",
+        "examples/excalidraw-gardener/config-4x5.json": "a2db2ed92412fc4f4d95ba3976c49b50a865179ee275d4e7cbcb018cc455c32d",
+        "examples/excalidraw-gardener/preview.webp": "bd5dbb6a21ce12f0514a9e846b3e45e090ae732b52e2a85f0a1efd0609051bde",
+        "examples/excalidraw-import/agent-loop.excalidraw": "ad8aa279c03e97728bf3302162acf1cac1bfb404d7ffdea984cc04b48cb3915e",
+        "examples/excalidraw-import/agent-loop.mp4": "7c3cc92d85775c6ad7785e4d5c1eab105095ea79862fa2c40981409fa3a4051f",
+        "examples/excalidraw-import/config.json": "a37045410615c4056ce301355fdf9fc32470a448300ea29883e6e63fa1177653",
+        "examples/funnel-karpathy/config.json": "f470fd1a31a4fdf5e5c91fd7494ef95a7f1c24313609d61d43ac13312f225c1f",
+        "examples/funnel/config.json": "86fb868c702601f87b73658b49f2008e33dbffa4d2543c0eb2df8593a985c783",
+        "examples/hybrid-agent/README.md": "a6f63c953ddfff1549e92f0481fd496d5398fa45511ca1c744a4ea0d94b64668",
+        "examples/hybrid-agent/config.json": "db76c2086cf1c99f068c728236d6b6c0fbdfbd95f996525e43df7750d1e4efca",
+        "examples/loop-poteto/config.json": "e25498d30674488f77dbf00827b327645adc44b2a0ea30916100519eceecec32",
+        "examples/minimal/config.json": "b6e28dbce9e5e0c8ba8cc03f369a72770be3fe16719350cc46f27a12abb759b8",
+        "examples/minimal/preview.webp": "a45025fffefddfeebe1d01dec2464bb5c3e83157992ddb339a905de63995a5a1",
+        "examples/ring/config.json": "5489fc68268632b8cfd77080b0dd70aaeca9a26eb57356a7e994ebe3874c3cc4",
+        "examples/ring/preview.webp": "a09a60e9e4b549d02a9a1357665107b20286e0532e16f4e5ef2359e0e38a1ef0",
+        "llms.txt": "218b4a1b572ae7aaa13e415a44db2eacd0c351f865500e79b277be1a186f85a6",
+        "manifest.json": "88983fdd923bef50bf8670dfd6436318e1d13c8213373fcdead3a5be454d13c1",
+        "references/config-schema.md": "9bf00752d0a3fe05714f3635ad650e4720ba5439e9d71d5d7b9bd32242ae750f",
+        "references/guide.vi.md": "fbdbcb41c47292690181b6a909e8a1fab1695d0602e9758fbd8c5b5b284d7410",
+        "references/motion-grammar.md": "b4a4dc946690c25d58f615425b765ef5df844f90da18b1c99838a87bf0f7d2ba",
+        "references/verify-view.md": "d35bad90ad37f1dadb81a0af354170613aa1ef4adf85197078724c105458d2cf",
+        "references/view-rules.md": "172fc5df47a2ee88a5cab23de4a1b576d7f5bb9414fc9a002db66873344e2cb2",
+        "references/views.md": "e7b82db8080bfb6495e7b9fb583ae4808447f49d2d9283eb303f76e94cada679",
+        "scripts/check_frames.py": "d6e4eee19c86f4dcb77b79578a79d61ed4fbf2384fbe9718f7d0925c475b5b23",
+        "scripts/excalidraw_import.py": "41d87b39f9ccbc1bc6736bd3209c74a74b7b84e8f005c3c569450481a468ab7c",
+        "scripts/fetch_fonts.sh": "7c6098ae94dc87e76a84267ed386a7935ee1142c8c4c1f8b41947b0970501b54",
+        "scripts/livepanel.py": "0ac83094adfecc4d8ef1f86d841d7303a73441c677b6c844d6d248055d3e62ad",
+        "scripts/render.py": "541f4be98df54db61522f017128613be50bbbc15c340f75f3d358ac77dc62737",
+        "tests/test_cycle_replay.py": "ba87e82757ce097c3b99f0ffe99931531174924410e5b2842325784f6f232498",
+        "tests/test_offline.py": "aa302d4b14dc6a89329607bb53a83d0bdc7cc90784a196b804ae5a750c3370ea"
+      },
+      "notes": [],
+      "last_checked": "2026-11-17T01:12:03.935Z",
+      "area": "quarantine"
     },
     {
       "id": "logo-design",
@@ -48485,6 +52408,240 @@
       "area": "quarantine"
     },
     {
+      "id": "ste",
+      "name": "ste",
+      "description": "Make the agent report results to the user by the ASD-STE100 (Simplified Technical English) principles, in Chinese: key information first, one word one meaning, one fact per sentence, fixed status words, honest verification state, short sentences. Use only when the user explicitly activates it; never activate it automatically, including for task result reports. Once activated, applies to every reply in the session until the user says \"停止 ste\" or \"stop ste\". 让 Agent 按 ASD-STE100 原则用中文向用户汇报结果: 只在用户明确激活时使用, 不得自动使用, 任务结果汇报也不例外. Explicit activation: \"/ste\", \"用 STE 规范输出\", \"按 ASD-STE100 汇报\", \"简化技术中文\", \"report in STE style\".",
+      "description_vi": "Viết báo cáo kỹ thuật tiếng Trung ngắn gọn theo nguyên tắc ASD-STE100 khi được gọi rõ ràng.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "ste",
+        "version": "f7c104315045",
+        "source": {
+          "url": "https://github.com/dualface/ste-zh",
+          "commit": "f7c104315045849e7bce357664273b4e99bc5119",
+          "sha256": "be32640a2c9fa7334deeea0cda48817c1ed54b9667851ede273a84ed2b8af4d0",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Viết báo cáo kỹ thuật tiếng Trung ngắn gọn theo nguyên tắc ASD-STE100 khi được gọi rõ ràng.",
+          "aliases": [
+            "Viết báo cáo kỹ thuật tiếng Trung ngắn gọn theo nguyên tắc ASD-STE100 khi được gọi rõ ràng."
+          ],
+          "keywords": [
+            "ste",
+            "Viết báo cáo kỹ thuật tiếng Trung ngắn gọn theo nguyên tắc ASD-STE100 khi được gọi rõ ràng."
+          ],
+          "examples": [
+            "Dùng ste cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "be32640a2c9fa7334deeea0cda48817c1ed54b9667851ede273a84ed2b8af4d0"
+        },
+        "requiredCapabilities": [
+          "bash [mention-hint]",
+          "git [mention-hint]",
+          "node [mention-hint]",
+          "ste [reference-hint]"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write"
+        ],
+        "syncedAt": "2026-11-17T09:13:27.821Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "Daily intake: full manual/runtime approval not performed. Core tiếng Trung; chưa đáp ứng English Core; không tự kích hoạt trên toàn phiên."
+          ]
+        },
+        "compatibility": {
+          "status": "incompatible",
+          "notes": [
+            "Upstream SKILL.md and retained source files are byte-identical to the pinned GitHub commit; this does not certify English language or bundle completeness.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+            "Core tiếng Trung; chưa đáp ứng English Core; không tự kích hoạt trên toàn phiên."
+          ]
+        }
+      },
+      "aliases": [
+        "Viết báo cáo kỹ thuật tiếng Trung ngắn gọn theo nguyên tắc ASD-STE100 khi được gọi rõ ràng."
+      ],
+      "keywords": [
+        "ste",
+        "Viết báo cáo kỹ thuật tiếng Trung ngắn gọn theo nguyên tắc ASD-STE100 khi được gọi rõ ràng."
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "f7c104315045",
+      "source": {
+        "repository": "dualface/ste-zh",
+        "commit": "f7c104315045849e7bce357664273b4e99bc5119",
+        "path": ""
+      },
+      "stars": 902,
+      "created_at": "2026-10-05T16:45:04Z",
+      "pushed_at": "2026-11-12T03:12:38Z",
+      "stats_checked": "2026-11-17T09:13:27.821Z",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 21,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          }
+        ]
+      },
+      "dependencies": [
+        "node"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "bash [mention-hint]",
+          "git [mention-hint]",
+          "node [mention-hint]",
+          "ste [reference-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          }
+        ],
+        "detected": [
+          {
+            "name": "ste",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 116
+              },
+              {
+                "file": "README.md",
+                "line": 127
+              },
+              {
+                "file": "SKILL.md",
+                "line": 26
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 38
+              },
+              {
+                "file": "examples/result-report.md",
+                "line": 15
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 69
+              }
+            ]
+          },
+          {
+            "name": "git",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 99
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 6,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "CHANGELOG.md",
+          "LICENSE",
+          "README.md",
+          "SKILL.md",
+          "examples/result-report.md",
+          "examples/task-summary.md",
+          "manifest.json",
+          "references/guide.vi.md",
+          "references/terminology.md"
+        ]
+      },
+      "checksum": "2846e663e2656efbc173e7d52bf577dec208f2d9a3b81db9550d8186bc7ff0e9",
+      "file_hashes": {
+        "CHANGELOG.md": "332e52cf80a596ca39c266a3f733c0ad9f43bdcf4d744a529c68e93e941da693",
+        "LICENSE": "365a3932a1297fc06250ea4ee0f23ee99da5a8a567b3c84b3e879877170c0836",
+        "README.md": "a11cf94aa3561df61c04ba4b3aba51d61f7aab34e40bc26f2f3dca3ef459776d",
+        "SKILL.md": "be32640a2c9fa7334deeea0cda48817c1ed54b9667851ede273a84ed2b8af4d0",
+        "examples/result-report.md": "4f59a80cf5ee8a95625d197c84e5c3c7adcfa4539885f863644d4f0a3ab36481",
+        "examples/task-summary.md": "d7a6ac669919d7e9493e4e30b9691334d72492def34b71a2697b5990ce8856de",
+        "manifest.json": "f6bfefe2b52795e6bea60c3b40352dea80d22d061570e703cab57753eeed1c2f",
+        "references/guide.vi.md": "00120be75637b97d7a5be3201b19ec5d3bb7d30551ffe7ac796ce1228f4131ef",
+        "references/terminology.md": "57807c22d5b21716475a23758b6f6fe5434a08ae3f8dcd7bcd571c9f0756cbea"
+      },
+      "notes": [],
+      "last_checked": "2026-11-17T09:13:27.821Z",
+      "area": "quarantine"
+    },
+    {
       "id": "supabase-postgres-best-practices",
       "name": "supabase-postgres-best-practices",
       "description": "Postgres best practices maintained by Supabase, for Postgres running anywhere. Load this skill BEFORE writing or changing anything that lives in a Postgres database: creating or altering tables and columns (including choosing column types), schema design, migrations and declarative schema files, RLS policies and the tests that verify them, indexes, triggers, database functions, queues and scheduled jobs (pg_cron, pgmq), vector/semantic search (pgvector), and restoring dumps (pg_restore) or importing data. Also load it when diagnosing slow queries, high CPU, timeouts, EXPLAIN plans, connection exhaustion, locking, bloat, or rows visible to the wrong user or tenant. This is not just a performance guide — schema, migration, security, and SQL authoring tasks need these rules too, even for a one-column change or a single query.",
@@ -51906,6 +56063,1211 @@
       "notes": [],
       "last_checked": "2026-11-14T01:04:06.413Z",
       "area": "skills"
+    },
+    {
+      "id": "yomiyasu",
+      "name": "yomiyasu",
+      "description": "AIが生成した日本語を推敲するスキル。利用者が yomiyasu の名前を出して頼んだとき（「/yomiyasu」、「$yomiyasu:yomiyasu」、「yomiyasu で推敲して」など）と、スキルを使った日本語の推敲をはっきり頼んだときだけ使う。CLAUDE.md、AGENTS.md、カスタム指示などで yomiyasu を使うよう求められているときも、名前を出して頼まれたものとして扱う。名前を出さずに日本語の文章を書かせる依頼や、コード、設定、ドキュメントの更新では使わない。意味と条件を保ち、不自然な比喩、曖昧な主述関係、不要な装飾やコピー調を整える。",
+      "description_vi": "Biên tập tiếng Nhật do AI tạo, giữ nguyên ý nghĩa, điều kiện và sắc thái.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "yomiyasu",
+        "version": "db78b9bc5e86",
+        "source": {
+          "url": "https://github.com/nanaism/yomiyasu",
+          "commit": "db78b9bc5e868549b517a037df7a4d1c93edac23",
+          "sha256": "34f2611aa021f4496ff4555ef1b29a67670c411d137aaeb269e9ba9ab2b73877",
+          "license": "MIT AND Unicode-3.0"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Biên tập tiếng Nhật do AI tạo, giữ nguyên ý nghĩa, điều kiện và sắc thái.",
+          "aliases": [
+            "Biên tập tiếng Nhật do AI tạo"
+          ],
+          "keywords": [
+            "yomiyasu",
+            "Biên tập tiếng Nhật do AI tạo"
+          ],
+          "examples": [
+            "Dùng yomiyasu cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "34f2611aa021f4496ff4555ef1b29a67670c411d137aaeb269e9ba9ab2b73877"
+        },
+        "requiredCapabilities": [
+          "bash [mention-hint]",
+          "git [mention-hint]",
+          "github-cli [mention-hint]",
+          "java [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell",
+          "network"
+        ],
+        "syncedAt": "2026-11-17T01:12:03.935Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "assets/algo-artis.png: binary-file (low)",
+            "Daily intake: full manual/runtime approval not performed. Tiếng Nhật; Python 3 cho lint/check. Core gốc là tiếng Nhật, chưa đáp ứng English Core."
+          ]
+        },
+        "compatibility": {
+          "status": "incompatible",
+          "notes": [
+            "Upstream SKILL.md and retained source files are byte-identical to the pinned GitHub commit; this does not certify English language or bundle completeness.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+            "Tiếng Nhật; Python 3 cho lint/check. Core gốc là tiếng Nhật, chưa đáp ứng English Core."
+          ]
+        }
+      },
+      "aliases": [
+        "Biên tập tiếng Nhật do AI tạo"
+      ],
+      "keywords": [
+        "yomiyasu",
+        "Biên tập tiếng Nhật do AI tạo"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "db78b9bc5e86",
+      "source": {
+        "repository": "nanaism/yomiyasu",
+        "commit": "db78b9bc5e868549b517a037df7a4d1c93edac23",
+        "path": "skills/yomiyasu"
+      },
+      "stars": 3317,
+      "created_at": "2026-09-30T11:49:32Z",
+      "pushed_at": "2026-11-12T00:28:35Z",
+      "stats_checked": "2026-11-17T01:12:03.935Z",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 21,
+        "security": 21,
+        "compatibility": 8,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/algo-artis.png"
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "java",
+            "installerId": "jdk"
+          }
+        ]
+      },
+      "dependencies": [
+        "jdk"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "bash [mention-hint]",
+          "git [mention-hint]",
+          "github-cli [mention-hint]",
+          "java [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "java",
+            "installerId": "jdk"
+          }
+        ],
+        "detected": [
+          {
+            "name": "__future__",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/markdown_visibility.py",
+                "line": 8
+              },
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 12
+              }
+            ]
+          },
+          {
+            "name": "argparse",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 35
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 37
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 22
+              }
+            ]
+          },
+          {
+            "name": "array",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 41
+              }
+            ]
+          },
+          {
+            "name": "bisect",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/markdown_visibility.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 42
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 26
+              }
+            ]
+          },
+          {
+            "name": "collections",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/markdown_visibility.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 45
+              },
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 46
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 43
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 160
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 11
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 17
+              }
+            ]
+          },
+          {
+            "name": "contextlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 906
+              }
+            ]
+          },
+          {
+            "name": "datetime",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 36
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 203
+              }
+            ]
+          },
+          {
+            "name": "difflib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 38
+              }
+            ]
+          },
+          {
+            "name": "errno",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 33
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 18
+              }
+            ]
+          },
+          {
+            "name": "fcntl",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 336
+              }
+            ]
+          },
+          {
+            "name": "fractions",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 161
+              }
+            ]
+          },
+          {
+            "name": "functools",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 19
+              }
+            ]
+          },
+          {
+            "name": "hashlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/markdown_visibility.py",
+                "line": 1287
+              },
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 34
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 438
+              }
+            ]
+          },
+          {
+            "name": "importlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 39
+              },
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 40
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 86
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 7278
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 890
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 71
+              }
+            ]
+          },
+          {
+            "name": "itertools",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 27
+              }
+            ]
+          },
+          {
+            "name": "json",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 36
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 8
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 23
+              }
+            ]
+          },
+          {
+            "name": "markdown_visibility",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 68
+              },
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 69
+              },
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 70
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 68
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 69
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 70
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 71
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 53
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 54
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 55
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 56
+              }
+            ]
+          },
+          {
+            "name": "operator",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 28
+              }
+            ]
+          },
+          {
+            "name": "os",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/markdown_visibility.py",
+                "line": 11
+              },
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 32
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 9
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 15
+              }
+            ]
+          },
+          {
+            "name": "pathlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/markdown_visibility.py",
+                "line": 12
+              },
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 47
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 44
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 87
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 10
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 72
+              }
+            ]
+          },
+          {
+            "name": "platform",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 37
+              }
+            ]
+          },
+          {
+            "name": "re",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/markdown_visibility.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 34
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 281
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 504
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 582
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 21
+              }
+            ]
+          },
+          {
+            "name": "shlex",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 177
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 282
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 384
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 411
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 489
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 583
+              }
+            ]
+          },
+          {
+            "name": "shutil",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 31
+              }
+            ]
+          },
+          {
+            "name": "signal",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 33
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 893
+              }
+            ]
+          },
+          {
+            "name": "stat",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 222
+              }
+            ]
+          },
+          {
+            "name": "subprocess",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 43
+              }
+            ]
+          },
+          {
+            "name": "sys",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 35
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 20
+              }
+            ]
+          },
+          {
+            "name": "tempfile",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 38
+              }
+            ]
+          },
+          {
+            "name": "threading",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 41
+              }
+            ]
+          },
+          {
+            "name": "time",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 32
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 212
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 223
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 748
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 889
+              }
+            ]
+          },
+          {
+            "name": "traceback",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 42
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 39
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 224
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 24
+              }
+            ]
+          },
+          {
+            "name": "types",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 48
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 12
+              }
+            ]
+          },
+          {
+            "name": "typing",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/markdown_visibility.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 49
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 45
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 29
+              }
+            ]
+          },
+          {
+            "name": "unicodedata",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/markdown_visibility.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 44
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 40
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 25
+              }
+            ]
+          },
+          {
+            "name": "warnings",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/markdown_visibility.py",
+                "line": 1218
+              }
+            ]
+          },
+          {
+            "name": "java",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "jdk",
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 7767
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/markdown_visibility.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 5
+              },
+              {
+                "file": "references/doc-types/article.md",
+                "line": 10
+              },
+              {
+                "file": "references/fact-recovery-details.md",
+                "line": 128
+              },
+              {
+                "file": "references/fact-recovery.md",
+                "line": 59
+              },
+              {
+                "file": "references/lists/nominalization.txt",
+                "line": 3
+              },
+              {
+                "file": "references/lists/thin-evaluation.txt",
+                "line": 4
+              },
+              {
+                "file": "references/review-points.md",
+                "line": 3
+              },
+              {
+                "file": "scripts/markdown_visibility.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/yomiyasu_diff.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 5
+              },
+              {
+                "file": "references/fact-recovery-details.md",
+                "line": 127
+              },
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 151
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 194
+              },
+              {
+                "file": "scripts/yomiyasu_lint.py",
+                "line": 4533
+              }
+            ]
+          },
+          {
+            "name": "git",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/fact-recovery-details.md",
+                "line": 40
+              },
+              {
+                "file": "references/fact-recovery.md",
+                "line": 17
+              },
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 717
+              },
+              {
+                "file": "scripts/yomiyasu_hook.py",
+                "line": 229
+              }
+            ]
+          },
+          {
+            "name": "github-cli",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/yomiyasu_check.py",
+                "line": 5216
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 40,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "UNICODE-LICENSE.txt",
+          "assets/algo-artis.png",
+          "manifest.json",
+          "references/audience.md",
+          "references/calques.md",
+          "references/doc-types/article.md",
+          "references/doc-types/essay.md",
+          "references/doc-types/formal.md",
+          "references/doc-types/incident.md",
+          "references/doc-types/mail.md",
+          "references/doc-types/manual.md",
+          "references/doc-types/minutes.md",
+          "references/doc-types/paper.md",
+          "references/doc-types/pr.md",
+          "references/doc-types/promo.md",
+          "references/doc-types/proposal.md",
+          "references/doc-types/script.md",
+          "references/doc-types/slides.md",
+          "references/domains/business.md",
+          "references/domains/essay.md",
+          "references/domains/tech.md",
+          "references/fact-recovery-details.md",
+          "references/fact-recovery.md",
+          "references/gemini-syntax.md",
+          "references/guide.vi.md",
+          "references/lists/fact-gaps.txt",
+          "references/lists/feelings.txt",
+          "references/lists/hedges.txt",
+          "references/lists/intensifiers.txt",
+          "references/lists/katakana-terms.txt",
+          "references/lists/nominalization.txt",
+          "references/lists/renyo-nouns.txt",
+          "references/lists/thin-evaluation.txt",
+          "references/persona.md",
+          "references/rephrase-test.md",
+          "references/review-points.md",
+          "references/slop-catalog.md",
+          "scripts/markdown_visibility.py",
+          "scripts/yomiyasu_check.py",
+          "scripts/yomiyasu_diff.py",
+          "scripts/yomiyasu_hook.py",
+          "scripts/yomiyasu_lint.py"
+        ]
+      },
+      "checksum": "fb0107d9767823b37e8c174bdabf3c795a5a9986759597b7d3869c0840359821",
+      "file_hashes": {
+        "LICENSE": "79d802f15bc8caf67f1a83c1bdbe214ccb41a0a0275f9046b329b89c65ee1fca",
+        "SKILL.md": "34f2611aa021f4496ff4555ef1b29a67670c411d137aaeb269e9ba9ab2b73877",
+        "UNICODE-LICENSE.txt": "e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96",
+        "assets/algo-artis.png": "57c7c204d43d0e2873e3b61221db3ac4ba75a7ce29271a6deaeb3bd09f26fdec",
+        "manifest.json": "6f1335c7bb8887eacefa22bfcf79e6024997b3da55afebdaa0fd5069ba53c60d",
+        "references/audience.md": "fedae4ffbcd808ea2a3900b1dfccdfaed7cfbb74e2b5b1ca3f82966826d6b60c",
+        "references/calques.md": "11d342cf90d24e20b12a9ecac66951a957fd930832c8b6cbdfb567cb9f5f01b0",
+        "references/doc-types/article.md": "e5009c496b4b4ac8974c16f2f15b0f8ce93620863dfe721803b01138db845716",
+        "references/doc-types/essay.md": "fd8b888d3599747040c416df696ab39b9d9b962ce19a9229544b691ef43742af",
+        "references/doc-types/formal.md": "6b4121d4e57d52fb60fb428770a4504c53e1fb06c3fa20e57a1fcd56ce933141",
+        "references/doc-types/incident.md": "d25282690b220e5d4fa2595228d282d65f7b03d8d4b325c30bf251b58a474b77",
+        "references/doc-types/mail.md": "aafdef898a05c8526fed64c7b9e076dd618015704256e1a7ee4d1d0c9e5b4ca5",
+        "references/doc-types/manual.md": "29806ff027229f1c82dbd9472a485b70ab0c537cfe15138f436f977783b63b08",
+        "references/doc-types/minutes.md": "7869c10e72e0e4ce6ecb94833e84452beba7f8b676230908fe623deddc49b140",
+        "references/doc-types/paper.md": "0ae274c3e8da87bcad74aaee069d799f902f2944c2972e714070e225b18ccde9",
+        "references/doc-types/pr.md": "d7bb8a4ac7f5344abf66bb7dfe893480c67ea8d635078c5a8d2582264a21506b",
+        "references/doc-types/promo.md": "06f8f3a39547985fc74a70c3717596070401b9d3db5fc93e3b10f76f9b6656e4",
+        "references/doc-types/proposal.md": "2a8d8a557b33f2df51aedeed02ba5bb8ed623fcde55f6a42ff4b477920853731",
+        "references/doc-types/script.md": "41bc1c8ebb9f5fea7c18b70b18a3e8ee86073e38f85d62d4ad00ae0719acb49a",
+        "references/doc-types/slides.md": "9bd9dac1e4886ebdc23cefc46d68ec1eeb06b98442eff1b34f992b5997d6213d",
+        "references/domains/business.md": "b68dbdf15d0145462794ba638c795cc9f13be9fe4d59e7dedafa945da6689aa3",
+        "references/domains/essay.md": "5dccd1810c1b99b87e4bd27538240c32406be64280a4c6ee8be1ef9521eb3694",
+        "references/domains/tech.md": "a45800b3fea46b45456ad00b8607f5ef347ede53d6a51f65826e1423f47d634a",
+        "references/fact-recovery-details.md": "9359c801872643adef0b6ea56239f97314d9b70e6426dded6d880c9a7dd61749",
+        "references/fact-recovery.md": "36056bcfef43b48b9c17b063c53f34e8d8b7e061895f5dea26847d5c9a2a2e63",
+        "references/gemini-syntax.md": "78b593952303fe2f02f44921fe553925acdcd830cdb41ad1c9cae488ff8d25a3",
+        "references/guide.vi.md": "be6a9d6c402fbcab4cb9842e3453819eca6a1309929cb648341108a5b69f1dba",
+        "references/lists/fact-gaps.txt": "c78da500dcddc76978fecd1a7a9f3318d9feabf0db78387a41662a4545e6964f",
+        "references/lists/feelings.txt": "37b6779b3ef8cf91260379b21d6b721bda362542a5702affd99d550879539e82",
+        "references/lists/hedges.txt": "ed666036f63f4705d2c129d3fd30e971018d50732bbef2c18081412a61ccd771",
+        "references/lists/intensifiers.txt": "65d9189ebebaf8f9cb2aad2c04be3d0ccf53c4d6782affe16bcd8078054d3c83",
+        "references/lists/katakana-terms.txt": "47c686e6a7a94590a97fa9e052b3dee9171dfc8a5f25da727111428cda978e2d",
+        "references/lists/nominalization.txt": "cfe31060efc6d165c30b1619ab574ec405312a80bfb00387efc6557911614be0",
+        "references/lists/renyo-nouns.txt": "0642b6ba40e4707af4715463d7433c0215087a8e068b00e7894b73e89365997a",
+        "references/lists/thin-evaluation.txt": "b2cf6a8e1fc424d1bcac15e2aa2045a98ec77a002e2830692922a8f97ee406e4",
+        "references/persona.md": "88f9490473acd3c51116556fbc9c06d95bbf003236fc9ef54cf94446cef7e191",
+        "references/rephrase-test.md": "1086593de2fbcbcc577ca68c155d441f9fbe3bb72a229340cb639b4538207304",
+        "references/review-points.md": "ec1f7ff6bdf0095db2b3f683e7acee6cc62d203975c28de9e6d515ff37caa0f5",
+        "references/slop-catalog.md": "cdf2cef3f62ba8b75a02bc56b5ae8d2f69a9fac257b5c8fc56637adb3827bf97",
+        "scripts/markdown_visibility.py": "c8d410c5379c00c4bb94fc06d3a5a3fee118ac6b0cf7e6b81b4d452d5e912e60",
+        "scripts/yomiyasu_check.py": "4355847c6cc8b8f08e7541c7f04add5eb4e0ef7b9e0176e6a069bfa8b9679ca8",
+        "scripts/yomiyasu_diff.py": "25e5e1db015297a9cbf0642482091b8c6f47b5c8b5f03dcc8b565a0ab5aecaba",
+        "scripts/yomiyasu_hook.py": "2b5611ae6075af3046100197f438874727480859bcc9c11ee4845ce952c172ee",
+        "scripts/yomiyasu_lint.py": "bde745c46242ab0a923503bbe5488178f2b503e972498112e46df2ec79559767"
+      },
+      "notes": [],
+      "last_checked": "2026-11-17T01:12:03.935Z",
+      "area": "quarantine"
     },
     {
       "id": "youtube-agent-skill",

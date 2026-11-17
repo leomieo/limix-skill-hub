@@ -1,0 +1,46 @@
+{
+  "repository": "dualface/ste-zh",
+  "commit": "f7c104315045849e7bce357664273b4e99bc5119",
+  "path": "",
+  "verified": true,
+  "coreSha256": "be32640a2c9fa7334deeea0cda48817c1ed54b9667851ede273a84ed2b8af4d0",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "be32640a2c9fa7334deeea0cda48817c1ed54b9667851ede273a84ed2b8af4d0",
+      "executable": false
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "332e52cf80a596ca39c266a3f733c0ad9f43bdcf4d744a529c68e93e941da693",
+      "executable": false
+    },
+    {
+      "path": "examples/result-report.md",
+      "sha256": "4f59a80cf5ee8a95625d197c84e5c3c7adcfa4539885f863644d4f0a3ab36481",
+      "executable": false
+    },
+    {
+      "path": "examples/task-summary.md",
+      "sha256": "d7a6ac669919d7e9493e4e30b9691334d72492def34b71a2697b5990ce8856de",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "365a3932a1297fc06250ea4ee0f23ee99da5a8a567b3c84b3e879877170c0836",
+      "executable": false
+    },
+    {
+      "path": "README.md",
+      "sha256": "a11cf94aa3561df61c04ba4b3aba51d61f7aab34e40bc26f2f3dca3ef459776d",
+      "executable": false
+    },
+    {
+      "path": "references/terminology.md",
+      "sha256": "57807c22d5b21716475a23758b6f6fe5434a08ae3f8dcd7bcd571c9f0756cbea",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/ste"
+}

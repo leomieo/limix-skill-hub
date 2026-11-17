@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "name": "live-panel",
+  "version": "d5aa86d8a572",
+  "source": {
+    "url": "https://github.com/ythx-101/live-panel-skill",
+    "commit": "d5aa86d8a5729cea2c78f083df672977f168a147",
+    "sha256": "1d5d0e7241ca0b3782f35317cf33dbb290c19a9bdd672e545b9a08c28959a468",
+    "license": "MIT AND OFL-1.1 AND ISC; example visual rights require separate review"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Tạo sơ đồ kiến trúc chuyển động kiểu bảng giám sát và xuất video MP4.",
+    "aliases": [
+      "Tạo sơ đồ kiến trúc chuyển động kiểu bảng giám sát và xuất video MP4."
+    ],
+    "keywords": [
+      "live",
+      "panel",
+      "Tạo sơ đồ kiến trúc chuyển động kiểu bảng giám sát và xuất video MP4."
+    ],
+    "examples": [
+      "Dùng live-panel cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "1d5d0e7241ca0b3782f35317cf33dbb290c19a9bdd672e545b9a08c28959a468"
+  },
+  "requiredCapabilities": [
+    "Applications [reference-hint]",
+    "bash [file-type-hint]",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "git [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]",
+    "remotion [mention-hint]",
+    "subagents [mention-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell",
+    "network"
+  ],
+  "syncedAt": "2026-11-17T01:12:03.935Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "assets/fonts/Excalifont-Regular-Latin.woff2: binary-file (low)",
+      "assets/fonts/SmileySans-Oblique.woff2: binary-file (low)",
+      "examples/agent-architecture/agent-architecture.mp4: binary-file (low)",
+      "examples/agent-architecture/preview.webp: binary-file (low)",
+      "examples/airbnb/airbnb.mp4: binary-file (low)",
+      "examples/airbnb/preview.webp: binary-file (low)",
+      "examples/codex-agents/codex-agents.mp4: binary-file (low)",
+      "examples/codex-agents/preview.webp: binary-file (low)",
+      "examples/excalidraw-gardener/preview.webp: binary-file (low)",
+      "examples/excalidraw-import/agent-loop.mp4: binary-file (low)",
+      "examples/minimal/preview.webp: binary-file (low)",
+      "examples/ring/preview.webp: binary-file (low)",
+      "llms.txt: exe-download (medium)",
+      "Daily intake: full manual/runtime approval not performed. Node.js, trình duyệt và công cụ render; giữ NOTICE và giấy phép tài nguyên.",
+      "Incomplete bundle: .gitignore, examples/excalidraw-aqua/preview.webp, examples/funnel/funnel.mp4, examples/funnel/preview.webp, examples/loop-poteto/loop-poteto.mp4, examples/loop-poteto/preview-dark.webp, examples/loop-poteto/preview-light.webp, examples/ring/ring.mp4, scripts/scaffold.py, scripts/verify_view.py",
+      "NOTICE reserves third-party example visual designs; redistribution rights for these examples are not independently established."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "Upstream SKILL.md and retained source files are byte-identical to the pinned GitHub commit; this does not certify English language or bundle completeness.",
+      "10 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "Node.js, trình duyệt và công cụ render; giữ NOTICE và giấy phép tài nguyên."
+    ]
+  }
+}

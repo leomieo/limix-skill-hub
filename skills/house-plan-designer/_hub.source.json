@@ -1,0 +1,519 @@
+{
+  "repository": "ZWD11/house-plan-designer",
+  "commit": "dd5a61070ea0a251fb13a141cd9a282be36fd292",
+  "path": "",
+  "verified": true,
+  "coreSha256": "f882351a38f58ecb1354a3b5e4b65bf9d08b54b631b64d128f1b938d25022582",
+  "skipped": [
+    ".gitignore",
+    "assets/template.html"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "f882351a38f58ecb1354a3b5e4b65bf9d08b54b631b64d128f1b938d25022582",
+      "executable": false
+    },
+    {
+      "path": "assets/icon.png",
+      "sha256": "56ff34c847dd2e7d6746f76516a06334261e4b14234812402b45f235b424c3c1",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "c4cc143edbe5e2d4bdcf75e94c3bb2091195f2327bc164d0ebfc384694358de7",
+      "executable": false
+    },
+    {
+      "path": "README.md",
+      "sha256": "c030f8404ee8b54ec645548f2e7d50900929b5261aed2ab1ea20099152f23380",
+      "executable": false
+    },
+    {
+      "path": "reference/cad-conventions.md",
+      "sha256": "cdb080e1f14f2c030f10469ea61c1f91fe15953ed78ee10eda4620baa4715378",
+      "executable": false
+    },
+    {
+      "path": "reference/catalog-sizes.json",
+      "sha256": "52b14e4986ac5c30ec3f5648983d8d2a818a008186b05ecb5360d23adfacf688",
+      "executable": false
+    },
+    {
+      "path": "reference/delivery.md",
+      "sha256": "ee4ca418c701286f62b85a1122b3070850bb9235f787527583196ace7fdb1a56",
+      "executable": false
+    },
+    {
+      "path": "reference/env-cloud.md",
+      "sha256": "886b58d513e7eae4393f889f74a69490560cddf03a366ee48877cdb2f7395cbd",
+      "executable": false
+    },
+    {
+      "path": "reference/example-3d.png",
+      "sha256": "a19cd3e9908f41a0886c3f49ac855ee4b5d3d1f70a654cf7a3986b4990219ccc",
+      "executable": false
+    },
+    {
+      "path": "reference/example-ceiling.jpg",
+      "sha256": "6a1e67fdb43e2fbb3b73d3e7c398f3aab1d1a5b875deb56af6a29887a2ae02b4",
+      "executable": false
+    },
+    {
+      "path": "reference/example-freemodel.jpg",
+      "sha256": "604f1d5c690acb19eeacb32e2c0312e711f704013cc41d5dd8683f9f8018b612",
+      "executable": false
+    },
+    {
+      "path": "reference/example-gen-building.py",
+      "sha256": "95f02b7a604eb36181e44075a4baa8439b48194bc0fedfc5712953f3d5f7c303",
+      "executable": false
+    },
+    {
+      "path": "reference/example-gen-cad.py",
+      "sha256": "4f1eb8d193daa304a8e7feafd7905caab4dab41fa2cb4898574f05d67af274e2",
+      "executable": false
+    },
+    {
+      "path": "reference/example-gen-duplex.py",
+      "sha256": "09c31b1657a79475f5fb664745af2fa27ceeb12e0b477752b59b6c6200362418",
+      "executable": false
+    },
+    {
+      "path": "reference/example-gen-furnished.py",
+      "sha256": "fd7056e68e2f5c40af4d435bce32fd1b3f8df43e0e517d67e195b5ddee06fa12",
+      "executable": false
+    },
+    {
+      "path": "reference/example-gen-office-dxf.py",
+      "sha256": "b98b4bb26b8e4c84fdef07769c90d0ffb8b8ac563a6634fffe255c09a8df627e",
+      "executable": false
+    },
+    {
+      "path": "reference/example-gen-precise.py",
+      "sha256": "e960dd4151de6b919cd24d8f0ad804c508dc3d71f0df55fd9ead6923b7809dfb",
+      "executable": false
+    },
+    {
+      "path": "reference/example-gen-villa.py",
+      "sha256": "52c41eeca0196006b35e3855c4ee3dd3adc6030d889b3591408acfe83d89ed80",
+      "executable": false
+    },
+    {
+      "path": "reference/example-gen.py",
+      "sha256": "c33812b98ae3205bdf81ec8e5ead4e25fa66b052481ff864955c56543f2a8e64",
+      "executable": false
+    },
+    {
+      "path": "reference/example-input.jpg",
+      "sha256": "a86124a6de82ad97a98033bb0d603638040d1dac2545873384cfba47bf801426",
+      "executable": false
+    },
+    {
+      "path": "reference/example-library.jpg",
+      "sha256": "4f0c4cd642f1bc3c22a42d8a397a368c65b2734cbe17b56d729df35ffab58269",
+      "executable": false
+    },
+    {
+      "path": "reference/example-mep-edit.jpg",
+      "sha256": "52c0c8d3ce1ab67fb904225823bec0e3e4742f063ec09f032f0cf3af4ec8c3fc",
+      "executable": false
+    },
+    {
+      "path": "reference/example-mep2d.jpg",
+      "sha256": "39b29dc084f888b24f56274a598f3d847b75b5eb9cef84b8317d9b3a05830a82",
+      "executable": false
+    },
+    {
+      "path": "reference/example-mep3d.jpg",
+      "sha256": "c65fd932a71ecdd9357930b5d12a8f0dfc1793e3d1c42c3e2be3f86e9a1116ef",
+      "executable": false
+    },
+    {
+      "path": "reference/example-office-3d.jpg",
+      "sha256": "61f5d5c9af51ba25522a707569d73cd0e614892d6d2e5f55d264d67ea21242de",
+      "executable": false
+    },
+    {
+      "path": "reference/example-office-hall.jpg",
+      "sha256": "fe5c72c40f3bde37c6afbe8fa319e579e7b1ad8d4e02ecd6ec741ce7c3d1616a",
+      "executable": false
+    },
+    {
+      "path": "reference/example-office-wc.jpg",
+      "sha256": "b630b933f0180d9b43d61961afc5ce97ff7bdf262e736b7337d40738b71d623f",
+      "executable": false
+    },
+    {
+      "path": "reference/example-overlay.png",
+      "sha256": "b44a7f95bccde096af1f579b910e0cecfaf4e25c6128e44634a49bffe74f14b7",
+      "executable": false
+    },
+    {
+      "path": "reference/example-pathtraced.jpg",
+      "sha256": "5d83dedf655447784f7198f677dea7d7bd78a53f6bb2c1c982f6284615b37110",
+      "executable": false
+    },
+    {
+      "path": "reference/example-plan2d.png",
+      "sha256": "a5dab53d0dad59323aabc29645074d418026121d29388424bf39537ea987944e",
+      "executable": false
+    },
+    {
+      "path": "reference/example-resize.jpg",
+      "sha256": "4d32bdeff8c1aba2fd99bb5712f83c1e323e58b37d81568c32dbe9221d4685e8",
+      "executable": false
+    },
+    {
+      "path": "reference/example-smart.jpg",
+      "sha256": "dcb40f00fcde5515bc089582c145c2eb146d9548e99bb86d0c663d9dad6bf7d5",
+      "executable": false
+    },
+    {
+      "path": "reference/example-spec.json",
+      "sha256": "b5226c5b02d21b06e9e464421503167dbe2df5d7d1dd68d0a214ba5e0bb7bb5f",
+      "executable": false
+    },
+    {
+      "path": "reference/example-style.jpg",
+      "sha256": "5b9465b6c061cac0f41dfc2b884b514e054d35d66eaa838e8112d6390b3273d1",
+      "executable": false
+    },
+    {
+      "path": "reference/example-villa-diorama.jpg",
+      "sha256": "1f7e84faf1879e56fd175020bad1b04c98acf890eece0a3b23551c4cb919470e",
+      "executable": false
+    },
+    {
+      "path": "reference/example-villa-night.jpg",
+      "sha256": "d0377a1199a5d31a814f4630467454b692d328160e46faf7e2a394c42687437b",
+      "executable": false
+    },
+    {
+      "path": "reference/example-walk-cam.jpg",
+      "sha256": "0507095915b59afc950841a568cf6a1608b1ccfb23650bfbab09058c5445980d",
+      "executable": false
+    },
+    {
+      "path": "reference/example-walk-markers.jpg",
+      "sha256": "210e56f76ee551dd9537b45fb66af8ef686df5d87e6408d2680b3863e3e9eb6d",
+      "executable": false
+    },
+    {
+      "path": "reference/example-walk-route.json",
+      "sha256": "4063403450d5fc88ea891593923e7489706b88c7adc5cf9d3af1cfa629f3de16",
+      "executable": false
+    },
+    {
+      "path": "reference/furnishing.md",
+      "sha256": "b53a36254ea61608ea5b65c4500cfd4731a88e6775d92e1fb1cfd50feb50989c",
+      "executable": false
+    },
+    {
+      "path": "reference/mep-rules.md",
+      "sha256": "bdf457b717004bcf1dbe735d9504d2e6c5c1ed0e6bd8dbdf08324eb9f028c4e3",
+      "executable": false
+    },
+    {
+      "path": "reference/route-building.md",
+      "sha256": "848e9991524f658d62d27e3373467a69913d72b3c5bdb84db3ecadf6432d1bfd",
+      "executable": false
+    },
+    {
+      "path": "reference/route-cad.md",
+      "sha256": "a0a6fbc0fe5ef926d8d08be1c22c8cdfb6622d50c0eb2e70d24a55e67cfb58b4",
+      "executable": false
+    },
+    {
+      "path": "reference/route-dual.md",
+      "sha256": "de7e621b1ccc6c6611767db049b151d740880b24e1a868e7efd2e8e2ed9931f9",
+      "executable": false
+    },
+    {
+      "path": "reference/route-dxf-layout.md",
+      "sha256": "4b654a3f47442b57c8fce74347c6311da96a4d65989b2d816e6812d4cccd07d0",
+      "executable": false
+    },
+    {
+      "path": "reference/route-image.md",
+      "sha256": "0cc26a8dfcb2c1d0cbc370d030b62cdc8dc4d881c6987f3fe090766b59351e4c",
+      "executable": false
+    },
+    {
+      "path": "reference/route-office.md",
+      "sha256": "3d4d832e6be9e9db34aefd30c5b29a6ff6045a03935ce7c79420fb743ef35630",
+      "executable": false
+    },
+    {
+      "path": "reference/route-villa.md",
+      "sha256": "324ac2045a1fb20ee5a25e73e237dc7429d88d256ac756e22345ab16fa323b16",
+      "executable": false
+    },
+    {
+      "path": "reference/spec-format.md",
+      "sha256": "e88bf8e527a7d2f91d1dfe68261a8343eb5f4151b8153b2e2200b97b4eb77f26",
+      "executable": false
+    },
+    {
+      "path": "reference/workflow-check.md",
+      "sha256": "ef464ae305d2e822e3832918ec412c785eee484b70e6c1fc789e6b84130e323d",
+      "executable": false
+    },
+    {
+      "path": "scripts/align2.py",
+      "sha256": "49d8934ab58f809c806dd588afe43e1901f809294f2e02e766aa6fa61e74b985",
+      "executable": false
+    },
+    {
+      "path": "scripts/analyze.py",
+      "sha256": "ee49b71465e0a3d0ee5209723f99a201ece1a68ab746bc4b15effd9e562a8010",
+      "executable": false
+    },
+    {
+      "path": "scripts/axismap.py",
+      "sha256": "e3514600ff4924b9077ca338b9f5990578ffc0ce390e692836c017a7c572bead",
+      "executable": false
+    },
+    {
+      "path": "scripts/bench.py",
+      "sha256": "85268749f877b17db518fe6ede1b2eb94a750194e90131924c9c5bf78abdd0d3",
+      "executable": false
+    },
+    {
+      "path": "scripts/browser.mjs",
+      "sha256": "cdbb291c11ea5a601474a6212e84252786a6639fc3184f5ad5803b1d76d66514",
+      "executable": false
+    },
+    {
+      "path": "scripts/build.py",
+      "sha256": "0476e5291a7a3b5cd3ac016671517a99d844075555cee56e95697b6f4e7d4b10",
+      "executable": false
+    },
+    {
+      "path": "scripts/cadpair.py",
+      "sha256": "501215c9ca3e05ff5534e0e2d8b14d3940968f57d8a42704ede20e92e68fcb8e",
+      "executable": false
+    },
+    {
+      "path": "scripts/cadshot.py",
+      "sha256": "8931873054a91a51c6b790e116769169b8046eee86288865c43524bc6fd064a7",
+      "executable": false
+    },
+    {
+      "path": "scripts/cadsplit.py",
+      "sha256": "4b37fbf86b5591f2ad4cbc849d2c4c4324426eb28102dc4814813a8a117c83ed",
+      "executable": false
+    },
+    {
+      "path": "scripts/cadvec.py",
+      "sha256": "fdae8fcf760db68652db349342751fecac17be175bf17ac68a6207a998371c3d",
+      "executable": false
+    },
+    {
+      "path": "scripts/check.mjs",
+      "sha256": "6f6803e27b3e563f78284819a2d136364fe2d7d1159242722bdc602af90faff4",
+      "executable": false
+    },
+    {
+      "path": "scripts/clicktest.mjs",
+      "sha256": "82930fdcffa600da32ff8767bc074bcd4a75a19640d5156b6407707ea82b37f6",
+      "executable": false
+    },
+    {
+      "path": "scripts/closeup.mjs",
+      "sha256": "e989151aa96c11d3b595898471cb04b814151691b7c8114ee59942371041f223",
+      "executable": false
+    },
+    {
+      "path": "scripts/coverage.py",
+      "sha256": "fc15c53d82d0845f0a595463e337c6343a363901d9f0dfe4761ad74ee2d57af8",
+      "executable": false
+    },
+    {
+      "path": "scripts/dev/birdshot.mjs",
+      "sha256": "1a87f0ce2bb1e591d617fa453dba20c082375f703620eca0cb7315143515751b",
+      "executable": false
+    },
+    {
+      "path": "scripts/dev/compare.py",
+      "sha256": "315e1ccd9719165cd6dd9ac349755558a225e8626a8c9f6478238d272488c0bb",
+      "executable": false
+    },
+    {
+      "path": "scripts/dev/dumprooms.mjs",
+      "sha256": "88618b5f2cf1e3a1298a2c0c975e60b026205e24e0511ac5dd98bec2698113d4",
+      "executable": false
+    },
+    {
+      "path": "scripts/dev/eval.mjs",
+      "sha256": "0048003e0a9be955059b81e40f5ee677a067cbd4e67d7c2f71099469681a537f",
+      "executable": false
+    },
+    {
+      "path": "scripts/dev/fps.mjs",
+      "sha256": "071c59a8f38d250067fbccdfed82d33a9b6894c15a23c3a74b17cba6feb50c60",
+      "executable": false
+    },
+    {
+      "path": "scripts/dev/grab.mjs",
+      "sha256": "85f4bd02019900c00463146f585112b56eddf98bb4061720fb29e8750fadf41a",
+      "executable": false
+    },
+    {
+      "path": "scripts/dev/libshot.mjs",
+      "sha256": "e0fbaf14cee413ae162f507f1ec2d63bd2c97b891dd8550ff9750764b8ec2127",
+      "executable": false
+    },
+    {
+      "path": "scripts/dev/make_test_dxf.py",
+      "sha256": "2152c1e128595979b6eae88434712162b6fc05d8f81330649de7cca221dc810f",
+      "executable": false
+    },
+    {
+      "path": "scripts/dev/mk_dxf_template.py",
+      "sha256": "82a45c33a7c6a0883cd227199e37ddca9f4da4ea490d7e4f30b19ac16adfa24b",
+      "executable": false
+    },
+    {
+      "path": "scripts/dev/ptshots.mjs",
+      "sha256": "d93b671204a60044a64e93052307ee5e6c791c7500bb46bb4aa47e6253e966e3",
+      "executable": false
+    },
+    {
+      "path": "scripts/dev/sharetest.mjs",
+      "sha256": "d01ebcc5909d4d67eb141935c4216b308ab3119345f0bd8c8bb286083a4cec62",
+      "executable": false
+    },
+    {
+      "path": "scripts/dev/shot3d.mjs",
+      "sha256": "0f25c3aab3c9578e59ff5a16bbe83ac0ed4519c664ca59c3a9bd93ed5c89341e",
+      "executable": false
+    },
+    {
+      "path": "scripts/dev/swinfo.mjs",
+      "sha256": "bee7cdd87de99b5135901c17a64eb3eae866e3adbfb9d2fde7b905aba9837985",
+      "executable": false
+    },
+    {
+      "path": "scripts/dev/swwall.mjs",
+      "sha256": "4b7e4eaf68f1c08b3ebea405e76f9d4e225592716c9a1cb265b0822e5d8fec57",
+      "executable": false
+    },
+    {
+      "path": "scripts/dev/uitest.mjs",
+      "sha256": "5162c73c867a060fb75dbcdaa0894555f33c678b10c89a796d9e2b0145cf65a8",
+      "executable": false
+    },
+    {
+      "path": "scripts/dev/walk_lights.mjs",
+      "sha256": "368af7afd37cf9ad6a991f401e25899dba8753dc081f8f0accd7ce2e01042579",
+      "executable": false
+    },
+    {
+      "path": "scripts/dimocr.py",
+      "sha256": "be53dde458ecadb64675cebe39e6b0916c58bbef58fbf02fd7def79401d4b530",
+      "executable": false
+    },
+    {
+      "path": "scripts/dimtext.py",
+      "sha256": "f7ea11fb7437b7a1515f352b521ed3258dbf8d7f662ab64cf946a9f6ffb080c7",
+      "executable": false
+    },
+    {
+      "path": "scripts/dimticks.py",
+      "sha256": "ffa5867baaf954171dd90aa10034486fba601023a88a14f21e74eb87909cbb58",
+      "executable": false
+    },
+    {
+      "path": "scripts/doorcheck.py",
+      "sha256": "fe0af5ed6434d5604737f5d2a85baed1d23dadf58a91c7d5b2e4fc256f2390c9",
+      "executable": false
+    },
+    {
+      "path": "scripts/dxf_prepare.py",
+      "sha256": "302552bf0a3a2f3f821d4ec8b1781f5db4600f625732ea1ec961b4027f4c1035",
+      "executable": false
+    },
+    {
+      "path": "scripts/dxfaudit.py",
+      "sha256": "5ee20fac96e01386e8efa9bd74193d5394fc018399e2d0c0c3f085c2003f6fb8",
+      "executable": false
+    },
+    {
+      "path": "scripts/dxfinventory.py",
+      "sha256": "40a2b350963d2c7e232cdfea8ad3db34f41ee26a2922d50ad3edab3d2754b7f6",
+      "executable": false
+    },
+    {
+      "path": "scripts/elecaudit.mjs",
+      "sha256": "744592d1b4fc66d429f7162839a5d775dc56db02b542e56642a64609577eb6cf",
+      "executable": false
+    },
+    {
+      "path": "scripts/furnoverlay.py",
+      "sha256": "ec64cafb092b907306e085c106607a3ed91edb8f7f398b2708bdee1d5ed6a624",
+      "executable": false
+    },
+    {
+      "path": "scripts/gridmm.py",
+      "sha256": "f2272acc3e1325cf5833f0f5e20bb9bd04691ab35ed103f9b9c441843689c9c1",
+      "executable": false
+    },
+    {
+      "path": "scripts/imgio.py",
+      "sha256": "066bf71d1859d396e847176c48c1d80c2fd3d9be2123fd0ba99c268fb730496b",
+      "executable": false
+    },
+    {
+      "path": "scripts/package-lock.json",
+      "sha256": "ff1ff6989b4278ee4cdfaa8d979bb8070e5e3c5b1157502f0d16ed0a6047a08d",
+      "executable": false
+    },
+    {
+      "path": "scripts/package.json",
+      "sha256": "99a9a7c488ff031defab92196c4e47a4834bf3a1266a1a24d1fe40ae70a08bd0",
+      "executable": false
+    },
+    {
+      "path": "scripts/qa_files.py",
+      "sha256": "4599e699347350cc73a00922586c6b5500fdfa7edb90ca28447576090fa15c5f",
+      "executable": false
+    },
+    {
+      "path": "scripts/qa_furniture.mjs",
+      "sha256": "979a33c811b604915543d124dc78310fffebb3b26dfc402aa0a13027d1d05111",
+      "executable": false
+    },
+    {
+      "path": "scripts/qa_styles.mjs",
+      "sha256": "6f68f0a41a765f413a14ee938b2157678e83c951c10140c78a16962828a09a8f",
+      "executable": false
+    },
+    {
+      "path": "scripts/qa.mjs",
+      "sha256": "4492ad7ef7a94559cd7bbbb0879a887f182d9e056c203e45306c194d26fa618b",
+      "executable": false
+    },
+    {
+      "path": "scripts/rectify.py",
+      "sha256": "e04c2b6c94f94f9163cadfe34e879693b20f024a1e08059e630a7efc74917c4f",
+      "executable": false
+    },
+    {
+      "path": "scripts/walktest.mjs",
+      "sha256": "c0b5e032974007ad8a5eba4a8ca947e27bff526c8b2a8d9838f49c96e02b23ed",
+      "executable": false
+    },
+    {
+      "path": "scripts/wallaudit.py",
+      "sha256": "12cfedab1d44937d6549baccfbc16150a0ac52d0fb15fa184cf8a3b7df02ce1f",
+      "executable": false
+    },
+    {
+      "path": "scripts/wallfit.py",
+      "sha256": "18543f1f15066d8aab031245c0595b11bd3583509e611f22f34132e5c965b10f",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/house-plan-designer"
+}

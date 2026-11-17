@@ -1,0 +1,327 @@
+{
+  "repository": "ythx-101/live-panel-skill",
+  "commit": "d5aa86d8a5729cea2c78f083df672977f168a147",
+  "path": "",
+  "verified": true,
+  "coreSha256": "1d5d0e7241ca0b3782f35317cf33dbb290c19a9bdd672e545b9a08c28959a468",
+  "skipped": [
+    ".gitignore",
+    "examples/excalidraw-aqua/preview.webp",
+    "examples/funnel/funnel.mp4",
+    "examples/funnel/preview.webp",
+    "examples/loop-poteto/loop-poteto.mp4",
+    "examples/loop-poteto/preview-dark.webp",
+    "examples/loop-poteto/preview-light.webp",
+    "examples/ring/ring.mp4",
+    "scripts/scaffold.py",
+    "scripts/verify_view.py"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "1d5d0e7241ca0b3782f35317cf33dbb290c19a9bdd672e545b9a08c28959a468",
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/Excalifont-OFL.txt",
+      "sha256": "5ca7f62335c5dbf01be2930b95c9f55b932a913ba3655b84bb77b43e4a697aef",
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/Excalifont-Regular-Latin.woff2",
+      "sha256": "e4423b318e11432aff2e6e865e300b7ca270f92321a3f56632268fede01c1b48",
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/SmileySans-Oblique.woff2",
+      "sha256": "731f22973349404b15a88a99ef3b5dd4104c0965c23b7e485c1f11e84fea99e2",
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/SmileySans-OFL.txt",
+      "sha256": "9401f4050f1b66c26b6ccdc8b0e14a3c1cc37aac122eda84386f25854a9bec72",
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/Xiaolai-OFL.txt",
+      "sha256": "0df7e09be4c2c850a48bd8beb9cd64b343aad49cd5d3f6cfb2ad2e3d28a56ca4",
+      "executable": false
+    },
+    {
+      "path": "assets/template.html",
+      "sha256": "a046fdfeda4309ce3feb42dc71560847ef7b96f447e1218488523c1b96d246d0",
+      "executable": false
+    },
+    {
+      "path": "assets/views/excalidraw.js",
+      "sha256": "07c03a113c421d57ce84cdd7ef0030366737c190761c5532dda23e163be95a5c",
+      "executable": false
+    },
+    {
+      "path": "assets/views/funnel.js",
+      "sha256": "b0f5f09f1c99e73ebc0b732bb3771caccd75b5591b2c2ba4caa3b61fc172f47d",
+      "executable": false
+    },
+    {
+      "path": "assets/views/loop.js",
+      "sha256": "745eb49d212161cb16026ce733b93d460ed2674da5d241e24505f0e7e6240a34",
+      "executable": false
+    },
+    {
+      "path": "assets/views/LUCIDE-LICENSE.txt",
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+      "executable": false
+    },
+    {
+      "path": "assets/views/ring.js",
+      "sha256": "3deee7ec9dfcfd336d380f9e40e1823e79f146c6827d41429370107893e0df98",
+      "executable": false
+    },
+    {
+      "path": "assets/views/ROUGH-LICENSE.txt",
+      "sha256": "dca9a392272606ac748ac0976a2a1133f14eef841c27beaa51a844d53c56a09d",
+      "executable": false
+    },
+    {
+      "path": "assets/views/sketchboard.js",
+      "sha256": "081bb4e43c4f3f0a5e0dc1dd73f570c154ac5f673bfc03c52cd79bcd3c36c0df",
+      "executable": false
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "47c6e4287d7228487166932d46b2d343c15ecfc93746724c6949e4f246c556cc",
+      "executable": false
+    },
+    {
+      "path": "examples/agent-architecture/agent-architecture.mp4",
+      "sha256": "d4d28641e7609f3cf6afed8fc81db36047a7062762eff369f4850b130767166c",
+      "executable": false
+    },
+    {
+      "path": "examples/agent-architecture/config.json",
+      "sha256": "ae643887d9768354659583d5b2f03dcedee21a9676f405c64789875dd3a095f4",
+      "executable": false
+    },
+    {
+      "path": "examples/agent-architecture/preview.webp",
+      "sha256": "5136d2e688420dba041cb3e1d9f4ef77ab05caab3544814106ce81ed92c510ed",
+      "executable": false
+    },
+    {
+      "path": "examples/airbnb/airbnb.mp4",
+      "sha256": "048bd1945166a27f793b72fac3333c80dc170cdf5fe76a1bab40cc5d16d3307a",
+      "executable": false
+    },
+    {
+      "path": "examples/airbnb/config.json",
+      "sha256": "7d07752b3d7999c23c533a3953e75151127a08dbf19d9d1a59e7adc0448da5f6",
+      "executable": false
+    },
+    {
+      "path": "examples/airbnb/preview.webp",
+      "sha256": "e896187d6ecf958d91905abb96649cc434f20369a98f72527ac328577ee5870f",
+      "executable": false
+    },
+    {
+      "path": "examples/codex-agents/codex-agents.mp4",
+      "sha256": "f896f6839fe598382a5a7c2c04b76663fda881396bec2a371833c6370e3153de",
+      "executable": false
+    },
+    {
+      "path": "examples/codex-agents/config.json",
+      "sha256": "d9303a45d268d27b853bfbd1a44f82eb7a6e8fbfecc1ae87550b9967c69df765",
+      "executable": false
+    },
+    {
+      "path": "examples/codex-agents/preview.webp",
+      "sha256": "3b5ea8a2c09a4b918ea77c8eeabe4e9d2bbbe54e1bba8ac0e5da0b7a53070a72",
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-aqua/build_config.py",
+      "sha256": "75ec8f99f19107b1c915d51491382b720990570551f2f45d72385a39a37448a1",
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-aqua/config-3x4.json",
+      "sha256": "de7f99f9731982a3f37ccaa8e52eede94a63c8b53e0971fe4058625f4725be86",
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-aqua/config-4x5.json",
+      "sha256": "c163d894f91b1c52ac792df1d084642560d3edb7bf86fe9d3b6c071ecbd67a55",
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-aqua/README.md",
+      "sha256": "d7161c247e383e36f5be49fdb92fd97e665f2adf04a7b813fe8bd6c89be15dde",
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-gardener/build_config.py",
+      "sha256": "9b4e71a5c5ca21907131e2dae1bab54bcc18ef3c359ffc7b9bc78db5cbd5f45b",
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-gardener/config-3x4.json",
+      "sha256": "0f1398cc0208979c6e8f65442d09393b79988bf884878f2f1c740b6fe7e34a54",
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-gardener/config-4x5.json",
+      "sha256": "a2db2ed92412fc4f4d95ba3976c49b50a865179ee275d4e7cbcb018cc455c32d",
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-gardener/preview.webp",
+      "sha256": "bd5dbb6a21ce12f0514a9e846b3e45e090ae732b52e2a85f0a1efd0609051bde",
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-gardener/README.md",
+      "sha256": "06e86dcba4d05604fffcfaf48ed7a12f67ec3b9cf6739d6f87a055118e13ee32",
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-import/agent-loop.excalidraw",
+      "sha256": "ad8aa279c03e97728bf3302162acf1cac1bfb404d7ffdea984cc04b48cb3915e",
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-import/agent-loop.mp4",
+      "sha256": "7c3cc92d85775c6ad7785e4d5c1eab105095ea79862fa2c40981409fa3a4051f",
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-import/config.json",
+      "sha256": "a37045410615c4056ce301355fdf9fc32470a448300ea29883e6e63fa1177653",
+      "executable": false
+    },
+    {
+      "path": "examples/funnel-karpathy/config.json",
+      "sha256": "f470fd1a31a4fdf5e5c91fd7494ef95a7f1c24313609d61d43ac13312f225c1f",
+      "executable": false
+    },
+    {
+      "path": "examples/funnel/config.json",
+      "sha256": "86fb868c702601f87b73658b49f2008e33dbffa4d2543c0eb2df8593a985c783",
+      "executable": false
+    },
+    {
+      "path": "examples/hybrid-agent/config.json",
+      "sha256": "db76c2086cf1c99f068c728236d6b6c0fbdfbd95f996525e43df7750d1e4efca",
+      "executable": false
+    },
+    {
+      "path": "examples/hybrid-agent/README.md",
+      "sha256": "a6f63c953ddfff1549e92f0481fd496d5398fa45511ca1c744a4ea0d94b64668",
+      "executable": false
+    },
+    {
+      "path": "examples/loop-poteto/config.json",
+      "sha256": "e25498d30674488f77dbf00827b327645adc44b2a0ea30916100519eceecec32",
+      "executable": false
+    },
+    {
+      "path": "examples/minimal/config.json",
+      "sha256": "b6e28dbce9e5e0c8ba8cc03f369a72770be3fe16719350cc46f27a12abb759b8",
+      "executable": false
+    },
+    {
+      "path": "examples/minimal/preview.webp",
+      "sha256": "a45025fffefddfeebe1d01dec2464bb5c3e83157992ddb339a905de63995a5a1",
+      "executable": false
+    },
+    {
+      "path": "examples/ring/config.json",
+      "sha256": "5489fc68268632b8cfd77080b0dd70aaeca9a26eb57356a7e994ebe3874c3cc4",
+      "executable": false
+    },
+    {
+      "path": "examples/ring/preview.webp",
+      "sha256": "a09a60e9e4b549d02a9a1357665107b20286e0532e16f4e5ef2359e0e38a1ef0",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "d9a271454ec62391b2b304fba4c45068887fd7ef1a872dca544c6938ef7fef2b",
+      "executable": false
+    },
+    {
+      "path": "llms.txt",
+      "sha256": "218b4a1b572ae7aaa13e415a44db2eacd0c351f865500e79b277be1a186f85a6",
+      "executable": false
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "4969c67367b6e3fdef8e4940c9a4192988a5b656ece5ac58cced407312713326",
+      "executable": false
+    },
+    {
+      "path": "README.md",
+      "sha256": "4e226d480d15c0f6f2f4318f198022d486961e7d3a5ee397382d5b80bf78360a",
+      "executable": false
+    },
+    {
+      "path": "references/config-schema.md",
+      "sha256": "9bf00752d0a3fe05714f3635ad650e4720ba5439e9d71d5d7b9bd32242ae750f",
+      "executable": false
+    },
+    {
+      "path": "references/motion-grammar.md",
+      "sha256": "b4a4dc946690c25d58f615425b765ef5df844f90da18b1c99838a87bf0f7d2ba",
+      "executable": false
+    },
+    {
+      "path": "references/verify-view.md",
+      "sha256": "d35bad90ad37f1dadb81a0af354170613aa1ef4adf85197078724c105458d2cf",
+      "executable": false
+    },
+    {
+      "path": "references/view-rules.md",
+      "sha256": "172fc5df47a2ee88a5cab23de4a1b576d7f5bb9414fc9a002db66873344e2cb2",
+      "executable": false
+    },
+    {
+      "path": "references/views.md",
+      "sha256": "e7b82db8080bfb6495e7b9fb583ae4808447f49d2d9283eb303f76e94cada679",
+      "executable": false
+    },
+    {
+      "path": "scripts/check_frames.py",
+      "sha256": "d6e4eee19c86f4dcb77b79578a79d61ed4fbf2384fbe9718f7d0925c475b5b23",
+      "executable": true
+    },
+    {
+      "path": "scripts/excalidraw_import.py",
+      "sha256": "41d87b39f9ccbc1bc6736bd3209c74a74b7b84e8f005c3c569450481a468ab7c",
+      "executable": false
+    },
+    {
+      "path": "scripts/fetch_fonts.sh",
+      "sha256": "7c6098ae94dc87e76a84267ed386a7935ee1142c8c4c1f8b41947b0970501b54",
+      "executable": true
+    },
+    {
+      "path": "scripts/livepanel.py",
+      "sha256": "0ac83094adfecc4d8ef1f86d841d7303a73441c677b6c844d6d248055d3e62ad",
+      "executable": true
+    },
+    {
+      "path": "scripts/render.py",
+      "sha256": "541f4be98df54db61522f017128613be50bbbc15c340f75f3d358ac77dc62737",
+      "executable": true
+    },
+    {
+      "path": "tests/test_cycle_replay.py",
+      "sha256": "ba87e82757ce097c3b99f0ffe99931531174924410e5b2842325784f6f232498",
+      "executable": false
+    },
+    {
+      "path": "tests/test_offline.py",
+      "sha256": "aa302d4b14dc6a89329607bb53a83d0bdc7cc90784a196b804ae5a750c3370ea",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/live-panel"
+}

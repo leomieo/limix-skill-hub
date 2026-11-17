@@ -1450,5 +1450,57 @@
       "checksum": "977fe11aa7259eb04618790f8e91b1c1cb7b94ac13dae5e9db1a72105990f82b",
       "at": "2026-11-16T00:51:32.215Z"
     }
+  ],
+  "blender-core": [
+    {
+      "version": "b1b21dfb73bc",
+      "commit": "b1b21dfb73bc40b874ebf2aa12645931bfed3523",
+      "checksum": "4da81ebb53d31d9612b9ef6f3a74b59b67e5eceb567cc67836c7a549a027e207",
+      "at": "2026-11-17T01:12:03.935Z"
+    }
+  ],
+  "house-plan-designer": [
+    {
+      "version": "dd5a61070ea0",
+      "commit": "dd5a61070ea0a251fb13a141cd9a282be36fd292",
+      "checksum": "45738e35b7307b21bbf739128b1dcab2e4d51489c1d828fea2a94b27308c5029",
+      "at": "2026-11-17T01:12:03.935Z"
+    }
+  ],
+  "live-panel": [
+    {
+      "version": "d5aa86d8a572",
+      "commit": "d5aa86d8a5729cea2c78f083df672977f168a147",
+      "checksum": "743639350909936919d4076b3c52b6c5b5bc268d57f3ad8f409facee59b9b781",
+      "at": "2026-11-17T01:12:03.935Z"
+    },
+    {
+      "version": "d5aa86d8a572",
+      "commit": "d5aa86d8a5729cea2c78f083df672977f168a147",
+      "checksum": "3b39962b85ac62ec34ca88fc44f872c5f1c8b6683776c6436b70f23c2770b889",
+      "at": "2026-11-17T01:12:03.935Z"
+    }
+  ],
+  "ste": [
+    {
+      "version": "f7c104315045",
+      "commit": "f7c104315045849e7bce357664273b4e99bc5119",
+      "checksum": "2846e663e2656efbc173e7d52bf577dec208f2d9a3b81db9550d8186bc7ff0e9",
+      "at": "2026-11-17T09:13:27.821Z"
+    }
+  ],
+  "yomiyasu": [
+    {
+      "version": "db78b9bc5e86",
+      "commit": "db78b9bc5e868549b517a037df7a4d1c93edac23",
+      "checksum": "a12c3a7a8dd9fe40a6f5a896c7891d23e9fd75796e955862ef2887276084e62e",
+      "at": "2026-11-17T01:12:03.935Z"
+    },
+    {
+      "version": "db78b9bc5e86",
+      "commit": "db78b9bc5e868549b517a037df7a4d1c93edac23",
+      "checksum": "fb0107d9767823b37e8c174bdabf3c795a5a9986759597b7d3869c0840359821",
+      "at": "2026-11-17T01:12:03.935Z"
+    }
   ]
 }

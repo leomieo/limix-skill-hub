@@ -1,0 +1,46 @@
+{
+  "repository": "EL4CTEO/blender-skills",
+  "commit": "b1b21dfb73bc40b874ebf2aa12645931bfed3523",
+  "path": "skills/blender-core",
+  "verified": true,
+  "coreSha256": "85c6161bf7a8e648735bd04957caba76f5e9c7b8506b38afd8496cc795563789",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "85c6161bf7a8e648735bd04957caba76f5e9c7b8506b38afd8496cc795563789",
+      "executable": false
+    },
+    {
+      "path": "references/api-changes-5x.md",
+      "sha256": "e34f2e39a97833d75b6177c2e281ff9481405efd88bfd2d67003560f0c421fe1",
+      "executable": false
+    },
+    {
+      "path": "references/bpy-patterns.md",
+      "sha256": "ba7bbc708bf198bdcdfa59d9d41d830a4ae119c24ae9457830b73d9e818e2af8",
+      "executable": false
+    },
+    {
+      "path": "scripts/_bpyx.py",
+      "sha256": "90f44d70198b199cd922e4e57f7e55c56a3041d3a498ef7d444b019f9795d2ff",
+      "executable": false
+    },
+    {
+      "path": "scripts/env_report.py",
+      "sha256": "e628feed806dd265e0c1ce803d92591aac208a9f463d8c47cbb939476d3b347a",
+      "executable": false
+    },
+    {
+      "path": "scripts/run_in_blender.py",
+      "sha256": "e97e078c1b52475d386af2b8f9d27c7578a55c250ccd43ff50bed9c33d380355",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "d81d0037e3a29a01ccfefaae420d5ba73e905cabf3995700e9075c7205c06cc5",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/blender-core"
+}

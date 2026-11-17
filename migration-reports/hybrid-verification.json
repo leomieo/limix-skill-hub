@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-16T00:52:59.423Z",
+  "checkedAt": "2026-11-17T09:29:28.172Z",
   "scope": "Static integrity and provenance only; no downloaded scripts executed.",
   "results": [
     {
@@ -336,6 +336,17 @@
       "commit": "b9718436d77ee7bcf17cdcb6aa27628feb95d97a",
       "security": "quarantined",
       "compatibility": "incompatible",
+      "skipped": [],
+      "license": "MIT"
+    },
+    {
+      "id": "blender-core",
+      "verified": true,
+      "origin": "upstream",
+      "files": 7,
+      "commit": "b1b21dfb73bc40b874ebf2aa12645931bfed3523",
+      "security": "quarantined",
+      "compatibility": "unchecked",
       "skipped": [],
       "license": "MIT"
     },
@@ -2040,6 +2051,20 @@
       "license": "Apache-2.0"
     },
     {
+      "id": "house-plan-designer",
+      "verified": true,
+      "origin": "upstream",
+      "files": 101,
+      "commit": "dd5a61070ea0a251fb13a141cd9a282be36fd292",
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "skipped": [
+        ".gitignore",
+        "assets/template.html"
+      ],
+      "license": "MIT"
+    },
+    {
       "id": "huashu-art-motion",
       "verified": true,
       "origin": "upstream",
@@ -2437,6 +2462,28 @@
       "compatibility": "unchecked",
       "skipped": [],
       "license": "MIT"
+    },
+    {
+      "id": "live-panel",
+      "verified": true,
+      "origin": "upstream",
+      "files": 61,
+      "commit": "d5aa86d8a5729cea2c78f083df672977f168a147",
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "skipped": [
+        ".gitignore",
+        "examples/excalidraw-aqua/preview.webp",
+        "examples/funnel/funnel.mp4",
+        "examples/funnel/preview.webp",
+        "examples/loop-poteto/loop-poteto.mp4",
+        "examples/loop-poteto/preview-dark.webp",
+        "examples/loop-poteto/preview-light.webp",
+        "examples/ring/ring.mp4",
+        "scripts/scaffold.py",
+        "scripts/verify_view.py"
+      ],
+      "license": "MIT AND OFL-1.1 AND ISC; example visual rights require separate review"
     },
     {
       "id": "logo-design",
@@ -4059,6 +4106,17 @@
       "license": "MIT (stageshow/LICENSE trong repo)"
     },
     {
+      "id": "ste",
+      "verified": true,
+      "origin": "upstream",
+      "files": 7,
+      "commit": "f7c104315045849e7bce357664273b4e99bc5119",
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "skipped": [],
+      "license": "MIT"
+    },
+    {
       "id": "supabase-postgres-best-practices",
       "verified": true,
       "origin": "upstream",
@@ -4139,6 +4197,17 @@
       "compatibility": "unchecked",
       "skipped": [],
       "license": "MIT"
+    },
+    {
+      "id": "yomiyasu",
+      "verified": true,
+      "origin": "upstream",
+      "files": 42,
+      "commit": "db78b9bc5e868549b517a037df7a4d1c93edac23",
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "skipped": [],
+      "license": "MIT AND Unicode-3.0"
     },
     {
       "id": "youtube-agent-skill",

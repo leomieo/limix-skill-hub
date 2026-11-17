@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "name": "yomiyasu",
+  "version": "db78b9bc5e86",
+  "source": {
+    "url": "https://github.com/nanaism/yomiyasu",
+    "commit": "db78b9bc5e868549b517a037df7a4d1c93edac23",
+    "sha256": "34f2611aa021f4496ff4555ef1b29a67670c411d137aaeb269e9ba9ab2b73877",
+    "license": "MIT AND Unicode-3.0"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Biên tập tiếng Nhật do AI tạo, giữ nguyên ý nghĩa, điều kiện và sắc thái.",
+    "aliases": [
+      "Biên tập tiếng Nhật do AI tạo"
+    ],
+    "keywords": [
+      "yomiyasu",
+      "Biên tập tiếng Nhật do AI tạo"
+    ],
+    "examples": [
+      "Dùng yomiyasu cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "34f2611aa021f4496ff4555ef1b29a67670c411d137aaeb269e9ba9ab2b73877"
+  },
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "git [mention-hint]",
+    "github-cli [mention-hint]",
+    "java [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell",
+    "network"
+  ],
+  "syncedAt": "2026-11-17T01:12:03.935Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "assets/algo-artis.png: binary-file (low)",
+      "Daily intake: full manual/runtime approval not performed. Tiếng Nhật; Python 3 cho lint/check. Core gốc là tiếng Nhật, chưa đáp ứng English Core."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "Upstream SKILL.md and retained source files are byte-identical to the pinned GitHub commit; this does not certify English language or bundle completeness.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "Tiếng Nhật; Python 3 cho lint/check. Core gốc là tiếng Nhật, chưa đáp ứng English Core."
+    ]
+  }
+}

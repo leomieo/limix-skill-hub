@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "name": "house-plan-designer",
+  "version": "dd5a61070ea0",
+  "source": {
+    "url": "https://github.com/ZWD11/house-plan-designer",
+    "commit": "dd5a61070ea0a251fb13a141cd9a282be36fd292",
+    "sha256": "f882351a38f58ecb1354a3b5e4b65bf9d08b54b631b64d128f1b938d25022582",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Dựng thiết kế nhà 2D/3D từ bản vẽ, kiểm tra kích thước, cửa và nội thất.",
+    "aliases": [
+      "Dựng thiết kế nhà 2D/3D từ bản vẽ"
+    ],
+    "keywords": [
+      "house",
+      "plan",
+      "designer",
+      "Dựng thiết kế nhà 2D/3D từ bản vẽ"
+    ],
+    "examples": [
+      "Dùng house-plan-designer cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "f882351a38f58ecb1354a3b5e4b65bf9d08b54b631b64d128f1b938d25022582"
+  },
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "docker [mention-hint]",
+    "ezdxf * [installation-command-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "git [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "numpy * [installation-command-hint]",
+    "opencv-python * [installation-command-hint]",
+    "pillow * [installation-command-hint]",
+    "playwright [mention-hint]",
+    "puppeteer [mention-hint]",
+    "puppeteer-core ^23.11.1 [declared; dependencies]",
+    "pymupdf * [installation-command-hint]",
+    "pypdf * [installation-command-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "scipy * [installation-command-hint]",
+    "three [mention-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell",
+    "network"
+  ],
+  "syncedAt": "2026-11-17T01:12:03.935Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "assets/icon.png: binary-file (low)",
+      "reference/example-3d.png: binary-file (low)",
+      "reference/example-ceiling.jpg: binary-file (low)",
+      "reference/example-freemodel.jpg: binary-file (low)",
+      "reference/example-input.jpg: binary-file (low)",
+      "reference/example-library.jpg: binary-file (low)",
+      "reference/example-mep-edit.jpg: binary-file (low)",
+      "reference/example-mep2d.jpg: binary-file (low)",
+      "reference/example-mep3d.jpg: binary-file (low)",
+      "reference/example-office-3d.jpg: binary-file (low)",
+      "reference/example-office-hall.jpg: binary-file (low)",
+      "reference/example-office-wc.jpg: binary-file (low)",
+      "reference/example-overlay.png: binary-file (low)",
+      "reference/example-pathtraced.jpg: binary-file (low)",
+      "reference/example-plan2d.png: binary-file (low)",
+      "reference/example-resize.jpg: binary-file (low)",
+      "reference/example-smart.jpg: binary-file (low)",
+      "reference/example-style.jpg: binary-file (low)",
+      "reference/example-villa-diorama.jpg: binary-file (low)",
+      "reference/example-villa-night.jpg: binary-file (low)",
+      "reference/example-walk-cam.jpg: binary-file (low)",
+      "reference/example-walk-markers.jpg: binary-file (low)",
+      "Daily intake: full manual/runtime approval not performed. Python, Node.js, trình duyệt; core chủ yếu tiếng Trung, chưa đáp ứng English Core.",
+      "Incomplete bundle: .gitignore, assets/template.html"
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "Upstream SKILL.md and retained source files are byte-identical to the pinned GitHub commit; this does not certify English language or bundle completeness.",
+      "2 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "Python, Node.js, trình duyệt; core chủ yếu tiếng Trung, chưa đáp ứng English Core."
+    ]
+  }
+}

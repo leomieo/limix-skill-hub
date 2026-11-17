@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "name": "ste",
+  "version": "f7c104315045",
+  "source": {
+    "url": "https://github.com/dualface/ste-zh",
+    "commit": "f7c104315045849e7bce357664273b4e99bc5119",
+    "sha256": "be32640a2c9fa7334deeea0cda48817c1ed54b9667851ede273a84ed2b8af4d0",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Viết báo cáo kỹ thuật tiếng Trung ngắn gọn theo nguyên tắc ASD-STE100 khi được gọi rõ ràng.",
+    "aliases": [
+      "Viết báo cáo kỹ thuật tiếng Trung ngắn gọn theo nguyên tắc ASD-STE100 khi được gọi rõ ràng."
+    ],
+    "keywords": [
+      "ste",
+      "Viết báo cáo kỹ thuật tiếng Trung ngắn gọn theo nguyên tắc ASD-STE100 khi được gọi rõ ràng."
+    ],
+    "examples": [
+      "Dùng ste cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "be32640a2c9fa7334deeea0cda48817c1ed54b9667851ede273a84ed2b8af4d0"
+  },
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "git [mention-hint]",
+    "node [mention-hint]",
+    "ste [reference-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write"
+  ],
+  "syncedAt": "2026-11-17T09:13:27.821Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "Daily intake: full manual/runtime approval not performed. Core tiếng Trung; chưa đáp ứng English Core; không tự kích hoạt trên toàn phiên."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "Upstream SKILL.md and retained source files are byte-identical to the pinned GitHub commit; this does not certify English language or bundle completeness.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "Core tiếng Trung; chưa đáp ứng English Core; không tự kích hoạt trên toàn phiên."
+    ]
+  }
+}

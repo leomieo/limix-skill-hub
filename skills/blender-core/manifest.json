@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "name": "blender-core",
+  "version": "b1b21dfb73bc",
+  "source": {
+    "url": "https://github.com/EL4CTEO/blender-skills",
+    "commit": "b1b21dfb73bc40b874ebf2aa12645931bfed3523",
+    "sha256": "85c6161bf7a8e648735bd04957caba76f5e9c7b8506b38afd8496cc795563789",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Nền tảng điều khiển Blender bằng bpy, MCP hoặc CLI, kiểm tra môi trường và ngữ cảnh.",
+    "aliases": [
+      "Nền tảng điều khiển Blender bằng bpy"
+    ],
+    "keywords": [
+      "blender",
+      "core",
+      "Nền tảng điều khiển Blender bằng bpy"
+    ],
+    "examples": [
+      "Dùng blender-core cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "85c6161bf7a8e648735bd04957caba76f5e9c7b8506b38afd8496cc795563789"
+  },
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "blender [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "node [mention-hint]",
+    "powershell [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell",
+    "network"
+  ],
+  "syncedAt": "2026-11-17T01:12:03.935Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "Daily intake: full manual/runtime approval not performed. Blender 5.2+; Python/bpy; MCP tùy chọn. Các skill chuyên biệt được nhắc tới chưa đóng gói trong mục này."
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "Upstream SKILL.md and retained source files are byte-identical to the pinned GitHub commit; this does not certify English language or bundle completeness.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "Blender 5.2+; Python/bpy; MCP tùy chọn. Các skill chuyên biệt được nhắc tới chưa đóng gói trong mục này."
+    ]
+  }
+}

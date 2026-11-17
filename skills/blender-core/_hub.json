@@ -1,0 +1,16 @@
+{
+  "repository": "EL4CTEO/blender-skills",
+  "license": "MIT",
+  "stars": 1359,
+  "createdAt": "2026-10-14T19:08:14Z",
+  "pushedAt": "2026-11-13T23:17:51Z",
+  "statsCheckedAt": "2026-11-17T01:12:03.935Z",
+  "coreOrigin": "upstream",
+  "commit": "b1b21dfb73bc40b874ebf2aa12645931bfed3523",
+  "path": "skills/blender-core",
+  "language": "hybrid",
+  "version": "b1b21dfb73bc",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-17T01:12:03.935Z"
+}
