@@ -10,6 +10,7 @@ Sắp theo thứ tự thêm vào kho, mới nhất trước; sao và ngày tạo
 
 | Skill/tool | Nguồn | Sao | Ngày tạo | Mô tả ngắn |
 |---|---|---:|---|---|
+| [archify](skills/archify/SKILL.md) | [tt-a1i/archify](https://github.com/tt-a1i/archify) | ![Sao](https://img.shields.io/github/stars/tt-a1i/archify?style=social) | 2026-04-15 | Cập nhật 10 loại sơ đồ và trang giải thích HTML; bổ sung runtime, giữ nguyên nguồn. Cách ly, chưa chạy thử; bỏ HTML ví dụ dựng sẵn. |
 | [better-design](skills/better-design/SKILL.md) | [Moddingflow/better-design](https://github.com/Moddingflow/better-design) | 52 | 2026-09-26 | Hướng dẫn agent thiết kế giao diện có định hướng nghệ thuật, hệ token, chuyển động, khả năng truy cập và kiểm chứng bằng giao diện thật. Chờ duyệt tĩnh. |
 | [convert-site](skills/convert-site/SKILL.md) | [ethanplusai/astro-conversion-kit](https://github.com/ethanplusai/astro-conversion-kit) | 135 | 2026-10-22 | Điều phối quy trình chuyển website đang chạy sang Astro tĩnh, giữ URL và nội dung, đối chiếu sai khác. Cách ly vì core có lệnh cài gói và tạo PR; thiếu 3 tệp cấu hình ẩn. |
 | [e2e-red-triage](skills/e2e-red-triage/SKILL.md) | [sno-ai/sno-station-skills](https://github.com/sno-ai/sno-station-skills) | 865 | 2026-10-01 | Phân loại lỗi kiểm thử đầu cuối, phân biệt lỗi sản phẩm với lỗi môi trường; chỉ gọi thủ công. Chờ duyệt tĩnh. |
@@ -19,7 +20,6 @@ Sắp theo thứ tự thêm vào kho, mới nhất trước; sao và ngày tạo
 | [blender-core](skills/blender-core/SKILL.md) | [EL4CTEO/blender-skills](https://github.com/EL4CTEO/blender-skills) | 1975 | 2026-10-14 | Nền tảng điều khiển Blender bằng bpy, MCP hoặc CLI, kiểm tra môi trường và ngữ cảnh. |
 | [live-panel](skills/live-panel/SKILL.md) | [ythx-101/live-panel-skill](https://github.com/ythx-101/live-panel-skill) | 864 | 2026-10-03 | Tạo sơ đồ kiến trúc chuyển động kiểu bảng giám sát và xuất video MP4. |
 | [house-plan-designer](skills/house-plan-designer/SKILL.md) | [ZWD11/house-plan-designer](https://github.com/ZWD11/house-plan-designer) | 729 | 2026-10-06 | Dựng thiết kế nhà 2D/3D từ bản vẽ, kiểm tra kích thước, cửa và nội thất. |
-| [ste](skills/ste/SKILL.md) | [dualface/ste-zh](https://github.com/dualface/ste-zh) | 901 | 2026-10-05 | Viết báo cáo kỹ thuật tiếng Trung ngắn gọn theo nguyên tắc ASD-STE100 khi được gọi rõ ràng. |
 
 ## Sử dụng
 

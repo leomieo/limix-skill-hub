@@ -4883,14 +4883,14 @@
       "id": "archify",
       "name": "archify",
       "description": "Create validated architecture, workflow, sequence, data-flow, lifecycle/state, ERD, class, tree, timeline, and waterfall diagrams as explorable standalone HTML with dark/light themes, motion and image/SVG/WebM export. Accept requirements or Mermaid; inspect repository evidence for code-backed diagrams. Use when visualizing systems, API calls, pipelines, schemas, histories, timings, or everyday steps, parts, relationships and states. Also turn an answer into a one-page explainer, with the conclusion first, structured panels, native diagrams and charts, when the user asks for a page, an explainer or an answer to share (做成一页, 用页面讲), or proactively when the user's rules opt in with an [archify explainer: ...] line. Not for dashboards.",
-      "description_vi": "Tạo sơ đồ kiến trúc, workflow, sequence, data-flow, trạng thái, ERD, class, cây và timeline tương tác dưới dạng HTML độc lập; hỗ trợ Mermaid và báo cáo giải thích một trang. Core chính thức giữ nguyên tiếng Anh. Gói hiện bị giới hạn dung lượng, chưa đủ runtime để kích hoạt.",
+      "description_vi": "Tạo 10 loại sơ đồ tương tác và trang giải thích HTML: kiến trúc, quy trình, tuần tự, luồng dữ liệu, trạng thái, ERD, lớp, cây, dòng thời gian và thời lượng tác vụ. Giữ nguyên lõi tiếng Anh, kèm hướng dẫn tiếng Việt. Không kèm các trang HTML ví dụ đã dựng sẵn; chưa chạy thử.",
       "hybrid": {
         "schemaVersion": 1,
         "name": "archify",
-        "version": "e37848822238",
+        "version": "44781293f387",
         "source": {
           "url": "https://github.com/tt-a1i/archify",
-          "commit": "e37848822238e3a61b12739185cdadd49843a620",
+          "commit": "44781293f38728baf04dbad33ce1a0cef8c39cca",
           "sha256": "1382cfb7108b05e500b82af93c04fd7b694430d3908039bd92d634f01c1e7181",
           "license": "Apache-2.0"
         },
@@ -4899,7 +4899,7 @@
           "vi"
         ],
         "vietnamese": {
-          "description": "Tạo sơ đồ kiến trúc, workflow, sequence, data-flow, trạng thái, ERD, class, cây và timeline tương tác dưới dạng HTML độc lập; hỗ trợ Mermaid và báo cáo giải thích một trang. Core chính thức giữ nguyên tiếng Anh. Gói hiện bị giới hạn dung lượng, chưa đủ runtime để kích hoạt.",
+          "description": "Tạo 10 loại sơ đồ tương tác và trang giải thích HTML: kiến trúc, quy trình, tuần tự, luồng dữ liệu, trạng thái, ERD, lớp, cây, dòng thời gian và thời lượng tác vụ. Giữ nguyên lõi tiếng Anh, kèm hướng dẫn tiếng Việt. Không kèm các trang HTML ví dụ đã dựng sẵn; chưa chạy thử.",
           "aliases": [
             "Vẽ sơ đồ kiến trúc",
             "Sơ đồ tương tác",
@@ -4907,12 +4907,24 @@
           ],
           "keywords": [
             "archify",
-            "Vẽ sơ đồ kiến trúc",
-            "Sơ đồ tương tác",
-            "Giải thích bằng một trang"
+            "architecture",
+            "kiến trúc",
+            "workflow",
+            "quy trình",
+            "sequence",
+            "tuần tự",
+            "dataflow",
+            "luồng dữ liệu",
+            "ERD",
+            "sơ đồ",
+            "HTML",
+            "explainer",
+            "trang giải thích"
           ],
           "examples": [
-            "Dùng archify cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+            "Vẽ sơ đồ kiến trúc hệ thống từ mã nguồn và dẫn chứng các thành phần.",
+            "Chuyển sơ đồ Mermaid này thành HTML tương tác.",
+            "Tạo trang giải thích một trang bằng tiếng Việt về quy trình này."
           ],
           "guide": "references/guide.vi.md",
           "sourceSha256": "1382cfb7108b05e500b82af93c04fd7b694430d3908039bd92d634f01c1e7181"
@@ -4920,9 +4932,8 @@
         "requiredCapabilities": [
           "Archify CLI bin/archify.mjs",
           "Browser for HTML preview",
-          "Complete pinned Archify package",
           "Node.js >=18",
-          "Renderer modules and schemas",
+          "ajv ^8.17.1 [declared; devDependencies]",
           "bash [mention-hint]",
           "browser [mention-hint]",
           "docker [mention-hint]",
@@ -4930,51 +4941,39 @@
           "filesystem-write [mention-hint]",
           "git [mention-hint]",
           "go [mention-hint]",
+          "node >=18 [declared; engines]",
           "node [file-type-hint]",
           "node [mention-hint]",
           "powershell [mention-hint]",
           "python [mention-hint]",
           "react [mention-hint]",
-          "rust [mention-hint]"
+          "rust [mention-hint]",
+          "simple-icons 16.28.0 [declared; devDependencies]"
         ],
         "permissions": [
           "shell",
           "filesystem-read",
           "filesystem-write"
         ],
-        "syncedAt": "2026-11-13T22:35:49.669Z",
+        "syncedAt": "2026-11-18T23:04:23.387Z",
         "security": {
           "status": "quarantined",
           "findings": [
             "assets/template.html: base64-blob (medium)",
-            "examples/class-payment-processors-rendered.html: base64-blob (medium)",
-            "examples/class-payments-rendered.html: base64-blob (medium)",
-            "examples/dataflow-product-analytics.html: base64-blob (medium)",
-            "examples/erd-orders-rendered.html: base64-blob (medium)",
-            "examples/lifecycle-agent-run.html: base64-blob (medium)",
-            "examples/sequence-cache-miss-request.html: base64-blob (medium)",
-            "examples/subscription-billing-rendered.html: base64-blob (medium)",
-            "examples/timeline-archify-dev-activity-rendered.html: base64-blob (medium)",
-            "examples/timeline-payment-incident-rendered.html: base64-blob (medium)",
-            "examples/tree-archify-repository-rendered.html: base64-blob (medium)",
-            "examples/tree-payment-platform-rendered.html: base64-blob (medium)",
-            "examples/waterfall-checkout-request-rendered.html: base64-blob (medium)",
-            "examples/waterfall-example-rebuild-rendered.html: base64-blob (medium)",
-            "examples/web-app-rendered.html: base64-blob (medium)",
-            "examples/workflow-agent-tool-call-rendered.html: base64-blob (medium)",
-            "Bundle size limits excluded runtime modules and references. Not ready for activation; use the pinned upstream release for a complete installation.",
-            "Incomplete upstream bundle: inspect excluded files before approving compatibility or activation."
+            "explainer/sources.mjs: credential-files (high)",
+            "renderers/shared/diagnostics.mjs: binary-file (low)",
+            "renderers/shared/generated-brand-marks.mjs: exe-download (medium)",
+            "Runtime scripts are preserved but not executed or approved. Generated HTML examples are omitted to respect Hub package limits."
           ]
         },
         "compatibility": {
-          "status": "incompatible",
+          "status": "unchecked",
           "notes": [
-            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
-            "120 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
-            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
-            "Node.js >=18 required by pinned upstream package.json; no npm dependencies or optionalDependencies declared there.",
-            "120 upstream package paths are missing. Restore the complete pinned Archify package, including renderers, schemas and references; installing Node.js alone does not repair it.",
-            "Full machine-readable missing file list: registry/catalog.json requirements.missingPackageFiles and _hub.source.json skipped. No automatic installation authorized."
+            "All 191 included upstream files were checked against Git blob hashes at 44781293f38728baf04dbad33ce1a0cef8c39cca.",
+            "15 generated examples/*.html omitted; original JSON examples, runtime modules, schemas and authoring references are included. See _hub.source.json.",
+            "Node.js >=18 declared; runtime, browser checks, exports and optional tool acceptance NOT_TESTED.",
+            "Repository-development scripts referencing ../scripts or ../test require the full upstream repository and are not standalone package capabilities.",
+            "No upstream scripts executed. Static scans do not establish safety or compatibility."
           ]
         }
       },
@@ -4985,18 +4984,28 @@
       ],
       "keywords": [
         "archify",
-        "Vẽ sơ đồ kiến trúc",
-        "Sơ đồ tương tác",
-        "Giải thích bằng một trang"
+        "architecture",
+        "kiến trúc",
+        "workflow",
+        "quy trình",
+        "sequence",
+        "tuần tự",
+        "dataflow",
+        "luồng dữ liệu",
+        "ERD",
+        "sơ đồ",
+        "HTML",
+        "explainer",
+        "trang giải thích"
       ],
       "supported_languages": [
         "en",
         "vi"
       ],
-      "version": "e37848822238",
+      "version": "44781293f387",
       "source": {
         "repository": "tt-a1i/archify",
-        "commit": "e37848822238e3a61b12739185cdadd49843a620",
+        "commit": "44781293f38728baf04dbad33ce1a0cef8c39cca",
         "path": "archify"
       },
       "stars": 97634,
@@ -5027,6 +5036,11 @@
         {
           "rule": "binary-file",
           "severity": "low",
+          "file": "LICENSE-MIT"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
           "file": "NOTICE"
         },
         {
@@ -5036,94 +5050,26 @@
           "line": 146
         },
         {
-          "rule": "base64-blob",
-          "severity": "medium",
-          "file": "examples/class-payment-processors-rendered.html",
-          "line": 146
+          "rule": "credential-files",
+          "severity": "high",
+          "file": "explainer/sources.mjs",
+          "line": 14
         },
         {
-          "rule": "base64-blob",
-          "severity": "medium",
-          "file": "examples/class-payments-rendered.html",
-          "line": 146
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "explainer/vendor/pele/LICENSE"
         },
         {
-          "rule": "base64-blob",
-          "severity": "medium",
-          "file": "examples/dataflow-product-analytics.html",
-          "line": 146
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "renderers/shared/diagnostics.mjs"
         },
         {
-          "rule": "base64-blob",
+          "rule": "exe-download",
           "severity": "medium",
-          "file": "examples/erd-orders-rendered.html",
-          "line": 146
-        },
-        {
-          "rule": "base64-blob",
-          "severity": "medium",
-          "file": "examples/lifecycle-agent-run.html",
-          "line": 146
-        },
-        {
-          "rule": "base64-blob",
-          "severity": "medium",
-          "file": "examples/sequence-cache-miss-request.html",
-          "line": 146
-        },
-        {
-          "rule": "base64-blob",
-          "severity": "medium",
-          "file": "examples/subscription-billing-rendered.html",
-          "line": 146
-        },
-        {
-          "rule": "base64-blob",
-          "severity": "medium",
-          "file": "examples/timeline-archify-dev-activity-rendered.html",
-          "line": 146
-        },
-        {
-          "rule": "base64-blob",
-          "severity": "medium",
-          "file": "examples/timeline-payment-incident-rendered.html",
-          "line": 146
-        },
-        {
-          "rule": "base64-blob",
-          "severity": "medium",
-          "file": "examples/tree-archify-repository-rendered.html",
-          "line": 146
-        },
-        {
-          "rule": "base64-blob",
-          "severity": "medium",
-          "file": "examples/tree-payment-platform-rendered.html",
-          "line": 146
-        },
-        {
-          "rule": "base64-blob",
-          "severity": "medium",
-          "file": "examples/waterfall-checkout-request-rendered.html",
-          "line": 146
-        },
-        {
-          "rule": "base64-blob",
-          "severity": "medium",
-          "file": "examples/waterfall-example-rebuild-rendered.html",
-          "line": 146
-        },
-        {
-          "rule": "base64-blob",
-          "severity": "medium",
-          "file": "examples/web-app-rendered.html",
-          "line": 146
-        },
-        {
-          "rule": "base64-blob",
-          "severity": "medium",
-          "file": "examples/workflow-agent-tool-call-rendered.html",
-          "line": 146
+          "file": "renderers/shared/generated-brand-marks.mjs",
+          "line": 708
         }
       ],
       "approval_status": "quarantined",
@@ -5159,9 +5105,8 @@
         "capabilities": [
           "Archify CLI bin/archify.mjs",
           "Browser for HTML preview",
-          "Complete pinned Archify package",
           "Node.js >=18",
-          "Renderer modules and schemas",
+          "ajv ^8.17.1 [declared; devDependencies]",
           "bash [mention-hint]",
           "browser [mention-hint]",
           "docker [mention-hint]",
@@ -5169,12 +5114,14 @@
           "filesystem-write [mention-hint]",
           "git [mention-hint]",
           "go [mention-hint]",
+          "node >=18 [declared; engines]",
           "node [file-type-hint]",
           "node [mention-hint]",
           "powershell [mention-hint]",
           "python [mention-hint]",
           "react [mention-hint]",
-          "rust [mention-hint]"
+          "rust [mention-hint]",
+          "simple-icons 16.28.0 [declared; devDependencies]"
         ],
         "runtimeHints": [
           {
@@ -5228,6 +5175,38 @@
               {
                 "file": "explainer/prepare.mjs",
                 "line": 59
+              },
+              {
+                "file": "explainer/render.mjs",
+                "line": 12
+              },
+              {
+                "file": "renderers/explainer/render-explainer.mjs",
+                "line": 11
+              },
+              {
+                "file": "renderers/shared/cli.mjs",
+                "line": 56
+              },
+              {
+                "file": "renderers/shared/i18n.mjs",
+                "line": 24
+              },
+              {
+                "file": "renderers/shared/software-notices.mjs",
+                "line": 4
+              },
+              {
+                "file": "scripts/check-render-output.mjs",
+                "line": 32
+              },
+              {
+                "file": "scripts/generate-brand-marks.mjs",
+                "line": 12
+              },
+              {
+                "file": "scripts/generate-validators.mjs",
+                "line": 20
               }
             ]
           },
@@ -5268,6 +5247,30 @@
               {
                 "file": "explainer/prepare.mjs",
                 "line": 71
+              },
+              {
+                "file": "references/repository-authoring.md",
+                "line": 58
+              },
+              {
+                "file": "renderers/explainer/render-explainer.mjs",
+                "line": 28
+              },
+              {
+                "file": "renderers/shared/cli.mjs",
+                "line": 202
+              },
+              {
+                "file": "scripts/check-update.mjs",
+                "line": 548
+              },
+              {
+                "file": "scripts/generate-brand-marks.mjs",
+                "line": 138
+              },
+              {
+                "file": "scripts/generate-validators.mjs",
+                "line": 102
               }
             ]
           },
@@ -5284,6 +5287,62 @@
               {
                 "file": "examples/cache-miss-request.sequence.json",
                 "line": 14
+              },
+              {
+                "file": "renderers/shared/generated-brand-marks.mjs",
+                "line": 1444
+              }
+            ]
+          },
+          {
+            "name": " ? ",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/architecture/render-architecture.mjs",
+                "line": 802
+              },
+              {
+                "file": "renderers/dataflow/dataflow-compiler.mjs",
+                "line": 411
+              },
+              {
+                "file": "renderers/dataflow/dataflow-compiler.mjs",
+                "line": 412
+              },
+              {
+                "file": "renderers/dataflow/dataflow-compiler.mjs",
+                "line": 687
+              },
+              {
+                "file": "renderers/dataflow/dataflow-compiler.mjs",
+                "line": 945
+              },
+              {
+                "file": "renderers/dataflow/dataflow-compiler.mjs",
+                "line": 1288
+              },
+              {
+                "file": "renderers/erd/render-erd.mjs",
+                "line": 341
+              },
+              {
+                "file": "renderers/erd/render-erd.mjs",
+                "line": 361
+              },
+              {
+                "file": "renderers/lifecycle/render-lifecycle.mjs",
+                "line": 886
+              },
+              {
+                "file": "renderers/sequence/render-sequence.mjs",
+                "line": 608
+              },
+              {
+                "file": "renderers/sequence/render-sequence.mjs",
+                "line": 852
               }
             ]
           },
@@ -5296,6 +5355,86 @@
               {
                 "file": "delta/architecture-delta.mjs",
                 "line": 190
+              },
+              {
+                "file": "renderers/architecture/render-architecture.mjs",
+                "line": 799
+              },
+              {
+                "file": "renderers/architecture/routing.mjs",
+                "line": 756
+              },
+              {
+                "file": "renderers/dataflow/dataflow-compiler.mjs",
+                "line": 408
+              },
+              {
+                "file": "renderers/dataflow/dataflow-compiler.mjs",
+                "line": 686
+              },
+              {
+                "file": "renderers/dataflow/dataflow-compiler.mjs",
+                "line": 944
+              },
+              {
+                "file": "renderers/dataflow/dataflow-compiler.mjs",
+                "line": 1287
+              },
+              {
+                "file": "renderers/lifecycle/render-lifecycle.mjs",
+                "line": 884
+              },
+              {
+                "file": "renderers/sequence/render-sequence.mjs",
+                "line": 605
+              },
+              {
+                "file": "renderers/sequence/render-sequence.mjs",
+                "line": 847
+              },
+              {
+                "file": "renderers/workflow/workflow-compiler.mjs",
+                "line": 1620
+              },
+              {
+                "file": "renderers/workflow/workflow-compiler.mjs",
+                "line": 3112
+              },
+              {
+                "file": "renderers/workflow/workflow-compiler.mjs",
+                "line": 4477
+              },
+              {
+                "file": "renderers/workflow/workflow-compiler.mjs",
+                "line": 4529
+              },
+              {
+                "file": "renderers/workflow/workflow-compiler.mjs",
+                "line": 4549
+              },
+              {
+                "file": "renderers/workflow/workflow-compiler.mjs",
+                "line": 4570
+              },
+              {
+                "file": "renderers/workflow/workflow-compiler.mjs",
+                "line": 5067
+              },
+              {
+                "file": "renderers/workflow/workflow-migration-geometry.mjs",
+                "line": 48
+              }
+            ]
+          },
+          {
+            "name": ", left.points[0]], [",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/class/render-class.mjs",
+                "line": 473
               }
             ]
           },
@@ -5312,6 +5451,46 @@
             ]
           },
           {
+            "name": ", right.points[0]], [",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/class/render-class.mjs",
+                "line": 474
+              }
+            ]
+          },
+          {
+            "name": ",",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/shared/generated-validators.mjs",
+                "line": 3
+              },
+              {
+                "file": "renderers/shared/generated-validators.mjs",
+                "line": 14
+              }
+            ]
+          },
+          {
+            "name": ",schemaPath:",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/shared/generated-validators.mjs",
+                "line": 14
+              }
+            ]
+          },
+          {
             "name": ": ",
             "kind": "module",
             "status": "import-hint",
@@ -5320,6 +5499,130 @@
               {
                 "file": "delta/architecture-delta.mjs",
                 "line": 395
+              }
+            ]
+          },
+          {
+            "name": ":{",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/shared/generated-validators.mjs",
+                "line": 3
+              },
+              {
+                "file": "renderers/shared/generated-validators.mjs",
+                "line": 14
+              }
+            ]
+          },
+          {
+            "name": ") || (key0 === ",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/shared/generated-validators.mjs",
+                "line": 14
+              }
+            ]
+          },
+          {
+            "name": ") || (key15 === ",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/shared/generated-validators.mjs",
+                "line": 14
+              }
+            ]
+          },
+          {
+            "name": ") || optionalOf(relationship, ",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/erd/render-erd.mjs",
+                "line": 444
+              }
+            ]
+          },
+          {
+            "name": "), cardinalityOf(relationship, ",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/erd/render-erd.mjs",
+                "line": 443
+              }
+            ]
+          },
+          {
+            "name": ")) || (key16 === ",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/shared/generated-validators.mjs",
+                "line": 14
+              }
+            ]
+          },
+          {
+            "name": ")) || (key17 === ",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/shared/generated-validators.mjs",
+                "line": 14
+              }
+            ]
+          },
+          {
+            "name": ")) || (key18 === ",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/shared/generated-validators.mjs",
+                "line": 14
+              }
+            ]
+          },
+          {
+            "name": ")})",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/erd/render-erd.mjs",
+                "line": 1440
+              }
+            ]
+          },
+          {
+            "name": ")}|${optionalOf(relationship, ",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/erd/render-erd.mjs",
+                "line": 415
               }
             ]
           },
@@ -5336,6 +5639,30 @@
             ]
           },
           {
+            "name": "] && attrs[",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "scripts/check-render-output.mjs",
+                "line": 514
+              }
+            ]
+          },
+          {
+            "name": "] && group[",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "scripts/check-render-output.mjs",
+                "line": 1245
+              }
+            ]
+          },
+          {
             "name": "] && values[",
             "kind": "module",
             "status": "import-hint",
@@ -5344,6 +5671,30 @@
               {
                 "file": "explainer/diagrams.mjs",
                 "line": 409
+              }
+            ]
+          },
+          {
+            "name": "] || attrs[",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "scripts/check-render-output.mjs",
+                "line": 531
+              }
+            ]
+          },
+          {
+            "name": "], to: edgeOwner[",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "scripts/check-render-output.mjs",
+                "line": 1251
               }
             ]
           },
@@ -5492,6 +5843,146 @@
             ]
           },
           {
+            "name": "},message:",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/shared/generated-validators.mjs",
+                "line": 14
+              }
+            ]
+          },
+          {
+            "name": "+",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/shared/generated-validators.mjs",
+                "line": 14
+              }
+            ]
+          },
+          {
+            "name": "${from}",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/lifecycle/render-lifecycle.mjs",
+                "line": 895
+              }
+            ]
+          },
+          {
+            "name": "${node}",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/workflow/workflow-compiler.mjs",
+                "line": 812
+              }
+            ]
+          },
+          {
+            "name": "${relation.from}",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/workflow/workflow-compiler.mjs",
+                "line": 825
+              },
+              {
+                "file": "renderers/workflow/workflow-compiler.mjs",
+                "line": 848
+              },
+              {
+                "file": "renderers/workflow/workflow-compiler.mjs",
+                "line": 851
+              }
+            ]
+          },
+          {
+            "name": "${relationship.to}",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "renderers/class/render-class.mjs",
+                "line": 724
+              }
+            ]
+          },
+          {
+            "name": "ajv",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "scripts/generate-validators.mjs",
+                "line": 6
+              },
+              {
+                "file": "scripts/generate-validators.mjs",
+                "line": 7
+              },
+              {
+                "file": "scripts/generate-validators.mjs",
+                "line": 30
+              }
+            ]
+          },
+          {
+            "name": "simple-icons",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "scripts/generate-brand-marks.mjs",
+                "line": 6
+              }
+            ]
+          },
+          {
+            "name": "ajv",
+            "kind": "package",
+            "status": "declared",
+            "version": "^8.17.1",
+            "scope": "devDependencies",
+            "ecosystem": "npm",
+            "evidence": [
+              {
+                "file": "package.json",
+                "line": 32
+              }
+            ]
+          },
+          {
+            "name": "simple-icons",
+            "kind": "package",
+            "status": "declared",
+            "version": "16.28.0",
+            "scope": "devDependencies",
+            "ecosystem": "npm",
+            "evidence": [
+              {
+                "file": "package.json",
+                "line": 33
+              }
+            ]
+          },
+          {
             "name": "go",
             "kind": "runtime",
             "status": "mention-hint",
@@ -5500,6 +5991,24 @@
               {
                 "file": "brand-marks/catalog.json",
                 "line": 115
+              },
+              {
+                "file": "renderers/shared/generated-brand-marks.mjs",
+                "line": 623
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "declared",
+            "version": ">=18",
+            "scope": "engines",
+            "ecosystem": "npm",
+            "evidence": [
+              {
+                "file": "package.json",
+                "line": 12
               }
             ]
           },
@@ -5586,7 +6095,23 @@
                 "line": 1
               },
               {
+                "file": "explainer/reader.js",
+                "line": 1
+              },
+              {
+                "file": "explainer/render.mjs",
+                "line": 1
+              },
+              {
                 "file": "explainer/revision.mjs",
+                "line": 1
+              },
+              {
+                "file": "explainer/sources.mjs",
+                "line": 1
+              },
+              {
+                "file": "explainer/validate.mjs",
                 "line": 1
               },
               {
@@ -5594,7 +6119,19 @@
                 "line": 1
               },
               {
+                "file": "explainer/vendor/pele/chunks/42UTT654.js",
+                "line": 1
+              },
+              {
                 "file": "explainer/vendor/pele/chunks/DKTLEL5E.js",
+                "line": 1
+              },
+              {
+                "file": "explainer/vendor/pele/chunks/EEIX5ZYH.js",
+                "line": 1
+              },
+              {
+                "file": "explainer/vendor/pele/chunks/EJ5KOXYD.js",
                 "line": 1
               },
               {
@@ -5602,7 +6139,35 @@
                 "line": 1
               },
               {
+                "file": "explainer/vendor/pele/chunks/IZOKQ2GT.js",
+                "line": 1
+              },
+              {
+                "file": "explainer/vendor/pele/chunks/L4LY553T.js",
+                "line": 1
+              },
+              {
+                "file": "explainer/vendor/pele/chunks/MSKIJHB2.js",
+                "line": 1
+              },
+              {
                 "file": "explainer/vendor/pele/chunks/RVARI57O.js",
+                "line": 1
+              },
+              {
+                "file": "explainer/vendor/pele/chunks/UKSIWDDN.js",
+                "line": 1
+              },
+              {
+                "file": "explainer/vendor/pele/chunks/UPTXNAXN.js",
+                "line": 1
+              },
+              {
+                "file": "explainer/vendor/pele/chunks/XTDUIGUI.js",
+                "line": 1
+              },
+              {
+                "file": "explainer/vendor/pele/chunks/YAYTP6L5.js",
                 "line": 1
               },
               {
@@ -5631,6 +6196,242 @@
               },
               {
                 "file": "explainer/vendor/pele/diagrams/xychart.js",
+                "line": 1
+              },
+              {
+                "file": "explainer/writing.mjs",
+                "line": 1
+              },
+              {
+                "file": "migrations/workflow-v2.mjs",
+                "line": 1
+              },
+              {
+                "file": "recipes/scenarios.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/architecture/grid.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/architecture/labels.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/architecture/render-architecture.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/architecture/routing.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/class/render-class.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/dataflow/dataflow-compiler.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/dataflow/joint-label-routing.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/dataflow/label-capacity.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/dataflow/render-dataflow.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/erd/grid.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/erd/render-erd.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/explainer/render-explainer.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/lifecycle/render-lifecycle.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/sequence/render-sequence.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/atomic-output.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/automatic-labels.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/brand-marks.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/cli.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/desktop-readability.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/diagnostics.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/engineering-profiles.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/generated-brand-marks.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/generated-validators.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/geometry.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/i18n.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/layout-report.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/legend.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/node-card-style.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/output-path.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/owned-temp-directory.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/path-semantics.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/portable-path.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/repository-evidence.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/repository-location.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/route-quality.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/sidecar-path.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/software-notices.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/spatial-grid.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/svg-path-analysis.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/text-fit.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/utils.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/validator.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/timeline/render-timeline.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/tree/render-tree.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/waterfall/render-waterfall.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/workflow/render-workflow.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/workflow/workflow-compiler.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/workflow/workflow-migration-geometry.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/workflow/workflow-placement-repair.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/check-render-output.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/check-update.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/delivery-update-child.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/generate-brand-marks.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/generate-validators.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/render-examples.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/update-contract.mjs",
                 "line": 1
               }
             ]
@@ -5750,16 +6551,320 @@
                 "line": 1
               },
               {
+                "file": "explainer/reader.js",
+                "line": 158
+              },
+              {
+                "file": "explainer/render.mjs",
+                "line": 1
+              },
+              {
                 "file": "explainer/revision.mjs",
                 "line": 1
+              },
+              {
+                "file": "explainer/sources.mjs",
+                "line": 1
+              },
+              {
+                "file": "explainer/validate.mjs",
+                "line": 82
               },
               {
                 "file": "explainer/vendor/pele/README.md",
                 "line": 3
               },
               {
-                "file": "references/requirements.en.md",
+                "file": "explainer/vendor/pele/chunks/EJ5KOXYD.js",
+                "line": 11
+              },
+              {
+                "file": "explainer/vendor/pele/chunks/UPTXNAXN.js",
+                "line": 2
+              },
+              {
+                "file": "explainer/vendor/pele/chunks/YAYTP6L5.js",
+                "line": 8
+              },
+              {
+                "file": "locales/ar.json",
+                "line": 8
+              },
+              {
+                "file": "locales/en.json",
+                "line": 8
+              },
+              {
+                "file": "locales/es.json",
+                "line": 9
+              },
+              {
+                "file": "locales/ko.json",
+                "line": 9
+              },
+              {
+                "file": "locales/zh-CN.json",
+                "line": 8
+              },
+              {
+                "file": "locales/zh-TW.json",
+                "line": 8
+              },
+              {
+                "file": "package.json",
+                "line": 12
+              },
+              {
+                "file": "recipes/scenarios.mjs",
+                "line": 284
+              },
+              {
+                "file": "references/architecture-layout-repair.md",
+                "line": 3
+              },
+              {
+                "file": "references/authoring-contract.md",
+                "line": 7
+              },
+              {
+                "file": "references/authoring-defaults.md",
+                "line": 9
+              },
+              {
+                "file": "references/brand-marks.md",
+                "line": 4
+              },
+              {
+                "file": "references/delivery-contract.md",
                 "line": 5
+              },
+              {
+                "file": "references/explainer-authoring.md",
+                "line": 82
+              },
+              {
+                "file": "references/repository-authoring.md",
+                "line": 65
+              },
+              {
+                "file": "references/update-awareness.md",
+                "line": 11
+              },
+              {
+                "file": "references/viewer-runtime.md",
+                "line": 9
+              },
+              {
+                "file": "renderers/architecture/render-architecture.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/architecture/routing.mjs",
+                "line": 567
+              },
+              {
+                "file": "renderers/class/README.md",
+                "line": 6
+              },
+              {
+                "file": "renderers/class/render-class.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/dataflow/README.md",
+                "line": 7
+              },
+              {
+                "file": "renderers/dataflow/dataflow-compiler.mjs",
+                "line": 77
+              },
+              {
+                "file": "renderers/dataflow/joint-label-routing.mjs",
+                "line": 36
+              },
+              {
+                "file": "renderers/dataflow/render-dataflow.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/erd/README.md",
+                "line": 6
+              },
+              {
+                "file": "renderers/erd/grid.mjs",
+                "line": 10
+              },
+              {
+                "file": "renderers/erd/render-erd.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/explainer/render-explainer.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/lifecycle/README.md",
+                "line": 7
+              },
+              {
+                "file": "renderers/lifecycle/render-lifecycle.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/sequence/README.md",
+                "line": 7
+              },
+              {
+                "file": "renderers/sequence/render-sequence.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/atomic-output.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/automatic-labels.mjs",
+                "line": 5
+              },
+              {
+                "file": "renderers/shared/brand-marks.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/cli.mjs",
+                "line": 2
+              },
+              {
+                "file": "renderers/shared/desktop-readability.mjs",
+                "line": 131
+              },
+              {
+                "file": "renderers/shared/generated-brand-marks.mjs",
+                "line": 1073
+              },
+              {
+                "file": "renderers/shared/generated-validators.mjs",
+                "line": 14
+              },
+              {
+                "file": "renderers/shared/geometry.mjs",
+                "line": 473
+              },
+              {
+                "file": "renderers/shared/i18n.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/node-card-style.mjs",
+                "line": 6
+              },
+              {
+                "file": "renderers/shared/output-path.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/owned-temp-directory.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/path-semantics.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/repository-evidence.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/route-quality.mjs",
+                "line": 304
+              },
+              {
+                "file": "renderers/shared/sidecar-path.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/software-notices.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/text-fit.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/shared/utils.mjs",
+                "line": 98
+              },
+              {
+                "file": "renderers/shared/validator.mjs",
+                "line": 8
+              },
+              {
+                "file": "renderers/timeline/README.md",
+                "line": 6
+              },
+              {
+                "file": "renderers/timeline/render-timeline.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/tree/README.md",
+                "line": 6
+              },
+              {
+                "file": "renderers/tree/render-tree.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/waterfall/README.md",
+                "line": 6
+              },
+              {
+                "file": "renderers/waterfall/render-waterfall.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/workflow/README.md",
+                "line": 7
+              },
+              {
+                "file": "renderers/workflow/render-workflow.mjs",
+                "line": 1
+              },
+              {
+                "file": "renderers/workflow/workflow-compiler.mjs",
+                "line": 5
+              },
+              {
+                "file": "schemas/README.md",
+                "line": 108
+              },
+              {
+                "file": "schemas/explainer.schema.json",
+                "line": 424
+              },
+              {
+                "file": "scripts/check-render-output.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/check-update.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/delivery-update-child.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/generate-brand-marks.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/generate-validators.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/render-examples.mjs",
+                "line": 4
               }
             ]
           },
@@ -5776,6 +6881,14 @@
               {
                 "file": "brand-marks/catalog.json",
                 "line": 112
+              },
+              {
+                "file": "explainer/sources.mjs",
+                "line": 29
+              },
+              {
+                "file": "renderers/shared/generated-brand-marks.mjs",
+                "line": 1353
               }
             ]
           },
@@ -5786,8 +6899,16 @@
             "installerId": null,
             "evidence": [
               {
+                "file": "THIRD_PARTY_NOTICES.md",
+                "line": 39
+              },
+              {
                 "file": "brand-marks/catalog.json",
                 "line": 116
+              },
+              {
+                "file": "renderers/shared/generated-brand-marks.mjs",
+                "line": 1533
               }
             ]
           },
@@ -5812,6 +6933,58 @@
               {
                 "file": "explainer/parse.mjs",
                 "line": 246
+              },
+              {
+                "file": "explainer/sources.mjs",
+                "line": 21
+              },
+              {
+                "file": "references/brand-marks.md",
+                "line": 11
+              },
+              {
+                "file": "references/delivery-contract.md",
+                "line": 123
+              },
+              {
+                "file": "references/explainer-authoring.md",
+                "line": 235
+              },
+              {
+                "file": "renderers/class/README.md",
+                "line": 5
+              },
+              {
+                "file": "renderers/dataflow/README.md",
+                "line": 6
+              },
+              {
+                "file": "renderers/erd/README.md",
+                "line": 5
+              },
+              {
+                "file": "renderers/lifecycle/README.md",
+                "line": 6
+              },
+              {
+                "file": "renderers/sequence/README.md",
+                "line": 6
+              },
+              {
+                "file": "renderers/timeline/README.md",
+                "line": 5
+              },
+              {
+                "file": "renderers/tree/README.md",
+                "line": 5
+              },
+              {
+                "file": "renderers/waterfall/README.md",
+                "line": 5
+              },
+              {
+                "file": "renderers/workflow/README.md",
+                "line": 6
               }
             ]
           },
@@ -5824,6 +6997,10 @@
               {
                 "file": "SKILL.md",
                 "line": 47
+              },
+              {
+                "file": "THIRD_PARTY_NOTICES.md",
+                "line": 58
               },
               {
                 "file": "bin/archify.mjs",
@@ -5870,8 +7047,80 @@
                 "line": 167
               },
               {
-                "file": "references/requirements.en.md",
-                "line": 5
+                "file": "explainer/reader.js",
+                "line": 283
+              },
+              {
+                "file": "explainer/render.mjs",
+                "line": 190
+              },
+              {
+                "file": "locales/README.md",
+                "line": 33
+              },
+              {
+                "file": "locales/en.json",
+                "line": 137
+              },
+              {
+                "file": "package.json",
+                "line": 27
+              },
+              {
+                "file": "recipes/scenarios.mjs",
+                "line": 299
+              },
+              {
+                "file": "references/authoring-contract.md",
+                "line": 317
+              },
+              {
+                "file": "references/authoring-defaults.md",
+                "line": 57
+              },
+              {
+                "file": "references/delivery-contract.md",
+                "line": 11
+              },
+              {
+                "file": "references/explainer-authoring.md",
+                "line": 14
+              },
+              {
+                "file": "references/viewer-runtime.md",
+                "line": 34
+              },
+              {
+                "file": "renderers/architecture/render-architecture.mjs",
+                "line": 387
+              },
+              {
+                "file": "renderers/dataflow/dataflow-compiler.mjs",
+                "line": 1550
+              },
+              {
+                "file": "renderers/sequence/render-sequence.mjs",
+                "line": 1064
+              },
+              {
+                "file": "renderers/shared/desktop-readability.mjs",
+                "line": 84
+              },
+              {
+                "file": "renderers/shared/i18n.mjs",
+                "line": 259
+              },
+              {
+                "file": "renderers/workflow/README.md",
+                "line": 22
+              },
+              {
+                "file": "renderers/workflow/workflow-compiler.mjs",
+                "line": 5877
+              },
+              {
+                "file": "scripts/check-render-output.mjs",
+                "line": 135
               }
             ]
           },
@@ -5888,6 +7137,10 @@
               {
                 "file": "examples/brand-aware-delivery.architecture.json",
                 "line": 14
+              },
+              {
+                "file": "renderers/shared/generated-brand-marks.mjs",
+                "line": 400
               }
             ]
           },
@@ -5904,6 +7157,14 @@
               {
                 "file": "explainer/diff.mjs",
                 "line": 61
+              },
+              {
+                "file": "references/explainer-authoring.md",
+                "line": 235
+              },
+              {
+                "file": "references/repository-authoring.md",
+                "line": 11
               }
             ]
           },
@@ -5920,6 +7181,10 @@
               {
                 "file": "bin/visual-check.mjs",
                 "line": 1613
+              },
+              {
+                "file": "references/delivery-contract.md",
+                "line": 480
               }
             ]
           }
@@ -5927,38 +7192,135 @@
         "diagnostics": [],
         "analysisStatus": "static-review-required",
         "coverage": {
-          "filesScanned": 87,
+          "filesScanned": 186,
           "detection": "candidates-found"
         },
         "missingPackageFiles": [
+          "examples/class-payment-processors-rendered.html",
+          "examples/class-payments-rendered.html",
+          "examples/dataflow-product-analytics.html",
+          "examples/erd-orders-rendered.html",
+          "examples/lifecycle-agent-run.html",
+          "examples/sequence-cache-miss-request.html",
+          "examples/subscription-billing-rendered.html",
+          "examples/timeline-archify-dev-activity-rendered.html",
+          "examples/timeline-payment-incident-rendered.html",
+          "examples/tree-archify-repository-rendered.html",
+          "examples/tree-payment-platform-rendered.html",
+          "examples/waterfall-checkout-request-rendered.html",
+          "examples/waterfall-example-rebuild-rendered.html",
+          "examples/web-app-rendered.html",
+          "examples/workflow-agent-tool-call-rendered.html"
+        ],
+        "packageCompleteness": "incomplete",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "LICENSE-MIT",
+          "NOTICE",
+          "SKILL.md",
+          "THIRD_PARTY_NOTICES.md",
+          "assets/JetBrainsMono-OFL.txt",
+          "assets/template.html",
+          "bin/archify.mjs",
+          "bin/delivery-update.mjs",
+          "bin/finalize.mjs",
+          "bin/open-artifact.mjs",
+          "bin/preview.mjs",
+          "bin/recover-output.mjs",
+          "bin/visual-check.mjs",
+          "brand-marks/README.md",
+          "brand-marks/catalog.json",
+          "delta/architecture-delta.mjs",
+          "examples/agent-run.lifecycle.json",
+          "examples/agent-tool-call.workflow.json",
+          "examples/archify-dev-activity.timeline.json",
+          "examples/archify-repository.tree.json",
+          "examples/async-job-roundtrip.sequence.json",
+          "examples/brand-aware-delivery.architecture.json",
+          "examples/cache-miss-request.sequence.json",
+          "examples/checkout-platform.base.architecture.json",
+          "examples/checkout-platform.head.architecture.json",
+          "examples/checkout-request.waterfall.json",
+          "examples/delivery.explainer.json",
+          "examples/deployment-release.lifecycle.json",
+          "examples/event-stream.dataflow.json",
+          "examples/example-rebuild.waterfall.json",
+          "examples/holiday-planning.workflow.json",
+          "examples/incident-response.workflow.json",
+          "examples/locales/de.json",
+          "examples/locales/fr.json",
+          "examples/locales/fr.partial.json",
+          "examples/locales/it.json",
+          "examples/locales/ja.json",
+          "examples/locales/pt.json",
+          "examples/locales/ru.json",
+          "examples/orders.erd.json",
+          "examples/payment-incident.timeline.json",
+          "examples/payment-platform.tree.json",
+          "examples/payment-processors.class.json",
+          "examples/payments.class.json",
+          "examples/product-analytics.dataflow.json",
+          "examples/production-deployment.architecture.json",
+          "examples/release-delivery.workflow.json",
+          "examples/subscription-billing.erd.json",
+          "examples/web-app.architecture.json",
+          "explainer/browser-check.mjs",
+          "explainer/charts.mjs",
+          "explainer/check.mjs",
+          "explainer/diagrams.mjs",
+          "explainer/diff.mjs",
+          "explainer/inline.mjs",
+          "explainer/layout.mjs",
+          "explainer/page-bundle.mjs",
+          "explainer/parse.mjs",
+          "explainer/patch.mjs",
+          "explainer/prepare.mjs",
           "explainer/reader.css",
           "explainer/reader.js",
           "explainer/render.mjs",
+          "explainer/revision.mjs",
           "explainer/sources.mjs",
           "explainer/validate.mjs",
+          "explainer/vendor/pele/LICENSE",
+          "explainer/vendor/pele/README.md",
+          "explainer/vendor/pele/chunks/3DKXF73K.js",
           "explainer/vendor/pele/chunks/42UTT654.js",
+          "explainer/vendor/pele/chunks/DKTLEL5E.js",
           "explainer/vendor/pele/chunks/EEIX5ZYH.js",
           "explainer/vendor/pele/chunks/EJ5KOXYD.js",
+          "explainer/vendor/pele/chunks/GUJTEFZK.js",
           "explainer/vendor/pele/chunks/IZOKQ2GT.js",
           "explainer/vendor/pele/chunks/L4LY553T.js",
           "explainer/vendor/pele/chunks/MSKIJHB2.js",
+          "explainer/vendor/pele/chunks/RVARI57O.js",
           "explainer/vendor/pele/chunks/UKSIWDDN.js",
           "explainer/vendor/pele/chunks/UPTXNAXN.js",
           "explainer/vendor/pele/chunks/XTDUIGUI.js",
           "explainer/vendor/pele/chunks/YAYTP6L5.js",
-          "explainer/vendor/pele/LICENSE",
+          "explainer/vendor/pele/core.js",
+          "explainer/vendor/pele/diagrams/pie.js",
+          "explainer/vendor/pele/diagrams/quadrantChart.js",
+          "explainer/vendor/pele/diagrams/radar.js",
+          "explainer/vendor/pele/diagrams/sankey.js",
+          "explainer/vendor/pele/diagrams/venn.js",
+          "explainer/vendor/pele/diagrams/xychart.js",
           "explainer/writing.mjs",
-          "LICENSE",
-          "LICENSE-MIT",
+          "locales/README.md",
           "locales/ar.json",
           "locales/en.json",
           "locales/es.json",
           "locales/ko.json",
-          "locales/README.md",
+          "locales/manifest.json",
           "locales/zh-CN.json",
           "locales/zh-TW.json",
+          "manifest.json",
           "migrations/workflow-v2.mjs",
-          "NOTICE",
           "package-lock.json",
           "package.json",
           "recipes/scenarios.mjs",
@@ -5968,6 +7330,7 @@
           "references/brand-marks.md",
           "references/delivery-contract.md",
           "references/explainer-authoring.md",
+          "references/guide.vi.md",
           "references/repository-authoring.md",
           "references/update-awareness.md",
           "references/viewer-runtime.md",
@@ -5977,13 +7340,13 @@
           "renderers/architecture/routing.mjs",
           "renderers/class/README.md",
           "renderers/class/render-class.mjs",
+          "renderers/dataflow/README.md",
           "renderers/dataflow/dataflow-compiler.mjs",
           "renderers/dataflow/joint-label-routing.mjs",
           "renderers/dataflow/label-capacity.mjs",
-          "renderers/dataflow/README.md",
           "renderers/dataflow/render-dataflow.mjs",
-          "renderers/erd/grid.mjs",
           "renderers/erd/README.md",
+          "renderers/erd/grid.mjs",
           "renderers/erd/render-erd.mjs",
           "renderers/explainer/render-explainer.mjs",
           "renderers/lifecycle/README.md",
@@ -6029,6 +7392,7 @@
           "renderers/workflow/workflow-compiler.mjs",
           "renderers/workflow/workflow-migration-geometry.mjs",
           "renderers/workflow/workflow-placement-repair.mjs",
+          "schemas/README.md",
           "schemas/architecture.schema.json",
           "schemas/class.schema.json",
           "schemas/common.schema.json",
@@ -6036,7 +7400,6 @@
           "schemas/erd.schema.json",
           "schemas/explainer.schema.json",
           "schemas/lifecycle.schema.json",
-          "schemas/README.md",
           "schemas/sequence.schema.json",
           "schemas/timeline.schema.json",
           "schemas/tree.schema.json",
@@ -6049,115 +7412,16 @@
           "scripts/generate-validators.mjs",
           "scripts/render-examples.mjs",
           "scripts/update-contract.mjs",
-          "skill-release.json",
-          "THIRD_PARTY_NOTICES.md"
-        ],
-        "packageCompleteness": "incomplete",
-        "environmentStatus": "not-tested",
-        "autoInstall": false
-      },
-      "permissions": {
-        "runs_code": true,
-        "mcp": false,
-        "files": [
-          "LICENSE",
-          "NOTICE",
-          "SKILL.md",
-          "assets/JetBrainsMono-OFL.txt",
-          "assets/template.html",
-          "bin/archify.mjs",
-          "bin/delivery-update.mjs",
-          "bin/finalize.mjs",
-          "bin/open-artifact.mjs",
-          "bin/preview.mjs",
-          "bin/recover-output.mjs",
-          "bin/visual-check.mjs",
-          "brand-marks/README.md",
-          "brand-marks/catalog.json",
-          "delta/architecture-delta.mjs",
-          "examples/agent-run.lifecycle.json",
-          "examples/agent-tool-call.workflow.json",
-          "examples/archify-dev-activity.timeline.json",
-          "examples/archify-repository.tree.json",
-          "examples/async-job-roundtrip.sequence.json",
-          "examples/brand-aware-delivery.architecture.json",
-          "examples/cache-miss-request.sequence.json",
-          "examples/checkout-platform.base.architecture.json",
-          "examples/checkout-platform.head.architecture.json",
-          "examples/checkout-request.waterfall.json",
-          "examples/class-payment-processors-rendered.html",
-          "examples/class-payments-rendered.html",
-          "examples/dataflow-product-analytics.html",
-          "examples/delivery.explainer.json",
-          "examples/deployment-release.lifecycle.json",
-          "examples/erd-orders-rendered.html",
-          "examples/event-stream.dataflow.json",
-          "examples/example-rebuild.waterfall.json",
-          "examples/holiday-planning.workflow.json",
-          "examples/incident-response.workflow.json",
-          "examples/lifecycle-agent-run.html",
-          "examples/locales/de.json",
-          "examples/locales/fr.json",
-          "examples/locales/fr.partial.json",
-          "examples/locales/it.json",
-          "examples/locales/ja.json",
-          "examples/locales/pt.json",
-          "examples/locales/ru.json",
-          "examples/orders.erd.json",
-          "examples/payment-incident.timeline.json",
-          "examples/payment-platform.tree.json",
-          "examples/payment-processors.class.json",
-          "examples/payments.class.json",
-          "examples/product-analytics.dataflow.json",
-          "examples/production-deployment.architecture.json",
-          "examples/release-delivery.workflow.json",
-          "examples/sequence-cache-miss-request.html",
-          "examples/subscription-billing-rendered.html",
-          "examples/subscription-billing.erd.json",
-          "examples/timeline-archify-dev-activity-rendered.html",
-          "examples/timeline-payment-incident-rendered.html",
-          "examples/tree-archify-repository-rendered.html",
-          "examples/tree-payment-platform-rendered.html",
-          "examples/waterfall-checkout-request-rendered.html",
-          "examples/waterfall-example-rebuild-rendered.html",
-          "examples/web-app-rendered.html",
-          "examples/web-app.architecture.json",
-          "examples/workflow-agent-tool-call-rendered.html",
-          "explainer/browser-check.mjs",
-          "explainer/charts.mjs",
-          "explainer/check.mjs",
-          "explainer/diagrams.mjs",
-          "explainer/diff.mjs",
-          "explainer/inline.mjs",
-          "explainer/layout.mjs",
-          "explainer/page-bundle.mjs",
-          "explainer/parse.mjs",
-          "explainer/patch.mjs",
-          "explainer/prepare.mjs",
-          "explainer/revision.mjs",
-          "explainer/vendor/pele/README.md",
-          "explainer/vendor/pele/chunks/3DKXF73K.js",
-          "explainer/vendor/pele/chunks/DKTLEL5E.js",
-          "explainer/vendor/pele/chunks/GUJTEFZK.js",
-          "explainer/vendor/pele/chunks/RVARI57O.js",
-          "explainer/vendor/pele/core.js",
-          "explainer/vendor/pele/diagrams/pie.js",
-          "explainer/vendor/pele/diagrams/quadrantChart.js",
-          "explainer/vendor/pele/diagrams/radar.js",
-          "explainer/vendor/pele/diagrams/sankey.js",
-          "explainer/vendor/pele/diagrams/venn.js",
-          "explainer/vendor/pele/diagrams/xychart.js",
-          "locales/manifest.json",
-          "manifest.json",
-          "references/guide.vi.md",
-          "references/requirements.en.md"
+          "skill-release.json"
         ]
       },
-      "checksum": "2db8ab2abb3ef17ed46647f67926988b53db8f7f917266c083a3d20cbc3f8bbc",
+      "checksum": "e09cd05d99fd7f87b1c3f0933a9af3097726c7675e54968a3598ceb24b02af2d",
       "file_hashes": {
         "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "LICENSE-MIT": "b799ab081703e7821ae5096d2c1abdf14bbdc75e8ea1c4045998c36ed6db9706",
         "NOTICE": "665eb53e6fcf09cee183c9f23c8052645dc95570d9ccbbf53dc0f5213a1b5edd",
         "SKILL.md": "1382cfb7108b05e500b82af93c04fd7b694430d3908039bd92d634f01c1e7181",
+        "THIRD_PARTY_NOTICES.md": "b5e129197f391568f7abf287c74b24f4835f10e5388f600407c8788feaeb9015",
         "assets/JetBrainsMono-OFL.txt": "c1ab7c666206842a02b35b30770dac0d7a10156ed401c9defc3f02a754d89e90",
         "assets/template.html": "9689eeec1a5918aea571eb84d66ea28c7b5bcdcbcf2ae71666bad19d44cc89bc",
         "bin/archify.mjs": "3cebcee3fa339e3b98deacae8cb9a5570525e003d8823368d304d904ba9ceecd",
@@ -6180,17 +7444,12 @@
         "examples/checkout-platform.base.architecture.json": "81d55a2e86fc39f6473b32dfba986a12d3b7a705a95821844865b1dc831c9fe7",
         "examples/checkout-platform.head.architecture.json": "eb4ae056035dd3316414a5d7f6599525107b5d1af7bedbd905460ade77daf5c6",
         "examples/checkout-request.waterfall.json": "55a5f74699a0f0e44018a4a000556d43c90430b95f39accac6141af8318b5133",
-        "examples/class-payment-processors-rendered.html": "56d2f75d3e147acd4de44d23d1715d2d3a6c5f057c08b50dd3e1d35b7dd8a66e",
-        "examples/class-payments-rendered.html": "4749922e51166b7f855fd4f2070459a27641a1b429d52d5bcbdb9fa8e641d152",
-        "examples/dataflow-product-analytics.html": "f41d292adca854bf46e0114d1cb4e73566a667533c659467538a7fa4788d9897",
         "examples/delivery.explainer.json": "188cf8777816ac034dd5a92b04bf427b0f1a8dbfa0956ae072b2d4091427806c",
         "examples/deployment-release.lifecycle.json": "e3dc105d03c1c9881160006cdace23cb5d8533803e337caf0ec287c64e775275",
-        "examples/erd-orders-rendered.html": "e97a501766ff355602f9e123ff2a11784d09ee473b9db296a79267a3508533d2",
         "examples/event-stream.dataflow.json": "3bdd77674282009c7c68d588cf8a3c495bc98a3be1b9c45327fd1801a6f83a23",
         "examples/example-rebuild.waterfall.json": "77d610013a5aab031df739c207b66ebc26e1740371b51da06956ecf06b5e9929",
         "examples/holiday-planning.workflow.json": "b98354f921ca45842fed235db09fd4f19d94adc16865876f438c0d699d05e1ea",
         "examples/incident-response.workflow.json": "630be98449925d2716ecb8439f404b2bff5fe65ba905b0ad0baea6d96890c526",
-        "examples/lifecycle-agent-run.html": "ed4d735dc926b3c27324d0c174fe0607377722674d150b34a2fedce47459e111",
         "examples/locales/de.json": "77975293855578923fbbee29f478d9d84002c04d6a7b3e22cd9db8cf3fb414ba",
         "examples/locales/fr.json": "ea1af868932eb22761094a4950b769fd0634430fe706fc4ea4335eca7f0529bb",
         "examples/locales/fr.partial.json": "8958a8354ffccce2ce63ac21b3f8a0f131086f532832445a3fe7feff02200397",
@@ -6206,18 +7465,8 @@
         "examples/product-analytics.dataflow.json": "8a635db9e51a5b1a8d2955b9d66f5b9a450e0a298432ce8f2e2f0be11f372e05",
         "examples/production-deployment.architecture.json": "610a5614667e8f108bdcf1769c9d7af5c3ce0fb62be3ea50550b10eb752e4bda",
         "examples/release-delivery.workflow.json": "dbd5c174af66296caec372e7214cf4df7158b50a563508e16826b95ab8d1cd6c",
-        "examples/sequence-cache-miss-request.html": "49e750c91bb8a21a63db5f80f147bf4867cf938f75cbdd5a5da1e11b36a3d3ba",
-        "examples/subscription-billing-rendered.html": "0cab0e29a347b6427cebb20c6c1d236e59cd7689ce7790e029101f7927c5a944",
         "examples/subscription-billing.erd.json": "89945699d92b9cc0ab91263cf38a07c350867d260eacd5d8ba1dc835fe2d22ed",
-        "examples/timeline-archify-dev-activity-rendered.html": "f66dd976211353de010a43aec72205f6aad7dc53f1433a22e41c6eed391230b1",
-        "examples/timeline-payment-incident-rendered.html": "46494b119b8637449a402ec05990b2b63a0ffc3b883a85a3d622656ce909260e",
-        "examples/tree-archify-repository-rendered.html": "e1a68b7c1ae795994f29c8c9a3efcb91f616e637d0c8d5b95c179c2597345683",
-        "examples/tree-payment-platform-rendered.html": "b79f07651f7d26eb8651e4c321d8396963d125ed66d2ec9bd86365284ddb472e",
-        "examples/waterfall-checkout-request-rendered.html": "74cb226d2a44be1482a824d08e6ca21d3b0353065118623c692ea651cd9e9759",
-        "examples/waterfall-example-rebuild-rendered.html": "6a7840b16ed9e8175f2f6eaa2ffbd9518e06a96b5ca0a5dafaaad874ca80ec70",
-        "examples/web-app-rendered.html": "ffabd084c754ee97ed9e9355ba19fab449533432537d6b8cdb5c6d276293741a",
         "examples/web-app.architecture.json": "95e051b27a9e4a3307e194c0f666fca4af51470be7e2228d400ff48aea5b353b",
-        "examples/workflow-agent-tool-call-rendered.html": "6ee1999c899c2b7bed3b69b14e23dfbf9c7ff096441870361c690b469ad43e29",
         "explainer/browser-check.mjs": "cbbebfca2cb58cde0791f349e4f13490c0d085ce2f8653279139cf2aed334677",
         "explainer/charts.mjs": "bb49c5e8e5d6ba70a511d292dbac6a47953a010b67a8563e5f68222c7b220390",
         "explainer/check.mjs": "151211edd6f1b842ee63b1aef8682cb68e6237ce3b9e7a81e09667420f2b9b3b",
@@ -6229,12 +7478,28 @@
         "explainer/parse.mjs": "dd0d05672e92453b1b1cea31372792cbe03aecdd80f21e2f3aa0eda49d3be853",
         "explainer/patch.mjs": "b2721021de474431537705d696325ea01eb946e9095e8476fad1802d2fb5be4d",
         "explainer/prepare.mjs": "d8ff050738d7c858d62641b069455482814de0c4bdf7c0872d0a2a663b1b0643",
+        "explainer/reader.css": "20ae425a84157c2d478241250975e74fca8938b47b85c5414149710ff4a3538f",
+        "explainer/reader.js": "202d3ad200accd89a1484fe64610d9bc8bb4544c14c3f51522ba74f965b332c6",
+        "explainer/render.mjs": "18ac4f6dbc0c476c5be24f41719bc6f3d2027fa91a50e2902dd818317088c57d",
         "explainer/revision.mjs": "29032cab30c03b2e4c48730f40175e0e59aa4794893c02e5ae38668776c18288",
+        "explainer/sources.mjs": "c6aae2ef90b6e49d16c1ccd5cfc5351a7716b8f9150e1c261dbd6ca8b8ca9ab5",
+        "explainer/validate.mjs": "4e14063082b4bced482e0d2f771de5b29ef805677fcc354dfd283b9e16bd1b0a",
+        "explainer/vendor/pele/LICENSE": "311bccc30de6f7b9cbfb64232bb0c911ccb2191abe316550813ae25b2c7925b9",
         "explainer/vendor/pele/README.md": "47cb1894b1d248c49b7d79590a97fba294b090a7f2bac178a85baa79f2dae0d6",
         "explainer/vendor/pele/chunks/3DKXF73K.js": "5901afffb8349d0cb095e93494e8d3f36f09497b28a9255e066c52b6ce0a6c31",
+        "explainer/vendor/pele/chunks/42UTT654.js": "365a5dcd61413ed715d375c053466ef89652aaa5065214720045d22d3198d7ed",
         "explainer/vendor/pele/chunks/DKTLEL5E.js": "91864eed78a6a3cc9791d20fb9b61fd8f458c12101662883cd23e755fd2a4cb6",
+        "explainer/vendor/pele/chunks/EEIX5ZYH.js": "1e097466abf989151f92368e6ff7cb463e2ae191724e307ca2d004a58126b651",
+        "explainer/vendor/pele/chunks/EJ5KOXYD.js": "cb84c22da57a11eb988d4e671b12ff17018923619883ddf49cd0b0ab270c4bbe",
         "explainer/vendor/pele/chunks/GUJTEFZK.js": "e8584ce5872c50c6370efc1fbce911848506d84ff6fa88e4f079f412b5e2f068",
+        "explainer/vendor/pele/chunks/IZOKQ2GT.js": "80d3ebe446ae5447bf88c7f01b762478f51ce8cdd6e270b90f4b58534fc363f8",
+        "explainer/vendor/pele/chunks/L4LY553T.js": "d574102b3e5499e752513c2ba75f152cd447b9f81d877ddffd37faed0e7dae16",
+        "explainer/vendor/pele/chunks/MSKIJHB2.js": "94317f9dabbe5793c8ed57a298b5a68474fcca6c62ecd07fabd9a3c6f15d3e23",
         "explainer/vendor/pele/chunks/RVARI57O.js": "3dc7661b060578920eab83aafd1fa261886e7e331d44f8f5d2f34bd0804027a3",
+        "explainer/vendor/pele/chunks/UKSIWDDN.js": "c0f5a984eaefaefa550d525670624e9d426bb7280ba33fcb5f9fa8adca804fc3",
+        "explainer/vendor/pele/chunks/UPTXNAXN.js": "f2fc18109dfb5ca72ea43c7951c4ce36d20a890b2fefb2d531fa751aa9911b87",
+        "explainer/vendor/pele/chunks/XTDUIGUI.js": "1ed02bff674691de6cb6ce6b3863fb021b1508f33b992515faeac876d0716c39",
+        "explainer/vendor/pele/chunks/YAYTP6L5.js": "9246835c2b1544ab95dd1b89b7ce4cfaa2a89aa26873f3d52f7e4a17ef957da6",
         "explainer/vendor/pele/core.js": "ac428c1ca244f030f363e0d0f12e623df92c1439d2a211310d1ff73f0ed224a4",
         "explainer/vendor/pele/diagrams/pie.js": "a2bc92d2f8842b476cdb8a039455493db2c71d6a4e3a1b3dc97cfc1f409056d1",
         "explainer/vendor/pele/diagrams/quadrantChart.js": "9ac8fc714b3973854efdd960fb6831c973e72624bb9b0bc091ada8958794ebfb",
@@ -6242,13 +7507,112 @@
         "explainer/vendor/pele/diagrams/sankey.js": "a789e591ba81fd434418a64561005caf50760f11cbaa9d4dd589e777bbfe8e36",
         "explainer/vendor/pele/diagrams/venn.js": "e4bc9943916a8ce8b07d0848eda99d38f7e8334708998a5d951acf27a5f4a059",
         "explainer/vendor/pele/diagrams/xychart.js": "817de14381d9ba413dc70947824ff2538ba532c232592035a5b836094434e4bb",
+        "explainer/writing.mjs": "1030bc5b09f932e805f87390d8b51a1a23bc8dab2cc02068873621e26da8781f",
+        "locales/README.md": "f1f59d12d490927bfdb804b1a71e76ea057f2ef8dc1d98f9aa053343e0f80056",
+        "locales/ar.json": "4a8d5c821a16fa94c97b68784481841c323e288d841acd84ac8415c063483a9f",
+        "locales/en.json": "1e8b43d8ba6d8ae75c2b393b2edb43cac5e142f33cbc2d1a2351e0e8baf9e1aa",
+        "locales/es.json": "f2b971994cb9f7091758e605931b4b4959103ed0090916fe281bfb2f2e1e5cc7",
+        "locales/ko.json": "b7f2be52c61e4ced665ea62bb0670b4c2615a6c706127246a44bbcffdf65f8be",
         "locales/manifest.json": "9a377676b5d16f97a6a1f9326aadbb447321e9ceb5744718181796ce3dcce0d8",
-        "manifest.json": "defea8144d1f624a47bd59971976f34f760ad106531da134ec916762d00e3973",
-        "references/guide.vi.md": "dd02965cc7505e198096ae84616d06c19ec01520102bc26dff864ed092e0728c",
-        "references/requirements.en.md": "c99aff1c98c26992543831dc0e32dadfd5226dec07934b6018df09ef05ca5a38"
+        "locales/zh-CN.json": "83d870452e9ff3459a3cae88be6900d9a98b268e6cfba94b608a7c10f484e485",
+        "locales/zh-TW.json": "0db367aec82cf92b08d4335d5ed021480801f7ae79b1e2c1a0c79b27d4eafb2e",
+        "manifest.json": "d947373637222bdb99b66db7c2a67156e4b75c89009f699c464ef7db63a29143",
+        "migrations/workflow-v2.mjs": "0eec02057b8490afca9b093de5ea6e636c7fad2361cd28a04cf2f3e4b6197434",
+        "package-lock.json": "ab7a1438a8edbd26ceda9cf9648e3ad50542bffd7cc87f9ec83793cde1f26287",
+        "package.json": "ea99289562037cae2deeced0b45e1374ce4c4b4f23a53a607a6aada62c803cd0",
+        "recipes/scenarios.mjs": "1e93ba15d0782be535251bfb406cf8cc056291d84d77d33ca9dca01df743528f",
+        "references/architecture-layout-repair.md": "6c90caa232c004fa43b8770c745b83672919deaf8909f2592a3ad5fcd4031953",
+        "references/authoring-contract.md": "c7c9918ee28e213defd4cb504f0440ae366a8db4665938d2a0db0b62da565901",
+        "references/authoring-defaults.md": "11a2c60b31cb8a4bc19e83ff2e8351c1b5af93cfa091512e6d053a13288eaf6c",
+        "references/brand-marks.md": "d6e1a6ceafd07e48f27caf01655ea642365a5416ed0543b4022ca62750b58f0f",
+        "references/delivery-contract.md": "0e283a418871a19c7adcc493c461ae6180e9b233f14ad95a19a9c15e109d2415",
+        "references/explainer-authoring.md": "722c126f05192da499f75468e9c1b3001daa4a844894ebf45a854b6687a4af18",
+        "references/guide.vi.md": "9f523730f55d15190eb4be97d6f4dc28001299cc61c94a24ae781ef8961cbaca",
+        "references/repository-authoring.md": "c1648fc0c1b85a3a9bfbf3a8919dfa741ff0b5a55ea310d1fcacbf6ee837e139",
+        "references/update-awareness.md": "16b437a47790fda48f0e74f6aa053715fb06b6e8cd1ba994d1c01ffefa12a76b",
+        "references/viewer-runtime.md": "7d35ef52a8f47e77e8ec827cea7c71219bf1aafa53b5ef72ad4f1e1437f882a4",
+        "renderers/architecture/grid.mjs": "f6de99c32436feed3378b0ddef516bb4732ff27a89c543b50635d4d14a15a55a",
+        "renderers/architecture/labels.mjs": "3a0066a987d8ad20121d0f7261d8bcfd3659443a335ea5e47938e7779ae12d31",
+        "renderers/architecture/render-architecture.mjs": "50bf6f0748446ba99c4236e29e2e39755d5a2b8894fb598f104f7b3107063ca3",
+        "renderers/architecture/routing.mjs": "908ddaf85caaa2d5d4a17c0544489ad9500614914c64a1d2ee2b96c4cc9ad4b3",
+        "renderers/class/README.md": "33074161e184a98dbb2b65d0ee308779b216a3c97dda4dfaa2bd6e2fb2e9f526",
+        "renderers/class/render-class.mjs": "e4943c1e91062aba7c72715e4887165f03908de03a1c99dc71f296bb0d1214cf",
+        "renderers/dataflow/README.md": "3e9c8368e5aab1e686817745628d6da6e584b5009973ae1ee8e4fbea1f324ba5",
+        "renderers/dataflow/dataflow-compiler.mjs": "e27a9b69876927b7285ce14569d22b92e32e8173fd953184ac13a8a02408e257",
+        "renderers/dataflow/joint-label-routing.mjs": "8d1fd73d0d6055f6c551dcbc7ea3b01e4b801216c3101b2246e4172a564beea8",
+        "renderers/dataflow/label-capacity.mjs": "187af128f09630e512931b22bb301115d2a4d72c925cf02d3fc4736fb1846cb9",
+        "renderers/dataflow/render-dataflow.mjs": "befc8bdacd86c07dd0b65a4b9635632a1246dd8dae7cb98dcf6d31dde361da2c",
+        "renderers/erd/README.md": "2dce4b5da474d2b1f4190d34f5f3b625e2a479460da8ee89b8dbe0481e9245f4",
+        "renderers/erd/grid.mjs": "1aa4644d8ef13fdebe5adf48377c0755222a0288f6cc487faf052d7957a78a32",
+        "renderers/erd/render-erd.mjs": "ed180a39c00bec377bde0c48c8af798bb93e97d0cf006dd321a9ba14d5c50d7e",
+        "renderers/explainer/render-explainer.mjs": "a646f6e5450bfcde6bd0aac23487d0f9d7feb947b307079f9a6f2df27087fe93",
+        "renderers/lifecycle/README.md": "42aa4d37721661d1f59babb7e6467d910c7569d8573add2679c04942f5ebd72a",
+        "renderers/lifecycle/render-lifecycle.mjs": "b700af01fa3848d7dfdf492b9efaccc7b384e6ad509a75bf9ac9af2038e4efc6",
+        "renderers/sequence/README.md": "d93cdf05140ae60f8a5df495da5cd5c9dc492f2338760c53626f3943454d00b3",
+        "renderers/sequence/render-sequence.mjs": "249689c4de5636bf7d746a04b3369f5576b91f76ea533502b313f943da4a8a95",
+        "renderers/shared/atomic-output.mjs": "f804d66d1801ac2dadc9d0a4c334645cfbb7a8cd1a7de112ddfb952c056a580b",
+        "renderers/shared/automatic-labels.mjs": "3f3b63cd9cfd242968a739ca703291d7788567ec5699b5e7d6a11a4079e15917",
+        "renderers/shared/brand-marks.mjs": "87436fa956c98dc9bbabf826d5f254587c1b3e7a829883f4098e04c62f4b5345",
+        "renderers/shared/cli.mjs": "039c3fbb0d46436d387629ce16b737a7c3247dfb79a9e77c1487ca49c0afbbe0",
+        "renderers/shared/desktop-readability.mjs": "55ee7aba702d7883a08b6e54b39b00d5a17918a0c6bcf0c0fea19034f4de8990",
+        "renderers/shared/diagnostics.mjs": "4635119e65f77f28f0a81c038642c7d7de318ba9400073f37decd59df258dcd6",
+        "renderers/shared/engineering-profiles.mjs": "7e99f9d5423f66cc9ab6224da56dc2d5aa6c6faec29178034794e9db6b5b2889",
+        "renderers/shared/generated-brand-marks.mjs": "0f157d229c12df6f53763a3b88684baa5803a52484c49c4d34ec40b8743beea2",
+        "renderers/shared/generated-validators.mjs": "f9e6d4f4ef5c5ab98013563c7ea1d27d58c67111832bd4167989dc0c88405181",
+        "renderers/shared/geometry.mjs": "818f6c000595f11a915cce2f73b5deb1a82ececf6c578a22bee70099988ea7a5",
+        "renderers/shared/i18n.mjs": "1e6601157babd70c455dcddc93868f4665e56e7e723708d95dcc791dd1b636b9",
+        "renderers/shared/layout-report.mjs": "979da7226c5080cb16fb352236d5705cc79c06c15d0a3550b95963af02c63b6e",
+        "renderers/shared/legend.mjs": "c33fcb54cc5aa60d788154036daa165f85d2e06d28aa9f1d4a73705fa278de70",
+        "renderers/shared/node-card-style.mjs": "80a0d473b936ee198e73cb89addd43a6344fb81da94f9fc88c53ae759cbf748d",
+        "renderers/shared/output-path.mjs": "7422139101abd93493918898a97bed06f2212bfd411d3514cd229b6d57a3797e",
+        "renderers/shared/owned-temp-directory.mjs": "fb94515f8cd4b6b28799a7367745235822e2169534b8200791600ce7c3953a0e",
+        "renderers/shared/path-semantics.mjs": "4ef002af9061c06634a07de6d199fd7d13e6c50561c792fd018118bf3e065f52",
+        "renderers/shared/portable-path.mjs": "26130cbcdae9b9f082486aeb5feec9c5fe57905d2ed8e30c8081b9710e2e8ac3",
+        "renderers/shared/repository-evidence.mjs": "d1e14f82ba07eb4df9fb0986b4d0c02110d1eaa05a4454f33e92bd1e5dfdc8d3",
+        "renderers/shared/repository-location.mjs": "344044d8240a093919894bd63278652bd01b3717c5b49fb174a6f77bea28b839",
+        "renderers/shared/route-quality.mjs": "c9cb9aae3a1623667f0490ba755bbc0ba57e5957e7ea56379d872eb1f2bb2090",
+        "renderers/shared/sidecar-path.mjs": "c23cac8bcc265a74e2920c58d0968d1ffa06c1328bdd9cfd07755d4df2f22974",
+        "renderers/shared/software-notices.mjs": "8bfc9ee3dc35eb0aa9860f71e7038f15647ed24d6ce7386e0e24870766e10bfe",
+        "renderers/shared/spatial-grid.mjs": "e728bf6a729972f95ae09e368ea370490d10ff94d49debe2fab2e9bac923ee1a",
+        "renderers/shared/svg-path-analysis.mjs": "4c498ef5ba090a2d658c2ce3d80145f4cc63da9462f547b621206250096957c5",
+        "renderers/shared/text-fit.mjs": "ebd499072ef4fe31c9aabf45a01c204a9c2c142d45f087c3240673f90f477038",
+        "renderers/shared/utils.mjs": "d0e8692b8acdc6993578c5d4aeb67065effdf5bf4cf2cd127bf561c677af38f5",
+        "renderers/shared/validator.mjs": "f5cf5b9aa3623a456e9a07f0c5f08fe09a0a67d3ba356e32937c3287c75c3bc9",
+        "renderers/timeline/README.md": "377cb185f8ddfca2a0349d122e736a6fc832d5c8e0555039f0e0bcc4f5038c86",
+        "renderers/timeline/render-timeline.mjs": "125fc65b2cd2ac725a3ad655f4dcb8f14e158e21d04af72924839830181e294c",
+        "renderers/tree/README.md": "c1afbcb94e026910987199776d76896b58b7947db2f94d90d1da608e44ca9a35",
+        "renderers/tree/render-tree.mjs": "4e2ba7d4a3f567760c3801e7439bd18fa28acfe51e581479bd56ad549e240b68",
+        "renderers/waterfall/README.md": "13afed9d91d02bdabea0b920c23cd6ee851a42e53d30e80042e2aee4f845ecd0",
+        "renderers/waterfall/render-waterfall.mjs": "df95d32ef3b790c9b830f5e7a5741d71ae14b9f602d65db84bc60235a74d3290",
+        "renderers/workflow/README.md": "d6f13218145cf373fafa6005eb718c1564a424b486253048b11d242c33c445aa",
+        "renderers/workflow/render-workflow.mjs": "304df0df006c44ab01ad534f34cb48cbe163f7ed2e7e2e8490dfee88827d3aba",
+        "renderers/workflow/workflow-compiler.mjs": "a84fa7570341166e9190892b4ab9bd5fd1ac63290cc9ec5a48dcaaf8a4183a3f",
+        "renderers/workflow/workflow-migration-geometry.mjs": "47729f32eae163c05c249cc0a663949fae745a9c74fe9548c83eb361b31e285a",
+        "renderers/workflow/workflow-placement-repair.mjs": "3ee6e83c3a5279e1af2b06db39fd39c3348264b2daa159a94cda3e1d8de5ed7c",
+        "schemas/README.md": "dcb6e86f3d1591004c669764ec62558bd01384c2e9155bb82d8a3be1c3842e05",
+        "schemas/architecture.schema.json": "aef992b585a18a4016b8207254fe43a6227b0d45322a1ba95e0f69a80fc8f8c1",
+        "schemas/class.schema.json": "0ecfb9948563166c4f23df784d618ddd93f003ee61402a9349c5f63b0284ff2a",
+        "schemas/common.schema.json": "3bb6bde1122ebc1d47f73cf12400015baa0c7e5650e5780b0e89773d7ead4def",
+        "schemas/dataflow.schema.json": "f01b2faafa5fd6e300f6b5045eeca70f70226552411180442d6e528dd45172f1",
+        "schemas/erd.schema.json": "83aef0349f3cd415a00da4ed30c7864056dc9599627e004e6b7168ad4149ebc8",
+        "schemas/explainer.schema.json": "9fc54042927602b1c37dd130061989f7d9a90718888ad75943275be2fd7d1371",
+        "schemas/lifecycle.schema.json": "151befae29a68833ba26e7848769e89ab9dc71fc5bba234a91a62307338cfa49",
+        "schemas/sequence.schema.json": "97af565f8b6d8fbd4b5be40ddb52f4943accab2cf4f386d695e800d367dd4f89",
+        "schemas/timeline.schema.json": "4a657251d454bde44ef4697c960fe7503eeb4db4e50f9540c7e2d54046dd0769",
+        "schemas/tree.schema.json": "65c794a1f522ce336afe787bd59adb63a81f57a5bba3ac266f2bae5c3a07b8c3",
+        "schemas/waterfall.schema.json": "7c3000534b491ce86b96ace528e9bd5a453ba3d14294a724da3ece4bd83b51f6",
+        "schemas/workflow.schema.json": "e13a1ce3b841376c8c6f6b9cb8152f8c0c7d70a77a2960fecdfe9025de83dc25",
+        "scripts/check-render-output.mjs": "6288ff1be897b5bb1cbbb790cc58f23335e6806829389b2bf53297f6c79483a2",
+        "scripts/check-update.mjs": "a1ed8be99a484d81964c9d66938f813fb3726690aace3e982e777ea8bca5ebbc",
+        "scripts/delivery-update-child.mjs": "ec231c992ab9b548c735698f209cb350d4b137aad2a5e8cb1374e692b6b38064",
+        "scripts/generate-brand-marks.mjs": "0434c31903b831382a91e85a329bcbcb39b32f29c656273a273f896b3b0a42e7",
+        "scripts/generate-validators.mjs": "f6ec68d16b8b2a8a1c55b3e5cbb121a8557b86a5c59a6a0503e798db9c0e75ee",
+        "scripts/render-examples.mjs": "c2c99c4153cf21f0526cf3f041c1d81716017be182d404173f8961fa494e8c8c",
+        "scripts/update-contract.mjs": "b6eb5e18ebea770c0a0c2cf2ba45d122d85abe61e94b9a5426602a9f84910b31",
+        "skill-release.json": "1ea25551e0359e547267d40e83812ffd1a7bdf7398826b65f2a2fcf1a11ba596"
       },
       "notes": [],
-      "last_checked": "2026-11-13T22:35:49.669Z",
+      "last_checked": "2026-11-18T23:04:23.387Z",
       "area": "quarantine"
     },
     {

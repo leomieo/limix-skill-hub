@@ -1,23 +1,21 @@
-# archify — hướng dẫn tiếng Việt
+# Archify — hướng dẫn tiếng Việt
 
-Tạo sơ đồ kiến trúc, workflow, sequence, data-flow, trạng thái, ERD, class, cây và timeline tương tác dưới dạng HTML độc lập; hỗ trợ Mermaid và báo cáo giải thích một trang. Core chính thức giữ nguyên tiếng Anh. Gói hiện bị giới hạn dung lượng, chưa đủ runtime để kích hoạt.
+Tạo 10 loại sơ đồ tương tác và trang giải thích HTML: kiến trúc, quy trình, tuần tự, luồng dữ liệu, trạng thái, ERD, lớp, cây, dòng thời gian và thời lượng tác vụ. Giữ nguyên lõi tiếng Anh, kèm hướng dẫn tiếng Việt. Không kèm các trang HTML ví dụ đã dựng sẵn; chưa chạy thử.
 
 ## Cách dùng
 
-- Gọi kỹ năng bằng tên gốc `archify` hoặc mô tả yêu cầu bằng tiếng Việt.
-- Ví dụ: “Dùng archify cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt.”
-- Cung cấp đầu vào và kết quả mong muốn. Các điều kiện, giới hạn và bước duyệt tuân theo `SKILL.md` gốc.
+- Cung cấp mô tả hệ thống, mã nguồn hoặc sơ đồ Mermaid và loại sơ đồ cần tạo.
+- Agent đọc SKILL.md nguyên gốc và chỉ đọc tài liệu tham chiếu phù hợp. Bản hướng dẫn này không thay thế chỉ dẫn thực thi tiếng Anh.
+- Ví dụ: “Vẽ sơ đồ kiến trúc hệ thống này, có dẫn chứng từ mã nguồn, nhãn tiếng Việt.”
 
-## Ngôn ngữ và giới hạn
+## Thành phần và giới hạn
 
-Tài liệu này chỉ giải thích cho người dùng; không thay đổi quy trình thực thi. Agent đọc `SKILL.md` khi kích hoạt, chỉ đọc reference phù hợp khi cần. Không nạp đồng thời bản dịch đầy đủ. Giữ nguyên tên Tool, API, MCP, CLI, tham số, mã nguồn và đường dẫn.
+Cần Node.js >=18 và trình duyệt cho việc kiểm tra HTML. Đã giữ nguyên phần thực thi, lược đồ, ví dụ JSON và tài liệu tác giả trong gói nguồn. Loại 15 trang HTML ví dụ dựng sẵn để vừa giới hạn 200 tệp/16 MiB của kho; danh sách nằm trong _hub.source.json. Các lệnh phát triển trỏ ra ngoài gói cần kho nguồn đầy đủ.
 
-Trạng thái: **review-required**. Chưa chạy thử script hoặc dịch vụ ngoài. Việc quét tĩnh không bảo đảm an toàn; quyền sử dụng do Limix Bot và chủ bot quyết định.
+Trạng thái: cách ly, chờ duyệt; chưa chạy mã bên thứ ba, kiểm tra trình duyệt hoặc xuất ảnh/video. Quét tĩnh không chứng minh an toàn hay khả năng chạy. Không tự cài đặt, tự cập nhật hay kích hoạt.
 
-Nguồn: https://github.com/tt-a1i/archify — commit `e37848822238e3a61b12739185cdadd49843a620`.
+## Nguồn và bản quyền
 
-## Công cụ và giới hạn gói
+Nguồn: https://github.com/tt-a1i/archify/tree/44781293f38728baf04dbad33ce1a0cef8c39cca/archify
 
-Cần Node.js để chạy CLI .mjs và trình duyệt để xem HTML. Bản cài đầy đủ phải có renderer, schema, reference, asset, package.json và các thông báo bản quyền tương ứng. Xem [requirements.en.md](requirements.en.md).
-
-**Gói trong Hub chưa đầy đủ:** 120 đường dẫn bị loại vì giới hạn đóng gói, gồm các module runtime cần thiết. Không kích hoạt bản này. Danh sách chính xác nằm trong _hub.source.json. Bản gốc đầy đủ: https://github.com/tt-a1i/archify/tree/e37848822238e3a61b12739185cdadd49843a620/archify. Chưa chạy script, preview hoặc export.
+Giữ nguyên LICENSE, LICENSE-MIT, NOTICE và THIRD_PARTY_NOTICES.md từ nguồn. Lõi và từng tệp có SHA-256 trong _hub.source.json.
