@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "name": "better-design",
+  "version": "c373ad7fa122",
+  "source": {
+    "url": "https://github.com/Moddingflow/better-design",
+    "commit": "c373ad7fa122b8c0d63b1be756443cc93a56e71d",
+    "sha256": "3bc043c583587daf0930ccbe3973a418fa6e5ca80ae7b656c7e42ef771f05c9a",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Hướng dẫn agent thiết kế giao diện có định hướng nghệ thuật, hệ token, chuyển động, khả năng truy cập và kiểm chứng bằng giao diện thật.",
+    "aliases": [
+      "Thiết kế giao diện",
+      "Thiết kế trải nghiệm người dùng"
+    ],
+    "keywords": [
+      "better",
+      "design",
+      "Thiết kế giao diện",
+      "Thiết kế trải nghiệm người dùng"
+    ],
+    "examples": [
+      "Dùng better-design cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "3bc043c583587daf0930ccbe3973a418fa6e5ca80ae7b656c7e42ef771f05c9a"
+  },
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]",
+    "rust [mention-hint]",
+    "three [mention-hint]"
+  ],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write"
+  ],
+  "syncedAt": "2026-11-18T11:29:53.237Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

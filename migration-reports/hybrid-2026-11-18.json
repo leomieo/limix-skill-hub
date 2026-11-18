@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "batchDate": "2026-11-18",
+  "scope": "Exactly five new active GitHub agent skills; upstream bytes retained; scripts not executed.",
+  "sourceEvidence": "GitHub repository metadata and trees/cores were checked at pinned commits on 2026-11-18 UTC.",
+  "sources": [
+    {
+      "id": "papermorph",
+      "repository": "DozenTwelve/Papermorph",
+      "sourceUrl": "https://github.com/DozenTwelve/Papermorph",
+      "stars": 1774,
+      "createdAt": "2026-10-03T01:38:22Z",
+      "pushedAt": "2026-11-16T22:39:12Z",
+      "license": "MIT",
+      "licenseEvidenceFiles": ["LICENSE", "assets/templates/documentary/lib/fonts/OFL-EBGaramond.txt", "assets/templates/documentary/lib/fonts/OFL-Oswald.txt", "assets/templates/shorts/lib/icons-LICENSE.txt"],
+      "commit": "839a62cad3c74446944a167faff07c994f33e5b7",
+      "coreSha256": "eacef1396ea67141e8ad8aeece1a7739b8eb0edb5c1c6aec0fde9640b1618b1a",
+      "retainedFiles": 142,
+      "skipped": [],
+      "security": "quarantined",
+      "compatibility": "unchecked",
+      "findings": [
+        "assets/templates/documentary/lib/fonts/EBGaramond-italic-400-latin-ext.woff2: binary-file (low)",
+        "assets/templates/documentary/lib/fonts/EBGaramond-italic-400-latin.woff2: binary-file (low)",
+        "assets/templates/documentary/lib/fonts/EBGaramond-normal-400-latin-ext.woff2: binary-file (low)",
+        "assets/templates/documentary/lib/fonts/EBGaramond-normal-400-latin.woff2: binary-file (low)",
+        "assets/templates/documentary/lib/fonts/EBGaramond-normal-500-latin-ext.woff2: binary-file (low)",
+        "assets/templates/documentary/lib/fonts/EBGaramond-normal-500-latin.woff2: binary-file (low)",
+        "assets/templates/documentary/lib/fonts/Oswald-normal-500-latin-ext.woff2: binary-file (low)",
+        "assets/templates/documentary/lib/fonts/Oswald-normal-500-latin.woff2: binary-file (low)",
+        "assets/templates/documentary/lib/fonts/Oswald-normal-600-latin-ext.woff2: binary-file (low)",
+        "assets/templates/documentary/lib/fonts/Oswald-normal-600-latin.woff2: binary-file (low)",
+        "references/lessons/maths.md: invisible-unicode (high)"
+      ],
+      "manualReview": "The zero-width U+200B characters appear in short examples (b​y, m​y, a​n, B​y) with an explanation that they prevent math italicization; this looks intentional, but the high-severity rule remains unresolved. Reviewed scripts include local file-generation/cleanup and calls to OpenRouter, OpenAI, ElevenLabs, Wikimedia, and reference APIs; no evidence of credential forwarding to unrelated endpoints was found."
+    },
+    {
+      "id": "huashu-motion",
+      "repository": "alchaincyf/huashu-motion",
+      "sourceUrl": "https://github.com/alchaincyf/huashu-motion",
+      "stars": 2864,
+      "createdAt": "2026-10-18T12:19:27Z",
+      "pushedAt": "2026-11-16T06:20:58Z",
+      "license": "MIT",
+      "licenseEvidenceFiles": ["LICENSE"],
+      "commit": "f09dd7a29e2c9c574939d54db6c0768aad51232a",
+      "coreSha256": "7de1e1bb0e50834d1f2dece4c93c63be08bb0e88446d8c80c65efa5cc849549b",
+      "retainedFiles": 47,
+      "skipped": [],
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "findings": [
+        "Manual review: bin/om runs npx --yes huashu-motion, which downloads and executes an unpinned package; do not activate until the package and action scope are reviewed."
+      ],
+      "manualReview": "bin/om uses a bundled CLI when available, otherwise executes the latest npm package via npx. The core also checks upstream versions and runs a local preview server; the Chinese author-support section is outside the declared English/Vietnamese language set."
+    },
+    {
+      "id": "e2e-red-triage",
+      "repository": "sno-ai/sno-station-skills",
+      "sourceUrl": "https://github.com/sno-ai/sno-station-skills",
+      "stars": 865,
+      "createdAt": "2026-10-01T04:18:51Z",
+      "pushedAt": "2026-11-18T05:56:39Z",
+      "license": "Apache-2.0",
+      "licenseEvidenceFiles": ["LICENSE", "NOTICE"],
+      "commit": "47336d1a25dd434ebec0a37593abf66ccf1fca98",
+      "coreSha256": "d877a2c2a1373c43a9118ccb8d64105f70269006f1480a5d38b1b86b33493b8c",
+      "retainedFiles": 4,
+      "skipped": [],
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "findings": [],
+      "manualReview": "The retained package contains the skill, Apache license and notice only; it is manual-only and declares shell plus file read/write needs. Its workflow emphasizes recording a durable test for a failure, but the scripts/runtime were not exercised."
+    },
+    {
+      "id": "convert-site",
+      "repository": "ethanplusai/astro-conversion-kit",
+      "sourceUrl": "https://github.com/ethanplusai/astro-conversion-kit",
+      "stars": 135,
+      "createdAt": "2026-10-22T21:37:28Z",
+      "pushedAt": "2026-10-31T18:10:52Z",
+      "license": "MIT",
+      "licenseEvidenceFiles": ["LICENSE"],
+      "commit": "8beb1de5099a2be1ddb1d98ffc7b3682343bc420",
+      "coreSha256": "af606e33bff0618c948e424f99ad54e14529f0dff65239ca2eddf044bf6de671",
+      "retainedFiles": 54,
+      "skipped": [
+        "templates/site/.gitignore",
+        "templates/site/.nvmrc",
+        "templates/site/.vercelignore"
+      ],
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "findings": [
+        "Manual review: upstream core directs automatic dependency installation and GitHub push/PR creation; retain these instructions inactive pending separate action-scope review."
+      ],
+      "manualReview": "Core requests dependency installation, creates a scaffold commit on main, and later pushes a branch and creates a pull request; it also describes staging deployments and media uploads. Three hidden template dotfiles were omitted by the path filter."
+    },
+    {
+      "id": "better-design",
+      "repository": "Moddingflow/better-design",
+      "sourceUrl": "https://github.com/Moddingflow/better-design",
+      "stars": 52,
+      "createdAt": "2026-09-26T19:54:37Z",
+      "pushedAt": "2026-10-27T11:02:09Z",
+      "license": "MIT",
+      "licenseEvidenceFiles": ["LICENSE"],
+      "commit": "c373ad7fa122b8c0d63b1be756443cc93a56e71d",
+      "coreSha256": "3bc043c583587daf0930ccbe3973a418fa6e5ca80ae7b656c7e42ef771f05c9a",
+      "retainedFiles": 49,
+      "skipped": [],
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "findings": [],
+      "manualReview": "Core is a structured UI-design workflow. Retained Python/Node scripts provide local validation, layout and motion checks plus tests; they were read but not executed. Scanner's low binary classification on .cs and .gd files is extension-based."
+    }
+  ],
+  "checks": {
+    "startingHead": "294ae5486b141c641fa7aea9d007916ba66d76e0",
+    "remoteHeadBeforePublication": "294ae5486b141c641fa7aea9d007916ba66d76e0",
+    "batchCount": 5,
+    "catalogCountAfter": 68,
+    "sourceVerification": "PASS for 5/5; 60/60 global source-verified packages",
+    "existingCatalogEntries": "PASS; all 63 pre-existing catalog entries unchanged",
+    "stagedBlobHashes": "PASS; 3183 staged skill files match catalog/inventory hashes; upstream executable flags retained",
+    "repositoryTests": "24 PASS; 0 FAIL",
+    "verification": "68 PASS; 0 errors",
+    "catalogRebuild": "PASS; 68 skills, 0 problems",
+    "catalogIdempotence": "PASS; SHA256 unchanged after rebuild",
+    "offlineMigrationIdempotence": "PASS for all 5; source provider was not contacted",
+    "gitDiffCheck": "PASS for hub-generated files. Original papermorph bytes contain 116 trailing-whitespace lines and one final blank line; preserved unchanged.",
+    "rollback": "Existing rollback implementation covered by repository tests; no rollback mutation performed for this batch."
+  },
+  "limitations": [
+    "Static review only; no upstream script, dependency installation, CLI, browser, provider, build, or runtime was executed.",
+    "papermorph includes intentional U+200B characters inside short English examples to influence math rendering; the high-severity scanner rule still quarantines it pending explicit handling. huashu-motion is quarantined because bin/om falls back to unpinned npx execution and its core includes non-English author-support text. convert-site is quarantined because its core directs dependency installation and GitHub push/PR actions; three template dotfiles were excluded by path rules.",
+    "better-design and e2e-red-triage remain review-required; catalog approval is not implied by retention."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "repository": "sno-ai/sno-station-skills",
+  "stars": 865,
+  "createdAt": "2026-10-01T04:18:51Z",
+  "pushedAt": "2026-11-18T05:56:39Z",
+  "statsCheckedAt": "2026-11-18",
+  "license": "Apache-2.0",
+  "commit": "47336d1a25dd434ebec0a37593abf66ccf1fca98",
+  "path": "plugins/sno-station-standalone/skills/e2e-red-triage",
+  "language": "hybrid",
+  "version": "47336d1a25dd",
+  "addedAt": "2026-11-18T11:22:34.799Z",
+  "batchDate": "2026-11-18",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-18T11:22:34.799Z",
+  "coreOrigin": "upstream"
+}

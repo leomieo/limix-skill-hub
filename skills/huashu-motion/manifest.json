@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "name": "huashu-motion",
+  "version": "f09dd7a29e2c",
+  "source": {
+    "url": "https://github.com/alchaincyf/huashu-motion",
+    "commit": "f09dd7a29e2c9c574939d54db6c0768aad51232a",
+    "sha256": "7de1e1bb0e50834d1f2dece4c93c63be08bb0e88446d8c80c65efa5cc849549b",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Tạo video giới thiệu sản phẩm và đồ họa chuyển động bằng HTML/GSAP, hỗ trợ xem bản dựng, góp ý theo khung hình và kiểm tra chất lượng.",
+    "aliases": [
+      "Đồ họa chuyển động",
+      "Video giới thiệu sản phẩm"
+    ],
+    "keywords": [
+      "huashu",
+      "motion",
+      "Đồ họa chuyển động",
+      "Video giới thiệu sản phẩm"
+    ],
+    "examples": [
+      "Dùng huashu-motion cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "7de1e1bb0e50834d1f2dece4c93c63be08bb0e88446d8c80c65efa5cc849549b"
+  },
+  "requiredCapabilities": [
+    "browser [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "ffprobe [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "image-generation [mention-hint]",
+    "node [mention-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]",
+    "three [mention-hint]"
+  ],
+  "permissions": [
+    "network"
+  ],
+  "syncedAt": "2026-11-18T11:22:34.799Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "Manual review: bin/om runs npx --yes huashu-motion, which downloads and executes an unpinned package; do not activate until the package and action scope are reviewed."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "The upstream core mixes English instructions with a Chinese author-support section; Chinese-language support is not declared by this hub schema."
+    ]
+  }
+}

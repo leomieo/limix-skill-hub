@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "name": "convert-site",
+  "version": "8beb1de5099a",
+  "source": {
+    "url": "https://github.com/ethanplusai/astro-conversion-kit",
+    "commit": "8beb1de5099a2be1ddb1d98ffc7b3682343bc420",
+    "sha256": "af606e33bff0618c948e424f99ad54e14529f0dff65239ca2eddf044bf6de671",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Điều phối quy trình chuyển website đang chạy sang website Astro tĩnh, giữ URL và nội dung, đối chiếu sai khác, kiểm tra trước khi phát hành.",
+    "aliases": [
+      "Chuyển website sang Astro",
+      "Tái dựng website tĩnh"
+    ],
+    "keywords": [
+      "convert",
+      "site",
+      "Chuyển website sang Astro",
+      "Tái dựng website tĩnh"
+    ],
+    "examples": [
+      "Dùng convert-site cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "af606e33bff0618c948e424f99ad54e14529f0dff65239ca2eddf044bf6de671"
+  },
+  "requiredCapabilities": [
+    "browser [mention-hint]",
+    "dist [reference-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "git [mention-hint]",
+    "github-cli [mention-hint]",
+    "node >=22.23.4 <23 || >=24.22.1 [declared; engines]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "playwright [mention-hint]"
+  ],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-18T11:28:48.362Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "Manual review: upstream core directs automatic dependency installation and GitHub push/PR creation; retain these instructions inactive pending separate action-scope review."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "3 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "Some upstream files were excluded by source file-size or count limits; see _hub.source.json."
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "hub": "leomieo/limix-skill-hub",
-  "count": 63,
+  "count": 68,
   "skills": [
     {
       "id": "agent-autoloop",
@@ -7814,6 +7814,882 @@
       "area": "quarantine"
     },
     {
+      "id": "better-design",
+      "name": "better-design",
+      "description": "Design, improve, and validate UI/UX for apps, websites, native interfaces, and games: an art direction derived from the product (dealt from materials and a structure drawn against recent builds when the user gives no visual cue, never the model's top-two habit; an Apple-like house style on request), a coherent visual system kept in the project's DESIGN.md, measured layout geometry, page anatomy by the visitor's job, an AI-slop catalog (template pages, eyebrows, tracked-caps labels, calibrated looks, narration and redundant helper text), a living motion language with an interaction kit, an opt-in pool of signature effects, accessibility, drop zones for every upload, and real states including skeletons. Use for interface creation, redesigns, focused UI changes, motion polish, design plans, and UX audits; not for backend-only tasks.",
+      "description_vi": "Hướng dẫn agent thiết kế giao diện có định hướng nghệ thuật, hệ token, chuyển động, khả năng truy cập và kiểm chứng bằng giao diện thật.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "better-design",
+        "version": "c373ad7fa122",
+        "source": {
+          "url": "https://github.com/Moddingflow/better-design",
+          "commit": "c373ad7fa122b8c0d63b1be756443cc93a56e71d",
+          "sha256": "3bc043c583587daf0930ccbe3973a418fa6e5ca80ae7b656c7e42ef771f05c9a",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Hướng dẫn agent thiết kế giao diện có định hướng nghệ thuật, hệ token, chuyển động, khả năng truy cập và kiểm chứng bằng giao diện thật.",
+          "aliases": [
+            "Thiết kế giao diện",
+            "Thiết kế trải nghiệm người dùng"
+          ],
+          "keywords": [
+            "better",
+            "design",
+            "Thiết kế giao diện",
+            "Thiết kế trải nghiệm người dùng"
+          ],
+          "examples": [
+            "Dùng better-design cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "3bc043c583587daf0930ccbe3973a418fa6e5ca80ae7b656c7e42ef771f05c9a"
+        },
+        "requiredCapabilities": [
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]",
+          "react [mention-hint]",
+          "rust [mention-hint]",
+          "three [mention-hint]"
+        ],
+        "permissions": [
+          "shell",
+          "filesystem-read",
+          "filesystem-write"
+        ],
+        "syncedAt": "2026-11-18T11:29:53.237Z",
+        "security": {
+          "status": "review-required",
+          "findings": []
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Thiết kế giao diện",
+        "Thiết kế trải nghiệm người dùng"
+      ],
+      "keywords": [
+        "better",
+        "design",
+        "Thiết kế giao diện",
+        "Thiết kế trải nghiệm người dùng"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "c373ad7fa122",
+      "source": {
+        "repository": "Moddingflow/better-design",
+        "commit": "c373ad7fa122b8c0d63b1be756443cc93a56e71d",
+        "path": "skills/better-design"
+      },
+      "stars": 52,
+      "created_at": "2026-09-26T19:54:37Z",
+      "pushed_at": "2026-10-27T11:02:09Z",
+      "stats_checked": "2026-11-18",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 66,
+      "score_parts": {
+        "function": 23,
+        "security": 21,
+        "compatibility": 8,
+        "testing": 0,
+        "maintenance": 9,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/layout-dump/LayoutDump.cs"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/layout-dump/layout_dump.gd"
+        }
+      ],
+      "approval_status": "review-required",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ]
+      },
+      "dependencies": [
+        "node"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]",
+          "react [mention-hint]",
+          "rust [mention-hint]",
+          "three [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ],
+        "detected": [
+          {
+            "name": "filesystem-read",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/bench_metrics.mjs",
+                "line": 12
+              },
+              {
+                "file": "scripts/deal_direction.mjs",
+                "line": 15
+              },
+              {
+                "file": "scripts/motion_probe.mjs",
+                "line": 21
+              }
+            ]
+          },
+          {
+            "name": "filesystem-write",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/bench_metrics.mjs",
+                "line": 12
+              },
+              {
+                "file": "scripts/deal_direction.mjs",
+                "line": 15
+              }
+            ]
+          },
+          {
+            "name": "react",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "assets/effects/interactions.js",
+                "line": 9
+              },
+              {
+                "file": "assets/motion/README.md",
+                "line": 55
+              },
+              {
+                "file": "assets/motion/interaction-kit.js",
+                "line": 9
+              },
+              {
+                "file": "references/effects-library.md",
+                "line": 14
+              },
+              {
+                "file": "references/motion.md",
+                "line": 217
+              }
+            ]
+          },
+          {
+            "name": "three",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/effects-library.md",
+                "line": 15
+              }
+            ]
+          },
+          {
+            "name": "argparse",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check_layout.py",
+                "line": 8
+              },
+              {
+                "file": "scripts/validate_design.py",
+                "line": 4
+              }
+            ]
+          },
+          {
+            "name": "check_layout",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/test_check_layout.py",
+                "line": 12
+              }
+            ]
+          },
+          {
+            "name": "copy",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/test_check_layout.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/test_validate_design.py",
+                "line": 4
+              }
+            ]
+          },
+          {
+            "name": "hashlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/test_validate_design.py",
+                "line": 5
+              }
+            ]
+          },
+          {
+            "name": "json",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check_layout.py",
+                "line": 9
+              },
+              {
+                "file": "scripts/test_check_layout.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/test_validate_design.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/validate_design.py",
+                "line": 5
+              }
+            ]
+          },
+          {
+            "name": "math",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check_layout.py",
+                "line": 10
+              },
+              {
+                "file": "scripts/test_validate_design.py",
+                "line": 7
+              },
+              {
+                "file": "scripts/validate_design.py",
+                "line": 6
+              }
+            ]
+          },
+          {
+            "name": "pathlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check_layout.py",
+                "line": 11
+              },
+              {
+                "file": "scripts/test_check_layout.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/test_validate_design.py",
+                "line": 8
+              },
+              {
+                "file": "scripts/validate_design.py",
+                "line": 8
+              }
+            ]
+          },
+          {
+            "name": "re",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/validate_design.py",
+                "line": 7
+              }
+            ]
+          },
+          {
+            "name": "subprocess",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/test_check_layout.py",
+                "line": 7
+              },
+              {
+                "file": "scripts/test_validate_design.py",
+                "line": 9
+              }
+            ]
+          },
+          {
+            "name": "sys",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/test_check_layout.py",
+                "line": 8
+              },
+              {
+                "file": "scripts/test_validate_design.py",
+                "line": 10
+              }
+            ]
+          },
+          {
+            "name": "tempfile",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/test_check_layout.py",
+                "line": 9
+              },
+              {
+                "file": "scripts/test_validate_design.py",
+                "line": 11
+              }
+            ]
+          },
+          {
+            "name": "unittest",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/test_check_layout.py",
+                "line": 10
+              },
+              {
+                "file": "scripts/test_validate_design.py",
+                "line": 12
+              }
+            ]
+          },
+          {
+            "name": "validate_design",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/test_validate_design.py",
+                "line": 14
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "assets/effects/dither-bake.js",
+                "line": 1
+              },
+              {
+                "file": "assets/effects/dither-field.js",
+                "line": 1
+              },
+              {
+                "file": "assets/effects/dots.js",
+                "line": 1
+              },
+              {
+                "file": "assets/effects/interactions.js",
+                "line": 1
+              },
+              {
+                "file": "assets/layout-dump/dump-dom.js",
+                "line": 1
+              },
+              {
+                "file": "assets/motion/interaction-kit.js",
+                "line": 1
+              },
+              {
+                "file": "scripts/bench_metrics.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/deal_direction.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/motion_probe.mjs",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 402
+              },
+              {
+                "file": "assets/layout-dump/dump-dom.js",
+                "line": 81
+              },
+              {
+                "file": "assets/motion/README.md",
+                "line": 5
+              },
+              {
+                "file": "references/ai-slop.md",
+                "line": 25
+              },
+              {
+                "file": "references/direction-deal.md",
+                "line": 66
+              },
+              {
+                "file": "references/evaluations.md",
+                "line": 110
+              },
+              {
+                "file": "references/motion.md",
+                "line": 234
+              },
+              {
+                "file": "references/validation.md",
+                "line": 110
+              },
+              {
+                "file": "scripts/bench_metrics.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/check_layout.py",
+                "line": 140
+              },
+              {
+                "file": "scripts/deal_direction.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/motion_probe.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/test_check_layout.py",
+                "line": 20
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/check_layout.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/test_check_layout.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/test_validate_design.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/validate_design.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "assets/effects/dither-field.js",
+                "line": 104
+              },
+              {
+                "file": "references/effects-library.md",
+                "line": 12
+              },
+              {
+                "file": "references/house-style.md",
+                "line": 279
+              },
+              {
+                "file": "references/layout-geometry.md",
+                "line": 153
+              },
+              {
+                "file": "references/validation.md",
+                "line": 5
+              },
+              {
+                "file": "scripts/check_layout.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/test_check_layout.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/test_validate_design.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/validate_design.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "rust",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/art-direction.md",
+                "line": 28
+              },
+              {
+                "file": "references/materials.md",
+                "line": 64
+              },
+              {
+                "file": "references/motion.md",
+                "line": 36
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/validation.md",
+                "line": 136
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 25
+              },
+              {
+                "file": "assets/layout-dump/dump-dom.js",
+                "line": 5
+              },
+              {
+                "file": "references/ai-slop.md",
+                "line": 63
+              },
+              {
+                "file": "references/design-contract.md",
+                "line": 16
+              },
+              {
+                "file": "references/effects-library.md",
+                "line": 333
+              },
+              {
+                "file": "references/evaluations.md",
+                "line": 22
+              },
+              {
+                "file": "references/fonts.md",
+                "line": 75
+              },
+              {
+                "file": "references/house-style.md",
+                "line": 116
+              },
+              {
+                "file": "references/layout-geometry.md",
+                "line": 85
+              },
+              {
+                "file": "references/motion.md",
+                "line": 236
+              },
+              {
+                "file": "references/platform-adapters.md",
+                "line": 50
+              },
+              {
+                "file": "references/sources.md",
+                "line": 43
+              },
+              {
+                "file": "references/validation.md",
+                "line": 142
+              },
+              {
+                "file": "references/web-quality.md",
+                "line": 45
+              },
+              {
+                "file": "scripts/bench_metrics.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/motion_probe.mjs",
+                "line": 4
+              },
+              {
+                "file": "scripts/test_validate_design.py",
+                "line": 2
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 46,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "agents/openai.yaml",
+          "assets/DESIGN.house-style.md",
+          "assets/DESIGN.template.md",
+          "assets/design-contract.create.example.json",
+          "assets/design-contract.example.json",
+          "assets/effects/dither-bake.js",
+          "assets/effects/dither-field.js",
+          "assets/effects/dots.js",
+          "assets/effects/effects.css",
+          "assets/effects/gallery.html",
+          "assets/effects/interactions.js",
+          "assets/house-style.html",
+          "assets/house-style.tokens.json",
+          "assets/layout-dump/LayoutDump.cs",
+          "assets/layout-dump/dump-dom.js",
+          "assets/layout-dump/layout_dump.gd",
+          "assets/layout.example.json",
+          "assets/motion/README.md",
+          "assets/motion/interaction-kit.css",
+          "assets/motion/interaction-kit.js",
+          "assets/motion/kit.html",
+          "assets/tokens.example.json",
+          "manifest.json",
+          "references/ai-slop.md",
+          "references/art-direction.md",
+          "references/behavior-and-content.md",
+          "references/design-contract.md",
+          "references/design-md.md",
+          "references/direction-deal.md",
+          "references/effects-library.md",
+          "references/evaluations.md",
+          "references/fonts.md",
+          "references/guide.vi.md",
+          "references/house-style.md",
+          "references/layout-geometry.md",
+          "references/materials.md",
+          "references/motion.md",
+          "references/page-anatomy.md",
+          "references/platform-adapters.md",
+          "references/sources.md",
+          "references/validation.md",
+          "references/web-quality.md",
+          "scripts/bench_metrics.mjs",
+          "scripts/check_layout.py",
+          "scripts/deal_direction.mjs",
+          "scripts/motion_probe.mjs",
+          "scripts/test_check_layout.py",
+          "scripts/test_validate_design.py",
+          "scripts/validate_design.py"
+        ]
+      },
+      "checksum": "77713c4c113c37d1b8c5ecf09f9236c9bc977c872d3936820b03bdb431d1fa56",
+      "file_hashes": {
+        "LICENSE": "04aa3b2852371fe0a08e7fd491d3c4628c1ee8b3bb34b07ebd504dbc23e46148",
+        "SKILL.md": "3bc043c583587daf0930ccbe3973a418fa6e5ca80ae7b656c7e42ef771f05c9a",
+        "agents/openai.yaml": "bcc8b5513b4ac52756d7089ef05dfa3812a38d9b48fe1f8185adf690e3b664ba",
+        "assets/DESIGN.house-style.md": "4e6498e76aa4482b90351700c40769c97943a18aa80ef5121cbd2e27fb25701b",
+        "assets/DESIGN.template.md": "d7046cea572005668f3f4437db1b78fcf98469ffda07fd249cc545ecaa9d4fd7",
+        "assets/design-contract.create.example.json": "3617303465997a6e7eb3b7fbc74e9ce2597a2783c0166a1f2f64640c7677b6d9",
+        "assets/design-contract.example.json": "6b89da19d2dc0214df03d573f542fb4257703f0b49e04ee5e46cc73120aae653",
+        "assets/effects/dither-bake.js": "613d032250c7a65ad1245017ab91dcebac72413e0695b356d4d6def36ff9ee98",
+        "assets/effects/dither-field.js": "d87e2a1040560b7b380bcd793f05de10c4076fa8e795ca73c69b5dc92e7e3af8",
+        "assets/effects/dots.js": "009d87df773bb4ecc67495b00a759c21d651ab7a962a4c9d90fb8c53019d85a3",
+        "assets/effects/effects.css": "dfedc02c5e56af2b071fedbe3b626701a1568b628b74a13c04c412ae6f0f567f",
+        "assets/effects/gallery.html": "b8d7b0c52001ad68e8a574237fe13fa5d7980e77b99b33bad03ce7d853ed7c30",
+        "assets/effects/interactions.js": "edec15e0d0580e6a466bef8e5ead07e254aa1a2a0e97f286c573cb77c4c3a9f1",
+        "assets/house-style.html": "6ec39b125923e841ac982015cb2199d1737c70ec6185c0b14ad6525022dbbca9",
+        "assets/house-style.tokens.json": "669d9b64b4f7ed830cf9f2a462da33e14f72c7731f254b1723e1b8ba27e43374",
+        "assets/layout-dump/LayoutDump.cs": "959fbcdcd2ff95e3c911e08402b5d519db70694143d4626dbe1c656b11b066df",
+        "assets/layout-dump/dump-dom.js": "5717f9bab77797be34c184de0c24b121fdc4ca57bc2982d35af912413b82e99f",
+        "assets/layout-dump/layout_dump.gd": "c9201ab4caebdedfdde7ef0bce6f93c2330797405b095042cde78bf0f43eb44e",
+        "assets/layout.example.json": "ca68c329417018f0b5ae2c54a1596c4ede60dcff39a85aa6b67d13b8ff59756f",
+        "assets/motion/README.md": "a4fdb5f7670941cf99a61155b108f3511557a736062263c58bb5ce9097a10eb4",
+        "assets/motion/interaction-kit.css": "318d0fd63041c8ba30cece97b3b1e49ff150b92269a2756d6347382ec87a417e",
+        "assets/motion/interaction-kit.js": "ea24984a358a5cb3dc8868c55e952d68d720564eac0f8b23750cf8303dfe4f1c",
+        "assets/motion/kit.html": "f3fe945dd5bd2b09bae64cdb628810d69291b7d9a27ec2c34f13d2dfc7534e54",
+        "assets/tokens.example.json": "cbd53c2527c9fb6d0629e6abf7420042f27783a0218ee9af6779b081c7f74a4d",
+        "manifest.json": "f0e42d9fded985afa9082b282259302a3f985f5741dc047b513747c8c087bfd1",
+        "references/ai-slop.md": "f9447147e043820783d834e88627b7727551b22bdbea436ae3cd68ef97cded35",
+        "references/art-direction.md": "e09358ab2a8afcf90f5ccb65a0fe5cd657f7d8fae11f4e4356072b4777ceef53",
+        "references/behavior-and-content.md": "25f7e8ef0aefc21da05ed848181a72b8267576f98891d4b434274e9b25f7b461",
+        "references/design-contract.md": "01dada52caa648489b764e5ad993cea90da62e14f8b10bdb176758e9b61bd4fe",
+        "references/design-md.md": "dc546b7ce9245e86488c7fa308b7f3a5a5a6bdbe4d292849eda357b59002fc5c",
+        "references/direction-deal.md": "37381ec99789f645b6053a59431fee4d2f0e448e1c7ae9362624a7391e9a037f",
+        "references/effects-library.md": "aff7d7dcec154b37fc380efb8b6acdaa7978e988cb4b077f083166d96f77ee07",
+        "references/evaluations.md": "23274918e6470c9133d77e97fc4676cdf1427b49be71238da5ec78a4195b8db7",
+        "references/fonts.md": "320153af0a1aa72dc01c78ae9e10f49cfeeb9d8faf58f982a53cafff50900404",
+        "references/guide.vi.md": "4def52f796892a97f0beedfbbfcc2fd97e9ef6628f45e8e9666dd9e457d9df9a",
+        "references/house-style.md": "5dd747d5441b96f8b940d6a99927fe028d7b78475c152143d73fcb8edf6cd5a1",
+        "references/layout-geometry.md": "f8f6fa5734093ae242ee535fb0712392dfefbbbd726ea26641c2626e65d14131",
+        "references/materials.md": "707ade6d785937e98cc672dd2b1e966e452ae7a6eed46b8fb42f65ae5b4f8d9e",
+        "references/motion.md": "e85bccda7d404398247fa6eeb2c7726a343d5ca9cff980932c21673e2da0c160",
+        "references/page-anatomy.md": "ee97d10b94420d6c59ed95a54d0ec0e3ee050c4050f27b7971fe66e99a3839ac",
+        "references/platform-adapters.md": "3a9157fe1e3ee36c27f64ba9370673064fede6320c1f02e2b15c89245cecd6ad",
+        "references/sources.md": "ce34baf27728993a7e492578473a3eb8e2458295a4ca0061d85219010c7e69f3",
+        "references/validation.md": "0ac14cb7784f2c1b20e2c6efb57eed693760d251d0e39f51fcedaeae86f711ef",
+        "references/web-quality.md": "219379f87db2b085897abc1f7e2acd31a946ef886eaa5165c7643138b0f6c572",
+        "scripts/bench_metrics.mjs": "316143c54f07f1c54a7c606200560b971461af7b3596cb54a853ab8d96d5c36b",
+        "scripts/check_layout.py": "ccfac09d38a092bb2274e1de09badb2a364711615d9cddf53f8652cfdd37f60a",
+        "scripts/deal_direction.mjs": "f5deff5959b1acc31508ec395e794a1538dccd97c04fe59e0de8ded92c66cf7a",
+        "scripts/motion_probe.mjs": "46f171040f6238f3a56abe092c393a4661891eb1448740b35e132296ecc9e3bb",
+        "scripts/test_check_layout.py": "4bee48be43ff4b131e901569310fe1cc290b6cb19bc35f17368d0289ce20305d",
+        "scripts/test_validate_design.py": "732bb4e6aa861ed80449e9f822d3ee6c6cb8b81e81c3107482f8a7fcf7c614ae",
+        "scripts/validate_design.py": "4997fecbb0a908b8e1797f73835ab9cc89fc8312764a41719fef991949bccd88"
+      },
+      "notes": [],
+      "last_checked": "2026-11-18T11:29:53.237Z",
+      "area": "skills"
+    },
+    {
       "id": "blender-core",
       "name": "blender-core",
       "description": "Foundation for any Blender 5.2+ task an agent drives - running bpy via MCP (live) or headless CLI, context overrides, locale-safe node lookup, enum discovery, 5.x API changes, verification. Use first for any Blender, bpy, .blend or 3D-asset request; routes to the specialized blender-* skills.",
@@ -13700,6 +14576,916 @@
       "notes": [],
       "last_checked": "2026-11-16T00:51:32.201Z",
       "area": "skills"
+    },
+    {
+      "id": "convert-site",
+      "name": "convert-site",
+      "description": "Convert a live website (WordPress first; Drupal, Webflow, Squarespace, Wix and static sites too) into a static Astro site with the same URLs, content, head tags, media, redirects and look, proven by parity gates and a pixel-level visual review, ending in one pull request, a noindexed staging deploy and a launch runbook. Use when asked to convert, rebuild, migrate or clone a site to Astro, when handed a site URL with this kit's link, to resume a conversion from .conversion/state.json, or with --apply <id> to apply one suggestion as a proposal.",
+      "description_vi": "Điều phối quy trình chuyển website đang chạy sang website Astro tĩnh, giữ URL và nội dung, đối chiếu sai khác, kiểm tra trước khi phát hành.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "convert-site",
+        "version": "8beb1de5099a",
+        "source": {
+          "url": "https://github.com/ethanplusai/astro-conversion-kit",
+          "commit": "8beb1de5099a2be1ddb1d98ffc7b3682343bc420",
+          "sha256": "af606e33bff0618c948e424f99ad54e14529f0dff65239ca2eddf044bf6de671",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Điều phối quy trình chuyển website đang chạy sang website Astro tĩnh, giữ URL và nội dung, đối chiếu sai khác, kiểm tra trước khi phát hành.",
+          "aliases": [
+            "Chuyển website sang Astro",
+            "Tái dựng website tĩnh"
+          ],
+          "keywords": [
+            "convert",
+            "site",
+            "Chuyển website sang Astro",
+            "Tái dựng website tĩnh"
+          ],
+          "examples": [
+            "Dùng convert-site cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "af606e33bff0618c948e424f99ad54e14529f0dff65239ca2eddf044bf6de671"
+        },
+        "requiredCapabilities": [
+          "browser [mention-hint]",
+          "dist [reference-hint]",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "git [mention-hint]",
+          "github-cli [mention-hint]",
+          "node >=22.23.4 <23 || >=24.22.1 [declared; engines]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "playwright [mention-hint]"
+        ],
+        "permissions": [
+          "shell",
+          "filesystem-read",
+          "filesystem-write",
+          "network"
+        ],
+        "syncedAt": "2026-11-18T11:28:48.362Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "Manual review: upstream core directs automatic dependency installation and GitHub push/PR creation; retain these instructions inactive pending separate action-scope review."
+          ]
+        },
+        "compatibility": {
+          "status": "incompatible",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "3 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+            "Some upstream files were excluded by source file-size or count limits; see _hub.source.json."
+          ]
+        }
+      },
+      "aliases": [
+        "Chuyển website sang Astro",
+        "Tái dựng website tĩnh"
+      ],
+      "keywords": [
+        "convert",
+        "site",
+        "Chuyển website sang Astro",
+        "Tái dựng website tĩnh"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "8beb1de5099a",
+      "source": {
+        "repository": "ethanplusai/astro-conversion-kit",
+        "commit": "8beb1de5099a2be1ddb1d98ffc7b3682343bc420",
+        "path": "skills/convert-site"
+      },
+      "stars": 135,
+      "created_at": "2026-10-22T21:37:28Z",
+      "pushed_at": "2026-10-31T18:10:52Z",
+      "stats_checked": "2026-11-18",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 23,
+        "security": 21,
+        "compatibility": 8,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "templates/site/public/_headers"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "templates/site/src/layouts/Base.astro"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "templates/site/src/pages/404.astro"
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          }
+        ]
+      },
+      "dependencies": [
+        "node"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "browser [mention-hint]",
+          "dist [reference-hint]",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "git [mention-hint]",
+          "github-cli [mention-hint]",
+          "node >=22.23.4 <23 || >=24.22.1 [declared; engines]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "playwright [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          }
+        ],
+        "detected": [
+          {
+            "name": "filesystem-read",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 182
+              },
+              {
+                "file": "references/apply-suggestion.md",
+                "line": 54
+              },
+              {
+                "file": "references/hosting-vercel.md",
+                "line": 75
+              },
+              {
+                "file": "references/phases.md",
+                "line": 224
+              },
+              {
+                "file": "scripts/copy-assets.mjs",
+                "line": 7
+              },
+              {
+                "file": "scripts/css-coverage.mjs",
+                "line": 6
+              },
+              {
+                "file": "scripts/css-prune.mjs",
+                "line": 6
+              },
+              {
+                "file": "scripts/init-site.mjs",
+                "line": 6
+              },
+              {
+                "file": "scripts/link-exceptions.mjs",
+                "line": 6
+              },
+              {
+                "file": "scripts/media-plan.mjs",
+                "line": 5
+              },
+              {
+                "file": "scripts/media-upload.mjs",
+                "line": 6
+              },
+              {
+                "file": "scripts/prelaunch-reconcile.mjs",
+                "line": 8
+              },
+              {
+                "file": "scripts/review-serve.mjs",
+                "line": 6
+              },
+              {
+                "file": "scripts/state.mjs",
+                "line": 5
+              }
+            ]
+          },
+          {
+            "name": "filesystem-write",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/apply-suggestion.md",
+                "line": 54
+              },
+              {
+                "file": "references/phases.md",
+                "line": 454
+              },
+              {
+                "file": "scripts/copy-assets.mjs",
+                "line": 7
+              },
+              {
+                "file": "scripts/css-coverage.mjs",
+                "line": 6
+              },
+              {
+                "file": "scripts/css-prune.mjs",
+                "line": 6
+              },
+              {
+                "file": "scripts/init-site.mjs",
+                "line": 6
+              },
+              {
+                "file": "scripts/link-exceptions.mjs",
+                "line": 6
+              },
+              {
+                "file": "scripts/media-plan.mjs",
+                "line": 5
+              },
+              {
+                "file": "scripts/media-upload.mjs",
+                "line": 6
+              },
+              {
+                "file": "scripts/review-serve.mjs",
+                "line": 6
+              },
+              {
+                "file": "scripts/state.mjs",
+                "line": 5
+              }
+            ]
+          },
+          {
+            "name": "dist",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "references/hosting-vercel.md",
+                "line": 93
+              }
+            ]
+          },
+          {
+            "name": ", ",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "scripts/css-prune.mjs",
+                "line": 152
+              }
+            ]
+          },
+          {
+            "name": "astro",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "templates/site/astro.config.mjs",
+                "line": 2
+              }
+            ]
+          },
+          {
+            "name": "css-tree",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "scripts/css-prune.mjs",
+                "line": 10
+              },
+              {
+                "file": "scripts/lib/inline-scope.mjs",
+                "line": 5
+              },
+              {
+                "file": "scripts/lib/state-selectors.mjs",
+                "line": 5
+              }
+            ]
+          },
+          {
+            "name": "parse5",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "scripts/lib/head-css.mjs",
+                "line": 5
+              },
+              {
+                "file": "scripts/lib/link-records.mjs",
+                "line": 5
+              },
+              {
+                "file": "scripts/lib/page-head.mjs",
+                "line": 4
+              }
+            ]
+          },
+          {
+            "name": "playwright",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "scripts/css-coverage.mjs",
+                "line": 10
+              },
+              {
+                "file": "scripts/preflight.mjs",
+                "line": 214
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "declared",
+            "version": ">=22.23.4 <23 || >=24.22.1",
+            "scope": "engines",
+            "ecosystem": "npm",
+            "evidence": [
+              {
+                "file": "templates/site/package.json",
+                "line": 8
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "scripts/copy-assets.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/css-coverage.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/css-prune.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/init-site.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/lib/excluded.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/lib/head-css.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/lib/inline-scope.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/lib/link-records.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/lib/node-version.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/lib/page-head.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/lib/review-routes.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/lib/state-selectors.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/lib/stores/blob.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/lib/stores/r2.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/lib/stores/retry.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/link-exceptions.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/media-plan.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/media-upload.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/preflight.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/prelaunch-reconcile.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/review-serve.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/state.mjs",
+                "line": 1
+              },
+              {
+                "file": "templates/cloudflare/r2-media-function.js",
+                "line": 1
+              },
+              {
+                "file": "templates/site/astro.config.mjs",
+                "line": 1
+              },
+              {
+                "file": "templates/site/src/lib/exceptions.mjs",
+                "line": 1
+              },
+              {
+                "file": "templates/site/src/lib/site.mjs",
+                "line": 1
+              },
+              {
+                "file": "templates/site/src/pages/robots.txt.js",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 38
+              },
+              {
+                "file": "references/apply-suggestion.md",
+                "line": 43
+              },
+              {
+                "file": "references/build-rules.md",
+                "line": 15
+              },
+              {
+                "file": "references/components-optional.md",
+                "line": 24
+              },
+              {
+                "file": "references/forms.md",
+                "line": 94
+              },
+              {
+                "file": "references/hosting-cloudflare.md",
+                "line": 15
+              },
+              {
+                "file": "references/hosting-vercel.md",
+                "line": 17
+              },
+              {
+                "file": "references/intake.md",
+                "line": 35
+              },
+              {
+                "file": "references/phases.md",
+                "line": 5
+              },
+              {
+                "file": "references/runbook.md",
+                "line": 25
+              },
+              {
+                "file": "references/third-party.md",
+                "line": 9
+              },
+              {
+                "file": "scripts/copy-assets.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/css-coverage.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/css-prune.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/init-site.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/lib/head-css.mjs",
+                "line": 7
+              },
+              {
+                "file": "scripts/lib/inline-scope.mjs",
+                "line": 12
+              },
+              {
+                "file": "scripts/lib/link-records.mjs",
+                "line": 7
+              },
+              {
+                "file": "scripts/lib/node-version.mjs",
+                "line": 5
+              },
+              {
+                "file": "scripts/lib/page-head.mjs",
+                "line": 6
+              },
+              {
+                "file": "scripts/lib/state-selectors.mjs",
+                "line": 15
+              },
+              {
+                "file": "scripts/lib/stores/blob.mjs",
+                "line": 15
+              },
+              {
+                "file": "scripts/lib/stores/r2.mjs",
+                "line": 2
+              },
+              {
+                "file": "scripts/link-exceptions.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/media-plan.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/media-upload.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/preflight.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/prelaunch-reconcile.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/review-serve.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/state.mjs",
+                "line": 1
+              },
+              {
+                "file": "templates/site/AGENTS.md",
+                "line": 22
+              },
+              {
+                "file": "templates/site/CLAUDE.md",
+                "line": 22
+              },
+              {
+                "file": "templates/site/README.md",
+                "line": 6
+              },
+              {
+                "file": "templates/site/docs/LAUNCH.md",
+                "line": 26
+              },
+              {
+                "file": "templates/site/package.json",
+                "line": 8
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 43
+              },
+              {
+                "file": "references/forms.md",
+                "line": 104
+              },
+              {
+                "file": "references/intake.md",
+                "line": 6
+              },
+              {
+                "file": "references/phases.md",
+                "line": 64
+              },
+              {
+                "file": "scripts/css-coverage.mjs",
+                "line": 3
+              },
+              {
+                "file": "scripts/init-site.mjs",
+                "line": 63
+              },
+              {
+                "file": "scripts/preflight.mjs",
+                "line": 2
+              }
+            ]
+          },
+          {
+            "name": "git",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 47
+              },
+              {
+                "file": "references/hosting-vercel.md",
+                "line": 39
+              },
+              {
+                "file": "references/phases.md",
+                "line": 195
+              },
+              {
+                "file": "scripts/init-site.mjs",
+                "line": 264
+              }
+            ]
+          },
+          {
+            "name": "github-cli",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 57
+              },
+              {
+                "file": "references/apply-suggestion.md",
+                "line": 60
+              },
+              {
+                "file": "references/intake.md",
+                "line": 32
+              },
+              {
+                "file": "references/phases.md",
+                "line": 175
+              },
+              {
+                "file": "scripts/preflight.mjs",
+                "line": 17
+              }
+            ]
+          },
+          {
+            "name": "playwright",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 43
+              },
+              {
+                "file": "references/forms.md",
+                "line": 104
+              },
+              {
+                "file": "scripts/css-coverage.mjs",
+                "line": 10
+              },
+              {
+                "file": "scripts/init-site.mjs",
+                "line": 63
+              },
+              {
+                "file": "scripts/preflight.mjs",
+                "line": 2
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 50,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [
+          "templates/site/.gitignore",
+          "templates/site/.nvmrc",
+          "templates/site/.vercelignore"
+        ],
+        "packageCompleteness": "incomplete",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "manifest.json",
+          "references/apply-suggestion.md",
+          "references/build-rules.md",
+          "references/components-optional.md",
+          "references/forms.md",
+          "references/guide.vi.md",
+          "references/hosting-cloudflare.md",
+          "references/hosting-vercel.md",
+          "references/intake.md",
+          "references/phases.md",
+          "references/runbook.md",
+          "references/third-party.md",
+          "scripts/copy-assets.mjs",
+          "scripts/css-coverage.mjs",
+          "scripts/css-prune.mjs",
+          "scripts/init-site.mjs",
+          "scripts/lib/blocked-hosts.mjs",
+          "scripts/lib/excluded.mjs",
+          "scripts/lib/head-css.mjs",
+          "scripts/lib/inline-scope.mjs",
+          "scripts/lib/link-records.mjs",
+          "scripts/lib/node-version.mjs",
+          "scripts/lib/page-head.mjs",
+          "scripts/lib/review-routes.mjs",
+          "scripts/lib/state-selectors.mjs",
+          "scripts/lib/stores/blob.mjs",
+          "scripts/lib/stores/r2.mjs",
+          "scripts/lib/stores/retry.mjs",
+          "scripts/link-exceptions.mjs",
+          "scripts/media-plan.mjs",
+          "scripts/media-upload.mjs",
+          "scripts/preflight.mjs",
+          "scripts/prelaunch-reconcile.mjs",
+          "scripts/review-serve.mjs",
+          "scripts/state.mjs",
+          "templates/cloudflare/r2-media-function.js",
+          "templates/site/AGENTS.md",
+          "templates/site/CLAUDE.md",
+          "templates/site/README.md",
+          "templates/site/astro.config.mjs",
+          "templates/site/docs/LAUNCH.md",
+          "templates/site/docs/plan.md",
+          "templates/site/docs/third-party.md",
+          "templates/site/exceptions.json",
+          "templates/site/package.json",
+          "templates/site/proposals.json",
+          "templates/site/public/_headers",
+          "templates/site/src/layouts/Base.astro",
+          "templates/site/src/lib/exceptions.mjs",
+          "templates/site/src/lib/site.mjs",
+          "templates/site/src/pages/404.astro",
+          "templates/site/src/pages/robots.txt.js",
+          "templates/site/src/styles/site.css",
+          "templates/site/vercel.json"
+        ]
+      },
+      "checksum": "019720778329feb4bec0361beee81f89d1b723250920c3b4b876938458e6f68a",
+      "file_hashes": {
+        "LICENSE": "8ca493501d87377b67fb191cf01a70630cd9f1cdfe11f2e726d34b82f1a7f60e",
+        "SKILL.md": "af606e33bff0618c948e424f99ad54e14529f0dff65239ca2eddf044bf6de671",
+        "manifest.json": "36bc8741a2fa4d00617ef191292c2875593337ff981621664a96b65575825793",
+        "references/apply-suggestion.md": "7c097dc9f9551358a2f0cdfa1611d4b6f59857879f7c88476a82050ca7cbf869",
+        "references/build-rules.md": "6993e36d2519585e8a70873e43df95c9e548651df2d3541df25028d1a650ef51",
+        "references/components-optional.md": "fc3fdf89105a1c0d617e80841047237abb31aec6b04d88cf20da22affd1fb7b3",
+        "references/forms.md": "672f0f4666b2137bd57c17a390b3a1547f9b7bcb1efa4e0a316d598597b49559",
+        "references/guide.vi.md": "dcbbacd3e50bf7e5af79888fe2993bbef122af7ac47418dd097e95994c008a6e",
+        "references/hosting-cloudflare.md": "a6062ef1a4c2a7d6b0b003ef7b3cde04ad04ac1f876c14f85fcb7bbf9cc8b8ff",
+        "references/hosting-vercel.md": "25a4b801944002c94e1926e1aa8b57a8d17e19129102d98af5f6e5eb66ce3d91",
+        "references/intake.md": "b35fea86f1b40ead4a579a27afc7f51469e378aa708b0e4b739e9b4976da34e0",
+        "references/phases.md": "8950edd720e2d55d863bca31f7a741dd3cdb1c6424e6b36124c5d66f2ebd62be",
+        "references/runbook.md": "a698999a55c4b390fc7520353bd842c331455b866d2276b88416a315f4fa8f94",
+        "references/third-party.md": "dbb1c3c761842fc6ee46be107231c17f37aa4ce0de7ceeadb90753a98b9c9b23",
+        "scripts/copy-assets.mjs": "23e8fadc098650f10778d33c22e180303d881f8353ae5774bd18df811c29704e",
+        "scripts/css-coverage.mjs": "cbcc5bc58f5655a2133853907f1da2e40729f91b5468701cbfe03761a0647c55",
+        "scripts/css-prune.mjs": "1a7795783823254346d1c79b0971f43277b768117e55c6222b012a0060b08766",
+        "scripts/init-site.mjs": "374e28c0381b869e43898fdb9f8c2b898aa4b7d7ecb5a2cce6625a2c7d9b0508",
+        "scripts/lib/blocked-hosts.mjs": "b00d9fa22be47b2d20aa4248875ff607181d5e4b66a5dbc032e8285b6193fb83",
+        "scripts/lib/excluded.mjs": "40c990ca8fc566f1d64a2623b76c81403003edc7f3558240f9650ac3eabaf5ed",
+        "scripts/lib/head-css.mjs": "58c7543a107a026b60224e394c49747ee037ab3da935582b28de2224960ae2bc",
+        "scripts/lib/inline-scope.mjs": "09e59eb349c388faf5231bb51285a2b3efa5884092edd0a8d6b60dac9f571023",
+        "scripts/lib/link-records.mjs": "1530ddac6467c83922645be2a3fd1e6971c09f81208563bd59bd22fc172a0000",
+        "scripts/lib/node-version.mjs": "fde8427177ef04bb27b124278694411ba85b791ac1fcae9e43ff3703b55099ff",
+        "scripts/lib/page-head.mjs": "c58fb4d8dbb0340bea49430649178f70b826e4368bee14b0d2090713eca8a7bb",
+        "scripts/lib/review-routes.mjs": "2af42e57e215c78da25c9462cec2d7dbcd8b0d73fc4c2874f028ee6b4671e2a6",
+        "scripts/lib/state-selectors.mjs": "e28409889b2a34082b42935c131c4df1a55bdc5978d753d24db642a9c5ccbe56",
+        "scripts/lib/stores/blob.mjs": "d5b961653d3af407cec99fea6a2c664ba8ef39af36720f2ca053e2df1534226f",
+        "scripts/lib/stores/r2.mjs": "0afafefd4f80eac6e66b21255eb8301580b562d46e73bae396ab0b2c65b3b16d",
+        "scripts/lib/stores/retry.mjs": "d89b6855347dd03fe2d0cd2fd5f452d74d5cb3efeab527bf9aefc5cbef37b8d8",
+        "scripts/link-exceptions.mjs": "3d633e9b170ab341d555bea33005f602164dcd95afd8acddb0cc2293dc376eb6",
+        "scripts/media-plan.mjs": "16c04a2b2fca6c51622f8cee4411edabe99c6e9d8341b20f70310910f2057985",
+        "scripts/media-upload.mjs": "067f454f00c566cf8c4640279041efd5b6f29d17f744eef569804e5b335675b6",
+        "scripts/preflight.mjs": "8fdcb5bc8d55d3618a42c6bcca462a0d677088aa18a920ec44bde3e148a53e05",
+        "scripts/prelaunch-reconcile.mjs": "465d0bb01b4a714fbc1dc5e03d20e08a38b9e947e4784ba397e51ef4211ed6cf",
+        "scripts/review-serve.mjs": "20c5ff6cb79533e25131bceaeb35760c58f89f5bbe27651aef727cbfcee00ea7",
+        "scripts/state.mjs": "ce3b48f648d37fddccfee291c1b2b26c48f6396cf9e2ce5b91c213d171010bf9",
+        "templates/cloudflare/r2-media-function.js": "685f3c50103b2c809370ec4cb35304426bc737b3e975d2703eb8fbeae6b1db9d",
+        "templates/site/AGENTS.md": "8933b2846319e795934bf93601d8cd0580571a7ba0e3b3b1dcda716043e7b793",
+        "templates/site/CLAUDE.md": "8933b2846319e795934bf93601d8cd0580571a7ba0e3b3b1dcda716043e7b793",
+        "templates/site/README.md": "bf1bde0a1872dd33e1a29edb6eaaeac265f162cc93ada704f6abec67a1415e0d",
+        "templates/site/astro.config.mjs": "4bec0b23923806d1d2965ae39cda2a08d886e967bb2620a104a91dcb40674c20",
+        "templates/site/docs/LAUNCH.md": "1ce924a896fa033e17cf68d281a45467b8b9fa9e73bb351180426f31e3c3c6de",
+        "templates/site/docs/plan.md": "81730fd2ca9bb3e9e6f8ce0369763a0339883cff0ad170cf950e4a729f44a001",
+        "templates/site/docs/third-party.md": "2ec2f4d8d91a6972d3c522a0708d64873f05201977b18c02156837baa94f3ac1",
+        "templates/site/exceptions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "templates/site/package.json": "aebfc0d050727face345d6573bb2c15cfa5185bd1ede22f2a1bea94a73b06338",
+        "templates/site/proposals.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "templates/site/public/_headers": "86fb2f01e2e4bd72e9564cbf8a20f42448b81bd766b36ab56d23208d38387f20",
+        "templates/site/src/layouts/Base.astro": "28fcdfd48ebcc3747563bcb007b0c3496aab82308c91e050bddd85463031c966",
+        "templates/site/src/lib/exceptions.mjs": "fe59d50f1f99924e74f3a7976aae720048eee14414650336cfe7d71818b5ea25",
+        "templates/site/src/lib/site.mjs": "e77c05e2e5245041cd277f470fdf8bb6a2e04f27e776774b0b18aca9e1ca2eea",
+        "templates/site/src/pages/404.astro": "8d13058ba241d2730b5b94177be1d13531f3037b1ecc84f54480a76d4c3e5328",
+        "templates/site/src/pages/robots.txt.js": "daa899e9047e0ad7a3d66eeb03c993b57bca932bf9db9f7091f83e8eb6d61e87",
+        "templates/site/src/styles/site.css": "298a6e860fc3597e0dd6866d44e583ae2ed8998b9fbebe3344d74d4ecddce250",
+        "templates/site/vercel.json": "c43a18964981c63a0fbb8d99f6b45c5a34e9e988ee55b790bb11abda4167369b"
+      },
+      "notes": [],
+      "last_checked": "2026-11-18T11:28:48.362Z",
+      "area": "quarantine"
     },
     {
       "id": "craft-anything",
@@ -21371,6 +23157,218 @@
       "notes": [],
       "last_checked": "2026-11-14T03:42:09.893Z",
       "area": "quarantine"
+    },
+    {
+      "id": "e2e-red-triage",
+      "name": "e2e-red-triage",
+      "description": "Classify one unexpected end-to-end test failure as a product defect or an environment fault needing a new preflight check. MANUAL-ONLY: load when the suite runner names a specific failure. NEVER auto-load from context.",
+      "description_vi": "Phân loại một lỗi kiểm thử đầu cuối khó giải thích, phân biệt lỗi sản phẩm với lỗi môi trường và đề xuất kiểm tra phòng ngừa.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "e2e-red-triage",
+        "version": "47336d1a25dd",
+        "source": {
+          "url": "https://github.com/sno-ai/sno-station-skills",
+          "commit": "47336d1a25dd434ebec0a37593abf66ccf1fca98",
+          "sha256": "d877a2c2a1373c43a9118ccb8d64105f70269006f1480a5d38b1b86b33493b8c",
+          "license": "Apache-2.0"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Phân loại một lỗi kiểm thử đầu cuối khó giải thích, phân biệt lỗi sản phẩm với lỗi môi trường và đề xuất kiểm tra phòng ngừa.",
+          "aliases": [
+            "Chẩn đoán kiểm thử đầu cuối",
+            "Phân loại lỗi E2E"
+          ],
+          "keywords": [
+            "e2e",
+            "red",
+            "triage",
+            "Chẩn đoán kiểm thử đầu cuối",
+            "Phân loại lỗi E2E"
+          ],
+          "examples": [
+            "Dùng e2e-red-triage cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "d877a2c2a1373c43a9118ccb8d64105f70269006f1480a5d38b1b86b33493b8c"
+        },
+        "requiredCapabilities": [
+          "bash [file-type-hint]",
+          "bash [mention-hint]",
+          "python [mention-hint]"
+        ],
+        "permissions": [
+          "shell",
+          "filesystem-read",
+          "filesystem-write"
+        ],
+        "syncedAt": "2026-11-18T11:22:34.799Z",
+        "security": {
+          "status": "review-required",
+          "findings": []
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Chẩn đoán kiểm thử đầu cuối",
+        "Phân loại lỗi E2E"
+      ],
+      "keywords": [
+        "e2e",
+        "red",
+        "triage",
+        "Chẩn đoán kiểm thử đầu cuối",
+        "Phân loại lỗi E2E"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "47336d1a25dd",
+      "source": {
+        "repository": "sno-ai/sno-station-skills",
+        "commit": "47336d1a25dd434ebec0a37593abf66ccf1fca98",
+        "path": "plugins/sno-station-standalone/skills/e2e-red-triage"
+      },
+      "stars": 865,
+      "created_at": "2026-10-01T04:18:51Z",
+      "pushed_at": "2026-11-18T05:56:39Z",
+      "stats_checked": "2026-11-18",
+      "license": "Apache-2.0",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 71,
+      "score_parts": {
+        "function": 23,
+        "security": 21,
+        "compatibility": 12,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "NOTICE"
+        }
+      ],
+      "approval_status": "review-required",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ]
+      },
+      "dependencies": [],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "bash [file-type-hint]",
+          "bash [mention-hint]",
+          "python [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ],
+        "detected": [
+          {
+            "name": "bash",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/selftest/run-selftest.sh",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/selftest/run-selftest.sh",
+                "line": 8
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/selftest/run-selftest.sh",
+                "line": 1
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 2,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "NOTICE",
+          "SKILL.md",
+          "manifest.json",
+          "references/guide.vi.md",
+          "scripts/selftest/run-selftest.sh"
+        ]
+      },
+      "checksum": "73af07791c3759a8d01833fea38251e1b3db0fafc2bf5e92fa94f908249af593",
+      "file_hashes": {
+        "LICENSE": "32dbd1ea423105137525da4c63b9bc80df73b74dd8aca88237a96d41039358d2",
+        "NOTICE": "dac289d596a7d28c7112e629af150f2558339ad3e5eec802c0b1eead1cbd4710",
+        "SKILL.md": "d877a2c2a1373c43a9118ccb8d64105f70269006f1480a5d38b1b86b33493b8c",
+        "manifest.json": "48de34691492aed57b5468ef756b5ad510e7773415ab63b244b1bf9b08bd470d",
+        "references/guide.vi.md": "88436f728a2a1bd5a8e2a18ccf3edcda8672aad965265e6f3f09a34000a92648",
+        "scripts/selftest/run-selftest.sh": "998965a4f5793b78d51a78bfe67ab37f1546e95120419a3ab32840ae18ef0db9"
+      },
+      "notes": [],
+      "last_checked": "2026-11-18T11:22:34.799Z",
+      "area": "skills"
     },
     {
       "id": "earshot",
@@ -36164,6 +38162,525 @@
       "area": "quarantine"
     },
     {
+      "id": "huashu-motion",
+      "name": "huashu-motion",
+      "description": "Motion graphics, launch videos and explainers as editable code. A director picks the motion language for your product; you point at frames to change them. 动画、发布片、解说视频，指着画面改。",
+      "description_vi": "Tạo video giới thiệu sản phẩm và đồ họa chuyển động bằng HTML/GSAP, hỗ trợ xem bản dựng, góp ý theo khung hình và kiểm tra chất lượng.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "huashu-motion",
+        "version": "f09dd7a29e2c",
+        "source": {
+          "url": "https://github.com/alchaincyf/huashu-motion",
+          "commit": "f09dd7a29e2c9c574939d54db6c0768aad51232a",
+          "sha256": "7de1e1bb0e50834d1f2dece4c93c63be08bb0e88446d8c80c65efa5cc849549b",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Tạo video giới thiệu sản phẩm và đồ họa chuyển động bằng HTML/GSAP, hỗ trợ xem bản dựng, góp ý theo khung hình và kiểm tra chất lượng.",
+          "aliases": [
+            "Đồ họa chuyển động",
+            "Video giới thiệu sản phẩm"
+          ],
+          "keywords": [
+            "huashu",
+            "motion",
+            "Đồ họa chuyển động",
+            "Video giới thiệu sản phẩm"
+          ],
+          "examples": [
+            "Dùng huashu-motion cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "7de1e1bb0e50834d1f2dece4c93c63be08bb0e88446d8c80c65efa5cc849549b"
+        },
+        "requiredCapabilities": [
+          "browser [mention-hint]",
+          "ffmpeg [mention-hint]",
+          "ffprobe [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "image-generation [mention-hint]",
+          "node [mention-hint]",
+          "python [mention-hint]",
+          "react [mention-hint]",
+          "three [mention-hint]"
+        ],
+        "permissions": [
+          "network"
+        ],
+        "syncedAt": "2026-11-18T11:22:34.799Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "Manual review: bin/om runs npx --yes huashu-motion, which downloads and executes an unpinned package; do not activate until the package and action scope are reviewed."
+          ]
+        },
+        "compatibility": {
+          "status": "incompatible",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+            "The upstream core mixes English instructions with a Chinese author-support section; Chinese-language support is not declared by this hub schema."
+          ]
+        }
+      },
+      "aliases": [
+        "Đồ họa chuyển động",
+        "Video giới thiệu sản phẩm"
+      ],
+      "keywords": [
+        "huashu",
+        "motion",
+        "Đồ họa chuyển động",
+        "Video giới thiệu sản phẩm"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "f09dd7a29e2c",
+      "source": {
+        "repository": "alchaincyf/huashu-motion",
+        "commit": "f09dd7a29e2c9c574939d54db6c0768aad51232a",
+        "path": "skills/huashu-motion"
+      },
+      "stars": 2864,
+      "created_at": "2026-10-18T12:19:27Z",
+      "pushed_at": "2026-11-16T06:20:58Z",
+      "stats_checked": "2026-11-18",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 21,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "bin/om"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "references/scores/first-light.abc"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "references/scores/four-rooms.abc"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "references/scores/signal.abc"
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffprobe",
+            "installerId": "ffmpeg"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "ffmpeg"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "browser [mention-hint]",
+          "ffmpeg [mention-hint]",
+          "ffprobe [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "image-generation [mention-hint]",
+          "node [mention-hint]",
+          "python [mention-hint]",
+          "react [mention-hint]",
+          "three [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "ffprobe",
+            "installerId": "ffmpeg"
+          }
+        ],
+        "detected": [
+          {
+            "name": "filesystem-read",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/talking-head.md",
+                "line": 30
+              }
+            ]
+          },
+          {
+            "name": "image-generation",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/about-author.md",
+                "line": 49
+              }
+            ]
+          },
+          {
+            "name": "react",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/grammars.md",
+                "line": 38
+              },
+              {
+                "file": "references/library/languages/system-diagram.md",
+                "line": 23
+              }
+            ]
+          },
+          {
+            "name": "three",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 103
+              },
+              {
+                "file": "references/contract.md",
+                "line": 3
+              },
+              {
+                "file": "references/depth.md",
+                "line": 12
+              },
+              {
+                "file": "references/library/README.md",
+                "line": 32
+              },
+              {
+                "file": "references/library/languages/character.md",
+                "line": 35
+              },
+              {
+                "file": "references/library/languages/generative-field.md",
+                "line": 29
+              },
+              {
+                "file": "references/visual-direction.md",
+                "line": 68
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 41
+              },
+              {
+                "file": "references/experience.md",
+                "line": 211
+              },
+              {
+                "file": "references/sound.md",
+                "line": 99
+              },
+              {
+                "file": "references/talking-head.md",
+                "line": 65
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/experience.md",
+                "line": 26
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 13
+              },
+              {
+                "file": "references/about-author.md",
+                "line": 29
+              },
+              {
+                "file": "references/contract.md",
+                "line": 3
+              },
+              {
+                "file": "references/depth.md",
+                "line": 108
+              },
+              {
+                "file": "references/experience.md",
+                "line": 26
+              },
+              {
+                "file": "references/library/formats.md",
+                "line": 95
+              },
+              {
+                "file": "references/library/languages/continuous-morph.md",
+                "line": 42
+              },
+              {
+                "file": "references/library/languages/kinetic-type.md",
+                "line": 40
+              },
+              {
+                "file": "references/library/languages/showreel.md",
+                "line": 4
+              },
+              {
+                "file": "references/library/product-fit.md",
+                "line": 45
+              },
+              {
+                "file": "references/library/techniques.md",
+                "line": 234
+              }
+            ]
+          },
+          {
+            "name": "ffmpeg",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "ffmpeg",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 90
+              },
+              {
+                "file": "references/experience.md",
+                "line": 26
+              },
+              {
+                "file": "references/library/languages/photo-led.md",
+                "line": 22
+              },
+              {
+                "file": "references/sound.md",
+                "line": 139
+              },
+              {
+                "file": "references/talking-head.md",
+                "line": 18
+              }
+            ]
+          },
+          {
+            "name": "ffprobe",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "ffmpeg",
+            "evidence": [
+              {
+                "file": "references/talking-head.md",
+                "line": 18
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 42,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "bin/om",
+          "manifest.json",
+          "references/about-author.md",
+          "references/colour.md",
+          "references/contract.md",
+          "references/craft.md",
+          "references/depth.md",
+          "references/director.md",
+          "references/experience.md",
+          "references/grammars.md",
+          "references/guide.vi.md",
+          "references/library/README.md",
+          "references/library/formats.md",
+          "references/library/languages/3d-object.md",
+          "references/library/languages/art-styles.md",
+          "references/library/languages/card-montage.md",
+          "references/library/languages/character.md",
+          "references/library/languages/continuous-morph.md",
+          "references/library/languages/cursor-demo.md",
+          "references/library/languages/data-story.md",
+          "references/library/languages/editorial-collage.md",
+          "references/library/languages/flat-world.md",
+          "references/library/languages/generative-field.md",
+          "references/library/languages/hand-drawn.md",
+          "references/library/languages/kinetic-type.md",
+          "references/library/languages/liquid-glass.md",
+          "references/library/languages/mechanism.md",
+          "references/library/languages/modular-grid.md",
+          "references/library/languages/photo-led.md",
+          "references/library/languages/retro-digital.md",
+          "references/library/languages/showreel.md",
+          "references/library/languages/system-diagram.md",
+          "references/library/languages/talking-head.md",
+          "references/library/product-fit.md",
+          "references/library/techniques.md",
+          "references/music.md",
+          "references/product-demo-continuity.md",
+          "references/provenance.md",
+          "references/punch-up.md",
+          "references/rhythm.md",
+          "references/scores/first-light.abc",
+          "references/scores/four-rooms.abc",
+          "references/scores/signal.abc",
+          "references/sound.md",
+          "references/talking-head.md",
+          "references/verification.md",
+          "references/visual-direction.md"
+        ]
+      },
+      "checksum": "7051b305ce454dc46a26759103a2a0afb6048666bb82bf3ecff38c80f7233270",
+      "file_hashes": {
+        "LICENSE": "b8fa8ecfc57cf8339ecdab05e62e811a5d00d1e1f9373ff1de64cc9f261e2d3e",
+        "SKILL.md": "7de1e1bb0e50834d1f2dece4c93c63be08bb0e88446d8c80c65efa5cc849549b",
+        "bin/om": "58db7a01cce140a26a302a43816c03f512ebae8b526fd8ee2bd0a0e194a22eed",
+        "manifest.json": "bc7ab10e37a606265e369e70f7ad8985791d35e0686e3bf50c73e15f2c310488",
+        "references/about-author.md": "f53cdc9ca43881fd95f75b16b9176190708117b138c3d4ff2560e78b9ca2b945",
+        "references/colour.md": "11d0dede9e2608216a80645ae6a77caf1c3aacbc4c62425f105bb954c1a403df",
+        "references/contract.md": "147dafc907441bd89e5ec5124a9de14e670e243f164489e2613233452fcfb5e4",
+        "references/craft.md": "8848876be15b82e3c6f64cfbb4462b564b19b1beff69bd144b265baa4d6ffe1e",
+        "references/depth.md": "f2663b6cf9bf12e123a2e31a8552c57aab9d698ec788ce21317fd2fc4fefb9f5",
+        "references/director.md": "f2edb6c10c50e7307efd703e7413c5ab3840ba7acbb65c98a8a3088778502052",
+        "references/experience.md": "51ccbfc58230fd26ae302c186e508e364abcc1d17c46d398ffc901e111e73e39",
+        "references/grammars.md": "b2d6ac63291877e299622de847b3891186b828cf3f06a67465a60f81cad58341",
+        "references/guide.vi.md": "d9620ae887d10577122415976a375c32c20f5cde52bb65b3c3e10186d3e5a62d",
+        "references/library/README.md": "2339e200bfa35d2bfc1ec28745d914d381ccedc8b78392eb51b36639f6c58fd4",
+        "references/library/formats.md": "12caf909a415f392488b83dca6f13936733b2a4436daa7df0b6326a538a41536",
+        "references/library/languages/3d-object.md": "df7b540e602151387af462419ba00ea5133f4b66a46275be4982191a34e8a18b",
+        "references/library/languages/art-styles.md": "628c5a94285b53cd58f8203942c9ceeb7a4364326855a83a19cf6afff96ba965",
+        "references/library/languages/card-montage.md": "0cd6e5caad01738d41a9ba37ac9ae14bbbc2f896696b0a60bb57754e2608d476",
+        "references/library/languages/character.md": "0187538b564f5718e59652c3ec5066522b54404e299b024409ecab43ea8e58da",
+        "references/library/languages/continuous-morph.md": "ec261fb00859122320fa4a60e9c23ccb4862f1b1ce51f222d1d10fcbb4e64aab",
+        "references/library/languages/cursor-demo.md": "3d9cc40bfe891231cb601ebc2d75f8e575e42434d1c0b661310bdee1efd42768",
+        "references/library/languages/data-story.md": "72101951c0c6001c138886f92964252ba8af2f567cd3a57bb5ec9026c7d53d7b",
+        "references/library/languages/editorial-collage.md": "05423c1e4b27190c1621b879631846a36315e861d5368b665348b9963034ba0a",
+        "references/library/languages/flat-world.md": "29b9d635f63f27e8edcdeba6a9bed7597186d93ab14cd8d0344a47fcaa17cecd",
+        "references/library/languages/generative-field.md": "5539275e1e6d6c354999481ceb3dd2fcf6ac3aa7b6c72bbff22f5f296db3b564",
+        "references/library/languages/hand-drawn.md": "81749bdafd2ab5987984e71ec75ca86f2f4f77723418a749bb625e9acabe4256",
+        "references/library/languages/kinetic-type.md": "c7647d0e4893a39e2d8ef95fc3ba89ee4dabd2f3e84fd355150501e26f24d94f",
+        "references/library/languages/liquid-glass.md": "a1108a383ea7cbc63efa0062823d911717f8b623e3d9466db0277b3c9d7c3d89",
+        "references/library/languages/mechanism.md": "fb89085eabab7105bb7a96b192ead8a9eda27bfa091300240a693b1b74d69d39",
+        "references/library/languages/modular-grid.md": "a94a5256641b842d72cac87c7d8950d6efa1713839e8571cc19b66f0cb575545",
+        "references/library/languages/photo-led.md": "7b451709626a6da081a5ed2055705855c10a98bec1cd453e169abb9512d8db5a",
+        "references/library/languages/retro-digital.md": "28ee58df5753a0720c88a6cb6817c83c9c1a12cb159ff8e7abe8a479008b9f72",
+        "references/library/languages/showreel.md": "358df11aabe7c977c736d971e49b9508c4d69b1bb4b02216bf12884dfe6b5838",
+        "references/library/languages/system-diagram.md": "837cd2bfb4d1c93dc6f5d1a40d5974f514a841147bb1a2b555e028012abc9e71",
+        "references/library/languages/talking-head.md": "6ca40ee1a4f85ac026dd1590150a39379a981f4f0d27ff1d11d5dbbf6660fb0b",
+        "references/library/product-fit.md": "3c7fe709105647b92cd881f947dd958c389035295f6fb89487476fb7e2018b55",
+        "references/library/techniques.md": "181fbe011ae69778a5a4e53ae10e98daf6bf061c55b16e8b44c1ee9d9f8b997f",
+        "references/music.md": "55dce697a408856716f19bc01cf94ca3b7e2444649f3cb149af44d52411e7287",
+        "references/product-demo-continuity.md": "84a545faf82bc7e8f94781a8d4313dd063bdd966dd77bd13a0f23b62fe98e41e",
+        "references/provenance.md": "139268157eade6168b9835ff2d3011dea6f788193c589b7ee131414382c8c145",
+        "references/punch-up.md": "db6c20920757555721e1e000a377b0c6827d42286253a08ad38276601f4ef7e5",
+        "references/rhythm.md": "a9a86b12c8d6d30a015a2564c76c24c186359b295f1a7b6e74863fe6e24002d2",
+        "references/scores/first-light.abc": "b776c1c6bebce76b06ee3995be470b7cd9ecfb390a632c09072ae808141d2872",
+        "references/scores/four-rooms.abc": "7a2bf30ec898bbc0e49d10dd639da8e18e5bae5913f868c0e05c81a1a26b8b13",
+        "references/scores/signal.abc": "99ec2f7633745412b01c1cfc1fc3c741f035b4a2c5e4d959d2ae693e26689733",
+        "references/sound.md": "34ee9ab92fef7c5bf40c43f799ddb36eaeccbb491650dbace4b7a93e98039f78",
+        "references/talking-head.md": "e78d08cf74028059e732ada71f7eabfc0f46a61b2d9be90a8143f6eb3c968ca4",
+        "references/verification.md": "982ec8ee30be501e5ded5a6425bc8df7ceec29af0d94cf97a41cf6710d52b6cf",
+        "references/visual-direction.md": "5f514f094a221df53ac1354d481b780bc8d29394aa1f879fb94259d42efa8ca0"
+      },
+      "notes": [],
+      "last_checked": "2026-11-18T11:22:34.799Z",
+      "area": "quarantine"
+    },
+    {
       "id": "humanizer",
       "name": "humanizer",
       "description": "Rewrite AI-sounding text so it reads like the writer without changing what it says.\nUse when editing or reviewing prose for AI tells: not-X-but-Y contrasts, one-line\nclosers, staged openers, forced triads, dashes everywhere, inflated claims, sales\nlanguage, stock AI words, bold labels, or filler.",
@@ -48302,6 +50819,3013 @@
       },
       "notes": [],
       "last_checked": "2026-11-13T09:22:43.610Z",
+      "area": "quarantine"
+    },
+    {
+      "id": "papermorph",
+      "name": "papermorph",
+      "description": "Make or edit animated, narrated, interactive web books from reference PDFs, animated picture books (paper-puppet films) from a story, a joke or a fairy tale, narrated documentaries about a book or an idea, built from public-domain pictures, upright shorts for a phone feed that make one point in under three minutes, scroll stories whose picture changes as the reader scrolls, and maps you explore, where a stretch of history plays year by year and the reader clicks the people and places on it. Use for book planning, storyboards, chapter animation and exercises, narration, and cover and contents pages, including \"make the next chapter\", \"turn this story into a picture book\", \"make a documentary about this book\", \"make a short about this for YouTube Shorts\", \"fix this animation\" or \"make an interactive map of Europe in the 1920s\". Deliver runnable static book files; bookshelf design, bookshelf registration and hosting are separate tasks.",
+      "description_vi": "Tạo sách web và bài học hoạt hình có lời dẫn, sách tranh tương tác, phim tài liệu kể chuyện và bản đồ khám phá từ tài liệu hoặc ý tưởng.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "papermorph",
+        "version": "839a62cad3c7",
+        "source": {
+          "url": "https://github.com/DozenTwelve/Papermorph",
+          "commit": "839a62cad3c74446944a167faff07c994f33e5b7",
+          "sha256": "eacef1396ea67141e8ad8aeece1a7739b8eb0edb5c1c6aec0fde9640b1618b1a",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Tạo sách web và bài học hoạt hình có lời dẫn, sách tranh tương tác, phim tài liệu kể chuyện và bản đồ khám phá từ tài liệu hoặc ý tưởng.",
+          "aliases": [
+            "Sách web hoạt hình",
+            "Truyện tương tác"
+          ],
+          "keywords": [
+            "papermorph",
+            "Sách web hoạt hình",
+            "Truyện tương tác"
+          ],
+          "examples": [
+            "Dùng papermorph cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "eacef1396ea67141e8ad8aeece1a7739b8eb0edb5c1c6aec0fde9640b1618b1a"
+        },
+        "requiredCapabilities": [
+          "browser [mention-hint]",
+          "ffmpeg [mention-hint]",
+          "ffprobe [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "playwright [mention-hint]",
+          "powershell [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]",
+          "text-to-speech [mention-hint]",
+          "three [mention-hint]"
+        ],
+        "permissions": [
+          "shell",
+          "filesystem-read",
+          "filesystem-write",
+          "network"
+        ],
+        "syncedAt": "2026-11-18T11:22:34.799Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "assets/templates/documentary/lib/fonts/EBGaramond-italic-400-latin-ext.woff2: binary-file (low)",
+            "assets/templates/documentary/lib/fonts/EBGaramond-italic-400-latin.woff2: binary-file (low)",
+            "assets/templates/documentary/lib/fonts/EBGaramond-normal-400-latin-ext.woff2: binary-file (low)",
+            "assets/templates/documentary/lib/fonts/EBGaramond-normal-400-latin.woff2: binary-file (low)",
+            "assets/templates/documentary/lib/fonts/EBGaramond-normal-500-latin-ext.woff2: binary-file (low)",
+            "assets/templates/documentary/lib/fonts/EBGaramond-normal-500-latin.woff2: binary-file (low)",
+            "assets/templates/documentary/lib/fonts/Oswald-normal-500-latin-ext.woff2: binary-file (low)",
+            "assets/templates/documentary/lib/fonts/Oswald-normal-500-latin.woff2: binary-file (low)",
+            "assets/templates/documentary/lib/fonts/Oswald-normal-600-latin-ext.woff2: binary-file (low)",
+            "assets/templates/documentary/lib/fonts/Oswald-normal-600-latin.woff2: binary-file (low)",
+            "references/lessons/maths.md: invisible-unicode (high)"
+          ]
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Sách web hoạt hình",
+        "Truyện tương tác"
+      ],
+      "keywords": [
+        "papermorph",
+        "Sách web hoạt hình",
+        "Truyện tương tác"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "839a62cad3c7",
+      "source": {
+        "repository": "DozenTwelve/Papermorph",
+        "commit": "839a62cad3c74446944a167faff07c994f33e5b7",
+        "path": ".claude/skills/papermorph"
+      },
+      "stars": 1774,
+      "created_at": "2026-10-03T01:38:22Z",
+      "pushed_at": "2026-11-16T22:39:12Z",
+      "stats_checked": "2026-11-18",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 21,
+        "security": 0,
+        "compatibility": 8,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/templates/documentary/lib/fonts/EBGaramond-italic-400-latin-ext.woff2"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/templates/documentary/lib/fonts/EBGaramond-italic-400-latin.woff2"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/templates/documentary/lib/fonts/EBGaramond-normal-400-latin-ext.woff2"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/templates/documentary/lib/fonts/EBGaramond-normal-400-latin.woff2"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/templates/documentary/lib/fonts/EBGaramond-normal-500-latin-ext.woff2"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/templates/documentary/lib/fonts/EBGaramond-normal-500-latin.woff2"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/templates/documentary/lib/fonts/Oswald-normal-500-latin-ext.woff2"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/templates/documentary/lib/fonts/Oswald-normal-500-latin.woff2"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/templates/documentary/lib/fonts/Oswald-normal-600-latin-ext.woff2"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/templates/documentary/lib/fonts/Oswald-normal-600-latin.woff2"
+        },
+        {
+          "rule": "invisible-unicode",
+          "severity": "high",
+          "file": "references/lessons/maths.md",
+          "line": 58
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "ffprobe",
+            "installerId": "ffmpeg"
+          }
+        ]
+      },
+      "dependencies": [
+        "ffmpeg",
+        "node"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "browser [mention-hint]",
+          "ffmpeg [mention-hint]",
+          "ffprobe [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "playwright [mention-hint]",
+          "powershell [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]",
+          "text-to-speech [mention-hint]",
+          "three [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "ffprobe",
+            "installerId": "ffmpeg"
+          }
+        ],
+        "detected": [
+          {
+            "name": "filesystem-read",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/films/documentary.md",
+                "line": 45
+              }
+            ]
+          },
+          {
+            "name": "text-to-speech",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 72
+              },
+              {
+                "file": "assets/templates/explore/lib/explore.js",
+                "line": 9
+              },
+              {
+                "file": "references/core/review.md",
+                "line": 16
+              },
+              {
+                "file": "references/core/sound.md",
+                "line": 31
+              },
+              {
+                "file": "references/core/style.md",
+                "line": 45
+              },
+              {
+                "file": "references/explore/explore.md",
+                "line": 19
+              },
+              {
+                "file": "references/films/documentary.md",
+                "line": 10
+              },
+              {
+                "file": "references/films/films.md",
+                "line": 35
+              },
+              {
+                "file": "references/films/shorts.md",
+                "line": 37
+              },
+              {
+                "file": "references/lessons/lessons.md",
+                "line": 46
+              },
+              {
+                "file": "references/picture-books/listen-and-find.md",
+                "line": 32
+              },
+              {
+                "file": "references/picture-books/stories.md",
+                "line": 69
+              },
+              {
+                "file": "scripts/eleven.py",
+                "line": 8
+              },
+              {
+                "file": "scripts/explore.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/join.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/level.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/lint.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/mouths.py",
+                "line": 2
+              },
+              {
+                "file": "scripts/music.py",
+                "line": 48
+              },
+              {
+                "file": "scripts/new_book.py",
+                "line": 128
+              },
+              {
+                "file": "scripts/shot.py",
+                "line": 132
+              },
+              {
+                "file": "scripts/silence.py",
+                "line": 3
+              },
+              {
+                "file": "scripts/tts.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "three",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "assets/templates/maps/lib/globe.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/maps/lib/map.js",
+                "line": 3
+              },
+              {
+                "file": "references/films/films.md",
+                "line": 54
+              },
+              {
+                "file": "scripts/check.py",
+                "line": 10
+              },
+              {
+                "file": "scripts/geo.py",
+                "line": 8
+              }
+            ]
+          },
+          {
+            "name": "argparse",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "assets/templates/scroll/e2e.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/bake_puppets.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/check.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/check_blank.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/commons.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/cutout.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/eleven.py",
+                "line": 60
+              },
+              {
+                "file": "scripts/engine.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/explore.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/export.py",
+                "line": 46
+              },
+              {
+                "file": "scripts/frames.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/geo.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/items.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/level.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/lift.py",
+                "line": 71
+              },
+              {
+                "file": "scripts/lint.py",
+                "line": 40
+              },
+              {
+                "file": "scripts/music.py",
+                "line": 45
+              },
+              {
+                "file": "scripts/new_book.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/outline.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/overlap.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/paint.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/paint_openai.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/perf.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/playlog.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/prep.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/refs.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/safe.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/scorm.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/sfx.py",
+                "line": 871
+              },
+              {
+                "file": "scripts/shot.py",
+                "line": 33
+              },
+              {
+                "file": "scripts/split_pages.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/sprites.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/still.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/strip.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/topo.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/trace.py",
+                "line": 12
+              },
+              {
+                "file": "scripts/video.py",
+                "line": 17
+              }
+            ]
+          },
+          {
+            "name": "array",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/join.py",
+                "line": 26
+              }
+            ]
+          },
+          {
+            "name": "asyncio",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "assets/scorm/test/check_scorm.py",
+                "line": 12
+              },
+              {
+                "file": "assets/templates/e2e.py",
+                "line": 8
+              },
+              {
+                "file": "scripts/bake_sets.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/tts.py",
+                "line": 41
+              }
+            ]
+          },
+          {
+            "name": "browsers",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/bake_puppets.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/bake_sets.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/browsers.py",
+                "line": 3
+              },
+              {
+                "file": "scripts/check.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/check_blank.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/explore.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/export.py",
+                "line": 50
+              },
+              {
+                "file": "scripts/music.py",
+                "line": 47
+              },
+              {
+                "file": "scripts/overlap.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/perf.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/playlog.py",
+                "line": 34
+              },
+              {
+                "file": "scripts/safe.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/shot.py",
+                "line": 37
+              },
+              {
+                "file": "scripts/still.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/strip.py",
+                "line": 30
+              }
+            ]
+          },
+          {
+            "name": "cv2",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/lift.py",
+                "line": 78
+              }
+            ]
+          },
+          {
+            "name": "datetime",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/ledger.py",
+                "line": 10
+              },
+              {
+                "file": "scripts/refs.py",
+                "line": 31
+              }
+            ]
+          },
+          {
+            "name": "difflib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/refs.py",
+                "line": 32
+              }
+            ]
+          },
+          {
+            "name": "edge_tts",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/tts.py",
+                "line": 60
+              },
+              {
+                "file": "scripts/tts.py",
+                "line": 74
+              },
+              {
+                "file": "scripts/tts.py",
+                "line": 89
+              },
+              {
+                "file": "scripts/tts.py",
+                "line": 108
+              }
+            ]
+          },
+          {
+            "name": "errno",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/serve.py",
+                "line": 10
+              }
+            ]
+          },
+          {
+            "name": "faster_whisper",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/eleven.py",
+                "line": 226
+              }
+            ]
+          },
+          {
+            "name": "fcntl",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/lift.py",
+                "line": 73
+              }
+            ]
+          },
+          {
+            "name": "functools",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "assets/scorm/test/serve.py",
+                "line": 9
+              }
+            ]
+          },
+          {
+            "name": "geo",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/topo.py",
+                "line": 32
+              }
+            ]
+          },
+          {
+            "name": "hashlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/tts.py",
+                "line": 42
+              }
+            ]
+          },
+          {
+            "name": "html",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/scorm.py",
+                "line": 23
+              }
+            ]
+          },
+          {
+            "name": "http",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "assets/scorm/test/serve.py",
+                "line": 10
+              }
+            ]
+          },
+          {
+            "name": "importlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/sfx.py",
+                "line": 817
+              }
+            ]
+          },
+          {
+            "name": "inspect",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/sfx.py",
+                "line": 818
+              }
+            ]
+          },
+          {
+            "name": "json",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "assets/scorm/test/check_scorm.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/items.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/mouths.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/outline.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/painted.py",
+                "line": 35
+              },
+              {
+                "file": "scripts/refs.py",
+                "line": 33
+              },
+              {
+                "file": "scripts/scorm.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/split_pages.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/tts.py",
+                "line": 43
+              }
+            ]
+          },
+          {
+            "name": "kokoro",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/tts.py",
+                "line": 121
+              }
+            ]
+          },
+          {
+            "name": "ledger",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/eleven.py",
+                "line": 62
+              },
+              {
+                "file": "scripts/ledger.py",
+                "line": 3
+              },
+              {
+                "file": "scripts/paint.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/paint_openai.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/video.py",
+                "line": 19
+              }
+            ]
+          },
+          {
+            "name": "level",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/eleven.py",
+                "line": 65
+              },
+              {
+                "file": "scripts/export.py",
+                "line": 51
+              },
+              {
+                "file": "scripts/music.py",
+                "line": 46
+              }
+            ]
+          },
+          {
+            "name": "math",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/sfx.py",
+                "line": 34
+              }
+            ]
+          },
+          {
+            "name": "numpy",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/cutout.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/eleven.py",
+                "line": 225
+              },
+              {
+                "file": "scripts/export.py",
+                "line": 47
+              },
+              {
+                "file": "scripts/frames.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/lift.py",
+                "line": 76
+              },
+              {
+                "file": "scripts/music.py",
+                "line": 221
+              },
+              {
+                "file": "scripts/music.py",
+                "line": 250
+              },
+              {
+                "file": "scripts/music.py",
+                "line": 322
+              },
+              {
+                "file": "scripts/prep.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/sfx.py",
+                "line": 42
+              },
+              {
+                "file": "scripts/strip.py",
+                "line": 47
+              },
+              {
+                "file": "scripts/strip.py",
+                "line": 52
+              },
+              {
+                "file": "scripts/strip.py",
+                "line": 59
+              },
+              {
+                "file": "scripts/trace.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/tts.py",
+                "line": 120
+              }
+            ]
+          },
+          {
+            "name": "os",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/browsers.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/refs.py",
+                "line": 34
+              },
+              {
+                "file": "scripts/sfx.py",
+                "line": 35
+              }
+            ]
+          },
+          {
+            "name": "paint",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/eleven.py",
+                "line": 61
+              },
+              {
+                "file": "scripts/video.py",
+                "line": 18
+              }
+            ]
+          },
+          {
+            "name": "pathlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "assets/scorm/test/check_scorm.py",
+                "line": 16
+              },
+              {
+                "file": "assets/scorm/test/serve.py",
+                "line": 11
+              },
+              {
+                "file": "assets/templates/scroll/e2e.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/check_blank.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/engine.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/explore.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/export.py",
+                "line": 48
+              },
+              {
+                "file": "scripts/items.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/level.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/lint.py",
+                "line": 41
+              },
+              {
+                "file": "scripts/new_book.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/outline.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/playlog.py",
+                "line": 32
+              },
+              {
+                "file": "scripts/refs.py",
+                "line": 42
+              },
+              {
+                "file": "scripts/scorm.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/shot.py",
+                "line": 35
+              },
+              {
+                "file": "scripts/split_pages.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/sprites.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/strip.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/topo.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/tts.py",
+                "line": 49
+              }
+            ]
+          },
+          {
+            "name": "perf",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/explore.py",
+                "line": 30
+              }
+            ]
+          },
+          {
+            "name": "PIL",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/bake_puppets.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/bake_sets.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/cutout.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/frames.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/geo.py",
+                "line": 135
+              },
+              {
+                "file": "scripts/lift.py",
+                "line": 77
+              },
+              {
+                "file": "scripts/painted.py",
+                "line": 36
+              },
+              {
+                "file": "scripts/playlog.py",
+                "line": 35
+              },
+              {
+                "file": "scripts/prep.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/shot.py",
+                "line": 38
+              },
+              {
+                "file": "scripts/sprites.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/still.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/strip.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/trace.py",
+                "line": 14
+              }
+            ]
+          },
+          {
+            "name": "playwright",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "assets/scorm/test/check_scorm.py",
+                "line": 19
+              },
+              {
+                "file": "assets/templates/e2e.py",
+                "line": 9
+              },
+              {
+                "file": "assets/templates/scroll/e2e.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/bake_puppets.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/bake_sets.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/check.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/check_blank.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/explore.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/export.py",
+                "line": 49
+              },
+              {
+                "file": "scripts/music.py",
+                "line": 68
+              },
+              {
+                "file": "scripts/overlap.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/perf.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/playlog.py",
+                "line": 33
+              },
+              {
+                "file": "scripts/safe.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/shot.py",
+                "line": 36
+              },
+              {
+                "file": "scripts/still.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/strip.py",
+                "line": 29
+              }
+            ]
+          },
+          {
+            "name": "prep",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/frames.py",
+                "line": 16
+              }
+            ]
+          },
+          {
+            "name": "pymupdf",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/outline.py",
+                "line": 32
+              },
+              {
+                "file": "scripts/split_pages.py",
+                "line": 25
+              }
+            ]
+          },
+          {
+            "name": "re",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/items.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/outline.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/refs.py",
+                "line": 35
+              },
+              {
+                "file": "scripts/scorm.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/silence.py",
+                "line": 2
+              },
+              {
+                "file": "scripts/split_pages.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/tts.py",
+                "line": 44
+              }
+            ]
+          },
+          {
+            "name": "scipy",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/cutout.py",
+                "line": 29
+              }
+            ]
+          },
+          {
+            "name": "sfx",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/sfx.py",
+                "line": 842
+              }
+            ]
+          },
+          {
+            "name": "shapely",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/geo.py",
+                "line": 172
+              },
+              {
+                "file": "scripts/geo.py",
+                "line": 173
+              }
+            ]
+          },
+          {
+            "name": "shutil",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/tts.py",
+                "line": 45
+              }
+            ]
+          },
+          {
+            "name": "silence",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/eleven.py",
+                "line": 64
+              },
+              {
+                "file": "scripts/join.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/mouths.py",
+                "line": 34
+              }
+            ]
+          },
+          {
+            "name": "skimage",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/trace.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/trace.py",
+                "line": 16
+              }
+            ]
+          },
+          {
+            "name": "subprocess",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/sfx.py",
+                "line": 36
+              },
+              {
+                "file": "scripts/tts.py",
+                "line": 46
+              }
+            ]
+          },
+          {
+            "name": "sys",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "assets/scorm/test/check_scorm.py",
+                "line": 14
+              },
+              {
+                "file": "assets/scorm/test/serve.py",
+                "line": 8
+              },
+              {
+                "file": "scripts/items.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/outline.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/refs.py",
+                "line": 36
+              },
+              {
+                "file": "scripts/scorm.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/sfx.py",
+                "line": 37
+              },
+              {
+                "file": "scripts/shot.py",
+                "line": 34
+              },
+              {
+                "file": "scripts/split_pages.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/tts.py",
+                "line": 47
+              }
+            ]
+          },
+          {
+            "name": "tempfile",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/sfx.py",
+                "line": 38
+              },
+              {
+                "file": "scripts/tts.py",
+                "line": 48
+              }
+            ]
+          },
+          {
+            "name": "time",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/refs.py",
+                "line": 37
+              }
+            ]
+          },
+          {
+            "name": "tts",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/eleven.py",
+                "line": 63
+              },
+              {
+                "file": "scripts/join.py",
+                "line": 32
+              },
+              {
+                "file": "scripts/level.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/music.py",
+                "line": 48
+              },
+              {
+                "file": "scripts/silence.py",
+                "line": 3
+              }
+            ]
+          },
+          {
+            "name": "unicodedata",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/refs.py",
+                "line": 38
+              }
+            ]
+          },
+          {
+            "name": "urllib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "assets/scorm/test/check_scorm.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/refs.py",
+                "line": 39
+              },
+              {
+                "file": "scripts/refs.py",
+                "line": 40
+              },
+              {
+                "file": "scripts/refs.py",
+                "line": 41
+              }
+            ]
+          },
+          {
+            "name": "wave",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/sfx.py",
+                "line": 39
+              }
+            ]
+          },
+          {
+            "name": "xml",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/scorm.py",
+                "line": 25
+              }
+            ]
+          },
+          {
+            "name": "zipfile",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "assets/scorm/test/check_scorm.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/scorm.py",
+                "line": 22
+              }
+            ]
+          },
+          {
+            "name": "zlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/sfx.py",
+                "line": 40
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "assets/scorm/scorm-bridge.js",
+                "line": 1
+              },
+              {
+                "file": "assets/scorm/scorm-host.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/documentary/lib/film.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/explore/lib/events.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/explore/lib/explore.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/explore/lib/sprite.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/explore/lib/states.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/explore/lib/story.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/explore/lib/topo.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/maps/lib/globe.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/maps/lib/map.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/picture-book/lib/cast.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/picture-book/lib/cut.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/picture-book/lib/paper.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/picture-book/lib/shared.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/picture-book/scene1.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/picture-book/sets.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/scroll/img/geo-lite.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/scroll/lib/scroll.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/scroll/story.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/shorts/lib/icons.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/shorts/lib/shorts.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/unit-art.js",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "references/core/engine.md",
+                "line": 87
+              },
+              {
+                "file": "references/core/review.md",
+                "line": 16
+              },
+              {
+                "file": "references/picture-books/painting.md",
+                "line": 3
+              },
+              {
+                "file": "references/picture-books/puppets.md",
+                "line": 28
+              },
+              {
+                "file": "references/picture-books/stories.md",
+                "line": 92
+              },
+              {
+                "file": "scripts/geo.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/lint.py",
+                "line": 12
+              },
+              {
+                "file": "scripts/painted.py",
+                "line": 28
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "assets/scorm/test/check_scorm.py",
+                "line": 1
+              },
+              {
+                "file": "assets/scorm/test/serve.py",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/e2e.py",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/scroll/e2e.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/bake_puppets.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/bake_sets.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/browsers.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/check.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/check_blank.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/commons.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/cutout.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/eleven.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/engine.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/explore.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/export.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/frames.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/geo.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/items.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/join.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/ledger.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/level.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/lift.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/lint.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/mouths.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/music.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/new_book.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/outline.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/overlap.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/paint.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/paint_openai.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/painted.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/perf.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/playlog.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/prep.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/refs.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/safe.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/scorm.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/serve.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/sfx.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/shot.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/silence.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/split_pages.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/sprites.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/still.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/strip.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/topo.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/trace.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/tts.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/video.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 72
+              },
+              {
+                "file": "assets/scorm/test/check_scorm.py",
+                "line": 1
+              },
+              {
+                "file": "assets/scorm/test/serve.py",
+                "line": 3
+              },
+              {
+                "file": "assets/templates/e2e.py",
+                "line": 5
+              },
+              {
+                "file": "assets/templates/maps/lib/globe.js",
+                "line": 36
+              },
+              {
+                "file": "assets/templates/picture-book/sets.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/scroll/e2e.py",
+                "line": 7
+              },
+              {
+                "file": "references/core/engine.md",
+                "line": 5
+              },
+              {
+                "file": "references/core/publish.md",
+                "line": 10
+              },
+              {
+                "file": "references/core/review.md",
+                "line": 16
+              },
+              {
+                "file": "references/core/sound.md",
+                "line": 31
+              },
+              {
+                "file": "references/explore/explore.md",
+                "line": 13
+              },
+              {
+                "file": "references/films/films.md",
+                "line": 31
+              },
+              {
+                "file": "references/films/scroll.md",
+                "line": 16
+              },
+              {
+                "file": "references/lessons/checks.md",
+                "line": 8
+              },
+              {
+                "file": "references/lessons/courses.md",
+                "line": 9
+              },
+              {
+                "file": "references/lessons/lessons.md",
+                "line": 36
+              },
+              {
+                "file": "references/lessons/maths.md",
+                "line": 46
+              },
+              {
+                "file": "references/picture-books/stories.md",
+                "line": 52
+              },
+              {
+                "file": "scripts/bake_puppets.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/bake_sets.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/browsers.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/check.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/check_blank.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/commons.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/cutout.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/eleven.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/engine.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/explore.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/export.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/frames.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/geo.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/items.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/join.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/level.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/lift.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/lint.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/mouths.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/music.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/new_book.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/outline.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/overlap.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/paint.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/paint_openai.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/painted.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/perf.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/playlog.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/prep.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/refs.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/safe.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/scorm.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/serve.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/sfx.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/shot.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/split_pages.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/sprites.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/still.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/strip.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/topo.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/trace.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/tts.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/video.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 72
+              },
+              {
+                "file": "assets/scorm/test/check_scorm.py",
+                "line": 2
+              },
+              {
+                "file": "assets/templates/e2e.py",
+                "line": 6
+              },
+              {
+                "file": "assets/templates/maps/lib/globe.js",
+                "line": 8
+              },
+              {
+                "file": "assets/templates/picture-book/lib/paper.js",
+                "line": 206
+              },
+              {
+                "file": "assets/templates/picture-book/sets.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/scroll/e2e.py",
+                "line": 1
+              },
+              {
+                "file": "references/core/engine.md",
+                "line": 82
+              },
+              {
+                "file": "references/core/publish.md",
+                "line": 3
+              },
+              {
+                "file": "references/core/review.md",
+                "line": 16
+              },
+              {
+                "file": "references/core/sound.md",
+                "line": 80
+              },
+              {
+                "file": "references/explore/explore.md",
+                "line": 70
+              },
+              {
+                "file": "references/films/scroll.md",
+                "line": 77
+              },
+              {
+                "file": "references/lessons/checks.md",
+                "line": 8
+              },
+              {
+                "file": "references/lessons/courses.md",
+                "line": 58
+              },
+              {
+                "file": "references/lessons/figures.md",
+                "line": 77
+              },
+              {
+                "file": "references/lessons/lessons.md",
+                "line": 61
+              },
+              {
+                "file": "references/picture-books/listen-and-find.md",
+                "line": 36
+              },
+              {
+                "file": "references/picture-books/painting.md",
+                "line": 24
+              },
+              {
+                "file": "references/picture-books/puppets.md",
+                "line": 77
+              },
+              {
+                "file": "references/picture-books/stories.md",
+                "line": 81
+              },
+              {
+                "file": "scripts/bake_puppets.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/bake_sets.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/browsers.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/check.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/check_blank.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/explore.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/export.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/lint.py",
+                "line": 2
+              },
+              {
+                "file": "scripts/music.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/new_book.py",
+                "line": 138
+              },
+              {
+                "file": "scripts/overlap.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/perf.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/playlog.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/safe.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/serve.py",
+                "line": 2
+              },
+              {
+                "file": "scripts/shot.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/still.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/strip.py",
+                "line": 4
+              }
+            ]
+          },
+          {
+            "name": "ffmpeg",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "ffmpeg",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 72
+              },
+              {
+                "file": "references/core/publish.md",
+                "line": 50
+              },
+              {
+                "file": "references/core/sound.md",
+                "line": 43
+              },
+              {
+                "file": "scripts/eleven.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/export.py",
+                "line": 32
+              },
+              {
+                "file": "scripts/frames.py",
+                "line": 10
+              },
+              {
+                "file": "scripts/join.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/level.py",
+                "line": 8
+              },
+              {
+                "file": "scripts/mouths.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/music.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/sfx.py",
+                "line": 10
+              },
+              {
+                "file": "scripts/silence.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/tts.py",
+                "line": 10
+              }
+            ]
+          },
+          {
+            "name": "ffprobe",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "ffmpeg",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 72
+              },
+              {
+                "file": "scripts/commons.py",
+                "line": 123
+              },
+              {
+                "file": "scripts/frames.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/level.py",
+                "line": 34
+              },
+              {
+                "file": "scripts/silence.py",
+                "line": 3
+              },
+              {
+                "file": "scripts/tts.py",
+                "line": 10
+              }
+            ]
+          },
+          {
+            "name": "playwright",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 72
+              },
+              {
+                "file": "assets/scorm/test/check_scorm.py",
+                "line": 4
+              },
+              {
+                "file": "assets/templates/e2e.py",
+                "line": 6
+              },
+              {
+                "file": "assets/templates/picture-book/sets.js",
+                "line": 1
+              },
+              {
+                "file": "assets/templates/scroll/e2e.py",
+                "line": 8
+              },
+              {
+                "file": "references/core/engine.md",
+                "line": 82
+              },
+              {
+                "file": "references/core/publish.md",
+                "line": 41
+              },
+              {
+                "file": "references/core/review.md",
+                "line": 16
+              },
+              {
+                "file": "references/films/scroll.md",
+                "line": 77
+              },
+              {
+                "file": "references/lessons/checks.md",
+                "line": 8
+              },
+              {
+                "file": "references/lessons/courses.md",
+                "line": 58
+              },
+              {
+                "file": "references/lessons/figures.md",
+                "line": 82
+              },
+              {
+                "file": "references/picture-books/stories.md",
+                "line": 81
+              },
+              {
+                "file": "scripts/bake_puppets.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/bake_sets.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/browsers.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/check.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/check_blank.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/explore.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/export.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/music.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/new_book.py",
+                "line": 138
+              },
+              {
+                "file": "scripts/overlap.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/perf.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/playlog.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/safe.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/shot.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/still.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/strip.py",
+                "line": 4
+              }
+            ]
+          },
+          {
+            "name": "powershell",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/split_pages.py",
+                "line": 55
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 131,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "assets/scorm/launch.html",
+          "assets/scorm/scorm-bridge.js",
+          "assets/scorm/scorm-host.js",
+          "assets/scorm/test/check_scorm.py",
+          "assets/scorm/test/mock-lms.html",
+          "assets/scorm/test/serve.py",
+          "assets/templates/book.html",
+          "assets/templates/chapter.html",
+          "assets/templates/documentary/chapter.html",
+          "assets/templates/documentary/lib/book.css",
+          "assets/templates/documentary/lib/film.js",
+          "assets/templates/documentary/lib/fonts.css",
+          "assets/templates/documentary/lib/fonts/EBGaramond-italic-400-latin-ext.woff2",
+          "assets/templates/documentary/lib/fonts/EBGaramond-italic-400-latin.woff2",
+          "assets/templates/documentary/lib/fonts/EBGaramond-normal-400-latin-ext.woff2",
+          "assets/templates/documentary/lib/fonts/EBGaramond-normal-400-latin.woff2",
+          "assets/templates/documentary/lib/fonts/EBGaramond-normal-500-latin-ext.woff2",
+          "assets/templates/documentary/lib/fonts/EBGaramond-normal-500-latin.woff2",
+          "assets/templates/documentary/lib/fonts/OFL-EBGaramond.txt",
+          "assets/templates/documentary/lib/fonts/OFL-Oswald.txt",
+          "assets/templates/documentary/lib/fonts/Oswald-normal-500-latin-ext.woff2",
+          "assets/templates/documentary/lib/fonts/Oswald-normal-500-latin.woff2",
+          "assets/templates/documentary/lib/fonts/Oswald-normal-600-latin-ext.woff2",
+          "assets/templates/documentary/lib/fonts/Oswald-normal-600-latin.woff2",
+          "assets/templates/documentary/narration.en.json",
+          "assets/templates/documentary/style.json",
+          "assets/templates/e2e.py",
+          "assets/templates/explore/data/map.topo.json",
+          "assets/templates/explore/index.html",
+          "assets/templates/explore/lib/events.js",
+          "assets/templates/explore/lib/explore.js",
+          "assets/templates/explore/lib/page.css",
+          "assets/templates/explore/lib/sprite.js",
+          "assets/templates/explore/lib/states.js",
+          "assets/templates/explore/lib/story.js",
+          "assets/templates/explore/lib/topo.js",
+          "assets/templates/explore/style.json",
+          "assets/templates/maps/lib/globe.js",
+          "assets/templates/maps/lib/map.js",
+          "assets/templates/maps/sample.html",
+          "assets/templates/narration.en.json",
+          "assets/templates/picture-book/chapter.html",
+          "assets/templates/picture-book/lib/cast.js",
+          "assets/templates/picture-book/lib/cut.js",
+          "assets/templates/picture-book/lib/paper.js",
+          "assets/templates/picture-book/lib/shared.js",
+          "assets/templates/picture-book/narration.en.json",
+          "assets/templates/picture-book/painted.json",
+          "assets/templates/picture-book/scene1.js",
+          "assets/templates/picture-book/series.html",
+          "assets/templates/picture-book/sets.js",
+          "assets/templates/picture-book/style.json",
+          "assets/templates/scroll/e2e.py",
+          "assets/templates/scroll/img/geo-lite.js",
+          "assets/templates/scroll/index.html",
+          "assets/templates/scroll/lib/scroll.css",
+          "assets/templates/scroll/lib/scroll.js",
+          "assets/templates/scroll/story.js",
+          "assets/templates/scroll/style.json",
+          "assets/templates/shorts/chapter.html",
+          "assets/templates/shorts/lib/book.css",
+          "assets/templates/shorts/lib/icons-LICENSE.txt",
+          "assets/templates/shorts/lib/icons.js",
+          "assets/templates/shorts/lib/shorts.js",
+          "assets/templates/shorts/narration.en.json",
+          "assets/templates/shorts/style.json",
+          "assets/templates/style.json",
+          "assets/templates/unit-art.js",
+          "manifest.json",
+          "references/core/engine.md",
+          "references/core/publish.md",
+          "references/core/review.md",
+          "references/core/sound.md",
+          "references/core/style.md",
+          "references/core/team.md",
+          "references/explore/explore.md",
+          "references/films/documentary.md",
+          "references/films/films.md",
+          "references/films/scroll.md",
+          "references/films/shorts.md",
+          "references/guide.vi.md",
+          "references/lessons/assets.md",
+          "references/lessons/authoring.md",
+          "references/lessons/checks.md",
+          "references/lessons/courses.md",
+          "references/lessons/cover.md",
+          "references/lessons/diagrams.md",
+          "references/lessons/figures.md",
+          "references/lessons/intake.md",
+          "references/lessons/lessons.md",
+          "references/lessons/maths.md",
+          "references/lessons/questions.md",
+          "references/lessons/scenes.md",
+          "references/picture-books/listen-and-find.md",
+          "references/picture-books/painting.md",
+          "references/picture-books/puppets.md",
+          "references/picture-books/stories.md",
+          "scripts/bake_puppets.py",
+          "scripts/bake_sets.py",
+          "scripts/browsers.py",
+          "scripts/check.py",
+          "scripts/check_blank.py",
+          "scripts/commons.py",
+          "scripts/cutout.py",
+          "scripts/eleven.py",
+          "scripts/engine.py",
+          "scripts/explore.py",
+          "scripts/export.py",
+          "scripts/frames.py",
+          "scripts/geo.py",
+          "scripts/items.py",
+          "scripts/join.py",
+          "scripts/ledger.py",
+          "scripts/level.py",
+          "scripts/lift.py",
+          "scripts/lint.py",
+          "scripts/mouths.py",
+          "scripts/music.py",
+          "scripts/new_book.py",
+          "scripts/outline.py",
+          "scripts/overlap.py",
+          "scripts/paint.py",
+          "scripts/paint_openai.py",
+          "scripts/painted.py",
+          "scripts/perf.py",
+          "scripts/playlog.py",
+          "scripts/prep.py",
+          "scripts/refs.py",
+          "scripts/safe.py",
+          "scripts/scorm.py",
+          "scripts/serve.py",
+          "scripts/sfx.py",
+          "scripts/shot.py",
+          "scripts/silence.py",
+          "scripts/split_pages.py",
+          "scripts/sprites.py",
+          "scripts/still.py",
+          "scripts/strip.py",
+          "scripts/topo.py",
+          "scripts/trace.py",
+          "scripts/tts.py",
+          "scripts/video.py"
+        ]
+      },
+      "checksum": "b7d8d23ec75ce53451e59ae4d90e9844331d789164a8e734de78a1a0e45dcb3c",
+      "file_hashes": {
+        "LICENSE": "41857092247a8ad84a53859ffe7abfae3209a4ba209547e4fc3f17ccd0892b8f",
+        "SKILL.md": "eacef1396ea67141e8ad8aeece1a7739b8eb0edb5c1c6aec0fde9640b1618b1a",
+        "assets/scorm/launch.html": "d76d826c55f1315afd020c880a9bb691078e74e51b38c02aa40ef29c350c2075",
+        "assets/scorm/scorm-bridge.js": "5569aecbe3be081df6689f09a383090625b0c2ec58427cfa1e8e480cfa829069",
+        "assets/scorm/scorm-host.js": "9eeb60d0628b1a413e51c3ed1f2d8b5987477d76cdd7ccd74dd9857f0fbcfb7e",
+        "assets/scorm/test/check_scorm.py": "e5056e67ad75e7d35c1251ed7de1487983a52b8f1448077ef5eabb003fc781d2",
+        "assets/scorm/test/mock-lms.html": "f60ba4e065506df549a830c680f43a84a875dd429924d5576bfcd63ef0304ada",
+        "assets/scorm/test/serve.py": "e7212cff112495e9db2f5ddc93bf4f3f44805b1b8a0023e65f03dbf7998d70bd",
+        "assets/templates/book.html": "2fb174cab0b5a7a1715e272ba3e23b546f8ce889d4be158215079eeead5f0230",
+        "assets/templates/chapter.html": "aef51338cdd899c76d449b21ea059e0e399c7054190973b30470fb906285bd45",
+        "assets/templates/documentary/chapter.html": "948b263532da97bf5a0c205ed0f49bc6c938447e67f8e933376c67231eb2f4b8",
+        "assets/templates/documentary/lib/book.css": "fa2346f950788a8032c3aaed8ac3bcd8daa47b23adc949c9505d6afbbf6a90f3",
+        "assets/templates/documentary/lib/film.js": "5bed91c24b0fc7acf29d736e2f2710b6280703195d825569c8871b8bd9b10b56",
+        "assets/templates/documentary/lib/fonts.css": "fe984f6b8e5c442fae4d463d983cd56f2f0804e36c997231bf02771577d0c17a",
+        "assets/templates/documentary/lib/fonts/EBGaramond-italic-400-latin-ext.woff2": "c9b9621f369fd9443d3dfbf3a77942813d85d91044e26ada13ba51e0afa3237d",
+        "assets/templates/documentary/lib/fonts/EBGaramond-italic-400-latin.woff2": "9568725329331cc56f84408d34fe0228b3471c243f4fd2f9fa851248033ae38d",
+        "assets/templates/documentary/lib/fonts/EBGaramond-normal-400-latin-ext.woff2": "ea45b336c06b6342b5b4a4c694a49908de24551281fd9061f312fdcbce93b935",
+        "assets/templates/documentary/lib/fonts/EBGaramond-normal-400-latin.woff2": "a9280e8c4959b369c8acc47c0ebd9ee5060f724acf453e77bcf7654071aa9f5c",
+        "assets/templates/documentary/lib/fonts/EBGaramond-normal-500-latin-ext.woff2": "9e8562787c6371384e4ca134ebf2338ad46592238203e2b54a01a80b66f9f899",
+        "assets/templates/documentary/lib/fonts/EBGaramond-normal-500-latin.woff2": "4d4285166339ed5201aa4743ef04389f1db06d426792b7d0efa52b4e0881348e",
+        "assets/templates/documentary/lib/fonts/OFL-EBGaramond.txt": "0985066662eb755ed3683ae5482a81a9195b49ce3f7e165cc2388b3dbece7dd7",
+        "assets/templates/documentary/lib/fonts/OFL-Oswald.txt": "0fd731a904b729a4e02eaf5e8ebd06783edd9abe400e8882760160230675b652",
+        "assets/templates/documentary/lib/fonts/Oswald-normal-500-latin-ext.woff2": "cc710bb3d00e932d44bb76d01ccde54fd53e7f8f6c4987ba8a1f767aaa650d11",
+        "assets/templates/documentary/lib/fonts/Oswald-normal-500-latin.woff2": "6d8339648bd6dbaa63b27fa74309c88c09c0b2abd0d59e6929a4cd0012739c18",
+        "assets/templates/documentary/lib/fonts/Oswald-normal-600-latin-ext.woff2": "f7353cf5d21ed947244d740622624eb49a2ab4ff21bc96ee42a918b5fd0f8015",
+        "assets/templates/documentary/lib/fonts/Oswald-normal-600-latin.woff2": "2f63e80d18b6fd405aedd0514b7feb1e953b8f50b0a0e0fa8d8c462b4ae4e83b",
+        "assets/templates/documentary/narration.en.json": "a3f1218b541aad56ce30ab77557e199198e26388c83e362be3f0c8ac86b76b3a",
+        "assets/templates/documentary/style.json": "472c8c3b277b2245e6dbdd62af90fb46ed11ca6834cc028709dccec2920ac446",
+        "assets/templates/e2e.py": "d8a0a6754e072d59a4521f6b5193adf7b40442e9e0d00ebb81647378339932b6",
+        "assets/templates/explore/data/map.topo.json": "27e063e14df2e091b6c68816deb1ba1a72b8c0f966c18b12b1f3c0dfbe8ddb43",
+        "assets/templates/explore/index.html": "48c5f3b2ec99bccc1a879b2c9d6181da11b41651f770e1b7146fb67b02ae9524",
+        "assets/templates/explore/lib/events.js": "af5781df900bb90c396cdfac709c7bb24d747f463315a765dd3905ace5c9668d",
+        "assets/templates/explore/lib/explore.js": "77da2434a5ecfdf712db34e9d3296685708a4dd1b7e876bf73b07e9eeda71614",
+        "assets/templates/explore/lib/page.css": "ec489885bb92cb6c28395e70c41ce30567474b9c234a1f282ea6ba5a77ec8e92",
+        "assets/templates/explore/lib/sprite.js": "11c1b058b504d9e844be7ca56816d7b52b4c2cbc41c41a720e8a7b385c5d61a3",
+        "assets/templates/explore/lib/states.js": "b3c24322c2ffce8d0c00267f34b4f1b5ba073422977a5243a18540512a0c2689",
+        "assets/templates/explore/lib/story.js": "c68a72c42b9ed7adcc214130ad5f08b9f5b82c56f5a57804da18f4f3ee28a306",
+        "assets/templates/explore/lib/topo.js": "62c80b1109d1570c2619e59e57068f23edb6790c108b1b7e401bcf463fed5265",
+        "assets/templates/explore/style.json": "2ba021b0ab3bed2e9069b946880831c2906bdfafb3c7d707d6ca6ade22b92241",
+        "assets/templates/maps/lib/globe.js": "491a40f1410ef032e2cd8a7baf621e089c2f2e3f5386720be9d8bb53c6312ac6",
+        "assets/templates/maps/lib/map.js": "e9ae17b2f70ddcadbc2edea0b8099d30a9b27d1e580000e538be0a1e23cfeb0e",
+        "assets/templates/maps/sample.html": "893fc9f6438f32764518077fea519dc1f8ff181b7d73a7d97c3918a01df028fa",
+        "assets/templates/narration.en.json": "5fc54d0004f88f8ed4685cb7f4c02c1feb0906e17de070b566f29869d8621003",
+        "assets/templates/picture-book/chapter.html": "851fa89ac482747aa915c01c6faaef861280028eead49a7e0c1ad508d968b274",
+        "assets/templates/picture-book/lib/cast.js": "2d2ccca77536c15bfc17cfb95c910a976acc5b299fec9dda3cc0a7db3ffc538a",
+        "assets/templates/picture-book/lib/cut.js": "0318c0592067f36f2bb6a3ec7c18467167a8bda596d6228d70ed641eba8104fa",
+        "assets/templates/picture-book/lib/paper.js": "6c9cd11333695ec548109913c924cbaef9ef22582c2d662f7a3eed28710d1e64",
+        "assets/templates/picture-book/lib/shared.js": "a7e80b17a266a540578e5200e66e27333521139750278e71ecedc1d0f13953c8",
+        "assets/templates/picture-book/narration.en.json": "fc35c66c074e07984a369b88d407edf4753e274386a63db21ec694b4696810e4",
+        "assets/templates/picture-book/painted.json": "a4ec1252b84e121f5f748569170c9ca1cf5c4233bdad2797c814c8e8a8cc4ef6",
+        "assets/templates/picture-book/scene1.js": "ec73de66b5c4ebcd3e8ae1aa9b42ee4173d9e5eb053a9eafcf89d5f5a2a5a0f3",
+        "assets/templates/picture-book/series.html": "a815875a9245de8f23715c36d71247641f1ff0d47fc9c0dc69ac541e3ee71bcf",
+        "assets/templates/picture-book/sets.js": "eecd22c615af27af43f6a3878a2a5a4cf2198e8efc80cd70fc6989445e5b2583",
+        "assets/templates/picture-book/style.json": "726cb8caa4d19ea4f5752cd8048ce04ab3d28469781c25195e93b1481b7b04a8",
+        "assets/templates/scroll/e2e.py": "8f31564846c138dc628db7ec9f292680a2975f85655a3ddc77cf8e29404ae6c8",
+        "assets/templates/scroll/img/geo-lite.js": "895c4d82ab27e86d51dc79d8a6e2db3f8f3fb13f3dd7b061fb37ffd3a5f37079",
+        "assets/templates/scroll/index.html": "0177b307af3792d10e812174f656842e5d1df7c17cfcf21bdfeb4a604186a7d4",
+        "assets/templates/scroll/lib/scroll.css": "cca8e95000419daa3ef0d618378495b1995ae5469fc2534d553868caf2b3fc43",
+        "assets/templates/scroll/lib/scroll.js": "b35b881ec7f163b368642da66e4e77d40c2515ea3700a5e06b599c4f4c996d74",
+        "assets/templates/scroll/story.js": "df389c8917c701913274c808f98140e2d31834f281183baef8b17292f8d41b46",
+        "assets/templates/scroll/style.json": "2fbbbbde19c44d08fdde42a20022d58ca65fd32be55193e58fc9e43035bfead7",
+        "assets/templates/shorts/chapter.html": "64e1f0201f1da2f0df58a4baf44c697698864414f20a72422409d4b4e1b004dc",
+        "assets/templates/shorts/lib/book.css": "6e0857447f2d9b3063004a247b2b7837d1594f2a3b08bdf4899514fb6bdc288b",
+        "assets/templates/shorts/lib/icons-LICENSE.txt": "ddbe6082ec3cf979db47e5af549d2849c5d6182b3e005ef91ce1dbb9eb122f11",
+        "assets/templates/shorts/lib/icons.js": "cbee12776372863a8c04c5a6269a8358331892be14200334d335a93eb2b7b3c6",
+        "assets/templates/shorts/lib/shorts.js": "1600221c4f038c0e475a3c9dc8ae05e69ceca7993659d61d1d3fb80cab659434",
+        "assets/templates/shorts/narration.en.json": "4ae5d8e080abdbdb4cf72ecb9f3ddf203f25cd4b8c06460cb08f3282587255b6",
+        "assets/templates/shorts/style.json": "181b65647929ee11c75e5b7967afb4195c09e971a52c543ebc2f3df549522a73",
+        "assets/templates/style.json": "378c5a13776a3db304200ec92033d69b6428ff561156d6cb2589ce8c2fa4c5e8",
+        "assets/templates/unit-art.js": "2f9bfcb5b3634f539807b9db4bcb0c7f69829415273b6c279a07ad66ea8f6f50",
+        "manifest.json": "c7ab2291b47ea020d4b662e1d7001b0a018802bf9b1d42c2303bc1f43d1127a5",
+        "references/core/engine.md": "530ee1439bbbce68d3b8679d2e33acd683e76b6fae2c3cdba42d8915cbbf68a6",
+        "references/core/publish.md": "d6d98b569a1e827a7d4fa83845614f530457ecd3cafeb6eacccb325d13c39bba",
+        "references/core/review.md": "d8e4c856c225b87979c6d2ee6de4e57ce2e1765c90d7cf7479254861b054d4f9",
+        "references/core/sound.md": "69f4ed28722801221cab9006fff48a9059494b772d8a27364dc9af433cb1a621",
+        "references/core/style.md": "9e7cff39403dee8e4ca78f489a634bb4a7deb4d3984c680016caca24ef75d5bf",
+        "references/core/team.md": "f6f0658745811b701941e013ab62b7392931464088b1d974a47867aa3e6304be",
+        "references/explore/explore.md": "2c0d8a6a7ec8f415e6aa626def0342ac06183a4c24b0847556bfdf945d1e75d4",
+        "references/films/documentary.md": "0757eae60681fe31b5f57b26a1f9fc82602249d71d9d8c46405ec597a53fdb55",
+        "references/films/films.md": "054c606854cc170806a4b8233e3f5009179d493c52c04c8b14c97d7e8fd65bfd",
+        "references/films/scroll.md": "ded4e3960202ce015464eeb785bb20260aece209abcfcde01a68ac5ab792b002",
+        "references/films/shorts.md": "bcaebf5f93a9f767af1eb32f82448ae2036b971588cd287024dfabfde15367bd",
+        "references/guide.vi.md": "c96256e32be4e1b7c0208d7ce511a878b0a187636f76b199a0c16a9325baa7e2",
+        "references/lessons/assets.md": "bd52d64d70c97890a767e7133d53e7962f5453a4a26e1357b7335826121708dd",
+        "references/lessons/authoring.md": "35d7973f2737f5e5fb729a9ffe26c89b9e7fa425c66daf3a9c940acef00e9ef0",
+        "references/lessons/checks.md": "c8a8f98bb0f18a603b1f85afb4c07aca99e5ef76f3fe76e95c1dda76bf5341c0",
+        "references/lessons/courses.md": "2c6484645f3e38247d5912232473b952511674783196a7094d44a80e6349ee70",
+        "references/lessons/cover.md": "ee4878a00e52a57d830e3cd91063de26eec3f61c3980b3011452e75754cedae8",
+        "references/lessons/diagrams.md": "6d8c1bb7820e6d5fdd6c649d662c0bd0dda619f7aa3e9766518eaa2034d9c314",
+        "references/lessons/figures.md": "a63ae18752fdad99f35d34ea1c752ebbe3e9bf49f3cac4a06baa334548cd35b5",
+        "references/lessons/intake.md": "7385b06f628a125ae6f8ddc463a8589a2e34d2e79228e7e77026eff0aacbc0f0",
+        "references/lessons/lessons.md": "91a91cbaf1f979ce3dc049afd2978d077fba468bfc1c0752652ca0420bea83f4",
+        "references/lessons/maths.md": "d06c915974de8a36af9c55d5191dba9762c2f2e2a292f84147547fe70bf6870e",
+        "references/lessons/questions.md": "5a961a51fcb8d7b3c9ccf73910071875d68f80d2cf7b2f4d4d66861a28db61a5",
+        "references/lessons/scenes.md": "3d612a71b3f1226b9b54c2caec9c032539219e2e96bcd0ca52b0089ffe950084",
+        "references/picture-books/listen-and-find.md": "07d52d6e311c0fbd3ae62f404a3690e2e9e959b10c6c3284894ddf9b8934f0f6",
+        "references/picture-books/painting.md": "e91cff4d8727a592cc28af9b44aab924cc68e3adc02dd4b9bae18c0b8e300bc6",
+        "references/picture-books/puppets.md": "4c643717b521dedcb880362dce0b2207e7d8a22f6efda600ed0e456ae60c0a07",
+        "references/picture-books/stories.md": "8b43f2c12ef8eadcd676a65b7e3c33cc24622f5e91ccb5c09e5e9d6b7ee302e8",
+        "scripts/bake_puppets.py": "703be1c1b56bb3ea2a8057df88bd5b6761c4a9af27a36aa68130a753393a1c6e",
+        "scripts/bake_sets.py": "f42a82975d1ed60a9e60a60877a26670bd570d71c1ed0ba67f73652ac408f546",
+        "scripts/browsers.py": "201b8a2a45adf4a64d89de231e323e6b8acd8b285786426b278e0cd98a6a4147",
+        "scripts/check.py": "0af28c6c1f4a56101257e2b3040cc6ce5ce932c9054708b9164a17455367d400",
+        "scripts/check_blank.py": "841dd18f61edf75664f36e30fa3567294007b07140b025aa73959e552faaa4d5",
+        "scripts/commons.py": "f82a61e824b69c64823599af302f32d1a25d6f8b41507a54150c9580a3cc7e4b",
+        "scripts/cutout.py": "2f44c424afdb74e81ea875e9074875297b4b231833729dbd35fa08cbc0e86810",
+        "scripts/eleven.py": "e3b3f9e4c7784a2366ce94af61b33695339045b466dff1606c6b60dc9117d23f",
+        "scripts/engine.py": "d6a932c82f5144f5789e3d69a86245408b4725f94140e4b3f79cdc1f77fe0637",
+        "scripts/explore.py": "e9f1e5cc42f06784f6ca50efeb91de29f09496c4cb080331485c6be96a97c7cd",
+        "scripts/export.py": "bf92c7e3b9d7f6319e8edba1d1d3aa6d37872aa2a549fb00b927a2086eb8bab3",
+        "scripts/frames.py": "7d1d5feeedc355d439f39d082efa06e8da94ef52ef7235dd2a083ec63d79c91e",
+        "scripts/geo.py": "71c1ccce5dc463686b1b6e3c5cb686615c3afcd3c62e1e9e7276c6d1cc63f5d1",
+        "scripts/items.py": "1bb3a79af990a0e60b3ea39f6a545e50f62659d48df0cd0258f610f727e1f713",
+        "scripts/join.py": "beb69004f525be34bce4a832f5c7d7d5211a4a70ab9e82d9a0d2c9cf332ac54b",
+        "scripts/ledger.py": "46959648bed845d2fd3f84e0f85e34996bafb929d1f8bcc650dd9bb277d87bcc",
+        "scripts/level.py": "d287ee7cc6518b6289c25e975321e8ebfbe48dc9eebb5304310113347a3ab422",
+        "scripts/lift.py": "39482afe1761ff578ccf0be5aa6602d95fdbfdaa77e618b78c29a4e3a7904de2",
+        "scripts/lint.py": "b61b41d9633c7b12cdd5b9b9972142aec237baab3e5b8c88abe6fa2fdaf90037",
+        "scripts/mouths.py": "9b3eeea69ce570eee5161a348f4197b1649948da796e22ca8437e4998dc86323",
+        "scripts/music.py": "c82a5465e0436f0eaa65e133d6e09d0b462a785a5f2d082fe579fb401dce15f6",
+        "scripts/new_book.py": "beab18f253f036a65a453a7e8585965ad8051a8806cd02b88cdb69be71965393",
+        "scripts/outline.py": "f011e3f5cfe0bfeea3bf15621fe1b508b72d5ac64151bdfd2111d597e8494808",
+        "scripts/overlap.py": "a4d53c67f3f78f082a35b86fc8d5deeeb8a58bacaaef4f0213b39621ac33d206",
+        "scripts/paint.py": "90416693b6d61cad32405d6c9aef8c3f6f65167b0ca3512b2aea2f18fdc78dc5",
+        "scripts/paint_openai.py": "e6c9d6e2b9976240f04f17ffb917c8b1f3b48838cc6b4ba49084f01a49b5e462",
+        "scripts/painted.py": "1eb61014fb27e71c9e051722e90129d190f6ba44f874d82fe40bccafa2a5d688",
+        "scripts/perf.py": "38740b9f7508174fee704c0814f00fc1dde3dfc4d895356abca91061558f46d7",
+        "scripts/playlog.py": "227a3c33efba0f137ff0563dbf4c58995a46cb2aacff46bab9cbf9d63ea059d1",
+        "scripts/prep.py": "4401a0723b139db3405cfb90343f299d9779b311b349b11262409b860e8181f1",
+        "scripts/refs.py": "589126286b75b4501cdea4d95622a627e415c7302a65887d38baad35797d2cfd",
+        "scripts/safe.py": "676334845d7fc1e5f586c4db58c73de6534184427fcbffce9ea65b4a7be3f984",
+        "scripts/scorm.py": "8a2385e9048e7809026e045145a8368eda072e9c56e81e2741367dd084afdc89",
+        "scripts/serve.py": "e16662b4b0f977777105993bfa9c3588ed93c0b8bb98ac58174eb16fe28e7661",
+        "scripts/sfx.py": "9e4eb59ba56cbd8662d7629156968d295a871d040164a876a39db733c021ba26",
+        "scripts/shot.py": "95c1631150a7ed6a6f7301deb5a2b5b0d75c6a7902f1b141ccdb25f484ecff84",
+        "scripts/silence.py": "dbb68457afbfb5c5a4ed6ef81e1c4a7282a389c33e70eef26290e23875f29629",
+        "scripts/split_pages.py": "7fee7e2161ff16e1afb3705d88cdad322cc1b0cc7da1638b570a4af1e52b13e8",
+        "scripts/sprites.py": "bbc7368ad95e09e9b6f8019162bc3ac952a326fd87c2c8e8bc28f35b18273b3a",
+        "scripts/still.py": "2900c8055ba0c9b1454449f96082766e52177136aa64f8bd9087474b1a58cb5c",
+        "scripts/strip.py": "838e559191fc68acce941375905941fbb88c98f71fff386d9a7c16d4bab1001c",
+        "scripts/topo.py": "d4a0facd22c71ea916937b0a588fd73c53291870a98b3c087a3da459609a18fa",
+        "scripts/trace.py": "d8a68382ef719704e99326722f8edc967e3ff9589859e1ad7026c1b0e4154fba",
+        "scripts/tts.py": "69bfab9a356e301d81ae4629fc07e2c8bf2ddd933da918901e43b66c2d5d2240",
+        "scripts/video.py": "4e9183a582b5160ffe58775288fa863e8928d7c370bcbe8022f94882e60421f0"
+      },
+      "notes": [],
+      "last_checked": "2026-11-18T11:22:34.799Z",
       "area": "quarantine"
     },
     {

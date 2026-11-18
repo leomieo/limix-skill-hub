@@ -1,0 +1,31 @@
+{
+  "repository": "sno-ai/sno-station-skills",
+  "commit": "47336d1a25dd434ebec0a37593abf66ccf1fca98",
+  "path": "plugins/sno-station-standalone/skills/e2e-red-triage",
+  "verified": true,
+  "coreSha256": "d877a2c2a1373c43a9118ccb8d64105f70269006f1480a5d38b1b86b33493b8c",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "d877a2c2a1373c43a9118ccb8d64105f70269006f1480a5d38b1b86b33493b8c",
+      "executable": false
+    },
+    {
+      "path": "scripts/selftest/run-selftest.sh",
+      "sha256": "998965a4f5793b78d51a78bfe67ab37f1546e95120419a3ab32840ae18ef0db9",
+      "executable": true
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "32dbd1ea423105137525da4c63b9bc80df73b74dd8aca88237a96d41039358d2",
+      "executable": false
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "dac289d596a7d28c7112e629af150f2558339ad3e5eec802c0b1eead1cbd4710",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/e2e-red-triage"
+}

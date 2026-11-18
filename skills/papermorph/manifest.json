@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "name": "papermorph",
+  "version": "839a62cad3c7",
+  "source": {
+    "url": "https://github.com/DozenTwelve/Papermorph",
+    "commit": "839a62cad3c74446944a167faff07c994f33e5b7",
+    "sha256": "eacef1396ea67141e8ad8aeece1a7739b8eb0edb5c1c6aec0fde9640b1618b1a",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Tạo sách web và bài học hoạt hình có lời dẫn, sách tranh tương tác, phim tài liệu kể chuyện và bản đồ khám phá từ tài liệu hoặc ý tưởng.",
+    "aliases": [
+      "Sách web hoạt hình",
+      "Truyện tương tác"
+    ],
+    "keywords": [
+      "papermorph",
+      "Sách web hoạt hình",
+      "Truyện tương tác"
+    ],
+    "examples": [
+      "Dùng papermorph cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "eacef1396ea67141e8ad8aeece1a7739b8eb0edb5c1c6aec0fde9640b1618b1a"
+  },
+  "requiredCapabilities": [
+    "browser [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "ffprobe [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "playwright [mention-hint]",
+    "powershell [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "text-to-speech [mention-hint]",
+    "three [mention-hint]"
+  ],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-18T11:22:34.799Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "assets/templates/documentary/lib/fonts/EBGaramond-italic-400-latin-ext.woff2: binary-file (low)",
+      "assets/templates/documentary/lib/fonts/EBGaramond-italic-400-latin.woff2: binary-file (low)",
+      "assets/templates/documentary/lib/fonts/EBGaramond-normal-400-latin-ext.woff2: binary-file (low)",
+      "assets/templates/documentary/lib/fonts/EBGaramond-normal-400-latin.woff2: binary-file (low)",
+      "assets/templates/documentary/lib/fonts/EBGaramond-normal-500-latin-ext.woff2: binary-file (low)",
+      "assets/templates/documentary/lib/fonts/EBGaramond-normal-500-latin.woff2: binary-file (low)",
+      "assets/templates/documentary/lib/fonts/Oswald-normal-500-latin-ext.woff2: binary-file (low)",
+      "assets/templates/documentary/lib/fonts/Oswald-normal-500-latin.woff2: binary-file (low)",
+      "assets/templates/documentary/lib/fonts/Oswald-normal-600-latin-ext.woff2: binary-file (low)",
+      "assets/templates/documentary/lib/fonts/Oswald-normal-600-latin.woff2: binary-file (low)",
+      "references/lessons/maths.md: invisible-unicode (high)"
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

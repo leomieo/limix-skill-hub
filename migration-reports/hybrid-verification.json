@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-17T09:29:28.172Z",
+  "checkedAt": "2026-11-18T11:48:08.303Z",
   "scope": "Static integrity and provenance only; no downloaded scripts executed.",
   "results": [
     {
@@ -340,6 +340,17 @@
       "license": "MIT"
     },
     {
+      "id": "better-design",
+      "verified": true,
+      "origin": "upstream",
+      "files": 49,
+      "commit": "c373ad7fa122b8c0d63b1be756443cc93a56e71d",
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "MIT"
+    },
+    {
       "id": "blender-core",
       "verified": true,
       "origin": "upstream",
@@ -401,6 +412,21 @@
       "security": "review-required",
       "compatibility": "unchecked",
       "skipped": [],
+      "license": "MIT"
+    },
+    {
+      "id": "convert-site",
+      "verified": true,
+      "origin": "upstream",
+      "files": 54,
+      "commit": "8beb1de5099a2be1ddb1d98ffc7b3682343bc420",
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "skipped": [
+        "templates/site/.gitignore",
+        "templates/site/.nvmrc",
+        "templates/site/.vercelignore"
+      ],
       "license": "MIT"
     },
     {
@@ -1606,6 +1632,17 @@
       "license": "MIT"
     },
     {
+      "id": "e2e-red-triage",
+      "verified": true,
+      "origin": "upstream",
+      "files": 4,
+      "commit": "47336d1a25dd434ebec0a37593abf66ccf1fca98",
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "Apache-2.0"
+    },
+    {
       "id": "earshot",
       "verified": true,
       "origin": "upstream",
@@ -2395,6 +2432,17 @@
         "tests/test_storyboard_lint.py",
         "tests/test_voice_review.py"
       ],
+      "license": "MIT"
+    },
+    {
+      "id": "huashu-motion",
+      "verified": true,
+      "origin": "upstream",
+      "files": 47,
+      "commit": "f09dd7a29e2c9c574939d54db6c0768aad51232a",
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "skipped": [],
       "license": "MIT"
     },
     {
@@ -3827,6 +3875,17 @@
         ".github/workflows/tests.yml",
         ".gitignore"
       ],
+      "license": "MIT"
+    },
+    {
+      "id": "papermorph",
+      "verified": true,
+      "origin": "upstream",
+      "files": 142,
+      "commit": "839a62cad3c74446944a167faff07c994f33e5b7",
+      "security": "quarantined",
+      "compatibility": "unchecked",
+      "skipped": [],
       "license": "MIT"
     },
     {

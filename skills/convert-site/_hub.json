@@ -1,0 +1,18 @@
+{
+  "repository": "ethanplusai/astro-conversion-kit",
+  "stars": 135,
+  "createdAt": "2026-10-22T21:37:28Z",
+  "pushedAt": "2026-10-31T18:10:52Z",
+  "statsCheckedAt": "2026-11-18",
+  "license": "MIT",
+  "commit": "8beb1de5099a2be1ddb1d98ffc7b3682343bc420",
+  "path": "skills/convert-site",
+  "language": "hybrid",
+  "version": "8beb1de5099a",
+  "addedAt": "2026-11-18T11:28:48.362Z",
+  "batchDate": "2026-11-18",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-18T11:28:48.362Z",
+  "coreOrigin": "upstream"
+}

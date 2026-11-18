@@ -1,0 +1,18 @@
+{
+  "repository": "alchaincyf/huashu-motion",
+  "stars": 2864,
+  "createdAt": "2026-10-18T12:19:27Z",
+  "pushedAt": "2026-11-16T06:20:58Z",
+  "statsCheckedAt": "2026-11-18",
+  "license": "MIT",
+  "commit": "f09dd7a29e2c9c574939d54db6c0768aad51232a",
+  "path": "skills/huashu-motion",
+  "language": "hybrid",
+  "version": "f09dd7a29e2c",
+  "addedAt": "2026-11-18T11:22:34.799Z",
+  "batchDate": "2026-11-18",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-18T11:22:34.799Z",
+  "coreOrigin": "upstream"
+}

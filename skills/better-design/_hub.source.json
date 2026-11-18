@@ -1,0 +1,256 @@
+{
+  "repository": "Moddingflow/better-design",
+  "commit": "c373ad7fa122b8c0d63b1be756443cc93a56e71d",
+  "path": "skills/better-design",
+  "verified": true,
+  "coreSha256": "3bc043c583587daf0930ccbe3973a418fa6e5ca80ae7b656c7e42ef771f05c9a",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "3bc043c583587daf0930ccbe3973a418fa6e5ca80ae7b656c7e42ef771f05c9a",
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "bcc8b5513b4ac52756d7089ef05dfa3812a38d9b48fe1f8185adf690e3b664ba",
+      "executable": false
+    },
+    {
+      "path": "assets/design-contract.create.example.json",
+      "sha256": "3617303465997a6e7eb3b7fbc74e9ce2597a2783c0166a1f2f64640c7677b6d9",
+      "executable": false
+    },
+    {
+      "path": "assets/design-contract.example.json",
+      "sha256": "6b89da19d2dc0214df03d573f542fb4257703f0b49e04ee5e46cc73120aae653",
+      "executable": false
+    },
+    {
+      "path": "assets/DESIGN.house-style.md",
+      "sha256": "4e6498e76aa4482b90351700c40769c97943a18aa80ef5121cbd2e27fb25701b",
+      "executable": false
+    },
+    {
+      "path": "assets/DESIGN.template.md",
+      "sha256": "d7046cea572005668f3f4437db1b78fcf98469ffda07fd249cc545ecaa9d4fd7",
+      "executable": false
+    },
+    {
+      "path": "assets/effects/dither-bake.js",
+      "sha256": "613d032250c7a65ad1245017ab91dcebac72413e0695b356d4d6def36ff9ee98",
+      "executable": false
+    },
+    {
+      "path": "assets/effects/dither-field.js",
+      "sha256": "d87e2a1040560b7b380bcd793f05de10c4076fa8e795ca73c69b5dc92e7e3af8",
+      "executable": false
+    },
+    {
+      "path": "assets/effects/dots.js",
+      "sha256": "009d87df773bb4ecc67495b00a759c21d651ab7a962a4c9d90fb8c53019d85a3",
+      "executable": false
+    },
+    {
+      "path": "assets/effects/effects.css",
+      "sha256": "dfedc02c5e56af2b071fedbe3b626701a1568b628b74a13c04c412ae6f0f567f",
+      "executable": false
+    },
+    {
+      "path": "assets/effects/gallery.html",
+      "sha256": "b8d7b0c52001ad68e8a574237fe13fa5d7980e77b99b33bad03ce7d853ed7c30",
+      "executable": false
+    },
+    {
+      "path": "assets/effects/interactions.js",
+      "sha256": "edec15e0d0580e6a466bef8e5ead07e254aa1a2a0e97f286c573cb77c4c3a9f1",
+      "executable": false
+    },
+    {
+      "path": "assets/house-style.html",
+      "sha256": "6ec39b125923e841ac982015cb2199d1737c70ec6185c0b14ad6525022dbbca9",
+      "executable": false
+    },
+    {
+      "path": "assets/house-style.tokens.json",
+      "sha256": "669d9b64b4f7ed830cf9f2a462da33e14f72c7731f254b1723e1b8ba27e43374",
+      "executable": false
+    },
+    {
+      "path": "assets/layout-dump/dump-dom.js",
+      "sha256": "5717f9bab77797be34c184de0c24b121fdc4ca57bc2982d35af912413b82e99f",
+      "executable": false
+    },
+    {
+      "path": "assets/layout-dump/layout_dump.gd",
+      "sha256": "c9201ab4caebdedfdde7ef0bce6f93c2330797405b095042cde78bf0f43eb44e",
+      "executable": false
+    },
+    {
+      "path": "assets/layout-dump/LayoutDump.cs",
+      "sha256": "959fbcdcd2ff95e3c911e08402b5d519db70694143d4626dbe1c656b11b066df",
+      "executable": false
+    },
+    {
+      "path": "assets/layout.example.json",
+      "sha256": "ca68c329417018f0b5ae2c54a1596c4ede60dcff39a85aa6b67d13b8ff59756f",
+      "executable": false
+    },
+    {
+      "path": "assets/motion/interaction-kit.css",
+      "sha256": "318d0fd63041c8ba30cece97b3b1e49ff150b92269a2756d6347382ec87a417e",
+      "executable": false
+    },
+    {
+      "path": "assets/motion/interaction-kit.js",
+      "sha256": "ea24984a358a5cb3dc8868c55e952d68d720564eac0f8b23750cf8303dfe4f1c",
+      "executable": false
+    },
+    {
+      "path": "assets/motion/kit.html",
+      "sha256": "f3fe945dd5bd2b09bae64cdb628810d69291b7d9a27ec2c34f13d2dfc7534e54",
+      "executable": false
+    },
+    {
+      "path": "assets/motion/README.md",
+      "sha256": "a4fdb5f7670941cf99a61155b108f3511557a736062263c58bb5ce9097a10eb4",
+      "executable": false
+    },
+    {
+      "path": "assets/tokens.example.json",
+      "sha256": "cbd53c2527c9fb6d0629e6abf7420042f27783a0218ee9af6779b081c7f74a4d",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "04aa3b2852371fe0a08e7fd491d3c4628c1ee8b3bb34b07ebd504dbc23e46148",
+      "executable": false
+    },
+    {
+      "path": "references/ai-slop.md",
+      "sha256": "f9447147e043820783d834e88627b7727551b22bdbea436ae3cd68ef97cded35",
+      "executable": false
+    },
+    {
+      "path": "references/art-direction.md",
+      "sha256": "e09358ab2a8afcf90f5ccb65a0fe5cd657f7d8fae11f4e4356072b4777ceef53",
+      "executable": false
+    },
+    {
+      "path": "references/behavior-and-content.md",
+      "sha256": "25f7e8ef0aefc21da05ed848181a72b8267576f98891d4b434274e9b25f7b461",
+      "executable": false
+    },
+    {
+      "path": "references/design-contract.md",
+      "sha256": "01dada52caa648489b764e5ad993cea90da62e14f8b10bdb176758e9b61bd4fe",
+      "executable": false
+    },
+    {
+      "path": "references/design-md.md",
+      "sha256": "dc546b7ce9245e86488c7fa308b7f3a5a5a6bdbe4d292849eda357b59002fc5c",
+      "executable": false
+    },
+    {
+      "path": "references/direction-deal.md",
+      "sha256": "37381ec99789f645b6053a59431fee4d2f0e448e1c7ae9362624a7391e9a037f",
+      "executable": false
+    },
+    {
+      "path": "references/effects-library.md",
+      "sha256": "aff7d7dcec154b37fc380efb8b6acdaa7978e988cb4b077f083166d96f77ee07",
+      "executable": false
+    },
+    {
+      "path": "references/evaluations.md",
+      "sha256": "23274918e6470c9133d77e97fc4676cdf1427b49be71238da5ec78a4195b8db7",
+      "executable": false
+    },
+    {
+      "path": "references/fonts.md",
+      "sha256": "320153af0a1aa72dc01c78ae9e10f49cfeeb9d8faf58f982a53cafff50900404",
+      "executable": false
+    },
+    {
+      "path": "references/house-style.md",
+      "sha256": "5dd747d5441b96f8b940d6a99927fe028d7b78475c152143d73fcb8edf6cd5a1",
+      "executable": false
+    },
+    {
+      "path": "references/layout-geometry.md",
+      "sha256": "f8f6fa5734093ae242ee535fb0712392dfefbbbd726ea26641c2626e65d14131",
+      "executable": false
+    },
+    {
+      "path": "references/materials.md",
+      "sha256": "707ade6d785937e98cc672dd2b1e966e452ae7a6eed46b8fb42f65ae5b4f8d9e",
+      "executable": false
+    },
+    {
+      "path": "references/motion.md",
+      "sha256": "e85bccda7d404398247fa6eeb2c7726a343d5ca9cff980932c21673e2da0c160",
+      "executable": false
+    },
+    {
+      "path": "references/page-anatomy.md",
+      "sha256": "ee97d10b94420d6c59ed95a54d0ec0e3ee050c4050f27b7971fe66e99a3839ac",
+      "executable": false
+    },
+    {
+      "path": "references/platform-adapters.md",
+      "sha256": "3a9157fe1e3ee36c27f64ba9370673064fede6320c1f02e2b15c89245cecd6ad",
+      "executable": false
+    },
+    {
+      "path": "references/sources.md",
+      "sha256": "ce34baf27728993a7e492578473a3eb8e2458295a4ca0061d85219010c7e69f3",
+      "executable": false
+    },
+    {
+      "path": "references/validation.md",
+      "sha256": "0ac14cb7784f2c1b20e2c6efb57eed693760d251d0e39f51fcedaeae86f711ef",
+      "executable": false
+    },
+    {
+      "path": "references/web-quality.md",
+      "sha256": "219379f87db2b085897abc1f7e2acd31a946ef886eaa5165c7643138b0f6c572",
+      "executable": false
+    },
+    {
+      "path": "scripts/bench_metrics.mjs",
+      "sha256": "316143c54f07f1c54a7c606200560b971461af7b3596cb54a853ab8d96d5c36b",
+      "executable": false
+    },
+    {
+      "path": "scripts/check_layout.py",
+      "sha256": "ccfac09d38a092bb2274e1de09badb2a364711615d9cddf53f8652cfdd37f60a",
+      "executable": false
+    },
+    {
+      "path": "scripts/deal_direction.mjs",
+      "sha256": "f5deff5959b1acc31508ec395e794a1538dccd97c04fe59e0de8ded92c66cf7a",
+      "executable": false
+    },
+    {
+      "path": "scripts/motion_probe.mjs",
+      "sha256": "46f171040f6238f3a56abe092c393a4661891eb1448740b35e132296ecc9e3bb",
+      "executable": false
+    },
+    {
+      "path": "scripts/test_check_layout.py",
+      "sha256": "4bee48be43ff4b131e901569310fe1cc290b6cb19bc35f17368d0289ce20305d",
+      "executable": false
+    },
+    {
+      "path": "scripts/test_validate_design.py",
+      "sha256": "732bb4e6aa861ed80449e9f822d3ee6c6cb8b81e81c3107482f8a7fcf7c614ae",
+      "executable": false
+    },
+    {
+      "path": "scripts/validate_design.py",
+      "sha256": "4997fecbb0a908b8e1797f73835ab9cc89fc8312764a41719fef991949bccd88",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/better-design"
+}

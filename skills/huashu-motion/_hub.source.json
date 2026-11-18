@@ -1,0 +1,246 @@
+{
+  "repository": "alchaincyf/huashu-motion",
+  "commit": "f09dd7a29e2c9c574939d54db6c0768aad51232a",
+  "path": "skills/huashu-motion",
+  "verified": true,
+  "coreSha256": "7de1e1bb0e50834d1f2dece4c93c63be08bb0e88446d8c80c65efa5cc849549b",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "7de1e1bb0e50834d1f2dece4c93c63be08bb0e88446d8c80c65efa5cc849549b",
+      "executable": false
+    },
+    {
+      "path": "bin/om",
+      "sha256": "58db7a01cce140a26a302a43816c03f512ebae8b526fd8ee2bd0a0e194a22eed",
+      "executable": true
+    },
+    {
+      "path": "references/about-author.md",
+      "sha256": "f53cdc9ca43881fd95f75b16b9176190708117b138c3d4ff2560e78b9ca2b945",
+      "executable": false
+    },
+    {
+      "path": "references/colour.md",
+      "sha256": "11d0dede9e2608216a80645ae6a77caf1c3aacbc4c62425f105bb954c1a403df",
+      "executable": false
+    },
+    {
+      "path": "references/contract.md",
+      "sha256": "147dafc907441bd89e5ec5124a9de14e670e243f164489e2613233452fcfb5e4",
+      "executable": false
+    },
+    {
+      "path": "references/craft.md",
+      "sha256": "8848876be15b82e3c6f64cfbb4462b564b19b1beff69bd144b265baa4d6ffe1e",
+      "executable": false
+    },
+    {
+      "path": "references/depth.md",
+      "sha256": "f2663b6cf9bf12e123a2e31a8552c57aab9d698ec788ce21317fd2fc4fefb9f5",
+      "executable": false
+    },
+    {
+      "path": "references/director.md",
+      "sha256": "f2edb6c10c50e7307efd703e7413c5ab3840ba7acbb65c98a8a3088778502052",
+      "executable": false
+    },
+    {
+      "path": "references/experience.md",
+      "sha256": "51ccbfc58230fd26ae302c186e508e364abcc1d17c46d398ffc901e111e73e39",
+      "executable": false
+    },
+    {
+      "path": "references/grammars.md",
+      "sha256": "b2d6ac63291877e299622de847b3891186b828cf3f06a67465a60f81cad58341",
+      "executable": false
+    },
+    {
+      "path": "references/library/formats.md",
+      "sha256": "12caf909a415f392488b83dca6f13936733b2a4436daa7df0b6326a538a41536",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/3d-object.md",
+      "sha256": "df7b540e602151387af462419ba00ea5133f4b66a46275be4982191a34e8a18b",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/art-styles.md",
+      "sha256": "628c5a94285b53cd58f8203942c9ceeb7a4364326855a83a19cf6afff96ba965",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/card-montage.md",
+      "sha256": "0cd6e5caad01738d41a9ba37ac9ae14bbbc2f896696b0a60bb57754e2608d476",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/character.md",
+      "sha256": "0187538b564f5718e59652c3ec5066522b54404e299b024409ecab43ea8e58da",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/continuous-morph.md",
+      "sha256": "ec261fb00859122320fa4a60e9c23ccb4862f1b1ce51f222d1d10fcbb4e64aab",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/cursor-demo.md",
+      "sha256": "3d9cc40bfe891231cb601ebc2d75f8e575e42434d1c0b661310bdee1efd42768",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/data-story.md",
+      "sha256": "72101951c0c6001c138886f92964252ba8af2f567cd3a57bb5ec9026c7d53d7b",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/editorial-collage.md",
+      "sha256": "05423c1e4b27190c1621b879631846a36315e861d5368b665348b9963034ba0a",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/flat-world.md",
+      "sha256": "29b9d635f63f27e8edcdeba6a9bed7597186d93ab14cd8d0344a47fcaa17cecd",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/generative-field.md",
+      "sha256": "5539275e1e6d6c354999481ceb3dd2fcf6ac3aa7b6c72bbff22f5f296db3b564",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/hand-drawn.md",
+      "sha256": "81749bdafd2ab5987984e71ec75ca86f2f4f77723418a749bb625e9acabe4256",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/kinetic-type.md",
+      "sha256": "c7647d0e4893a39e2d8ef95fc3ba89ee4dabd2f3e84fd355150501e26f24d94f",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/liquid-glass.md",
+      "sha256": "a1108a383ea7cbc63efa0062823d911717f8b623e3d9466db0277b3c9d7c3d89",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/mechanism.md",
+      "sha256": "fb89085eabab7105bb7a96b192ead8a9eda27bfa091300240a693b1b74d69d39",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/modular-grid.md",
+      "sha256": "a94a5256641b842d72cac87c7d8950d6efa1713839e8571cc19b66f0cb575545",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/photo-led.md",
+      "sha256": "7b451709626a6da081a5ed2055705855c10a98bec1cd453e169abb9512d8db5a",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/retro-digital.md",
+      "sha256": "28ee58df5753a0720c88a6cb6817c83c9c1a12cb159ff8e7abe8a479008b9f72",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/showreel.md",
+      "sha256": "358df11aabe7c977c736d971e49b9508c4d69b1bb4b02216bf12884dfe6b5838",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/system-diagram.md",
+      "sha256": "837cd2bfb4d1c93dc6f5d1a40d5974f514a841147bb1a2b555e028012abc9e71",
+      "executable": false
+    },
+    {
+      "path": "references/library/languages/talking-head.md",
+      "sha256": "6ca40ee1a4f85ac026dd1590150a39379a981f4f0d27ff1d11d5dbbf6660fb0b",
+      "executable": false
+    },
+    {
+      "path": "references/library/product-fit.md",
+      "sha256": "3c7fe709105647b92cd881f947dd958c389035295f6fb89487476fb7e2018b55",
+      "executable": false
+    },
+    {
+      "path": "references/library/README.md",
+      "sha256": "2339e200bfa35d2bfc1ec28745d914d381ccedc8b78392eb51b36639f6c58fd4",
+      "executable": false
+    },
+    {
+      "path": "references/library/techniques.md",
+      "sha256": "181fbe011ae69778a5a4e53ae10e98daf6bf061c55b16e8b44c1ee9d9f8b997f",
+      "executable": false
+    },
+    {
+      "path": "references/music.md",
+      "sha256": "55dce697a408856716f19bc01cf94ca3b7e2444649f3cb149af44d52411e7287",
+      "executable": false
+    },
+    {
+      "path": "references/product-demo-continuity.md",
+      "sha256": "84a545faf82bc7e8f94781a8d4313dd063bdd966dd77bd13a0f23b62fe98e41e",
+      "executable": false
+    },
+    {
+      "path": "references/provenance.md",
+      "sha256": "139268157eade6168b9835ff2d3011dea6f788193c589b7ee131414382c8c145",
+      "executable": false
+    },
+    {
+      "path": "references/punch-up.md",
+      "sha256": "db6c20920757555721e1e000a377b0c6827d42286253a08ad38276601f4ef7e5",
+      "executable": false
+    },
+    {
+      "path": "references/rhythm.md",
+      "sha256": "a9a86b12c8d6d30a015a2564c76c24c186359b295f1a7b6e74863fe6e24002d2",
+      "executable": false
+    },
+    {
+      "path": "references/scores/first-light.abc",
+      "sha256": "b776c1c6bebce76b06ee3995be470b7cd9ecfb390a632c09072ae808141d2872",
+      "executable": false
+    },
+    {
+      "path": "references/scores/four-rooms.abc",
+      "sha256": "7a2bf30ec898bbc0e49d10dd639da8e18e5bae5913f868c0e05c81a1a26b8b13",
+      "executable": false
+    },
+    {
+      "path": "references/scores/signal.abc",
+      "sha256": "99ec2f7633745412b01c1cfc1fc3c741f035b4a2c5e4d959d2ae693e26689733",
+      "executable": false
+    },
+    {
+      "path": "references/sound.md",
+      "sha256": "34ee9ab92fef7c5bf40c43f799ddb36eaeccbb491650dbace4b7a93e98039f78",
+      "executable": false
+    },
+    {
+      "path": "references/talking-head.md",
+      "sha256": "e78d08cf74028059e732ada71f7eabfc0f46a61b2d9be90a8143f6eb3c968ca4",
+      "executable": false
+    },
+    {
+      "path": "references/verification.md",
+      "sha256": "982ec8ee30be501e5ded5a6425bc8df7ceec29af0d94cf97a41cf6710d52b6cf",
+      "executable": false
+    },
+    {
+      "path": "references/visual-direction.md",
+      "sha256": "5f514f094a221df53ac1354d481b780bc8d29394aa1f879fb94259d42efa8ca0",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "b8fa8ecfc57cf8339ecdab05e62e811a5d00d1e1f9373ff1de64cc9f261e2d3e",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/huashu-motion"
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "name": "e2e-red-triage",
+  "version": "47336d1a25dd",
+  "source": {
+    "url": "https://github.com/sno-ai/sno-station-skills",
+    "commit": "47336d1a25dd434ebec0a37593abf66ccf1fca98",
+    "sha256": "d877a2c2a1373c43a9118ccb8d64105f70269006f1480a5d38b1b86b33493b8c",
+    "license": "Apache-2.0"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Phân loại một lỗi kiểm thử đầu cuối khó giải thích, phân biệt lỗi sản phẩm với lỗi môi trường và đề xuất kiểm tra phòng ngừa.",
+    "aliases": [
+      "Chẩn đoán kiểm thử đầu cuối",
+      "Phân loại lỗi E2E"
+    ],
+    "keywords": [
+      "e2e",
+      "red",
+      "triage",
+      "Chẩn đoán kiểm thử đầu cuối",
+      "Phân loại lỗi E2E"
+    ],
+    "examples": [
+      "Dùng e2e-red-triage cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "d877a2c2a1373c43a9118ccb8d64105f70269006f1480a5d38b1b86b33493b8c"
+  },
+  "requiredCapabilities": [
+    "bash [file-type-hint]",
+    "bash [mention-hint]",
+    "python [mention-hint]"
+  ],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write"
+  ],
+  "syncedAt": "2026-11-18T11:22:34.799Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

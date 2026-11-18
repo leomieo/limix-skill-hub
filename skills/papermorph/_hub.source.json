@@ -1,0 +1,721 @@
+{
+  "repository": "DozenTwelve/Papermorph",
+  "commit": "839a62cad3c74446944a167faff07c994f33e5b7",
+  "path": ".claude/skills/papermorph",
+  "verified": true,
+  "coreSha256": "eacef1396ea67141e8ad8aeece1a7739b8eb0edb5c1c6aec0fde9640b1618b1a",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "eacef1396ea67141e8ad8aeece1a7739b8eb0edb5c1c6aec0fde9640b1618b1a",
+      "executable": false
+    },
+    {
+      "path": "assets/scorm/launch.html",
+      "sha256": "d76d826c55f1315afd020c880a9bb691078e74e51b38c02aa40ef29c350c2075",
+      "executable": false
+    },
+    {
+      "path": "assets/scorm/scorm-bridge.js",
+      "sha256": "5569aecbe3be081df6689f09a383090625b0c2ec58427cfa1e8e480cfa829069",
+      "executable": false
+    },
+    {
+      "path": "assets/scorm/scorm-host.js",
+      "sha256": "9eeb60d0628b1a413e51c3ed1f2d8b5987477d76cdd7ccd74dd9857f0fbcfb7e",
+      "executable": false
+    },
+    {
+      "path": "assets/scorm/test/check_scorm.py",
+      "sha256": "e5056e67ad75e7d35c1251ed7de1487983a52b8f1448077ef5eabb003fc781d2",
+      "executable": false
+    },
+    {
+      "path": "assets/scorm/test/mock-lms.html",
+      "sha256": "f60ba4e065506df549a830c680f43a84a875dd429924d5576bfcd63ef0304ada",
+      "executable": false
+    },
+    {
+      "path": "assets/scorm/test/serve.py",
+      "sha256": "e7212cff112495e9db2f5ddc93bf4f3f44805b1b8a0023e65f03dbf7998d70bd",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/book.html",
+      "sha256": "2fb174cab0b5a7a1715e272ba3e23b546f8ce889d4be158215079eeead5f0230",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/chapter.html",
+      "sha256": "aef51338cdd899c76d449b21ea059e0e399c7054190973b30470fb906285bd45",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/chapter.html",
+      "sha256": "948b263532da97bf5a0c205ed0f49bc6c938447e67f8e933376c67231eb2f4b8",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/lib/book.css",
+      "sha256": "fa2346f950788a8032c3aaed8ac3bcd8daa47b23adc949c9505d6afbbf6a90f3",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/lib/film.js",
+      "sha256": "5bed91c24b0fc7acf29d736e2f2710b6280703195d825569c8871b8bd9b10b56",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/lib/fonts.css",
+      "sha256": "fe984f6b8e5c442fae4d463d983cd56f2f0804e36c997231bf02771577d0c17a",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/lib/fonts/EBGaramond-italic-400-latin-ext.woff2",
+      "sha256": "c9b9621f369fd9443d3dfbf3a77942813d85d91044e26ada13ba51e0afa3237d",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/lib/fonts/EBGaramond-italic-400-latin.woff2",
+      "sha256": "9568725329331cc56f84408d34fe0228b3471c243f4fd2f9fa851248033ae38d",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/lib/fonts/EBGaramond-normal-400-latin-ext.woff2",
+      "sha256": "ea45b336c06b6342b5b4a4c694a49908de24551281fd9061f312fdcbce93b935",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/lib/fonts/EBGaramond-normal-400-latin.woff2",
+      "sha256": "a9280e8c4959b369c8acc47c0ebd9ee5060f724acf453e77bcf7654071aa9f5c",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/lib/fonts/EBGaramond-normal-500-latin-ext.woff2",
+      "sha256": "9e8562787c6371384e4ca134ebf2338ad46592238203e2b54a01a80b66f9f899",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/lib/fonts/EBGaramond-normal-500-latin.woff2",
+      "sha256": "4d4285166339ed5201aa4743ef04389f1db06d426792b7d0efa52b4e0881348e",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/lib/fonts/OFL-EBGaramond.txt",
+      "sha256": "0985066662eb755ed3683ae5482a81a9195b49ce3f7e165cc2388b3dbece7dd7",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/lib/fonts/OFL-Oswald.txt",
+      "sha256": "0fd731a904b729a4e02eaf5e8ebd06783edd9abe400e8882760160230675b652",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/lib/fonts/Oswald-normal-500-latin-ext.woff2",
+      "sha256": "cc710bb3d00e932d44bb76d01ccde54fd53e7f8f6c4987ba8a1f767aaa650d11",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/lib/fonts/Oswald-normal-500-latin.woff2",
+      "sha256": "6d8339648bd6dbaa63b27fa74309c88c09c0b2abd0d59e6929a4cd0012739c18",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/lib/fonts/Oswald-normal-600-latin-ext.woff2",
+      "sha256": "f7353cf5d21ed947244d740622624eb49a2ab4ff21bc96ee42a918b5fd0f8015",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/lib/fonts/Oswald-normal-600-latin.woff2",
+      "sha256": "2f63e80d18b6fd405aedd0514b7feb1e953b8f50b0a0e0fa8d8c462b4ae4e83b",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/narration.en.json",
+      "sha256": "a3f1218b541aad56ce30ab77557e199198e26388c83e362be3f0c8ac86b76b3a",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/documentary/style.json",
+      "sha256": "472c8c3b277b2245e6dbdd62af90fb46ed11ca6834cc028709dccec2920ac446",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/e2e.py",
+      "sha256": "d8a0a6754e072d59a4521f6b5193adf7b40442e9e0d00ebb81647378339932b6",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/explore/data/map.topo.json",
+      "sha256": "27e063e14df2e091b6c68816deb1ba1a72b8c0f966c18b12b1f3c0dfbe8ddb43",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/explore/index.html",
+      "sha256": "48c5f3b2ec99bccc1a879b2c9d6181da11b41651f770e1b7146fb67b02ae9524",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/explore/lib/events.js",
+      "sha256": "af5781df900bb90c396cdfac709c7bb24d747f463315a765dd3905ace5c9668d",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/explore/lib/explore.js",
+      "sha256": "77da2434a5ecfdf712db34e9d3296685708a4dd1b7e876bf73b07e9eeda71614",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/explore/lib/page.css",
+      "sha256": "ec489885bb92cb6c28395e70c41ce30567474b9c234a1f282ea6ba5a77ec8e92",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/explore/lib/sprite.js",
+      "sha256": "11c1b058b504d9e844be7ca56816d7b52b4c2cbc41c41a720e8a7b385c5d61a3",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/explore/lib/states.js",
+      "sha256": "b3c24322c2ffce8d0c00267f34b4f1b5ba073422977a5243a18540512a0c2689",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/explore/lib/story.js",
+      "sha256": "c68a72c42b9ed7adcc214130ad5f08b9f5b82c56f5a57804da18f4f3ee28a306",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/explore/lib/topo.js",
+      "sha256": "62c80b1109d1570c2619e59e57068f23edb6790c108b1b7e401bcf463fed5265",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/explore/style.json",
+      "sha256": "2ba021b0ab3bed2e9069b946880831c2906bdfafb3c7d707d6ca6ade22b92241",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/maps/lib/globe.js",
+      "sha256": "491a40f1410ef032e2cd8a7baf621e089c2f2e3f5386720be9d8bb53c6312ac6",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/maps/lib/map.js",
+      "sha256": "e9ae17b2f70ddcadbc2edea0b8099d30a9b27d1e580000e538be0a1e23cfeb0e",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/maps/sample.html",
+      "sha256": "893fc9f6438f32764518077fea519dc1f8ff181b7d73a7d97c3918a01df028fa",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/narration.en.json",
+      "sha256": "5fc54d0004f88f8ed4685cb7f4c02c1feb0906e17de070b566f29869d8621003",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/picture-book/chapter.html",
+      "sha256": "851fa89ac482747aa915c01c6faaef861280028eead49a7e0c1ad508d968b274",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/picture-book/lib/cast.js",
+      "sha256": "2d2ccca77536c15bfc17cfb95c910a976acc5b299fec9dda3cc0a7db3ffc538a",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/picture-book/lib/cut.js",
+      "sha256": "0318c0592067f36f2bb6a3ec7c18467167a8bda596d6228d70ed641eba8104fa",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/picture-book/lib/paper.js",
+      "sha256": "6c9cd11333695ec548109913c924cbaef9ef22582c2d662f7a3eed28710d1e64",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/picture-book/lib/shared.js",
+      "sha256": "a7e80b17a266a540578e5200e66e27333521139750278e71ecedc1d0f13953c8",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/picture-book/narration.en.json",
+      "sha256": "fc35c66c074e07984a369b88d407edf4753e274386a63db21ec694b4696810e4",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/picture-book/painted.json",
+      "sha256": "a4ec1252b84e121f5f748569170c9ca1cf5c4233bdad2797c814c8e8a8cc4ef6",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/picture-book/scene1.js",
+      "sha256": "ec73de66b5c4ebcd3e8ae1aa9b42ee4173d9e5eb053a9eafcf89d5f5a2a5a0f3",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/picture-book/series.html",
+      "sha256": "a815875a9245de8f23715c36d71247641f1ff0d47fc9c0dc69ac541e3ee71bcf",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/picture-book/sets.js",
+      "sha256": "eecd22c615af27af43f6a3878a2a5a4cf2198e8efc80cd70fc6989445e5b2583",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/picture-book/style.json",
+      "sha256": "726cb8caa4d19ea4f5752cd8048ce04ab3d28469781c25195e93b1481b7b04a8",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/scroll/e2e.py",
+      "sha256": "8f31564846c138dc628db7ec9f292680a2975f85655a3ddc77cf8e29404ae6c8",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/scroll/img/geo-lite.js",
+      "sha256": "895c4d82ab27e86d51dc79d8a6e2db3f8f3fb13f3dd7b061fb37ffd3a5f37079",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/scroll/index.html",
+      "sha256": "0177b307af3792d10e812174f656842e5d1df7c17cfcf21bdfeb4a604186a7d4",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/scroll/lib/scroll.css",
+      "sha256": "cca8e95000419daa3ef0d618378495b1995ae5469fc2534d553868caf2b3fc43",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/scroll/lib/scroll.js",
+      "sha256": "b35b881ec7f163b368642da66e4e77d40c2515ea3700a5e06b599c4f4c996d74",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/scroll/story.js",
+      "sha256": "df389c8917c701913274c808f98140e2d31834f281183baef8b17292f8d41b46",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/scroll/style.json",
+      "sha256": "2fbbbbde19c44d08fdde42a20022d58ca65fd32be55193e58fc9e43035bfead7",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/shorts/chapter.html",
+      "sha256": "64e1f0201f1da2f0df58a4baf44c697698864414f20a72422409d4b4e1b004dc",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/shorts/lib/book.css",
+      "sha256": "6e0857447f2d9b3063004a247b2b7837d1594f2a3b08bdf4899514fb6bdc288b",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/shorts/lib/icons-LICENSE.txt",
+      "sha256": "ddbe6082ec3cf979db47e5af549d2849c5d6182b3e005ef91ce1dbb9eb122f11",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/shorts/lib/icons.js",
+      "sha256": "cbee12776372863a8c04c5a6269a8358331892be14200334d335a93eb2b7b3c6",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/shorts/lib/shorts.js",
+      "sha256": "1600221c4f038c0e475a3c9dc8ae05e69ceca7993659d61d1d3fb80cab659434",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/shorts/narration.en.json",
+      "sha256": "4ae5d8e080abdbdb4cf72ecb9f3ddf203f25cd4b8c06460cb08f3282587255b6",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/shorts/style.json",
+      "sha256": "181b65647929ee11c75e5b7967afb4195c09e971a52c543ebc2f3df549522a73",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/style.json",
+      "sha256": "378c5a13776a3db304200ec92033d69b6428ff561156d6cb2589ce8c2fa4c5e8",
+      "executable": false
+    },
+    {
+      "path": "assets/templates/unit-art.js",
+      "sha256": "2f9bfcb5b3634f539807b9db4bcb0c7f69829415273b6c279a07ad66ea8f6f50",
+      "executable": false
+    },
+    {
+      "path": "references/core/engine.md",
+      "sha256": "530ee1439bbbce68d3b8679d2e33acd683e76b6fae2c3cdba42d8915cbbf68a6",
+      "executable": false
+    },
+    {
+      "path": "references/core/publish.md",
+      "sha256": "d6d98b569a1e827a7d4fa83845614f530457ecd3cafeb6eacccb325d13c39bba",
+      "executable": false
+    },
+    {
+      "path": "references/core/review.md",
+      "sha256": "d8e4c856c225b87979c6d2ee6de4e57ce2e1765c90d7cf7479254861b054d4f9",
+      "executable": false
+    },
+    {
+      "path": "references/core/sound.md",
+      "sha256": "69f4ed28722801221cab9006fff48a9059494b772d8a27364dc9af433cb1a621",
+      "executable": false
+    },
+    {
+      "path": "references/core/style.md",
+      "sha256": "9e7cff39403dee8e4ca78f489a634bb4a7deb4d3984c680016caca24ef75d5bf",
+      "executable": false
+    },
+    {
+      "path": "references/core/team.md",
+      "sha256": "f6f0658745811b701941e013ab62b7392931464088b1d974a47867aa3e6304be",
+      "executable": false
+    },
+    {
+      "path": "references/explore/explore.md",
+      "sha256": "2c0d8a6a7ec8f415e6aa626def0342ac06183a4c24b0847556bfdf945d1e75d4",
+      "executable": false
+    },
+    {
+      "path": "references/films/documentary.md",
+      "sha256": "0757eae60681fe31b5f57b26a1f9fc82602249d71d9d8c46405ec597a53fdb55",
+      "executable": false
+    },
+    {
+      "path": "references/films/films.md",
+      "sha256": "054c606854cc170806a4b8233e3f5009179d493c52c04c8b14c97d7e8fd65bfd",
+      "executable": false
+    },
+    {
+      "path": "references/films/scroll.md",
+      "sha256": "ded4e3960202ce015464eeb785bb20260aece209abcfcde01a68ac5ab792b002",
+      "executable": false
+    },
+    {
+      "path": "references/films/shorts.md",
+      "sha256": "bcaebf5f93a9f767af1eb32f82448ae2036b971588cd287024dfabfde15367bd",
+      "executable": false
+    },
+    {
+      "path": "references/lessons/assets.md",
+      "sha256": "bd52d64d70c97890a767e7133d53e7962f5453a4a26e1357b7335826121708dd",
+      "executable": false
+    },
+    {
+      "path": "references/lessons/authoring.md",
+      "sha256": "35d7973f2737f5e5fb729a9ffe26c89b9e7fa425c66daf3a9c940acef00e9ef0",
+      "executable": false
+    },
+    {
+      "path": "references/lessons/checks.md",
+      "sha256": "c8a8f98bb0f18a603b1f85afb4c07aca99e5ef76f3fe76e95c1dda76bf5341c0",
+      "executable": false
+    },
+    {
+      "path": "references/lessons/courses.md",
+      "sha256": "2c6484645f3e38247d5912232473b952511674783196a7094d44a80e6349ee70",
+      "executable": false
+    },
+    {
+      "path": "references/lessons/cover.md",
+      "sha256": "ee4878a00e52a57d830e3cd91063de26eec3f61c3980b3011452e75754cedae8",
+      "executable": false
+    },
+    {
+      "path": "references/lessons/diagrams.md",
+      "sha256": "6d8c1bb7820e6d5fdd6c649d662c0bd0dda619f7aa3e9766518eaa2034d9c314",
+      "executable": false
+    },
+    {
+      "path": "references/lessons/figures.md",
+      "sha256": "a63ae18752fdad99f35d34ea1c752ebbe3e9bf49f3cac4a06baa334548cd35b5",
+      "executable": false
+    },
+    {
+      "path": "references/lessons/intake.md",
+      "sha256": "7385b06f628a125ae6f8ddc463a8589a2e34d2e79228e7e77026eff0aacbc0f0",
+      "executable": false
+    },
+    {
+      "path": "references/lessons/lessons.md",
+      "sha256": "91a91cbaf1f979ce3dc049afd2978d077fba468bfc1c0752652ca0420bea83f4",
+      "executable": false
+    },
+    {
+      "path": "references/lessons/maths.md",
+      "sha256": "d06c915974de8a36af9c55d5191dba9762c2f2e2a292f84147547fe70bf6870e",
+      "executable": false
+    },
+    {
+      "path": "references/lessons/questions.md",
+      "sha256": "5a961a51fcb8d7b3c9ccf73910071875d68f80d2cf7b2f4d4d66861a28db61a5",
+      "executable": false
+    },
+    {
+      "path": "references/lessons/scenes.md",
+      "sha256": "3d612a71b3f1226b9b54c2caec9c032539219e2e96bcd0ca52b0089ffe950084",
+      "executable": false
+    },
+    {
+      "path": "references/picture-books/listen-and-find.md",
+      "sha256": "07d52d6e311c0fbd3ae62f404a3690e2e9e959b10c6c3284894ddf9b8934f0f6",
+      "executable": false
+    },
+    {
+      "path": "references/picture-books/painting.md",
+      "sha256": "e91cff4d8727a592cc28af9b44aab924cc68e3adc02dd4b9bae18c0b8e300bc6",
+      "executable": false
+    },
+    {
+      "path": "references/picture-books/puppets.md",
+      "sha256": "4c643717b521dedcb880362dce0b2207e7d8a22f6efda600ed0e456ae60c0a07",
+      "executable": false
+    },
+    {
+      "path": "references/picture-books/stories.md",
+      "sha256": "8b43f2c12ef8eadcd676a65b7e3c33cc24622f5e91ccb5c09e5e9d6b7ee302e8",
+      "executable": false
+    },
+    {
+      "path": "scripts/bake_puppets.py",
+      "sha256": "703be1c1b56bb3ea2a8057df88bd5b6761c4a9af27a36aa68130a753393a1c6e",
+      "executable": false
+    },
+    {
+      "path": "scripts/bake_sets.py",
+      "sha256": "f42a82975d1ed60a9e60a60877a26670bd570d71c1ed0ba67f73652ac408f546",
+      "executable": false
+    },
+    {
+      "path": "scripts/browsers.py",
+      "sha256": "201b8a2a45adf4a64d89de231e323e6b8acd8b285786426b278e0cd98a6a4147",
+      "executable": false
+    },
+    {
+      "path": "scripts/check_blank.py",
+      "sha256": "841dd18f61edf75664f36e30fa3567294007b07140b025aa73959e552faaa4d5",
+      "executable": false
+    },
+    {
+      "path": "scripts/check.py",
+      "sha256": "0af28c6c1f4a56101257e2b3040cc6ce5ce932c9054708b9164a17455367d400",
+      "executable": false
+    },
+    {
+      "path": "scripts/commons.py",
+      "sha256": "f82a61e824b69c64823599af302f32d1a25d6f8b41507a54150c9580a3cc7e4b",
+      "executable": false
+    },
+    {
+      "path": "scripts/cutout.py",
+      "sha256": "2f44c424afdb74e81ea875e9074875297b4b231833729dbd35fa08cbc0e86810",
+      "executable": false
+    },
+    {
+      "path": "scripts/eleven.py",
+      "sha256": "e3b3f9e4c7784a2366ce94af61b33695339045b466dff1606c6b60dc9117d23f",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine.py",
+      "sha256": "d6a932c82f5144f5789e3d69a86245408b4725f94140e4b3f79cdc1f77fe0637",
+      "executable": false
+    },
+    {
+      "path": "scripts/explore.py",
+      "sha256": "e9f1e5cc42f06784f6ca50efeb91de29f09496c4cb080331485c6be96a97c7cd",
+      "executable": false
+    },
+    {
+      "path": "scripts/export.py",
+      "sha256": "bf92c7e3b9d7f6319e8edba1d1d3aa6d37872aa2a549fb00b927a2086eb8bab3",
+      "executable": false
+    },
+    {
+      "path": "scripts/frames.py",
+      "sha256": "7d1d5feeedc355d439f39d082efa06e8da94ef52ef7235dd2a083ec63d79c91e",
+      "executable": false
+    },
+    {
+      "path": "scripts/geo.py",
+      "sha256": "71c1ccce5dc463686b1b6e3c5cb686615c3afcd3c62e1e9e7276c6d1cc63f5d1",
+      "executable": false
+    },
+    {
+      "path": "scripts/items.py",
+      "sha256": "1bb3a79af990a0e60b3ea39f6a545e50f62659d48df0cd0258f610f727e1f713",
+      "executable": false
+    },
+    {
+      "path": "scripts/join.py",
+      "sha256": "beb69004f525be34bce4a832f5c7d7d5211a4a70ab9e82d9a0d2c9cf332ac54b",
+      "executable": false
+    },
+    {
+      "path": "scripts/ledger.py",
+      "sha256": "46959648bed845d2fd3f84e0f85e34996bafb929d1f8bcc650dd9bb277d87bcc",
+      "executable": false
+    },
+    {
+      "path": "scripts/level.py",
+      "sha256": "d287ee7cc6518b6289c25e975321e8ebfbe48dc9eebb5304310113347a3ab422",
+      "executable": false
+    },
+    {
+      "path": "scripts/lift.py",
+      "sha256": "39482afe1761ff578ccf0be5aa6602d95fdbfdaa77e618b78c29a4e3a7904de2",
+      "executable": false
+    },
+    {
+      "path": "scripts/lint.py",
+      "sha256": "b61b41d9633c7b12cdd5b9b9972142aec237baab3e5b8c88abe6fa2fdaf90037",
+      "executable": false
+    },
+    {
+      "path": "scripts/mouths.py",
+      "sha256": "9b3eeea69ce570eee5161a348f4197b1649948da796e22ca8437e4998dc86323",
+      "executable": false
+    },
+    {
+      "path": "scripts/music.py",
+      "sha256": "c82a5465e0436f0eaa65e133d6e09d0b462a785a5f2d082fe579fb401dce15f6",
+      "executable": false
+    },
+    {
+      "path": "scripts/new_book.py",
+      "sha256": "beab18f253f036a65a453a7e8585965ad8051a8806cd02b88cdb69be71965393",
+      "executable": false
+    },
+    {
+      "path": "scripts/outline.py",
+      "sha256": "f011e3f5cfe0bfeea3bf15621fe1b508b72d5ac64151bdfd2111d597e8494808",
+      "executable": false
+    },
+    {
+      "path": "scripts/overlap.py",
+      "sha256": "a4d53c67f3f78f082a35b86fc8d5deeeb8a58bacaaef4f0213b39621ac33d206",
+      "executable": false
+    },
+    {
+      "path": "scripts/paint_openai.py",
+      "sha256": "e6c9d6e2b9976240f04f17ffb917c8b1f3b48838cc6b4ba49084f01a49b5e462",
+      "executable": false
+    },
+    {
+      "path": "scripts/paint.py",
+      "sha256": "90416693b6d61cad32405d6c9aef8c3f6f65167b0ca3512b2aea2f18fdc78dc5",
+      "executable": false
+    },
+    {
+      "path": "scripts/painted.py",
+      "sha256": "1eb61014fb27e71c9e051722e90129d190f6ba44f874d82fe40bccafa2a5d688",
+      "executable": false
+    },
+    {
+      "path": "scripts/perf.py",
+      "sha256": "38740b9f7508174fee704c0814f00fc1dde3dfc4d895356abca91061558f46d7",
+      "executable": false
+    },
+    {
+      "path": "scripts/playlog.py",
+      "sha256": "227a3c33efba0f137ff0563dbf4c58995a46cb2aacff46bab9cbf9d63ea059d1",
+      "executable": false
+    },
+    {
+      "path": "scripts/prep.py",
+      "sha256": "4401a0723b139db3405cfb90343f299d9779b311b349b11262409b860e8181f1",
+      "executable": false
+    },
+    {
+      "path": "scripts/refs.py",
+      "sha256": "589126286b75b4501cdea4d95622a627e415c7302a65887d38baad35797d2cfd",
+      "executable": false
+    },
+    {
+      "path": "scripts/safe.py",
+      "sha256": "676334845d7fc1e5f586c4db58c73de6534184427fcbffce9ea65b4a7be3f984",
+      "executable": false
+    },
+    {
+      "path": "scripts/scorm.py",
+      "sha256": "8a2385e9048e7809026e045145a8368eda072e9c56e81e2741367dd084afdc89",
+      "executable": false
+    },
+    {
+      "path": "scripts/serve.py",
+      "sha256": "e16662b4b0f977777105993bfa9c3588ed93c0b8bb98ac58174eb16fe28e7661",
+      "executable": false
+    },
+    {
+      "path": "scripts/sfx.py",
+      "sha256": "9e4eb59ba56cbd8662d7629156968d295a871d040164a876a39db733c021ba26",
+      "executable": false
+    },
+    {
+      "path": "scripts/shot.py",
+      "sha256": "95c1631150a7ed6a6f7301deb5a2b5b0d75c6a7902f1b141ccdb25f484ecff84",
+      "executable": false
+    },
+    {
+      "path": "scripts/silence.py",
+      "sha256": "dbb68457afbfb5c5a4ed6ef81e1c4a7282a389c33e70eef26290e23875f29629",
+      "executable": false
+    },
+    {
+      "path": "scripts/split_pages.py",
+      "sha256": "7fee7e2161ff16e1afb3705d88cdad322cc1b0cc7da1638b570a4af1e52b13e8",
+      "executable": false
+    },
+    {
+      "path": "scripts/sprites.py",
+      "sha256": "bbc7368ad95e09e9b6f8019162bc3ac952a326fd87c2c8e8bc28f35b18273b3a",
+      "executable": false
+    },
+    {
+      "path": "scripts/still.py",
+      "sha256": "2900c8055ba0c9b1454449f96082766e52177136aa64f8bd9087474b1a58cb5c",
+      "executable": false
+    },
+    {
+      "path": "scripts/strip.py",
+      "sha256": "838e559191fc68acce941375905941fbb88c98f71fff386d9a7c16d4bab1001c",
+      "executable": false
+    },
+    {
+      "path": "scripts/topo.py",
+      "sha256": "d4a0facd22c71ea916937b0a588fd73c53291870a98b3c087a3da459609a18fa",
+      "executable": false
+    },
+    {
+      "path": "scripts/trace.py",
+      "sha256": "d8a68382ef719704e99326722f8edc967e3ff9589859e1ad7026c1b0e4154fba",
+      "executable": false
+    },
+    {
+      "path": "scripts/tts.py",
+      "sha256": "69bfab9a356e301d81ae4629fc07e2c8bf2ddd933da918901e43b66c2d5d2240",
+      "executable": false
+    },
+    {
+      "path": "scripts/video.py",
+      "sha256": "4e9183a582b5160ffe58775288fa863e8928d7c370bcbe8022f94882e60421f0",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "41857092247a8ad84a53859ffe7abfae3209a4ba209547e4fc3f17ccd0892b8f",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/papermorph"
+}

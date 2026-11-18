@@ -1502,5 +1502,45 @@
       "checksum": "fb0107d9767823b37e8c174bdabf3c795a5a9986759597b7d3869c0840359821",
       "at": "2026-11-17T01:12:03.935Z"
     }
+  ],
+  "better-design": [
+    {
+      "version": "c373ad7fa122",
+      "commit": "c373ad7fa122b8c0d63b1be756443cc93a56e71d",
+      "checksum": "77713c4c113c37d1b8c5ecf09f9236c9bc977c872d3936820b03bdb431d1fa56",
+      "at": "2026-11-18T11:29:53.237Z"
+    }
+  ],
+  "convert-site": [
+    {
+      "version": "8beb1de5099a",
+      "commit": "8beb1de5099a2be1ddb1d98ffc7b3682343bc420",
+      "checksum": "019720778329feb4bec0361beee81f89d1b723250920c3b4b876938458e6f68a",
+      "at": "2026-11-18T11:28:48.362Z"
+    }
+  ],
+  "e2e-red-triage": [
+    {
+      "version": "47336d1a25dd",
+      "commit": "47336d1a25dd434ebec0a37593abf66ccf1fca98",
+      "checksum": "73af07791c3759a8d01833fea38251e1b3db0fafc2bf5e92fa94f908249af593",
+      "at": "2026-11-18T11:22:34.799Z"
+    }
+  ],
+  "huashu-motion": [
+    {
+      "version": "f09dd7a29e2c",
+      "commit": "f09dd7a29e2c9c574939d54db6c0768aad51232a",
+      "checksum": "7051b305ce454dc46a26759103a2a0afb6048666bb82bf3ecff38c80f7233270",
+      "at": "2026-11-18T11:22:34.799Z"
+    }
+  ],
+  "papermorph": [
+    {
+      "version": "839a62cad3c7",
+      "commit": "839a62cad3c74446944a167faff07c994f33e5b7",
+      "checksum": "b7d8d23ec75ce53451e59ae4d90e9844331d789164a8e734de78a1a0e45dcb3c",
+      "at": "2026-11-18T11:22:34.799Z"
+    }
   ]
 }
