@@ -1,9 +1,9 @@
 {
   "repository": "lemomo-ai/lemo-opuscar",
-  "stars": 18349,
+  "stars": 18744,
   "createdAt": "2026-09-26T10:10:41Z",
   "pushedAt": "2026-11-17T05:17:37Z",
-  "statsCheckedAt": "2026-11-19",
+  "statsCheckedAt": "2026-11-20",
   "license": "CC-BY-4.0",
   "commit": "3a7132b996be0241c1ea0ab180d519f06e6f10b6",
   "path": "plugin/skills/lemo-opuscar",
