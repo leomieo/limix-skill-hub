@@ -1,8 +1,8 @@
 {
   "repository": "heygen-com/hyperframes",
-  "stars": 87053,
+  "stars": 87470,
   "createdAt": "2026-03-10T01:51:06Z",
-  "pushedAt": "2026-11-20T01:22:27Z",
+  "pushedAt": "2026-11-21T00:56:54Z",
   "license": "Apache-2.0",
   "commit": "d208281091b1c00db1724a2ee3db0055955eb41b",
   "path": "skills/hyperframes",
@@ -11,6 +11,6 @@
   "originalCoreVerified": true,
   "coreOrigin": "upstream",
   "version": "d208281091b1",
-  "statsCheckedAt": "2026-11-20",
+  "statsCheckedAt": "2026-11-21",
   "last_checked": "2026-11-13T13:49:51.563Z"
 }

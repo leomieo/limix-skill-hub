@@ -1,9 +1,9 @@
 {
   "repository": "vercel-labs/skills",
-  "stars": 40099,
+  "stars": 40229,
   "createdAt": "2026-01-14T21:31:18Z",
   "pushedAt": "2026-11-17T00:58:04Z",
-  "statsCheckedAt": "2026-11-20",
+  "statsCheckedAt": "2026-11-21",
   "license": "MIT",
   "commit": "b716f9dc2ba36b6aa8f0080615e5a3a6caeac63b",
   "path": "skills/find-skills",

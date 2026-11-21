@@ -1,9 +1,9 @@
 {
   "repository": "DUNHKpcc/Claude-Guardian",
-  "stars": 2180,
+  "stars": 2198,
   "createdAt": "2026-10-15T06:09:53Z",
-  "pushedAt": "2026-11-18T03:38:58Z",
-  "statsCheckedAt": "2026-11-20",
+  "pushedAt": "2026-11-20T10:30:13Z",
+  "statsCheckedAt": "2026-11-21",
   "license": "GPL-3.0",
   "commit": "ec53265c84131e26b7097498a5fe0680fdeffed7",
   "path": "skills/claude-guardian",

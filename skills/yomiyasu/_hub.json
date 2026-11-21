@@ -1,10 +1,10 @@
 {
   "repository": "nanaism/yomiyasu",
   "license": "MIT",
-  "stars": 3397,
+  "stars": 3417,
   "createdAt": "2026-09-30T11:49:32Z",
-  "pushedAt": "2026-11-19T16:19:06Z",
-  "statsCheckedAt": "2026-11-20",
+  "pushedAt": "2026-11-20T02:27:42Z",
+  "statsCheckedAt": "2026-11-21",
   "coreOrigin": "upstream",
   "commit": "db78b9bc5e868549b517a037df7a4d1c93edac23",
   "path": "skills/yomiyasu",
