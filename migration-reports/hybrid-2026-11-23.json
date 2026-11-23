@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "batchDate": "2026-11-23",
+  "timeZone": "Asia/Saigon",
+  "scope": "Five new GitHub agent skills. Upstream core and retained files preserved byte for byte; no source code executed.",
+  "statsCheckedAt": "2026-11-23T16:00:56.799Z",
+  "sourceEvidence": "GitHub repository metadata, MIT license text, pinned Git tree and raw blob SHA-1, plus SHA-256 inventory.",
+  "sources": [
+    {
+      "id": "inference-optimisation",
+      "repository": "sybil-solutions/inference-optimisation-skill",
+      "sourceUrl": "https://github.com/sybil-solutions/inference-optimisation-skill",
+      "path": "skills/inference-optimisation",
+      "stars": 2077,
+      "createdAt": "2026-11-16T18:40:04Z",
+      "pushedAt": "2026-11-16T18:40:08Z",
+      "license": "MIT",
+      "licenseEvidenceFiles": [
+        "LICENSE"
+      ],
+      "commit": "fda968e7fc1996aa23c67139c755fe541c9d4be0",
+      "coreSha256": "6932c1dc8b2c588f0303333b0772d5d0c062d86180a46e26a040eb0899cb548c",
+      "retainedFiles": 14,
+      "skipped": [],
+      "sourceVerified": true,
+      "security": "quarantined",
+      "compatibility": "unchecked",
+      "permissions": [
+        "filesystem-read",
+        "filesystem-write",
+        "network",
+        "shell"
+      ],
+      "findings": [
+        "scripts/mem.sh: privilege (medium)",
+        "Static manual review: scripts/bench.py can invoke commands from configuration and manage benchmark processes; Docker and benchmark endpoint require explicit review."
+      ],
+      "reasonVi": "Lập kế hoạch đo tốc độ suy luận mô hình cục bộ bằng đường cơ sở, phép đo lặp lại và thử từng thay đổi.",
+      "quarantineReasonVi": "Có thể chạy lệnh theo tệp cấu hình và điều khiển tiến trình đo. Cần duyệt phạm vi Docker và địa chỉ máy chủ trước khi dùng."
+    },
+    {
+      "id": "jury",
+      "repository": "juliobsz/skills",
+      "sourceUrl": "https://github.com/juliobsz/skills",
+      "path": "jury",
+      "stars": 1403,
+      "createdAt": "2026-10-12T00:07:32Z",
+      "pushedAt": "2026-10-26T15:35:41Z",
+      "license": "MIT",
+      "licenseEvidenceFiles": [
+        "LICENSE"
+      ],
+      "commit": "add880bd6ec9f5592a1482846fc0dd282c9161bc",
+      "coreSha256": "0ea2ac4bad26cb0803d284c60941429e659e8d0619415b1718987b0b16f23aab",
+      "retainedFiles": 8,
+      "skipped": [],
+      "sourceVerified": true,
+      "security": "quarantined",
+      "compatibility": "unchecked",
+      "permissions": [
+        "filesystem-read",
+        "filesystem-write",
+        "network",
+        "shell"
+      ],
+      "findings": [
+        "Static manual review: The core asks for browser setup via npx. The local static server needs a path-boundary review before use; browser automation can contact remote pages and a CDN."
+      ],
+      "reasonVi": "Đánh giá trang web theo thang điểm về bố cục, kiểu chữ, chuyển động và chất lượng hiển thị dựa trên ảnh chụp.",
+      "quarantineReasonVi": "Có bước cài trình duyệt qua npx. Cần duyệt giới hạn thư mục của máy chủ cục bộ và phạm vi truy cập mạng khi chụp trang."
+    },
+    {
+      "id": "antialgorithm",
+      "repository": "mankidev/antialgorithm",
+      "sourceUrl": "https://github.com/mankidev/antialgorithm",
+      "path": "",
+      "stars": 762,
+      "createdAt": "2026-11-14T09:48:23Z",
+      "pushedAt": "2026-11-20T17:08:35Z",
+      "license": "MIT",
+      "licenseEvidenceFiles": [
+        "LICENSE"
+      ],
+      "commit": "a6392c0d35382cd8fe0676668e2c7b2de4ec9269",
+      "coreSha256": "3eeae7c724e0f81692e51b95106f645b1844013c04a4acdfaf44800831459d8e",
+      "retainedFiles": 9,
+      "skipped": [
+        ".claude-plugin/icon.png",
+        ".claude-plugin/marketplace.json",
+        ".claude-plugin/plugin.json",
+        ".gitignore",
+        "CONTRIBUTING.md",
+        "docs/README_DE.md",
+        "docs/README_ES.md",
+        "docs/README_FR.md",
+        "docs/README_JA.md",
+        "docs/README_KO.md",
+        "docs/README_PT.md",
+        "docs/README_RU.md",
+        "docs/README_TR.md",
+        "docs/README_ZH.md",
+        "images/graph.png",
+        "images/showcase.png"
+      ],
+      "sourceVerified": true,
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "permissions": [
+        "filesystem-read",
+        "filesystem-write",
+        "shell"
+      ],
+      "findings": [
+        "Static manual review: Root-level distribution is incomplete: excluded plugin metadata, images and localized README files. Python helpers write local state and invoke external rendering tools."
+      ],
+      "reasonVi": "Tạo nhiều hướng sáng tạo và sàng lọc phương án dễ đoán khi đặt tên, thiết kế và lên ý tưởng.",
+      "quarantineReasonVi": "Chưa nhập cấu hình plugin, ảnh và README các ngôn ngữ. Trợ giúp Python có thể ghi lịch sử cục bộ và gọi công cụ dựng ảnh."
+    },
+    {
+      "id": "positioning-angles",
+      "repository": "boringmarketer/boring-marketing-skills",
+      "sourceUrl": "https://github.com/boringmarketer/boring-marketing-skills",
+      "path": "skills/positioning-angles",
+      "stars": 806,
+      "createdAt": "2026-11-16T15:09:46Z",
+      "pushedAt": "2026-11-17T22:53:58Z",
+      "license": "MIT",
+      "licenseEvidenceFiles": [
+        "LICENSE"
+      ],
+      "commit": "bd5aaedab44368d76326d98d488697158b886679",
+      "coreSha256": "92390ea1663455b7533fbef9d355da749771d15690546b6d26f903934236d2d9",
+      "retainedFiles": 8,
+      "skipped": [
+        "skills/start-here/scripts/brand_context.py",
+        "skills/start-here/references/output-format.md",
+        "skills/start-here/references/schemas/ad-matrix.schema.json",
+        "skills/start-here/references/taste-loop.md"
+      ],
+      "sourceVerified": true,
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "permissions": [
+        "filesystem-read",
+        "filesystem-write",
+        "network",
+        "shell"
+      ],
+      "findings": [
+        "Static manual review: The standalone package omits shared support files from the upstream start-here skill. The workflow mentions web search/fetch and a Python helper."
+      ],
+      "reasonVi": "Xây dựng và so sánh các góc định vị sản phẩm theo khách hàng, lựa chọn thay thế và bằng chứng khác biệt.",
+      "quarantineReasonVi": "Gói riêng thiếu tệp dùng chung của start-here. Quy trình có thể cần tìm kiếm web và chạy trình trợ giúp Python."
+    },
+    {
+      "id": "document-app",
+      "repository": "phuryn/product-engineering",
+      "sourceUrl": "https://github.com/phuryn/product-engineering",
+      "path": "ai-shipping/skills/document-app",
+      "stars": 773,
+      "createdAt": "2026-10-29T11:32:54Z",
+      "pushedAt": "2026-11-21T18:34:25Z",
+      "license": "MIT",
+      "licenseEvidenceFiles": [
+        "LICENSE.md"
+      ],
+      "commit": "65444f5140579916b965b8ee157e28728340a518",
+      "coreSha256": "60ea923b0814839979caf9e166c456f9083bb8d69a00c2e4fec453fcbf011811",
+      "retainedFiles": 2,
+      "skipped": [
+        "ai-shipping/skills/shipping-artifacts/SKILL.md",
+        "ai-shipping/skills/derive-tests/SKILL.md",
+        "ai-shipping/skills/intended-vs-implemented/SKILL.md"
+      ],
+      "sourceVerified": true,
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "permissions": [
+        "filesystem-read",
+        "filesystem-write"
+      ],
+      "findings": [
+        "Static manual review: The core references sibling skills that are not bundled. Writing mode edits repository documentation; check mode reads it."
+      ],
+      "reasonVi": "Đối chiếu mã nguồn và hành vi sản phẩm để viết tài liệu ứng dụng cho người đọc phù hợp.",
+      "quarantineReasonVi": "Gói riêng thiếu ba kỹ năng liên quan. Chế độ viết sửa tài liệu dự án, chế độ đối chiếu chỉ đọc."
+    }
+  ],
+  "runtimeStatus": "not-tested",
+  "verification": {
+    "testsPassed": 24,
+    "testsFailed": 0,
+    "catalogEntries": 73,
+    "catalogProblems": 0,
+    "previousEntriesUnchanged": 68,
+    "readmeRows": 10,
+    "stagedSkillFilesVerified": 3336,
+    "idempotent": true,
+    "rollback": {
+      "method": "Clean clone from verified Git bundle; HEAD tree matches the pre-batch main tree",
+      "commit": "2ab7458494281b07613ef3675329ceccd6a41e97",
+      "tree": "fc0d3eb9c8613e074a6dba4b5ab00643b4351340",
+      "bundleSha256": "02a573ffa50ae268b679f6bae5367dbaad8f607891ca7d0eee2fbfe7d6bf04e4"
+    }
+  }
+}

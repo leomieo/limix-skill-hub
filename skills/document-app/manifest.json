@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "name": "document-app",
+  "version": "65444f514057",
+  "source": {
+    "url": "https://github.com/phuryn/product-engineering",
+    "commit": "65444f5140579916b965b8ee157e28728340a518",
+    "sha256": "60ea923b0814839979caf9e166c456f9083bb8d69a00c2e4fec453fcbf011811",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Đối chiếu mã nguồn và hành vi sản phẩm để viết tài liệu ứng dụng cho người đọc phù hợp.",
+    "aliases": [
+      "Tài liệu ứng dụng",
+      "Viết tài liệu từ mã nguồn"
+    ],
+    "keywords": [
+      "document",
+      "app",
+      "Tài liệu ứng dụng",
+      "Viết tài liệu từ mã nguồn"
+    ],
+    "examples": [
+      "Tạo hướng dẫn sử dụng dựa trên các chức năng thực sự có trong dự án."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "60ea923b0814839979caf9e166c456f9083bb8d69a00c2e4fec453fcbf011811"
+  },
+  "requiredCapabilities": [],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write"
+  ],
+  "syncedAt": "2026-11-23T16:00:56.799Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "Static manual review: The core references sibling skills that are not bundled. Writing mode edits repository documentation; check mode reads it."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "3 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

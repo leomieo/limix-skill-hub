@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "name": "antialgorithm",
+  "version": "a6392c0d3538",
+  "source": {
+    "url": "https://github.com/mankidev/antialgorithm",
+    "commit": "a6392c0d35382cd8fe0676668e2c7b2de4ec9269",
+    "sha256": "3eeae7c724e0f81692e51b95106f645b1844013c04a4acdfaf44800831459d8e",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Tạo nhiều hướng sáng tạo và sàng lọc phương án dễ đoán khi đặt tên, thiết kế và lên ý tưởng.",
+    "aliases": [
+      "Phát triển ý tưởng",
+      "Đặt tên sáng tạo"
+    ],
+    "keywords": [
+      "antialgorithm",
+      "Phát triển ý tưởng",
+      "Đặt tên sáng tạo"
+    ],
+    "examples": [
+      "Đề xuất ba hướng đặt tên sản phẩm và giải thích điểm khác biệt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "3eeae7c724e0f81692e51b95106f645b1844013c04a4acdfaf44800831459d8e"
+  },
+  "requiredCapabilities": [
+    "browser [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "git [mention-hint]",
+    "java [mention-hint]",
+    "node [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell"
+  ],
+  "syncedAt": "2026-11-23T16:00:56.799Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "Static manual review: Root-level distribution is incomplete: excluded plugin metadata, images and localized README files. Python helpers write local state and invoke external rendering tools."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "16 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

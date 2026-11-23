@@ -1,0 +1,51 @@
+{
+  "repository": "juliobsz/skills",
+  "commit": "add880bd6ec9f5592a1482846fc0dd282c9161bc",
+  "path": "jury",
+  "verified": true,
+  "coreSha256": "0ea2ac4bad26cb0803d284c60941429e659e8d0619415b1718987b0b16f23aab",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "0ea2ac4bad26cb0803d284c60941429e659e8d0619415b1718987b0b16f23aab",
+      "executable": false
+    },
+    {
+      "path": "references/calibration.md",
+      "sha256": "86c268316f53cdecfbd7c4904dff124e198c802e0ee850e789fb22b5b324a139",
+      "executable": false
+    },
+    {
+      "path": "references/quality-bar.md",
+      "sha256": "ec90fe4e421ba478e3825dd7125e2157561a4b77bf5e019705f3b0763816ce0c",
+      "executable": false
+    },
+    {
+      "path": "scripts/audit.mjs",
+      "sha256": "c6d6f62371e225a6d49c79d4cbff07b93014aadce5ac4273e51a50880e767d26",
+      "executable": false
+    },
+    {
+      "path": "scripts/browser.mjs",
+      "sha256": "ecb818906044378083c3d77081d8fdf783165852f12eecfbaa4303cb2c00b619",
+      "executable": false
+    },
+    {
+      "path": "scripts/serve.mjs",
+      "sha256": "4d4f3654693aab20e9369e096211efc2b72aff1bf5d107eb10ade982872ab9e6",
+      "executable": false
+    },
+    {
+      "path": "scripts/shoot.mjs",
+      "sha256": "0a384e0583c3d55d2ad252f3447813f42386a420e375127d997ed324ed62a99b",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "26577196d8f396c81c0b17c1ba71800f957a0af72b3681cecfc832800bfa4a06",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/jury"
+}

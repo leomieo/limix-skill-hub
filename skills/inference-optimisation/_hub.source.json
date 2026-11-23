@@ -1,0 +1,81 @@
+{
+  "repository": "sybil-solutions/inference-optimisation-skill",
+  "commit": "fda968e7fc1996aa23c67139c755fe541c9d4be0",
+  "path": "skills/inference-optimisation",
+  "verified": true,
+  "coreSha256": "6932c1dc8b2c588f0303333b0772d5d0c062d86180a46e26a040eb0899cb548c",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "6932c1dc8b2c588f0303333b0772d5d0c062d86180a46e26a040eb0899cb548c",
+      "executable": false
+    },
+    {
+      "path": "examples/ceiling-ornith-b390.json",
+      "sha256": "c7cbb6ce13a9345954e177d4ea44ac058f7c6a0b6dd22f99bc6efcb388fbe8ee",
+      "executable": false
+    },
+    {
+      "path": "examples/config-existing-server.json",
+      "sha256": "c23ff2be892854abb7616632dc36f35501023fa63d938722882f28161ce731d0",
+      "executable": false
+    },
+    {
+      "path": "examples/config-sglang-docker.json",
+      "sha256": "106cbca24d669cd63cfdc494bdb5712d4758c9b3c3005301743766eec5574b0e",
+      "executable": false
+    },
+    {
+      "path": "references/ceilings.md",
+      "sha256": "97c4945f7b6d10ed1ed4fae42b8f6d91714582e634f41d166c6485b28e1679ec",
+      "executable": false
+    },
+    {
+      "path": "references/gotchas.md",
+      "sha256": "33605ec690ccd823806af2df1fc2e7e78bb8f218b85d700f8f40f458a3f4ac8e",
+      "executable": false
+    },
+    {
+      "path": "references/levers.md",
+      "sha256": "31fe6c2eb9f2d0e79ea912f44b88e269ea05ee3476d2a9c03638716e6d5dc5eb",
+      "executable": false
+    },
+    {
+      "path": "references/methodology.md",
+      "sha256": "b26e2b7b900bb67d38ca0380b34e3e391e209832b659ee58d8dfeb1f4cef2f66",
+      "executable": false
+    },
+    {
+      "path": "references/publishing.md",
+      "sha256": "23a69620d31088e970cffe416e978ec2c9fd443a090db0d6d70b79a7494a7010",
+      "executable": false
+    },
+    {
+      "path": "scripts/bench.py",
+      "sha256": "acca9912c0013afa2bdfd47acbdc6417e079ae5b29596732029b897b3ba872ef",
+      "executable": true
+    },
+    {
+      "path": "scripts/ceiling.py",
+      "sha256": "4854891bb61ac3137b3871853090808c247bf36bd316b27c1f05cae070385771",
+      "executable": true
+    },
+    {
+      "path": "scripts/mem.sh",
+      "sha256": "9ab97e84c960a8f1a08519c7c1bc1b2bd55ad2f0988250ef828fcfe5101ea768",
+      "executable": true
+    },
+    {
+      "path": "scripts/queue.sh",
+      "sha256": "f4a90dcf8abe35aac5f06a7d250eb0ae100ecd838fc344cfd802bf27078826f1",
+      "executable": true
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "8a47d077c339f9fdc9b97bc69bac8fe4ad773a3317a3bf3010e5d54f961ccb16",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/inference-optimisation"
+}

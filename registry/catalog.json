@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "hub": "leomieo/limix-skill-hub",
-  "count": 68,
+  "count": 73,
   "skills": [
     {
       "id": "agent-autoloop",
@@ -1720,6 +1720,619 @@
       },
       "notes": [],
       "last_checked": "2026-11-13T09:14:21.544Z",
+      "area": "quarantine"
+    },
+    {
+      "id": "antialgorithm",
+      "name": "antialgorithm",
+      "description": "Stops the safe, average, comfortable pick that AI reaches for first. Use when a creative choice is left open to the agent: ideas, names, story, game mechanics, visual style, color, poster or page layout, app or web interface design, composition, slogans, titles, taglines, creative copy. Not for code identifiers, bug fixes, choices the user already made, or texts whose form the user's standing rules already set, such as a README, a store page, a commit message, release notes or license text. Also use when the user says \"too generic\", \"boring\", \"typical AI\", \"too safe\", \"cliche\", \"average\", \"seen it before\".",
+      "description_vi": "Tạo nhiều hướng sáng tạo và sàng lọc phương án dễ đoán khi đặt tên, thiết kế và lên ý tưởng.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "antialgorithm",
+        "version": "a6392c0d3538",
+        "source": {
+          "url": "https://github.com/mankidev/antialgorithm",
+          "commit": "a6392c0d35382cd8fe0676668e2c7b2de4ec9269",
+          "sha256": "3eeae7c724e0f81692e51b95106f645b1844013c04a4acdfaf44800831459d8e",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Tạo nhiều hướng sáng tạo và sàng lọc phương án dễ đoán khi đặt tên, thiết kế và lên ý tưởng.",
+          "aliases": [
+            "Phát triển ý tưởng",
+            "Đặt tên sáng tạo"
+          ],
+          "keywords": [
+            "antialgorithm",
+            "Phát triển ý tưởng",
+            "Đặt tên sáng tạo"
+          ],
+          "examples": [
+            "Đề xuất ba hướng đặt tên sản phẩm và giải thích điểm khác biệt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "3eeae7c724e0f81692e51b95106f645b1844013c04a4acdfaf44800831459d8e"
+        },
+        "requiredCapabilities": [
+          "browser [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "git [mention-hint]",
+          "java [mention-hint]",
+          "node [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell"
+        ],
+        "syncedAt": "2026-11-23T16:00:56.799Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "Static manual review: Root-level distribution is incomplete: excluded plugin metadata, images and localized README files. Python helpers write local state and invoke external rendering tools."
+          ]
+        },
+        "compatibility": {
+          "status": "incompatible",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "16 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Phát triển ý tưởng",
+        "Đặt tên sáng tạo"
+      ],
+      "keywords": [
+        "antialgorithm",
+        "Phát triển ý tưởng",
+        "Đặt tên sáng tạo"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "a6392c0d3538",
+      "source": {
+        "repository": "mankidev/antialgorithm",
+        "commit": "a6392c0d35382cd8fe0676668e2c7b2de4ec9269",
+        "path": ""
+      },
+      "stars": 762,
+      "created_at": "2026-11-14T09:48:23Z",
+      "pushed_at": "2026-11-20T17:08:35Z",
+      "stats_checked": "2026-11-23",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 23,
+        "security": 21,
+        "compatibility": 8,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "java",
+            "installerId": "jdk"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "jdk"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "browser [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "git [mention-hint]",
+          "java [mention-hint]",
+          "node [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "java",
+            "installerId": "jdk"
+          }
+        ],
+        "detected": [
+          {
+            "name": "filesystem-read",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 62
+              }
+            ]
+          },
+          {
+            "name": "argparse",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check.py",
+                "line": 2
+              },
+              {
+                "file": "scripts/moves.py",
+                "line": 2
+              },
+              {
+                "file": "scripts/rough.py",
+                "line": 2
+              },
+              {
+                "file": "scripts/seed.py",
+                "line": 2
+              }
+            ]
+          },
+          {
+            "name": "cairosvg",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check.py",
+                "line": 53
+              }
+            ]
+          },
+          {
+            "name": "copy",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check.py",
+                "line": 3
+              }
+            ]
+          },
+          {
+            "name": "history",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/moves.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/seed.py",
+                "line": 6
+              }
+            ]
+          },
+          {
+            "name": "json",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/history.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "math",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/rough.py",
+                "line": 3
+              }
+            ]
+          },
+          {
+            "name": "numpy",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check.py",
+                "line": 12
+              }
+            ]
+          },
+          {
+            "name": "os",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/history.py",
+                "line": 2
+              }
+            ]
+          },
+          {
+            "name": "PIL",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check.py",
+                "line": 13
+              }
+            ]
+          },
+          {
+            "name": "random",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/rough.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/seed.py",
+                "line": 3
+              }
+            ]
+          },
+          {
+            "name": "re",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/rough.py",
+                "line": 5
+              }
+            ]
+          },
+          {
+            "name": "shutil",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/history.py",
+                "line": 3
+              }
+            ]
+          },
+          {
+            "name": "subprocess",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check.py",
+                "line": 7
+              }
+            ]
+          },
+          {
+            "name": "sys",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check.py",
+                "line": 8
+              },
+              {
+                "file": "scripts/moves.py",
+                "line": 3
+              },
+              {
+                "file": "scripts/seed.py",
+                "line": 4
+              }
+            ]
+          },
+          {
+            "name": "tempfile",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check.py",
+                "line": 9
+              }
+            ]
+          },
+          {
+            "name": "time",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/history.py",
+                "line": 4
+              }
+            ]
+          },
+          {
+            "name": "xml",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check.py",
+                "line": 10
+              },
+              {
+                "file": "scripts/rough.py",
+                "line": 6
+              }
+            ]
+          },
+          {
+            "name": "java",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "jdk",
+            "evidence": [
+              {
+                "file": "scripts/seed.py",
+                "line": 148
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 28
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/check.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/history.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/moves.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/rough.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/seed.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 43
+              },
+              {
+                "file": "SKILL.md",
+                "line": 18
+              },
+              {
+                "file": "scripts/check.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/moves.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/rough.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/seed.py",
+                "line": 1
+              },
+              {
+                "file": "visuals.md",
+                "line": 39
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/seed.py",
+                "line": 47
+              }
+            ]
+          },
+          {
+            "name": "git",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 34
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 8,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [
+          ".claude-plugin/icon.png",
+          ".claude-plugin/marketplace.json",
+          ".claude-plugin/plugin.json",
+          ".gitignore",
+          "CONTRIBUTING.md",
+          "docs/README_DE.md",
+          "docs/README_ES.md",
+          "docs/README_FR.md",
+          "docs/README_JA.md",
+          "docs/README_KO.md",
+          "docs/README_PT.md",
+          "docs/README_RU.md",
+          "docs/README_TR.md",
+          "docs/README_ZH.md",
+          "images/graph.png",
+          "images/showcase.png"
+        ],
+        "packageCompleteness": "incomplete",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "README.md",
+          "SKILL.md",
+          "manifest.json",
+          "references/guide.vi.md",
+          "scripts/check.py",
+          "scripts/history.py",
+          "scripts/moves.py",
+          "scripts/rough.py",
+          "scripts/seed.py",
+          "visuals.md"
+        ]
+      },
+      "checksum": "b1eb1bb98dcf06eb5783bff12a9812c8890377de728211649e7b45e86261df96",
+      "file_hashes": {
+        "LICENSE": "c951367e9bd58667a98ab957c3546b59578ebc17d25bff0077635b2fb3c22c59",
+        "README.md": "033c8068978d7cc2c979901900315816064ec5ed706fe178f5427d2bda27ff83",
+        "SKILL.md": "3eeae7c724e0f81692e51b95106f645b1844013c04a4acdfaf44800831459d8e",
+        "manifest.json": "48639d5ade4784810deead015c71a99a69b6026d09c1a418753d640b53acc4d7",
+        "references/guide.vi.md": "07ad13359444f244b0c9a645688d17813b84cb6c6efbf1dbd5833e6052f53eff",
+        "scripts/check.py": "29a2e199db4a23a98e03b0b37602d62a2213a8119100f62dd924cc5d2597a58c",
+        "scripts/history.py": "e8031f5d3ebf6ba666fe10c1ce6dc3a2d13e62cbf05da5707f0a71454de8ea64",
+        "scripts/moves.py": "ecbe025df5519ce8587243146d3e2b2e0e1e3cc47a777935b45a551c470c54a5",
+        "scripts/rough.py": "dbb8c3a720a52392184a553bc2dd6c47fe496c9dd9408a3cc38ee32b5f50699a",
+        "scripts/seed.py": "a657739a0c158b44dbaf07e948586a0d75495f279c4f048d1d562d41d2d73e7f",
+        "visuals.md": "0b232c3d2cd776693f7ebdc8c179925857450c1ff89993555f5791a5b084fb99"
+      },
+      "notes": [],
+      "last_checked": "2026-11-23T16:00:56.799Z",
       "area": "quarantine"
     },
     {
@@ -24523,6 +25136,152 @@
       "area": "quarantine"
     },
     {
+      "id": "document-app",
+      "name": "document-app",
+      "description": "'Document the app': write or refresh an app's system docs from its code. 'Are the docs right?': check mode, which only reports where docs and code disagree.",
+      "description_vi": "Đối chiếu mã nguồn và hành vi sản phẩm để viết tài liệu ứng dụng cho người đọc phù hợp.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "document-app",
+        "version": "65444f514057",
+        "source": {
+          "url": "https://github.com/phuryn/product-engineering",
+          "commit": "65444f5140579916b965b8ee157e28728340a518",
+          "sha256": "60ea923b0814839979caf9e166c456f9083bb8d69a00c2e4fec453fcbf011811",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Đối chiếu mã nguồn và hành vi sản phẩm để viết tài liệu ứng dụng cho người đọc phù hợp.",
+          "aliases": [
+            "Tài liệu ứng dụng",
+            "Viết tài liệu từ mã nguồn"
+          ],
+          "keywords": [
+            "document",
+            "app",
+            "Tài liệu ứng dụng",
+            "Viết tài liệu từ mã nguồn"
+          ],
+          "examples": [
+            "Tạo hướng dẫn sử dụng dựa trên các chức năng thực sự có trong dự án."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "60ea923b0814839979caf9e166c456f9083bb8d69a00c2e4fec453fcbf011811"
+        },
+        "requiredCapabilities": [],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write"
+        ],
+        "syncedAt": "2026-11-23T16:00:56.799Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "Static manual review: The core references sibling skills that are not bundled. Writing mode edits repository documentation; check mode reads it."
+          ]
+        },
+        "compatibility": {
+          "status": "incompatible",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "3 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Tài liệu ứng dụng",
+        "Viết tài liệu từ mã nguồn"
+      ],
+      "keywords": [
+        "document",
+        "app",
+        "Tài liệu ứng dụng",
+        "Viết tài liệu từ mã nguồn"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "65444f514057",
+      "source": {
+        "repository": "phuryn/product-engineering",
+        "commit": "65444f5140579916b965b8ee157e28728340a518",
+        "path": "ai-shipping/skills/document-app"
+      },
+      "stars": 773,
+      "created_at": "2026-10-29T11:32:54Z",
+      "pushed_at": "2026-11-21T18:34:25Z",
+      "stats_checked": "2026-11-23",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 25,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [],
+      "approval_status": "quarantined",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": []
+      },
+      "dependencies": [],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [],
+        "runtimeHints": [],
+        "detected": [],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 2,
+          "detection": "no-external-requirement-detected"
+        },
+        "missingPackageFiles": [
+          "ai-shipping/skills/shipping-artifacts/SKILL.md",
+          "ai-shipping/skills/derive-tests/SKILL.md",
+          "ai-shipping/skills/intended-vs-implemented/SKILL.md"
+        ],
+        "packageCompleteness": "incomplete",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "LICENSE.md",
+          "SKILL.md",
+          "manifest.json",
+          "references/guide.vi.md"
+        ]
+      },
+      "checksum": "f184533f8a8bcc9ab26e8c8943764bddab95ca64417dee1e1957633bd5407526",
+      "file_hashes": {
+        "LICENSE.md": "a2c922f9b81b4f40347ddfa79c38eda0f1278b5a6d108bd4099b4da254c774ee",
+        "SKILL.md": "60ea923b0814839979caf9e166c456f9083bb8d69a00c2e4fec453fcbf011811",
+        "manifest.json": "b09e73dda45ebe91060c5e7ff0f34bf8bcb162e52aa31142a97470668fa8401f",
+        "references/guide.vi.md": "359de6ef6d171d9913d310f4e8bfc1fdfbaa5d80909fe951491248eaf6d71c3e"
+      },
+      "notes": [],
+      "last_checked": "2026-11-23T16:00:56.799Z",
+      "area": "quarantine"
+    },
+    {
       "id": "e2e-red-triage",
       "name": "e2e-red-triage",
       "description": "Classify one unexpected end-to-end test failure as a product defect or an environment fault needing a new preflight check. MANUAL-ONLY: load when the suite runner names a specific failure. NEVER auto-load from context.",
@@ -41524,6 +42283,384 @@
       "area": "skills"
     },
     {
+      "id": "inference-optimisation",
+      "name": "inference-optimisation",
+      "description": "Hill-climb the serving speed of a local LLM on any hardware (NVIDIA, AMD, Intel, Apple, unified-memory laptops, multi-GPU) and any quantization (GGUF, EXL2/EXL3, AWQ/GPTQ, FP8, MLX, BF16): single-user and concurrent decode tok/s, speculative decoding, prefill tok/s, KV cache size, startup time and TTFT, under a memory cap and with full-context stability. Computes the theoretical ceiling first, runs noise-controlled A/B experiments, keeps a ledger, and qualifies the winner before publishing it. Use when asked to optimise, tune, speed up, benchmark or hill-climb a model server (vLLM, SGLang, llama.cpp, ExLlama/TabbyAPI, MLX, TensorRT-LLM...), to find the maximum possible tok/s on a machine, or to publish a tuned recipe. Triggers: hill climb, tok/s, decode speed, prefill speed, MTP, EAGLE, draft model, speculative decoding, KV cache, TTFT, startup time, theoretical maximum.",
+      "description_vi": "Lập kế hoạch đo tốc độ suy luận mô hình cục bộ bằng đường cơ sở, phép đo lặp lại và thử từng thay đổi.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "inference-optimisation",
+        "version": "fda968e7fc19",
+        "source": {
+          "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+          "commit": "fda968e7fc1996aa23c67139c755fe541c9d4be0",
+          "sha256": "6932c1dc8b2c588f0303333b0772d5d0c062d86180a46e26a040eb0899cb548c",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Lập kế hoạch đo tốc độ suy luận mô hình cục bộ bằng đường cơ sở, phép đo lặp lại và thử từng thay đổi.",
+          "aliases": [
+            "Đo tốc độ mô hình",
+            "Tối ưu suy luận cục bộ"
+          ],
+          "keywords": [
+            "inference",
+            "optimisation",
+            "Đo tốc độ mô hình",
+            "Tối ưu suy luận cục bộ"
+          ],
+          "examples": [
+            "So sánh thông lượng và độ trễ của mô hình cục bộ qua từng cấu hình."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "6932c1dc8b2c588f0303333b0772d5d0c062d86180a46e26a040eb0899cb548c"
+        },
+        "requiredCapabilities": [
+          "bash [file-type-hint]",
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "docker [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "network",
+          "shell"
+        ],
+        "syncedAt": "2026-11-23T16:00:56.799Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "scripts/mem.sh: privilege (medium)",
+            "Static manual review: scripts/bench.py can invoke commands from configuration and manage benchmark processes; Docker and benchmark endpoint require explicit review."
+          ]
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Đo tốc độ mô hình",
+        "Tối ưu suy luận cục bộ"
+      ],
+      "keywords": [
+        "inference",
+        "optimisation",
+        "Đo tốc độ mô hình",
+        "Tối ưu suy luận cục bộ"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "fda968e7fc19",
+      "source": {
+        "repository": "sybil-solutions/inference-optimisation-skill",
+        "commit": "fda968e7fc1996aa23c67139c755fe541c9d4be0",
+        "path": "skills/inference-optimisation"
+      },
+      "stars": 2077,
+      "created_at": "2026-11-16T18:40:04Z",
+      "pushed_at": "2026-11-16T18:40:08Z",
+      "stats_checked": "2026-11-23",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 25,
+        "security": 15,
+        "compatibility": 9,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        },
+        {
+          "rule": "privilege",
+          "severity": "medium",
+          "file": "scripts/mem.sh",
+          "line": 7
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "docker",
+            "installerId": "docker"
+          }
+        ]
+      },
+      "dependencies": [
+        "docker"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "bash [file-type-hint]",
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "docker [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "docker",
+            "installerId": "docker"
+          }
+        ],
+        "detected": [
+          {
+            "name": "concurrent",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/bench.py",
+                "line": 31
+              }
+            ]
+          },
+          {
+            "name": "glob",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/bench.py",
+                "line": 126
+              }
+            ]
+          },
+          {
+            "name": "json",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/bench.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/ceiling.py",
+                "line": 17
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/mem.sh",
+                "line": 1
+              },
+              {
+                "file": "scripts/queue.sh",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/bench.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/ceiling.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "examples/config-sglang-docker.json",
+                "line": 10
+              },
+              {
+                "file": "references/publishing.md",
+                "line": 15
+              },
+              {
+                "file": "scripts/bench.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/ceiling.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/queue.sh",
+                "line": 11
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "examples/config-sglang-docker.json",
+                "line": 15
+              },
+              {
+                "file": "references/publishing.md",
+                "line": 62
+              },
+              {
+                "file": "scripts/bench.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/mem.sh",
+                "line": 1
+              },
+              {
+                "file": "scripts/queue.sh",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/publishing.md",
+                "line": 63
+              }
+            ]
+          },
+          {
+            "name": "docker",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "docker",
+            "evidence": [
+              {
+                "file": "examples/config-sglang-docker.json",
+                "line": 5
+              },
+              {
+                "file": "scripts/bench.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/mem.sh",
+                "line": 10
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 13,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "examples/ceiling-ornith-b390.json",
+          "examples/config-existing-server.json",
+          "examples/config-sglang-docker.json",
+          "manifest.json",
+          "references/ceilings.md",
+          "references/gotchas.md",
+          "references/guide.vi.md",
+          "references/levers.md",
+          "references/methodology.md",
+          "references/publishing.md",
+          "scripts/bench.py",
+          "scripts/ceiling.py",
+          "scripts/mem.sh",
+          "scripts/queue.sh"
+        ]
+      },
+      "checksum": "2aa9a1325373c2207376609a416ab4dbc2af375f599fa3ffd2a5673adfe4897d",
+      "file_hashes": {
+        "LICENSE": "8a47d077c339f9fdc9b97bc69bac8fe4ad773a3317a3bf3010e5d54f961ccb16",
+        "SKILL.md": "6932c1dc8b2c588f0303333b0772d5d0c062d86180a46e26a040eb0899cb548c",
+        "examples/ceiling-ornith-b390.json": "c7cbb6ce13a9345954e177d4ea44ac058f7c6a0b6dd22f99bc6efcb388fbe8ee",
+        "examples/config-existing-server.json": "c23ff2be892854abb7616632dc36f35501023fa63d938722882f28161ce731d0",
+        "examples/config-sglang-docker.json": "106cbca24d669cd63cfdc494bdb5712d4758c9b3c3005301743766eec5574b0e",
+        "manifest.json": "e6a87dde5932cfa586da9fbcbe0e908a35eb650fd6fb843d317b207b4482b3fd",
+        "references/ceilings.md": "97c4945f7b6d10ed1ed4fae42b8f6d91714582e634f41d166c6485b28e1679ec",
+        "references/gotchas.md": "33605ec690ccd823806af2df1fc2e7e78bb8f218b85d700f8f40f458a3f4ac8e",
+        "references/guide.vi.md": "417d3bf265152bd3edc7797cce4214c4781d9caffbfa55d971c43cac984e3760",
+        "references/levers.md": "31fe6c2eb9f2d0e79ea912f44b88e269ea05ee3476d2a9c03638716e6d5dc5eb",
+        "references/methodology.md": "b26e2b7b900bb67d38ca0380b34e3e391e209832b659ee58d8dfeb1f4cef2f66",
+        "references/publishing.md": "23a69620d31088e970cffe416e978ec2c9fd443a090db0d6d70b79a7494a7010",
+        "scripts/bench.py": "acca9912c0013afa2bdfd47acbdc6417e079ae5b29596732029b897b3ba872ef",
+        "scripts/ceiling.py": "4854891bb61ac3137b3871853090808c247bf36bd316b27c1f05cae070385771",
+        "scripts/mem.sh": "9ab97e84c960a8f1a08519c7c1bc1b2bd55ad2f0988250ef828fcfe5101ea768",
+        "scripts/queue.sh": "f4a90dcf8abe35aac5f06a7d250eb0ae100ecd838fc344cfd802bf27078826f1"
+      },
+      "notes": [],
+      "last_checked": "2026-11-23T16:00:56.799Z",
+      "area": "quarantine"
+    },
+    {
       "id": "instagram-agent-skill",
       "name": "instagram-agent-skill",
       "description": "Unverified legacy English collection for instagram-agent-skill. Source entrypoint requires manual review before activation.",
@@ -41982,6 +43119,367 @@
       },
       "notes": [],
       "last_checked": "2026-11-13T09:27:13.451Z",
+      "area": "quarantine"
+    },
+    {
+      "id": "jury",
+      "name": "jury",
+      "description": "Score any website the way an Awwwards jury would, from evidence alone. Screenshots every page type on desktop, a throttled phone and reduced motion, measures LCP, CLS, FPS, axe, keyboard focus and hover feedback, audits SEO and metadata, then a fresh critic that never sees the code scores Design, Usability, Creativity, Content and the six developer areas, with a ranked fix list. Use when someone asks to review, critique, score, rate or roast a website, portfolio or landing page, asks whether a site is good enough for Awwwards or Site of the Day, or wants design QA of a live URL or a local build. Not for building or redesigning a site; use /awwwards for that.",
+      "description_vi": "Đánh giá trang web theo thang điểm về bố cục, kiểu chữ, chuyển động và chất lượng hiển thị dựa trên ảnh chụp.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "jury",
+        "version": "add880bd6ec9",
+        "source": {
+          "url": "https://github.com/juliobsz/skills",
+          "commit": "add880bd6ec9f5592a1482846fc0dd282c9161bc",
+          "sha256": "0ea2ac4bad26cb0803d284c60941429e659e8d0619415b1718987b0b16f23aab",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Đánh giá trang web theo thang điểm về bố cục, kiểu chữ, chuyển động và chất lượng hiển thị dựa trên ảnh chụp.",
+          "aliases": [
+            "Chấm điểm website",
+            "Rà soát thiết kế web"
+          ],
+          "keywords": [
+            "jury",
+            "Chấm điểm website",
+            "Rà soát thiết kế web"
+          ],
+          "examples": [
+            "Đánh giá trang thử nghiệm và chỉ ra các vấn đề có bằng chứng từ ảnh chụp."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "0ea2ac4bad26cb0803d284c60941429e659e8d0619415b1718987b0b16f23aab"
+        },
+        "requiredCapabilities": [
+          "awwwards [reference-hint]",
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "playwright [mention-hint]",
+          "react [mention-hint]",
+          "subagents [mention-hint]"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "network",
+          "shell"
+        ],
+        "syncedAt": "2026-11-23T16:00:56.799Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "Static manual review: The core asks for browser setup via npx. The local static server needs a path-boundary review before use; browser automation can contact remote pages and a CDN."
+          ]
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Chấm điểm website",
+        "Rà soát thiết kế web"
+      ],
+      "keywords": [
+        "jury",
+        "Chấm điểm website",
+        "Rà soát thiết kế web"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "add880bd6ec9",
+      "source": {
+        "repository": "juliobsz/skills",
+        "commit": "add880bd6ec9f5592a1482846fc0dd282c9161bc",
+        "path": "jury"
+      },
+      "stars": 1403,
+      "created_at": "2026-10-12T00:07:32Z",
+      "pushed_at": "2026-10-26T15:35:41Z",
+      "stats_checked": "2026-11-23",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 25,
+        "security": 21,
+        "compatibility": 12,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          }
+        ]
+      },
+      "dependencies": [
+        "node"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "awwwards [reference-hint]",
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "playwright [mention-hint]",
+          "react [mention-hint]",
+          "subagents [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          }
+        ],
+        "detected": [
+          {
+            "name": "filesystem-read",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/calibration.md",
+                "line": 45
+              },
+              {
+                "file": "references/quality-bar.md",
+                "line": 40
+              },
+              {
+                "file": "scripts/shoot.mjs",
+                "line": 37
+              }
+            ]
+          },
+          {
+            "name": "filesystem-write",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/shoot.mjs",
+                "line": 431
+              }
+            ]
+          },
+          {
+            "name": "subagents",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/quality-bar.md",
+                "line": 103
+              }
+            ]
+          },
+          {
+            "name": "awwwards",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 141
+              }
+            ]
+          },
+          {
+            "name": "react",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/shoot.mjs",
+                "line": 400
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "scripts/audit.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/browser.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/serve.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/shoot.mjs",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 16
+              },
+              {
+                "file": "scripts/audit.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/browser.mjs",
+                "line": 3
+              },
+              {
+                "file": "scripts/serve.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/shoot.mjs",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 56
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 8
+              },
+              {
+                "file": "scripts/browser.mjs",
+                "line": 1
+              },
+              {
+                "file": "scripts/shoot.mjs",
+                "line": 17
+              }
+            ]
+          },
+          {
+            "name": "playwright",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 16
+              },
+              {
+                "file": "scripts/browser.mjs",
+                "line": 1
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 7,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "manifest.json",
+          "references/calibration.md",
+          "references/guide.vi.md",
+          "references/quality-bar.md",
+          "scripts/audit.mjs",
+          "scripts/browser.mjs",
+          "scripts/serve.mjs",
+          "scripts/shoot.mjs"
+        ]
+      },
+      "checksum": "93ad484b136493da7caad5a8ae2ec8fe723467a582c6c144e57745e1e4064182",
+      "file_hashes": {
+        "LICENSE": "26577196d8f396c81c0b17c1ba71800f957a0af72b3681cecfc832800bfa4a06",
+        "SKILL.md": "0ea2ac4bad26cb0803d284c60941429e659e8d0619415b1718987b0b16f23aab",
+        "manifest.json": "659d46599faceff6fcf67e7b7a4ea9e402b8b5f974a165740308752a657951d0",
+        "references/calibration.md": "86c268316f53cdecfbd7c4904dff124e198c802e0ee850e789fb22b5b324a139",
+        "references/guide.vi.md": "6eb98d43bfdd1394f5307814149a0b5aed5e65df44e917b5c038190042cc4f2c",
+        "references/quality-bar.md": "ec90fe4e421ba478e3825dd7125e2157561a4b77bf5e019705f3b0763816ce0c",
+        "scripts/audit.mjs": "c6d6f62371e225a6d49c79d4cbff07b93014aadce5ac4273e51a50880e767d26",
+        "scripts/browser.mjs": "ecb818906044378083c3d77081d8fdf783165852f12eecfbaa4303cb2c00b619",
+        "scripts/serve.mjs": "4d4f3654693aab20e9369e096211efc2b72aff1bf5d107eb10ade982872ab9e6",
+        "scripts/shoot.mjs": "0a384e0583c3d55d2ad252f3447813f42386a420e375127d997ed324ed62a99b"
+      },
+      "notes": [],
+      "last_checked": "2026-11-23T16:00:56.799Z",
       "area": "quarantine"
     },
     {
@@ -55499,6 +56997,320 @@
       },
       "notes": [],
       "last_checked": "2026-11-13T09:22:43.610Z",
+      "area": "quarantine"
+    },
+    {
+      "id": "positioning-angles",
+      "name": "positioning-angles",
+      "description": "Find the angle and the offer that make something sell. Researches what competitors say and pay to say, mines their bad reviews for the fears nobody answers, reads how jaded the market is, then writes 3-5 angles with one starred. Shipped lines use only verified facts, and a stronger idea the business can't back yet goes on a To make this true list with what it would take. Has a local-service mode (job types, map-pack competitors, trade guarantees). Use when launching a product or service, building an offer or lead magnet, before writing a page, or when marketing isn't converting.",
+      "description_vi": "Xây dựng và so sánh các góc định vị sản phẩm theo khách hàng, lựa chọn thay thế và bằng chứng khác biệt.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "positioning-angles",
+        "version": "bd5aaedab443",
+        "source": {
+          "url": "https://github.com/boringmarketer/boring-marketing-skills",
+          "commit": "bd5aaedab44368d76326d98d488697158b886679",
+          "sha256": "92390ea1663455b7533fbef9d355da749771d15690546b6d26f903934236d2d9",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Xây dựng và so sánh các góc định vị sản phẩm theo khách hàng, lựa chọn thay thế và bằng chứng khác biệt.",
+          "aliases": [
+            "Định vị sản phẩm",
+            "Góc truyền thông"
+          ],
+          "keywords": [
+            "positioning",
+            "angles",
+            "Định vị sản phẩm",
+            "Góc truyền thông"
+          ],
+          "examples": [
+            "So sánh ba góc định vị dựa trên phản hồi khách hàng đã cung cấp."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "92390ea1663455b7533fbef9d355da749771d15690546b6d26f903934236d2d9"
+        },
+        "requiredCapabilities": [
+          "ai-search [reference-hint]",
+          "direct-response-copy [reference-hint]",
+          "google-business-profile [reference-hint]",
+          "landing-page [reference-hint]",
+          "lead-magnet [reference-hint]",
+          "paid-ads [reference-hint]",
+          "python [mention-hint]",
+          "seo-content [reference-hint]",
+          "service-area-pages [reference-hint]"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "network",
+          "shell"
+        ],
+        "syncedAt": "2026-11-23T16:00:56.799Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "Static manual review: The standalone package omits shared support files from the upstream start-here skill. The workflow mentions web search/fetch and a Python helper."
+          ]
+        },
+        "compatibility": {
+          "status": "incompatible",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "4 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Định vị sản phẩm",
+        "Góc truyền thông"
+      ],
+      "keywords": [
+        "positioning",
+        "angles",
+        "Định vị sản phẩm",
+        "Góc truyền thông"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "bd5aaedab443",
+      "source": {
+        "repository": "boringmarketer/boring-marketing-skills",
+        "commit": "bd5aaedab44368d76326d98d488697158b886679",
+        "path": "skills/positioning-angles"
+      },
+      "stars": 806,
+      "created_at": "2026-11-16T15:09:46Z",
+      "pushed_at": "2026-11-17T22:53:58Z",
+      "stats_checked": "2026-11-23",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 25,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ]
+      },
+      "dependencies": [],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "ai-search [reference-hint]",
+          "direct-response-copy [reference-hint]",
+          "google-business-profile [reference-hint]",
+          "landing-page [reference-hint]",
+          "lead-magnet [reference-hint]",
+          "paid-ads [reference-hint]",
+          "python [mention-hint]",
+          "seo-content [reference-hint]",
+          "service-area-pages [reference-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ],
+        "detected": [
+          {
+            "name": "ai-search",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "references/aeo-positioning.md",
+                "line": 7
+              },
+              {
+                "file": "references/aeo-positioning.md",
+                "line": 59
+              },
+              {
+                "file": "references/aeo-positioning.md",
+                "line": 64
+              }
+            ]
+          },
+          {
+            "name": "direct-response-copy",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 437
+              },
+              {
+                "file": "references/schwartz-sophistication.md",
+                "line": 11
+              }
+            ]
+          },
+          {
+            "name": "google-business-profile",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 442
+              },
+              {
+                "file": "references/aeo-positioning.md",
+                "line": 60
+              }
+            ]
+          },
+          {
+            "name": "landing-page",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 439
+              }
+            ]
+          },
+          {
+            "name": "lead-magnet",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 441
+              }
+            ]
+          },
+          {
+            "name": "paid-ads",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 440
+              }
+            ]
+          },
+          {
+            "name": "seo-content",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "references/aeo-positioning.md",
+                "line": 59
+              }
+            ]
+          },
+          {
+            "name": "service-area-pages",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "references/aeo-positioning.md",
+                "line": 60
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 62
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 7,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [
+          "skills/start-here/scripts/brand_context.py",
+          "skills/start-here/references/output-format.md",
+          "skills/start-here/references/schemas/ad-matrix.schema.json",
+          "skills/start-here/references/taste-loop.md"
+        ],
+        "packageCompleteness": "incomplete",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "manifest.json",
+          "references/aeo-positioning.md",
+          "references/angle-frameworks.md",
+          "references/dunford-positioning.md",
+          "references/guide.vi.md",
+          "references/hormozi-offer.md",
+          "references/schwartz-sophistication.md",
+          "references/unique-mechanism.md"
+        ]
+      },
+      "checksum": "79891bcd400ecf42619e65029e544674fb11d2afd877484d06602a9ca8bd9a22",
+      "file_hashes": {
+        "LICENSE": "5f762facdd3aaaa304a17e2117498b6073e7d64f25fcd5c3355c0715fc8efa17",
+        "SKILL.md": "92390ea1663455b7533fbef9d355da749771d15690546b6d26f903934236d2d9",
+        "manifest.json": "e737aae5046c2b11a2e4f487497b41156a9f893e57e595c0fbdcf9c07a5c8209",
+        "references/aeo-positioning.md": "8a3b2de3e75613fb3eb98119178d57e530c1707781086343fedb63f0f75ecf48",
+        "references/angle-frameworks.md": "d737d4e8ba9a69764d7f1c9f9431480b193714c7e2606899391afe44eaa063cd",
+        "references/dunford-positioning.md": "861f3e9fddb5f497c67e5b71e16cf8305719bd7a6d930143c8e0f1b07386b170",
+        "references/guide.vi.md": "c9e3f08c8a672f3362d485d4f429d4dcb1955b0d1ed3433e8f5f4f8509c7418b",
+        "references/hormozi-offer.md": "b17ea00ec0d4c28367f96ca7cfc9fc41ba958a355635229ed15dd5b28585dc38",
+        "references/schwartz-sophistication.md": "81fd1e5c5077d912f5fb422a24263ea8852c0895513212b472a5d972eeb7753a",
+        "references/unique-mechanism.md": "1fe071ca50ef4c5909eb4105b8a7995ba70bb826d421f158d94185ebb1c2ce3f"
+      },
+      "notes": [],
+      "last_checked": "2026-11-23T16:00:56.799Z",
       "area": "quarantine"
     },
     {

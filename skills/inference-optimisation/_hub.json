@@ -1,0 +1,18 @@
+{
+  "repository": "sybil-solutions/inference-optimisation-skill",
+  "stars": 2077,
+  "createdAt": "2026-11-16T18:40:04Z",
+  "pushedAt": "2026-11-16T18:40:08Z",
+  "statsCheckedAt": "2026-11-23",
+  "license": "MIT",
+  "addedAt": "2026-11-23T16:00:56.799Z",
+  "batchDate": "2026-11-23",
+  "coreOrigin": "upstream",
+  "commit": "fda968e7fc1996aa23c67139c755fe541c9d4be0",
+  "path": "skills/inference-optimisation",
+  "language": "hybrid",
+  "version": "fda968e7fc19",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-23T16:00:56.799Z"
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "name": "jury",
+  "version": "add880bd6ec9",
+  "source": {
+    "url": "https://github.com/juliobsz/skills",
+    "commit": "add880bd6ec9f5592a1482846fc0dd282c9161bc",
+    "sha256": "0ea2ac4bad26cb0803d284c60941429e659e8d0619415b1718987b0b16f23aab",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Đánh giá trang web theo thang điểm về bố cục, kiểu chữ, chuyển động và chất lượng hiển thị dựa trên ảnh chụp.",
+    "aliases": [
+      "Chấm điểm website",
+      "Rà soát thiết kế web"
+    ],
+    "keywords": [
+      "jury",
+      "Chấm điểm website",
+      "Rà soát thiết kế web"
+    ],
+    "examples": [
+      "Đánh giá trang thử nghiệm và chỉ ra các vấn đề có bằng chứng từ ảnh chụp."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "0ea2ac4bad26cb0803d284c60941429e659e8d0619415b1718987b0b16f23aab"
+  },
+  "requiredCapabilities": [
+    "awwwards [reference-hint]",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "playwright [mention-hint]",
+    "react [mention-hint]",
+    "subagents [mention-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "network",
+    "shell"
+  ],
+  "syncedAt": "2026-11-23T16:00:56.799Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "Static manual review: The core asks for browser setup via npx. The local static server needs a path-boundary review before use; browser automation can contact remote pages and a CDN."
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

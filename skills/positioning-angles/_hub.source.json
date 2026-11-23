@@ -1,0 +1,56 @@
+{
+  "repository": "boringmarketer/boring-marketing-skills",
+  "commit": "bd5aaedab44368d76326d98d488697158b886679",
+  "path": "skills/positioning-angles",
+  "verified": true,
+  "coreSha256": "92390ea1663455b7533fbef9d355da749771d15690546b6d26f903934236d2d9",
+  "skipped": [
+    "skills/start-here/scripts/brand_context.py",
+    "skills/start-here/references/output-format.md",
+    "skills/start-here/references/schemas/ad-matrix.schema.json",
+    "skills/start-here/references/taste-loop.md"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "92390ea1663455b7533fbef9d355da749771d15690546b6d26f903934236d2d9",
+      "executable": false
+    },
+    {
+      "path": "references/aeo-positioning.md",
+      "sha256": "8a3b2de3e75613fb3eb98119178d57e530c1707781086343fedb63f0f75ecf48",
+      "executable": false
+    },
+    {
+      "path": "references/angle-frameworks.md",
+      "sha256": "d737d4e8ba9a69764d7f1c9f9431480b193714c7e2606899391afe44eaa063cd",
+      "executable": false
+    },
+    {
+      "path": "references/dunford-positioning.md",
+      "sha256": "861f3e9fddb5f497c67e5b71e16cf8305719bd7a6d930143c8e0f1b07386b170",
+      "executable": false
+    },
+    {
+      "path": "references/hormozi-offer.md",
+      "sha256": "b17ea00ec0d4c28367f96ca7cfc9fc41ba958a355635229ed15dd5b28585dc38",
+      "executable": false
+    },
+    {
+      "path": "references/schwartz-sophistication.md",
+      "sha256": "81fd1e5c5077d912f5fb422a24263ea8852c0895513212b472a5d972eeb7753a",
+      "executable": false
+    },
+    {
+      "path": "references/unique-mechanism.md",
+      "sha256": "1fe071ca50ef4c5909eb4105b8a7995ba70bb826d421f158d94185ebb1c2ce3f",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "5f762facdd3aaaa304a17e2117498b6073e7d64f25fcd5c3355c0715fc8efa17",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/positioning-angles"
+}

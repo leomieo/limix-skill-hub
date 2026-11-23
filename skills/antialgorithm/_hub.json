@@ -1,0 +1,18 @@
+{
+  "repository": "mankidev/antialgorithm",
+  "stars": 762,
+  "createdAt": "2026-11-14T09:48:23Z",
+  "pushedAt": "2026-11-20T17:08:35Z",
+  "statsCheckedAt": "2026-11-23",
+  "license": "MIT",
+  "addedAt": "2026-11-23T16:00:56.799Z",
+  "batchDate": "2026-11-23",
+  "coreOrigin": "upstream",
+  "commit": "a6392c0d35382cd8fe0676668e2c7b2de4ec9269",
+  "path": "",
+  "language": "hybrid",
+  "version": "a6392c0d3538",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-23T16:00:56.799Z"
+}

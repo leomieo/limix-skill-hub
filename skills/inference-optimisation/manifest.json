@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "name": "inference-optimisation",
+  "version": "fda968e7fc19",
+  "source": {
+    "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+    "commit": "fda968e7fc1996aa23c67139c755fe541c9d4be0",
+    "sha256": "6932c1dc8b2c588f0303333b0772d5d0c062d86180a46e26a040eb0899cb548c",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Lập kế hoạch đo tốc độ suy luận mô hình cục bộ bằng đường cơ sở, phép đo lặp lại và thử từng thay đổi.",
+    "aliases": [
+      "Đo tốc độ mô hình",
+      "Tối ưu suy luận cục bộ"
+    ],
+    "keywords": [
+      "inference",
+      "optimisation",
+      "Đo tốc độ mô hình",
+      "Tối ưu suy luận cục bộ"
+    ],
+    "examples": [
+      "So sánh thông lượng và độ trễ của mô hình cục bộ qua từng cấu hình."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "6932c1dc8b2c588f0303333b0772d5d0c062d86180a46e26a040eb0899cb548c"
+  },
+  "requiredCapabilities": [
+    "bash [file-type-hint]",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "docker [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "network",
+    "shell"
+  ],
+  "syncedAt": "2026-11-23T16:00:56.799Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "scripts/mem.sh: privilege (medium)",
+      "Static manual review: scripts/bench.py can invoke commands from configuration and manage benchmark processes; Docker and benchmark endpoint require explicit review."
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

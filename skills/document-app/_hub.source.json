@@ -1,0 +1,25 @@
+{
+  "repository": "phuryn/product-engineering",
+  "commit": "65444f5140579916b965b8ee157e28728340a518",
+  "path": "ai-shipping/skills/document-app",
+  "verified": true,
+  "coreSha256": "60ea923b0814839979caf9e166c456f9083bb8d69a00c2e4fec453fcbf011811",
+  "skipped": [
+    "ai-shipping/skills/shipping-artifacts/SKILL.md",
+    "ai-shipping/skills/derive-tests/SKILL.md",
+    "ai-shipping/skills/intended-vs-implemented/SKILL.md"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "60ea923b0814839979caf9e166c456f9083bb8d69a00c2e4fec453fcbf011811",
+      "executable": false
+    },
+    {
+      "path": "LICENSE.md",
+      "sha256": "a2c922f9b81b4f40347ddfa79c38eda0f1278b5a6d108bd4099b4da254c774ee",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/document-app"
+}

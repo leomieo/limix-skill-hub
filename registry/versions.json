@@ -1548,5 +1548,45 @@
       "checksum": "b7d8d23ec75ce53451e59ae4d90e9844331d789164a8e734de78a1a0e45dcb3c",
       "at": "2026-11-18T11:22:34.799Z"
     }
+  ],
+  "antialgorithm": [
+    {
+      "version": "a6392c0d3538",
+      "commit": "a6392c0d35382cd8fe0676668e2c7b2de4ec9269",
+      "checksum": "b1eb1bb98dcf06eb5783bff12a9812c8890377de728211649e7b45e86261df96",
+      "at": "2026-11-23T16:00:56.799Z"
+    }
+  ],
+  "document-app": [
+    {
+      "version": "65444f514057",
+      "commit": "65444f5140579916b965b8ee157e28728340a518",
+      "checksum": "f184533f8a8bcc9ab26e8c8943764bddab95ca64417dee1e1957633bd5407526",
+      "at": "2026-11-23T16:00:56.799Z"
+    }
+  ],
+  "inference-optimisation": [
+    {
+      "version": "fda968e7fc19",
+      "commit": "fda968e7fc1996aa23c67139c755fe541c9d4be0",
+      "checksum": "2aa9a1325373c2207376609a416ab4dbc2af375f599fa3ffd2a5673adfe4897d",
+      "at": "2026-11-23T16:00:56.799Z"
+    }
+  ],
+  "jury": [
+    {
+      "version": "add880bd6ec9",
+      "commit": "add880bd6ec9f5592a1482846fc0dd282c9161bc",
+      "checksum": "93ad484b136493da7caad5a8ae2ec8fe723467a582c6c144e57745e1e4064182",
+      "at": "2026-11-23T16:00:56.799Z"
+    }
+  ],
+  "positioning-angles": [
+    {
+      "version": "bd5aaedab443",
+      "commit": "bd5aaedab44368d76326d98d488697158b886679",
+      "checksum": "79891bcd400ecf42619e65029e544674fb11d2afd877484d06602a9ca8bd9a22",
+      "at": "2026-11-23T16:00:56.799Z"
+    }
   ]
 }

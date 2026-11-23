@@ -1,0 +1,18 @@
+{
+  "repository": "juliobsz/skills",
+  "stars": 1403,
+  "createdAt": "2026-10-12T00:07:32Z",
+  "pushedAt": "2026-10-26T15:35:41Z",
+  "statsCheckedAt": "2026-11-23",
+  "license": "MIT",
+  "addedAt": "2026-11-23T16:00:56.799Z",
+  "batchDate": "2026-11-23",
+  "coreOrigin": "upstream",
+  "commit": "add880bd6ec9f5592a1482846fc0dd282c9161bc",
+  "path": "jury",
+  "language": "hybrid",
+  "version": "add880bd6ec9",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-23T16:00:56.799Z"
+}

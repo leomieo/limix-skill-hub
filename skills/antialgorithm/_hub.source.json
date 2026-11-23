@@ -1,0 +1,73 @@
+{
+  "repository": "mankidev/antialgorithm",
+  "commit": "a6392c0d35382cd8fe0676668e2c7b2de4ec9269",
+  "path": "",
+  "verified": true,
+  "coreSha256": "3eeae7c724e0f81692e51b95106f645b1844013c04a4acdfaf44800831459d8e",
+  "skipped": [
+    ".claude-plugin/icon.png",
+    ".claude-plugin/marketplace.json",
+    ".claude-plugin/plugin.json",
+    ".gitignore",
+    "CONTRIBUTING.md",
+    "docs/README_DE.md",
+    "docs/README_ES.md",
+    "docs/README_FR.md",
+    "docs/README_JA.md",
+    "docs/README_KO.md",
+    "docs/README_PT.md",
+    "docs/README_RU.md",
+    "docs/README_TR.md",
+    "docs/README_ZH.md",
+    "images/graph.png",
+    "images/showcase.png"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "3eeae7c724e0f81692e51b95106f645b1844013c04a4acdfaf44800831459d8e",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "c951367e9bd58667a98ab957c3546b59578ebc17d25bff0077635b2fb3c22c59",
+      "executable": false
+    },
+    {
+      "path": "README.md",
+      "sha256": "033c8068978d7cc2c979901900315816064ec5ed706fe178f5427d2bda27ff83",
+      "executable": false
+    },
+    {
+      "path": "scripts/check.py",
+      "sha256": "29a2e199db4a23a98e03b0b37602d62a2213a8119100f62dd924cc5d2597a58c",
+      "executable": false
+    },
+    {
+      "path": "scripts/history.py",
+      "sha256": "e8031f5d3ebf6ba666fe10c1ce6dc3a2d13e62cbf05da5707f0a71454de8ea64",
+      "executable": false
+    },
+    {
+      "path": "scripts/moves.py",
+      "sha256": "ecbe025df5519ce8587243146d3e2b2e0e1e3cc47a777935b45a551c470c54a5",
+      "executable": false
+    },
+    {
+      "path": "scripts/rough.py",
+      "sha256": "dbb8c3a720a52392184a553bc2dd6c47fe496c9dd9408a3cc38ee32b5f50699a",
+      "executable": false
+    },
+    {
+      "path": "scripts/seed.py",
+      "sha256": "a657739a0c158b44dbaf07e948586a0d75495f279c4f048d1d562d41d2d73e7f",
+      "executable": false
+    },
+    {
+      "path": "visuals.md",
+      "sha256": "0b232c3d2cd776693f7ebdc8c179925857450c1ff89993555f5791a5b084fb99",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/antialgorithm"
+}

@@ -1,0 +1,18 @@
+{
+  "repository": "phuryn/product-engineering",
+  "stars": 773,
+  "createdAt": "2026-10-29T11:32:54Z",
+  "pushedAt": "2026-11-21T18:34:25Z",
+  "statsCheckedAt": "2026-11-23",
+  "license": "MIT",
+  "addedAt": "2026-11-23T16:00:56.799Z",
+  "batchDate": "2026-11-23",
+  "coreOrigin": "upstream",
+  "commit": "65444f5140579916b965b8ee157e28728340a518",
+  "path": "ai-shipping/skills/document-app",
+  "language": "hybrid",
+  "version": "65444f514057",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-23T16:00:56.799Z"
+}

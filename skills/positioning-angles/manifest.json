@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "name": "positioning-angles",
+  "version": "bd5aaedab443",
+  "source": {
+    "url": "https://github.com/boringmarketer/boring-marketing-skills",
+    "commit": "bd5aaedab44368d76326d98d488697158b886679",
+    "sha256": "92390ea1663455b7533fbef9d355da749771d15690546b6d26f903934236d2d9",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Xây dựng và so sánh các góc định vị sản phẩm theo khách hàng, lựa chọn thay thế và bằng chứng khác biệt.",
+    "aliases": [
+      "Định vị sản phẩm",
+      "Góc truyền thông"
+    ],
+    "keywords": [
+      "positioning",
+      "angles",
+      "Định vị sản phẩm",
+      "Góc truyền thông"
+    ],
+    "examples": [
+      "So sánh ba góc định vị dựa trên phản hồi khách hàng đã cung cấp."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "92390ea1663455b7533fbef9d355da749771d15690546b6d26f903934236d2d9"
+  },
+  "requiredCapabilities": [
+    "ai-search [reference-hint]",
+    "direct-response-copy [reference-hint]",
+    "google-business-profile [reference-hint]",
+    "landing-page [reference-hint]",
+    "lead-magnet [reference-hint]",
+    "paid-ads [reference-hint]",
+    "python [mention-hint]",
+    "seo-content [reference-hint]",
+    "service-area-pages [reference-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "network",
+    "shell"
+  ],
+  "syncedAt": "2026-11-23T16:00:56.799Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "Static manual review: The standalone package omits shared support files from the upstream start-here skill. The workflow mentions web search/fetch and a Python helper."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "4 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}
