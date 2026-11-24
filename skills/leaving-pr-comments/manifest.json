@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "name": "leaving-pr-comments",
+  "version": "11e37a74d0a6",
+  "source": {
+    "url": "https://github.com/t3dotgg/tstack",
+    "commit": "11e37a74d0a6868c121cd0910ab2b3bd9873b92a",
+    "sha256": "1d110343022d0514c101dd942286cce10d6b9f5bd5b899f5a0530620d34cd295",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Soạn phản hồi pull request trên GitHub, ghi rõ ai viết và thay mặt ai, rồi đối chiếu nội dung với bằng chứng.",
+    "aliases": [
+      "Phản hồi pull request",
+      "Ghi rõ tác giả AI"
+    ],
+    "keywords": [
+      "leaving",
+      "pr",
+      "comments",
+      "Phản hồi pull request",
+      "Ghi rõ tác giả AI"
+    ],
+    "examples": [
+      "Soạn bản nháp trả lời nhận xét về kiểm thử trong pull request này và giữ tham chiếu đến tệp liên quan."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "1d110343022d0514c101dd942286cce10d6b9f5bd5b899f5a0530620d34cd295"
+  },
+  "requiredCapabilities": [
+    "GitHub comment or review integration (only for authorized posting)"
+  ],
+  "permissions": [
+    "network"
+  ],
+  "syncedAt": "2026-11-24T10:03:56.526Z",
+  "security": {
+    "status": "review-required",
+    "findings": [
+      "Static review: formatting can be used for drafts; posting and resolving a review are external state changes."
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "hub": "leomieo/limix-skill-hub",
-  "count": 73,
+  "count": 78,
   "skills": [
     {
       "id": "agent-autoloop",
@@ -11172,6 +11172,312 @@
       "area": "quarantine"
     },
     {
+      "id": "brand-voice",
+      "name": "brand-voice",
+      "description": "Extracts or builds a falsifiable brand voice profile, backed by verbatim evidence from the brand's real content, that every other content skill reads, so output sounds like the brand instead of a model. Use when starting a project, when copy sounds generic or AI-written, when output must match a specific person or brand, or to check recently published content for voice drift.",
+      "description_vi": "Xây dựng hồ sơ giọng thương hiệu từ ví dụ có dẫn chứng và kiểm tra nội dung mới có lệch giọng hay không.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "brand-voice",
+        "version": "bd5aaedab443",
+        "source": {
+          "url": "https://github.com/boringmarketer/boring-marketing-skills",
+          "commit": "bd5aaedab44368d76326d98d488697158b886679",
+          "sha256": "4dacbdbe9cd20ef5432136c4b480071045fe3f30ca8ff1bdb0a5deae1f928aa3",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Xây dựng hồ sơ giọng thương hiệu từ ví dụ có dẫn chứng và kiểm tra nội dung mới có lệch giọng hay không.",
+          "aliases": [
+            "Giọng điệu thương hiệu",
+            "Kiểm tra lệch giọng"
+          ],
+          "keywords": [
+            "brand",
+            "voice",
+            "Giọng điệu thương hiệu",
+            "Kiểm tra lệch giọng"
+          ],
+          "examples": [
+            "Dùng ba đoạn đã xuất bản để mô tả giọng thương hiệu và chỉ ra từng câu chứng minh nhận xét."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "4dacbdbe9cd20ef5432136c4b480071045fe3f30ca8ff1bdb0a5deae1f928aa3"
+        },
+        "requiredCapabilities": [
+          "Firecrawl or Exa (optional)",
+          "Python 3 when loading local brand context",
+          "ScrapeCreators for supported social sources (optional)",
+          "audience-research [reference-hint]",
+          "content-atomizer [reference-hint]",
+          "direct-response-copy [reference-hint]",
+          "filesystem-write [mention-hint]",
+          "positioning-angles [reference-hint]",
+          "python [mention-hint]",
+          "react [mention-hint]",
+          "subagents [mention-hint]",
+          "web search and fetch when collecting public examples",
+          "web-search [mention-hint]"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "network",
+          "shell"
+        ],
+        "syncedAt": "2026-11-24T10:03:56.526Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "Static review: sibling start-here component is absent. Collection can use network integrations and the skill writes brand memory and reports."
+          ]
+        },
+        "compatibility": {
+          "status": "incompatible",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "4 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Giọng điệu thương hiệu",
+        "Kiểm tra lệch giọng"
+      ],
+      "keywords": [
+        "brand",
+        "voice",
+        "Giọng điệu thương hiệu",
+        "Kiểm tra lệch giọng"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "bd5aaedab443",
+      "source": {
+        "repository": "boringmarketer/boring-marketing-skills",
+        "commit": "bd5aaedab44368d76326d98d488697158b886679",
+        "path": "skills/brand-voice"
+      },
+      "stars": 823,
+      "created_at": "2026-11-16T15:09:46Z",
+      "pushed_at": "2026-11-17T22:53:58Z",
+      "stats_checked": "2026-11-24",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 25,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ]
+      },
+      "dependencies": [],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "Firecrawl or Exa (optional)",
+          "Python 3 when loading local brand context",
+          "ScrapeCreators for supported social sources (optional)",
+          "audience-research [reference-hint]",
+          "content-atomizer [reference-hint]",
+          "direct-response-copy [reference-hint]",
+          "filesystem-write [mention-hint]",
+          "positioning-angles [reference-hint]",
+          "python [mention-hint]",
+          "react [mention-hint]",
+          "subagents [mention-hint]",
+          "web search and fetch when collecting public examples",
+          "web-search [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ],
+        "detected": [
+          {
+            "name": "filesystem-write",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 396
+              }
+            ]
+          },
+          {
+            "name": "subagents",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 140
+              }
+            ]
+          },
+          {
+            "name": "web-search",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 146
+              },
+              {
+                "file": "references/ai-tells.md",
+                "line": 3
+              }
+            ]
+          },
+          {
+            "name": "audience-research",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 400
+              }
+            ]
+          },
+          {
+            "name": "content-atomizer",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 402
+              }
+            ]
+          },
+          {
+            "name": "direct-response-copy",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 402
+              }
+            ]
+          },
+          {
+            "name": "positioning-angles",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 398
+              }
+            ]
+          },
+          {
+            "name": "react",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 113
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 27
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 3,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [
+          "skills/start-here/scripts/brand_context.py",
+          "skills/start-here/references/brand-memory.md",
+          "skills/start-here/references/output-format.md",
+          "skills/start-here/references/taste-loop.md"
+        ],
+        "packageCompleteness": "incomplete",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "manifest.json",
+          "references/ai-tells.md",
+          "references/guide.vi.md",
+          "references/voice-extraction-judgment.md"
+        ]
+      },
+      "checksum": "15a4aca6b9454fcd022ba533dd8c187f2318a092b7e42247ef6c1954f22b1295",
+      "file_hashes": {
+        "LICENSE": "5f762facdd3aaaa304a17e2117498b6073e7d64f25fcd5c3355c0715fc8efa17",
+        "SKILL.md": "4dacbdbe9cd20ef5432136c4b480071045fe3f30ca8ff1bdb0a5deae1f928aa3",
+        "manifest.json": "3751f9782c866c0effa179bdc3caf69b58e05dde48b684b2c34ff557e226d8d2",
+        "references/ai-tells.md": "cb509f052582b58736b34f432ea189a43714d9619eae75e08404350b5df6e5de",
+        "references/guide.vi.md": "34b50ff11f5226ba3a61a1f585ecfea35c87b7993da976680e74dcb9ac73c2fb",
+        "references/voice-extraction-judgment.md": "5e3adfec04b831c7ee66e98b6d53eb2c40bb9e42d642fdfbb0b05d06c18f583c"
+      },
+      "notes": [],
+      "last_checked": "2026-11-24T10:03:56.526Z",
+      "area": "quarantine"
+    },
+    {
       "id": "build-and-verify",
       "name": "build-and-verify",
       "description": "Build a SwiftUI macOS app from the command line, install it, and check light and dark window snapshots of every page before calling a change done. Use after any UI code change, when a build fails, or when the user asks to run, screenshot, or check the app.",
@@ -12921,6 +13227,1393 @@
       },
       "notes": [],
       "last_checked": "2026-11-13T09:27:13.451Z",
+      "area": "quarantine"
+    },
+    {
+      "id": "cinematic-film",
+      "name": "cinematic-film",
+      "description": "Makes narrated cinematic films entirely from code, on any subject. One continuous camera glides over one designed world of photos, documents, cards, maps with routes and big numbers, with every stamp, highlight and number landing on the narrator's word, then sound effects, an optional score and burned-in captions. For documentaries and history, product launches, brand and founder stories, science and tech explainers, biographies and true crime. Covers the script, voiceover from any TTS split into timed lines, images (archives with their licences, your own photos, AI stills), a beat table, the scene, self-review stills and a memory-safe parallel render. Use for \"make a cinematic video about\", \"documentary about\", \"explainer video\", \"launch film\", \"Vox-style video\", \"evidence board animation\", or turning a story into a video for X, YouTube or TikTok.",
+      "description_vi": "Lập bảng nhịp và dựng phim từ ảnh, tư liệu và bản đồ để chuyển động khớp với lời thuyết minh.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "cinematic-film",
+        "version": "bf435561c620",
+        "source": {
+          "url": "https://github.com/Moh4696/cinematic-skill",
+          "commit": "bf435561c6203f90f971300efe952b68b5ec3417",
+          "sha256": "507be652654aa4e1ccb4aa508fab73ca9f2a718a9779b940a5081b62aeb5ad12",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Lập bảng nhịp và dựng phim từ ảnh, tư liệu và bản đồ để chuyển động khớp với lời thuyết minh.",
+          "aliases": [
+            "Dựng phim có lời thuyết minh",
+            "Phim tư liệu bằng mã"
+          ],
+          "keywords": [
+            "cinematic",
+            "film",
+            "Dựng phim có lời thuyết minh",
+            "Phim tư liệu bằng mã"
+          ],
+          "examples": [
+            "Lập bảng nhịp cho video giới thiệu sản phẩm hai phút, dùng ảnh tôi cung cấp và khớp theo lời dẫn."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "507be652654aa4e1ccb4aa508fab73ca9f2a718a9779b940a5081b62aeb5ad12"
+        },
+        "requiredCapabilities": [
+          "FFmpeg and ffprobe with libx264",
+          "Pillow",
+          "Python 3.9+",
+          "TTS engine or existing narration",
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "ffmpeg [mention-hint]",
+          "ffprobe [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "fonts for title and handwritten roles",
+          "node [mention-hint]",
+          "numpy",
+          "numpy * [installation-command-hint]",
+          "pillow * [installation-command-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]",
+          "rust [mention-hint]",
+          "skia-python",
+          "skia-python * [installation-command-hint]",
+          "text-to-speech [mention-hint]"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "network",
+          "shell"
+        ],
+        "syncedAt": "2026-11-24T10:03:56.526Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "Static review: render.py loads project scene.py as Python code; tts_say.py can execute a custom TTS command through a shell. Source scripts fetch assets and write project media."
+          ]
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Dựng phim có lời thuyết minh",
+        "Phim tư liệu bằng mã"
+      ],
+      "keywords": [
+        "cinematic",
+        "film",
+        "Dựng phim có lời thuyết minh",
+        "Phim tư liệu bằng mã"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "bf435561c620",
+      "source": {
+        "repository": "Moh4696/cinematic-skill",
+        "commit": "bf435561c6203f90f971300efe952b68b5ec3417",
+        "path": "skills/cinematic-film"
+      },
+      "stars": 951,
+      "created_at": "2026-11-09T07:58:11Z",
+      "pushed_at": "2026-11-09T15:35:12Z",
+      "stats_checked": "2026-11-24",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 21,
+        "security": 21,
+        "compatibility": 8,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "ffprobe",
+            "installerId": "ffmpeg"
+          }
+        ]
+      },
+      "dependencies": [
+        "ffmpeg",
+        "node"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "FFmpeg and ffprobe with libx264",
+          "Pillow",
+          "Python 3.9+",
+          "TTS engine or existing narration",
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "ffmpeg [mention-hint]",
+          "ffprobe [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "fonts for title and handwritten roles",
+          "node [mention-hint]",
+          "numpy",
+          "numpy * [installation-command-hint]",
+          "pillow * [installation-command-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]",
+          "rust [mention-hint]",
+          "skia-python",
+          "skia-python * [installation-command-hint]",
+          "text-to-speech [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "ffprobe",
+            "installerId": "ffmpeg"
+          }
+        ],
+        "detected": [
+          {
+            "name": "filesystem-read",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 68
+              }
+            ]
+          },
+          {
+            "name": "text-to-speech",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 3
+              },
+              {
+                "file": "references/voice.md",
+                "line": 18
+              },
+              {
+                "file": "scripts/check_setup.py",
+                "line": 65
+              },
+              {
+                "file": "scripts/split_takes.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/tts_say.py",
+                "line": 6
+              }
+            ]
+          },
+          {
+            "name": "__future__",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/build_sfx.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/engine.py",
+                "line": 19
+              }
+            ]
+          },
+          {
+            "name": "argparse",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/build_narration.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/build_sfx.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/burn_captions.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/fetch_commons.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/get_fonts.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/make_beats.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/make_map.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/mix_soundtrack.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/new_project.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/prep_assets.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/split_takes.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/tts_say.py",
+                "line": 17
+              }
+            ]
+          },
+          {
+            "name": "bisect",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/engine.py",
+                "line": 21
+              }
+            ]
+          },
+          {
+            "name": "captions",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/burn_captions.py",
+                "line": 42
+              },
+              {
+                "file": "scripts/burn_captions.py",
+                "line": 68
+              }
+            ]
+          },
+          {
+            "name": "engine",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "assets/template/scene.py",
+                "line": 10
+              },
+              {
+                "file": "assets/wright-flyer/scene.py",
+                "line": 10
+              },
+              {
+                "file": "scripts/captions.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/check_setup.py",
+                "line": 55
+              },
+              {
+                "file": "scripts/get_fonts.py",
+                "line": 33
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 41
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 103
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 135
+              }
+            ]
+          },
+          {
+            "name": "html",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/fetch_commons.py",
+                "line": 23
+              }
+            ]
+          },
+          {
+            "name": "importlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check_setup.py",
+                "line": 10
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 16
+              }
+            ]
+          },
+          {
+            "name": "inspect",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/build_sfx.py",
+                "line": 25
+              }
+            ]
+          },
+          {
+            "name": "json",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/build_narration.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/build_sfx.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/burn_captions.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/engine.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/fetch_commons.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/make_beats.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/make_map.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/mix_soundtrack.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/new_project.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/prep_assets.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/split_takes.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/tts_say.py",
+                "line": 18
+              }
+            ]
+          },
+          {
+            "name": "math",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/engine.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/make_map.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/prep_assets.py",
+                "line": 25
+              }
+            ]
+          },
+          {
+            "name": "multiprocessing",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/burn_captions.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 18
+              }
+            ]
+          },
+          {
+            "name": "numpy",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/build_sfx.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/burn_captions.py",
+                "line": 41
+              },
+              {
+                "file": "scripts/captions.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/engine.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/prep_assets.py",
+                "line": 29
+              }
+            ]
+          },
+          {
+            "name": "os",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/burn_captions.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 19
+              }
+            ]
+          },
+          {
+            "name": "pathlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/build_narration.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/build_sfx.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/burn_captions.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/check_setup.py",
+                "line": 11
+              },
+              {
+                "file": "scripts/engine.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/fetch_commons.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/get_fonts.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/make_beats.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/make_map.py",
+                "line": 32
+              },
+              {
+                "file": "scripts/mix_soundtrack.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/new_project.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/prep_assets.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/split_takes.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/tts_say.py",
+                "line": 19
+              }
+            ]
+          },
+          {
+            "name": "PIL",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/engine.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/prep_assets.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 114
+              }
+            ]
+          },
+          {
+            "name": "re",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/captions.py",
+                "line": 12
+              },
+              {
+                "file": "scripts/engine.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/fetch_commons.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/make_beats.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/mix_soundtrack.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/split_takes.py",
+                "line": 25
+              }
+            ]
+          },
+          {
+            "name": "render",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check_setup.py",
+                "line": 69
+              }
+            ]
+          },
+          {
+            "name": "scipy",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/build_sfx.py",
+                "line": 142
+              },
+              {
+                "file": "scripts/check_setup.py",
+                "line": 40
+              }
+            ]
+          },
+          {
+            "name": "shutil",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/check_setup.py",
+                "line": 12
+              },
+              {
+                "file": "scripts/new_project.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/tts_say.py",
+                "line": 20
+              }
+            ]
+          },
+          {
+            "name": "skia",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/captions.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/engine.py",
+                "line": 28
+              }
+            ]
+          },
+          {
+            "name": "subprocess",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/build_narration.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/build_sfx.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/burn_captions.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/check_setup.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/mix_soundtrack.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/split_takes.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/tts_say.py",
+                "line": 21
+              }
+            ]
+          },
+          {
+            "name": "sys",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/build_narration.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/build_sfx.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/burn_captions.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/check_setup.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/fetch_commons.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/get_fonts.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/make_map.py",
+                "line": 33
+              },
+              {
+                "file": "scripts/mix_soundtrack.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/new_project.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/prep_assets.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/split_takes.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/tts_say.py",
+                "line": 22
+              }
+            ]
+          },
+          {
+            "name": "tempfile",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/tts_say.py",
+                "line": 23
+              }
+            ]
+          },
+          {
+            "name": "time",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/burn_captions.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/fetch_commons.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 23
+              }
+            ]
+          },
+          {
+            "name": "urllib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/fetch_commons.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/fetch_commons.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/get_fonts.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/make_map.py",
+                "line": 34
+              }
+            ]
+          },
+          {
+            "name": "numpy",
+            "kind": "package",
+            "status": "installation-command-hint",
+            "ecosystem": "pip",
+            "version": "*",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 32
+              }
+            ]
+          },
+          {
+            "name": "pillow",
+            "kind": "package",
+            "status": "installation-command-hint",
+            "ecosystem": "pip",
+            "version": "*",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 32
+              }
+            ]
+          },
+          {
+            "name": "skia-python",
+            "kind": "package",
+            "status": "installation-command-hint",
+            "ecosystem": "pip",
+            "version": "*",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 32
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "assets/template/map.json",
+                "line": 4
+              },
+              {
+                "file": "assets/wright-flyer/map.json",
+                "line": 4
+              },
+              {
+                "file": "scripts/make_map.py",
+                "line": 9
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "assets/template/scene.py",
+                "line": 1
+              },
+              {
+                "file": "assets/wright-flyer/scene.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/build_narration.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/build_sfx.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/burn_captions.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/captions.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/check_setup.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/engine.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/fetch_commons.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/get_fonts.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/make_beats.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/make_map.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/mix_soundtrack.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/new_project.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/prep_assets.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/split_takes.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/tts_say.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 8
+              },
+              {
+                "file": "references/archive.md",
+                "line": 58
+              },
+              {
+                "file": "references/film.md",
+                "line": 7
+              },
+              {
+                "file": "references/performance.md",
+                "line": 41
+              },
+              {
+                "file": "references/sound.md",
+                "line": 8
+              },
+              {
+                "file": "references/voice.md",
+                "line": 8
+              },
+              {
+                "file": "scripts/build_narration.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/build_sfx.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/burn_captions.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/check_setup.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/fetch_commons.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/get_fonts.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/make_beats.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/make_map.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/mix_soundtrack.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/new_project.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/prep_assets.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/split_takes.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/tts_say.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "rust",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "assets/wright-flyer/scene.py",
+                "line": 10
+              },
+              {
+                "file": "references/film.md",
+                "line": 8
+              },
+              {
+                "file": "scripts/engine.py",
+                "line": 33
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 91
+              },
+              {
+                "file": "references/film.md",
+                "line": 97
+              },
+              {
+                "file": "references/performance.md",
+                "line": 40
+              },
+              {
+                "file": "references/sound.md",
+                "line": 7
+              },
+              {
+                "file": "references/voice.md",
+                "line": 7
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/archive.md",
+                "line": 26
+              }
+            ]
+          },
+          {
+            "name": "ffmpeg",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "ffmpeg",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 16
+              },
+              {
+                "file": "references/performance.md",
+                "line": 48
+              },
+              {
+                "file": "references/voice.md",
+                "line": 19
+              },
+              {
+                "file": "scripts/build_narration.py",
+                "line": 53
+              },
+              {
+                "file": "scripts/build_sfx.py",
+                "line": 130
+              },
+              {
+                "file": "scripts/burn_captions.py",
+                "line": 45
+              },
+              {
+                "file": "scripts/check_setup.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/mix_soundtrack.py",
+                "line": 80
+              },
+              {
+                "file": "scripts/render.py",
+                "line": 11
+              },
+              {
+                "file": "scripts/split_takes.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/tts_say.py",
+                "line": 34
+              }
+            ]
+          },
+          {
+            "name": "ffprobe",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "ffmpeg",
+            "evidence": [
+              {
+                "file": "scripts/build_narration.py",
+                "line": 34
+              },
+              {
+                "file": "scripts/burn_captions.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/check_setup.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/split_takes.py",
+                "line": 42
+              },
+              {
+                "file": "scripts/tts_say.py",
+                "line": 78
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 32,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "agents/openai.yaml",
+          "assets/template/map.json",
+          "assets/template/photos.json",
+          "assets/template/scene.py",
+          "assets/template/script.json",
+          "assets/wright-flyer/map.json",
+          "assets/wright-flyer/photos.json",
+          "assets/wright-flyer/scene.py",
+          "assets/wright-flyer/script.json",
+          "manifest.json",
+          "references/archive.md",
+          "references/film.md",
+          "references/guide.vi.md",
+          "references/performance.md",
+          "references/sound.md",
+          "references/story.md",
+          "references/voice.md",
+          "scripts/build_narration.py",
+          "scripts/build_sfx.py",
+          "scripts/burn_captions.py",
+          "scripts/captions.py",
+          "scripts/check_setup.py",
+          "scripts/engine.py",
+          "scripts/fetch_commons.py",
+          "scripts/get_fonts.py",
+          "scripts/make_beats.py",
+          "scripts/make_map.py",
+          "scripts/mix_soundtrack.py",
+          "scripts/new_project.py",
+          "scripts/prep_assets.py",
+          "scripts/render.py",
+          "scripts/split_takes.py",
+          "scripts/tts_say.py"
+        ]
+      },
+      "checksum": "dd4e877b23712fed209eca2c93faa636eb004571845eb35294d38d9c444bafb0",
+      "file_hashes": {
+        "LICENSE": "9e22b0b3fd03d4b2c0e696c055c1d920af9a40e33eed82878844f018610e7102",
+        "SKILL.md": "507be652654aa4e1ccb4aa508fab73ca9f2a718a9779b940a5081b62aeb5ad12",
+        "agents/openai.yaml": "5d9bf773c562380721efa0c8e8c2ef8f5ab3921643886ee4a8a71bb8ec1664a0",
+        "assets/template/map.json": "0c3410b25902aff3166910e57961634238051564d18547c3225b0ceac625a222",
+        "assets/template/photos.json": "82c30f11a7c422291bb603fcc270f3a2cb0dfd5c86a06997c29e37e2d6ebf418",
+        "assets/template/scene.py": "cab0c6a8f46018783e42912029056eaeb202323f81e5d5d7c34d8f4aac315dcb",
+        "assets/template/script.json": "e34366bc05394b08247167116a1cfc8576e448352ad6e4a342bd3166c8f68c75",
+        "assets/wright-flyer/map.json": "b4cb50ab7e481bd4d390ea4048e9fc2c16358694bdf251c0509b6504d2ee86d9",
+        "assets/wright-flyer/photos.json": "09bc32946c61be24a671114d1282c844ac0040412894640f1d3ce242fe4cb1ff",
+        "assets/wright-flyer/scene.py": "6ffe98b04e47857fb3a8c452403a475057e1c2ea0f923d07fbd8f8e9b084b8db",
+        "assets/wright-flyer/script.json": "fb7ab99e62da937b59805dc50af9adb55c0ea75fe68043132cd883ae61700185",
+        "manifest.json": "051ec7eb524cfc90bec800243192028852462bd311a32015c5563e11ed1263a4",
+        "references/archive.md": "7d581c3dc53905da1bd04ba5b211f469020713de721c131ac31dba678b55f2bb",
+        "references/film.md": "695bd4f06a5049721c47d94582793cf39eb60d1d31c51fb238bea05d8c24f930",
+        "references/guide.vi.md": "99b2d8a1c4d8a8fcb980ddaf66668ce51df801ecafa2cae72facf15e577d1c70",
+        "references/performance.md": "62d3d915dfcbb0f94e852e5a82faa985463d12b7cf3cda91cbb4432b9e972b61",
+        "references/sound.md": "781a2ac4b16324cd83213685611dd35786c95c1d7fb60accba4e63ac3ccaaa1c",
+        "references/story.md": "47f4da91e91ef094bee81dd6dd622936cf5144be2535db68d7bd5fce83c2b74e",
+        "references/voice.md": "558b319acb4d49cba0baf1b62dc8bbda1c509402efc5d8142cfea87625bb17f3",
+        "scripts/build_narration.py": "8d32911f325c1a64ded103a9c7775ee9f52718c112b7ab122afa7fe9966ea030",
+        "scripts/build_sfx.py": "a5ad451c5c1ca53140dd19f9e4b33b31a509bd49a797078e5c3075fb2adbd539",
+        "scripts/burn_captions.py": "66f23ae6f3d9270f64ff4cf4fef2e497a226d9e1c549491f4b580e98308e7139",
+        "scripts/captions.py": "e58bbaabfb4f3f2553a5ffce217a311724f435325e9aed566978758dd4d4c9d0",
+        "scripts/check_setup.py": "8eb5b25601c1f241655fc53ad56936f5cdc8d88866110082ae836dec31c76727",
+        "scripts/engine.py": "578f94bdc916ea8c3eb3077fddaf76958d6747f4ca4292e495854291f0c9767a",
+        "scripts/fetch_commons.py": "e7b475464b35fc56da88297c2b95c1dae268e8c96436cbd569dcc55b3cf0b36e",
+        "scripts/get_fonts.py": "9e5a106dd7b48ab8108fe36a2858227d7e1162500a51948fe2d1ca963381111f",
+        "scripts/make_beats.py": "ecd4cb4662fbdf595799251e0417f9fa0c448cac629b62ff30591c3b73d42a60",
+        "scripts/make_map.py": "621b92ead85f1a682a034b5f284d6655b17533cb8f387a5ff7355fca5c7152ab",
+        "scripts/mix_soundtrack.py": "f5629027f3cf69d842484eee0f4c7eb05a4e5c49fe9ffae2143e541f0ff010bb",
+        "scripts/new_project.py": "7f4b955f57c877825c6502e37773827236144d9714ef9ae4b53ad88b89c3fe0c",
+        "scripts/prep_assets.py": "78c0fa0c70c8a971ae1b2002fc41cc0d6b496f5f552ce88472969357537f1cf9",
+        "scripts/render.py": "f3660055ceeca059d447e70421bb9ce89c296ad60a91eb0af13421b3721ef507",
+        "scripts/split_takes.py": "9e90dd94d6b125cb6bd5951533beb3d1feae6dadce662165f2277986aaabe8d1",
+        "scripts/tts_say.py": "492cb0e1391299d2a99e7a179e399a06b3b7dc23f4c657b13b6700c43c9eb19c"
+      },
+      "notes": [],
+      "last_checked": "2026-11-24T10:03:56.526Z",
       "area": "quarantine"
     },
     {
@@ -17462,6 +19155,376 @@
       },
       "notes": [],
       "last_checked": "2026-11-18T11:28:48.362Z",
+      "area": "quarantine"
+    },
+    {
+      "id": "cook",
+      "name": "cook",
+      "description": "Runs the Cook Loop for ambitious visual builds that must match reference images, screens or videos through long autonomous iteration. Use it for 3D worlds made in code (three.js, WebGL, shaders), code-rendered films, launch and motion videos, games and polished UI that must hold up next to references, especially runs of many hours or days while the user is away. Trigger when the user types /cook or $cook, says \"cook\", \"go cook\", \"let it cook\", \"iterate until it matches\", \"match the references\", \"99%\", \"99.9%\", \"9/10 minimum\" or \"at least 8h\", or attaches reference images and asks for a recreation in code. It runs one intake, then loops build, stills, zero-context critics and fixes against a numeric bar, and holds the final render until the user approves.",
+      "description_vi": "Cải tiến bản dựng hình ảnh qua các vòng chụp, đối chiếu và sửa theo tiêu chí đã thống nhất.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "cook",
+        "version": "b23cac6fd943",
+        "source": {
+          "url": "https://github.com/Leonxlnx/cook",
+          "commit": "b23cac6fd9439dfddcab61b14808e7bf72549b46",
+          "sha256": "110a9fe3a94c8d0b52c32ee3ed526d0ed4ea16d73ef9dd0c0d129dbbacf29585",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Cải tiến bản dựng hình ảnh qua các vòng chụp, đối chiếu và sửa theo tiêu chí đã thống nhất.",
+          "aliases": [
+            "Lặp thiết kế theo ảnh mẫu",
+            "Đối chiếu khung hình"
+          ],
+          "keywords": [
+            "cook",
+            "Lặp thiết kế theo ảnh mẫu",
+            "Đối chiếu khung hình"
+          ],
+          "examples": [
+            "Dùng ảnh mẫu do tôi sở hữu để đề xuất ba vòng đối chiếu cảnh 3D với góc máy cố định."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "110a9fe3a94c8d0b52c32ee3ed526d0ed4ea16d73ef9dd0c0d129dbbacf29585"
+        },
+        "requiredCapabilities": [
+          "FFmpeg",
+          "Node.js 18+",
+          "cook [reference-hint]",
+          "ffmpeg [mention-hint]",
+          "ffprobe [mention-hint]",
+          "image-generation [mention-hint]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "python [mention-hint]",
+          "remotion [mention-hint]",
+          "three [mention-hint]",
+          "visual renderer for the target project"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "filesystem-write",
+          "shell"
+        ],
+        "syncedAt": "2026-11-24T10:03:56.526Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "Static review: long autonomous workflow writes project state and uses a local renderer; the comparison script spawns FFmpeg. The importer excluded .gitignore."
+          ]
+        },
+        "compatibility": {
+          "status": "incompatible",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "1 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Lặp thiết kế theo ảnh mẫu",
+        "Đối chiếu khung hình"
+      ],
+      "keywords": [
+        "cook",
+        "Lặp thiết kế theo ảnh mẫu",
+        "Đối chiếu khung hình"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "b23cac6fd943",
+      "source": {
+        "repository": "Leonxlnx/cook",
+        "commit": "b23cac6fd9439dfddcab61b14808e7bf72549b46",
+        "path": ""
+      },
+      "stars": 817,
+      "created_at": "2026-10-31T21:48:38Z",
+      "pushed_at": "2026-10-31T21:48:44Z",
+      "stats_checked": "2026-11-24",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 23,
+        "security": 21,
+        "compatibility": 12,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffprobe",
+            "installerId": "ffmpeg"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "ffmpeg"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "FFmpeg",
+          "Node.js 18+",
+          "cook [reference-hint]",
+          "ffmpeg [mention-hint]",
+          "ffprobe [mention-hint]",
+          "image-generation [mention-hint]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "python [mention-hint]",
+          "remotion [mention-hint]",
+          "three [mention-hint]",
+          "visual renderer for the target project"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "ffprobe",
+            "installerId": "ffmpeg"
+          }
+        ],
+        "detected": [
+          {
+            "name": "image-generation",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/intake.md",
+                "line": 41
+              }
+            ]
+          },
+          {
+            "name": "cook",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 28
+              }
+            ]
+          },
+          {
+            "name": "remotion",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "templates/brief.md",
+                "line": 10
+              }
+            ]
+          },
+          {
+            "name": "three",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 37
+              },
+              {
+                "file": "SKILL.md",
+                "line": 3
+              },
+              {
+                "file": "templates/brief.md",
+                "line": 10
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "scripts/side-by-side.mjs",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 18
+              },
+              {
+                "file": "SKILL.md",
+                "line": 77
+              },
+              {
+                "file": "scripts/side-by-side.mjs",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/target-and-bar.md",
+                "line": 79
+              }
+            ]
+          },
+          {
+            "name": "ffmpeg",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "ffmpeg",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 30
+              },
+              {
+                "file": "SKILL.md",
+                "line": 77
+              },
+              {
+                "file": "references/ship.md",
+                "line": 10
+              },
+              {
+                "file": "references/target-and-bar.md",
+                "line": 36
+              },
+              {
+                "file": "scripts/side-by-side.mjs",
+                "line": 9
+              }
+            ]
+          },
+          {
+            "name": "ffprobe",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "ffmpeg",
+            "evidence": [
+              {
+                "file": "references/ship.md",
+                "line": 27
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 10,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [
+          ".gitignore"
+        ],
+        "packageCompleteness": "incomplete",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "README.md",
+          "SKILL.md",
+          "manifest.json",
+          "references/guide.vi.md",
+          "references/intake.md",
+          "references/loop-and-critics.md",
+          "references/rules.md",
+          "references/ship.md",
+          "references/target-and-bar.md",
+          "scripts/side-by-side.mjs",
+          "templates/ROUNDS.md",
+          "templates/brief.md"
+        ]
+      },
+      "checksum": "f779951b87e55daeed130ba2c89d9b3fd19ed2d7281ad219bab8e2e44ea5b984",
+      "file_hashes": {
+        "LICENSE": "d9177365c7471d18ecd623ce7b8849e26ab8d7e7fea13e1fcbda62397ecb9db8",
+        "README.md": "c82c544a19329c507eb5dcc86edbb803f1e810f4607371f91a25f98ca36d9dac",
+        "SKILL.md": "110a9fe3a94c8d0b52c32ee3ed526d0ed4ea16d73ef9dd0c0d129dbbacf29585",
+        "manifest.json": "8b5018315faa1d1076c01b7469965636280cca4070f84eb1da6b773a69ee400b",
+        "references/guide.vi.md": "46de81c35448c96e62f56c6b6aadadfb2326b775cf967c58658957bce96bba1e",
+        "references/intake.md": "cbcc38ae5b52b165b90e4f52e8e81582256025fa383f0a87043615f38049cb7d",
+        "references/loop-and-critics.md": "ee822bcfef86c5b9f695436d252c8448e92737ed95f9a2b8e735370e73cca81b",
+        "references/rules.md": "eeee1d272171d43162f11596f4eb6040be225b1427a2d72451f7fc2a4f45af95",
+        "references/ship.md": "cd7d1566758541e79f9f96d1ad2e15808c6b203eb5d181116e3a93b537c0d788",
+        "references/target-and-bar.md": "261f1562a319d6c131234fe25fc30286767473a090da1d41b4629810c15f94d0",
+        "scripts/side-by-side.mjs": "0350bff88f8c1c5b373b9e3f7ee93bc0d1b5bffe380129d319cd5a701f39ef5a",
+        "templates/ROUNDS.md": "c22c812aef4ec4abccc84c0abb8205ee08f4deda4aad62b529d19b454a8b53c8",
+        "templates/brief.md": "5490e1df7a9ea49270b3c3eefc2b143d48d38c95c1b286d934f982395c4610a2"
+      },
+      "notes": [],
+      "last_checked": "2026-11-24T10:03:56.526Z",
       "area": "quarantine"
     },
     {
@@ -43483,6 +45546,160 @@
       "area": "quarantine"
     },
     {
+      "id": "leaving-pr-comments",
+      "name": "leaving-pr-comments",
+      "description": "Use whenever leaving comments on GitHub.",
+      "description_vi": "Soạn phản hồi pull request trên GitHub, ghi rõ ai viết và thay mặt ai, rồi đối chiếu nội dung với bằng chứng.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "leaving-pr-comments",
+        "version": "11e37a74d0a6",
+        "source": {
+          "url": "https://github.com/t3dotgg/tstack",
+          "commit": "11e37a74d0a6868c121cd0910ab2b3bd9873b92a",
+          "sha256": "1d110343022d0514c101dd942286cce10d6b9f5bd5b899f5a0530620d34cd295",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Soạn phản hồi pull request trên GitHub, ghi rõ ai viết và thay mặt ai, rồi đối chiếu nội dung với bằng chứng.",
+          "aliases": [
+            "Phản hồi pull request",
+            "Ghi rõ tác giả AI"
+          ],
+          "keywords": [
+            "leaving",
+            "pr",
+            "comments",
+            "Phản hồi pull request",
+            "Ghi rõ tác giả AI"
+          ],
+          "examples": [
+            "Soạn bản nháp trả lời nhận xét về kiểm thử trong pull request này và giữ tham chiếu đến tệp liên quan."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "1d110343022d0514c101dd942286cce10d6b9f5bd5b899f5a0530620d34cd295"
+        },
+        "requiredCapabilities": [
+          "GitHub comment or review integration (only for authorized posting)"
+        ],
+        "permissions": [
+          "network"
+        ],
+        "syncedAt": "2026-11-24T10:03:56.526Z",
+        "security": {
+          "status": "review-required",
+          "findings": [
+            "Static review: formatting can be used for drafts; posting and resolving a review are external state changes."
+          ]
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Phản hồi pull request",
+        "Ghi rõ tác giả AI"
+      ],
+      "keywords": [
+        "leaving",
+        "pr",
+        "comments",
+        "Phản hồi pull request",
+        "Ghi rõ tác giả AI"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "11e37a74d0a6",
+      "source": {
+        "repository": "t3dotgg/tstack",
+        "commit": "11e37a74d0a6868c121cd0910ab2b3bd9873b92a",
+        "path": "skills/leaving-pr-comments"
+      },
+      "stars": 4346,
+      "created_at": "2026-10-24T05:00:20Z",
+      "pushed_at": "2026-11-11T11:33:03Z",
+      "stats_checked": "2026-11-24",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 81,
+      "score_parts": {
+        "function": 25,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "recommended",
+      "security_status": "clean",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        }
+      ],
+      "approval_status": "review-required",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": []
+      },
+      "dependencies": [],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "GitHub comment or review integration (only for authorized posting)"
+        ],
+        "runtimeHints": [],
+        "detected": [],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 2,
+          "detection": "no-external-requirement-detected"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "agents/openai.yaml",
+          "manifest.json",
+          "references/guide.vi.md"
+        ]
+      },
+      "checksum": "f5b6766253cd529f3fe8b14fff1e1345246674bf5acda798b6874bde8ef17ec5",
+      "file_hashes": {
+        "LICENSE": "8095f9a9f97d074131f6a2ce09b952d12c18b36f09f4e5df0517c4e64e82c851",
+        "SKILL.md": "1d110343022d0514c101dd942286cce10d6b9f5bd5b899f5a0530620d34cd295",
+        "agents/openai.yaml": "f89fa0d9ae1c3e973b3e9ecb50549faee62fd1a0e59973bade68802c74183fdb",
+        "manifest.json": "47db643d7b4150293ac9c2dd5993acd42523a5abb6f4c39f24a072561be066f0",
+        "references/guide.vi.md": "5db19f1c4b0a6a045fef99f46280bd1e66d6fb398092accc006814947d4a7978"
+      },
+      "notes": [],
+      "last_checked": "2026-11-24T10:03:56.526Z",
+      "area": "skills"
+    },
+    {
       "id": "lemo-opuscar",
       "name": "lemo-opuscar",
       "description": "Direct and produce a short film made entirely in code, in one of the styles of the Lemo-Opuscar library (e.g. Impasto Oil Painting 油画厚涂, Watercolor Brush 水彩笔刷, Ukiyo-e 浮世绘, Satellite Briefing 卫星简报, Exploded Teardown 产品拆解). Use when the user asks for a video, film, short, promo, explainer or animation (视频、短片、动画、宣传片) in a named style, including explainers built from real material such as satellite imagery, laser scans, CAD files or archive scans (数据解说、科普、产品拆解), and new films cut from real archive footage and documents (剪辑纪实, e.g. 用档案影像剪一支新闻片); when they want a film about their own topic and haven't chosen a style (help them choose); when they want to change a style into their own, make their own style from a blank page, or use a style they saved (改风格、从空白开始、我的风格); when they start the skill without saying what they want; or when they ask which film styles there are. Not for plain editing, trimming or converting the user's existing video files.",
@@ -61339,6 +63556,488 @@
       },
       "notes": [],
       "last_checked": "2026-11-17T09:13:27.821Z",
+      "area": "quarantine"
+    },
+    {
+      "id": "ste80-humanizer",
+      "name": "ste80-humanizer",
+      "description": "Rewrite AI-sounding text so it reads like a clear, careful person wrote it, using the\n\"80% of the way to ASD-STE100\" method that Andrej Karpathy shared. Pass 1 removes the\n26 AI tells from Wikipedia's \"Signs of AI writing\" (not-X-but-Y, one-line closers, forced\ntriads, dashes everywhere, stock AI words, inflated claims, chatbot residue). Pass 2\nrebuilds the text with the structure of Simplified Technical English: one idea per\nsentence, short sentences, active voice, simple tenses, plain words. Use it whenever the\nuser wants text humanized, de-AI'd, made clearer, simpler or less robotic, asks for\nASD-STE100 or STE, or wants docs, READMEs, emails, posts or answers tightened.",
+      "description_vi": "Biên tập tài liệu tiếng Anh bằng câu ngắn, câu chủ động và từ dễ hiểu, giữ nguyên dữ kiện.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "ste80-humanizer",
+        "version": "ace4484da2d8",
+        "source": {
+          "url": "https://github.com/Dodaios/ste80-humanizer",
+          "commit": "ace4484da2d81dda97861e004c37c0a2e93896d1",
+          "sha256": "d332cfd96680ebdc3e805a297e705d49a0a515903aea42231eeda96db81d50c7",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Biên tập tài liệu tiếng Anh bằng câu ngắn, câu chủ động và từ dễ hiểu, giữ nguyên dữ kiện.",
+          "aliases": [
+            "Biên tập tiếng Anh kỹ thuật",
+            "Viết câu ngắn rõ ý"
+          ],
+          "keywords": [
+            "ste80",
+            "humanizer",
+            "Biên tập tiếng Anh kỹ thuật",
+            "Viết câu ngắn rõ ý"
+          ],
+          "examples": [
+            "Rút gọn đoạn README tiếng Anh này và giữ nguyên số liệu, điều kiện và tên lệnh."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "d332cfd96680ebdc3e805a297e705d49a0a515903aea42231eeda96db81d50c7"
+        },
+        "requiredCapabilities": [
+          "Python 3 for the optional scripts/ste_check.py checker",
+          "bash [mention-hint]",
+          "node [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]",
+          "rust [mention-hint]",
+          "ste80-humanizer [reference-hint]"
+        ],
+        "permissions": [
+          "filesystem-read",
+          "shell"
+        ],
+        "syncedAt": "2026-11-24T10:03:56.526Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "assets/ste100-overview.png: binary-file (low)",
+            "Static review: optional Python checker reads a named file or stdin. Hidden plugin descriptors and workflow are excluded."
+          ]
+        },
+        "compatibility": {
+          "status": "incompatible",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "5 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Biên tập tiếng Anh kỹ thuật",
+        "Viết câu ngắn rõ ý"
+      ],
+      "keywords": [
+        "ste80",
+        "humanizer",
+        "Biên tập tiếng Anh kỹ thuật",
+        "Viết câu ngắn rõ ý"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "ace4484da2d8",
+      "source": {
+        "repository": "Dodaios/ste80-humanizer",
+        "commit": "ace4484da2d81dda97861e004c37c0a2e93896d1",
+        "path": ""
+      },
+      "stars": 1113,
+      "created_at": "2026-11-09T17:18:59Z",
+      "pushed_at": "2026-11-18T13:11:10Z",
+      "stats_checked": "2026-11-24",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 21,
+        "security": 21,
+        "compatibility": 12,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "assets/ste100-overview.png"
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ]
+      },
+      "dependencies": [
+        "node"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "Python 3 for the optional scripts/ste_check.py checker",
+          "bash [mention-hint]",
+          "node [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]",
+          "rust [mention-hint]",
+          "ste80-humanizer [reference-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          }
+        ],
+        "detected": [
+          {
+            "name": "ste80-humanizer",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "CHANGELOG.md",
+                "line": 20
+              },
+              {
+                "file": "README.md",
+                "line": 82
+              }
+            ]
+          },
+          {
+            "name": "__future__",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/ste_check.py",
+                "line": 17
+              }
+            ]
+          },
+          {
+            "name": "argparse",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/ste_check.py",
+                "line": 19
+              }
+            ]
+          },
+          {
+            "name": "dataclasses",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/ste_check.py",
+                "line": 23
+              }
+            ]
+          },
+          {
+            "name": "json",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/ste_check.py",
+                "line": 20
+              }
+            ]
+          },
+          {
+            "name": "re",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/ste_check.py",
+                "line": 21
+              }
+            ]
+          },
+          {
+            "name": "sys",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/ste_check.py",
+                "line": 22
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "AGENTS.md",
+                "line": 18
+              },
+              {
+                "file": "CHANGELOG.md",
+                "line": 20
+              },
+              {
+                "file": "README.md",
+                "line": 87
+              },
+              {
+                "file": "SKILL.md",
+                "line": 130
+              },
+              {
+                "file": "references/ai-tells.md",
+                "line": 151
+              },
+              {
+                "file": "references/ste80-rules.md",
+                "line": 132
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/ste_check.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "AGENTS.md",
+                "line": 17
+              },
+              {
+                "file": "README.md",
+                "line": 5
+              },
+              {
+                "file": "SKILL.md",
+                "line": 71
+              },
+              {
+                "file": "scripts/ste_check.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "rust",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/ai-tells.md",
+                "line": 189
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "AGENTS.md",
+                "line": 16
+              },
+              {
+                "file": "README.md",
+                "line": 86
+              },
+              {
+                "file": "SKILL.md",
+                "line": 214
+              },
+              {
+                "file": "evals/explain-dns/prompt.md",
+                "line": 5
+              },
+              {
+                "file": "evals/humanize-linkedin-post/prompt.md",
+                "line": 5
+              },
+              {
+                "file": "evals/rewrite-readme-paragraph/prompt.md",
+                "line": 5
+              },
+              {
+                "file": "evals/strict-migration-runbook/prompt.md",
+                "line": 5
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 38,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [
+          ".claude-plugin/marketplace.json",
+          ".claude-plugin/plugin.json",
+          ".cursor-plugin/plugin.json",
+          ".github/workflows/validate.yml",
+          ".gitignore"
+        ],
+        "packageCompleteness": "incomplete",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "AGENTS.md",
+          "CHANGELOG.md",
+          "LICENSE",
+          "README.md",
+          "SKILL.md",
+          "THIRD_PARTY_NOTICES.md",
+          "agents/openai.yaml",
+          "assets/ste100-overview.png",
+          "evals/explain-dns/case.yaml",
+          "evals/explain-dns/graders/01-covers-resolution-chain.md",
+          "evals/explain-dns/graders/02-no-chatbot-preamble.md",
+          "evals/explain-dns/graders/03-short-sentences.md",
+          "evals/explain-dns/graders/04-no-semicolons.md",
+          "evals/explain-dns/prompt.md",
+          "evals/humanize-linkedin-post/case.yaml",
+          "evals/humanize-linkedin-post/graders/01-keeps-all-facts.md",
+          "evals/humanize-linkedin-post/graders/02-no-staging-tells.md",
+          "evals/humanize-linkedin-post/graders/03-no-em-dashes.md",
+          "evals/humanize-linkedin-post/graders/04-no-stock-words.md",
+          "evals/humanize-linkedin-post/graders/05-stays-casual.md",
+          "evals/humanize-linkedin-post/prompt.md",
+          "evals/rewrite-readme-paragraph/case.yaml",
+          "evals/rewrite-readme-paragraph/graders/01-keeps-all-facts.md",
+          "evals/rewrite-readme-paragraph/graders/02-no-semicolons-or-em-dashes.md",
+          "evals/rewrite-readme-paragraph/graders/03-short-sentences.md",
+          "evals/rewrite-readme-paragraph/graders/04-no-stock-words.md",
+          "evals/rewrite-readme-paragraph/prompt.md",
+          "evals/strict-migration-runbook/case.yaml",
+          "evals/strict-migration-runbook/graders/01-numbered-imperative-steps.md",
+          "evals/strict-migration-runbook/graders/02-caution-before-migration.md",
+          "evals/strict-migration-runbook/graders/03-commands-and-numbers-kept.md",
+          "evals/strict-migration-runbook/graders/04-strict-verb-forms.md",
+          "evals/strict-migration-runbook/graders/05-procedural-sentence-length.md",
+          "evals/strict-migration-runbook/prompt.md",
+          "manifest.json",
+          "references/ai-tells.md",
+          "references/guide.vi.md",
+          "references/ste80-rules.md",
+          "references/strict-mode.md",
+          "references/word-swaps.md",
+          "references/worked-example.md",
+          "scripts/ste_check.py"
+        ]
+      },
+      "checksum": "989f9ccbfe686cdd9f5d76c86ee6b3c8d315cdac29f1408eae5ea6fb2de4e52b",
+      "file_hashes": {
+        "AGENTS.md": "899d5e9012b7513a389657fbe5b32890e17a68618b29394644a523c5efd517ee",
+        "CHANGELOG.md": "901e8c116659621b6743c51c518a8b8c39cca4b49011dd9c3e23c716b81ec58a",
+        "LICENSE": "e591401d6bdba6400e2987c275a07a84d1e484fcb4b1556f43e1e7ac4f36cf2d",
+        "README.md": "8e3a64a801146aee7ac035761dfe53ad6a15fc5c6774d79fc643b165dcf3b6c5",
+        "SKILL.md": "d332cfd96680ebdc3e805a297e705d49a0a515903aea42231eeda96db81d50c7",
+        "THIRD_PARTY_NOTICES.md": "f234ad8010f955dd7aa44bb5f7fee0e8ff1bf147398e2d20203b2c5101c9f2e7",
+        "agents/openai.yaml": "a187bab2a59ede3a0fcad2371dbf21bc07ad795e492608f3b4aa82049d72f6e5",
+        "assets/ste100-overview.png": "bdf5b5527e7407f57eb08c71c46062b7496e0d9d4aa5be633c1be3ebc7ec03e6",
+        "evals/explain-dns/case.yaml": "81cb7ff2b7bf9b41cddc6a0a48bbc419831280344660af2ff9131a872b4182ca",
+        "evals/explain-dns/graders/01-covers-resolution-chain.md": "c1f49a245b747888ada55adb272ebf6f79ec69087e46141ddab36e9cc55ebd7f",
+        "evals/explain-dns/graders/02-no-chatbot-preamble.md": "ae573040b861bdb458934c9afeff1c4a89f0c197ecde1a1b0bb1664884e2bb44",
+        "evals/explain-dns/graders/03-short-sentences.md": "5568b01af83f5dd87103681592901d2807802a42fe55740a5295da185a2476b8",
+        "evals/explain-dns/graders/04-no-semicolons.md": "987861f9011b421fcdb26ec335ab004959e8a096096f14689d95064651c01b39",
+        "evals/explain-dns/prompt.md": "c5af6a7df5fd31368b85a655eba076d4b59d148bc1c04c47ff0883372406c484",
+        "evals/humanize-linkedin-post/case.yaml": "956e18f1f8a7d368a922aa043799054381622f51a1363621eda1e1516ffa31ed",
+        "evals/humanize-linkedin-post/graders/01-keeps-all-facts.md": "a9ef3ff424d7ab7a36fa4bc67f13333b747512831112c073099d9ea9eeb435f0",
+        "evals/humanize-linkedin-post/graders/02-no-staging-tells.md": "623497a7c60c21173fd018e8485ce6eca9c3b444a1c08417c8c7dbf5362e1d05",
+        "evals/humanize-linkedin-post/graders/03-no-em-dashes.md": "6a8e729a6a81ddde86edad1fc66a97439b0f52e7db68ebe608c424db66b262a7",
+        "evals/humanize-linkedin-post/graders/04-no-stock-words.md": "9e0d0773a3555890205ce608d10ad6ac7b07301d4361b9a05273409260810a09",
+        "evals/humanize-linkedin-post/graders/05-stays-casual.md": "5c0aa26cff47b407dbaf95966adf6d89e26cb98ed42b4a9b2d500757b5307915",
+        "evals/humanize-linkedin-post/prompt.md": "b7e8d357b8d4a8b94f70e92ac4a7ff51765e54cffe1b7a081d08d3b0f5f89d17",
+        "evals/rewrite-readme-paragraph/case.yaml": "6e5139d5effa5415c919b011e9e87cd043d3542a4c1c73f0647ee385ad4e4edb",
+        "evals/rewrite-readme-paragraph/graders/01-keeps-all-facts.md": "9be4c4c1892d7efe3bb51db47a5e2d7062c26b1c70cc758e8149ad44d1268330",
+        "evals/rewrite-readme-paragraph/graders/02-no-semicolons-or-em-dashes.md": "04f99a28e7880518b77d76f382532752e9a02d08689e894e6543889376ab3c03",
+        "evals/rewrite-readme-paragraph/graders/03-short-sentences.md": "dba49249ace238260b9ac9c739852eddd5050fee1124611ab9cbe928696dfeca",
+        "evals/rewrite-readme-paragraph/graders/04-no-stock-words.md": "df1ddc9d12fa287ef6ca6c6ef11c09899f1f89d99fcaadd8e7383131f05f839c",
+        "evals/rewrite-readme-paragraph/prompt.md": "dcffedbe3ba0005b096a0430d7e9ed3231a73f4d94f5323f70219f2de478a9a4",
+        "evals/strict-migration-runbook/case.yaml": "f0bf3174a4d15f16096ee2ca6a3eb2b684cf6bcaadb104321f7b043435233e4e",
+        "evals/strict-migration-runbook/graders/01-numbered-imperative-steps.md": "82d27119292e33811b800eb018362ad13aa619f4bf49c3fd486e6ba9cd107a7d",
+        "evals/strict-migration-runbook/graders/02-caution-before-migration.md": "2991680f31ff1a75c08ddaea15caad5b90995c715ccc696a52e1b08b77db9618",
+        "evals/strict-migration-runbook/graders/03-commands-and-numbers-kept.md": "463405f2c2c2935ecc67b7e37392c6454b35ffdfa05391061f0c47592d551659",
+        "evals/strict-migration-runbook/graders/04-strict-verb-forms.md": "8658c8a635f0b83edf2073f18608863136bb9d846325982387dcfb7d4c31c381",
+        "evals/strict-migration-runbook/graders/05-procedural-sentence-length.md": "1b890134266be715cc3ed1bd0442ebf9ebc4278998d94769dc7f40bc3e514d30",
+        "evals/strict-migration-runbook/prompt.md": "a68dbbf790c682702e0824c865eb8acd47e86d7c0fe52757a17b436057eea1be",
+        "manifest.json": "0d569672cfe974e8a856f00476e2cd4a9e290effc8a62b7985db4406f602904c",
+        "references/ai-tells.md": "a0b89ab38f1e4413a7af09ea987b83e7a6303a341ca871e3350531d8655bdec5",
+        "references/guide.vi.md": "450a7c7c9d19cf23f81399b388e7ffdbc8ff18f792cc52f59da807022abdfda3",
+        "references/ste80-rules.md": "d0f0181da0ad74e7e1944be432ba379d06fb1747b1ac869aac78cbe493f47ee7",
+        "references/strict-mode.md": "6d6b68a06d1da72bcf47ed5046cedea32efed27ef55cc516b46770389ed3df50",
+        "references/word-swaps.md": "d81abf0c559984800d8e75725150da1effef57047ecac1b09ab2f2c082cf68a1",
+        "references/worked-example.md": "474334f17a4ec2b45b51e9a64519085169f8cc7d907f77673ec81387b343780f",
+        "scripts/ste_check.py": "8a70fbcdc25906355933fca3e411aaadf8746d232b13dd54497c800bf4572430"
+      },
+      "notes": [],
+      "last_checked": "2026-11-24T10:03:56.526Z",
       "area": "quarantine"
     },
     {

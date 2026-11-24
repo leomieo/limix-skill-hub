@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "name": "cinematic-film",
+  "version": "bf435561c620",
+  "source": {
+    "url": "https://github.com/Moh4696/cinematic-skill",
+    "commit": "bf435561c6203f90f971300efe952b68b5ec3417",
+    "sha256": "507be652654aa4e1ccb4aa508fab73ca9f2a718a9779b940a5081b62aeb5ad12",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Lập bảng nhịp và dựng phim từ ảnh, tư liệu và bản đồ để chuyển động khớp với lời thuyết minh.",
+    "aliases": [
+      "Dựng phim có lời thuyết minh",
+      "Phim tư liệu bằng mã"
+    ],
+    "keywords": [
+      "cinematic",
+      "film",
+      "Dựng phim có lời thuyết minh",
+      "Phim tư liệu bằng mã"
+    ],
+    "examples": [
+      "Lập bảng nhịp cho video giới thiệu sản phẩm hai phút, dùng ảnh tôi cung cấp và khớp theo lời dẫn."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "507be652654aa4e1ccb4aa508fab73ca9f2a718a9779b940a5081b62aeb5ad12"
+  },
+  "requiredCapabilities": [
+    "FFmpeg and ffprobe with libx264",
+    "Pillow",
+    "Python 3.9+",
+    "TTS engine or existing narration",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "ffprobe [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "fonts for title and handwritten roles",
+    "node [mention-hint]",
+    "numpy",
+    "numpy * [installation-command-hint]",
+    "pillow * [installation-command-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "rust [mention-hint]",
+    "skia-python",
+    "skia-python * [installation-command-hint]",
+    "text-to-speech [mention-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "network",
+    "shell"
+  ],
+  "syncedAt": "2026-11-24T10:03:56.526Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "Static review: render.py loads project scene.py as Python code; tts_say.py can execute a custom TTS command through a shell. Source scripts fetch assets and write project media."
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

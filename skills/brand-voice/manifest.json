@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "name": "brand-voice",
+  "version": "bd5aaedab443",
+  "source": {
+    "url": "https://github.com/boringmarketer/boring-marketing-skills",
+    "commit": "bd5aaedab44368d76326d98d488697158b886679",
+    "sha256": "4dacbdbe9cd20ef5432136c4b480071045fe3f30ca8ff1bdb0a5deae1f928aa3",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Xây dựng hồ sơ giọng thương hiệu từ ví dụ có dẫn chứng và kiểm tra nội dung mới có lệch giọng hay không.",
+    "aliases": [
+      "Giọng điệu thương hiệu",
+      "Kiểm tra lệch giọng"
+    ],
+    "keywords": [
+      "brand",
+      "voice",
+      "Giọng điệu thương hiệu",
+      "Kiểm tra lệch giọng"
+    ],
+    "examples": [
+      "Dùng ba đoạn đã xuất bản để mô tả giọng thương hiệu và chỉ ra từng câu chứng minh nhận xét."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "4dacbdbe9cd20ef5432136c4b480071045fe3f30ca8ff1bdb0a5deae1f928aa3"
+  },
+  "requiredCapabilities": [
+    "Firecrawl or Exa (optional)",
+    "Python 3 when loading local brand context",
+    "ScrapeCreators for supported social sources (optional)",
+    "audience-research [reference-hint]",
+    "content-atomizer [reference-hint]",
+    "direct-response-copy [reference-hint]",
+    "filesystem-write [mention-hint]",
+    "positioning-angles [reference-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]",
+    "subagents [mention-hint]",
+    "web search and fetch when collecting public examples",
+    "web-search [mention-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "network",
+    "shell"
+  ],
+  "syncedAt": "2026-11-24T10:03:56.526Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "Static review: sibling start-here component is absent. Collection can use network integrations and the skill writes brand memory and reports."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "4 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

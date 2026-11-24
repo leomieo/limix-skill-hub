@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "name": "ste80-humanizer",
+  "version": "ace4484da2d8",
+  "source": {
+    "url": "https://github.com/Dodaios/ste80-humanizer",
+    "commit": "ace4484da2d81dda97861e004c37c0a2e93896d1",
+    "sha256": "d332cfd96680ebdc3e805a297e705d49a0a515903aea42231eeda96db81d50c7",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Biên tập tài liệu tiếng Anh bằng câu ngắn, câu chủ động và từ dễ hiểu, giữ nguyên dữ kiện.",
+    "aliases": [
+      "Biên tập tiếng Anh kỹ thuật",
+      "Viết câu ngắn rõ ý"
+    ],
+    "keywords": [
+      "ste80",
+      "humanizer",
+      "Biên tập tiếng Anh kỹ thuật",
+      "Viết câu ngắn rõ ý"
+    ],
+    "examples": [
+      "Rút gọn đoạn README tiếng Anh này và giữ nguyên số liệu, điều kiện và tên lệnh."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "d332cfd96680ebdc3e805a297e705d49a0a515903aea42231eeda96db81d50c7"
+  },
+  "requiredCapabilities": [
+    "Python 3 for the optional scripts/ste_check.py checker",
+    "bash [mention-hint]",
+    "node [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "rust [mention-hint]",
+    "ste80-humanizer [reference-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "shell"
+  ],
+  "syncedAt": "2026-11-24T10:03:56.526Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "assets/ste100-overview.png: binary-file (low)",
+      "Static review: optional Python checker reads a named file or stdin. Hidden plugin descriptors and workflow are excluded."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "5 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

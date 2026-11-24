@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "batchDate": "2026-11-24",
+  "timeZone": "Asia/Saigon",
+  "scope": "Five GitHub agent skills. Source files treated as inert bytes. No upstream code executed.",
+  "statsCheckedAt": "2026-11-24T10:03:56.526Z",
+  "baseline": "76e21e8afb41ed657072fb4a3ea0ce761c37d47d",
+  "sourceEvidence": "GitHub API repository metadata, pinned Git tree, local Git blob SHA-1 and SHA-256, MIT license files.",
+  "sources": [
+    {
+      "id": "leaving-pr-comments",
+      "repository": "t3dotgg/tstack",
+      "sourceUrl": "https://github.com/t3dotgg/tstack",
+      "path": "skills/leaving-pr-comments",
+      "stars": 4346,
+      "createdAt": "2026-10-24T05:00:20Z",
+      "pushedAt": "2026-11-11T11:33:03Z",
+      "license": "MIT",
+      "licenseEvidenceFiles": [
+        "LICENSE"
+      ],
+      "commit": "11e37a74d0a6868c121cd0910ab2b3bd9873b92a",
+      "coreSha256": "1d110343022d0514c101dd942286cce10d6b9f5bd5b899f5a0530620d34cd295",
+      "retainedFiles": 3,
+      "skipped": [],
+      "sourceVerified": true,
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "permissions": [
+        "network"
+      ],
+      "findings": [
+        "Static review: formatting can be used for drafts; posting and resolving a review are external state changes."
+      ],
+      "reasonVi": "Soạn phản hồi pull request trên GitHub, ghi rõ ai viết và thay mặt ai, rồi đối chiếu nội dung với bằng chứng.",
+      "quarantineReasonVi": null
+    },
+    {
+      "id": "ste80-humanizer",
+      "repository": "Dodaios/ste80-humanizer",
+      "sourceUrl": "https://github.com/Dodaios/ste80-humanizer",
+      "path": "",
+      "stars": 1113,
+      "createdAt": "2026-11-09T17:18:59Z",
+      "pushedAt": "2026-11-18T13:11:10Z",
+      "license": "MIT",
+      "licenseEvidenceFiles": [
+        "LICENSE",
+        "THIRD_PARTY_NOTICES.md"
+      ],
+      "commit": "ace4484da2d81dda97861e004c37c0a2e93896d1",
+      "coreSha256": "d332cfd96680ebdc3e805a297e705d49a0a515903aea42231eeda96db81d50c7",
+      "retainedFiles": 40,
+      "skipped": [
+        ".claude-plugin/marketplace.json",
+        ".claude-plugin/plugin.json",
+        ".cursor-plugin/plugin.json",
+        ".github/workflows/validate.yml",
+        ".gitignore"
+      ],
+      "sourceVerified": true,
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "permissions": [
+        "filesystem-read",
+        "shell"
+      ],
+      "findings": [
+        "assets/ste100-overview.png: binary-file (low)",
+        "Static review: optional Python checker reads a named file or stdin. Hidden plugin descriptors and workflow are excluded."
+      ],
+      "reasonVi": "Biên tập tài liệu tiếng Anh bằng câu ngắn, câu chủ động và từ dễ hiểu, giữ nguyên dữ kiện.",
+      "quarantineReasonVi": "Bản đóng gói thiếu cấu hình plugin và quy trình kiểm tra ẩn."
+    },
+    {
+      "id": "cinematic-film",
+      "repository": "Moh4696/cinematic-skill",
+      "sourceUrl": "https://github.com/Moh4696/cinematic-skill",
+      "path": "skills/cinematic-film",
+      "stars": 951,
+      "createdAt": "2026-11-09T07:58:11Z",
+      "pushedAt": "2026-11-09T15:35:12Z",
+      "license": "MIT",
+      "licenseEvidenceFiles": [
+        "LICENSE"
+      ],
+      "commit": "bf435561c6203f90f971300efe952b68b5ec3417",
+      "coreSha256": "507be652654aa4e1ccb4aa508fab73ca9f2a718a9779b940a5081b62aeb5ad12",
+      "retainedFiles": 33,
+      "skipped": [],
+      "sourceVerified": true,
+      "security": "quarantined",
+      "compatibility": "unchecked",
+      "permissions": [
+        "filesystem-read",
+        "filesystem-write",
+        "network",
+        "shell"
+      ],
+      "findings": [
+        "Static review: render.py loads project scene.py as Python code; tts_say.py can execute a custom TTS command through a shell. Source scripts fetch assets and write project media."
+      ],
+      "reasonVi": "Lập bảng nhịp và dựng phim từ ảnh, tư liệu và bản đồ để chuyển động khớp với lời thuyết minh.",
+      "quarantineReasonVi": "Trình dựng nạp mã Python của cảnh và có tùy chọn chạy lệnh tạo giọng nói qua shell."
+    },
+    {
+      "id": "cook",
+      "repository": "Leonxlnx/cook",
+      "sourceUrl": "https://github.com/Leonxlnx/cook",
+      "path": "",
+      "stars": 817,
+      "createdAt": "2026-10-31T21:48:38Z",
+      "pushedAt": "2026-10-31T21:48:44Z",
+      "license": "MIT",
+      "licenseEvidenceFiles": [
+        "LICENSE"
+      ],
+      "commit": "b23cac6fd9439dfddcab61b14808e7bf72549b46",
+      "coreSha256": "110a9fe3a94c8d0b52c32ee3ed526d0ed4ea16d73ef9dd0c0d129dbbacf29585",
+      "retainedFiles": 11,
+      "skipped": [
+        ".gitignore"
+      ],
+      "sourceVerified": true,
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "permissions": [
+        "filesystem-read",
+        "filesystem-write",
+        "shell"
+      ],
+      "findings": [
+        "Static review: long autonomous workflow writes project state and uses a local renderer; the comparison script spawns FFmpeg. The importer excluded .gitignore."
+      ],
+      "reasonVi": "Cải tiến bản dựng hình ảnh qua các vòng chụp, đối chiếu và sửa theo tiêu chí đã thống nhất.",
+      "quarantineReasonVi": "Quy trình dài có thể tự ghi vào dự án và gọi trình dựng. Thiếu tệp .gitignore của nguồn."
+    },
+    {
+      "id": "brand-voice",
+      "repository": "boringmarketer/boring-marketing-skills",
+      "sourceUrl": "https://github.com/boringmarketer/boring-marketing-skills",
+      "path": "skills/brand-voice",
+      "stars": 823,
+      "createdAt": "2026-11-16T15:09:46Z",
+      "pushedAt": "2026-11-17T22:53:58Z",
+      "license": "MIT",
+      "licenseEvidenceFiles": [
+        "LICENSE"
+      ],
+      "commit": "bd5aaedab44368d76326d98d488697158b886679",
+      "coreSha256": "4dacbdbe9cd20ef5432136c4b480071045fe3f30ca8ff1bdb0a5deae1f928aa3",
+      "retainedFiles": 4,
+      "skipped": [
+        "skills/start-here/scripts/brand_context.py",
+        "skills/start-here/references/brand-memory.md",
+        "skills/start-here/references/output-format.md",
+        "skills/start-here/references/taste-loop.md"
+      ],
+      "sourceVerified": true,
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "permissions": [
+        "filesystem-read",
+        "filesystem-write",
+        "network",
+        "shell"
+      ],
+      "findings": [
+        "Static review: sibling start-here component is absent. Collection can use network integrations and the skill writes brand memory and reports."
+      ],
+      "reasonVi": "Xây dựng hồ sơ giọng thương hiệu từ ví dụ có dẫn chứng và kiểm tra nội dung mới có lệch giọng hay không.",
+      "quarantineReasonVi": "Thiếu các tệp dùng chung của start-here. Cần duyệt quyền thu thập nguồn và ghi hồ sơ."
+    }
+  ],
+  "verification": {
+    "hubTestsPassed": 24,
+    "catalogSkills": 78,
+    "catalogErrors": 0,
+    "readmeRows": 10,
+    "stagedSkillFilesVerified": 3437,
+    "retainedSourceFilesVerified": 91,
+    "idempotence": "All five migrations returned unchanged, and the second catalog build preserved file hashes.",
+    "rollback": "In a separate checkout, applying the staged patch reproduced the staged tree and reversing it restored the baseline Git tree 9f0ecf60f756697f5d7abdb0778dbaf2a9e5d829.",
+    "limits": "Static only. No upstream scripts, integrations, model or provider exercised."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "repository": "boringmarketer/boring-marketing-skills",
+  "stars": 823,
+  "createdAt": "2026-11-16T15:09:46Z",
+  "pushedAt": "2026-11-17T22:53:58Z",
+  "statsCheckedAt": "2026-11-24",
+  "license": "MIT",
+  "addedAt": "2026-11-24T10:03:56.526Z",
+  "batchDate": "2026-11-24",
+  "coreOrigin": "upstream",
+  "commit": "bd5aaedab44368d76326d98d488697158b886679",
+  "path": "skills/brand-voice",
+  "language": "hybrid",
+  "version": "bd5aaedab443",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-24T10:03:56.526Z"
+}

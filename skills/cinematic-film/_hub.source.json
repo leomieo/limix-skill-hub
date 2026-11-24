@@ -1,0 +1,176 @@
+{
+  "repository": "Moh4696/cinematic-skill",
+  "commit": "bf435561c6203f90f971300efe952b68b5ec3417",
+  "path": "skills/cinematic-film",
+  "verified": true,
+  "coreSha256": "507be652654aa4e1ccb4aa508fab73ca9f2a718a9779b940a5081b62aeb5ad12",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "507be652654aa4e1ccb4aa508fab73ca9f2a718a9779b940a5081b62aeb5ad12",
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "5d9bf773c562380721efa0c8e8c2ef8f5ab3921643886ee4a8a71bb8ec1664a0",
+      "executable": false
+    },
+    {
+      "path": "assets/template/map.json",
+      "sha256": "0c3410b25902aff3166910e57961634238051564d18547c3225b0ceac625a222",
+      "executable": false
+    },
+    {
+      "path": "assets/template/photos.json",
+      "sha256": "82c30f11a7c422291bb603fcc270f3a2cb0dfd5c86a06997c29e37e2d6ebf418",
+      "executable": false
+    },
+    {
+      "path": "assets/template/scene.py",
+      "sha256": "cab0c6a8f46018783e42912029056eaeb202323f81e5d5d7c34d8f4aac315dcb",
+      "executable": false
+    },
+    {
+      "path": "assets/template/script.json",
+      "sha256": "e34366bc05394b08247167116a1cfc8576e448352ad6e4a342bd3166c8f68c75",
+      "executable": false
+    },
+    {
+      "path": "assets/wright-flyer/map.json",
+      "sha256": "b4cb50ab7e481bd4d390ea4048e9fc2c16358694bdf251c0509b6504d2ee86d9",
+      "executable": false
+    },
+    {
+      "path": "assets/wright-flyer/photos.json",
+      "sha256": "09bc32946c61be24a671114d1282c844ac0040412894640f1d3ce242fe4cb1ff",
+      "executable": false
+    },
+    {
+      "path": "assets/wright-flyer/scene.py",
+      "sha256": "6ffe98b04e47857fb3a8c452403a475057e1c2ea0f923d07fbd8f8e9b084b8db",
+      "executable": false
+    },
+    {
+      "path": "assets/wright-flyer/script.json",
+      "sha256": "fb7ab99e62da937b59805dc50af9adb55c0ea75fe68043132cd883ae61700185",
+      "executable": false
+    },
+    {
+      "path": "references/archive.md",
+      "sha256": "7d581c3dc53905da1bd04ba5b211f469020713de721c131ac31dba678b55f2bb",
+      "executable": false
+    },
+    {
+      "path": "references/film.md",
+      "sha256": "695bd4f06a5049721c47d94582793cf39eb60d1d31c51fb238bea05d8c24f930",
+      "executable": false
+    },
+    {
+      "path": "references/performance.md",
+      "sha256": "62d3d915dfcbb0f94e852e5a82faa985463d12b7cf3cda91cbb4432b9e972b61",
+      "executable": false
+    },
+    {
+      "path": "references/sound.md",
+      "sha256": "781a2ac4b16324cd83213685611dd35786c95c1d7fb60accba4e63ac3ccaaa1c",
+      "executable": false
+    },
+    {
+      "path": "references/story.md",
+      "sha256": "47f4da91e91ef094bee81dd6dd622936cf5144be2535db68d7bd5fce83c2b74e",
+      "executable": false
+    },
+    {
+      "path": "references/voice.md",
+      "sha256": "558b319acb4d49cba0baf1b62dc8bbda1c509402efc5d8142cfea87625bb17f3",
+      "executable": false
+    },
+    {
+      "path": "scripts/build_narration.py",
+      "sha256": "8d32911f325c1a64ded103a9c7775ee9f52718c112b7ab122afa7fe9966ea030",
+      "executable": false
+    },
+    {
+      "path": "scripts/build_sfx.py",
+      "sha256": "a5ad451c5c1ca53140dd19f9e4b33b31a509bd49a797078e5c3075fb2adbd539",
+      "executable": false
+    },
+    {
+      "path": "scripts/burn_captions.py",
+      "sha256": "66f23ae6f3d9270f64ff4cf4fef2e497a226d9e1c549491f4b580e98308e7139",
+      "executable": false
+    },
+    {
+      "path": "scripts/captions.py",
+      "sha256": "e58bbaabfb4f3f2553a5ffce217a311724f435325e9aed566978758dd4d4c9d0",
+      "executable": false
+    },
+    {
+      "path": "scripts/check_setup.py",
+      "sha256": "8eb5b25601c1f241655fc53ad56936f5cdc8d88866110082ae836dec31c76727",
+      "executable": false
+    },
+    {
+      "path": "scripts/engine.py",
+      "sha256": "578f94bdc916ea8c3eb3077fddaf76958d6747f4ca4292e495854291f0c9767a",
+      "executable": false
+    },
+    {
+      "path": "scripts/fetch_commons.py",
+      "sha256": "e7b475464b35fc56da88297c2b95c1dae268e8c96436cbd569dcc55b3cf0b36e",
+      "executable": false
+    },
+    {
+      "path": "scripts/get_fonts.py",
+      "sha256": "9e5a106dd7b48ab8108fe36a2858227d7e1162500a51948fe2d1ca963381111f",
+      "executable": false
+    },
+    {
+      "path": "scripts/make_beats.py",
+      "sha256": "ecd4cb4662fbdf595799251e0417f9fa0c448cac629b62ff30591c3b73d42a60",
+      "executable": false
+    },
+    {
+      "path": "scripts/make_map.py",
+      "sha256": "621b92ead85f1a682a034b5f284d6655b17533cb8f387a5ff7355fca5c7152ab",
+      "executable": false
+    },
+    {
+      "path": "scripts/mix_soundtrack.py",
+      "sha256": "f5629027f3cf69d842484eee0f4c7eb05a4e5c49fe9ffae2143e541f0ff010bb",
+      "executable": false
+    },
+    {
+      "path": "scripts/new_project.py",
+      "sha256": "7f4b955f57c877825c6502e37773827236144d9714ef9ae4b53ad88b89c3fe0c",
+      "executable": false
+    },
+    {
+      "path": "scripts/prep_assets.py",
+      "sha256": "78c0fa0c70c8a971ae1b2002fc41cc0d6b496f5f552ce88472969357537f1cf9",
+      "executable": false
+    },
+    {
+      "path": "scripts/render.py",
+      "sha256": "f3660055ceeca059d447e70421bb9ce89c296ad60a91eb0af13421b3721ef507",
+      "executable": false
+    },
+    {
+      "path": "scripts/split_takes.py",
+      "sha256": "9e90dd94d6b125cb6bd5951533beb3d1feae6dadce662165f2277986aaabe8d1",
+      "executable": false
+    },
+    {
+      "path": "scripts/tts_say.py",
+      "sha256": "492cb0e1391299d2a99e7a179e399a06b3b7dc23f4c657b13b6700c43c9eb19c",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "9e22b0b3fd03d4b2c0e696c055c1d920af9a40e33eed82878844f018610e7102",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/cinematic-film"
+}

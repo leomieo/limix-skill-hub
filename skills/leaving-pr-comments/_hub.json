@@ -1,0 +1,18 @@
+{
+  "repository": "t3dotgg/tstack",
+  "stars": 4346,
+  "createdAt": "2026-10-24T05:00:20Z",
+  "pushedAt": "2026-11-11T11:33:03Z",
+  "statsCheckedAt": "2026-11-24",
+  "license": "MIT",
+  "addedAt": "2026-11-24T10:03:56.526Z",
+  "batchDate": "2026-11-24",
+  "coreOrigin": "upstream",
+  "commit": "11e37a74d0a6868c121cd0910ab2b3bd9873b92a",
+  "path": "skills/leaving-pr-comments",
+  "language": "hybrid",
+  "version": "11e37a74d0a6",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-24T10:03:56.526Z"
+}

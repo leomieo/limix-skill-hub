@@ -1,0 +1,36 @@
+{
+  "repository": "boringmarketer/boring-marketing-skills",
+  "commit": "bd5aaedab44368d76326d98d488697158b886679",
+  "path": "skills/brand-voice",
+  "verified": true,
+  "coreSha256": "4dacbdbe9cd20ef5432136c4b480071045fe3f30ca8ff1bdb0a5deae1f928aa3",
+  "skipped": [
+    "skills/start-here/scripts/brand_context.py",
+    "skills/start-here/references/brand-memory.md",
+    "skills/start-here/references/output-format.md",
+    "skills/start-here/references/taste-loop.md"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "4dacbdbe9cd20ef5432136c4b480071045fe3f30ca8ff1bdb0a5deae1f928aa3",
+      "executable": false
+    },
+    {
+      "path": "references/ai-tells.md",
+      "sha256": "cb509f052582b58736b34f432ea189a43714d9619eae75e08404350b5df6e5de",
+      "executable": false
+    },
+    {
+      "path": "references/voice-extraction-judgment.md",
+      "sha256": "5e3adfec04b831c7ee66e98b6d53eb2c40bb9e42d642fdfbb0b05d06c18f583c",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "5f762facdd3aaaa304a17e2117498b6073e7d64f25fcd5c3355c0715fc8efa17",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/brand-voice"
+}

@@ -1,0 +1,217 @@
+{
+  "repository": "Dodaios/ste80-humanizer",
+  "commit": "ace4484da2d81dda97861e004c37c0a2e93896d1",
+  "path": "",
+  "verified": true,
+  "coreSha256": "d332cfd96680ebdc3e805a297e705d49a0a515903aea42231eeda96db81d50c7",
+  "skipped": [
+    ".claude-plugin/marketplace.json",
+    ".claude-plugin/plugin.json",
+    ".cursor-plugin/plugin.json",
+    ".github/workflows/validate.yml",
+    ".gitignore"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "d332cfd96680ebdc3e805a297e705d49a0a515903aea42231eeda96db81d50c7",
+      "executable": false
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "899d5e9012b7513a389657fbe5b32890e17a68618b29394644a523c5efd517ee",
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "a187bab2a59ede3a0fcad2371dbf21bc07ad795e492608f3b4aa82049d72f6e5",
+      "executable": false
+    },
+    {
+      "path": "assets/ste100-overview.png",
+      "sha256": "bdf5b5527e7407f57eb08c71c46062b7496e0d9d4aa5be633c1be3ebc7ec03e6",
+      "executable": false
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "901e8c116659621b6743c51c518a8b8c39cca4b49011dd9c3e23c716b81ec58a",
+      "executable": false
+    },
+    {
+      "path": "evals/explain-dns/case.yaml",
+      "sha256": "81cb7ff2b7bf9b41cddc6a0a48bbc419831280344660af2ff9131a872b4182ca",
+      "executable": false
+    },
+    {
+      "path": "evals/explain-dns/graders/01-covers-resolution-chain.md",
+      "sha256": "c1f49a245b747888ada55adb272ebf6f79ec69087e46141ddab36e9cc55ebd7f",
+      "executable": false
+    },
+    {
+      "path": "evals/explain-dns/graders/02-no-chatbot-preamble.md",
+      "sha256": "ae573040b861bdb458934c9afeff1c4a89f0c197ecde1a1b0bb1664884e2bb44",
+      "executable": false
+    },
+    {
+      "path": "evals/explain-dns/graders/03-short-sentences.md",
+      "sha256": "5568b01af83f5dd87103681592901d2807802a42fe55740a5295da185a2476b8",
+      "executable": false
+    },
+    {
+      "path": "evals/explain-dns/graders/04-no-semicolons.md",
+      "sha256": "987861f9011b421fcdb26ec335ab004959e8a096096f14689d95064651c01b39",
+      "executable": false
+    },
+    {
+      "path": "evals/explain-dns/prompt.md",
+      "sha256": "c5af6a7df5fd31368b85a655eba076d4b59d148bc1c04c47ff0883372406c484",
+      "executable": false
+    },
+    {
+      "path": "evals/humanize-linkedin-post/case.yaml",
+      "sha256": "956e18f1f8a7d368a922aa043799054381622f51a1363621eda1e1516ffa31ed",
+      "executable": false
+    },
+    {
+      "path": "evals/humanize-linkedin-post/graders/01-keeps-all-facts.md",
+      "sha256": "a9ef3ff424d7ab7a36fa4bc67f13333b747512831112c073099d9ea9eeb435f0",
+      "executable": false
+    },
+    {
+      "path": "evals/humanize-linkedin-post/graders/02-no-staging-tells.md",
+      "sha256": "623497a7c60c21173fd018e8485ce6eca9c3b444a1c08417c8c7dbf5362e1d05",
+      "executable": false
+    },
+    {
+      "path": "evals/humanize-linkedin-post/graders/03-no-em-dashes.md",
+      "sha256": "6a8e729a6a81ddde86edad1fc66a97439b0f52e7db68ebe608c424db66b262a7",
+      "executable": false
+    },
+    {
+      "path": "evals/humanize-linkedin-post/graders/04-no-stock-words.md",
+      "sha256": "9e0d0773a3555890205ce608d10ad6ac7b07301d4361b9a05273409260810a09",
+      "executable": false
+    },
+    {
+      "path": "evals/humanize-linkedin-post/graders/05-stays-casual.md",
+      "sha256": "5c0aa26cff47b407dbaf95966adf6d89e26cb98ed42b4a9b2d500757b5307915",
+      "executable": false
+    },
+    {
+      "path": "evals/humanize-linkedin-post/prompt.md",
+      "sha256": "b7e8d357b8d4a8b94f70e92ac4a7ff51765e54cffe1b7a081d08d3b0f5f89d17",
+      "executable": false
+    },
+    {
+      "path": "evals/rewrite-readme-paragraph/case.yaml",
+      "sha256": "6e5139d5effa5415c919b011e9e87cd043d3542a4c1c73f0647ee385ad4e4edb",
+      "executable": false
+    },
+    {
+      "path": "evals/rewrite-readme-paragraph/graders/01-keeps-all-facts.md",
+      "sha256": "9be4c4c1892d7efe3bb51db47a5e2d7062c26b1c70cc758e8149ad44d1268330",
+      "executable": false
+    },
+    {
+      "path": "evals/rewrite-readme-paragraph/graders/02-no-semicolons-or-em-dashes.md",
+      "sha256": "04f99a28e7880518b77d76f382532752e9a02d08689e894e6543889376ab3c03",
+      "executable": false
+    },
+    {
+      "path": "evals/rewrite-readme-paragraph/graders/03-short-sentences.md",
+      "sha256": "dba49249ace238260b9ac9c739852eddd5050fee1124611ab9cbe928696dfeca",
+      "executable": false
+    },
+    {
+      "path": "evals/rewrite-readme-paragraph/graders/04-no-stock-words.md",
+      "sha256": "df1ddc9d12fa287ef6ca6c6ef11c09899f1f89d99fcaadd8e7383131f05f839c",
+      "executable": false
+    },
+    {
+      "path": "evals/rewrite-readme-paragraph/prompt.md",
+      "sha256": "dcffedbe3ba0005b096a0430d7e9ed3231a73f4d94f5323f70219f2de478a9a4",
+      "executable": false
+    },
+    {
+      "path": "evals/strict-migration-runbook/case.yaml",
+      "sha256": "f0bf3174a4d15f16096ee2ca6a3eb2b684cf6bcaadb104321f7b043435233e4e",
+      "executable": false
+    },
+    {
+      "path": "evals/strict-migration-runbook/graders/01-numbered-imperative-steps.md",
+      "sha256": "82d27119292e33811b800eb018362ad13aa619f4bf49c3fd486e6ba9cd107a7d",
+      "executable": false
+    },
+    {
+      "path": "evals/strict-migration-runbook/graders/02-caution-before-migration.md",
+      "sha256": "2991680f31ff1a75c08ddaea15caad5b90995c715ccc696a52e1b08b77db9618",
+      "executable": false
+    },
+    {
+      "path": "evals/strict-migration-runbook/graders/03-commands-and-numbers-kept.md",
+      "sha256": "463405f2c2c2935ecc67b7e37392c6454b35ffdfa05391061f0c47592d551659",
+      "executable": false
+    },
+    {
+      "path": "evals/strict-migration-runbook/graders/04-strict-verb-forms.md",
+      "sha256": "8658c8a635f0b83edf2073f18608863136bb9d846325982387dcfb7d4c31c381",
+      "executable": false
+    },
+    {
+      "path": "evals/strict-migration-runbook/graders/05-procedural-sentence-length.md",
+      "sha256": "1b890134266be715cc3ed1bd0442ebf9ebc4278998d94769dc7f40bc3e514d30",
+      "executable": false
+    },
+    {
+      "path": "evals/strict-migration-runbook/prompt.md",
+      "sha256": "a68dbbf790c682702e0824c865eb8acd47e86d7c0fe52757a17b436057eea1be",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "e591401d6bdba6400e2987c275a07a84d1e484fcb4b1556f43e1e7ac4f36cf2d",
+      "executable": false
+    },
+    {
+      "path": "README.md",
+      "sha256": "8e3a64a801146aee7ac035761dfe53ad6a15fc5c6774d79fc643b165dcf3b6c5",
+      "executable": false
+    },
+    {
+      "path": "references/ai-tells.md",
+      "sha256": "a0b89ab38f1e4413a7af09ea987b83e7a6303a341ca871e3350531d8655bdec5",
+      "executable": false
+    },
+    {
+      "path": "references/ste80-rules.md",
+      "sha256": "d0f0181da0ad74e7e1944be432ba379d06fb1747b1ac869aac78cbe493f47ee7",
+      "executable": false
+    },
+    {
+      "path": "references/strict-mode.md",
+      "sha256": "6d6b68a06d1da72bcf47ed5046cedea32efed27ef55cc516b46770389ed3df50",
+      "executable": false
+    },
+    {
+      "path": "references/word-swaps.md",
+      "sha256": "d81abf0c559984800d8e75725150da1effef57047ecac1b09ab2f2c082cf68a1",
+      "executable": false
+    },
+    {
+      "path": "references/worked-example.md",
+      "sha256": "474334f17a4ec2b45b51e9a64519085169f8cc7d907f77673ec81387b343780f",
+      "executable": false
+    },
+    {
+      "path": "scripts/ste_check.py",
+      "sha256": "8a70fbcdc25906355933fca3e411aaadf8746d232b13dd54497c800bf4572430",
+      "executable": false
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "f234ad8010f955dd7aa44bb5f7fee0e8ff1bf147398e2d20203b2c5101c9f2e7",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/ste80-humanizer"
+}

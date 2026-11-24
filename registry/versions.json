@@ -1588,5 +1588,45 @@
       "checksum": "79891bcd400ecf42619e65029e544674fb11d2afd877484d06602a9ca8bd9a22",
       "at": "2026-11-23T16:00:56.799Z"
     }
+  ],
+  "brand-voice": [
+    {
+      "version": "bd5aaedab443",
+      "commit": "bd5aaedab44368d76326d98d488697158b886679",
+      "checksum": "15a4aca6b9454fcd022ba533dd8c187f2318a092b7e42247ef6c1954f22b1295",
+      "at": "2026-11-24T10:03:56.526Z"
+    }
+  ],
+  "cinematic-film": [
+    {
+      "version": "bf435561c620",
+      "commit": "bf435561c6203f90f971300efe952b68b5ec3417",
+      "checksum": "dd4e877b23712fed209eca2c93faa636eb004571845eb35294d38d9c444bafb0",
+      "at": "2026-11-24T10:03:56.526Z"
+    }
+  ],
+  "cook": [
+    {
+      "version": "b23cac6fd943",
+      "commit": "b23cac6fd9439dfddcab61b14808e7bf72549b46",
+      "checksum": "f779951b87e55daeed130ba2c89d9b3fd19ed2d7281ad219bab8e2e44ea5b984",
+      "at": "2026-11-24T10:03:56.526Z"
+    }
+  ],
+  "leaving-pr-comments": [
+    {
+      "version": "11e37a74d0a6",
+      "commit": "11e37a74d0a6868c121cd0910ab2b3bd9873b92a",
+      "checksum": "f5b6766253cd529f3fe8b14fff1e1345246674bf5acda798b6874bde8ef17ec5",
+      "at": "2026-11-24T10:03:56.526Z"
+    }
+  ],
+  "ste80-humanizer": [
+    {
+      "version": "ace4484da2d8",
+      "commit": "ace4484da2d81dda97861e004c37c0a2e93896d1",
+      "checksum": "989f9ccbfe686cdd9f5d76c86ee6b3c8d315cdac29f1408eae5ea6fb2de4e52b",
+      "at": "2026-11-24T10:03:56.526Z"
+    }
   ]
 }

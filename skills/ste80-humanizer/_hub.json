@@ -1,0 +1,18 @@
+{
+  "repository": "Dodaios/ste80-humanizer",
+  "stars": 1113,
+  "createdAt": "2026-11-09T17:18:59Z",
+  "pushedAt": "2026-11-18T13:11:10Z",
+  "statsCheckedAt": "2026-11-24",
+  "license": "MIT",
+  "addedAt": "2026-11-24T10:03:56.526Z",
+  "batchDate": "2026-11-24",
+  "coreOrigin": "upstream",
+  "commit": "ace4484da2d81dda97861e004c37c0a2e93896d1",
+  "path": "",
+  "language": "hybrid",
+  "version": "ace4484da2d8",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-24T10:03:56.526Z"
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "name": "cook",
+  "version": "b23cac6fd943",
+  "source": {
+    "url": "https://github.com/Leonxlnx/cook",
+    "commit": "b23cac6fd9439dfddcab61b14808e7bf72549b46",
+    "sha256": "110a9fe3a94c8d0b52c32ee3ed526d0ed4ea16d73ef9dd0c0d129dbbacf29585",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Cải tiến bản dựng hình ảnh qua các vòng chụp, đối chiếu và sửa theo tiêu chí đã thống nhất.",
+    "aliases": [
+      "Lặp thiết kế theo ảnh mẫu",
+      "Đối chiếu khung hình"
+    ],
+    "keywords": [
+      "cook",
+      "Lặp thiết kế theo ảnh mẫu",
+      "Đối chiếu khung hình"
+    ],
+    "examples": [
+      "Dùng ảnh mẫu do tôi sở hữu để đề xuất ba vòng đối chiếu cảnh 3D với góc máy cố định."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "110a9fe3a94c8d0b52c32ee3ed526d0ed4ea16d73ef9dd0c0d129dbbacf29585"
+  },
+  "requiredCapabilities": [
+    "FFmpeg",
+    "Node.js 18+",
+    "cook [reference-hint]",
+    "ffmpeg [mention-hint]",
+    "ffprobe [mention-hint]",
+    "image-generation [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "python [mention-hint]",
+    "remotion [mention-hint]",
+    "three [mention-hint]",
+    "visual renderer for the target project"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "shell"
+  ],
+  "syncedAt": "2026-11-24T10:03:56.526Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "Static review: long autonomous workflow writes project state and uses a local renderer; the comparison script spawns FFmpeg. The importer excluded .gitignore."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "1 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

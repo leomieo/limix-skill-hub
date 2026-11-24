@@ -1,0 +1,68 @@
+{
+  "repository": "Leonxlnx/cook",
+  "commit": "b23cac6fd9439dfddcab61b14808e7bf72549b46",
+  "path": "",
+  "verified": true,
+  "coreSha256": "110a9fe3a94c8d0b52c32ee3ed526d0ed4ea16d73ef9dd0c0d129dbbacf29585",
+  "skipped": [
+    ".gitignore"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "110a9fe3a94c8d0b52c32ee3ed526d0ed4ea16d73ef9dd0c0d129dbbacf29585",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "d9177365c7471d18ecd623ce7b8849e26ab8d7e7fea13e1fcbda62397ecb9db8",
+      "executable": false
+    },
+    {
+      "path": "README.md",
+      "sha256": "c82c544a19329c507eb5dcc86edbb803f1e810f4607371f91a25f98ca36d9dac",
+      "executable": false
+    },
+    {
+      "path": "references/intake.md",
+      "sha256": "cbcc38ae5b52b165b90e4f52e8e81582256025fa383f0a87043615f38049cb7d",
+      "executable": false
+    },
+    {
+      "path": "references/loop-and-critics.md",
+      "sha256": "ee822bcfef86c5b9f695436d252c8448e92737ed95f9a2b8e735370e73cca81b",
+      "executable": false
+    },
+    {
+      "path": "references/rules.md",
+      "sha256": "eeee1d272171d43162f11596f4eb6040be225b1427a2d72451f7fc2a4f45af95",
+      "executable": false
+    },
+    {
+      "path": "references/ship.md",
+      "sha256": "cd7d1566758541e79f9f96d1ad2e15808c6b203eb5d181116e3a93b537c0d788",
+      "executable": false
+    },
+    {
+      "path": "references/target-and-bar.md",
+      "sha256": "261f1562a319d6c131234fe25fc30286767473a090da1d41b4629810c15f94d0",
+      "executable": false
+    },
+    {
+      "path": "scripts/side-by-side.mjs",
+      "sha256": "0350bff88f8c1c5b373b9e3f7ee93bc0d1b5bffe380129d319cd5a701f39ef5a",
+      "executable": false
+    },
+    {
+      "path": "templates/brief.md",
+      "sha256": "5490e1df7a9ea49270b3c3eefc2b143d48d38c95c1b286d934f982395c4610a2",
+      "executable": false
+    },
+    {
+      "path": "templates/ROUNDS.md",
+      "sha256": "c22c812aef4ec4abccc84c0abb8205ee08f4deda4aad62b529d19b454a8b53c8",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/cook"
+}
