@@ -1,9 +1,9 @@
 {
   "repository": "mikehasa/golive-skill",
-  "stars": 1600,
+  "stars": 1606,
   "createdAt": "2026-09-23T13:37:26Z",
   "pushedAt": "2026-10-11T21:04:01Z",
-  "statsCheckedAt": "2026-11-23",
+  "statsCheckedAt": "2026-11-24",
   "license": "MIT",
   "commit": "8fd3d8e96844c79c500aabaf215d1267fcde08c5",
   "path": "skills/golive",

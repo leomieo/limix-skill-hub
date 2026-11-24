@@ -1,8 +1,8 @@
 {
   "repository": "tt-a1i/archify",
-  "stars": 99025,
+  "stars": 99184,
   "createdAt": "2026-04-15T05:27:37Z",
-  "pushedAt": "2026-11-23T05:21:17Z",
+  "pushedAt": "2026-11-24T01:27:41Z",
   "license": "Apache-2.0",
   "commit": "44781293f38728baf04dbad33ce1a0cef8c39cca",
   "path": "archify",
@@ -11,5 +11,5 @@
   "hybrid": true,
   "originalCoreVerified": true,
   "last_checked": "2026-11-18T23:04:23.387Z",
-  "statsCheckedAt": "2026-11-23"
+  "statsCheckedAt": "2026-11-24"
 }
