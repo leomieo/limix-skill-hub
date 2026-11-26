@@ -1,0 +1,203 @@
+{
+  "repository": "coreyhaines31/marketingskills",
+  "commit": "8fd2fcade2fd6629026e9dfe6d133b55b36968b9",
+  "path": "skills/prospecting",
+  "verified": true,
+  "coreSha256": "57d825ef97609dd3019a6c7d7c808d00b180fa7065d1a2fa507bd4133f5ff7b3",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "upstreamPath": "skills/prospecting/SKILL.md",
+      "sha256": "57d825ef97609dd3019a6c7d7c808d00b180fa7065d1a2fa507bd4133f5ff7b3",
+      "executable": false
+    },
+    {
+      "path": "evals/evals.json",
+      "upstreamPath": "skills/prospecting/evals/evals.json",
+      "sha256": "121fcf559858a66fb689e5c0a28518b0d75f6373aeb58a64eef8d554659ea0a3",
+      "executable": false
+    },
+    {
+      "path": "references/account-research.md",
+      "upstreamPath": "skills/prospecting/references/account-research.md",
+      "sha256": "cf09a7f41b4963d919dcdf96d659fe898a1ade5328ab481864419f6dd1d4bba9",
+      "executable": false
+    },
+    {
+      "path": "references/b2b-prospecting.md",
+      "upstreamPath": "skills/prospecting/references/b2b-prospecting.md",
+      "sha256": "b7a05da9d1584cc8d21432a43fe1ba802c4f9a6c601e3885d4117cc9d4d52f37",
+      "executable": false
+    },
+    {
+      "path": "references/compliance.md",
+      "upstreamPath": "skills/prospecting/references/compliance.md",
+      "sha256": "ef2f869b4f1d43c0f1eb6cd63b069f7a975b732cfe607ad68378fb5353239556",
+      "executable": false
+    },
+    {
+      "path": "references/data-sources.md",
+      "upstreamPath": "skills/prospecting/references/data-sources.md",
+      "sha256": "95d7b160c6b300411cf9772adf7b1cdcccd1099af2d48692eb5f66970e6f465e",
+      "executable": false
+    },
+    {
+      "path": "references/demand-signals.md",
+      "upstreamPath": "skills/prospecting/references/demand-signals.md",
+      "sha256": "489b8fb96a828578b6812bfabfbba8ce86d07545b21716a873501ba4d464f4ee",
+      "executable": false
+    },
+    {
+      "path": "references/enrichment-playbook.md",
+      "upstreamPath": "skills/prospecting/references/enrichment-playbook.md",
+      "sha256": "dcdb131d83e0a010fdbb572c828b621e9db10f96b6fafd891499683ed9a4a63c",
+      "executable": false
+    },
+    {
+      "path": "references/local-prospecting.md",
+      "upstreamPath": "skills/prospecting/references/local-prospecting.md",
+      "sha256": "1dd71471a3413d5b0a9d230b1e42ca95469c617285bf7e2abdfa463428367fc3",
+      "executable": false
+    },
+    {
+      "path": "references/saas-prospecting.md",
+      "upstreamPath": "skills/prospecting/references/saas-prospecting.md",
+      "sha256": "18be53f055f3f8a2ca647dccc8d8d8d177a0df5820193463542f87fa4eeafcf8",
+      "executable": false
+    },
+    {
+      "path": "references/signal-plays.md",
+      "upstreamPath": "skills/prospecting/references/signal-plays.md",
+      "sha256": "92bc98be01988dee987a8bac4c8ee7cb1de5d7be620add475956f0affbffb3c3",
+      "executable": false
+    },
+    {
+      "path": "references/sourcing-and-enrichment.md",
+      "upstreamPath": "skills/prospecting/references/sourcing-and-enrichment.md",
+      "sha256": "d7f47cf69ee1e78bb21c50f2b0050460899f8e9e001c40261e08e38dd6fa9fbc",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "upstreamPath": "LICENSE",
+      "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/REGISTRY.md",
+      "upstreamPath": "tools/REGISTRY.md",
+      "sha256": "0c9490cee06308b75652d0cfd48ee78668755049dde1e40eba98bfcb810e99c8",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/apify.md",
+      "upstreamPath": "tools/integrations/apify.md",
+      "sha256": "6c9b6146a5a3afe2cc4af40a9521c81344e79caf55709464823e16514ce00b25",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/apollo.md",
+      "upstreamPath": "tools/integrations/apollo.md",
+      "sha256": "174bda030e869684694f475e4b9efbde29edb91c794de338c342e4b0d3a9416c",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/browserbase.md",
+      "upstreamPath": "tools/integrations/browserbase.md",
+      "sha256": "21c59123f64b54979d5fe28e137829361f85dad9a1a635070b60c5ba750b68a4",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/clay.md",
+      "upstreamPath": "tools/integrations/clay.md",
+      "sha256": "6ffa2521ec5fc7e85fc2c82a6a0333428cbe09eeeaa7e76a13a053b9e862343f",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/clearbit.md",
+      "upstreamPath": "tools/integrations/clearbit.md",
+      "sha256": "26894c17a689b9c0f02e8fb2526168109a700e845bf8a1bf20f6d68a7b58c468",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/exa.md",
+      "upstreamPath": "tools/integrations/exa.md",
+      "sha256": "662c9d19b3a952103967e36666b055f553153e36bc352bb64d62d9bb44691433",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/firecrawl.md",
+      "upstreamPath": "tools/integrations/firecrawl.md",
+      "sha256": "3da7424d5aa0f25e922088d4dfb19e38cdb66bc8cfeeb8caf6e1df769e660254",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/fullenrich.md",
+      "upstreamPath": "tools/integrations/fullenrich.md",
+      "sha256": "c834f8efe580b81e13fcdc269b6ffc7a54af2513b32bdf187ad0a36ba8743140",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/github.md",
+      "upstreamPath": "tools/integrations/github.md",
+      "sha256": "1988d7d3bd1f984ddd885edd98a46cf9af6d80115c9c8b32db5e41c65d276336",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/hunter.md",
+      "upstreamPath": "tools/integrations/hunter.md",
+      "sha256": "afdcefd30d2f461c9a595ae03d98c57785fb4db6f03e4de221a590212797e46c",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/leadmagic.md",
+      "upstreamPath": "tools/integrations/leadmagic.md",
+      "sha256": "98e49b8e0b33c43c4490956f51f789cd49d7e36abe6d526c72678645b5f713da",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/outreach.md",
+      "upstreamPath": "tools/integrations/outreach.md",
+      "sha256": "fe81eb2a20746fe1075a68fc88a6ddd10922ddcd5241e7d6d23c186dc80eb048",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/ploy.md",
+      "upstreamPath": "tools/integrations/ploy.md",
+      "sha256": "2b5769720d66b88142e0bd1239f7da82ef2df435d43c00f482f9addef1d4ccbe",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/rb2b.md",
+      "upstreamPath": "tools/integrations/rb2b.md",
+      "sha256": "7a38925782c33e80b0436e148756bba82e871fd22eb0b2f0d4da89a8cc7c8e81",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/snov.md",
+      "upstreamPath": "tools/integrations/snov.md",
+      "sha256": "17307e51a12da6309c705d9bcb59e9d93a3433e1cfd4030cb1581fc0b419748f",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/theirstack.md",
+      "upstreamPath": "tools/integrations/theirstack.md",
+      "sha256": "614bf83c8ac088b2147a9e4718c3fa0574765a33695527610541e805e8f1fec6",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/truelist.md",
+      "upstreamPath": "tools/integrations/truelist.md",
+      "sha256": "020ee6fc866f9f7a0bbba667f0233d26e1e1c74d6692539c17361a74d5d89500",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/zoominfo.md",
+      "upstreamPath": "tools/integrations/zoominfo.md",
+      "sha256": "6bd7cdcee4d80d077b6d4eb6a3ab4bdd48cfdfd94ebbb29989dc3456b6bf5673",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/prospecting"
+}

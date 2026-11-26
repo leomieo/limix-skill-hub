@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "batchDate": "2026-11-26",
+  "observationWindowUtc": {
+    "from": "2026-11-26T14:16:26Z",
+    "to": "2026-11-26T14:18:34Z"
+  },
+  "repositories": [
+    {
+      "repository": "erkamyaman/rust-anything",
+      "stars": 9893,
+      "createdAt": "2026-11-16T12:10:36Z",
+      "pushedAt": "2026-11-26T14:15:53Z",
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0"
+    },
+    {
+      "repository": "mvanhorn/last30days-skill",
+      "stars": 75502,
+      "createdAt": "2026-01-23T20:37:37Z",
+      "pushedAt": "2026-11-26T10:17:01Z",
+      "archived": false,
+      "disabled": false,
+      "license": "MIT"
+    },
+    {
+      "repository": "google-labs-code/stitch-skills",
+      "stars": 13166,
+      "createdAt": "2026-01-16T17:17:17Z",
+      "pushedAt": "2026-11-24T21:51:04Z",
+      "archived": false,
+      "disabled": false,
+      "license": "Apache-2.0"
+    },
+    {
+      "repository": "coreyhaines31/marketingskills",
+      "stars": 62771,
+      "createdAt": "2026-01-15T19:45:23Z",
+      "pushedAt": "2026-11-25T17:37:26Z",
+      "archived": false,
+      "disabled": false,
+      "license": "MIT"
+    }
+  ],
+  "pathHistoryQueries": {
+    "since": "2026-11-19T14:05:00Z",
+    "until": "2026-11-26T14:05:00Z",
+    "perPage": 5,
+    "purpose": "Existence evidence for relevant weekly changes, not an exhaustive history",
+    "paths": [
+      "skills/rust-anything/SKILL.md",
+      "skills/last30days/SKILL.md",
+      "skills/aso/SKILL.md",
+      "skills/prospecting/references/signal-plays.md",
+      "skills/customer-research/references/source-guides.md"
+    ],
+    "results": [
+      {
+        "index": 0,
+        "commits": [
+          {
+            "sha": "c1f4a53e6f3acb38117ecf2c967f8b0509b73108",
+            "date": "2026-11-25T20:38:44Z",
+            "title": "Add first-difference, grouped and redacted mismatches, app shadow, app drift, gate cheat guard and port rules",
+            "url": "https://github.com/erkamyaman/rust-anything/commit/c1f4a53e6f3acb38117ecf2c967f8b0509b73108"
+          },
+          {
+            "sha": "dca761249174b53fbb801164f58d18d903d78150",
+            "date": "2026-11-24T20:12:46Z",
+            "title": "docs: mention PowerShell in enable help, MCP description, and docs (#441)",
+            "url": "https://github.com/erkamyaman/rust-anything/commit/dca761249174b53fbb801164f58d18d903d78150"
+          },
+          {
+            "sha": "1fbcac222298b9d6750889fa5a53a10879f75d62",
+            "date": "2026-11-23T21:03:21Z",
+            "title": "fix(skill): name every supported language in the description (#313)",
+            "url": "https://github.com/erkamyaman/rust-anything/commit/1fbcac222298b9d6750889fa5a53a10879f75d62"
+          },
+          {
+            "sha": "d341cffce2cb7307cc95a19ff246eef4f0b95462",
+            "date": "2026-11-23T06:54:57Z",
+            "title": "feat(python): raise the original's own exception classes (#207)",
+            "url": "https://github.com/erkamyaman/rust-anything/commit/d341cffce2cb7307cc95a19ff246eef4f0b95462"
+          },
+          {
+            "sha": "574843575220dd3b0d0b7a99ca31810e51a1c261",
+            "date": "2026-11-21T21:22:52Z",
+            "title": "go keeps a slower port off; real agent runs on Python and TS; translations and website pages",
+            "url": "https://github.com/erkamyaman/rust-anything/commit/574843575220dd3b0d0b7a99ca31810e51a1c261"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "commits": [
+          {
+            "sha": "1ef7d73597221b2f9c8740e8fd84cce14641d231",
+            "date": "2026-11-25T17:53:02Z",
+            "title": "fix(skill): fit frontmatter description in the 60-char routing index (#1621)",
+            "url": "https://github.com/mvanhorn/last30days-skill/commit/1ef7d73597221b2f9c8740e8fd84cce14641d231"
+          },
+          {
+            "sha": "64b1f006f800640022ce07f51de5ce56aad34b76",
+            "date": "2026-11-22T04:30:28Z",
+            "title": "chore(release): bump version to 4.6.0 (#1559)",
+            "url": "https://github.com/mvanhorn/last30days-skill/commit/64b1f006f800640022ce07f51de5ce56aad34b76"
+          },
+          {
+            "sha": "5354e7791ed5d617330b79944cdfdf43a449245d",
+            "date": "2026-11-22T04:25:48Z",
+            "title": "feat(shortform): keyless TikTok/Instagram fallback via web discovery + yt-dlp (#1533)",
+            "url": "https://github.com/mvanhorn/last30days-skill/commit/5354e7791ed5d617330b79944cdfdf43a449245d"
+          },
+          {
+            "sha": "8ede659374b298ffb0529e13b802c0bd9637f769",
+            "date": "2026-11-21T15:48:47Z",
+            "title": "chore(release): bump version to 4.5.0 (#1553)",
+            "url": "https://github.com/mvanhorn/last30days-skill/commit/8ede659374b298ffb0529e13b802c0bd9637f769"
+          },
+          {
+            "sha": "fe5093dbf9957566b584fb49b94ccf1b7f8ab4c6",
+            "date": "2026-11-21T15:26:19Z",
+            "title": "feat: OpenCode browse MCP lane for X and Reddit host data (#1537)",
+            "url": "https://github.com/mvanhorn/last30days-skill/commit/fe5093dbf9957566b584fb49b94ccf1b7f8ab4c6"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "commits": [
+          {
+            "sha": "fe0678517ee73d4a4876ddbe57e43b252e87a384",
+            "date": "2026-11-23T20:50:22Z",
+            "title": "chore: release 2.14.27",
+            "url": "https://github.com/coreyhaines31/marketingskills/commit/fe0678517ee73d4a4876ddbe57e43b252e87a384"
+          },
+          {
+            "sha": "bc44169abcca53847f5cef6207bbc009ef3b15b3",
+            "date": "2026-11-23T20:50:13Z",
+            "title": "feat(aso, seo-audit): use App Store Connect and a local audit engine when available",
+            "url": "https://github.com/coreyhaines31/marketingskills/commit/bc44169abcca53847f5cef6207bbc009ef3b15b3"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "commits": [
+          {
+            "sha": "be85be135de750813a48f7eb6bd1c9cde48ca63d",
+            "date": "2026-11-23T20:51:45Z",
+            "title": "feat: add outlier scoring, comment sorting, and podcasts as a lead source",
+            "url": "https://github.com/coreyhaines31/marketingskills/commit/be85be135de750813a48f7eb6bd1c9cde48ca63d"
+          },
+          {
+            "sha": "209f23bb118c2223be32153105edfd5459b27481",
+            "date": "2026-11-23T20:29:59Z",
+            "title": "feat(prospecting): add subprocessor and DPA pages as a prospecting source",
+            "url": "https://github.com/coreyhaines31/marketingskills/commit/209f23bb118c2223be32153105edfd5459b27481"
+          },
+          {
+            "sha": "67ee59a2fcfb078461507ed1b84c471ad2a72ee6",
+            "date": "2026-11-19T22:37:55Z",
+            "title": "feat(prospecting): add org-shape signals to the signal plays",
+            "url": "https://github.com/coreyhaines31/marketingskills/commit/67ee59a2fcfb078461507ed1b84c471ad2a72ee6"
+          },
+          {
+            "sha": "adb465790efd562e92eeb1a60c9b8d0bbe0716f3",
+            "date": "2026-11-19T22:37:35Z",
+            "title": "fix(prospecting): give every signal tool a clause and a working link",
+            "url": "https://github.com/coreyhaines31/marketingskills/commit/adb465790efd562e92eeb1a60c9b8d0bbe0716f3"
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "commits": [
+          {
+            "sha": "be85be135de750813a48f7eb6bd1c9cde48ca63d",
+            "date": "2026-11-23T20:51:45Z",
+            "title": "feat: add outlier scoring, comment sorting, and podcasts as a lead source",
+            "url": "https://github.com/coreyhaines31/marketingskills/commit/be85be135de750813a48f7eb6bd1c9cde48ca63d"
+          }
+        ]
+      }
+    ]
+  },
+  "releaseEvidence": [
+    {
+      "id": "rust-anything",
+      "tag": "v5.0.0",
+      "publishedAt": "2026-11-26T00:44:02Z",
+      "url": "https://github.com/erkamyaman/rust-anything/releases/tag/v5.0.0",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": "last30days",
+      "tag": "v4.6.0",
+      "publishedAt": "2026-11-22T04:31:36Z",
+      "url": "https://github.com/mvanhorn/last30days-skill/releases/tag/v4.6.0",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": "aso",
+      "tag": "v2.14.27",
+      "publishedAt": "2026-11-23T20:58:21Z",
+      "url": "https://github.com/coreyhaines31/marketingskills/releases/tag/v2.14.27",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": "prospecting",
+      "tag": "v2.14.28",
+      "publishedAt": "2026-11-23T21:01:10Z",
+      "url": "https://github.com/coreyhaines31/marketingskills/releases/tag/v2.14.28",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": "customer-research",
+      "tag": "v2.14.28",
+      "publishedAt": "2026-11-23T21:01:10Z",
+      "url": "https://github.com/coreyhaines31/marketingskills/releases/tag/v2.14.28",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "scope": "Public GitHub repository/release/PR/commit metadata and pinned Git blob integrity. Complete raw trees and initial scans remain in local intake-evidence directory."
+}

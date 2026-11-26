@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "name": "last30days",
+  "version": "ed7ec6752b76",
+  "source": {
+    "url": "https://github.com/mvanhorn/last30days-skill",
+    "commit": "ed7ec6752b766ea3eb62239b374900764e9b5453",
+    "sha256": "fc0ae0857658ccd27810660558903284019a17c7d9b6e87f61b82419b6fde563",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Nghiên cứu chủ đề trong 30 ngày gần nhất, tổng hợp nhiều nguồn và lưu báo cáo có dẫn chứng; cần duyệt riêng quyền dữ liệu và công cụ.",
+    "aliases": [
+      "nghiên cứu 30 ngày",
+      "tổng hợp xu hướng gần đây",
+      "nghiên cứu đa nguồn"
+    ],
+    "keywords": [
+      "last30days",
+      "nghiên cứu 30 ngày",
+      "tổng hợp xu hướng gần đây",
+      "nghiên cứu đa nguồn"
+    ],
+    "examples": [
+      "Nghiên cứu thảo luận 30 ngày gần nhất về chủ đề này, nêu ngày, liên kết và giới hạn nguồn; chỉ dùng quyền tôi đã cấp."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "fc0ae0857658ccd27810660558903284019a17c7d9b6e87f61b82419b6fde563"
+  },
+  "requiredCapabilities": [
+    "@xai-official/grok * [installation-command-hint]",
+    "bash [file-type-hint]",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "docker [mention-hint]",
+    "ffmpeg [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "git [mention-hint]",
+    "github-cli [mention-hint]",
+    "go [mention-hint]",
+    "image-generation [mention-hint]",
+    "java [mention-hint]",
+    "last30days [reference-hint]",
+    "node >=22 [declared; engines]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "playwright [mention-hint]",
+    "powershell [mention-hint]",
+    "puppeteer [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]",
+    "remotion [mention-hint]",
+    "rust [mention-hint]",
+    "subagents [mention-hint]",
+    "video-generation [mention-hint]",
+    "web-search [mention-hint]",
+    "yt-dlp * [installation-command-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "network",
+    "shell"
+  ],
+  "syncedAt": "2026-11-26T14:27:58.471Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "references/runtime.md: privilege (medium)",
+      "references/setup-wizard.md: exe-download (medium)",
+      "scripts/last30days.py: privilege (medium)",
+      "scripts/lib/backends.py: exe-download (medium)",
+      "scripts/lib/chrome_cookies.py: credential-files (high)",
+      "scripts/lib/grok_x.py: exe-download (medium)",
+      "scripts/lib/health.py: privilege (medium)",
+      "scripts/lib/health.py: exe-download (medium)",
+      "scripts/lib/prescriptions.py: exe-download (medium)",
+      "scripts/lib/reddit_envelope.py: credential-files (high)",
+      "scripts/lib/render.py: invisible-unicode (high)",
+      "scripts/lib/x_envelope.py: credential-files (high)",
+      "LICENSE: binary-file (low)",
+      "references/runtime.md:131: privilege (medium)",
+      "references/setup-wizard.md:193: exe-download (medium)",
+      "scripts/last30days.py:41: privilege (medium)",
+      "scripts/lib/backends.py:306: exe-download (medium)",
+      "scripts/lib/chrome_cookies.py:277: credential-files (high)",
+      "scripts/lib/grok_x.py:8: exe-download (medium)",
+      "scripts/lib/health.py:219: privilege (medium)",
+      "scripts/lib/health.py:247: exe-download (medium)",
+      "scripts/lib/prescriptions.py:137: exe-download (medium)",
+      "scripts/lib/reddit_envelope.py:96: credential-files (high)",
+      "scripts/lib/render.py:3876: invisible-unicode (high)",
+      "scripts/lib/vendor/bird-search/LICENSE: binary-file (low)",
+      "scripts/lib/x_envelope.py:144: credential-files (high)",
+      "English core and runtime references require Python 3.12+, Python engine, optional Node/yt-dlp and paid APIs. Source setup can install third-party CLIs and persist configuration; none was installed or run.",
+      "scripts/lib/chrome_cookies.py:274-300 actually invokes macOS Keychain security find-generic-password and later decrypts browser cookies. references/setup-wizard.md describes ongoing browser consent and asks for API secrets in chat; incompatible with secure credential handling in this host.",
+      "scripts/capture_brief_hook.py reads transcript paths and scripts/lib/brief_capture.py persists completed reports. Hooks were not installed or invoked; transcript access requires separate review.",
+      "scripts/lib/x_envelope.py and reddit_envelope.py contain credential-store DENYLISTS; scanner credential-files hits there are not evidence of theft. scripts/lib/render.py:3876 contains an emoji joiner; invisible-unicode hit is not hidden authority. These explanations do not override quarantine.",
+      "197 source files retained. All runtime scripts from the selected skill subtree are retained except two explicitly omitted test helpers; five media assets and .skillignore are also excluded to stay below the hub file cap. Package remains incompatible/incomplete.",
+      "MIT license for Matt Van Horn and vendored bird-search MIT copyright Peter Steinberger are retained. No media asset rights are inferred from repository stars."
+    ]
+  },
+  "compatibility": {
+    "status": "incompatible",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "8 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "English core and runtime references require Python 3.12+, Python engine, optional Node/yt-dlp and paid APIs. Source setup can install third-party CLIs and persist configuration; none was installed or run.",
+      "scripts/lib/chrome_cookies.py:274-300 actually invokes macOS Keychain security find-generic-password and later decrypts browser cookies. references/setup-wizard.md describes ongoing browser consent and asks for API secrets in chat; incompatible with secure credential handling in this host.",
+      "scripts/capture_brief_hook.py reads transcript paths and scripts/lib/brief_capture.py persists completed reports. Hooks were not installed or invoked; transcript access requires separate review.",
+      "scripts/lib/x_envelope.py and reddit_envelope.py contain credential-store DENYLISTS; scanner credential-files hits there are not evidence of theft. scripts/lib/render.py:3876 contains an emoji joiner; invisible-unicode hit is not hidden authority. These explanations do not override quarantine.",
+      "197 source files retained. All runtime scripts from the selected skill subtree are retained except two explicitly omitted test helpers; five media assets and .skillignore are also excluded to stay below the hub file cap. Package remains incompatible/incomplete.",
+      "MIT license for Matt Van Horn and vendored bird-search MIT copyright Peter Steinberger are retained. No media asset rights are inferred from repository stars.",
+      "Static intake only. No model/provider, real account, upstream test, install command or integration runtime was executed. Permissions are declarations, never grants."
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "repository": "mvanhorn/last30days-skill",
+  "stars": 75502,
+  "createdAt": "2026-01-23T20:37:37Z",
+  "pushedAt": "2026-11-26T10:17:01Z",
+  "statsCheckedAt": "2026-11-26",
+  "license": "MIT",
+  "commit": "ed7ec6752b766ea3eb62239b374900764e9b5453",
+  "path": "skills/last30days",
+  "language": "hybrid",
+  "version": "ed7ec6752b76",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-26T14:27:58.471Z"
+}

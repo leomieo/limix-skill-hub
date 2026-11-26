@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "name": "customer-research",
+  "version": "8fd2fcade2fd",
+  "source": {
+    "url": "https://github.com/coreyhaines31/marketingskills",
+    "commit": "8fd2fcade2fd6629026e9dfe6d133b55b36968b9",
+    "sha256": "b9f9c4bd9fe43e500258be5fac79e3b35a242914526e24dec812042267e40a06",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Phân tích phỏng vấn, khảo sát và phản hồi công khai để tìm nhu cầu, phản đối và ngôn ngữ khách hàng có dẫn chứng.",
+    "aliases": [
+      "nghiên cứu khách hàng",
+      "phân tích phản hồi",
+      "tiếng nói khách hàng"
+    ],
+    "keywords": [
+      "customer",
+      "research",
+      "nghiên cứu khách hàng",
+      "phân tích phản hồi",
+      "tiếng nói khách hàng"
+    ],
+    "examples": [
+      "Phân nhóm các phản hồi này thành câu hỏi, phản đối, phàn nàn và nhu cầu; giữ dẫn chứng và chỉ rõ sai lệch mẫu."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "b9f9c4bd9fe43e500258be5fac79e3b35a242914526e24dec812042267e40a06"
+  },
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "filesystem-read [mention-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "network",
+    "shell"
+  ],
+  "syncedAt": "2026-11-26T14:27:58.471Z",
+  "security": {
+    "status": "review-required",
+    "findings": [
+      "LICENSE: binary-file (low)",
+      "English core and source-guides.md treat comments/pages as untrusted data, sort comment threads before aggregation and warn against using commenters as a customer list.",
+      "Interview/survey reference contains suggested incentives and outreach templates. Importing this skill does not approve contacting people, paying incentives, collecting personal data or publishing quotes.",
+      "Pinned ScrapeCreators and SparkToro integration guides retained; optional services need separate accounts, API credentials, terms and cost review. CLI/service claims remain untested; no external dependency was installed.",
+      "Evidence-count confidence thresholds are upstream conventions; no effectiveness, task success or provider compatibility has been measured."
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "English core and source-guides.md treat comments/pages as untrusted data, sort comment threads before aggregation and warn against using commenters as a customer list.",
+      "Interview/survey reference contains suggested incentives and outreach templates. Importing this skill does not approve contacting people, paying incentives, collecting personal data or publishing quotes.",
+      "Pinned ScrapeCreators and SparkToro integration guides retained; optional services need separate accounts, API credentials, terms and cost review. CLI/service claims remain untested; no external dependency was installed.",
+      "Evidence-count confidence thresholds are upstream conventions; no effectiveness, task success or provider compatibility has been measured.",
+      "Static intake only. No model/provider, real account, upstream test, install command or integration runtime was executed. Permissions are declarations, never grants."
+    ]
+  }
+}

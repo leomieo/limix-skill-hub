@@ -1,0 +1,35 @@
+{
+  "repository": "erkamyaman/rust-anything",
+  "commit": "8e02ebc421940e13f84cabc61b90bbe9604a28d0",
+  "path": "skills/rust-anything",
+  "verified": true,
+  "coreSha256": "3d9d1e6225c30dd53241eeda5d61435f97b85a9a956f2636d653f53388cfeda7",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "upstreamPath": "skills/rust-anything/SKILL.md",
+      "sha256": "3d9d1e6225c30dd53241eeda5d61435f97b85a9a956f2636d653f53388cfeda7",
+      "executable": false
+    },
+    {
+      "path": "whole-app.md",
+      "upstreamPath": "skills/rust-anything/whole-app.md",
+      "sha256": "9fd8fbc41ae26618f0e00268b6d06703676e61aa9bf12bc8f013c42853a4a258",
+      "executable": false
+    },
+    {
+      "path": "LICENSE-APACHE",
+      "upstreamPath": "LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "executable": false
+    },
+    {
+      "path": "LICENSE-MIT",
+      "upstreamPath": "LICENSE-MIT",
+      "sha256": "f7c6d76768cf5bdcd8fbc9f4df6b040789ed9802707e49987dd8357a6bd92759",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/rust-anything"
+}

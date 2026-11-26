@@ -1,0 +1,65 @@
+{
+  "repository": "coreyhaines31/marketingskills",
+  "commit": "8fd2fcade2fd6629026e9dfe6d133b55b36968b9",
+  "path": "skills/aso",
+  "verified": true,
+  "coreSha256": "30ced5720993da542560b72d97f4a9874bb1a615e3fc2e8cbdb3bcd3d5fda039",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "upstreamPath": "skills/aso/SKILL.md",
+      "sha256": "30ced5720993da542560b72d97f4a9874bb1a615e3fc2e8cbdb3bcd3d5fda039",
+      "executable": false
+    },
+    {
+      "path": "evals/evals.json",
+      "upstreamPath": "skills/aso/evals/evals.json",
+      "sha256": "9b665d9e1eea16e46591ee42790642c396a4e20fd61306ec3171f9083a87b4d0",
+      "executable": false
+    },
+    {
+      "path": "references/apple-specs.md",
+      "upstreamPath": "skills/aso/references/apple-specs.md",
+      "sha256": "f7186eeff06b4ae0b24bc4360b3061b0fe98b1c20b7f6a95c6492437b827bfe9",
+      "executable": false
+    },
+    {
+      "path": "references/benchmarks.md",
+      "upstreamPath": "skills/aso/references/benchmarks.md",
+      "sha256": "64b33412338388f8d6b4cafc12a8547afff9d64ca37646a996cf1baecf54043c",
+      "executable": false
+    },
+    {
+      "path": "references/google-play-specs.md",
+      "upstreamPath": "skills/aso/references/google-play-specs.md",
+      "sha256": "8a47707817aa40684f51ccc16e8b718ca6acaa27e3b1a00d2fdc21dd63b6ad9e",
+      "executable": false
+    },
+    {
+      "path": "references/report-template.md",
+      "upstreamPath": "skills/aso/references/report-template.md",
+      "sha256": "f67c8827c4600cb1e392c8cad05ed5740f9cd01321fd715a9e851e37ec0047b2",
+      "executable": false
+    },
+    {
+      "path": "references/scoring-criteria.md",
+      "upstreamPath": "skills/aso/references/scoring-criteria.md",
+      "sha256": "9792e3c9a93dc6e2dffda0a87e0ed6e592dd778c29f614d52b883df7f9956340",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "upstreamPath": "LICENSE",
+      "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/app-store-connect-cli.md",
+      "upstreamPath": "tools/integrations/app-store-connect-cli.md",
+      "sha256": "2c169ea7b9b3486e80392c7a1f8d55699822d289a017f493b5a469956dce274f",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/aso"
+}

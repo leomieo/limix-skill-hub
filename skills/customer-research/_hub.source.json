@@ -1,0 +1,53 @@
+{
+  "repository": "coreyhaines31/marketingskills",
+  "commit": "8fd2fcade2fd6629026e9dfe6d133b55b36968b9",
+  "path": "skills/customer-research",
+  "verified": true,
+  "coreSha256": "b9f9c4bd9fe43e500258be5fac79e3b35a242914526e24dec812042267e40a06",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "upstreamPath": "skills/customer-research/SKILL.md",
+      "sha256": "b9f9c4bd9fe43e500258be5fac79e3b35a242914526e24dec812042267e40a06",
+      "executable": false
+    },
+    {
+      "path": "evals/evals.json",
+      "upstreamPath": "skills/customer-research/evals/evals.json",
+      "sha256": "fc8a15d12e582b55fa52ad27925594ab796ebd6a8ea13fed13722f97e4c51f01",
+      "executable": false
+    },
+    {
+      "path": "references/interviews-and-surveys.md",
+      "upstreamPath": "skills/customer-research/references/interviews-and-surveys.md",
+      "sha256": "56adecdc40af1242464937100349fc1a161627394909551720494bc5ee537076",
+      "executable": false
+    },
+    {
+      "path": "references/source-guides.md",
+      "upstreamPath": "skills/customer-research/references/source-guides.md",
+      "sha256": "be2c9760468315851fdccba7dc9c4af5b3eb07686aa9ab2150ee322063f9dd31",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "upstreamPath": "LICENSE",
+      "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/scrapecreators.md",
+      "upstreamPath": "tools/integrations/scrapecreators.md",
+      "sha256": "437618888cb8b7ea8ac804cdc94f037aa76af99afbe1848e0afd03151d416626",
+      "executable": false
+    },
+    {
+      "path": "references/upstream/tools/integrations/sparktoro.md",
+      "upstreamPath": "tools/integrations/sparktoro.md",
+      "sha256": "00961feb89821d20b61ecc0a7bef196669190eac8bb2bbe8029fd596c5fd6118",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/customer-research"
+}

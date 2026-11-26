@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "name": "aso",
+  "version": "8fd2fcade2fd",
+  "source": {
+    "url": "https://github.com/coreyhaines31/marketingskills",
+    "commit": "8fd2fcade2fd6629026e9dfe6d133b55b36968b9",
+    "sha256": "30ced5720993da542560b72d97f4a9874bb1a615e3fc2e8cbdb3bcd3d5fda039",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Đánh giá trang ứng dụng trên App Store hoặc Google Play từ nội dung, hình ảnh và đánh giá thực tế; ưu tiên dữ liệu chỉ đọc của ứng dụng sở hữu.",
+    "aliases": [
+      "tối ưu cửa hàng ứng dụng",
+      "đánh giá App Store",
+      "đánh giá Google Play"
+    ],
+    "keywords": [
+      "aso",
+      "tối ưu cửa hàng ứng dụng",
+      "đánh giá App Store",
+      "đánh giá Google Play"
+    ],
+    "examples": [
+      "Đánh giá trang ứng dụng này, ghi rõ phần quan sát được và thiếu dữ liệu; chỉ soạn đề xuất, chưa thay đổi trang đang chạy."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "30ced5720993da542560b72d97f4a9874bb1a615e3fc2e8cbdb3bcd3d5fda039"
+  },
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "browser [mention-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "network",
+    "shell"
+  ],
+  "syncedAt": "2026-11-26T14:27:58.471Z",
+  "security": {
+    "status": "review-required",
+    "findings": [
+      "LICENSE: binary-file (low)",
+      "English core fetches public app listings and reads product-marketing context. Pinned tools/integrations/app-store-connect-cli.md is bundled under references/upstream with original bytes.",
+      "The optional asc CLI needs an owned App Store Connect account/API key and --read-only for audits. Drafts may be written locally; responses and live metadata pushes require separate explicit approval.",
+      "App Store and Google Play limits and CLI command claims are upstream guidance, not independently verified product facts. asc and browser compatibility were not tested.",
+      "Optional tools and other skills named in prose are external dependencies, not installed. Source main links remain unchanged; use the pinned local guide for reproducibility."
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "English core fetches public app listings and reads product-marketing context. Pinned tools/integrations/app-store-connect-cli.md is bundled under references/upstream with original bytes.",
+      "The optional asc CLI needs an owned App Store Connect account/API key and --read-only for audits. Drafts may be written locally; responses and live metadata pushes require separate explicit approval.",
+      "App Store and Google Play limits and CLI command claims are upstream guidance, not independently verified product facts. asc and browser compatibility were not tested.",
+      "Optional tools and other skills named in prose are external dependencies, not installed. Source main links remain unchanged; use the pinned local guide for reproducibility.",
+      "Static intake only. No model/provider, real account, upstream test, install command or integration runtime was executed. Permissions are declarations, never grants."
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "repository": "erkamyaman/rust-anything",
+  "stars": 9893,
+  "createdAt": "2026-11-16T12:10:36Z",
+  "pushedAt": "2026-11-26T14:15:53Z",
+  "statsCheckedAt": "2026-11-26",
+  "license": "MIT OR Apache-2.0",
+  "commit": "8e02ebc421940e13f84cabc61b90bbe9604a28d0",
+  "path": "skills/rust-anything",
+  "language": "hybrid",
+  "version": "8e02ebc42194",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "last_checked": "2026-11-26T14:27:58.471Z"
+}

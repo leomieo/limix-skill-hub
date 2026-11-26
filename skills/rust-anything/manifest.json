@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "name": "rust-anything",
+  "version": "8e02ebc42194",
+  "source": {
+    "url": "https://github.com/erkamyaman/rust-anything",
+    "commit": "8e02ebc421940e13f84cabc61b90bbe9604a28d0",
+    "sha256": "3d9d1e6225c30dd53241eeda5d61435f97b85a9a956f2636d653f53388cfeda7",
+    "license": "MIT OR Apache-2.0"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Lập kế hoạch chuyển mã sang Rust, ghi lại hành vi chương trình gốc và đối chiếu từng phần trước khi chuyển sang bản mới.",
+    "aliases": [
+      "chuyển mã sang Rust",
+      "di chuyển ứng dụng Rust",
+      "đối chiếu hành vi"
+    ],
+    "keywords": [
+      "rust",
+      "anything",
+      "chuyển mã sang Rust",
+      "di chuyển ứng dụng Rust",
+      "đối chiếu hành vi"
+    ],
+    "examples": [
+      "Đánh giá phần nào của dự án này nên chuyển sang Rust; lập kế hoạch và phép đo đối chiếu trước khi sửa mã."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "3d9d1e6225c30dd53241eeda5d61435f97b85a9a956f2636d653f53388cfeda7"
+  },
+  "requiredCapabilities": [
+    "bash [mention-hint]",
+    "go [mention-hint]",
+    "java [mention-hint]",
+    "node [mention-hint]",
+    "path [reference-hint]",
+    "powershell [mention-hint]",
+    "python [mention-hint]",
+    "rust [mention-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "network",
+    "shell"
+  ],
+  "syncedAt": "2026-11-26T14:27:58.471Z",
+  "security": {
+    "status": "review-required",
+    "findings": [
+      "LICENSE-APACHE: binary-file (low)",
+      "LICENSE-MIT: binary-file (low)",
+      "SKILL.md and whole-app.md are English. The separate rust-anything CLI runs original programs, builds Rust, and may edit source via enable; it is an external dependency, not bundled or executed.",
+      "SKILL.md requires plan/unit approval, gate results and explicit approval before enable. whole-app.md requests research agents and writes rust/ state; host authorization remains controlling.",
+      "Both LICENSE-MIT and LICENSE-APACHE are retained. GitHub metadata reports Apache-2.0; source supports MIT OR Apache-2.0. No root NOTICE is present in the complete pinned tree."
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "SKILL.md and whole-app.md are English. The separate rust-anything CLI runs original programs, builds Rust, and may edit source via enable; it is an external dependency, not bundled or executed.",
+      "SKILL.md requires plan/unit approval, gate results and explicit approval before enable. whole-app.md requests research agents and writes rust/ state; host authorization remains controlling.",
+      "Both LICENSE-MIT and LICENSE-APACHE are retained. GitHub metadata reports Apache-2.0; source supports MIT OR Apache-2.0. No root NOTICE is present in the complete pinned tree.",
+      "Static intake only. No model/provider, real account, upstream test, install command or integration runtime was executed. Permissions are declarations, never grants."
+    ]
+  }
+}

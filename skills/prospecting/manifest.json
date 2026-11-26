@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "name": "prospecting",
+  "version": "8fd2fcade2fd",
+  "source": {
+    "url": "https://github.com/coreyhaines31/marketingskills",
+    "commit": "8fd2fcade2fd6629026e9dfe6d133b55b36968b9",
+    "sha256": "57d825ef97609dd3019a6c7d7c808d00b180fa7065d1a2fa507bd4133f5ff7b3",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Tìm và xác minh khách hàng tiềm năng theo hồ sơ phù hợp, tín hiệu mua và bằng chứng công khai, kể cả phát biểu trên podcast.",
+    "aliases": [
+      "tìm khách hàng tiềm năng",
+      "xác minh tín hiệu mua",
+      "tìm đầu mối từ podcast"
+    ],
+    "keywords": [
+      "prospecting",
+      "tìm khách hàng tiềm năng",
+      "xác minh tín hiệu mua",
+      "tìm đầu mối từ podcast"
+    ],
+    "examples": [
+      "Lập danh sách công ty phù hợp hồ sơ này từ tín hiệu công khai, xác minh ngày phát sóng podcast và người phát biểu; chưa liên hệ ai."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "57d825ef97609dd3019a6c7d7c808d00b180fa7065d1a2fa507bd4133f5ff7b3"
+  },
+  "requiredCapabilities": [
+    "@glasser-ai/cli * [installation-command-hint]",
+    "about [reference-hint]",
+    "answer [reference-hint]",
+    "authenticate [reference-hint]",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "contact [reference-hint]",
+    "dpa [reference-hint]",
+    "experience [reference-hint]",
+    "java [mention-hint]",
+    "node [mention-hint]",
+    "playwright [mention-hint]",
+    "pricing [reference-hint]",
+    "puppeteer [mention-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]",
+    "rust [mention-hint]",
+    "subagents [mention-hint]",
+    "subprocessors [reference-hint]",
+    "team [reference-hint]",
+    "trust [reference-hint]",
+    "web-search [mention-hint]"
+  ],
+  "permissions": [
+    "filesystem-read",
+    "filesystem-write",
+    "network",
+    "shell"
+  ],
+  "syncedAt": "2026-11-26T14:27:58.471Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "references/upstream/tools/integrations/ploy.md: pipe-to-shell (high)",
+      "references/upstream/tools/integrations/ploy.md: exe-download (medium)",
+      "LICENSE: binary-file (low)",
+      "references/upstream/tools/integrations/ploy.md:57: pipe-to-shell (high)",
+      "references/upstream/tools/integrations/ploy.md:57: exe-download (medium)",
+      "English core plus signal-plays.md distinguish public research from outreach, require dated podcast statements and speaker verification, and include privacy/compliance guidance. No contact lists were queried or messages sent.",
+      "19 directly linked tool guides/registry retained at the same source commit under references/upstream. references/upstream/tools/integrations/ploy.md:57 contains a real curl-to-shell installer instruction; retain bytes but quarantine, never execute it during intake.",
+      "Optional integrations include paid enrichment, visitor identification, API keys, browser access and external CLI dependencies. Source guides can reference tools/clis not bundled here; these optional integration bundles are not claimed complete or functional.",
+      "Firecrawl podcast guide names third-party terms and variable costs; it does not authorize accepting terms or spending. The 90-day podcast window is an upstream heuristic, not a measured guarantee."
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "English core plus signal-plays.md distinguish public research from outreach, require dated podcast statements and speaker verification, and include privacy/compliance guidance. No contact lists were queried or messages sent.",
+      "19 directly linked tool guides/registry retained at the same source commit under references/upstream. references/upstream/tools/integrations/ploy.md:57 contains a real curl-to-shell installer instruction; retain bytes but quarantine, never execute it during intake.",
+      "Optional integrations include paid enrichment, visitor identification, API keys, browser access and external CLI dependencies. Source guides can reference tools/clis not bundled here; these optional integration bundles are not claimed complete or functional.",
+      "Firecrawl podcast guide names third-party terms and variable costs; it does not authorize accepting terms or spending. The 90-day podcast window is an upstream heuristic, not a measured guarantee.",
+      "Static intake only. No model/provider, real account, upstream test, install command or integration runtime was executed. Permissions are declarations, never grants."
+    ]
+  }
+}

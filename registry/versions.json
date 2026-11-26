@@ -1628,5 +1628,45 @@
       "checksum": "989f9ccbfe686cdd9f5d76c86ee6b3c8d315cdac29f1408eae5ea6fb2de4e52b",
       "at": "2026-11-24T10:03:56.526Z"
     }
+  ],
+  "aso": [
+    {
+      "version": "8fd2fcade2fd",
+      "commit": "8fd2fcade2fd6629026e9dfe6d133b55b36968b9",
+      "checksum": "38704f56a86c995381008c4cfe29083acfe61bffbfcd82167766277e900b80a3",
+      "at": "2026-11-26T14:27:58.471Z"
+    }
+  ],
+  "customer-research": [
+    {
+      "version": "8fd2fcade2fd",
+      "commit": "8fd2fcade2fd6629026e9dfe6d133b55b36968b9",
+      "checksum": "905572cd6ea03273c101458af3b59cb796348d928a2aeeecf74bf4fedbaed9fe",
+      "at": "2026-11-26T14:27:58.471Z"
+    }
+  ],
+  "last30days": [
+    {
+      "version": "ed7ec6752b76",
+      "commit": "ed7ec6752b766ea3eb62239b374900764e9b5453",
+      "checksum": "3e06e606f88db1c13a31f0b88dd8206a4154356b408deb3402eba54772322a1c",
+      "at": "2026-11-26T14:27:58.471Z"
+    }
+  ],
+  "prospecting": [
+    {
+      "version": "8fd2fcade2fd",
+      "commit": "8fd2fcade2fd6629026e9dfe6d133b55b36968b9",
+      "checksum": "d6e72297313421ca17d006c908ae50f3d4c1b3db8b83e0c1fce3d5268d6fdf30",
+      "at": "2026-11-26T14:27:58.471Z"
+    }
+  ],
+  "rust-anything": [
+    {
+      "version": "8e02ebc42194",
+      "commit": "8e02ebc421940e13f84cabc61b90bbe9604a28d0",
+      "checksum": "babfd1d822ffefadf97f97be2cf0a2b402488772617947de6e884cd5996b73b1",
+      "at": "2026-11-26T14:27:58.471Z"
+    }
   ]
 }

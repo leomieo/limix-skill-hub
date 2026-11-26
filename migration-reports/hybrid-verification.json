@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-24T10:04:45.576Z",
+  "checkedAt": "2026-11-26T14:30:31.146Z",
   "scope": "Static integrity and provenance only; no downloaded scripts executed.",
   "results": [
     {
@@ -238,6 +238,17 @@
       "license": "MIT"
     },
     {
+      "id": "aso",
+      "verified": true,
+      "origin": "upstream",
+      "files": 9,
+      "commit": "8fd2fcade2fd6629026e9dfe6d133b55b36968b9",
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "MIT"
+    },
+    {
       "id": "bang-motion",
       "verified": true,
       "origin": "upstream",
@@ -402,6 +413,17 @@
       "compatibility": "unchecked",
       "skipped": [],
       "license": "MIT OR Apache-2.0"
+    },
+    {
+      "id": "customer-research",
+      "verified": true,
+      "origin": "upstream",
+      "files": 7,
+      "commit": "8fd2fcade2fd6629026e9dfe6d133b55b36968b9",
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "MIT"
     },
     {
       "id": "digital-human-koubo",
@@ -2490,6 +2512,26 @@
       "license": "MIT"
     },
     {
+      "id": "last30days",
+      "verified": true,
+      "origin": "upstream",
+      "files": 197,
+      "commit": "ed7ec6752b766ea3eb62239b374900764e9b5453",
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "skipped": [
+        ".skillignore",
+        "assets/aging-portrait.jpeg",
+        "assets/claude-code-rap.mp3",
+        "assets/dog-as-human.png",
+        "assets/dog-original.jpeg",
+        "assets/swimmom-mockup.jpeg",
+        "scripts/test-v1-vs-v2.sh",
+        "scripts/test_device_auth.py"
+      ],
+      "license": "MIT"
+    },
+    {
       "id": "leaving-pr-comments",
       "verified": true,
       "origin": "upstream",
@@ -3938,6 +3980,17 @@
       "license": "MIT"
     },
     {
+      "id": "prospecting",
+      "verified": true,
+      "origin": "upstream",
+      "files": 32,
+      "commit": "8fd2fcade2fd6629026e9dfe6d133b55b36968b9",
+      "security": "quarantined",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "MIT"
+    },
+    {
       "id": "rea-video",
       "verified": true,
       "origin": "upstream",
@@ -3980,6 +4033,17 @@
       "compatibility": "unchecked",
       "skipped": [],
       "license": "MIT"
+    },
+    {
+      "id": "rust-anything",
+      "verified": true,
+      "origin": "upstream",
+      "files": 4,
+      "commit": "8e02ebc421940e13f84cabc61b90bbe9604a28d0",
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "MIT OR Apache-2.0"
     },
     {
       "id": "socratic-tutor",
