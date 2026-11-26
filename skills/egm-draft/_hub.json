@@ -1,9 +1,9 @@
 {
   "repository": "google/elephant-goldfish-model",
-  "stars": 22748,
+  "stars": 23037,
   "createdAt": "2026-09-13T16:31:06Z",
-  "pushedAt": "2026-11-24T21:22:54Z",
-  "statsCheckedAt": "2026-11-25",
+  "pushedAt": "2026-11-25T16:52:54Z",
+  "statsCheckedAt": "2026-11-26",
   "license": "Apache-2.0",
   "commit": "270b10326bf366d823bc76fd662cf83808d5781e",
   "path": "skills/egm-draft",
