@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "hub": "leomieo/limix-skill-hub",
-  "count": 83,
+  "count": 84,
   "skills": [
     {
       "id": "agent-autoloop",
@@ -27750,6 +27750,496 @@
       },
       "notes": [],
       "last_checked": "2026-11-23T16:00:56.799Z",
+      "area": "quarantine"
+    },
+    {
+      "id": "douyin-spider",
+      "name": "douyin-spider",
+      "description": "Hub-authored, quarantined adapter for inspecting cv-cat/DouYin_Spider requirements and planning authorized Douyin data collection, live monitoring or creator workflows. No upstream agent skill or runtime is bundled.",
+      "description_vi": "Kiểm tra yêu cầu và lập quy trình dùng DouYin_Spider để thu thập dữ liệu, theo dõi livestream hoặc thao tác tài khoản Douyin theo phạm vi được phép. Hướng dẫn do Hub biên soạn; chưa kèm mã nguồn, chưa xác minh giấy phép và đang cách ly.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "douyin-spider",
+        "version": "d151f9c2980a",
+        "source": {
+          "url": "https://github.com/cv-cat/DouYin_Spider",
+          "commit": "d151f9c2980abc304c1ae4918c2272675cd9e4c2",
+          "sha256": "b1e31f3087acdcc22fbb4459b27977559f6cb075c120f21ddb760bdcfd94f91a"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Kiểm tra yêu cầu và lập quy trình dùng DouYin_Spider để thu thập dữ liệu, theo dõi livestream hoặc thao tác tài khoản Douyin theo phạm vi được phép. Hướng dẫn do Hub biên soạn; chưa kèm mã nguồn, chưa xác minh giấy phép và đang cách ly.",
+          "aliases": [
+            "Thu thập dữ liệu Douyin",
+            "Theo dõi livestream Douyin",
+            "Công cụ DouYin Spider"
+          ],
+          "keywords": [
+            "douyin",
+            "douyin-spider",
+            "DouYin_Spider",
+            "thu thập dữ liệu",
+            "livestream",
+            "Python",
+            "WebSocket"
+          ],
+          "examples": [
+            "Kiểm tra công cụ và thư viện cần cho DouYin_Spider, chưa cài hay chạy.",
+            "Lập kế hoạch thu thập dữ liệu Douyin trong phạm vi tôi được phép."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "b1e31f3087acdcc22fbb4459b27977559f6cb075c120f21ddb760bdcfd94f91a"
+        },
+        "requiredCapabilities": [
+          "browser [mention-hint]",
+          "docker [mention-hint]",
+          "ffmpeg (optional creator audio-analysis fallback; upstream dy_apis/douyin_creator_api.py:458-469; not installed)",
+          "ffmpeg [mention-hint]",
+          "filesystem-read",
+          "filesystem-write",
+          "git (separate pinned checkout required)",
+          "network (HTTP and WebSocket)",
+          "node >=18 (optional upstream live/challenge flows; not runtime-tested)",
+          "node [mention-hint]",
+          "npm: canvas ^2.11.2 (upstream newsign/package.json; optional flow, not installed)",
+          "npm: jsdom ^25.0.1 (upstream newsign/package.json; optional flow, not installed)",
+          "npm: jsrsasign ^11.1.0 (upstream newsign/package.json; optional flow, not installed)",
+          "npm: sdenv ^0.2.2 (upstream newsign/package.json; optional flow, not installed)",
+          "npm: vm ^0.1.0 (upstream newsign/package.json; optional flow, not installed)",
+          "pip: aiofiles (upstream requirements.txt:1; external, not installed)",
+          "pip: av (upstream requirements.txt:8; external, not installed)",
+          "pip: backports.zstd ; python_version<'3.14' (upstream requirements.txt:28; external, not installed)",
+          "pip: blackboxprotobuf (upstream requirements.txt:27; external, not installed)",
+          "pip: cryptography (upstream requirements.txt:3; external, not installed)",
+          "pip: curl_cffi (upstream requirements.txt:20; external, not installed)",
+          "pip: ecdsa (upstream requirements.txt:4; external, not installed)",
+          "pip: jsbeautifier==2.0.3 (upstream requirements.txt:30; external, not installed)",
+          "pip: loguru (upstream requirements.txt:5; external, not installed)",
+          "pip: lxml (upstream requirements.txt:2; external, not installed)",
+          "pip: opencv-python-headless (upstream requirements.txt:7; external, not installed)",
+          "pip: openpyxl (upstream requirements.txt:6; external, not installed)",
+          "pip: pillow (upstream requirements.txt:9; external, not installed)",
+          "pip: protobuf>=5.27 (upstream requirements.txt:26; external, not installed)",
+          "pip: python-dotenv (upstream requirements.txt:10; external, not installed)",
+          "pip: qrcode (upstream requirements.txt:11; external, not installed)",
+          "pip: requests (upstream requirements.txt:12; external, not installed)",
+          "pip: retry (upstream requirements.txt:13; external, not installed)",
+          "pip: rocksdict==0.3.29 (upstream requirements.txt:29; external, not installed)",
+          "pip: urllib3 (upstream requirements.txt:14; external, not installed)",
+          "pip: websocket-client (upstream requirements.txt:15; external, not installed)",
+          "pip: websockets (upstream requirements.txt:16; external, not installed)",
+          "python >=3.9 (upstream README; Dockerfile uses 3.10; not runtime-tested)",
+          "python [mention-hint]",
+          "react [mention-hint]"
+        ],
+        "permissions": [
+          "shell",
+          "filesystem-read",
+          "filesystem-write",
+          "network"
+        ],
+        "syncedAt": "2026-11-26T19:36:02.180Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "No upstream license file found; GitHub license endpoint returned 404. Upstream content is not redistributed.",
+            "No upstream SKILL.md; core is an original hub-authored adapter, not source-verified.",
+            "Source handles authenticated sessions and supports account writes, direct messages and publishing.",
+            "Source can invoke subprocesses and writes media/logs/databases; dependencies and runtime remain untested.",
+            "Upstream notes a protobuf >=5.27 versus blackboxprotobuf dependency constraint conflict.",
+            "author/group.jpg: binary-file (low; static heuristic, not a verdict)",
+            "author/img.png: binary-file (low; static heuristic, not a verdict)",
+            "author/logo.jpg: binary-file (low; static heuristic, not a verdict)",
+            "author/qq.jpg: binary-file (low; static heuristic, not a verdict)",
+            "author/sponsors/vectrust-dark.png: binary-file (low; static heuristic, not a verdict)",
+            "author/sponsors/vectrust.png: binary-file (low; static heuristic, not a verdict)",
+            "author/wx.png: binary-file (low; static heuristic, not a verdict)",
+            "author/wx_pay.png: binary-file (low; static heuristic, not a verdict)",
+            "author/zfb_pay.jpg: binary-file (low; static heuristic, not a verdict)",
+            "tests/test_live_pk_ws.py:17: base64-blob (medium; static heuristic, not a verdict)",
+            "utils/acrawler_runtime/ac_vm.js:1: base64-blob (medium; static heuristic, not a verdict)",
+            "utils/acrawler_runtime/canvas_actual_exact.json:1: base64-blob (medium; static heuristic, not a verdict)",
+            "utils/acrawler_runtime/run_ac_node.js:138: base64-blob (medium; static heuristic, not a verdict)",
+            "utils/challenge_profile.json:83: base64-blob (medium; static heuristic, not a verdict)"
+          ]
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "Metadata-only adapter; no upstream code, runtime, README or license text is bundled.",
+            "Complete pinned source tree was inspected; source files are intentionally absent from this package pending license review. See source-audit.json for all omitted paths and hashes.",
+            "Python dependencies, optional Node packages and Docker build tools are documented with source lines; target machine and provider compatibility have not been tested.",
+            "Manual user exception to star/recency filter on 2026-11-27; daily selection rules are unchanged.",
+            "No third-party scripts, tests, installers, sign-in or network account actions were executed."
+          ]
+        }
+      },
+      "aliases": [
+        "Thu thập dữ liệu Douyin",
+        "Theo dõi livestream Douyin",
+        "Công cụ DouYin Spider"
+      ],
+      "keywords": [
+        "douyin",
+        "douyin-spider",
+        "DouYin_Spider",
+        "thu thập dữ liệu",
+        "livestream",
+        "Python",
+        "WebSocket"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "d151f9c2980a",
+      "source": {
+        "repository": "cv-cat/DouYin_Spider",
+        "commit": "d151f9c2980abc304c1ae4918c2272675cd9e4c2",
+        "path": null
+      },
+      "stars": 3742,
+      "created_at": "2023-10-17T08:30:42Z",
+      "pushed_at": "2026-10-23T03:24:05Z",
+      "stats_checked": "2026-11-27",
+      "license": null,
+      "language": "hybrid",
+      "category": "data",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 19,
+        "security": 25,
+        "compatibility": 16,
+        "testing": 0,
+        "maintenance": 6,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [],
+      "approval_status": "quarantined",
+      "kind": "instructions-only",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "docker",
+            "installerId": "docker"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "ffmpeg",
+        "docker"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "browser [mention-hint]",
+          "docker [mention-hint]",
+          "ffmpeg (optional creator audio-analysis fallback; upstream dy_apis/douyin_creator_api.py:458-469; not installed)",
+          "ffmpeg [mention-hint]",
+          "filesystem-read",
+          "filesystem-write",
+          "git (separate pinned checkout required)",
+          "network (HTTP and WebSocket)",
+          "node >=18 (optional upstream live/challenge flows; not runtime-tested)",
+          "node [mention-hint]",
+          "npm: canvas ^2.11.2 (upstream newsign/package.json; optional flow, not installed)",
+          "npm: jsdom ^25.0.1 (upstream newsign/package.json; optional flow, not installed)",
+          "npm: jsrsasign ^11.1.0 (upstream newsign/package.json; optional flow, not installed)",
+          "npm: sdenv ^0.2.2 (upstream newsign/package.json; optional flow, not installed)",
+          "npm: vm ^0.1.0 (upstream newsign/package.json; optional flow, not installed)",
+          "pip: aiofiles (upstream requirements.txt:1; external, not installed)",
+          "pip: av (upstream requirements.txt:8; external, not installed)",
+          "pip: backports.zstd ; python_version<'3.14' (upstream requirements.txt:28; external, not installed)",
+          "pip: blackboxprotobuf (upstream requirements.txt:27; external, not installed)",
+          "pip: cryptography (upstream requirements.txt:3; external, not installed)",
+          "pip: curl_cffi (upstream requirements.txt:20; external, not installed)",
+          "pip: ecdsa (upstream requirements.txt:4; external, not installed)",
+          "pip: jsbeautifier==2.0.3 (upstream requirements.txt:30; external, not installed)",
+          "pip: loguru (upstream requirements.txt:5; external, not installed)",
+          "pip: lxml (upstream requirements.txt:2; external, not installed)",
+          "pip: opencv-python-headless (upstream requirements.txt:7; external, not installed)",
+          "pip: openpyxl (upstream requirements.txt:6; external, not installed)",
+          "pip: pillow (upstream requirements.txt:9; external, not installed)",
+          "pip: protobuf>=5.27 (upstream requirements.txt:26; external, not installed)",
+          "pip: python-dotenv (upstream requirements.txt:10; external, not installed)",
+          "pip: qrcode (upstream requirements.txt:11; external, not installed)",
+          "pip: requests (upstream requirements.txt:12; external, not installed)",
+          "pip: retry (upstream requirements.txt:13; external, not installed)",
+          "pip: rocksdict==0.3.29 (upstream requirements.txt:29; external, not installed)",
+          "pip: urllib3 (upstream requirements.txt:14; external, not installed)",
+          "pip: websocket-client (upstream requirements.txt:15; external, not installed)",
+          "pip: websockets (upstream requirements.txt:16; external, not installed)",
+          "python >=3.9 (upstream README; Dockerfile uses 3.10; not runtime-tested)",
+          "python [mention-hint]",
+          "react [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "docker",
+            "installerId": "docker"
+          }
+        ],
+        "detected": [
+          {
+            "name": "react",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/source-audit.json",
+                "line": 1049
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 17
+              },
+              {
+                "file": "references/requirements.md",
+                "line": 8
+              },
+              {
+                "file": "references/source-audit.json",
+                "line": 984
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 17
+              },
+              {
+                "file": "references/requirements.md",
+                "line": 7
+              },
+              {
+                "file": "references/source-audit.json",
+                "line": 872
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 20
+              },
+              {
+                "file": "references/source-audit.json",
+                "line": 4269
+              }
+            ]
+          },
+          {
+            "name": "docker",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "docker",
+            "evidence": [
+              {
+                "file": "references/requirements.md",
+                "line": 11
+              }
+            ]
+          },
+          {
+            "name": "ffmpeg",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "ffmpeg",
+            "evidence": [
+              {
+                "file": "references/requirements.md",
+                "line": 10
+              },
+              {
+                "file": "references/source-audit.json",
+                "line": 4401
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 3,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [
+          ".env.example",
+          ".gitignore",
+          "Dockerfile",
+          "README.md",
+          "author/group.jpg",
+          "author/img.png",
+          "author/logo.jpg",
+          "author/qq.jpg",
+          "author/sponsors/vectrust-dark.png",
+          "author/sponsors/vectrust.png",
+          "author/wx.png",
+          "author/wx_pay.png",
+          "author/zfb_pay.jpg",
+          "builder/__init__.py",
+          "builder/auth.py",
+          "builder/header.py",
+          "builder/params.py",
+          "builder/proto.py",
+          "dy_apis/__init__.py",
+          "dy_apis/douyin_api.py",
+          "dy_apis/douyin_creator_api.py",
+          "dy_apis/douyin_im_media.py",
+          "dy_apis/douyin_recv_msg.py",
+          "dy_apis/login_api.py",
+          "dy_live/__init__.py",
+          "dy_live/muted_messages",
+          "dy_live/pk.py",
+          "dy_live/protobuf/buf.yaml",
+          "dy_live/protobuf/douyin/bizIm/live_pb2.py",
+          "dy_live/protobuf/douyin/bizIm/webcast/data_pb2.py",
+          "dy_live/protobuf/douyin/bizIm/webcast/im_pb2.py",
+          "dy_live/protobuf/douyin/default/im_proto_pb2.py",
+          "dy_live/protobuf/douyin/transport/webcast/im_pb2.py",
+          "dy_live/protobuf/proto/bizIm/live.proto",
+          "dy_live/protobuf/proto/bizIm/webcast/data.proto",
+          "dy_live/protobuf/proto/bizIm/webcast/im.proto",
+          "dy_live/protobuf/proto/default/im_proto.proto",
+          "dy_live/protobuf/proto/transport/webcast/im.proto",
+          "dy_live/protobuf/webcast_proto_re/.gitignore",
+          "dy_live/protobuf/webcast_proto_re/js2proto.py",
+          "dy_live/protobuf/webcast_proto_re/jsbeautifier_test.py",
+          "dy_live/server.py",
+          "dy_live/user_db.py",
+          "dy_live/utils/__init__.py",
+          "dy_live/utils/compression.py",
+          "dy_live/utils/renderer.py",
+          "main.py",
+          "newsign/package.json",
+          "pyproject.toml",
+          "quick_publish.py",
+          "requirements.txt",
+          "static/Live.proto",
+          "static/Live_pb2.py",
+          "static/PK.proto",
+          "static/PK_pb2.py",
+          "static/Request.proto",
+          "static/Request_pb2.py",
+          "static/Response.proto",
+          "static/Response_pb2.py",
+          "tests/test_dtrait_profile.py",
+          "tests/test_live_pk_api.py",
+          "tests/test_live_pk_ws.py",
+          "tests/test_live_rank_api.py",
+          "tests/test_search_filters.py",
+          "tests/test_write_dtrait.py",
+          "utils/__init__.py",
+          "utils/ab_pure.py",
+          "utils/acrawler.py",
+          "utils/acrawler_runtime/ac_vm.js",
+          "utils/acrawler_runtime/browser_window_shape.json",
+          "utils/acrawler_runtime/canvas_actual_exact.json",
+          "utils/acrawler_runtime/run_ac_node.js",
+          "utils/acrawler_runtime/runner_window_keys_baseline.txt",
+          "utils/bd_ticket.py",
+          "utils/challenge_profile.json",
+          "utils/challenge_sign.py",
+          "utils/challenge_template.py",
+          "utils/challenge_template_runner.js",
+          "utils/common_util.py",
+          "utils/data_util.py",
+          "utils/dtrait.py",
+          "utils/dtrait_features.py",
+          "utils/dtrait_profile.json",
+          "utils/dtrait_profile.py",
+          "utils/dy_util.py",
+          "utils/fingerprint.py",
+          "utils/http_client.py",
+          "utils/imagex_sign.py",
+          "utils/mstoken.py",
+          "utils/mstoken_common_profile.json",
+          "utils/mstoken_profile.json",
+          "utils/passport.py",
+          "utils/secsdk_web_sign.py",
+          "utils/sm3.py",
+          "utils/strdata_pure.py",
+          "utils/xbogus_pure.py"
+        ],
+        "packageCompleteness": "incomplete",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": false,
+        "mcp": false,
+        "files": [
+          "SKILL.md",
+          "manifest.json",
+          "references/guide.vi.md",
+          "references/requirements.md",
+          "references/source-audit.json"
+        ]
+      },
+      "checksum": "dac253f5d09be800196e567248df05182e5e135cfb900f4e74bfa45aff4e1d8a",
+      "file_hashes": {
+        "SKILL.md": "b1e31f3087acdcc22fbb4459b27977559f6cb075c120f21ddb760bdcfd94f91a",
+        "manifest.json": "67d6a61d69c24be97ab6c04e6dffdafd6dc71806d6a458eb24a54140d352e33b",
+        "references/guide.vi.md": "24d52885803887e6c0cdecdae96d513289635da143862963aa2b9393f0aa7eb6",
+        "references/requirements.md": "fab8d094e225476a983de9cdc32b132db6f0eed237302b99ea0a0bd044886ef4",
+        "references/source-audit.json": "672d02af66de5d8f856af8948f625df7b5e734847f083406602adb217ee7e0f2"
+      },
+      "notes": [
+        "Không có giấy phép: cần chủ bot xem xét trước khi dùng."
+      ],
+      "last_checked": "2026-11-26T19:36:02.180Z",
       "area": "quarantine"
     },
     {

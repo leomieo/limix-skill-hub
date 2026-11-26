@@ -10,6 +10,7 @@ Sắp theo thứ tự thêm vào kho, mới nhất trước; sao và ngày tạo
 
 | Skill/tool | Nguồn | Sao | Ngày tạo | Mô tả ngắn |
 |---|---|---:|---|---|
+| [douyin-spider](skills/douyin-spider/SKILL.md) | [cv-cat/DouYin_Spider](https://github.com/cv-cat/DouYin_Spider) | 3742 | 2023-10-17 | Hướng dẫn do Hub biên soạn cho công cụ dữ liệu Douyin; ngoại lệ theo yêu cầu. Chưa xác minh giấy phép, không kèm mã nguồn. **Cách ly.** |
 | [rust-anything](skills/rust-anything/SKILL.md) | [erkamyaman/rust-anything](https://github.com/erkamyaman/rust-anything) | 9893 | 2026-11-16 | Lập kế hoạch chuyển mã sang Rust, ghi lại hành vi chương trình gốc và đối chiếu từng phần trước khi chuyển sang bản mới. Chờ duyệt tĩnh. |
 | [last30days](skills/last30days/SKILL.md) | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 75502 | 2026-01-23 | Nghiên cứu chủ đề trong 30 ngày gần nhất, tổng hợp nhiều nguồn và lưu báo cáo có dẫn chứng; cần duyệt riêng quyền dữ liệu và công cụ. **Cách ly.** |
 | [aso](skills/aso/SKILL.md) | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | 62771 | 2026-01-15 | Đánh giá trang ứng dụng trên App Store hoặc Google Play từ nội dung, hình ảnh và đánh giá thực tế; ưu tiên dữ liệu chỉ đọc của ứng dụng sở hữu. Chờ duyệt tĩnh. |
@@ -19,7 +20,6 @@ Sắp theo thứ tự thêm vào kho, mới nhất trước; sao và ngày tạo
 | [ste80-humanizer](skills/ste80-humanizer/SKILL.md) | [Dodaios/ste80-humanizer](https://github.com/Dodaios/ste80-humanizer) | 1113 | 2026-11-09 | Biên tập tài liệu tiếng Anh bằng câu ngắn, câu chủ động và từ dễ hiểu, giữ nguyên dữ kiện. **Cách ly.** |
 | [cinematic-film](skills/cinematic-film/SKILL.md) | [Moh4696/cinematic-skill](https://github.com/Moh4696/cinematic-skill) | 951 | 2026-11-09 | Lập bảng nhịp và dựng phim từ ảnh, tư liệu và bản đồ để chuyển động khớp với lời thuyết minh. **Cách ly.** |
 | [cook](skills/cook/SKILL.md) | [Leonxlnx/cook](https://github.com/Leonxlnx/cook) | 817 | 2026-10-31 | Cải tiến bản dựng hình ảnh qua các vòng chụp, đối chiếu và sửa theo tiêu chí đã thống nhất. **Cách ly.** |
-| [brand-voice](skills/brand-voice/SKILL.md) | [boringmarketer/boring-marketing-skills](https://github.com/boringmarketer/boring-marketing-skills) | 823 | 2026-11-16 | Xây dựng hồ sơ giọng thương hiệu từ ví dụ có dẫn chứng và kiểm tra nội dung mới có lệch giọng hay không. **Cách ly.** |
 
 ## Sử dụng
 

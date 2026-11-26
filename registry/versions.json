@@ -1668,5 +1668,13 @@
       "checksum": "babfd1d822ffefadf97f97be2cf0a2b402488772617947de6e884cd5996b73b1",
       "at": "2026-11-26T14:27:58.471Z"
     }
+  ],
+  "douyin-spider": [
+    {
+      "version": "d151f9c2980a",
+      "commit": "d151f9c2980abc304c1ae4918c2272675cd9e4c2",
+      "checksum": "dac253f5d09be800196e567248df05182e5e135cfb900f4e74bfa45aff4e1d8a",
+      "at": "2026-11-26T19:36:02.180Z"
+    }
   ]
 }

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "name": "douyin-spider",
+  "version": "d151f9c2980a",
+  "source": {
+    "url": "https://github.com/cv-cat/DouYin_Spider",
+    "commit": "d151f9c2980abc304c1ae4918c2272675cd9e4c2",
+    "sha256": "b1e31f3087acdcc22fbb4459b27977559f6cb075c120f21ddb760bdcfd94f91a"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Kiểm tra yêu cầu và lập quy trình dùng DouYin_Spider để thu thập dữ liệu, theo dõi livestream hoặc thao tác tài khoản Douyin theo phạm vi được phép. Hướng dẫn do Hub biên soạn; chưa kèm mã nguồn, chưa xác minh giấy phép và đang cách ly.",
+    "aliases": [
+      "Thu thập dữ liệu Douyin",
+      "Theo dõi livestream Douyin",
+      "Công cụ DouYin Spider"
+    ],
+    "keywords": [
+      "douyin",
+      "douyin-spider",
+      "DouYin_Spider",
+      "thu thập dữ liệu",
+      "livestream",
+      "Python",
+      "WebSocket"
+    ],
+    "examples": [
+      "Kiểm tra công cụ và thư viện cần cho DouYin_Spider, chưa cài hay chạy.",
+      "Lập kế hoạch thu thập dữ liệu Douyin trong phạm vi tôi được phép."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "b1e31f3087acdcc22fbb4459b27977559f6cb075c120f21ddb760bdcfd94f91a"
+  },
+  "requiredCapabilities": [
+    "browser [mention-hint]",
+    "docker [mention-hint]",
+    "ffmpeg (optional creator audio-analysis fallback; upstream dy_apis/douyin_creator_api.py:458-469; not installed)",
+    "ffmpeg [mention-hint]",
+    "filesystem-read",
+    "filesystem-write",
+    "git (separate pinned checkout required)",
+    "network (HTTP and WebSocket)",
+    "node >=18 (optional upstream live/challenge flows; not runtime-tested)",
+    "node [mention-hint]",
+    "npm: canvas ^2.11.2 (upstream newsign/package.json; optional flow, not installed)",
+    "npm: jsdom ^25.0.1 (upstream newsign/package.json; optional flow, not installed)",
+    "npm: jsrsasign ^11.1.0 (upstream newsign/package.json; optional flow, not installed)",
+    "npm: sdenv ^0.2.2 (upstream newsign/package.json; optional flow, not installed)",
+    "npm: vm ^0.1.0 (upstream newsign/package.json; optional flow, not installed)",
+    "pip: aiofiles (upstream requirements.txt:1; external, not installed)",
+    "pip: av (upstream requirements.txt:8; external, not installed)",
+    "pip: backports.zstd ; python_version<'3.14' (upstream requirements.txt:28; external, not installed)",
+    "pip: blackboxprotobuf (upstream requirements.txt:27; external, not installed)",
+    "pip: cryptography (upstream requirements.txt:3; external, not installed)",
+    "pip: curl_cffi (upstream requirements.txt:20; external, not installed)",
+    "pip: ecdsa (upstream requirements.txt:4; external, not installed)",
+    "pip: jsbeautifier==2.0.3 (upstream requirements.txt:30; external, not installed)",
+    "pip: loguru (upstream requirements.txt:5; external, not installed)",
+    "pip: lxml (upstream requirements.txt:2; external, not installed)",
+    "pip: opencv-python-headless (upstream requirements.txt:7; external, not installed)",
+    "pip: openpyxl (upstream requirements.txt:6; external, not installed)",
+    "pip: pillow (upstream requirements.txt:9; external, not installed)",
+    "pip: protobuf>=5.27 (upstream requirements.txt:26; external, not installed)",
+    "pip: python-dotenv (upstream requirements.txt:10; external, not installed)",
+    "pip: qrcode (upstream requirements.txt:11; external, not installed)",
+    "pip: requests (upstream requirements.txt:12; external, not installed)",
+    "pip: retry (upstream requirements.txt:13; external, not installed)",
+    "pip: rocksdict==0.3.29 (upstream requirements.txt:29; external, not installed)",
+    "pip: urllib3 (upstream requirements.txt:14; external, not installed)",
+    "pip: websocket-client (upstream requirements.txt:15; external, not installed)",
+    "pip: websockets (upstream requirements.txt:16; external, not installed)",
+    "python >=3.9 (upstream README; Dockerfile uses 3.10; not runtime-tested)",
+    "python [mention-hint]",
+    "react [mention-hint]"
+  ],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-26T19:36:02.180Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "No upstream license file found; GitHub license endpoint returned 404. Upstream content is not redistributed.",
+      "No upstream SKILL.md; core is an original hub-authored adapter, not source-verified.",
+      "Source handles authenticated sessions and supports account writes, direct messages and publishing.",
+      "Source can invoke subprocesses and writes media/logs/databases; dependencies and runtime remain untested.",
+      "Upstream notes a protobuf >=5.27 versus blackboxprotobuf dependency constraint conflict.",
+      "author/group.jpg: binary-file (low; static heuristic, not a verdict)",
+      "author/img.png: binary-file (low; static heuristic, not a verdict)",
+      "author/logo.jpg: binary-file (low; static heuristic, not a verdict)",
+      "author/qq.jpg: binary-file (low; static heuristic, not a verdict)",
+      "author/sponsors/vectrust-dark.png: binary-file (low; static heuristic, not a verdict)",
+      "author/sponsors/vectrust.png: binary-file (low; static heuristic, not a verdict)",
+      "author/wx.png: binary-file (low; static heuristic, not a verdict)",
+      "author/wx_pay.png: binary-file (low; static heuristic, not a verdict)",
+      "author/zfb_pay.jpg: binary-file (low; static heuristic, not a verdict)",
+      "tests/test_live_pk_ws.py:17: base64-blob (medium; static heuristic, not a verdict)",
+      "utils/acrawler_runtime/ac_vm.js:1: base64-blob (medium; static heuristic, not a verdict)",
+      "utils/acrawler_runtime/canvas_actual_exact.json:1: base64-blob (medium; static heuristic, not a verdict)",
+      "utils/acrawler_runtime/run_ac_node.js:138: base64-blob (medium; static heuristic, not a verdict)",
+      "utils/challenge_profile.json:83: base64-blob (medium; static heuristic, not a verdict)"
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "Metadata-only adapter; no upstream code, runtime, README or license text is bundled.",
+      "Complete pinned source tree was inspected; source files are intentionally absent from this package pending license review. See source-audit.json for all omitted paths and hashes.",
+      "Python dependencies, optional Node packages and Docker build tools are documented with source lines; target machine and provider compatibility have not been tested.",
+      "Manual user exception to star/recency filter on 2026-11-27; daily selection rules are unchanged.",
+      "No third-party scripts, tests, installers, sign-in or network account actions were executed."
+    ]
+  }
+}

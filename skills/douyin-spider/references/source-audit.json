@@ -1,0 +1,4516 @@
+{
+  "schemaVersion": 1,
+  "repository": "cv-cat/DouYin_Spider",
+  "commit": "d151f9c2980abc304c1ae4918c2272675cd9e4c2",
+  "checkedAt": "2026-11-26T19:36:02.180Z",
+  "upstreamSkillFound": false,
+  "license": {
+    "status": "unverified",
+    "githubLicense": null,
+    "endpointStatus": 404,
+    "licenseFiles": []
+  },
+  "distribution": {
+    "upstreamFileCount": 0,
+    "reason": "No verified license; upstream code/docs remain in ignored local immutable cache only."
+  },
+  "sourceFiles": [
+    {
+      "path": ".env.example",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "6179a79cdb22bfa4b6bf5b2962f193b3b7780ae3",
+      "size": 459,
+      "sha256": "8d41ad2998a514e3d4e4816c8db96b2fbd8b5b08f6a6c80d4dcaa4dab598d7f3"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "d157817bb5218550ca606b1bd6004d48272fb023",
+      "size": 766,
+      "sha256": "d3b38f2766f7e1a5ab91152c116957e5addedff2b0433ea6caf11552df823b4a"
+    },
+    {
+      "path": "Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "fc33ede3af740f129539188184d289b40c00272a",
+      "size": 343,
+      "sha256": "5a9fa55c453a11d9a4c7d57a73e427e0628cecb9d83f90e01d073ea671d00988"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "59c6348cd25c00d18255ab9360d8d97f4032dc09",
+      "size": 12878,
+      "sha256": "00206dc906685e3bef57f280e718a5b8eb16759b2ff733b1dc764d1b261ece71"
+    },
+    {
+      "path": "author/group.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "e33b417b9573e52d66d25f3f489e822866ecce65",
+      "size": 143281,
+      "sha256": "884a3f52dcc18c3e69fbdf02d309c910a8c221ad5b63e2bf4771d5881161774e"
+    },
+    {
+      "path": "author/img.png",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "60c345af90976231c2bf2683ac2af18017ee480f",
+      "size": 365339,
+      "sha256": "35387d78deb4b4efe2bf18fa478b4795187189341d530e68d99a56d3f59e2306"
+    },
+    {
+      "path": "author/logo.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "8bbd747d2b89f94c5e9133711f89b812e07af076",
+      "size": 43488,
+      "sha256": "360696b0bbee67c6fc560d7cf6b8ae2c1eaf69072b92f25a274190284b423648"
+    },
+    {
+      "path": "author/qq.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "c3aa8510a7382ff13f42953c09740a58d3121a6c",
+      "size": 308636,
+      "sha256": "ed77991468f8dcab0b0bb5be1d38ab985905050bb01fe57d5b67b826f4a9e091"
+    },
+    {
+      "path": "author/sponsors/vectrust-dark.png",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "6efea5781a8b400202e57bd994cf21700c45f39e",
+      "size": 47976,
+      "sha256": "df11c1b606c7a0453c0cb3f410cc5c434ba0c8cd8cbc42cda232364c0c715fe6"
+    },
+    {
+      "path": "author/sponsors/vectrust.png",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "0b14bacbd4d6124df18954f3a2e9010d17232a15",
+      "size": 46862,
+      "sha256": "9609a84a4d2fd76ec8eebaeff25ea89de4143d0bda6cad8fae03555804cff18b"
+    },
+    {
+      "path": "author/wx.png",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "8b80f9e7b592c99a98bc7100752db5c3ab31ce62",
+      "size": 243874,
+      "sha256": "2135a60dd78aeed71ab07d7d8731610a78d82eded909279bc1f08b3e510e9bc9"
+    },
+    {
+      "path": "author/wx_pay.png",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "e175905045257c1a1e1b61a765cb7673cfbc6984",
+      "size": 107048,
+      "sha256": "c63a2f1db0ccfdaff470b2739752c554608fce7ea3e2df19fd8c30525bb339cc"
+    },
+    {
+      "path": "author/zfb_pay.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "e432b7e88d746b48bceadfc9574cb6706dac3e16",
+      "size": 273874,
+      "sha256": "69c00aba0040ef6c94d6ed9df5e819c42995994c153671c8d7caf3e48d62880a"
+    },
+    {
+      "path": "builder/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "5761c8fac5f7019dc366de8f23b0204cce560d15",
+      "size": 112,
+      "sha256": "f5a4789b8054f3534b9d659dbb76b7539d7e83a379b6778d1a26ee8e21986cbc"
+    },
+    {
+      "path": "builder/auth.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "d8c5b1d392c82a080c8753966189744ef97834e4",
+      "size": 65741,
+      "sha256": "fe645ca73dbb324e431f570e30f5022a488ebbad6e551dc3753b51db507b4500"
+    },
+    {
+      "path": "builder/header.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "032b229b1f60096398b6b32a6217803e9383a41d",
+      "size": 9535,
+      "sha256": "62dff4a8b1d232a0cf40d38f4cd39ba1d81c22680674b74c2f02267e302ebc88"
+    },
+    {
+      "path": "builder/params.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "8d1ac64ef88daae0e4d35b72e1ea7a295e1c60c8",
+      "size": 9778,
+      "sha256": "cd578caab527f83fb26c1be4ff41c37dbf1f5ca85d17d3da9550faca9cc6c825"
+    },
+    {
+      "path": "builder/proto.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "843d09405adb8a51f6635d777fe04d4b754ed5c8",
+      "size": 8458,
+      "sha256": "e6b30dac82a6eea211b2563b1449256e345267871095e78c006e73d7e0237023"
+    },
+    {
+      "path": "dy_apis/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "5761c8fac5f7019dc366de8f23b0204cce560d15",
+      "size": 112,
+      "sha256": "f5a4789b8054f3534b9d659dbb76b7539d7e83a379b6778d1a26ee8e21986cbc"
+    },
+    {
+      "path": "dy_apis/douyin_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "67c22059b36b67530bdd80a19d98c8eab04f6c2c",
+      "size": 132370,
+      "sha256": "0e862e1d3ffc72740a355115785ae8138c164c79def9fe489cdf77eb225b1bdc"
+    },
+    {
+      "path": "dy_apis/douyin_creator_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "fb6dd16701a3710b845a55483dfac5730140c03f",
+      "size": 119087,
+      "sha256": "652268ca30614677915d1a8360d5ffa3acc8d4c20bcfc6d6dd961953e870ecef"
+    },
+    {
+      "path": "dy_apis/douyin_im_media.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "ce1d278d25bd06a28b44ef30253edf83dce16ab4",
+      "size": 38838,
+      "sha256": "18fdfdeb7a808f3da816b6a08113a6ff50db749f0f9b55f02c7f69683c7c4902"
+    },
+    {
+      "path": "dy_apis/douyin_recv_msg.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "500f7703bbe71cc4331fdcbb9f605e47533d3b1c",
+      "size": 7163,
+      "sha256": "94b9a3ba638f5cdad8311b3536889b7f59619681c00ad77bf31c2966a8a6f5d3"
+    },
+    {
+      "path": "dy_apis/login_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "fb4872c9d2d711ed046b4d913942b652327c71c6",
+      "size": 175962,
+      "sha256": "82ec14b76f1408739a32501db3e15dc5ea669a1b0566596bbe0a17ea32259663"
+    },
+    {
+      "path": "dy_live/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "df3c9f48fa262c9f9062535da298e61b1060ea1f",
+      "size": 113,
+      "sha256": "ad448fec9b23d9fd7003a15c3877798e7f869ae5695f1781e7c227b2e186c47f"
+    },
+    {
+      "path": "dy_live/muted_messages",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "5827740e53c5635815484e03932d987b4c639290",
+      "size": 2615,
+      "sha256": "3e1648d1122fc35ff4d306d481149ede118ae8921643a05a6b285a4681ee4ec3"
+    },
+    {
+      "path": "dy_live/pk.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "f203a99dceb7edd72b8b9e95a047b462a1e428ab",
+      "size": 7868,
+      "sha256": "32bc45b681ed9a2f0c93b816d27bfb78211c8e3874f4c4de649d5a5b04bdb632"
+    },
+    {
+      "path": "dy_live/protobuf/buf.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "f9b7ccd4c3dff2badf5a0a2add5b624159c0664d",
+      "size": 89,
+      "sha256": "ffb1052298da6baeb0020c05983d318ffdb961449f871c5a3184c929c126de25"
+    },
+    {
+      "path": "dy_live/protobuf/douyin/bizIm/live_pb2.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "f162591542a4de6d12b6189045dfdb5519f885ce",
+      "size": 40431,
+      "sha256": "18dc3cbadc58bc479f7099d140e76a66e5cae227897efea95e2a6ac85790b08f"
+    },
+    {
+      "path": "dy_live/protobuf/douyin/bizIm/webcast/data_pb2.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "a40f9f328ddc830ae4d2e42c3b96b0420542a35b",
+      "size": 651618,
+      "sha256": "049ae5adc2d24cf2fbb043618aa509b52ccd590fe82e6537a170ba7160fbd707"
+    },
+    {
+      "path": "dy_live/protobuf/douyin/bizIm/webcast/im_pb2.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "182c4c046d0480f38e47196ab4bdcaed07c3f2cb",
+      "size": 764331,
+      "sha256": "02ccad6262ccd51fef00bae22c7f020579d69558383b142f30d0addfa830ba52"
+    },
+    {
+      "path": "dy_live/protobuf/douyin/default/im_proto_pb2.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "7bdc5222e740886d29d27dd0c52d1cb4d30ccf35",
+      "size": 347128,
+      "sha256": "a0b68100b7783d8a7a1b5408907488a1bb81c5a8dc31ffbeaa7c5fff11873c9a"
+    },
+    {
+      "path": "dy_live/protobuf/douyin/transport/webcast/im_pb2.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "501b271b5df0e83990f982519f4fd3daf11bd98c",
+      "size": 5942,
+      "sha256": "fd61f9c2ebfb54f9a48030fc7143c7da6303e682e3647c206fdebf9d470b6030"
+    },
+    {
+      "path": "dy_live/protobuf/proto/bizIm/live.proto",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "feba0a695903ebee9e7daf49d2b4ff5b6551a196",
+      "size": 19350,
+      "sha256": "f8dacabb19a710c468e942fca4e7ae3818f25346f1b9b46cce522aec4aa8e839"
+    },
+    {
+      "path": "dy_live/protobuf/proto/bizIm/webcast/data.proto",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "34a131b9afa4fde364b5a05481ccf26dc8f7d7f0",
+      "size": 312131,
+      "sha256": "bb8923257947a8e0eeaf4fa710d5b2058d612ffa53e1606666bd09fcbae73e5b"
+    },
+    {
+      "path": "dy_live/protobuf/proto/bizIm/webcast/im.proto",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "1ffe87b68970488ead05cf70afb4ed1e0b0b3256",
+      "size": 374515,
+      "sha256": "96d766053aa31722221d2d14fdde5b1cd4dec5e68c3063c1fc6c5a4a0a7e011c"
+    },
+    {
+      "path": "dy_live/protobuf/proto/default/im_proto.proto",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "328ad6cf85db75b217a788003f3b28a4d3ff8a8f",
+      "size": 160306,
+      "sha256": "6d0a135874a63835e1194bf4066b84d577932ac28b8f18d5719f086e72df9282"
+    },
+    {
+      "path": "dy_live/protobuf/proto/transport/webcast/im.proto",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "a6adfb8c3a77c8acbb4c179213deaff35c9f43f8",
+      "size": 2550,
+      "sha256": "98a60f0294c6be4f90eab9372b62ed39804cc56543ad1525817accd6a320353e"
+    },
+    {
+      "path": "dy_live/protobuf/webcast_proto_re/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "831c3739b92cf7d59845364238504f577ed7ec26",
+      "size": 69,
+      "sha256": "157d6b3567069048e3751a96e74967e65b933de7d4c37684f33f3f63dbc03a1f"
+    },
+    {
+      "path": "dy_live/protobuf/webcast_proto_re/js2proto.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "e6b4a95008caf16dd62d932dfb7916590530212e",
+      "size": 37063,
+      "sha256": "dca4aa77f8e677ed6f2fe3577f993a3dc0b37b0eb20c64a7f945b35bbac4900a"
+    },
+    {
+      "path": "dy_live/protobuf/webcast_proto_re/jsbeautifier_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "6d81c6bef76b2bfb6eb9cf49da296a3723d1ff3b",
+      "size": 860,
+      "sha256": "2c31734c74a2aceefda329ea6631713e8f5fdc4c63eb776b4a05aa209439423c"
+    },
+    {
+      "path": "dy_live/server.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "b88be01ca48620d433a75d44ed60065b62254bcd",
+      "size": 45124,
+      "sha256": "26326e27c15c711687da40d4c18f208afa5f9fcc2b5b3b4952ac8eb1248e0a11"
+    },
+    {
+      "path": "dy_live/user_db.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "bc0d7cad313579d0d07986e541e854c50bef5181",
+      "size": 11896,
+      "sha256": "4a4d2adf2413b36f978e095419bd0250d75c019f9846b5d4d2e618a4daab6c6c"
+    },
+    {
+      "path": "dy_live/utils/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "f9c286febe07824e4e5baa8039aeff99534814b7",
+      "size": 919,
+      "sha256": "7edf7154a787918aacbb156184a598f2afeaeecaa4c5eeeb36537ade79fbf762"
+    },
+    {
+      "path": "dy_live/utils/compression.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "9e907da5027bf674fa0f5c018f6ed6fca12ba8a5",
+      "size": 2377,
+      "sha256": "d2eee5f82d1e891fe590d502f5daa71a3e356ac8797590b34a11ea9885c737be"
+    },
+    {
+      "path": "dy_live/utils/renderer.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "d412532da4ba34be2a83733b9a1ce391c36228a8",
+      "size": 1400,
+      "sha256": "4d33cb26ba2c982d709ddd3f4afb37f8b20ea336928d65607ef735c2bcdbc268"
+    },
+    {
+      "path": "main.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "5024f6c37383b85811b1e8c1bb28edf9fbcb3666",
+      "size": 8611,
+      "sha256": "c127ff4b5da8915368f7d293b2b470d77e4939b44a90f08d9bdb7bcb7a482b41"
+    },
+    {
+      "path": "newsign/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "6743b764c32020027edce5574df54b5b981d9350",
+      "size": 147,
+      "sha256": "40374b527f847ec59ce89e8541d24113bb365295757822a1da3af7103815e85f"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "78c5a66565100550eedc6a7d37574df1731d3dd0",
+      "size": 95,
+      "sha256": "10eda4a9c059b738567b2292e19fd4d4e80ab4adc714b55864b085c8eb81f23e"
+    },
+    {
+      "path": "quick_publish.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "f66a5c13619fe0feccf550e66b04e93585e92496",
+      "size": 8437,
+      "sha256": "bcf9d303f698911bbb9362b0852977e70044e4cc6c1622e1ef1bdc462cf14888"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "32fffdd8f3d1e90e3b5f69234b94b427c3a03326",
+      "size": 832,
+      "sha256": "5ada5fe1c34b4eec0bca927e239872b0e1b39941b01e58676cd6bba6336e39ce"
+    },
+    {
+      "path": "static/Live.proto",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "49d0f60c1cd12579ad752ac09563fa6f9293d24a",
+      "size": 4885,
+      "sha256": "8fe59811ca20ca0504c7adef9204b3eb0d1d071389937f0acaa9416dd28e2b8d"
+    },
+    {
+      "path": "static/Live_pb2.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "4eb19fea6b71e4bcb53551fca2f07466035e28b5",
+      "size": 9810,
+      "sha256": "e1048045865fc9643e5d23ef36893e0117529efa814e9482c620be99fddb5bce"
+    },
+    {
+      "path": "static/PK.proto",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "f9a572fc8d97e2935db227d0ba56df4a5ca46a7a",
+      "size": 1975,
+      "sha256": "cc7fbe76c3ad5be818ef621d7f6886a27c2b2dfcab200fe323e5c049da919aaf"
+    },
+    {
+      "path": "static/PK_pb2.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "a0de84d3fcf806c371aa85d3cdee4bce57a9a173",
+      "size": 5267,
+      "sha256": "3ac31d17fab2f9fed1bc3dcba3ccf6279c588428f86c22736b88a07df2e799d5"
+    },
+    {
+      "path": "static/Request.proto",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "65d73fc991daed28de1d14f55d03038c3ed83675",
+      "size": 2216,
+      "sha256": "de72e3c80661d41696b42f142d14444fc2363044915c289e45b94f8797fa4913"
+    },
+    {
+      "path": "static/Request_pb2.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "db0a22fb3c4c5beef88d89168c5c669a55359e50",
+      "size": 6118,
+      "sha256": "e47a705ea6f2806dc66101891fca3260609efa0c173475233c523099e42c0c3e"
+    },
+    {
+      "path": "static/Response.proto",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "94116d1b1665d2c6ad2257803c3664c6194e9371",
+      "size": 1179,
+      "sha256": "563f8aeffe6920ce9e1c8559594ed4ee009b3b01f664eab3c15f2177e0046d73"
+    },
+    {
+      "path": "static/Response_pb2.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "1975673fbd50a0ecfd88174bbefd2a7d6d477d23",
+      "size": 3422,
+      "sha256": "fc772772fd7c8e7178fe9e33dd45ff569803351156ef2c58ad936177e32a6192"
+    },
+    {
+      "path": "tests/test_dtrait_profile.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "af65ed8273e630bf498f025d8d0354290bfcab1e",
+      "size": 523,
+      "sha256": "ab1de9c1b7c8750de9f486884ff5b24e92085104785638d8d217e76efb1bd221"
+    },
+    {
+      "path": "tests/test_live_pk_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "49c8b6dd19cb89882efe321418ed735551108bfe",
+      "size": 6642,
+      "sha256": "2b578acb6831782ab375daa13543d114a2d1e89b64b6a74d649f66712ccb0223"
+    },
+    {
+      "path": "tests/test_live_pk_ws.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "b4a09dcfa798cf9c13baf64d0eb7b3187a3c46fc",
+      "size": 9938,
+      "sha256": "389b2f59dbada4a092c7fc02da44271a4a8d10fe83ef4c4924e0a6261c42f1d5"
+    },
+    {
+      "path": "tests/test_live_rank_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "912e2e0702d1cea20c46bde214963553a38a65b1",
+      "size": 3123,
+      "sha256": "9e29a59e4f0aa76688a8ae15fd4b71ad5052471150e702d7cb9606b0ec7c142b"
+    },
+    {
+      "path": "tests/test_search_filters.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "22acabdb09f4581193dd738aea8639f5e26abd2e",
+      "size": 1074,
+      "sha256": "895bb823e107fdf9da434ef167750694807bb624a42ae35c2c2401f1c7f127c9"
+    },
+    {
+      "path": "tests/test_write_dtrait.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "3e73226bb34c3442807f3a531213cd15303f0176",
+      "size": 594,
+      "sha256": "bb8fdcb4e3f64f65d48a024bd962812607c42e34cb69400b1a256ad0c4d2603f"
+    },
+    {
+      "path": "utils/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "5761c8fac5f7019dc366de8f23b0204cce560d15",
+      "size": 112,
+      "sha256": "f5a4789b8054f3534b9d659dbb76b7539d7e83a379b6778d1a26ee8e21986cbc"
+    },
+    {
+      "path": "utils/ab_pure.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "f9e827520c991474ae5318d3d177b25f6541abb2",
+      "size": 13739,
+      "sha256": "2f06f91e5f1332676c60b993a40cdc5525a545b9487493c642b78784f6ecdbf3"
+    },
+    {
+      "path": "utils/acrawler.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "417da4653115303cbab1f14f30a7bb409107185e",
+      "size": 6698,
+      "sha256": "900402e975b3b2aadc6f66d7ac7d07b22bed800003f43ed8bc29ea3c7a82d5ca"
+    },
+    {
+      "path": "utils/acrawler_runtime/ac_vm.js",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "55d585d63fe163b281c31205fd062f2257bceac0",
+      "size": 71725,
+      "sha256": "76bee010ec645500ff8012396694a708c5b38e812d8822544e312485e0002a5b"
+    },
+    {
+      "path": "utils/acrawler_runtime/browser_window_shape.json",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "725750f50bd891c0464a3480a02ffa1b698325b1",
+      "size": 47428,
+      "sha256": "d509e5ac186c04b7450db25ac3740353308eb56e343fe42c45b28dc36521756a"
+    },
+    {
+      "path": "utils/acrawler_runtime/canvas_actual_exact.json",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "788e54129591d243e715bcbe48dedaf35a2ce3eb",
+      "size": 1300,
+      "sha256": "1c099a063a8649c6c01871f3e02e1128f7e1ae7320b193daa03bdf7dbe0123ad"
+    },
+    {
+      "path": "utils/acrawler_runtime/run_ac_node.js",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "7394177c42577dd2902becb150169d8329b21b05",
+      "size": 63767,
+      "sha256": "78bada05309aa130265563b89a040bf20e5f6a9b1dd854638f7e24d819551a45"
+    },
+    {
+      "path": "utils/acrawler_runtime/runner_window_keys_baseline.txt",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "0ac07a3b434a5bbbaf1d30a1bb4b026096f17d22",
+      "size": 3014,
+      "sha256": "089efcc86c70e9844ee7ae788e66a8c6cea17fc797a9fa14f2c88964e9102e11"
+    },
+    {
+      "path": "utils/bd_ticket.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "8ee996e6a8f92916cc6d5b5a96513b8c04f9e7ad",
+      "size": 9540,
+      "sha256": "adcfa6f918e10dd9e35fb61a0c2dc60d89b6471103691a3f0d527e100f47c99b"
+    },
+    {
+      "path": "utils/challenge_profile.json",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "9172d0d79c9e77352365b1a5436e3bfd229b0c9a",
+      "size": 46006,
+      "sha256": "6a3b0d40abb848c1f2bef6a6a7a5a8c96d8647d2c76775bb939f1cb8d0edfd2c"
+    },
+    {
+      "path": "utils/challenge_sign.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "2bd5bdcd0f1f8a33a25114c816f1e79d442c8ba8",
+      "size": 4781,
+      "sha256": "3e0315ac81495a2e4646c912eddd1ff7e8744d5f0fed7b24a80cf82b70ee8547"
+    },
+    {
+      "path": "utils/challenge_template.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "5796776dd8526f007b9fefa552b111c430bccac7",
+      "size": 3341,
+      "sha256": "d83001cd05df2a41b5b54db76450ea30be2d1d3ec6c1a8fc6b97c3ba605ffe41"
+    },
+    {
+      "path": "utils/challenge_template_runner.js",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "afbad4bb2d13f22022c34484cb85f09ddc5dbbbf",
+      "size": 8503,
+      "sha256": "7e51831af71043e07dfaa021e77bd2924540d8a8175a1af9e53698d6c6671753"
+    },
+    {
+      "path": "utils/common_util.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "6c15f1611c08b6cfb9e50e444eb6dbcf73eb7051",
+      "size": 4372,
+      "sha256": "7b94da9ee30691c869668df9ef89cfb3308454b6787cf9606e9c020ab23ad127"
+    },
+    {
+      "path": "utils/data_util.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "b37446a1a180527562245cb38020b896c77f5cd8",
+      "size": 8442,
+      "sha256": "9ab05083d9c45d948e629f9c12770b0a950cbaf073a48a306ad5abe2e9ca546c"
+    },
+    {
+      "path": "utils/dtrait.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "29d8db263d32656413188d46b8df8f1c18692e36",
+      "size": 10850,
+      "sha256": "b78acdf46b5434a841f5555270d49c4bdae5551b3d504cb6e63049d0842a7031"
+    },
+    {
+      "path": "utils/dtrait_features.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "5268b6d8a21db1dc8f07d579bf114b52c4303da7",
+      "size": 8195,
+      "sha256": "d677ef5bad314cffeaaad90897b732cc9c267cb7fd9f8a8cd978b16f12778e06"
+    },
+    {
+      "path": "utils/dtrait_profile.json",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "13375cc6fe90f7fb9eafdcce3665e4c027eb388c",
+      "size": 1495,
+      "sha256": "70cc053b12f85ddf3c2f47410c3e0be0885fce91f091632ab84f060dcdd3f3a4"
+    },
+    {
+      "path": "utils/dtrait_profile.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "6be90417746cad58a32b66c70d9ead5df99f180a",
+      "size": 1693,
+      "sha256": "ada3cb7d64754834ae9f79b4fe33dde3a3b03ac56be8eefafddebe0d08dcfc65"
+    },
+    {
+      "path": "utils/dy_util.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "9eb02382fdeb03a88987957f917622f12e47d316",
+      "size": 8917,
+      "sha256": "5ba84832dd04b90fccc0b1eca2fef399b265a456365a189e662aa54320c35dc3"
+    },
+    {
+      "path": "utils/fingerprint.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "b94bd24d82d220781fd1960dc352fb2104fab193",
+      "size": 13065,
+      "sha256": "b9e565cacc9b6debce202b34cb3b85c34ce0a9d6552d0974b78143d4d989184d"
+    },
+    {
+      "path": "utils/http_client.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "bab71f3a8d16314fb2ad22898878192be391bb64",
+      "size": 9669,
+      "sha256": "ba1ea8e341080e4048ca614dd6719cd8a9077a34d5f8cad6052fd162ee1a32f4"
+    },
+    {
+      "path": "utils/imagex_sign.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "3057f39bdb920b3371fe43acf7dc6a7d86389afe",
+      "size": 4282,
+      "sha256": "1c67bf08f2bffa7860e35dcd98cbfe24a55175551fb755238a0917fca6e243db"
+    },
+    {
+      "path": "utils/mstoken.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "68318c9fcd87fee347c8717d50536213757b3d5d",
+      "size": 15473,
+      "sha256": "2aa2170efc2caf0a55884119c704a6fb06871772679bac10d5c728d86013ef23"
+    },
+    {
+      "path": "utils/mstoken_common_profile.json",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "07422846e678b3591e290b35fb9f3a0eb60f1a38",
+      "size": 10228,
+      "sha256": "46735a398e773cf545052f0a282b1b9214e59bcc06a6b3dd779aa4b12dc085ce"
+    },
+    {
+      "path": "utils/mstoken_profile.json",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "f70faffaa670c5bf2fcf2291692148fcc385b9e1",
+      "size": 8247,
+      "sha256": "ad07273b9f8d432674e744281787eee7dca2fb79d8fbbb0e114e6b3465f42415"
+    },
+    {
+      "path": "utils/passport.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "7ca538d6da2e5ab6e1e0459087c82efe6ebbf4c8",
+      "size": 7893,
+      "sha256": "ed13b343d1442a90f6fa69d54399b6327587ba01549ead0432e3514573f42c3f"
+    },
+    {
+      "path": "utils/secsdk_web_sign.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "1b5d0633037fb3cc1fdfaf7d7f5910f149591c78",
+      "size": 7842,
+      "sha256": "81d1ec65baedfafff2e45c959f716653cbf05865b13cdd82693a9db49d2057c8"
+    },
+    {
+      "path": "utils/sm3.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "7419bf223c0ab1bd75ee5b96042cf0ffb626b360",
+      "size": 2459,
+      "sha256": "1f2eb7c0e0b03e2b44e4fc3ec921348acb87270b9ed66887c635c8855dba7537"
+    },
+    {
+      "path": "utils/strdata_pure.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "da96b2a7710347950c86b8c3f243952d7bafb443",
+      "size": 6806,
+      "sha256": "5382337b30b192174914e71ecfbacc9e2a196730bf20579627c1cf2ec984f276"
+    },
+    {
+      "path": "utils/xbogus_pure.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "fb92ffc0725b072682a113d856b19394419135c5",
+      "size": 2771,
+      "sha256": "be6445c18a5c1d14b0c353ce1a63e428f68651c5238ea8fbaa48e2eca70e4b46"
+    }
+  ],
+  "staticScan": {
+    "status": "warning",
+    "high": 0,
+    "medium": 5,
+    "findings": [
+      {
+        "rule": "binary-file",
+        "severity": "low",
+        "file": "author/group.jpg"
+      },
+      {
+        "rule": "binary-file",
+        "severity": "low",
+        "file": "author/img.png"
+      },
+      {
+        "rule": "binary-file",
+        "severity": "low",
+        "file": "author/logo.jpg"
+      },
+      {
+        "rule": "binary-file",
+        "severity": "low",
+        "file": "author/qq.jpg"
+      },
+      {
+        "rule": "binary-file",
+        "severity": "low",
+        "file": "author/sponsors/vectrust-dark.png"
+      },
+      {
+        "rule": "binary-file",
+        "severity": "low",
+        "file": "author/sponsors/vectrust.png"
+      },
+      {
+        "rule": "binary-file",
+        "severity": "low",
+        "file": "author/wx.png"
+      },
+      {
+        "rule": "binary-file",
+        "severity": "low",
+        "file": "author/wx_pay.png"
+      },
+      {
+        "rule": "binary-file",
+        "severity": "low",
+        "file": "author/zfb_pay.jpg"
+      },
+      {
+        "rule": "base64-blob",
+        "severity": "medium",
+        "file": "tests/test_live_pk_ws.py",
+        "line": 17
+      },
+      {
+        "rule": "base64-blob",
+        "severity": "medium",
+        "file": "utils/acrawler_runtime/ac_vm.js",
+        "line": 1
+      },
+      {
+        "rule": "base64-blob",
+        "severity": "medium",
+        "file": "utils/acrawler_runtime/canvas_actual_exact.json",
+        "line": 1
+      },
+      {
+        "rule": "base64-blob",
+        "severity": "medium",
+        "file": "utils/acrawler_runtime/run_ac_node.js",
+        "line": 138
+      },
+      {
+        "rule": "base64-blob",
+        "severity": "medium",
+        "file": "utils/challenge_profile.json",
+        "line": 83
+      }
+    ],
+    "scope": "Complete pinned tree; inert byte scanning only; excerpts omitted to avoid leaking source secrets.",
+    "limitations": "Rules are heuristic; generated blobs, binary assets and indirect dependencies are not behaviorally validated."
+  },
+  "requirements": {
+    "python": [
+      {
+        "spec": "aiofiles",
+        "source": "requirements.txt",
+        "line": 1
+      },
+      {
+        "spec": "lxml",
+        "source": "requirements.txt",
+        "line": 2
+      },
+      {
+        "spec": "cryptography",
+        "source": "requirements.txt",
+        "line": 3
+      },
+      {
+        "spec": "ecdsa",
+        "source": "requirements.txt",
+        "line": 4
+      },
+      {
+        "spec": "loguru",
+        "source": "requirements.txt",
+        "line": 5
+      },
+      {
+        "spec": "openpyxl",
+        "source": "requirements.txt",
+        "line": 6
+      },
+      {
+        "spec": "opencv-python-headless",
+        "source": "requirements.txt",
+        "line": 7
+      },
+      {
+        "spec": "av",
+        "source": "requirements.txt",
+        "line": 8
+      },
+      {
+        "spec": "pillow",
+        "source": "requirements.txt",
+        "line": 9
+      },
+      {
+        "spec": "python-dotenv",
+        "source": "requirements.txt",
+        "line": 10
+      },
+      {
+        "spec": "qrcode",
+        "source": "requirements.txt",
+        "line": 11
+      },
+      {
+        "spec": "requests",
+        "source": "requirements.txt",
+        "line": 12
+      },
+      {
+        "spec": "retry",
+        "source": "requirements.txt",
+        "line": 13
+      },
+      {
+        "spec": "urllib3",
+        "source": "requirements.txt",
+        "line": 14
+      },
+      {
+        "spec": "websocket-client",
+        "source": "requirements.txt",
+        "line": 15
+      },
+      {
+        "spec": "websockets",
+        "source": "requirements.txt",
+        "line": 16
+      },
+      {
+        "spec": "curl_cffi",
+        "source": "requirements.txt",
+        "line": 20
+      },
+      {
+        "spec": "protobuf>=5.27",
+        "source": "requirements.txt",
+        "line": 26
+      },
+      {
+        "spec": "blackboxprotobuf",
+        "source": "requirements.txt",
+        "line": 27
+      },
+      {
+        "spec": "backports.zstd ; python_version<'3.14'",
+        "source": "requirements.txt",
+        "line": 28
+      },
+      {
+        "spec": "rocksdict==0.3.29",
+        "source": "requirements.txt",
+        "line": 29
+      },
+      {
+        "spec": "jsbeautifier==2.0.3",
+        "source": "requirements.txt",
+        "line": 30
+      }
+    ],
+    "node": [
+      {
+        "name": "canvas",
+        "version": "^2.11.2",
+        "source": "newsign/package.json"
+      },
+      {
+        "name": "jsdom",
+        "version": "^25.0.1",
+        "source": "newsign/package.json"
+      },
+      {
+        "name": "jsrsasign",
+        "version": "^11.1.0",
+        "source": "newsign/package.json"
+      },
+      {
+        "name": "sdenv",
+        "version": "^0.2.2",
+        "source": "newsign/package.json"
+      },
+      {
+        "name": "vm",
+        "version": "^0.1.0",
+        "source": "newsign/package.json"
+      }
+    ],
+    "detected": [
+      {
+        "name": "filesystem-read",
+        "kind": "agent-capability",
+        "status": "mention-hint",
+        "installerId": null,
+        "evidence": [
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/js2proto.py",
+            "line": 966
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 91
+          },
+          {
+            "file": "utils/acrawler_runtime/run_ac_node.js",
+            "line": 565
+          },
+          {
+            "file": "utils/challenge_template_runner.js",
+            "line": 18
+          }
+        ]
+      },
+      {
+        "name": "filesystem-write",
+        "kind": "agent-capability",
+        "status": "mention-hint",
+        "installerId": null,
+        "evidence": [
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/js2proto.py",
+            "line": 535
+          }
+        ]
+      },
+      {
+        "name": "react",
+        "kind": "framework",
+        "status": "mention-hint",
+        "installerId": null,
+        "evidence": [
+          {
+            "file": "utils/acrawler_runtime/run_ac_node.js",
+            "line": 487
+          }
+        ]
+      },
+      {
+        "name": "__future__",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "quick_publish.py",
+            "line": 10
+          },
+          {
+            "file": "utils/acrawler.py",
+            "line": 15
+          }
+        ]
+      },
+      {
+        "name": "argparse",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/js2proto.py",
+            "line": 36
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 1
+          }
+        ]
+      },
+      {
+        "name": "av",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 640
+          }
+        ]
+      },
+      {
+        "name": "backports",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_live/utils/compression.py",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "name": "base64",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "builder/auth.py",
+            "line": 1
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 1
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 16
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 435
+          },
+          {
+            "file": "utils/bd_ticket.py",
+            "line": 12
+          },
+          {
+            "file": "utils/challenge_sign.py",
+            "line": 16
+          },
+          {
+            "file": "utils/dtrait.py",
+            "line": 22
+          },
+          {
+            "file": "utils/dtrait_features.py",
+            "line": 18
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 7
+          },
+          {
+            "file": "utils/fingerprint.py",
+            "line": 10
+          },
+          {
+            "file": "utils/passport.py",
+            "line": 31
+          },
+          {
+            "file": "utils/passport.py",
+            "line": 99
+          }
+        ]
+      },
+      {
+        "name": "blackboxprotobuf",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 2176
+          }
+        ]
+      },
+      {
+        "name": "builder",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "builder/auth.py",
+            "line": 969
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 1113
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 1182
+          },
+          {
+            "file": "builder/params.py",
+            "line": 1
+          },
+          {
+            "file": "builder/proto.py",
+            "line": 13
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 22
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 23
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 24
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 25
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 2721
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 45
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 46
+          },
+          {
+            "file": "dy_apis/douyin_im_media.py",
+            "line": 24
+          },
+          {
+            "file": "dy_apis/douyin_im_media.py",
+            "line": 25
+          },
+          {
+            "file": "dy_apis/douyin_recv_msg.py",
+            "line": 9
+          },
+          {
+            "file": "dy_apis/douyin_recv_msg.py",
+            "line": 10
+          },
+          {
+            "file": "dy_apis/douyin_recv_msg.py",
+            "line": 11
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 33
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 34
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 35
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 30
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 31
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 32
+          },
+          {
+            "file": "quick_publish.py",
+            "line": 20
+          },
+          {
+            "file": "tests/test_write_dtrait.py",
+            "line": 1
+          },
+          {
+            "file": "utils/common_util.py",
+            "line": 12
+          },
+          {
+            "file": "utils/common_util.py",
+            "line": 55
+          },
+          {
+            "file": "utils/common_util.py",
+            "line": 61
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 189
+          }
+        ]
+      },
+      {
+        "name": "collections",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 37
+          },
+          {
+            "file": "dy_live/pk.py",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "name": "compression",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_live/utils/compression.py",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "name": "concurrent",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 38
+          }
+        ]
+      },
+      {
+        "name": "contextlib",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 39
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 2
+          },
+          {
+            "file": "tests/test_live_pk_ws.py",
+            "line": 1
+          },
+          {
+            "file": "utils/http_client.py",
+            "line": 31
+          }
+        ]
+      },
+      {
+        "name": "copy",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "tests/test_live_pk_api.py",
+            "line": 1
+          },
+          {
+            "file": "utils/mstoken.py",
+            "line": 4
+          }
+        ]
+      },
+      {
+        "name": "cryptography",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "utils/challenge_sign.py",
+            "line": 22
+          },
+          {
+            "file": "utils/dtrait.py",
+            "line": 28
+          },
+          {
+            "file": "utils/fingerprint.py",
+            "line": 17
+          }
+        ]
+      },
+      {
+        "name": "curl_cffi",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "utils/http_client.py",
+            "line": 27
+          },
+          {
+            "file": "utils/http_client.py",
+            "line": 28
+          },
+          {
+            "file": "utils/http_client.py",
+            "line": 29
+          },
+          {
+            "file": "utils/http_client.py",
+            "line": 30
+          },
+          {
+            "file": "utils/http_client.py",
+            "line": 49
+          }
+        ]
+      },
+      {
+        "name": "cv2",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 394
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 417
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 485
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 495
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 535
+          },
+          {
+            "file": "dy_apis/douyin_im_media.py",
+            "line": 538
+          }
+        ]
+      },
+      {
+        "name": "dataclasses",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/js2proto.py",
+            "line": 43
+          }
+        ]
+      },
+      {
+        "name": "datetime",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 17
+          },
+          {
+            "file": "dy_live/utils/__init__.py",
+            "line": 1
+          }
+        ]
+      },
+      {
+        "name": "dotenv",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "builder/auth.py",
+            "line": 280
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 393
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 1310
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 3423
+          },
+          {
+            "file": "quick_publish.py",
+            "line": 18
+          },
+          {
+            "file": "utils/common_util.py",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "name": "dy_apis",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "builder/auth.py",
+            "line": 9
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 337
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 346
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 359
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 466
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 490
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 901
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 2361
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 2376
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 2412
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 2433
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 2484
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 2503
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 2523
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 2537
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 2621
+          },
+          {
+            "file": "dy_apis/douyin_im_media.py",
+            "line": 29
+          },
+          {
+            "file": "dy_apis/douyin_recv_msg.py",
+            "line": 8
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 29
+          },
+          {
+            "file": "main.py",
+            "line": 6
+          },
+          {
+            "file": "quick_publish.py",
+            "line": 21
+          },
+          {
+            "file": "tests/test_live_pk_api.py",
+            "line": 6
+          },
+          {
+            "file": "tests/test_live_rank_api.py",
+            "line": 5
+          },
+          {
+            "file": "tests/test_search_filters.py",
+            "line": 4
+          }
+        ]
+      },
+      {
+        "name": "dy_live",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_live/server.py",
+            "line": 23
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 24
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 25
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 26
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 28
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 36
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 37
+          },
+          {
+            "file": "dy_live/user_db.py",
+            "line": 10
+          },
+          {
+            "file": "dy_live/user_db.py",
+            "line": 11
+          },
+          {
+            "file": "dy_live/user_db.py",
+            "line": 12
+          },
+          {
+            "file": "dy_live/user_db.py",
+            "line": 317
+          },
+          {
+            "file": "dy_live/utils/renderer.py",
+            "line": 3
+          },
+          {
+            "file": "dy_live/utils/renderer.py",
+            "line": 4
+          },
+          {
+            "file": "tests/test_live_pk_ws.py",
+            "line": 8
+          },
+          {
+            "file": "tests/test_live_pk_ws.py",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "name": "ecdsa",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "utils/bd_ticket.py",
+            "line": 20
+          },
+          {
+            "file": "utils/bd_ticket.py",
+            "line": 21
+          },
+          {
+            "file": "utils/passport.py",
+            "line": 35
+          }
+        ]
+      },
+      {
+        "name": "enum",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "builder/header.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 13
+          }
+        ]
+      },
+      {
+        "name": "google",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 15
+          },
+          {
+            "file": "dy_live/pk.py",
+            "line": 8
+          },
+          {
+            "file": "dy_live/protobuf/douyin/bizIm/live_pb2.py",
+            "line": 2
+          },
+          {
+            "file": "dy_live/protobuf/douyin/bizIm/live_pb2.py",
+            "line": 3
+          },
+          {
+            "file": "dy_live/protobuf/douyin/bizIm/live_pb2.py",
+            "line": 4
+          },
+          {
+            "file": "dy_live/protobuf/douyin/bizIm/live_pb2.py",
+            "line": 5
+          },
+          {
+            "file": "dy_live/protobuf/douyin/bizIm/webcast/data_pb2.py",
+            "line": 2
+          },
+          {
+            "file": "dy_live/protobuf/douyin/bizIm/webcast/data_pb2.py",
+            "line": 3
+          },
+          {
+            "file": "dy_live/protobuf/douyin/bizIm/webcast/data_pb2.py",
+            "line": 4
+          },
+          {
+            "file": "dy_live/protobuf/douyin/bizIm/webcast/data_pb2.py",
+            "line": 5
+          },
+          {
+            "file": "dy_live/protobuf/douyin/bizIm/webcast/im_pb2.py",
+            "line": 2
+          },
+          {
+            "file": "dy_live/protobuf/douyin/bizIm/webcast/im_pb2.py",
+            "line": 3
+          },
+          {
+            "file": "dy_live/protobuf/douyin/bizIm/webcast/im_pb2.py",
+            "line": 4
+          },
+          {
+            "file": "dy_live/protobuf/douyin/bizIm/webcast/im_pb2.py",
+            "line": 5
+          },
+          {
+            "file": "dy_live/protobuf/douyin/default/im_proto_pb2.py",
+            "line": 2
+          },
+          {
+            "file": "dy_live/protobuf/douyin/default/im_proto_pb2.py",
+            "line": 3
+          },
+          {
+            "file": "dy_live/protobuf/douyin/default/im_proto_pb2.py",
+            "line": 4
+          },
+          {
+            "file": "dy_live/protobuf/douyin/default/im_proto_pb2.py",
+            "line": 5
+          },
+          {
+            "file": "dy_live/protobuf/douyin/transport/webcast/im_pb2.py",
+            "line": 2
+          },
+          {
+            "file": "dy_live/protobuf/douyin/transport/webcast/im_pb2.py",
+            "line": 3
+          },
+          {
+            "file": "dy_live/protobuf/douyin/transport/webcast/im_pb2.py",
+            "line": 4
+          },
+          {
+            "file": "dy_live/protobuf/douyin/transport/webcast/im_pb2.py",
+            "line": 5
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 22
+          },
+          {
+            "file": "dy_live/user_db.py",
+            "line": 7
+          },
+          {
+            "file": "dy_live/user_db.py",
+            "line": 8
+          },
+          {
+            "file": "dy_live/user_db.py",
+            "line": 9
+          },
+          {
+            "file": "dy_live/user_db.py",
+            "line": 316
+          },
+          {
+            "file": "dy_live/utils/__init__.py",
+            "line": 5
+          },
+          {
+            "file": "dy_live/utils/__init__.py",
+            "line": 6
+          },
+          {
+            "file": "static/Live_pb2.py",
+            "line": 5
+          },
+          {
+            "file": "static/Live_pb2.py",
+            "line": 6
+          },
+          {
+            "file": "static/Live_pb2.py",
+            "line": 7
+          },
+          {
+            "file": "static/Live_pb2.py",
+            "line": 8
+          },
+          {
+            "file": "static/PK_pb2.py",
+            "line": 6
+          },
+          {
+            "file": "static/PK_pb2.py",
+            "line": 7
+          },
+          {
+            "file": "static/PK_pb2.py",
+            "line": 8
+          },
+          {
+            "file": "static/PK_pb2.py",
+            "line": 9
+          },
+          {
+            "file": "static/Request_pb2.py",
+            "line": 7
+          },
+          {
+            "file": "static/Request_pb2.py",
+            "line": 8
+          },
+          {
+            "file": "static/Request_pb2.py",
+            "line": 9
+          },
+          {
+            "file": "static/Request_pb2.py",
+            "line": 10
+          },
+          {
+            "file": "static/Request_pb2.py",
+            "line": 11
+          },
+          {
+            "file": "static/Response_pb2.py",
+            "line": 7
+          },
+          {
+            "file": "static/Response_pb2.py",
+            "line": 8
+          },
+          {
+            "file": "static/Response_pb2.py",
+            "line": 9
+          },
+          {
+            "file": "static/Response_pb2.py",
+            "line": 10
+          },
+          {
+            "file": "static/Response_pb2.py",
+            "line": 11
+          }
+        ]
+      },
+      {
+        "name": "gzip",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_live/server.py",
+            "line": 3
+          },
+          {
+            "file": "tests/test_live_pk_ws.py",
+            "line": 2
+          }
+        ]
+      },
+      {
+        "name": "hashlib",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "builder/auth.py",
+            "line": 3
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 2
+          },
+          {
+            "file": "dy_apis/douyin_recv_msg.py",
+            "line": 1
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 18
+          },
+          {
+            "file": "dy_live/user_db.py",
+            "line": 1
+          },
+          {
+            "file": "utils/bd_ticket.py",
+            "line": 13
+          },
+          {
+            "file": "utils/challenge_sign.py",
+            "line": 17
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 1
+          },
+          {
+            "file": "utils/fingerprint.py",
+            "line": 11
+          },
+          {
+            "file": "utils/imagex_sign.py",
+            "line": 16
+          },
+          {
+            "file": "utils/passport.py",
+            "line": 100
+          },
+          {
+            "file": "utils/secsdk_web_sign.py",
+            "line": 53
+          },
+          {
+            "file": "utils/xbogus_pure.py",
+            "line": 4
+          }
+        ]
+      },
+      {
+        "name": "hmac",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 19
+          },
+          {
+            "file": "utils/bd_ticket.py",
+            "line": 14
+          },
+          {
+            "file": "utils/imagex_sign.py",
+            "line": 17
+          },
+          {
+            "file": "utils/passport.py",
+            "line": 101
+          }
+        ]
+      },
+      {
+        "name": "http",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "builder/auth.py",
+            "line": 2
+          }
+        ]
+      },
+      {
+        "name": "importlib",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_live/server.py",
+            "line": 4
+          }
+        ]
+      },
+      {
+        "name": "io",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 22
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 331
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 15
+          },
+          {
+            "file": "tests/test_live_pk_ws.py",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "name": "itertools",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 3117
+          }
+        ]
+      },
+      {
+        "name": "jsbeautifier",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/js2proto.py",
+            "line": 546
+          },
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/jsbeautifier_test.py",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "name": "json",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "builder/auth.py",
+            "line": 4
+          },
+          {
+            "file": "builder/proto.py",
+            "line": 6
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 3
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 23
+          },
+          {
+            "file": "dy_apis/douyin_im_media.py",
+            "line": 13
+          },
+          {
+            "file": "dy_apis/douyin_recv_msg.py",
+            "line": 2
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 20
+          },
+          {
+            "file": "dy_live/utils/__init__.py",
+            "line": 2
+          },
+          {
+            "file": "main.py",
+            "line": 2
+          },
+          {
+            "file": "quick_publish.py",
+            "line": 12
+          },
+          {
+            "file": "utils/acrawler.py",
+            "line": 17
+          },
+          {
+            "file": "utils/bd_ticket.py",
+            "line": 15
+          },
+          {
+            "file": "utils/challenge_sign.py",
+            "line": 18
+          },
+          {
+            "file": "utils/challenge_template.py",
+            "line": 24
+          },
+          {
+            "file": "utils/data_util.py",
+            "line": 1
+          },
+          {
+            "file": "utils/dtrait.py",
+            "line": 23
+          },
+          {
+            "file": "utils/dtrait_profile.py",
+            "line": 10
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 5
+          },
+          {
+            "file": "utils/fingerprint.py",
+            "line": 12
+          },
+          {
+            "file": "utils/mstoken.py",
+            "line": 5
+          },
+          {
+            "file": "utils/passport.py",
+            "line": 32
+          },
+          {
+            "file": "utils/strdata_pure.py",
+            "line": 23
+          }
+        ]
+      },
+      {
+        "name": "loguru",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 14
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 43
+          },
+          {
+            "file": "dy_apis/douyin_im_media.py",
+            "line": 22
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 31
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 16
+          },
+          {
+            "file": "main.py",
+            "line": 4
+          },
+          {
+            "file": "utils/data_util.py",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "name": "lxml",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 13
+          }
+        ]
+      },
+      {
+        "name": "math",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 24
+          },
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/js2proto.py",
+            "line": 40
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 5
+          },
+          {
+            "file": "utils/dtrait_features.py",
+            "line": 19
+          },
+          {
+            "file": "utils/fingerprint.py",
+            "line": 13
+          }
+        ]
+      },
+      {
+        "name": "openpyxl",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "utils/data_util.py",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "name": "os",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "builder/auth.py",
+            "line": 5
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 474
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 25
+          },
+          {
+            "file": "dy_apis/douyin_im_media.py",
+            "line": 14
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 21
+          },
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/js2proto.py",
+            "line": 37
+          },
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/jsbeautifier_test.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 6
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 14
+          },
+          {
+            "file": "dy_live/user_db.py",
+            "line": 2
+          },
+          {
+            "file": "dy_live/utils/compression.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/utils/compression.py",
+            "line": 74
+          },
+          {
+            "file": "main.py",
+            "line": 3
+          },
+          {
+            "file": "quick_publish.py",
+            "line": 13
+          },
+          {
+            "file": "utils/ab_pure.py",
+            "line": 6
+          },
+          {
+            "file": "utils/acrawler.py",
+            "line": 18
+          },
+          {
+            "file": "utils/challenge_sign.py",
+            "line": 19
+          },
+          {
+            "file": "utils/challenge_template.py",
+            "line": 25
+          },
+          {
+            "file": "utils/common_util.py",
+            "line": 1
+          },
+          {
+            "file": "utils/data_util.py",
+            "line": 2
+          },
+          {
+            "file": "utils/dtrait.py",
+            "line": 24
+          },
+          {
+            "file": "utils/dtrait_profile.py",
+            "line": 11
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 2
+          },
+          {
+            "file": "utils/fingerprint.py",
+            "line": 14
+          },
+          {
+            "file": "utils/http_client.py",
+            "line": 32
+          },
+          {
+            "file": "utils/mstoken.py",
+            "line": 6
+          },
+          {
+            "file": "utils/strdata_pure.py",
+            "line": 24
+          }
+        ]
+      },
+      {
+        "name": "pathlib",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 4
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 17
+          },
+          {
+            "file": "dy_live/utils/compression.py",
+            "line": 75
+          },
+          {
+            "file": "quick_publish.py",
+            "line": 15
+          },
+          {
+            "file": "utils/acrawler.py",
+            "line": 19
+          },
+          {
+            "file": "utils/dtrait_profile.py",
+            "line": 12
+          }
+        ]
+      },
+      {
+        "name": "PIL",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 332
+          }
+        ]
+      },
+      {
+        "name": "pprint",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/js2proto.py",
+            "line": 44
+          }
+        ]
+      },
+      {
+        "name": "qrcode",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 3413
+          }
+        ]
+      },
+      {
+        "name": "random",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "builder/proto.py",
+            "line": 7
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 26
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 22
+          },
+          {
+            "file": "utils/ab_pure.py",
+            "line": 4
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 6
+          },
+          {
+            "file": "utils/mstoken.py",
+            "line": 7
+          },
+          {
+            "file": "utils/strdata_pure.py",
+            "line": 25
+          },
+          {
+            "file": "utils/xbogus_pure.py",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "name": "re",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 5
+          },
+          {
+            "file": "dy_apis/douyin_im_media.py",
+            "line": 15
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 23
+          },
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/js2proto.py",
+            "line": 38
+          },
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/jsbeautifier_test.py",
+            "line": 2
+          },
+          {
+            "file": "dy_live/utils/renderer.py",
+            "line": 1
+          },
+          {
+            "file": "utils/ab_pure.py",
+            "line": 5
+          },
+          {
+            "file": "utils/data_util.py",
+            "line": 3
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 3
+          },
+          {
+            "file": "utils/http_client.py",
+            "line": 33
+          },
+          {
+            "file": "utils/mstoken.py",
+            "line": 8
+          }
+        ]
+      },
+      {
+        "name": "requests",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "utils/data_util.py",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "name": "retry",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "utils/data_util.py",
+            "line": 8
+          }
+        ]
+      },
+      {
+        "name": "rocksdict",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_live/user_db.py",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "name": "secrets",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "builder/auth.py",
+            "line": 163
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 24
+          },
+          {
+            "file": "utils/fingerprint.py",
+            "line": 15
+          }
+        ]
+      },
+      {
+        "name": "shutil",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 27
+          },
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/js2proto.py",
+            "line": 45
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 7
+          },
+          {
+            "file": "dy_live/user_db.py",
+            "line": 315
+          },
+          {
+            "file": "utils/acrawler.py",
+            "line": 20
+          }
+        ]
+      },
+      {
+        "name": "static",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "builder/proto.py",
+            "line": 12
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 21
+          },
+          {
+            "file": "dy_apis/douyin_recv_msg.py",
+            "line": 12
+          },
+          {
+            "file": "dy_live/pk.py",
+            "line": 10
+          },
+          {
+            "file": "tests/test_live_pk_ws.py",
+            "line": 10
+          }
+        ]
+      },
+      {
+        "name": "string",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 28
+          }
+        ]
+      },
+      {
+        "name": "subprocess",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 29
+          },
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/js2proto.py",
+            "line": 936
+          },
+          {
+            "file": "utils/acrawler.py",
+            "line": 21
+          },
+          {
+            "file": "utils/challenge_template.py",
+            "line": 26
+          }
+        ]
+      },
+      {
+        "name": "sys",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/js2proto.py",
+            "line": 39
+          },
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/jsbeautifier_test.py",
+            "line": 3
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 8
+          },
+          {
+            "file": "dy_live/utils/compression.py",
+            "line": 2
+          },
+          {
+            "file": "quick_publish.py",
+            "line": 14
+          }
+        ]
+      },
+      {
+        "name": "tarfile",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_live/utils/compression.py",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "name": "tempfile",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 30
+          },
+          {
+            "file": "dy_apis/douyin_im_media.py",
+            "line": 16
+          },
+          {
+            "file": "utils/challenge_template.py",
+            "line": 27
+          }
+        ]
+      },
+      {
+        "name": "threading",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 31
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 9
+          },
+          {
+            "file": "utils/http_client.py",
+            "line": 34
+          }
+        ]
+      },
+      {
+        "name": "time",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "builder/auth.py",
+            "line": 6
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 6
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 32
+          },
+          {
+            "file": "dy_apis/douyin_im_media.py",
+            "line": 17
+          },
+          {
+            "file": "dy_apis/douyin_recv_msg.py",
+            "line": 3
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 25
+          },
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/js2proto.py",
+            "line": 41
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 10
+          },
+          {
+            "file": "utils/ab_pure.py",
+            "line": 7
+          },
+          {
+            "file": "utils/acrawler.py",
+            "line": 22
+          },
+          {
+            "file": "utils/bd_ticket.py",
+            "line": 16
+          },
+          {
+            "file": "utils/data_util.py",
+            "line": 4
+          },
+          {
+            "file": "utils/dtrait.py",
+            "line": 25
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 4
+          },
+          {
+            "file": "utils/imagex_sign.py",
+            "line": 18
+          },
+          {
+            "file": "utils/mstoken.py",
+            "line": 9
+          },
+          {
+            "file": "utils/secsdk_web_sign.py",
+            "line": 54
+          },
+          {
+            "file": "utils/strdata_pure.py",
+            "line": 26
+          }
+        ]
+      },
+      {
+        "name": "traceback",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 7
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 11
+          }
+        ]
+      },
+      {
+        "name": "types",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_live/utils/__init__.py",
+            "line": 3
+          },
+          {
+            "file": "tests/test_live_pk_api.py",
+            "line": 3
+          },
+          {
+            "file": "tests/test_live_pk_ws.py",
+            "line": 5
+          },
+          {
+            "file": "tests/test_live_rank_api.py",
+            "line": 2
+          },
+          {
+            "file": "tests/test_search_filters.py",
+            "line": 1
+          }
+        ]
+      },
+      {
+        "name": "typing",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/js2proto.py",
+            "line": 42
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 12
+          },
+          {
+            "file": "dy_live/user_db.py",
+            "line": 3
+          },
+          {
+            "file": "quick_publish.py",
+            "line": 16
+          },
+          {
+            "file": "utils/acrawler.py",
+            "line": 23
+          }
+        ]
+      },
+      {
+        "name": "unittest",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "tests/test_live_pk_api.py",
+            "line": 2
+          },
+          {
+            "file": "tests/test_live_pk_api.py",
+            "line": 4
+          },
+          {
+            "file": "tests/test_live_pk_ws.py",
+            "line": 4
+          },
+          {
+            "file": "tests/test_live_pk_ws.py",
+            "line": 6
+          },
+          {
+            "file": "tests/test_live_rank_api.py",
+            "line": 1
+          },
+          {
+            "file": "tests/test_live_rank_api.py",
+            "line": 3
+          },
+          {
+            "file": "tests/test_search_filters.py",
+            "line": 2
+          }
+        ]
+      },
+      {
+        "name": "urllib",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 8
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 33
+          },
+          {
+            "file": "dy_apis/douyin_im_media.py",
+            "line": 18
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 26
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 18
+          },
+          {
+            "file": "utils/ab_pure.py",
+            "line": 8
+          },
+          {
+            "file": "utils/bd_ticket.py",
+            "line": 17
+          },
+          {
+            "file": "utils/challenge_sign.py",
+            "line": 20
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 8
+          },
+          {
+            "file": "utils/imagex_sign.py",
+            "line": 19
+          },
+          {
+            "file": "utils/mstoken.py",
+            "line": 10
+          },
+          {
+            "file": "utils/passport.py",
+            "line": 33
+          },
+          {
+            "file": "utils/secsdk_web_sign.py",
+            "line": 55
+          }
+        ]
+      },
+      {
+        "name": "utils",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "builder/auth.py",
+            "line": 10
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 12
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 14
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 509
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 609
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 970
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 1025
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 1112
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 1136
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 1146
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 1158
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 1177
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 1365
+          },
+          {
+            "file": "builder/header.py",
+            "line": 3
+          },
+          {
+            "file": "builder/header.py",
+            "line": 38
+          },
+          {
+            "file": "builder/header.py",
+            "line": 90
+          },
+          {
+            "file": "builder/header.py",
+            "line": 146
+          },
+          {
+            "file": "builder/params.py",
+            "line": 2
+          },
+          {
+            "file": "builder/params.py",
+            "line": 3
+          },
+          {
+            "file": "builder/params.py",
+            "line": 194
+          },
+          {
+            "file": "builder/proto.py",
+            "line": 11
+          },
+          {
+            "file": "builder/proto.py",
+            "line": 14
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 11
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 26
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 27
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 863
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 41
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 47
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 48
+          },
+          {
+            "file": "dy_apis/douyin_im_media.py",
+            "line": 20
+          },
+          {
+            "file": "dy_apis/douyin_im_media.py",
+            "line": 26
+          },
+          {
+            "file": "dy_apis/douyin_im_media.py",
+            "line": 27
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 29
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 36
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 37
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 38
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 948
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 1567
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 1866
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 1925
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 1981
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 2001
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 3440
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 33
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 34
+          },
+          {
+            "file": "main.py",
+            "line": 7
+          },
+          {
+            "file": "main.py",
+            "line": 8
+          },
+          {
+            "file": "tests/test_dtrait_profile.py",
+            "line": 1
+          },
+          {
+            "file": "tests/test_dtrait_profile.py",
+            "line": 2
+          },
+          {
+            "file": "utils/ab_pure.py",
+            "line": 10
+          },
+          {
+            "file": "utils/ab_pure.py",
+            "line": 11
+          },
+          {
+            "file": "utils/bd_ticket.py",
+            "line": 19
+          },
+          {
+            "file": "utils/bd_ticket.py",
+            "line": 99
+          },
+          {
+            "file": "utils/bd_ticket.py",
+            "line": 100
+          },
+          {
+            "file": "utils/bd_ticket.py",
+            "line": 126
+          },
+          {
+            "file": "utils/challenge_sign.py",
+            "line": 24
+          },
+          {
+            "file": "utils/challenge_template.py",
+            "line": 29
+          },
+          {
+            "file": "utils/dtrait.py",
+            "line": 27
+          },
+          {
+            "file": "utils/dtrait_profile.py",
+            "line": 14
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 10
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 12
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 72
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 92
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 100
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 119
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 132
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 140
+          },
+          {
+            "file": "utils/http_client.py",
+            "line": 11
+          },
+          {
+            "file": "utils/mstoken.py",
+            "line": 13
+          },
+          {
+            "file": "utils/mstoken.py",
+            "line": 16
+          },
+          {
+            "file": "utils/mstoken.py",
+            "line": 18
+          },
+          {
+            "file": "utils/passport.py",
+            "line": 67
+          },
+          {
+            "file": "utils/passport.py",
+            "line": 102
+          },
+          {
+            "file": "utils/strdata_pure.py",
+            "line": 89
+          }
+        ]
+      },
+      {
+        "name": "uuid",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "builder/auth.py",
+            "line": 7
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 162
+          },
+          {
+            "file": "builder/proto.py",
+            "line": 9
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 9
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 34
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 27
+          },
+          {
+            "file": "utils/mstoken.py",
+            "line": 11
+          },
+          {
+            "file": "utils/strdata_pure.py",
+            "line": 27
+          }
+        ]
+      },
+      {
+        "name": "wave",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 35
+          }
+        ]
+      },
+      {
+        "name": "websocket",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_recv_msg.py",
+            "line": 5
+          },
+          {
+            "file": "dy_apis/douyin_recv_msg.py",
+            "line": 6
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 20
+          }
+        ]
+      },
+      {
+        "name": "zlib",
+        "kind": "module",
+        "status": "import-hint",
+        "ecosystem": "python",
+        "distributionName": "unresolved",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 36
+          }
+        ]
+      },
+      {
+        "name": "aiofiles",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 1
+          }
+        ]
+      },
+      {
+        "name": "av",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 8
+          }
+        ]
+      },
+      {
+        "name": "backports.zstd",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 28
+          }
+        ]
+      },
+      {
+        "name": "blackboxprotobuf",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 27
+          }
+        ]
+      },
+      {
+        "name": "canvas",
+        "kind": "package",
+        "status": "declared",
+        "version": "^2.11.2",
+        "scope": "dependencies",
+        "ecosystem": "npm",
+        "evidence": [
+          {
+            "file": "newsign/package.json",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "name": "cryptography",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "name": "curl_cffi",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 20
+          }
+        ]
+      },
+      {
+        "name": "ecdsa",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 4
+          }
+        ]
+      },
+      {
+        "name": "jsbeautifier",
+        "kind": "package",
+        "status": "declared",
+        "version": "==2.0.3",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 30
+          }
+        ]
+      },
+      {
+        "name": "jsdom",
+        "kind": "package",
+        "status": "declared",
+        "version": "^25.0.1",
+        "scope": "dependencies",
+        "ecosystem": "npm",
+        "evidence": [
+          {
+            "file": "newsign/package.json",
+            "line": 4
+          }
+        ]
+      },
+      {
+        "name": "jsrsasign",
+        "kind": "package",
+        "status": "declared",
+        "version": "^11.1.0",
+        "scope": "dependencies",
+        "ecosystem": "npm",
+        "evidence": [
+          {
+            "file": "newsign/package.json",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "name": "loguru",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "name": "lxml",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 2
+          }
+        ]
+      },
+      {
+        "name": "opencv-python-headless",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "name": "openpyxl",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "name": "pillow",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "name": "protobuf",
+        "kind": "package",
+        "status": "declared",
+        "version": ">=5.27",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 26
+          }
+        ]
+      },
+      {
+        "name": "python-dotenv",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 10
+          }
+        ]
+      },
+      {
+        "name": "qrcode",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 11
+          }
+        ]
+      },
+      {
+        "name": "requests",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 12
+          }
+        ]
+      },
+      {
+        "name": "retry",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 13
+          }
+        ]
+      },
+      {
+        "name": "rocksdict",
+        "kind": "package",
+        "status": "declared",
+        "version": "==0.3.29",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 29
+          }
+        ]
+      },
+      {
+        "name": "sdenv",
+        "kind": "package",
+        "status": "declared",
+        "version": "^0.2.2",
+        "scope": "dependencies",
+        "ecosystem": "npm",
+        "evidence": [
+          {
+            "file": "newsign/package.json",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "name": "urllib3",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 14
+          }
+        ]
+      },
+      {
+        "name": "vm",
+        "kind": "package",
+        "status": "declared",
+        "version": "^0.1.0",
+        "scope": "dependencies",
+        "ecosystem": "npm",
+        "evidence": [
+          {
+            "file": "newsign/package.json",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "name": "websocket-client",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 15
+          }
+        ]
+      },
+      {
+        "name": "websockets",
+        "kind": "package",
+        "status": "declared",
+        "version": "*",
+        "ecosystem": "pip",
+        "scope": "requirements",
+        "evidence": [
+          {
+            "file": "requirements.txt",
+            "line": 16
+          }
+        ]
+      },
+      {
+        "name": "node",
+        "kind": "runtime",
+        "status": "file-type-hint",
+        "installerId": "node",
+        "evidence": [
+          {
+            "file": "utils/acrawler_runtime/ac_vm.js",
+            "line": 1
+          },
+          {
+            "file": "utils/acrawler_runtime/run_ac_node.js",
+            "line": 1
+          },
+          {
+            "file": "utils/challenge_template_runner.js",
+            "line": 1
+          }
+        ]
+      },
+      {
+        "name": "node",
+        "kind": "runtime",
+        "status": "mention-hint",
+        "installerId": "node",
+        "evidence": [
+          {
+            "file": "README.md",
+            "line": 117
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 2195
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 86
+          },
+          {
+            "file": "dy_apis/douyin_im_media.py",
+            "line": 247
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 155
+          },
+          {
+            "file": "utils/acrawler.py",
+            "line": 4
+          },
+          {
+            "file": "utils/acrawler_runtime/browser_window_shape.json",
+            "line": 1
+          },
+          {
+            "file": "utils/acrawler_runtime/run_ac_node.js",
+            "line": 656
+          },
+          {
+            "file": "utils/challenge_template.py",
+            "line": 16
+          },
+          {
+            "file": "utils/challenge_template_runner.js",
+            "line": 1
+          }
+        ]
+      },
+      {
+        "name": "python",
+        "kind": "runtime",
+        "status": "file-type-hint",
+        "installerId": null,
+        "evidence": [
+          {
+            "file": "builder/__init__.py",
+            "line": 1
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 1
+          },
+          {
+            "file": "builder/header.py",
+            "line": 1
+          },
+          {
+            "file": "builder/params.py",
+            "line": 1
+          },
+          {
+            "file": "builder/proto.py",
+            "line": 1
+          },
+          {
+            "file": "dy_apis/__init__.py",
+            "line": 1
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 1
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 1
+          },
+          {
+            "file": "dy_apis/douyin_im_media.py",
+            "line": 1
+          },
+          {
+            "file": "dy_apis/douyin_recv_msg.py",
+            "line": 1
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/__init__.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/pk.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/protobuf/douyin/bizIm/live_pb2.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/protobuf/douyin/bizIm/webcast/data_pb2.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/protobuf/douyin/bizIm/webcast/im_pb2.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/protobuf/douyin/default/im_proto_pb2.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/protobuf/douyin/transport/webcast/im_pb2.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/js2proto.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/jsbeautifier_test.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/user_db.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/utils/__init__.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/utils/compression.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/utils/renderer.py",
+            "line": 1
+          },
+          {
+            "file": "main.py",
+            "line": 1
+          },
+          {
+            "file": "quick_publish.py",
+            "line": 1
+          },
+          {
+            "file": "static/Live_pb2.py",
+            "line": 1
+          },
+          {
+            "file": "static/PK_pb2.py",
+            "line": 1
+          },
+          {
+            "file": "static/Request_pb2.py",
+            "line": 1
+          },
+          {
+            "file": "static/Response_pb2.py",
+            "line": 1
+          },
+          {
+            "file": "tests/test_dtrait_profile.py",
+            "line": 1
+          },
+          {
+            "file": "tests/test_live_pk_api.py",
+            "line": 1
+          },
+          {
+            "file": "tests/test_live_pk_ws.py",
+            "line": 1
+          },
+          {
+            "file": "tests/test_live_rank_api.py",
+            "line": 1
+          },
+          {
+            "file": "tests/test_search_filters.py",
+            "line": 1
+          },
+          {
+            "file": "tests/test_write_dtrait.py",
+            "line": 1
+          },
+          {
+            "file": "utils/__init__.py",
+            "line": 1
+          },
+          {
+            "file": "utils/ab_pure.py",
+            "line": 1
+          },
+          {
+            "file": "utils/acrawler.py",
+            "line": 1
+          },
+          {
+            "file": "utils/bd_ticket.py",
+            "line": 1
+          },
+          {
+            "file": "utils/challenge_sign.py",
+            "line": 1
+          },
+          {
+            "file": "utils/challenge_template.py",
+            "line": 1
+          },
+          {
+            "file": "utils/common_util.py",
+            "line": 1
+          },
+          {
+            "file": "utils/data_util.py",
+            "line": 1
+          },
+          {
+            "file": "utils/dtrait.py",
+            "line": 1
+          },
+          {
+            "file": "utils/dtrait_features.py",
+            "line": 1
+          },
+          {
+            "file": "utils/dtrait_profile.py",
+            "line": 1
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 1
+          },
+          {
+            "file": "utils/fingerprint.py",
+            "line": 1
+          },
+          {
+            "file": "utils/http_client.py",
+            "line": 1
+          },
+          {
+            "file": "utils/imagex_sign.py",
+            "line": 1
+          },
+          {
+            "file": "utils/mstoken.py",
+            "line": 1
+          },
+          {
+            "file": "utils/passport.py",
+            "line": 1
+          },
+          {
+            "file": "utils/secsdk_web_sign.py",
+            "line": 1
+          },
+          {
+            "file": "utils/sm3.py",
+            "line": 1
+          },
+          {
+            "file": "utils/strdata_pure.py",
+            "line": 1
+          },
+          {
+            "file": "utils/xbogus_pure.py",
+            "line": 1
+          }
+        ]
+      },
+      {
+        "name": "python",
+        "kind": "runtime",
+        "status": "mention-hint",
+        "installerId": null,
+        "evidence": [
+          {
+            "file": "README.md",
+            "line": 10
+          },
+          {
+            "file": "builder/__init__.py",
+            "line": 1
+          },
+          {
+            "file": "builder/proto.py",
+            "line": 1
+          },
+          {
+            "file": "dy_apis/__init__.py",
+            "line": 1
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 520
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 104
+          },
+          {
+            "file": "dy_live/__init__.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/protobuf/webcast_proto_re/js2proto.py",
+            "line": 1
+          },
+          {
+            "file": "dy_live/server.py",
+            "line": 1016
+          },
+          {
+            "file": "quick_publish.py",
+            "line": 1
+          },
+          {
+            "file": "requirements.txt",
+            "line": 7
+          },
+          {
+            "file": "static/PK_pb2.py",
+            "line": 4
+          },
+          {
+            "file": "static/Request_pb2.py",
+            "line": 5
+          },
+          {
+            "file": "static/Response_pb2.py",
+            "line": 5
+          },
+          {
+            "file": "utils/__init__.py",
+            "line": 1
+          },
+          {
+            "file": "utils/dtrait_features.py",
+            "line": 15
+          },
+          {
+            "file": "utils/http_client.py",
+            "line": 4
+          },
+          {
+            "file": "utils/passport.py",
+            "line": 49
+          },
+          {
+            "file": "utils/secsdk_web_sign.py",
+            "line": 86
+          }
+        ]
+      },
+      {
+        "name": "browser",
+        "kind": "tool",
+        "status": "mention-hint",
+        "installerId": null,
+        "evidence": [
+          {
+            "file": "README.md",
+            "line": 272
+          },
+          {
+            "file": "builder/auth.py",
+            "line": 58
+          },
+          {
+            "file": "builder/proto.py",
+            "line": 48
+          },
+          {
+            "file": "dy_apis/douyin_api.py",
+            "line": 444
+          },
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 4
+          },
+          {
+            "file": "dy_apis/douyin_im_media.py",
+            "line": 326
+          },
+          {
+            "file": "dy_apis/login_api.py",
+            "line": 75
+          },
+          {
+            "file": "quick_publish.py",
+            "line": 6
+          },
+          {
+            "file": "requirements.txt",
+            "line": 18
+          },
+          {
+            "file": "tests/test_live_pk_ws.py",
+            "line": 13
+          },
+          {
+            "file": "utils/ab_pure.py",
+            "line": 23
+          },
+          {
+            "file": "utils/acrawler.py",
+            "line": 2
+          },
+          {
+            "file": "utils/acrawler_runtime/browser_window_shape.json",
+            "line": 1
+          },
+          {
+            "file": "utils/acrawler_runtime/run_ac_node.js",
+            "line": 37
+          },
+          {
+            "file": "utils/acrawler_runtime/runner_window_keys_baseline.txt",
+            "line": 208
+          },
+          {
+            "file": "utils/bd_ticket.py",
+            "line": 91
+          },
+          {
+            "file": "utils/challenge_profile.json",
+            "line": 21
+          },
+          {
+            "file": "utils/challenge_sign.py",
+            "line": 4
+          },
+          {
+            "file": "utils/challenge_template_runner.js",
+            "line": 104
+          },
+          {
+            "file": "utils/dtrait.py",
+            "line": 36
+          },
+          {
+            "file": "utils/dtrait_profile.json",
+            "line": 55
+          },
+          {
+            "file": "utils/dtrait_profile.py",
+            "line": 39
+          },
+          {
+            "file": "utils/dy_util.py",
+            "line": 16
+          },
+          {
+            "file": "utils/fingerprint.py",
+            "line": 6
+          },
+          {
+            "file": "utils/http_client.py",
+            "line": 2
+          },
+          {
+            "file": "utils/mstoken.py",
+            "line": 20
+          },
+          {
+            "file": "utils/mstoken_common_profile.json",
+            "line": 1
+          },
+          {
+            "file": "utils/mstoken_profile.json",
+            "line": 2
+          },
+          {
+            "file": "utils/passport.py",
+            "line": 47
+          },
+          {
+            "file": "utils/strdata_pure.py",
+            "line": 105
+          },
+          {
+            "file": "utils/xbogus_pure.py",
+            "line": 47
+          }
+        ]
+      },
+      {
+        "name": "ffmpeg",
+        "kind": "tool",
+        "status": "mention-hint",
+        "installerId": "ffmpeg",
+        "evidence": [
+          {
+            "file": "dy_apis/douyin_creator_api.py",
+            "line": 458
+          }
+        ]
+      }
+    ],
+    "diagnostics": [
+      {
+        "file": "pyproject.toml",
+        "issue": "dependency-format-needs-manual-review"
+      }
+    ],
+    "executionEvidence": [
+      {
+        "file": "dy_apis/douyin_creator_api.py",
+        "line": 114
+      },
+      {
+        "file": "dy_apis/douyin_creator_api.py",
+        "line": 458
+      },
+      {
+        "file": "dy_apis/douyin_creator_api.py",
+        "line": 459
+      },
+      {
+        "file": "dy_apis/douyin_creator_api.py",
+        "line": 462
+      },
+      {
+        "file": "dy_apis/douyin_creator_api.py",
+        "line": 467
+      },
+      {
+        "file": "utils/acrawler.py",
+        "line": 129
+      },
+      {
+        "file": "utils/acrawler_runtime/run_ac_node.js",
+        "line": 883
+      },
+      {
+        "file": "utils/acrawler_runtime/run_ac_node.js",
+        "line": 888
+      },
+      {
+        "file": "utils/acrawler_runtime/run_ac_node.js",
+        "line": 898
+      },
+      {
+        "file": "utils/acrawler_runtime/run_ac_node.js",
+        "line": 905
+      },
+      {
+        "file": "utils/acrawler_runtime/run_ac_node.js",
+        "line": 910
+      },
+      {
+        "file": "utils/acrawler_runtime/run_ac_node.js",
+        "line": 959
+      },
+      {
+        "file": "utils/acrawler_runtime/run_ac_node.js",
+        "line": 963
+      },
+      {
+        "file": "utils/acrawler_runtime/run_ac_node.js",
+        "line": 969
+      },
+      {
+        "file": "utils/acrawler_runtime/run_ac_node.js",
+        "line": 972
+      },
+      {
+        "file": "utils/acrawler_runtime/run_ac_node.js",
+        "line": 981
+      },
+      {
+        "file": "utils/challenge_template.py",
+        "line": 68
+      },
+      {
+        "file": "utils/challenge_template_runner.js",
+        "line": 173
+      },
+      {
+        "file": "utils/challenge_template_runner.js",
+        "line": 176
+      }
+    ],
+    "environmentStatus": "not-tested",
+    "autoInstall": false
+  },
+  "selection": {
+    "mode": "manual-user-exception",
+    "requestedAtVietnam": "2026-11-27",
+    "stars": 3742,
+    "starsThresholdPassed": false,
+    "weeklyProminenceVerified": false,
+    "dailyPolicyChanged": false
+  },
+  "execution": {
+    "upstreamCode": false,
+    "upstreamTests": false,
+    "dependencyInstallation": false,
+    "douyinLogin": false,
+    "douyinActions": false,
+    "modelProvider": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-27",
+  "type": "manual-user-exception",
+  "id": "douyin-spider",
+  "baseline": "20ac145f367fc1816c3bea5f272b64171df9c793",
+  "sourceCommit": "d151f9c2980abc304c1ae4918c2272675cd9e4c2",
+  "coreSha256": "b1e31f3087acdcc22fbb4459b27977559f6cb075c120f21ddb760bdcfd94f91a",
+  "originalCoreVerified": false,
+  "origin": "hub-authored-adapter",
+  "upstreamFilesCached": 96,
+  "upstreamFilesBundled": 0,
+  "upstreamSnapshotDigest": "20d06b8aecad2663ccc3b5e2207a0526a6218bce31bb5d78672e803e5421d2f8",
+  "licenseStatus": "unverified",
+  "security": "quarantined",
+  "backup": "External douyin-backup/before.bundle plus exact README and registry copies",
+  "rollback": "Revert the eventual addition commit; do not reset shared history. Local rollback rehearsal restores the prior tree from the bundle in a separate directory.",
+  "dailyBatch": false,
+  "dailyPolicyChanged": false,
+  "checkedAt": "2026-11-26T19:36:02.180Z",
+  "verification": {
+    "upstreamCachedFileHashesMatched": 96,
+    "gitBlobHashesMatched": 96,
+    "hybridProvenanceCheck": "passed; sourceVerified=false intentionally",
+    "repositoryTests": {
+      "passed": 24,
+      "failed": 0
+    },
+    "hybridPackages": {
+      "passed": 84,
+      "failed": 0
+    },
+    "catalog": {
+      "count": 84,
+      "problems": 0
+    },
+    "readmeRows": 10,
+    "rollback": {
+      "passed": true,
+      "method": "Clone exact before.bundle into independent rollback directory and compare complete Git tree with baseline",
+      "baseline": "20ac145f367fc1816c3bea5f272b64171df9c793",
+      "tree": "b9b02ce381f51d85ea1c61e08dbb81012cf5c582"
+    },
+    "staticScan": {
+      "high": 0,
+      "medium": 5
+    },
+    "runtime": "NOT_TESTED",
+    "idempotence": {
+      "passed": true,
+      "filesCompared": 3873,
+      "method": "Re-run existing requirements declaration and catalog build; compare exact file hashes."
+    },
+    "gitIndexBytes": {
+      "passed": true,
+      "skillFilesMatched": 3701,
+      "existingExecutableModes": "preserved from baseline"
+    },
+    "retainedExistingCatalogEntries": 83
+  }
+}
