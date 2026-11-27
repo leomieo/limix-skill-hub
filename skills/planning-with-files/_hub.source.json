@@ -1,0 +1,181 @@
+{
+  "repository": "OthmanAdi/planning-with-files",
+  "commit": "c37abd73ff25f309a7b1b5991ef2149d5858bc49",
+  "path": ".agents/skills/planning-with-files",
+  "verified": true,
+  "coreSha256": "58fb5002a70accc4274f6ea7b3d398c87fcbef29bf15214e7f8ffc9725645d1d",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "58fb5002a70accc4274f6ea7b3d398c87fcbef29bf15214e7f8ffc9725645d1d",
+      "executable": false
+    },
+    {
+      "path": "examples.md",
+      "sha256": "450355fac69e0fac93453b6c7383c8fb9ba3470662f6c8291080028f73ce00dc",
+      "executable": false
+    },
+    {
+      "path": "plan-inventory.md",
+      "sha256": "8e93540069c7c68d5f816a8969776c6fe3d012872e508e1535b275b9000c71dd",
+      "executable": false
+    },
+    {
+      "path": "reference.md",
+      "sha256": "8f7d9cfe1971c5a32f3e5edb63ddfad73a11cc7de19d5065a6ec75fd118c0fdb",
+      "executable": false
+    },
+    {
+      "path": "scripts/attest-plan.ps1",
+      "sha256": "cf1f3a311fc01b929c3b4fbf58e22b5d9cf0cb5743199f4bb3078177ee9a3fd2",
+      "executable": false
+    },
+    {
+      "path": "scripts/attest-plan.sh",
+      "sha256": "6d5902742a9ec5507af7bb11c9f6c6702f325d547a7776876a0755e7fd85e786",
+      "executable": false
+    },
+    {
+      "path": "scripts/check-complete.ps1",
+      "sha256": "7406bc1c68108346a114fc99d1ec013c96d878cc7f9c8c0ef1cbdea2a3f295da",
+      "executable": false
+    },
+    {
+      "path": "scripts/check-complete.sh",
+      "sha256": "b649ac722e28009c7213fdeecb337910948fdd4e04fafd027cdf997b0ebc5965",
+      "executable": true
+    },
+    {
+      "path": "scripts/gate-stop.sh",
+      "sha256": "ed4f138ccd9ec727ccc5d966a523c8f8506779d93a30ec0329282b23c511c0e6",
+      "executable": false
+    },
+    {
+      "path": "scripts/init-session.ps1",
+      "sha256": "9bdeb4c1ded1463da0cd8904742fe39eea13449b1b18f864b79ec903f0416838",
+      "executable": false
+    },
+    {
+      "path": "scripts/init-session.sh",
+      "sha256": "725ca9e019fcd586ac6f759d568dc74c14ca56edebdf2c335ada8088899115aa",
+      "executable": true
+    },
+    {
+      "path": "scripts/inject-plan.py",
+      "sha256": "fc85ae3350c49ef58fd191f8e7f76f976982d3ea983113150e4559c742ca0a28",
+      "executable": false
+    },
+    {
+      "path": "scripts/inject-plan.sh",
+      "sha256": "205a0268e6065e9bd2d77de19d3c539daa2162bccaeda2bd0557eeb36012d934",
+      "executable": false
+    },
+    {
+      "path": "scripts/ledger-append.ps1",
+      "sha256": "d88796090a234f78ae07131e7dfe7ca6de0987d6fd5a4588fffa89bdb1d569c7",
+      "executable": false
+    },
+    {
+      "path": "scripts/ledger-append.sh",
+      "sha256": "d918315f8b73a2a1e1dddef1c76798d1fd72f5f99644ff34115d0e7ac7e69290",
+      "executable": false
+    },
+    {
+      "path": "scripts/ledger-summary.ps1",
+      "sha256": "faf3d27a2c26104b9e78e6aa4a923a7355a941ae6962f2ef4cb8c31aeaaee276",
+      "executable": false
+    },
+    {
+      "path": "scripts/ledger-summary.sh",
+      "sha256": "c2b41ff5aa237675ac3b81008317e3b31841a957bfdbd83b1017f5564edbf0ea",
+      "executable": false
+    },
+    {
+      "path": "scripts/phase-status.ps1",
+      "sha256": "14af4ffbbbb11295839cffe3fbc1970dc131d26b5e3eecf0e9775315341b9473",
+      "executable": false
+    },
+    {
+      "path": "scripts/phase-status.sh",
+      "sha256": "364fa7568fb93efcb485468ae47033f1350c1e0a8bfb00f5857d3e07424c82a9",
+      "executable": false
+    },
+    {
+      "path": "scripts/plan-doctor.sh",
+      "sha256": "5a4ef77e2889469f7d1172acde7edb6bf65134d70455aa632f405fea8dbf772d",
+      "executable": false
+    },
+    {
+      "path": "scripts/resolve-plan-dir.ps1",
+      "sha256": "e6e83b070e98b7d6c1cbccbc4e8ebc15dff3bd5fcb5515c8a6fb50fc26845f66",
+      "executable": false
+    },
+    {
+      "path": "scripts/resolve-plan-dir.sh",
+      "sha256": "3a4cbbefb518147a34081f747e677ce228b80eca886e849c132990362314a65d",
+      "executable": false
+    },
+    {
+      "path": "scripts/session-catchup.py",
+      "sha256": "ce8e81ff88748185d6afc82860cdfa37bf5134d92ceb7db674585e1db1a4003d",
+      "executable": false
+    },
+    {
+      "path": "scripts/set-active-plan.ps1",
+      "sha256": "a25384724e887b8bb8e073ddcf8e2e9adea31e7c0049007b04fe7cdddad96cb9",
+      "executable": true
+    },
+    {
+      "path": "scripts/set-active-plan.sh",
+      "sha256": "351778753db8ecb5ec4b698e2782c63b49b20b5168aebd9f1c043959c3b110bd",
+      "executable": true
+    },
+    {
+      "path": "scripts/skill-hook.sh",
+      "sha256": "94222927ed8a8f9f4cade8cf8911059dd40fa5090b8728fde007bfbee7782cb9",
+      "executable": true
+    },
+    {
+      "path": "templates/analytics_findings.md",
+      "sha256": "cd46495d0a7d59f150f1ecc7f9528bb1b0856bec73a2d04e06f48cdb6798ec0f",
+      "executable": false
+    },
+    {
+      "path": "templates/analytics_task_plan.md",
+      "sha256": "c58c0cff7148117a0728c136462faf256848f1e5ef9a7ed528b4f60b7a831ff9",
+      "executable": false
+    },
+    {
+      "path": "templates/findings.md",
+      "sha256": "bb9237ccbf08148d7f7f23ad58fbc9bd7c879c6d0cbca1d533b5b5f21c26c529",
+      "executable": false
+    },
+    {
+      "path": "templates/loop.md",
+      "sha256": "cb13b5f1030a015442a981da69fa0dc910f78f4782ebfa2fd0eac00d6e71a143",
+      "executable": false
+    },
+    {
+      "path": "templates/progress.md",
+      "sha256": "28fc357000ed2b18910c4e436f0f2e02f4abf0acd29cce370a2670640974f31c",
+      "executable": false
+    },
+    {
+      "path": "templates/task_plan_autonomous.md",
+      "sha256": "5a93e639a15a3d0e4f89d915199cf09cdd211441547eba86bed34164edc25891",
+      "executable": false
+    },
+    {
+      "path": "templates/task_plan.md",
+      "sha256": "3c4b61444270f689c3dab81b7113467fb87e9705175aea9c3a3b970bd4e777a3",
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "4f2e5ecfaa4e0833621cfe54c0bdc2f60f086c0925540d7bdc713517eafb3c84",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/planning-with-files"
+}

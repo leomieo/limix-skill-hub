@@ -10,6 +10,9 @@ Sắp theo thứ tự thêm vào kho, mới nhất trước; sao và ngày tạo
 
 | Skill/tool | Nguồn | Sao | Ngày tạo | Mô tả ngắn |
 |---|---|---:|---|---|
+| [visual-explainer](skills/visual-explainer/SKILL.md) | [nicobailon/visual-explainer](https://github.com/nicobailon/visual-explainer) | 11297 | 2026-02-16 | Tạo trang HTML tự chứa để giải thích hệ thống, mã, kế hoạch hoặc dữ liệu bằng sơ đồ, hình và diễn giải trực quan. Cách ly để xem xét cảnh báo quét tĩnh. |
+| [drawio-skill](skills/drawio-skill/SKILL.md) | [Agents365-ai/drawio-skill](https://github.com/Agents365-ai/drawio-skill) | 10964 | 2026-03-03 | Tạo, chỉnh sửa và kiểm định sơ đồ draw.io có thể tiếp tục sửa; hỗ trợ kiến trúc, UML, ERD, swimlane và chuyển đổi từ mã. Chờ duyệt tĩnh. |
+| [planning-with-files](skills/planning-with-files/SKILL.md) | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | 28256 | 2026-01-03 | Duy trì kế hoạch, phát hiện và tiến độ nhiều bước trong các tệp của dự án; có hooks tùy chọn chưa kích hoạt. Chờ duyệt tĩnh. |
 | [douyin-spider](skills/douyin-spider/SKILL.md) | [cv-cat/DouYin_Spider](https://github.com/cv-cat/DouYin_Spider) | 3742 | 2023-10-17 | Hướng dẫn do Hub biên soạn cho công cụ dữ liệu Douyin; ngoại lệ theo yêu cầu. Chưa xác minh giấy phép, không kèm mã nguồn. **Cách ly.** |
 | [rust-anything](skills/rust-anything/SKILL.md) | [erkamyaman/rust-anything](https://github.com/erkamyaman/rust-anything) | 9893 | 2026-11-16 | Lập kế hoạch chuyển mã sang Rust, ghi lại hành vi chương trình gốc và đối chiếu từng phần trước khi chuyển sang bản mới. Chờ duyệt tĩnh. |
 | [last30days](skills/last30days/SKILL.md) | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 75502 | 2026-01-23 | Nghiên cứu chủ đề trong 30 ngày gần nhất, tổng hợp nhiều nguồn và lưu báo cáo có dẫn chứng; cần duyệt riêng quyền dữ liệu và công cụ. **Cách ly.** |
@@ -17,9 +20,6 @@ Sắp theo thứ tự thêm vào kho, mới nhất trước; sao và ngày tạo
 | [prospecting](skills/prospecting/SKILL.md) | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | 62771 | 2026-01-15 | Tìm và xác minh khách hàng tiềm năng theo hồ sơ phù hợp, tín hiệu mua và bằng chứng công khai, kể cả phát biểu trên podcast. **Cách ly.** |
 | [customer-research](skills/customer-research/SKILL.md) | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | 62771 | 2026-01-15 | Phân tích phỏng vấn, khảo sát và phản hồi công khai để tìm nhu cầu, phản đối và ngôn ngữ khách hàng có dẫn chứng. Chờ duyệt tĩnh. |
 | [leaving-pr-comments](skills/leaving-pr-comments/SKILL.md) | [t3dotgg/tstack](https://github.com/t3dotgg/tstack) | 4346 | 2026-10-24 | Soạn phản hồi pull request trên GitHub, ghi rõ ai viết và thay mặt ai, rồi đối chiếu nội dung với bằng chứng. Chờ duyệt tĩnh. |
-| [ste80-humanizer](skills/ste80-humanizer/SKILL.md) | [Dodaios/ste80-humanizer](https://github.com/Dodaios/ste80-humanizer) | 1113 | 2026-11-09 | Biên tập tài liệu tiếng Anh bằng câu ngắn, câu chủ động và từ dễ hiểu, giữ nguyên dữ kiện. **Cách ly.** |
-| [cinematic-film](skills/cinematic-film/SKILL.md) | [Moh4696/cinematic-skill](https://github.com/Moh4696/cinematic-skill) | 951 | 2026-11-09 | Lập bảng nhịp và dựng phim từ ảnh, tư liệu và bản đồ để chuyển động khớp với lời thuyết minh. **Cách ly.** |
-| [cook](skills/cook/SKILL.md) | [Leonxlnx/cook](https://github.com/Leonxlnx/cook) | 817 | 2026-10-31 | Cải tiến bản dựng hình ảnh qua các vòng chụp, đối chiếu và sửa theo tiêu chí đã thống nhất. **Cách ly.** |
 
 ## Sử dụng
 

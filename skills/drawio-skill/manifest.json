@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "name": "drawio-skill",
+  "version": "ae1a42fefc0a",
+  "source": {
+    "url": "https://github.com/Agents365-ai/drawio-skill",
+    "commit": "ae1a42fefc0aa0931df268e48430579f795d6a04",
+    "sha256": "f390f875d422c1e0d52daa1406ad1ccf11b6a6cb2faa58e6706dc2600aa95916",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Tạo, chỉnh sửa và kiểm định sơ đồ draw.io có thể tiếp tục sửa; hỗ trợ kiến trúc, UML, ERD, swimlane và chuyển đổi từ mã.",
+    "aliases": [
+      "Sơ đồ draw.io",
+      "Sơ đồ kiến trúc có thể chỉnh sửa"
+    ],
+    "keywords": [
+      "drawio-skill",
+      "Sơ đồ draw.io",
+      "Sơ đồ kiến trúc có thể chỉnh sửa",
+      "drawio",
+      "skill"
+    ],
+    "examples": [
+      "Dùng drawio-skill để tạo ERD có thể chỉnh sửa từ schema SQL này."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "f390f875d422c1e0d52daa1406ad1ccf11b6a6cb2faa58e6706dc2600aa95916"
+  },
+  "requiredCapabilities": [
+    "Graphviz (optional auto-layout)",
+    "Pillow (optional GIF output)",
+    "PyYAML (optional YAML inputs)",
+    "Python 3",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "docker [mention-hint]",
+    "draw.io CLI (native rendering/export)",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "git [mention-hint]",
+    "github-cli [mention-hint]",
+    "java [mention-hint]",
+    "node [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "python-pptx (optional PPTX export)",
+    "react [mention-hint]",
+    "rust [mention-hint]"
+  ],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-27T07:49:49.711Z",
+  "security": {
+    "status": "review-required",
+    "findings": [
+      "data/shape-index.json.gz: binary-file (low)",
+      "references/autolayout.md: privilege (medium)"
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "Optional modules are documented upstream: PyYAML for YAML parsing, python-pptx for PPTX export, and Pillow for GIF output. Versions and environment are untested.",
+      "No dependency was installed. Local subprocesses use argument arrays in the reviewed security guide; optional icon fetches use pinned URLs. Live infrastructure paths require the user-provided snapshot."
+    ]
+  }
+}

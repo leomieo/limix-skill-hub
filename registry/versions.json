@@ -1676,5 +1676,53 @@
       "checksum": "dac253f5d09be800196e567248df05182e5e135cfb900f4e74bfa45aff4e1d8a",
       "at": "2026-11-26T19:36:02.180Z"
     }
+  ],
+  "drawio-skill": [
+    {
+      "version": "ae1a42fefc0a",
+      "commit": "ae1a42fefc0aa0931df268e48430579f795d6a04",
+      "checksum": "40ee277defa44eec83c87b6c19c1bc0b1a310a1a8de87c94750b59a2607102ee",
+      "at": "2026-11-27T07:49:49.711Z"
+    },
+    {
+      "version": "ae1a42fefc0a",
+      "commit": "ae1a42fefc0aa0931df268e48430579f795d6a04",
+      "checksum": "2bd0e0106c2da40db5e236cf67aee18d548fc3b5387c4d452df8585b0782a8a5",
+      "at": "2026-11-27T07:49:49.711Z"
+    }
+  ],
+  "planning-with-files": [
+    {
+      "version": "c37abd73ff25",
+      "commit": "c37abd73ff25f309a7b1b5991ef2149d5858bc49",
+      "checksum": "23beebb2979b03b6a7178965aef5ba8b5f70cea4765029fd8294bf15ee877c00",
+      "at": "2026-11-27T07:49:52.174Z"
+    },
+    {
+      "version": "c37abd73ff25",
+      "commit": "c37abd73ff25f309a7b1b5991ef2149d5858bc49",
+      "checksum": "a0a075c1a1c0e0c2296b8c9052d71d55e72a8fa702ae26411fc46d649a98d1bd",
+      "at": "2026-11-27T07:49:52.174Z"
+    }
+  ],
+  "visual-explainer": [
+    {
+      "version": "147ecdc8c5a0",
+      "commit": "147ecdc8c5a096f1ddd6319db8be9ee7f6ee9821",
+      "checksum": "5697efcca3534a4e51346f61674fa5b9b88e314cc81fa38269e2f7c1ddc014e3",
+      "at": "2026-11-27T07:50:26.740Z"
+    },
+    {
+      "version": "147ecdc8c5a0",
+      "commit": "147ecdc8c5a096f1ddd6319db8be9ee7f6ee9821",
+      "checksum": "4ee1bd16c5f2a22ea4d8d11ee0ea1ecbfbcefbabc5fd01802633e479dc0408ba",
+      "at": "2026-11-27T07:50:26.740Z"
+    },
+    {
+      "version": "147ecdc8c5a0",
+      "commit": "147ecdc8c5a096f1ddd6319db8be9ee7f6ee9821",
+      "checksum": "a290581214debe2050f3abd4ef40fac633970b4732c2404bea29b7af6c99423b",
+      "at": "2026-11-27T07:50:26.740Z"
+    }
   ]
 }

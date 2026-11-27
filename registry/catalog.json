@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "hub": "leomieo/limix-skill-hub",
-  "count": 84,
+  "count": 87,
   "skills": [
     {
       "id": "agent-autoloop",
@@ -28241,6 +28241,2829 @@
       ],
       "last_checked": "2026-11-26T19:36:02.180Z",
       "area": "quarantine"
+    },
+    {
+      "id": "drawio-skill",
+      "name": "drawio-skill",
+      "description": "Create and edit draw.io/diagrams.net diagrams as editable `.drawio` files. Covers architecture, UML/ERD/sequence, BPMN, network, and swimlane views authored from a description or converted from code, IaC, SQL, and API schemas, plus sync, query, test, review, export, and publish of existing diagrams. Use when the user asks for draw.io/diagrams.net or an editable diagram; prefer Mermaid/PlantUML when diagrams-as-code is enough.",
+      "description_vi": "Tạo, chỉnh sửa và kiểm định sơ đồ draw.io có thể tiếp tục sửa; hỗ trợ kiến trúc, UML, ERD, swimlane và chuyển đổi từ mã.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "drawio-skill",
+        "version": "ae1a42fefc0a",
+        "source": {
+          "url": "https://github.com/Agents365-ai/drawio-skill",
+          "commit": "ae1a42fefc0aa0931df268e48430579f795d6a04",
+          "sha256": "f390f875d422c1e0d52daa1406ad1ccf11b6a6cb2faa58e6706dc2600aa95916",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Tạo, chỉnh sửa và kiểm định sơ đồ draw.io có thể tiếp tục sửa; hỗ trợ kiến trúc, UML, ERD, swimlane và chuyển đổi từ mã.",
+          "aliases": [
+            "Sơ đồ draw.io",
+            "Sơ đồ kiến trúc có thể chỉnh sửa"
+          ],
+          "keywords": [
+            "drawio-skill",
+            "Sơ đồ draw.io",
+            "Sơ đồ kiến trúc có thể chỉnh sửa",
+            "drawio",
+            "skill"
+          ],
+          "examples": [
+            "Dùng drawio-skill để tạo ERD có thể chỉnh sửa từ schema SQL này."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "f390f875d422c1e0d52daa1406ad1ccf11b6a6cb2faa58e6706dc2600aa95916"
+        },
+        "requiredCapabilities": [
+          "Graphviz (optional auto-layout)",
+          "Pillow (optional GIF output)",
+          "PyYAML (optional YAML inputs)",
+          "Python 3",
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "docker [mention-hint]",
+          "draw.io CLI (native rendering/export)",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "git [mention-hint]",
+          "github-cli [mention-hint]",
+          "java [mention-hint]",
+          "node [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]",
+          "python-pptx (optional PPTX export)",
+          "react [mention-hint]",
+          "rust [mention-hint]"
+        ],
+        "permissions": [
+          "shell",
+          "filesystem-read",
+          "filesystem-write",
+          "network"
+        ],
+        "syncedAt": "2026-11-27T07:49:49.711Z",
+        "security": {
+          "status": "review-required",
+          "findings": [
+            "data/shape-index.json.gz: binary-file (low)",
+            "references/autolayout.md: privilege (medium)"
+          ]
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+            "Optional modules are documented upstream: PyYAML for YAML parsing, python-pptx for PPTX export, and Pillow for GIF output. Versions and environment are untested.",
+            "No dependency was installed. Local subprocesses use argument arrays in the reviewed security guide; optional icon fetches use pinned URLs. Live infrastructure paths require the user-provided snapshot."
+          ]
+        }
+      },
+      "aliases": [
+        "Sơ đồ draw.io",
+        "Sơ đồ kiến trúc có thể chỉnh sửa"
+      ],
+      "keywords": [
+        "drawio-skill",
+        "Sơ đồ draw.io",
+        "Sơ đồ kiến trúc có thể chỉnh sửa",
+        "drawio",
+        "skill"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "ae1a42fefc0a",
+      "source": {
+        "repository": "Agents365-ai/drawio-skill",
+        "commit": "ae1a42fefc0aa0931df268e48430579f795d6a04",
+        "path": "skills/drawio-skill"
+      },
+      "stars": 10964,
+      "created_at": "2026-03-03T16:54:59Z",
+      "pushed_at": "2026-11-26T04:44:57Z",
+      "stats_checked": "2026-11-27",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 63,
+      "score_parts": {
+        "function": 25,
+        "security": 15,
+        "compatibility": 8,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "warning",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "data/shape-index.json.gz"
+        },
+        {
+          "rule": "privilege",
+          "severity": "medium",
+          "file": "references/autolayout.md",
+          "line": 17
+        }
+      ],
+      "approval_status": "review-required",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "docker",
+            "installerId": "docker"
+          },
+          {
+            "name": "java",
+            "installerId": "jdk"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "docker",
+        "jdk"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "Graphviz (optional auto-layout)",
+          "Pillow (optional GIF output)",
+          "PyYAML (optional YAML inputs)",
+          "Python 3",
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "docker [mention-hint]",
+          "draw.io CLI (native rendering/export)",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "git [mention-hint]",
+          "github-cli [mention-hint]",
+          "java [mention-hint]",
+          "node [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]",
+          "python-pptx (optional PPTX export)",
+          "react [mention-hint]",
+          "rust [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "docker",
+            "installerId": "docker"
+          },
+          {
+            "name": "java",
+            "installerId": "jdk"
+          }
+        ],
+        "detected": [
+          {
+            "name": "filesystem-read",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 21
+              },
+              {
+                "file": "references/style-presets.md",
+                "line": 63
+              },
+              {
+                "file": "references/xml-authoring.md",
+                "line": 226
+              },
+              {
+                "file": "scripts/explain.py",
+                "line": 15
+              }
+            ]
+          },
+          {
+            "name": "filesystem-write",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/style-presets.md",
+                "line": 40
+              }
+            ]
+          },
+          {
+            "name": "react",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/c4.py",
+                "line": 36
+              },
+              {
+                "file": "scripts/jsimports.py",
+                "line": 16
+              }
+            ]
+          },
+          {
+            "name": "__future__",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/diagram_ir.py",
+                "line": 11
+              },
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 9
+              },
+              {
+                "file": "scripts/diagramctl_mcp.py",
+                "line": 13
+              }
+            ]
+          },
+          {
+            "name": "argparse",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/aiicons.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/asyncapiimports.py",
+                "line": 11
+              },
+              {
+                "file": "scripts/autolayout.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/buildup.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/c4.py",
+                "line": 57
+              },
+              {
+                "file": "scripts/ciimports.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/composeimports.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/compress.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/dbxicons.py",
+                "line": 39
+              },
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 11
+              },
+              {
+                "file": "scripts/dockerimports.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/drawio2mermaid.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/drawio2pptx.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/drawiodiff.py",
+                "line": 47
+              },
+              {
+                "file": "scripts/drawiohtml.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/edgeports.py",
+                "line": 36
+              },
+              {
+                "file": "scripts/explain.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/goimports.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/graphqlerd.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/heatmap.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/jsimports.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/k8simports.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/openapiimports.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/prdiff.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/protoimports.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/pyclasses.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/pyimports.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/raster2drawio.py",
+                "line": 34
+              },
+              {
+                "file": "scripts/relabel.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/restyle.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/runbook.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/rustimports.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/seqlayout.py",
+                "line": 39
+              },
+              {
+                "file": "scripts/shapesearch.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/sqlerd.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/svgflow.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/tfimports.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/tfstate.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/timelapse.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/tubemap.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/validate.py",
+                "line": 43
+              }
+            ]
+          },
+          {
+            "name": "ast",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/pyclasses.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/pyimports.py",
+                "line": 20
+              }
+            ]
+          },
+          {
+            "name": "base64",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/aiicons.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/buildup.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/dbxicons.py",
+                "line": 40
+              },
+              {
+                "file": "scripts/diagram_ir.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/encode_drawio_url.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/timelapse.py",
+                "line": 30
+              }
+            ]
+          },
+          {
+            "name": "collections",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/diagram_ir.py",
+                "line": 24
+              }
+            ]
+          },
+          {
+            "name": "colorsys",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/restyle.py",
+                "line": 26
+              }
+            ]
+          },
+          {
+            "name": "copy",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/buildup.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/compress.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/diagram_ir.py",
+                "line": 14
+              }
+            ]
+          },
+          {
+            "name": "csv",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/heatmap.py",
+                "line": 22
+              }
+            ]
+          },
+          {
+            "name": "datetime",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/diagram_ir.py",
+                "line": 25
+              }
+            ]
+          },
+          {
+            "name": "diagram_ir",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 36
+              }
+            ]
+          },
+          {
+            "name": "drawio_cli",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/buildup.py",
+                "line": 41
+              },
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 39
+              },
+              {
+                "file": "scripts/drawio2pptx.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/drawio_cli.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/drawiohtml.py",
+                "line": 36
+              },
+              {
+                "file": "scripts/prdiff.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/svgflow.py",
+                "line": 33
+              },
+              {
+                "file": "scripts/timelapse.py",
+                "line": 42
+              }
+            ]
+          },
+          {
+            "name": "glob",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/graphqlerd.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/k8simports.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/protoimports.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/sqlerd.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/tfimports.py",
+                "line": 26
+              }
+            ]
+          },
+          {
+            "name": "gzip",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/k8simports.py",
+                "line": 32
+              },
+              {
+                "file": "scripts/shapesearch.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/tfimports.py",
+                "line": 127
+              }
+            ]
+          },
+          {
+            "name": "heapq",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/buildup.py",
+                "line": 136
+              }
+            ]
+          },
+          {
+            "name": "html",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/diagram_ir.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/drawio2mermaid.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/drawiohtml.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/explain.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/heatmap.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/runbook.py",
+                "line": 20
+              }
+            ]
+          },
+          {
+            "name": "importlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/autolayout.py",
+                "line": 349
+              },
+              {
+                "file": "scripts/c4.py",
+                "line": 58
+              },
+              {
+                "file": "scripts/diagram_ir.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 12
+              },
+              {
+                "file": "scripts/edgeports.py",
+                "line": 37
+              },
+              {
+                "file": "scripts/tfimports.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/tfstate.py",
+                "line": 23
+              }
+            ]
+          },
+          {
+            "name": "io",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/buildup.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/timelapse.py",
+                "line": 31
+              }
+            ]
+          },
+          {
+            "name": "json",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/aiicons.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/asyncapiimports.py",
+                "line": 12
+              },
+              {
+                "file": "scripts/autolayout.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/buildup.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/c4.py",
+                "line": 59
+              },
+              {
+                "file": "scripts/ciimports.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/composeimports.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/compress.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/dbxicons.py",
+                "line": 41
+              },
+              {
+                "file": "scripts/diagram_ir.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/diagramctl_mcp.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/dockerimports.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/drawiodiff.py",
+                "line": 48
+              },
+              {
+                "file": "scripts/drawiohtml.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/encode_drawio_url.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/goimports.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/graphqlerd.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/heatmap.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/jsimports.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/k8simports.py",
+                "line": 33
+              },
+              {
+                "file": "scripts/openapiimports.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/protoimports.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/pyclasses.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/pyimports.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/raster2drawio.py",
+                "line": 35
+              },
+              {
+                "file": "scripts/relabel.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/restyle.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/runbook.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/rustimports.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/seqlayout.py",
+                "line": 40
+              },
+              {
+                "file": "scripts/shapesearch.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/sqlerd.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/tfimports.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/tfstate.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/timelapse.py",
+                "line": 32
+              },
+              {
+                "file": "scripts/tubemap.py",
+                "line": 32
+              },
+              {
+                "file": "scripts/validate.py",
+                "line": 44
+              }
+            ]
+          },
+          {
+            "name": "math",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/diagram_ir.py",
+                "line": 18
+              }
+            ]
+          },
+          {
+            "name": "os",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/aiicons.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/asyncapiimports.py",
+                "line": 13
+              },
+              {
+                "file": "scripts/autolayout.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/buildup.py",
+                "line": 32
+              },
+              {
+                "file": "scripts/c4.py",
+                "line": 60
+              },
+              {
+                "file": "scripts/ciimports.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/composeimports.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/compress.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/dbxicons.py",
+                "line": 42
+              },
+              {
+                "file": "scripts/diagram_ir.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/drawio2pptx.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/drawio_cli.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/drawiohtml.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/edgeports.py",
+                "line": 38
+              },
+              {
+                "file": "scripts/goimports.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/graphqlerd.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/heatmap.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/jsimports.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/k8simports.py",
+                "line": 34
+              },
+              {
+                "file": "scripts/openapiimports.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/prdiff.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/protoimports.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/pyclasses.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/pyimports.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/raster2drawio.py",
+                "line": 36
+              },
+              {
+                "file": "scripts/relabel.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/restyle.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/runbook.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/rustimports.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/shapesearch.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/sqlerd.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/svgflow.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/tfimports.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/tfstate.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/timelapse.py",
+                "line": 33
+              }
+            ]
+          },
+          {
+            "name": "pathlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 19
+              },
+              {
+                "file": "scripts/diagramctl_mcp.py",
+                "line": 18
+              }
+            ]
+          },
+          {
+            "name": "PIL",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/buildup.py",
+                "line": 248
+              }
+            ]
+          },
+          {
+            "name": "pptx",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/drawio2pptx.py",
+                "line": 71
+              },
+              {
+                "file": "scripts/drawio2pptx.py",
+                "line": 72
+              }
+            ]
+          },
+          {
+            "name": "re",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/aiicons.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/c4.py",
+                "line": 61
+              },
+              {
+                "file": "scripts/compress.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/dbxicons.py",
+                "line": 43
+              },
+              {
+                "file": "scripts/diagram_ir.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/drawio2mermaid.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/drawiohtml.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/explain.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/goimports.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/graphqlerd.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/heatmap.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/jsimports.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/k8simports.py",
+                "line": 35
+              },
+              {
+                "file": "scripts/protoimports.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/pyclasses.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/pyimports.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/restyle.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/rustimports.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/shapesearch.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/sqlerd.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/svgflow.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/tfimports.py",
+                "line": 30
+              }
+            ]
+          },
+          {
+            "name": "shlex",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/autolayout.py",
+                "line": 29
+              }
+            ]
+          },
+          {
+            "name": "shutil",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/drawio_cli.py",
+                "line": 20
+              }
+            ]
+          },
+          {
+            "name": "struct",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/drawio2pptx.py",
+                "line": 21
+              }
+            ]
+          },
+          {
+            "name": "subprocess",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/autolayout.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/buildup.py",
+                "line": 33
+              },
+              {
+                "file": "scripts/compress.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/diagramctl_mcp.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/drawio2pptx.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/drawiohtml.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/goimports.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/jsimports.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/prdiff.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/pyclasses.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/pyimports.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/raster2drawio.py",
+                "line": 37
+              },
+              {
+                "file": "scripts/rustimports.py",
+                "line": 32
+              },
+              {
+                "file": "scripts/svgflow.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/tfimports.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/timelapse.py",
+                "line": 34
+              }
+            ]
+          },
+          {
+            "name": "sys",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/aiicons.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/asyncapiimports.py",
+                "line": 14
+              },
+              {
+                "file": "scripts/autolayout.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/buildup.py",
+                "line": 34
+              },
+              {
+                "file": "scripts/c4.py",
+                "line": 62
+              },
+              {
+                "file": "scripts/ciimports.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/composeimports.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/compress.py",
+                "line": 32
+              },
+              {
+                "file": "scripts/dbxicons.py",
+                "line": 44
+              },
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/diagramctl_mcp.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/dockerimports.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/drawio2mermaid.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/drawio2pptx.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/drawiodiff.py",
+                "line": 49
+              },
+              {
+                "file": "scripts/drawiohtml.py",
+                "line": 29
+              },
+              {
+                "file": "scripts/edgeports.py",
+                "line": 39
+              },
+              {
+                "file": "scripts/encode_drawio_url.py",
+                "line": 16
+              },
+              {
+                "file": "scripts/explain.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/goimports.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/graphqlerd.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/heatmap.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/jsimports.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/k8simports.py",
+                "line": 36
+              },
+              {
+                "file": "scripts/openapiimports.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/prdiff.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/protoimports.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/pyclasses.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/pyimports.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/raster2drawio.py",
+                "line": 38
+              },
+              {
+                "file": "scripts/relabel.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/repair_png.py",
+                "line": 15
+              },
+              {
+                "file": "scripts/restyle.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/runbook.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/rustimports.py",
+                "line": 33
+              },
+              {
+                "file": "scripts/seqlayout.py",
+                "line": 41
+              },
+              {
+                "file": "scripts/shapesearch.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/sqlerd.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/svgflow.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/tfimports.py",
+                "line": 32
+              },
+              {
+                "file": "scripts/tfstate.py",
+                "line": 26
+              },
+              {
+                "file": "scripts/timelapse.py",
+                "line": 35
+              },
+              {
+                "file": "scripts/tubemap.py",
+                "line": 33
+              },
+              {
+                "file": "scripts/validate.py",
+                "line": 45
+              }
+            ]
+          },
+          {
+            "name": "tarfile",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/timelapse.py",
+                "line": 36
+              }
+            ]
+          },
+          {
+            "name": "tempfile",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/buildup.py",
+                "line": 35
+              },
+              {
+                "file": "scripts/compress.py",
+                "line": 33
+              },
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 18
+              },
+              {
+                "file": "scripts/drawio2pptx.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/drawiohtml.py",
+                "line": 30
+              },
+              {
+                "file": "scripts/prdiff.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/raster2drawio.py",
+                "line": 39
+              },
+              {
+                "file": "scripts/svgflow.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/timelapse.py",
+                "line": 37
+              }
+            ]
+          },
+          {
+            "name": "urllib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/aiicons.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/aiicons.py",
+                "line": 32
+              },
+              {
+                "file": "scripts/dbxicons.py",
+                "line": 45
+              },
+              {
+                "file": "scripts/dbxicons.py",
+                "line": 46
+              },
+              {
+                "file": "scripts/diagram_ir.py",
+                "line": 21
+              },
+              {
+                "file": "scripts/encode_drawio_url.py",
+                "line": 17
+              }
+            ]
+          },
+          {
+            "name": "xml",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/autolayout.py",
+                "line": 32
+              },
+              {
+                "file": "scripts/buildup.py",
+                "line": 36
+              },
+              {
+                "file": "scripts/compress.py",
+                "line": 34
+              },
+              {
+                "file": "scripts/diagram_ir.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/drawio2mermaid.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/drawio2pptx.py",
+                "line": 25
+              },
+              {
+                "file": "scripts/drawiodiff.py",
+                "line": 50
+              },
+              {
+                "file": "scripts/drawiohtml.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/edgeports.py",
+                "line": 40
+              },
+              {
+                "file": "scripts/explain.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/heatmap.py",
+                "line": 28
+              },
+              {
+                "file": "scripts/raster2drawio.py",
+                "line": 40
+              },
+              {
+                "file": "scripts/relabel.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/restyle.py",
+                "line": 31
+              },
+              {
+                "file": "scripts/runbook.py",
+                "line": 24
+              },
+              {
+                "file": "scripts/seqlayout.py",
+                "line": 42
+              },
+              {
+                "file": "scripts/validate.py",
+                "line": 46
+              }
+            ]
+          },
+          {
+            "name": "yaml",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/asyncapiimports.py",
+                "line": 38
+              },
+              {
+                "file": "scripts/asyncapiimports.py",
+                "line": 46
+              },
+              {
+                "file": "scripts/ciimports.py",
+                "line": 140
+              },
+              {
+                "file": "scripts/composeimports.py",
+                "line": 71
+              },
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 351
+              },
+              {
+                "file": "scripts/k8simports.py",
+                "line": 89
+              },
+              {
+                "file": "scripts/openapiimports.py",
+                "line": 45
+              },
+              {
+                "file": "scripts/openapiimports.py",
+                "line": 54
+              }
+            ]
+          },
+          {
+            "name": "zlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/diagram_ir.py",
+                "line": 23
+              },
+              {
+                "file": "scripts/encode_drawio_url.py",
+                "line": 18
+              }
+            ]
+          },
+          {
+            "name": "java",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "jdk",
+            "evidence": [
+              {
+                "file": "scripts/c4.py",
+                "line": 38
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 94
+              },
+              {
+                "file": "references/autolayout.md",
+                "line": 54
+              },
+              {
+                "file": "references/databricks.md",
+                "line": 45
+              },
+              {
+                "file": "references/derasterize.md",
+                "line": 41
+              },
+              {
+                "file": "references/diagram-ir.md",
+                "line": 116
+              },
+              {
+                "file": "references/diagram-types.md",
+                "line": 165
+              },
+              {
+                "file": "references/mermaid-authoring.md",
+                "line": 30
+              },
+              {
+                "file": "references/security.md",
+                "line": 35
+              },
+              {
+                "file": "references/semantic-workflows.md",
+                "line": 64
+              },
+              {
+                "file": "references/style-extraction.md",
+                "line": 7
+              },
+              {
+                "file": "references/toolbox.md",
+                "line": 93
+              },
+              {
+                "file": "references/xml-authoring.md",
+                "line": 129
+              },
+              {
+                "file": "scripts/asyncapiimports.py",
+                "line": 134
+              },
+              {
+                "file": "scripts/autolayout.py",
+                "line": 20
+              },
+              {
+                "file": "scripts/buildup.py",
+                "line": 2
+              },
+              {
+                "file": "scripts/c4.py",
+                "line": 134
+              },
+              {
+                "file": "scripts/ciimports.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/composeimports.py",
+                "line": 88
+              },
+              {
+                "file": "scripts/compress.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/diagram_ir.py",
+                "line": 99
+              },
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 140
+              },
+              {
+                "file": "scripts/diagramctl_mcp.py",
+                "line": 199
+              },
+              {
+                "file": "scripts/dockerimports.py",
+                "line": 88
+              },
+              {
+                "file": "scripts/drawio2mermaid.py",
+                "line": 8
+              },
+              {
+                "file": "scripts/drawiodiff.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/drawiohtml.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/edgeports.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/goimports.py",
+                "line": 6
+              },
+              {
+                "file": "scripts/graphqlerd.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/heatmap.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/jsimports.py",
+                "line": 155
+              },
+              {
+                "file": "scripts/k8simports.py",
+                "line": 44
+              },
+              {
+                "file": "scripts/openapiimports.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/protoimports.py",
+                "line": 439
+              },
+              {
+                "file": "scripts/pyclasses.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/pyimports.py",
+                "line": 80
+              },
+              {
+                "file": "scripts/raster2drawio.py",
+                "line": 22
+              },
+              {
+                "file": "scripts/runbook.py",
+                "line": 4
+              },
+              {
+                "file": "scripts/rustimports.py",
+                "line": 203
+              },
+              {
+                "file": "scripts/sqlerd.py",
+                "line": 5
+              },
+              {
+                "file": "scripts/tfimports.py",
+                "line": 17
+              },
+              {
+                "file": "scripts/tfstate.py",
+                "line": 101
+              },
+              {
+                "file": "scripts/validate.py",
+                "line": 32
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/aiicons.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/asyncapiimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/autolayout.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/buildup.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/c4.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/ciimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/composeimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/compress.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/dbxicons.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/diagram_ir.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/diagramctl_mcp.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/dockerimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/drawio2mermaid.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/drawio2pptx.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/drawio_cli.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/drawiodiff.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/drawiohtml.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/edgeports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/encode_drawio_url.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/explain.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/goimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/graphqlerd.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/heatmap.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/jsimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/k8simports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/openapiimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/prdiff.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/protoimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/pyclasses.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/pyimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/raster2drawio.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/relabel.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/repair_png.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/restyle.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/runbook.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/rustimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/seqlayout.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/shapesearch.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/sqlerd.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/svgflow.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/tfimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/tfstate.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/timelapse.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/tubemap.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/validate.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 7
+              },
+              {
+                "file": "references/autolayout.md",
+                "line": 25
+              },
+              {
+                "file": "references/ci-gate.md",
+                "line": 12
+              },
+              {
+                "file": "references/databricks.md",
+                "line": 12
+              },
+              {
+                "file": "references/derasterize.md",
+                "line": 39
+              },
+              {
+                "file": "references/diagram-ir.md",
+                "line": 51
+              },
+              {
+                "file": "references/diagram-types.md",
+                "line": 11
+              },
+              {
+                "file": "references/live-infra.md",
+                "line": 23
+              },
+              {
+                "file": "references/mcp.md",
+                "line": 15
+              },
+              {
+                "file": "references/pr-bot.md",
+                "line": 36
+              },
+              {
+                "file": "references/semantic-workflows.md",
+                "line": 25
+              },
+              {
+                "file": "references/shapes.md",
+                "line": 21
+              },
+              {
+                "file": "references/style-extraction.md",
+                "line": 99
+              },
+              {
+                "file": "references/style-presets.md",
+                "line": 24
+              },
+              {
+                "file": "references/toolbox.md",
+                "line": 42
+              },
+              {
+                "file": "references/troubleshooting.md",
+                "line": 19
+              },
+              {
+                "file": "references/tubemap.md",
+                "line": 13
+              },
+              {
+                "file": "references/xml-authoring.md",
+                "line": 50
+              },
+              {
+                "file": "scripts/aiicons.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/asyncapiimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/autolayout.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/buildup.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/c4.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/ciimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/composeimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/compress.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/dbxicons.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/diagram_ir.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/diagramctl_mcp.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/dockerimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/drawio2mermaid.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/drawio2pptx.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/drawio_cli.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/drawiodiff.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/drawiohtml.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/edgeports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/encode_drawio_url.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/explain.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/goimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/graphqlerd.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/heatmap.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/jsimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/k8simports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/openapiimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/prdiff.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/protoimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/pyclasses.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/pyimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/raster2drawio.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/relabel.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/repair_png.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/restyle.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/runbook.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/rustimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/seqlayout.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/shapesearch.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/sqlerd.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/svgflow.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/tfimports.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/tfstate.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/timelapse.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/tubemap.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/validate.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "rust",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/autolayout.md",
+                "line": 98
+              },
+              {
+                "file": "references/diagram-ir.md",
+                "line": 110
+              },
+              {
+                "file": "references/toolbox.md",
+                "line": 42
+              },
+              {
+                "file": "scripts/diagramctl.py",
+                "line": 47
+              },
+              {
+                "file": "scripts/diagramctl_mcp.py",
+                "line": 74
+              },
+              {
+                "file": "scripts/rustimports.py",
+                "line": 2
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 6
+              },
+              {
+                "file": "references/autolayout.md",
+                "line": 13
+              },
+              {
+                "file": "references/databricks.md",
+                "line": 11
+              },
+              {
+                "file": "references/derasterize.md",
+                "line": 38
+              },
+              {
+                "file": "references/diagram-ir.md",
+                "line": 50
+              },
+              {
+                "file": "references/live-infra.md",
+                "line": 22
+              },
+              {
+                "file": "references/mermaid-authoring.md",
+                "line": 5
+              },
+              {
+                "file": "references/semantic-workflows.md",
+                "line": 24
+              },
+              {
+                "file": "references/shapes.md",
+                "line": 20
+              },
+              {
+                "file": "references/troubleshooting.md",
+                "line": 42
+              },
+              {
+                "file": "references/tubemap.md",
+                "line": 12
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/autolayout.md",
+                "line": 143
+              },
+              {
+                "file": "references/style-extraction.md",
+                "line": 245
+              },
+              {
+                "file": "references/toolbox.md",
+                "line": 134
+              },
+              {
+                "file": "references/troubleshooting.md",
+                "line": 25
+              },
+              {
+                "file": "references/xml-authoring.md",
+                "line": 218
+              },
+              {
+                "file": "scripts/c4.py",
+                "line": 36
+              },
+              {
+                "file": "scripts/encode_drawio_url.py",
+                "line": 2
+              },
+              {
+                "file": "scripts/svgflow.py",
+                "line": 7
+              },
+              {
+                "file": "scripts/timelapse.py",
+                "line": 8
+              }
+            ]
+          },
+          {
+            "name": "docker",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "docker",
+            "evidence": [
+              {
+                "file": "references/autolayout.md",
+                "line": 102
+              },
+              {
+                "file": "references/live-infra.md",
+                "line": 13
+              },
+              {
+                "file": "references/security.md",
+                "line": 22
+              },
+              {
+                "file": "references/toolbox.md",
+                "line": 91
+              },
+              {
+                "file": "scripts/composeimports.py",
+                "line": 2
+              },
+              {
+                "file": "scripts/dockerimports.py",
+                "line": 2
+              },
+              {
+                "file": "scripts/drawiodiff.py",
+                "line": 29
+              }
+            ]
+          },
+          {
+            "name": "git",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/pr-bot.md",
+                "line": 14
+              },
+              {
+                "file": "references/style-presets.md",
+                "line": 13
+              },
+              {
+                "file": "scripts/prdiff.py",
+                "line": 36
+              }
+            ]
+          },
+          {
+            "name": "github-cli",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/pr-bot.md",
+                "line": 74
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 78,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "agents/openai.yaml",
+          "data/SHAPE-INDEX-NOTICE.md",
+          "data/databricks-icons.json",
+          "data/diagram-ir.schema.json",
+          "data/lobe-icons.json",
+          "data/shape-index.json.gz",
+          "manifest.json",
+          "references/autolayout.md",
+          "references/ci-gate.md",
+          "references/cookbook.md",
+          "references/databricks.md",
+          "references/derasterize.md",
+          "references/diagram-ir.md",
+          "references/diagram-types.md",
+          "references/guide.vi.md",
+          "references/live-infra.md",
+          "references/mcp.md",
+          "references/mermaid-authoring.md",
+          "references/pr-bot.md",
+          "references/security.md",
+          "references/semantic-workflows.md",
+          "references/shapes.md",
+          "references/style-extraction.md",
+          "references/style-presets.md",
+          "references/toolbox.md",
+          "references/troubleshooting.md",
+          "references/tubemap.md",
+          "references/xml-authoring.md",
+          "scripts/aiicons.py",
+          "scripts/asyncapiimports.py",
+          "scripts/autolayout.py",
+          "scripts/buildup.py",
+          "scripts/c4.py",
+          "scripts/ciimports.py",
+          "scripts/composeimports.py",
+          "scripts/compress.py",
+          "scripts/dbxicons.py",
+          "scripts/diagram_ir.py",
+          "scripts/diagramctl.py",
+          "scripts/diagramctl_mcp.py",
+          "scripts/dockerimports.py",
+          "scripts/drawio2mermaid.py",
+          "scripts/drawio2pptx.py",
+          "scripts/drawio_cli.py",
+          "scripts/drawiodiff.py",
+          "scripts/drawiohtml.py",
+          "scripts/edgeports.py",
+          "scripts/encode_drawio_url.py",
+          "scripts/explain.py",
+          "scripts/goimports.py",
+          "scripts/graphqlerd.py",
+          "scripts/heatmap.py",
+          "scripts/jsimports.py",
+          "scripts/k8simports.py",
+          "scripts/openapiimports.py",
+          "scripts/prdiff.py",
+          "scripts/protoimports.py",
+          "scripts/pyclasses.py",
+          "scripts/pyimports.py",
+          "scripts/raster2drawio.py",
+          "scripts/relabel.py",
+          "scripts/repair_png.py",
+          "scripts/restyle.py",
+          "scripts/runbook.py",
+          "scripts/rustimports.py",
+          "scripts/seqlayout.py",
+          "scripts/shapesearch.py",
+          "scripts/sqlerd.py",
+          "scripts/svgflow.py",
+          "scripts/tfimports.py",
+          "scripts/tfstate.py",
+          "scripts/timelapse.py",
+          "scripts/tubemap.py",
+          "scripts/validate.py",
+          "styles/built-in/colorblind-safe.json",
+          "styles/built-in/corporate.json",
+          "styles/built-in/dark.json",
+          "styles/built-in/default.json",
+          "styles/built-in/handdrawn.json",
+          "styles/schema.json"
+        ]
+      },
+      "checksum": "2bd0e0106c2da40db5e236cf67aee18d548fc3b5387c4d452df8585b0782a8a5",
+      "file_hashes": {
+        "LICENSE": "0d43b46456eda48a9054fbfa915ac80e150f5db5cf90714eda710c02e1df461a",
+        "SKILL.md": "f390f875d422c1e0d52daa1406ad1ccf11b6a6cb2faa58e6706dc2600aa95916",
+        "agents/openai.yaml": "ca8053ac6cec8b9fce47320e6cc902c615a8692e5cbb2cfa701863898862e0fc",
+        "data/SHAPE-INDEX-NOTICE.md": "dc6e070b9fd905c6a574614dd0c4403253ad8b7111e2f2f3892996b2729e26ab",
+        "data/databricks-icons.json": "760d80cdd57e5b7784b036d07ce49c149b78d362a35078c5f92171e2d268ec7c",
+        "data/diagram-ir.schema.json": "92891a36b4160a2a08398884fd0cbec224791c406a9107c923acf934f471e016",
+        "data/lobe-icons.json": "e7c309bd5ebf4df948563d48469090d0868432549f168319534215f79b0077cc",
+        "data/shape-index.json.gz": "f19d9f794775d91e196b0a8d1fce32d6dbbf9828f094bedc53e843c8131ee8ea",
+        "manifest.json": "9e671bfe835a3b13eb8d9ac952202cd7392fe6781ed9eb8cbfb69af55ff98b08",
+        "references/autolayout.md": "1d993371633b87b5563a785e8f3c862e0103f0d0251b7986e37d862b9c59b1ef",
+        "references/ci-gate.md": "4aff775b72567c0325b467805e9108187fa9e38c4df339c84a100028f3e65c50",
+        "references/cookbook.md": "c85e1373b685d4ed3ecdec115649da1f38de0ed7abce5ccbc15be2ca75d5ca59",
+        "references/databricks.md": "aa47283c8c875305569bcca8f83649912c7f8e8ceefef723220fdc139531c8c9",
+        "references/derasterize.md": "a4efd3152ba340299a92ae599d936fd07296d725a1a86efc79ed9a7b25754bb8",
+        "references/diagram-ir.md": "3a12b71703f1631b0cf6cfc5fb0faf46534a7f9382e1e5d26eecbcde685232d8",
+        "references/diagram-types.md": "958b6d0ab59b2731b6fb9d567a95d8c8cde596cddad18d5242304d916a78f7e1",
+        "references/guide.vi.md": "0d96bda028bbed76d85be4ccbd7a7881e43e50066faa544aa6f67c7e84e1eddc",
+        "references/live-infra.md": "87d92e8b8ae259a1433764f349ff8f8dd1f7991dba5d4c55198fb9fa1706580a",
+        "references/mcp.md": "f0c5463d653e734cbec1670a7cb82a58250b691335721f418c4cf6a424a8280a",
+        "references/mermaid-authoring.md": "b44d45322be91ee3b32da2badaa8ff53e6951350185bb71f7fb8f48ac9120b96",
+        "references/pr-bot.md": "c34a85d91ec4e5b79d7bfb42b725ae9f15435f1f2dc67b98f6d0523ada294d6f",
+        "references/security.md": "35f2072dcf1a01ead5dd72c971ac74bfc89a6c174667586bce495023070faa0e",
+        "references/semantic-workflows.md": "40a4130d1452bd49fea43bc04e16f646bf61c87ff9939487bf49f8abb20dbc01",
+        "references/shapes.md": "b696df00bb4d74afb93670adf0e58acd6e0eb5cf8145e40994851ec052a18c23",
+        "references/style-extraction.md": "9dfba198a0e0f610e2fdaecff29aa380984ba03c67d5a02c86b75106c95de2a0",
+        "references/style-presets.md": "b40f2dfd2cd21e244a9769d05b597d96dd2135518bea9478aa15d08616d848c6",
+        "references/toolbox.md": "261615c4b009c6cfcfe74d03756590fe74f0fb54e087135148eb51b9aa63ba7a",
+        "references/troubleshooting.md": "d88f7141a5a42d808e1f962bc4f2663068d42b53dac3b6d5016176eb7efe43d0",
+        "references/tubemap.md": "654db7cc5f5c757a28e0b64060e3c78880fa11045944810150af1770cd8107c1",
+        "references/xml-authoring.md": "9733296f91e687266fd5af7be30f9df3fa7eb86a81d4046d9aa68f36c809569e",
+        "scripts/aiicons.py": "96017e7e289eacbf7b304a623b207b6df2258fe04ffe9894d266bcde2c135c2d",
+        "scripts/asyncapiimports.py": "8a4e39f8933db55227575c23705b04a16551de1bbb833431c3462af8e881a3c2",
+        "scripts/autolayout.py": "d72e15eb0cfa356e9722c9824037d2fbd65840ee686324e87070d195d973a162",
+        "scripts/buildup.py": "d3937cac70ad1653b6c06e4d1179adb82a23229256e941cee242512b741f8324",
+        "scripts/c4.py": "82f349e1a5240984275f1fc9cfe21a91dd4124fbf42a61903439eaf90ceadd22",
+        "scripts/ciimports.py": "c9de9a7af0aa3ed6b2d3e4e1bfaa045444940bf31666fc7e0118ce962ae1ed86",
+        "scripts/composeimports.py": "ae9c96282daa3f35ddba65a443456034ca9e7e6920a3db5b646ed8fe0a17909d",
+        "scripts/compress.py": "464689570eccf3a8992531164f03933380624e00f3e97c421e74a49c1d3250a7",
+        "scripts/dbxicons.py": "dfa302a7d803b6c710d7cfdf4fc06d959c8cd9e53ef1f73108f9d2946a03db16",
+        "scripts/diagram_ir.py": "05b2b64af048b797fa15ae1f44709a7ebb6f43bbe91b45d17e115ceaa6984fcc",
+        "scripts/diagramctl.py": "3d9749ceb9ef6bfb1a74ae5d8932e2cdd9289b1a1960f18ec5bded8c7915956a",
+        "scripts/diagramctl_mcp.py": "b2b270477ac04c29d9ed213f89662246e0fae9b6fa536e49b0808582a7fbb67c",
+        "scripts/dockerimports.py": "7a06bcc73f754b01d651bf5276d0e947d6eeb9817c412abcd1bb69f3752760ec",
+        "scripts/drawio2mermaid.py": "c6bc00fd9d3e7f3f0534dddc4e519708559404e0c40c808ebc89312160b9e01c",
+        "scripts/drawio2pptx.py": "7fa749165bd5db8326af5d27920196d88b5c45e9ad33f8d99cdb3e615d9c4287",
+        "scripts/drawio_cli.py": "a4c1cd83d128b918cfe8dff09ccfecc4208c186b5d8531664549dc09c0680163",
+        "scripts/drawiodiff.py": "392396ad3633f30776208388165a3552f0faa894cf2f5ec45a1b0ce5101fdcba",
+        "scripts/drawiohtml.py": "d2c820586bec1dcd68c22c6d8c15b129a8b703241d21a041d63f3994b8edf069",
+        "scripts/edgeports.py": "429f1c8c0be958ef68418d38ddbf4af0e1da9d52f25015ecb599c74fa1b64f7a",
+        "scripts/encode_drawio_url.py": "47b77e4bc46226cc1a1cea29e93988877796d0a60706a2a38c7fd7910af3dfef",
+        "scripts/explain.py": "ce2dfff696714eb30491a8bb906467c12aea86d5685f393eb3d115a93bd4461d",
+        "scripts/goimports.py": "a2cb0ea9cfbfb6b276abf746e35d352d5edce2c7469e31a1e0d1d48ad3939a51",
+        "scripts/graphqlerd.py": "be39395bd95f7f9c22d398cc7925222fab7495e91eee51466f7d5b82c701d67b",
+        "scripts/heatmap.py": "91d0c98537bf31b14b8766f7ee98046a9142716df450a97b062092bdec532a73",
+        "scripts/jsimports.py": "63b563d5ec10498d445885d7d762d7dbc26eb2cb47d379120db372ce7261bad1",
+        "scripts/k8simports.py": "3d2c32c908c78cf0f557ba2f3c00a3351b15052a3586d94c34cfe5251057782f",
+        "scripts/openapiimports.py": "2d29c8b205d862acd1201875dedbc91fc510266012bcb64f469902d7c365afdc",
+        "scripts/prdiff.py": "341923187a9a026b8e8a7f94cd921599d3c47863605935c56035d10a97dda185",
+        "scripts/protoimports.py": "e742b59c5e9f7ae6b884184b6cf9df4465ee3cafa15069658af6cd2852d9ba99",
+        "scripts/pyclasses.py": "1fbcf0370c0154bf18cdde559b56e1dbf4a6b069b75dda8ed49e386d56308be2",
+        "scripts/pyimports.py": "619a27f15e22995b323c28b6c2037fb02d9a9522e1bbbd1fe90680d98a46d9bd",
+        "scripts/raster2drawio.py": "7a81fad51336f01fa5791c354a3467994faea396b76d018d99c377c0374fcdb5",
+        "scripts/relabel.py": "98db0ebe5928754719ccf7c1ebcf661d14e010aed3962cc38bae57c25810c414",
+        "scripts/repair_png.py": "1a453cb88231813dcb5631456b0c7431eb59acd21570c7e749c1cce89ae31c4c",
+        "scripts/restyle.py": "b12ff51e133de46aff66ca70c546d82d2eba77673b872786c3f02a31996c7140",
+        "scripts/runbook.py": "56059a1bb86ff76047dc962b2fa8276b01090bc0bfe6051b388a8adb9bc5dc9c",
+        "scripts/rustimports.py": "9b6bfbc97a1daa5e6eee6ab6733a88500e5ea8d4accb92acf08cc633761ca41f",
+        "scripts/seqlayout.py": "527c522dfd1ccff1c252bb146f250710d0033385444ac3cc2a33ede11ee09fc4",
+        "scripts/shapesearch.py": "ac624fa2d532c1a72cc77ec0b2fd94a71e0baf4cd03ba339b60eb7a784e511b3",
+        "scripts/sqlerd.py": "f7d3202b1eb10c465526795e67f27e6b6ce2f83be35851b22abc04f2df5e509a",
+        "scripts/svgflow.py": "3053c99cbd88e999974d79855ab50fece2173e20cc74e7e8366c7e3ac979bb6f",
+        "scripts/tfimports.py": "66636c6b73b41d485560a90e0b4a13a4b30d4ecb03910f66cd3519d40406b007",
+        "scripts/tfstate.py": "aa2728eb203462621de7fde8eac9d2a3631252fd8b4b3ddd647f5fb596718ade",
+        "scripts/timelapse.py": "e57c1738897102be7ace16770abe9a796e1faa855b8022de90dff09d1555b87c",
+        "scripts/tubemap.py": "f3bf38c0ca6941ea5b96174275532748793a2246d91aad2459d485666881fb6e",
+        "scripts/validate.py": "1ea76b9b35680301ee73ac192418490887988e44d68f5c922a6ad94967892bbd",
+        "styles/built-in/colorblind-safe.json": "3b836988e6533c07bf0e6676cc35731e750f0fa659ab25e80bfef7087436f3eb",
+        "styles/built-in/corporate.json": "0cb0ba05b44e5938ce775bb917b6ffaa3a0501ceedbd610975cc6e909fe5e60b",
+        "styles/built-in/dark.json": "2a78d4da3b6bc747da7943597bb1d58e9ff12f5188192ecc09589570d6873fae",
+        "styles/built-in/default.json": "5340c1f80ab983f412e895d58d5dffb4949c246acc516702fd565675fec140e1",
+        "styles/built-in/handdrawn.json": "92a1fdca1bbb95e5239fca62b2da81d4035936a11ca690e026419a5c2508e541",
+        "styles/schema.json": "4886d76481285d584eaa7963053c1ec6786eb335b4f75e1093b66788dce148c0"
+      },
+      "notes": [],
+      "last_checked": "2026-11-27T07:49:49.711Z",
+      "area": "skills"
     },
     {
       "id": "e2e-red-triage",
@@ -68684,6 +71507,1140 @@
       "area": "quarantine"
     },
     {
+      "id": "planning-with-files",
+      "name": "planning-with-files",
+      "description": "Persistent file-based planning for multi-step AI-agent work. Keeps task_plan.md, findings.md, and progress.md on disk; lifecycle hooks inject selected project planning context. Automatic recovery reads project planning files only. Explicit session-catchup.py --metadata reads same-project local agent session records and emits aggregate counts only; --replay may emit bounded nonce-framed excerpts. Optional gated mode can request continuation only when the host supports it and never runs commands declared in Markdown. The skill has no network upload path. Use for research or work needing 5+ tool calls.",
+      "description_vi": "Duy trì kế hoạch, phát hiện và tiến độ nhiều bước trong các tệp của dự án; hỗ trợ khôi phục trạng thái theo mã kế hoạch.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "planning-with-files",
+        "version": "c37abd73ff25",
+        "source": {
+          "url": "https://github.com/OthmanAdi/planning-with-files",
+          "commit": "c37abd73ff25f309a7b1b5991ef2149d5858bc49",
+          "sha256": "58fb5002a70accc4274f6ea7b3d398c87fcbef29bf15214e7f8ffc9725645d1d",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Duy trì kế hoạch, phát hiện và tiến độ nhiều bước trong các tệp của dự án; hỗ trợ khôi phục trạng thái theo mã kế hoạch.",
+          "aliases": [
+            "Lập kế hoạch bằng tệp",
+            "Ghi nhớ công việc theo dự án"
+          ],
+          "keywords": [
+            "planning-with-files",
+            "Lập kế hoạch bằng tệp",
+            "Ghi nhớ công việc theo dự án",
+            "planning",
+            "with",
+            "files"
+          ],
+          "examples": [
+            "Dùng planning-with-files để chia công việc triển khai thành các giai đoạn và ghi lại tiến độ."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "58fb5002a70accc4274f6ea7b3d398c87fcbef29bf15214e7f8ffc9725645d1d"
+        },
+        "requiredCapabilities": [
+          "Bash or PowerShell",
+          "Python 3 for helper scripts",
+          "bash [file-type-hint]",
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "docker [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "git [mention-hint]",
+          "goal [reference-hint]",
+          "loop [reference-hint]",
+          "node [mention-hint]",
+          "orjson (optional accelerator; standard-library JSON fallback)",
+          "plan-attest [reference-hint]",
+          "plan-doctor [reference-hint]",
+          "plan-goal [reference-hint]",
+          "plan-loop [reference-hint]",
+          "powershell [file-type-hint]",
+          "powershell [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]",
+          "subagents [mention-hint]",
+          "tmp [reference-hint]",
+          "workspace [reference-hint]"
+        ],
+        "permissions": [
+          "shell",
+          "filesystem-read",
+          "filesystem-write",
+          "network"
+        ],
+        "syncedAt": "2026-11-27T07:49:52.174Z",
+        "security": {
+          "status": "review-required",
+          "findings": [
+            "Upstream frontmatter declares lifecycle hooks that invoke shell for local filesystem operations. Scripts and hooks were statically reviewed only; no hook was activated or run."
+          ]
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+            "The optional orjson import falls back to Python standard-library JSON. Lifecycle hooks are preserved in the core but were not activated or run."
+          ]
+        }
+      },
+      "aliases": [
+        "Lập kế hoạch bằng tệp",
+        "Ghi nhớ công việc theo dự án"
+      ],
+      "keywords": [
+        "planning-with-files",
+        "Lập kế hoạch bằng tệp",
+        "Ghi nhớ công việc theo dự án",
+        "planning",
+        "with",
+        "files"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "c37abd73ff25",
+      "source": {
+        "repository": "OthmanAdi/planning-with-files",
+        "commit": "c37abd73ff25f309a7b1b5991ef2149d5858bc49",
+        "path": ".agents/skills/planning-with-files"
+      },
+      "stars": 28256,
+      "created_at": "2026-01-03T07:37:28Z",
+      "pushed_at": "2026-11-25T07:04:43Z",
+      "stats_checked": "2026-11-27",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 69,
+      "score_parts": {
+        "function": 25,
+        "security": 21,
+        "compatibility": 8,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        }
+      ],
+      "approval_status": "review-required",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "docker",
+            "installerId": "docker"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "docker"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "Bash or PowerShell",
+          "Python 3 for helper scripts",
+          "bash [file-type-hint]",
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "docker [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "git [mention-hint]",
+          "goal [reference-hint]",
+          "loop [reference-hint]",
+          "node [mention-hint]",
+          "orjson (optional accelerator; standard-library JSON fallback)",
+          "plan-attest [reference-hint]",
+          "plan-doctor [reference-hint]",
+          "plan-goal [reference-hint]",
+          "plan-loop [reference-hint]",
+          "powershell [file-type-hint]",
+          "powershell [mention-hint]",
+          "python [file-type-hint]",
+          "python [mention-hint]",
+          "subagents [mention-hint]",
+          "tmp [reference-hint]",
+          "workspace [reference-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "docker",
+            "installerId": "docker"
+          }
+        ],
+        "detected": [
+          {
+            "name": "filesystem-read",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 42
+              },
+              {
+                "file": "plan-inventory.md",
+                "line": 24
+              },
+              {
+                "file": "reference.md",
+                "line": 48
+              },
+              {
+                "file": "scripts/attest-plan.sh",
+                "line": 262
+              },
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 348
+              },
+              {
+                "file": "templates/loop.md",
+                "line": 18
+              }
+            ]
+          },
+          {
+            "name": "filesystem-write",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 449
+              },
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 63
+              },
+              {
+                "file": "templates/loop.md",
+                "line": 27
+              }
+            ]
+          },
+          {
+            "name": "subagents",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "reference.md",
+                "line": 100
+              },
+              {
+                "file": "templates/task_plan_autonomous.md",
+                "line": 3
+              }
+            ]
+          },
+          {
+            "name": "goal",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 295
+              },
+              {
+                "file": "SKILL.md",
+                "line": 320
+              },
+              {
+                "file": "SKILL.md",
+                "line": 327
+              },
+              {
+                "file": "SKILL.md",
+                "line": 364
+              }
+            ]
+          },
+          {
+            "name": "loop",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 295
+              },
+              {
+                "file": "SKILL.md",
+                "line": 331
+              },
+              {
+                "file": "SKILL.md",
+                "line": 362
+              },
+              {
+                "file": "SKILL.md",
+                "line": 364
+              },
+              {
+                "file": "SKILL.md",
+                "line": 368
+              }
+            ]
+          },
+          {
+            "name": "plan-attest",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 243
+              },
+              {
+                "file": "SKILL.md",
+                "line": 481
+              },
+              {
+                "file": "SKILL.md",
+                "line": 501
+              },
+              {
+                "file": "templates/loop.md",
+                "line": 37
+              }
+            ]
+          },
+          {
+            "name": "plan-doctor",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 244
+              }
+            ]
+          },
+          {
+            "name": "plan-goal",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 301
+              },
+              {
+                "file": "SKILL.md",
+                "line": 303
+              },
+              {
+                "file": "SKILL.md",
+                "line": 306
+              },
+              {
+                "file": "SKILL.md",
+                "line": 318
+              },
+              {
+                "file": "SKILL.md",
+                "line": 327
+              },
+              {
+                "file": "SKILL.md",
+                "line": 339
+              },
+              {
+                "file": "SKILL.md",
+                "line": 341
+              },
+              {
+                "file": "SKILL.md",
+                "line": 347
+              }
+            ]
+          },
+          {
+            "name": "plan-loop",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 301
+              },
+              {
+                "file": "SKILL.md",
+                "line": 303
+              },
+              {
+                "file": "SKILL.md",
+                "line": 306
+              },
+              {
+                "file": "SKILL.md",
+                "line": 329
+              },
+              {
+                "file": "SKILL.md",
+                "line": 339
+              },
+              {
+                "file": "SKILL.md",
+                "line": 341
+              },
+              {
+                "file": "SKILL.md",
+                "line": 356
+              }
+            ]
+          },
+          {
+            "name": "tmp",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 495
+              }
+            ]
+          },
+          {
+            "name": "workspace",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 280
+              }
+            ]
+          },
+          {
+            "name": "ctypes",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 322
+              },
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 444
+              },
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 460
+              }
+            ]
+          },
+          {
+            "name": "hashlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 70
+              },
+              {
+                "file": "scripts/session-catchup.py",
+                "line": 14
+              }
+            ]
+          },
+          {
+            "name": "json",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 71
+              },
+              {
+                "file": "scripts/session-catchup.py",
+                "line": 15
+              }
+            ]
+          },
+          {
+            "name": "msvcrt",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 323
+              },
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 445
+              }
+            ]
+          },
+          {
+            "name": "orjson",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/session-catchup.py",
+                "line": 47
+              }
+            ]
+          },
+          {
+            "name": "os",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 72
+              },
+              {
+                "file": "scripts/session-catchup.py",
+                "line": 18
+              }
+            ]
+          },
+          {
+            "name": "pathlib",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/session-catchup.py",
+                "line": 19
+              }
+            ]
+          },
+          {
+            "name": "re",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 73
+              },
+              {
+                "file": "scripts/session-catchup.py",
+                "line": 16
+              }
+            ]
+          },
+          {
+            "name": "secrets",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 74
+              }
+            ]
+          },
+          {
+            "name": "shutil",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 75
+              }
+            ]
+          },
+          {
+            "name": "sqlite3",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/session-catchup.py",
+                "line": 538
+              }
+            ]
+          },
+          {
+            "name": "stat",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 76
+              }
+            ]
+          },
+          {
+            "name": "subprocess",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 77
+              }
+            ]
+          },
+          {
+            "name": "sys",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 78
+              },
+              {
+                "file": "scripts/session-catchup.py",
+                "line": 17
+              }
+            ]
+          },
+          {
+            "name": "tempfile",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 79
+              }
+            ]
+          },
+          {
+            "name": "typing",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "python",
+            "distributionName": "unresolved",
+            "evidence": [
+              {
+                "file": "scripts/session-catchup.py",
+                "line": 20
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/attest-plan.sh",
+                "line": 1
+              },
+              {
+                "file": "scripts/check-complete.sh",
+                "line": 1
+              },
+              {
+                "file": "scripts/gate-stop.sh",
+                "line": 1
+              },
+              {
+                "file": "scripts/init-session.sh",
+                "line": 1
+              },
+              {
+                "file": "scripts/inject-plan.sh",
+                "line": 1
+              },
+              {
+                "file": "scripts/ledger-append.sh",
+                "line": 1
+              },
+              {
+                "file": "scripts/ledger-summary.sh",
+                "line": 1
+              },
+              {
+                "file": "scripts/phase-status.sh",
+                "line": 1
+              },
+              {
+                "file": "scripts/plan-doctor.sh",
+                "line": 1
+              },
+              {
+                "file": "scripts/resolve-plan-dir.sh",
+                "line": 1
+              },
+              {
+                "file": "scripts/set-active-plan.sh",
+                "line": 1
+              },
+              {
+                "file": "scripts/skill-hook.sh",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 304
+              },
+              {
+                "file": "scripts/plan-doctor.sh",
+                "line": 167
+              }
+            ]
+          },
+          {
+            "name": "powershell",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/attest-plan.ps1",
+                "line": 1
+              },
+              {
+                "file": "scripts/check-complete.ps1",
+                "line": 1
+              },
+              {
+                "file": "scripts/init-session.ps1",
+                "line": 1
+              },
+              {
+                "file": "scripts/ledger-append.ps1",
+                "line": 1
+              },
+              {
+                "file": "scripts/ledger-summary.ps1",
+                "line": 1
+              },
+              {
+                "file": "scripts/phase-status.ps1",
+                "line": 1
+              },
+              {
+                "file": "scripts/resolve-plan-dir.ps1",
+                "line": 1
+              },
+              {
+                "file": "scripts/set-active-plan.ps1",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/session-catchup.py",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 54
+              },
+              {
+                "file": "scripts/attest-plan.sh",
+                "line": 207
+              },
+              {
+                "file": "scripts/init-session.sh",
+                "line": 121
+              },
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/inject-plan.sh",
+                "line": 33
+              },
+              {
+                "file": "scripts/ledger-append.sh",
+                "line": 207
+              },
+              {
+                "file": "scripts/plan-doctor.sh",
+                "line": 39
+              },
+              {
+                "file": "scripts/resolve-plan-dir.ps1",
+                "line": 154
+              },
+              {
+                "file": "scripts/resolve-plan-dir.sh",
+                "line": 145
+              },
+              {
+                "file": "scripts/session-catchup.py",
+                "line": 1
+              },
+              {
+                "file": "scripts/set-active-plan.sh",
+                "line": 96
+              },
+              {
+                "file": "scripts/skill-hook.sh",
+                "line": 65
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 5
+              },
+              {
+                "file": "examples.md",
+                "line": 8
+              },
+              {
+                "file": "scripts/check-complete.sh",
+                "line": 1
+              },
+              {
+                "file": "scripts/init-session.sh",
+                "line": 1
+              },
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 11
+              },
+              {
+                "file": "scripts/inject-plan.sh",
+                "line": 42
+              },
+              {
+                "file": "scripts/resolve-plan-dir.sh",
+                "line": 119
+              },
+              {
+                "file": "scripts/session-catchup.py",
+                "line": 80
+              },
+              {
+                "file": "scripts/set-active-plan.sh",
+                "line": 70
+              },
+              {
+                "file": "scripts/skill-hook.sh",
+                "line": 62
+              },
+              {
+                "file": "templates/loop.md",
+                "line": 22
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 128
+              },
+              {
+                "file": "templates/analytics_findings.md",
+                "line": 59
+              },
+              {
+                "file": "templates/findings.md",
+                "line": 39
+              }
+            ]
+          },
+          {
+            "name": "docker",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "docker",
+            "evidence": [
+              {
+                "file": "scripts/gate-stop.sh",
+                "line": 23
+              }
+            ]
+          },
+          {
+            "name": "git",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 44
+              },
+              {
+                "file": "scripts/inject-plan.py",
+                "line": 1308
+              },
+              {
+                "file": "scripts/inject-plan.sh",
+                "line": 1357
+              },
+              {
+                "file": "scripts/session-catchup.py",
+                "line": 685
+              }
+            ]
+          },
+          {
+            "name": "powershell",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 60
+              },
+              {
+                "file": "plan-inventory.md",
+                "line": 14
+              },
+              {
+                "file": "scripts/attest-plan.ps1",
+                "line": 68
+              },
+              {
+                "file": "scripts/attest-plan.sh",
+                "line": 440
+              },
+              {
+                "file": "scripts/init-session.ps1",
+                "line": 19
+              },
+              {
+                "file": "scripts/ledger-append.ps1",
+                "line": 4
+              },
+              {
+                "file": "scripts/ledger-summary.ps1",
+                "line": 4
+              },
+              {
+                "file": "scripts/phase-status.ps1",
+                "line": 4
+              },
+              {
+                "file": "scripts/resolve-plan-dir.ps1",
+                "line": 1
+              },
+              {
+                "file": "scripts/session-catchup.py",
+                "line": 27
+              },
+              {
+                "file": "scripts/set-active-plan.ps1",
+                "line": 2
+              },
+              {
+                "file": "scripts/set-active-plan.sh",
+                "line": 191
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 33,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "examples.md",
+          "manifest.json",
+          "plan-inventory.md",
+          "reference.md",
+          "references/guide.vi.md",
+          "scripts/attest-plan.ps1",
+          "scripts/attest-plan.sh",
+          "scripts/check-complete.ps1",
+          "scripts/check-complete.sh",
+          "scripts/gate-stop.sh",
+          "scripts/init-session.ps1",
+          "scripts/init-session.sh",
+          "scripts/inject-plan.py",
+          "scripts/inject-plan.sh",
+          "scripts/ledger-append.ps1",
+          "scripts/ledger-append.sh",
+          "scripts/ledger-summary.ps1",
+          "scripts/ledger-summary.sh",
+          "scripts/phase-status.ps1",
+          "scripts/phase-status.sh",
+          "scripts/plan-doctor.sh",
+          "scripts/resolve-plan-dir.ps1",
+          "scripts/resolve-plan-dir.sh",
+          "scripts/session-catchup.py",
+          "scripts/set-active-plan.ps1",
+          "scripts/set-active-plan.sh",
+          "scripts/skill-hook.sh",
+          "templates/analytics_findings.md",
+          "templates/analytics_task_plan.md",
+          "templates/findings.md",
+          "templates/loop.md",
+          "templates/progress.md",
+          "templates/task_plan.md",
+          "templates/task_plan_autonomous.md"
+        ]
+      },
+      "checksum": "a0a075c1a1c0e0c2296b8c9052d71d55e72a8fa702ae26411fc46d649a98d1bd",
+      "file_hashes": {
+        "LICENSE": "4f2e5ecfaa4e0833621cfe54c0bdc2f60f086c0925540d7bdc713517eafb3c84",
+        "SKILL.md": "58fb5002a70accc4274f6ea7b3d398c87fcbef29bf15214e7f8ffc9725645d1d",
+        "examples.md": "450355fac69e0fac93453b6c7383c8fb9ba3470662f6c8291080028f73ce00dc",
+        "manifest.json": "063c8e5671c218e962b3dc022e9e22866c54bc91d39b93351c93cb420b16a2bb",
+        "plan-inventory.md": "8e93540069c7c68d5f816a8969776c6fe3d012872e508e1535b275b9000c71dd",
+        "reference.md": "8f7d9cfe1971c5a32f3e5edb63ddfad73a11cc7de19d5065a6ec75fd118c0fdb",
+        "references/guide.vi.md": "a1024f4a0f29b6c04ed446affe4e1d875066c954cd22b6043f8afb6c12b3d52b",
+        "scripts/attest-plan.ps1": "cf1f3a311fc01b929c3b4fbf58e22b5d9cf0cb5743199f4bb3078177ee9a3fd2",
+        "scripts/attest-plan.sh": "6d5902742a9ec5507af7bb11c9f6c6702f325d547a7776876a0755e7fd85e786",
+        "scripts/check-complete.ps1": "7406bc1c68108346a114fc99d1ec013c96d878cc7f9c8c0ef1cbdea2a3f295da",
+        "scripts/check-complete.sh": "b649ac722e28009c7213fdeecb337910948fdd4e04fafd027cdf997b0ebc5965",
+        "scripts/gate-stop.sh": "ed4f138ccd9ec727ccc5d966a523c8f8506779d93a30ec0329282b23c511c0e6",
+        "scripts/init-session.ps1": "9bdeb4c1ded1463da0cd8904742fe39eea13449b1b18f864b79ec903f0416838",
+        "scripts/init-session.sh": "725ca9e019fcd586ac6f759d568dc74c14ca56edebdf2c335ada8088899115aa",
+        "scripts/inject-plan.py": "fc85ae3350c49ef58fd191f8e7f76f976982d3ea983113150e4559c742ca0a28",
+        "scripts/inject-plan.sh": "205a0268e6065e9bd2d77de19d3c539daa2162bccaeda2bd0557eeb36012d934",
+        "scripts/ledger-append.ps1": "d88796090a234f78ae07131e7dfe7ca6de0987d6fd5a4588fffa89bdb1d569c7",
+        "scripts/ledger-append.sh": "d918315f8b73a2a1e1dddef1c76798d1fd72f5f99644ff34115d0e7ac7e69290",
+        "scripts/ledger-summary.ps1": "faf3d27a2c26104b9e78e6aa4a923a7355a941ae6962f2ef4cb8c31aeaaee276",
+        "scripts/ledger-summary.sh": "c2b41ff5aa237675ac3b81008317e3b31841a957bfdbd83b1017f5564edbf0ea",
+        "scripts/phase-status.ps1": "14af4ffbbbb11295839cffe3fbc1970dc131d26b5e3eecf0e9775315341b9473",
+        "scripts/phase-status.sh": "364fa7568fb93efcb485468ae47033f1350c1e0a8bfb00f5857d3e07424c82a9",
+        "scripts/plan-doctor.sh": "5a4ef77e2889469f7d1172acde7edb6bf65134d70455aa632f405fea8dbf772d",
+        "scripts/resolve-plan-dir.ps1": "e6e83b070e98b7d6c1cbccbc4e8ebc15dff3bd5fcb5515c8a6fb50fc26845f66",
+        "scripts/resolve-plan-dir.sh": "3a4cbbefb518147a34081f747e677ce228b80eca886e849c132990362314a65d",
+        "scripts/session-catchup.py": "ce8e81ff88748185d6afc82860cdfa37bf5134d92ceb7db674585e1db1a4003d",
+        "scripts/set-active-plan.ps1": "a25384724e887b8bb8e073ddcf8e2e9adea31e7c0049007b04fe7cdddad96cb9",
+        "scripts/set-active-plan.sh": "351778753db8ecb5ec4b698e2782c63b49b20b5168aebd9f1c043959c3b110bd",
+        "scripts/skill-hook.sh": "94222927ed8a8f9f4cade8cf8911059dd40fa5090b8728fde007bfbee7782cb9",
+        "templates/analytics_findings.md": "cd46495d0a7d59f150f1ecc7f9528bb1b0856bec73a2d04e06f48cdb6798ec0f",
+        "templates/analytics_task_plan.md": "c58c0cff7148117a0728c136462faf256848f1e5ef9a7ed528b4f60b7a831ff9",
+        "templates/findings.md": "bb9237ccbf08148d7f7f23ad58fbc9bd7c879c6d0cbca1d533b5b5f21c26c529",
+        "templates/loop.md": "cb13b5f1030a015442a981da69fa0dc910f78f4782ebfa2fd0eac00d6e71a143",
+        "templates/progress.md": "28fc357000ed2b18910c4e436f0f2e02f4abf0acd29cce370a2670640974f31c",
+        "templates/task_plan.md": "3c4b61444270f689c3dab81b7113467fb87e9705175aea9c3a3b970bd4e777a3",
+        "templates/task_plan_autonomous.md": "5a93e639a15a3d0e4f89d915199cf09cdd211441547eba86bed34164edc25891"
+      },
+      "notes": [],
+      "last_checked": "2026-11-27T07:49:52.174Z",
+      "area": "skills"
+    },
+    {
       "id": "positioning-angles",
       "name": "positioning-angles",
       "description": "Find the angle and the offer that make something sell. Researches what competitors say and pay to say, mines their bad reviews for the fears nobody answers, reads how jaded the market is, then writes 3-5 angles with one starred. Shipped lines use only verified facts, and a stronger idea the business can't back yet goes on a To make this true list with what it would take. Has a local-service mode (job types, map-pack competitors, trade guarantees). Use when launching a product or service, building an offer or lead magnet, before writing a page, or when marketing isn't converting.",
@@ -78055,6 +82012,1069 @@
       "notes": [],
       "last_checked": "2026-11-14T01:04:06.413Z",
       "area": "skills"
+    },
+    {
+      "id": "visual-explainer",
+      "name": "visual-explainer",
+      "description": "Generate self-contained HTML visual explanations for systems, code changes, plans, data, and technical concepts. Use for diagrams, architecture overviews, diff or plan reviews, project recaps, comparison tables, slide decks, animated explainers, narrated MP4 videos, and other visual explanations.",
+      "description_vi": "Tạo trang HTML tự chứa để giải thích hệ thống, mã, kế hoạch hoặc dữ liệu bằng sơ đồ, hình và diễn giải trực quan.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "visual-explainer",
+        "version": "147ecdc8c5a0",
+        "source": {
+          "url": "https://github.com/nicobailon/visual-explainer",
+          "commit": "147ecdc8c5a096f1ddd6319db8be9ee7f6ee9821",
+          "sha256": "6abc82735d6868470121d4b97b820cdbd69d7128aca416e4c21d465a9c56d044",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Tạo trang HTML tự chứa để giải thích hệ thống, mã, kế hoạch hoặc dữ liệu bằng sơ đồ, hình và diễn giải trực quan.",
+          "aliases": [
+            "Giải thích trực quan",
+            "Trang giải thích HTML"
+          ],
+          "keywords": [
+            "visual-explainer",
+            "Giải thích trực quan",
+            "Trang giải thích HTML",
+            "visual",
+            "explainer"
+          ],
+          "examples": [
+            "Dùng visual-explainer để minh họa luồng dữ liệu trong dịch vụ này bằng một trang HTML ngắn."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "6abc82735d6868470121d4b97b820cdbd69d7128aca416e4c21d465a9c56d044"
+        },
+        "requiredCapabilities": [
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "ffmpeg [mention-hint]",
+          "ffprobe [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "generate-slides [reference-hint]",
+          "generate-video [reference-hint]",
+          "git [mention-hint]",
+          "image-generation [mention-hint]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "playwright [mention-hint]",
+          "python [mention-hint]",
+          "react [mention-hint]",
+          "rust [mention-hint]",
+          "text-to-speech [mention-hint]",
+          "three [mention-hint]",
+          "tmp [reference-hint]"
+        ],
+        "permissions": [
+          "shell",
+          "filesystem-read",
+          "filesystem-write"
+        ],
+        "syncedAt": "2026-11-27T07:49:44.755Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "kit/files.mjs: credential-files (high)",
+            "kit/vendor/pele.mjs: invisible-unicode (high)",
+            "Static scan matched a defensive credential-name denylist in kit/files.mjs and U+200D/U+FEFF inside a regex in minified kit/vendor/pele.mjs. This bundled third-party code remains unreviewed; .claude-plugin/plugin.json was excluded, so the package remains quarantined."
+          ]
+        },
+        "compatibility": {
+          "status": "incompatible",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "1 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+            "Static imports reference optional integration modules for the Pi extension, MCP server, browser rendering and slide/video tooling. No dependency manifest is bundled in the selected skill directory; versions and runtime completeness are unverified."
+          ]
+        }
+      },
+      "aliases": [
+        "Giải thích trực quan",
+        "Trang giải thích HTML"
+      ],
+      "keywords": [
+        "visual-explainer",
+        "Giải thích trực quan",
+        "Trang giải thích HTML",
+        "visual",
+        "explainer"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "147ecdc8c5a0",
+      "source": {
+        "repository": "nicobailon/visual-explainer",
+        "commit": "147ecdc8c5a096f1ddd6319db8be9ee7f6ee9821",
+        "path": "plugins/visual-explainer"
+      },
+      "stars": 11297,
+      "created_at": "2026-02-16T19:33:52Z",
+      "pushed_at": "2026-11-25T23:24:41Z",
+      "stats_checked": "2026-11-27",
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 21,
+        "security": 0,
+        "compatibility": 12,
+        "testing": 0,
+        "maintenance": 10,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "kit/defs.svg"
+        },
+        {
+          "rule": "credential-files",
+          "severity": "high",
+          "file": "kit/files.mjs",
+          "line": 6
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "kit/vendor/PELE-LICENSE"
+        },
+        {
+          "rule": "invisible-unicode",
+          "severity": "high",
+          "file": "kit/vendor/pele.mjs",
+          "line": 43
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": "Requires a browser to view generated HTML files. Optional surf-cli for AI image generation.",
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "ffprobe",
+            "installerId": "ffmpeg"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "ffmpeg"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "ffmpeg [mention-hint]",
+          "ffprobe [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "generate-slides [reference-hint]",
+          "generate-video [reference-hint]",
+          "git [mention-hint]",
+          "image-generation [mention-hint]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "playwright [mention-hint]",
+          "python [mention-hint]",
+          "react [mention-hint]",
+          "rust [mention-hint]",
+          "text-to-speech [mention-hint]",
+          "three [mention-hint]",
+          "tmp [reference-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "ffmpeg",
+            "installerId": "ffmpeg"
+          },
+          {
+            "name": "ffprobe",
+            "installerId": "ffmpeg"
+          }
+        ],
+        "detected": [
+          {
+            "name": "filesystem-read",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 71
+              },
+              {
+                "file": "commands/diff-review.md",
+                "line": 8
+              },
+              {
+                "file": "commands/state-machine.md",
+                "line": 6
+              },
+              {
+                "file": "extension.ts",
+                "line": 1
+              },
+              {
+                "file": "kit/files.mjs",
+                "line": 3
+              },
+              {
+                "file": "kit/machine.mjs",
+                "line": 5
+              },
+              {
+                "file": "kit/render.mjs",
+                "line": 6
+              },
+              {
+                "file": "mcp/server.mjs",
+                "line": 4
+              },
+              {
+                "file": "plan/render.mjs",
+                "line": 5
+              },
+              {
+                "file": "pptx/export.mjs",
+                "line": 3
+              },
+              {
+                "file": "references/extras.md",
+                "line": 10
+              }
+            ]
+          },
+          {
+            "name": "filesystem-write",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "extension.ts",
+                "line": 1
+              },
+              {
+                "file": "kit/look.mjs",
+                "line": 5
+              },
+              {
+                "file": "kit/render.mjs",
+                "line": 6
+              },
+              {
+                "file": "mcp/server.mjs",
+                "line": 4
+              },
+              {
+                "file": "plan/render.mjs",
+                "line": 5
+              },
+              {
+                "file": "pptx/export.mjs",
+                "line": 317
+              },
+              {
+                "file": "references/extras.md",
+                "line": 10
+              },
+              {
+                "file": "video/media.mjs",
+                "line": 3
+              },
+              {
+                "file": "video/render.mjs",
+                "line": 2
+              }
+            ]
+          },
+          {
+            "name": "image-generation",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 5
+              },
+              {
+                "file": "references/extras.md",
+                "line": 7
+              }
+            ]
+          },
+          {
+            "name": "text-to-speech",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/video.md",
+                "line": 68
+              }
+            ]
+          },
+          {
+            "name": "generate-slides",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 61
+              }
+            ]
+          },
+          {
+            "name": "generate-video",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 84
+              }
+            ]
+          },
+          {
+            "name": "tmp",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "mcp/README.md",
+                "line": 10
+              }
+            ]
+          },
+          {
+            "name": "react",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "video/driver.js",
+                "line": 4
+              }
+            ]
+          },
+          {
+            "name": "three",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 57
+              },
+              {
+                "file": "references/motion.md",
+                "line": 48
+              },
+              {
+                "file": "references/video.md",
+                "line": 43
+              }
+            ]
+          },
+          {
+            "name": " line under the drawing · line: the machine",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "kit/machine.mjs",
+                "line": 333
+              }
+            ]
+          },
+          {
+            "name": ", ",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "kit/flow.mjs",
+                "line": 54
+              }
+            ]
+          },
+          {
+            "name": "@earendil-works/pi-coding-agent",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "extension.ts",
+                "line": 7
+              }
+            ]
+          },
+          {
+            "name": "@modelcontextprotocol/server",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "mcp/server.mjs",
+                "line": 8
+              },
+              {
+                "file": "mcp/server.mjs",
+                "line": 9
+              }
+            ]
+          },
+          {
+            "name": "${path}",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "kit/machine.mjs",
+                "line": 43
+              }
+            ]
+          },
+          {
+            "name": "in e?rw:nw).has(n)?e[n]=r:(e.extra??=new Map).set(n,r)}function Ut(e,t,n){n!==void 0&&(typeof n==",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "kit/vendor/pele.mjs",
+                "line": 62
+              }
+            ]
+          },
+          {
+            "name": "in e&&(n===",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "kit/vendor/pele.mjs",
+                "line": 62
+              }
+            ]
+          },
+          {
+            "name": "node-html-parser",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "pptx/export.mjs",
+                "line": 6
+              }
+            ]
+          },
+          {
+            "name": "playwright-core",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "kit/look.mjs",
+                "line": 24
+              },
+              {
+                "file": "video/render.mjs",
+                "line": 58
+              }
+            ]
+          },
+          {
+            "name": "pptxgenjs",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "pptx/export.mjs",
+                "line": 7
+              }
+            ]
+          },
+          {
+            "name": "zod",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "mcp/server.mjs",
+                "line": 10
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "extension.ts",
+                "line": 1
+              },
+              {
+                "file": "kit/ask.js",
+                "line": 1
+              },
+              {
+                "file": "kit/ask.mjs",
+                "line": 1
+              },
+              {
+                "file": "kit/files.mjs",
+                "line": 1
+              },
+              {
+                "file": "kit/flow.mjs",
+                "line": 1
+              },
+              {
+                "file": "kit/html.mjs",
+                "line": 1
+              },
+              {
+                "file": "kit/kit.js",
+                "line": 1
+              },
+              {
+                "file": "kit/look.mjs",
+                "line": 1
+              },
+              {
+                "file": "kit/machine.mjs",
+                "line": 1
+              },
+              {
+                "file": "kit/render.mjs",
+                "line": 1
+              },
+              {
+                "file": "kit/reply.js",
+                "line": 1
+              },
+              {
+                "file": "kit/tags.mjs",
+                "line": 1
+              },
+              {
+                "file": "kit/vendor/pele.mjs",
+                "line": 1
+              },
+              {
+                "file": "mcp/server.mjs",
+                "line": 1
+              },
+              {
+                "file": "plan/plan.js",
+                "line": 1
+              },
+              {
+                "file": "plan/render.mjs",
+                "line": 1
+              },
+              {
+                "file": "pptx/export.mjs",
+                "line": 1
+              },
+              {
+                "file": "video/driver.js",
+                "line": 1
+              },
+              {
+                "file": "video/media.mjs",
+                "line": 1
+              },
+              {
+                "file": "video/render.mjs",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 18
+              },
+              {
+                "file": "extension.ts",
+                "line": 1
+              },
+              {
+                "file": "kit/files.mjs",
+                "line": 3
+              },
+              {
+                "file": "kit/flow.mjs",
+                "line": 7
+              },
+              {
+                "file": "kit/html.mjs",
+                "line": 34
+              },
+              {
+                "file": "kit/look.mjs",
+                "line": 4
+              },
+              {
+                "file": "kit/machine.mjs",
+                "line": 4
+              },
+              {
+                "file": "kit/render.mjs",
+                "line": 1
+              },
+              {
+                "file": "kit/reply.js",
+                "line": 100
+              },
+              {
+                "file": "kit/vendor/pele.mjs",
+                "line": 19
+              },
+              {
+                "file": "mcp/README.md",
+                "line": 12
+              },
+              {
+                "file": "mcp/server.mjs",
+                "line": 1
+              },
+              {
+                "file": "plan/plan.js",
+                "line": 220
+              },
+              {
+                "file": "plan/render.mjs",
+                "line": 1
+              },
+              {
+                "file": "pptx/README.md",
+                "line": 26
+              },
+              {
+                "file": "pptx/export.mjs",
+                "line": 1
+              },
+              {
+                "file": "references/diagrams.md",
+                "line": 24
+              },
+              {
+                "file": "references/extras.md",
+                "line": 10
+              },
+              {
+                "file": "references/kit.md",
+                "line": 35
+              },
+              {
+                "file": "references/machines.md",
+                "line": 7
+              },
+              {
+                "file": "references/motion.md",
+                "line": 22
+              },
+              {
+                "file": "references/plans.md",
+                "line": 10
+              },
+              {
+                "file": "references/slides.md",
+                "line": 24
+              },
+              {
+                "file": "references/style-guide.md",
+                "line": 18
+              },
+              {
+                "file": "references/themes.md",
+                "line": 7
+              },
+              {
+                "file": "references/video.md",
+                "line": 49
+              },
+              {
+                "file": "video/media.mjs",
+                "line": 1
+              },
+              {
+                "file": "video/render.mjs",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "plan/render.mjs",
+                "line": 23
+              }
+            ]
+          },
+          {
+            "name": "rust",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "references/style-guide.md",
+                "line": 56
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "mcp/README.md",
+                "line": 30
+              },
+              {
+                "file": "plan/render.mjs",
+                "line": 23
+              },
+              {
+                "file": "pptx/README.md",
+                "line": 19
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 5
+              },
+              {
+                "file": "commands/generate-web-diagram.md",
+                "line": 3
+              },
+              {
+                "file": "extension.ts",
+                "line": 25
+              },
+              {
+                "file": "kit/html.mjs",
+                "line": 16
+              },
+              {
+                "file": "kit/kit.js",
+                "line": 64
+              },
+              {
+                "file": "kit/look.mjs",
+                "line": 1
+              },
+              {
+                "file": "kit/render.mjs",
+                "line": 157
+              },
+              {
+                "file": "kit/vendor/pele.mjs",
+                "line": 43
+              },
+              {
+                "file": "mcp/README.md",
+                "line": 52
+              },
+              {
+                "file": "mcp/server.mjs",
+                "line": 20
+              },
+              {
+                "file": "references/slides.md",
+                "line": 3
+              },
+              {
+                "file": "references/video.md",
+                "line": 60
+              },
+              {
+                "file": "video/render.mjs",
+                "line": 56
+              }
+            ]
+          },
+          {
+            "name": "ffmpeg",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "ffmpeg",
+            "evidence": [
+              {
+                "file": "references/video.md",
+                "line": 60
+              },
+              {
+                "file": "video/media.mjs",
+                "line": 23
+              }
+            ]
+          },
+          {
+            "name": "ffprobe",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": "ffmpeg",
+            "evidence": [
+              {
+                "file": "video/media.mjs",
+                "line": 73
+              }
+            ]
+          },
+          {
+            "name": "git",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "commands/project-recap.md",
+                "line": 10
+              }
+            ]
+          },
+          {
+            "name": "playwright",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 84
+              },
+              {
+                "file": "kit/look.mjs",
+                "line": 3
+              },
+              {
+                "file": "references/video.md",
+                "line": 60
+              },
+              {
+                "file": "video/render.mjs",
+                "line": 58
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 50,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [
+          ".claude-plugin/plugin.json"
+        ],
+        "packageCompleteness": "incomplete",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "commands/compare.md",
+          "commands/diff-review.md",
+          "commands/fact-check.md",
+          "commands/generate-slides.md",
+          "commands/generate-video.md",
+          "commands/generate-visual-plan.md",
+          "commands/generate-web-diagram.md",
+          "commands/plan-review.md",
+          "commands/project-recap.md",
+          "commands/state-machine.md",
+          "extension.ts",
+          "kit/ask.css",
+          "kit/ask.js",
+          "kit/ask.mjs",
+          "kit/defs.svg",
+          "kit/files.mjs",
+          "kit/flow.mjs",
+          "kit/html.mjs",
+          "kit/kit.css",
+          "kit/kit.js",
+          "kit/look.mjs",
+          "kit/machine.mjs",
+          "kit/mermaid.css",
+          "kit/render.mjs",
+          "kit/reply.js",
+          "kit/tags.mjs",
+          "kit/vendor/PELE-LICENSE",
+          "kit/vendor/pele.mjs",
+          "manifest.json",
+          "mcp/README.md",
+          "mcp/server.mjs",
+          "plan/plan.css",
+          "plan/plan.js",
+          "plan/render.mjs",
+          "pptx/README.md",
+          "pptx/export.mjs",
+          "references/diagrams.md",
+          "references/extras.md",
+          "references/guide.vi.md",
+          "references/kit.md",
+          "references/machines.md",
+          "references/motion.md",
+          "references/plans.md",
+          "references/slides.md",
+          "references/style-guide.md",
+          "references/themes.md",
+          "references/video.md",
+          "templates/page.html",
+          "templates/plan.html",
+          "templates/slide-deck.html",
+          "video/driver.js",
+          "video/media.mjs",
+          "video/render.mjs"
+        ]
+      },
+      "checksum": "a290581214debe2050f3abd4ef40fac633970b4732c2404bea29b7af6c99423b",
+      "file_hashes": {
+        "LICENSE": "871b3c6c64e030c0647ca33543716bdae9511ae2d6a85d6f4ce63783bab52c8f",
+        "SKILL.md": "6abc82735d6868470121d4b97b820cdbd69d7128aca416e4c21d465a9c56d044",
+        "commands/compare.md": "55f551f4e54bfcf925edfc08fb13f053eab54e2ade504b3f1a57d972c3c3f346",
+        "commands/diff-review.md": "db6c92ea180ce3f96858bbb0a60fb983452526347ab5d4bb84a365910a53bb63",
+        "commands/fact-check.md": "48ac7313689bec09b24ff4858452404cb30a6524ee9595845da35a25238a8cca",
+        "commands/generate-slides.md": "862c0565e0e7eea47db2b134d7a5153fe3ae1217020d08681a095956cebf9b51",
+        "commands/generate-video.md": "2108455dd4432d6601626a94b0abed7c71d7b171580f170da6a6949f67d50612",
+        "commands/generate-visual-plan.md": "fea28ee16e8dcf1490773d7f0b6ba61d3ed2f8051438a1dfaba5866729988756",
+        "commands/generate-web-diagram.md": "b8a783bfe6fc114f1c655b14d0696032be49b8fa68428036aafd2a3d6041ba9d",
+        "commands/plan-review.md": "1d895c1d3b114403e6c41ae791d8769ef6da8a9381a3017a1530f9f696c6a8a1",
+        "commands/project-recap.md": "f75cc4d4d97f0c500752dce03a6d637637c5d6f61e71e35b950495f3c53a149e",
+        "commands/state-machine.md": "64efcf17b0b378465324cfeec375fe0a4a500ddd650389ba9d18a5b5d965d6d8",
+        "extension.ts": "356b281c1b5541a52fd2a00e3a6cfdc554511866758614f15585ae390fbdc25f",
+        "kit/ask.css": "b98c2798e866afe4c930cf12727a2d7d2fab52f30e2a66402ae4cf9a966736e7",
+        "kit/ask.js": "283aa36b2d6b63a3227606c88ac6ea459e914c214a88c75285e818706d49522c",
+        "kit/ask.mjs": "47904e8ae2e66756c14b364c4e0294c751a224d590553f6bb7999c6a7889ea47",
+        "kit/defs.svg": "1348383e88561087f7598e0fd9fa6bb5de3dc294bd28b5b1cb3039f811a44dfe",
+        "kit/files.mjs": "7d8e9dfd28eac72b53f6e831641e6c1b6ddd26d156cd6ce9b2b6c5acc9e40115",
+        "kit/flow.mjs": "91670d535c809025bfa24d1e44584d530a875b72303ebb3a21d426840a3ee2e8",
+        "kit/html.mjs": "012030728351d06b96815c227f17413939e0f1a70eb7afb4d49d064467c12de7",
+        "kit/kit.css": "94aef088169c7a54350a544dfb8485f72bdb32eb0269cd2ece3a905c5744d82d",
+        "kit/kit.js": "629627844a6cdc3e2fe210050bacc544a994f01dbeb7819d836f650d1bea719c",
+        "kit/look.mjs": "95ee2aa10cf719de944f27a17a09bbce2fa56d483fc45465f2fe8a1660d60e29",
+        "kit/machine.mjs": "fe845ee649b581298d6687e9f1b30032e461421102ee25822a7f67af3daa4850",
+        "kit/mermaid.css": "33aeb4ec8f535eca8f4d84c0caba9490b7bc666f1a5e65fa8e4f60474fb54543",
+        "kit/render.mjs": "6149e66fda1ec08a3a29b3673291ab129203002de13c220a5ea4b7f390275ac4",
+        "kit/reply.js": "b9cb733626cd2be0ac1105c887844f45441929e18fdd0bc1af6426f714a49ca5",
+        "kit/tags.mjs": "2df396afe4288380d20a68d639bf64558203d5aaf8b0387e007b383c39832247",
+        "kit/vendor/PELE-LICENSE": "311bccc30de6f7b9cbfb64232bb0c911ccb2191abe316550813ae25b2c7925b9",
+        "kit/vendor/pele.mjs": "f5f81e8e796a36340f593f676466189c9183626082a5c6efab9b02a92c9a1da7",
+        "manifest.json": "fa29c0ab8ed4e3f89bb776c3659696fa75b2f139831708d484c8df059deaf2e0",
+        "mcp/README.md": "4341304976fa74845993869a29c681730831b63666df55c67f8f95837ebefe03",
+        "mcp/server.mjs": "75e856190be9d16a49f33e51b94119f07540736699bf68b8d6d03cd0084747d6",
+        "plan/plan.css": "4b75b28d51a2cf9e4fbd97834712e81e43c2c4268d34d78faa05c9dc8a8bd76c",
+        "plan/plan.js": "90469f84a29c159699aef582f54426a921d53b389e28754259cd96a80d7adb07",
+        "plan/render.mjs": "658baa647333ce0f4df43d03bac962272e2697539f67eb5b4bbdd76423d15175",
+        "pptx/README.md": "2d607caa8c6d151e52baad18810134043a77e6c53eeb9725f835c9be1a2d695a",
+        "pptx/export.mjs": "4677fd6a4619d9bf2bca15bf1fd0d33683cf38e3693786658151113aeffb4acc",
+        "references/diagrams.md": "ecd6c35e52e86169982ea72736ae624c347d340d97cbbf0797467946af5d8c3a",
+        "references/extras.md": "feefd4974860569462c7e065777a0e4e91c0b690662186cb200ecc7f5b1a8b14",
+        "references/guide.vi.md": "306a2c6bec02b6cd265522843b9e09a6b16b78f711a0602987abcb9a351cef49",
+        "references/kit.md": "8b74533892710552623ae91c161b550ec10a77aefc7557557a5cdeb9104e1760",
+        "references/machines.md": "31d285bf643a0b927b6db7fb8600f2e867496948992d80d0cb978840f4d284f5",
+        "references/motion.md": "fed82c41a8c56673aa7c4d009e0d3d3f6f180839bc52c9873db0625d2be1cd45",
+        "references/plans.md": "a739e0f2b182f471fa5fff964bd32a0a1e56f6f14c4daf4d8f33675dbb71b967",
+        "references/slides.md": "26f8ad1053be5ababc69fd73d567144842e7b02c7b3a8e7cbdb2b1d98f367718",
+        "references/style-guide.md": "f61c31b82e89e668e61859d3c8e8016fe92a29e2aa02f1bfa507697b63769c81",
+        "references/themes.md": "d3507474c10fdb8904692b7cb3b5f42c70835f90ef878f2e07bde6c66ef11ef3",
+        "references/video.md": "a7f6d17b33ae374fcc88e9abc701a805b26b3ee61eb3c38e4f8448f69258546a",
+        "templates/page.html": "aa1ff4078f4bd0ab371d943d94bd31819fedc7c7043dc15d33eca5b8671c4aad",
+        "templates/plan.html": "4a2c393885e81565d7b369081174384fabd91cb7743a4f526291a7fd5f1c8fb1",
+        "templates/slide-deck.html": "33b46e6ff79d4be35ddd933ffcba4bc13acb59feaaf0d515b467085a1ca93b25",
+        "video/driver.js": "9a9332e9713f08f84af4481d82e12fc1569f42e64be28e9bc653b2874628edfe",
+        "video/media.mjs": "9627ae6dcee134445337f37c9c1471c46026273f1cdf15cff2c61a4afd1037b6",
+        "video/render.mjs": "0226e85d0e27e8dad520af1c1f22ad656b20d04829be825bf88363a0e2b08aa1"
+      },
+      "notes": [],
+      "last_checked": "2026-11-27T07:50:26.740Z",
+      "area": "quarantine"
     },
     {
       "id": "yomiyasu",

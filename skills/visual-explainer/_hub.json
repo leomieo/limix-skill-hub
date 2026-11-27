@@ -1,0 +1,16 @@
+{
+  "repository": "nicobailon/visual-explainer",
+  "commit": "147ecdc8c5a096f1ddd6319db8be9ee7f6ee9821",
+  "path": "plugins/visual-explainer",
+  "license": "MIT",
+  "stars": 11297,
+  "createdAt": "2026-02-16T19:33:52Z",
+  "pushedAt": "2026-11-25T23:24:41Z",
+  "statsCheckedAt": "2026-11-27",
+  "language": "hybrid",
+  "version": "147ecdc8c5a0",
+  "last_checked": "2026-11-27T07:50:26.740Z",
+  "coreOrigin": "upstream",
+  "originalCoreVerified": true,
+  "hybrid": true
+}

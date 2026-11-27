@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-26T19:37:44.960Z",
+  "checkedAt": "2026-11-27T08:11:58.552Z",
   "scope": "Static integrity and provenance only; no downloaded scripts executed.",
   "results": [
     {
@@ -1738,6 +1738,17 @@
         "utils/xbogus_pure.py"
       ],
       "license": null
+    },
+    {
+      "id": "drawio-skill",
+      "verified": true,
+      "origin": "upstream",
+      "files": 80,
+      "commit": "ae1a42fefc0aa0931df268e48430579f795d6a04",
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "MIT"
     },
     {
       "id": "e2e-red-triage",
@@ -4061,6 +4072,17 @@
       "license": "MIT"
     },
     {
+      "id": "planning-with-files",
+      "verified": true,
+      "origin": "upstream",
+      "files": 34,
+      "commit": "c37abd73ff25f309a7b1b5991ef2149d5858bc49",
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "MIT"
+    },
+    {
       "id": "positioning-angles",
       "verified": true,
       "origin": "upstream",
@@ -4471,6 +4493,19 @@
       "security": "review-required",
       "compatibility": "unchecked",
       "skipped": [],
+      "license": "MIT"
+    },
+    {
+      "id": "visual-explainer",
+      "verified": true,
+      "origin": "upstream",
+      "files": 53,
+      "commit": "147ecdc8c5a096f1ddd6319db8be9ee7f6ee9821",
+      "security": "quarantined",
+      "compatibility": "incompatible",
+      "skipped": [
+        ".claude-plugin/plugin.json"
+      ],
       "license": "MIT"
     },
     {

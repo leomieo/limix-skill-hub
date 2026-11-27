@@ -1,0 +1,388 @@
+{
+  "schemaVersion": 1,
+  "batchDate": "2026-11-27",
+  "checkedAt": "2026-11-27T07:32:59Z",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "repository": "https://github.com/leomieo/limix-skill-hub",
+  "base": {
+    "commit": "b0b4d5070c3be37fdd2ca17e50b703ab03590eec",
+    "catalogCount": 84,
+    "check": "Main had no curation commit for 2026-11-27; b0b4d50 only refreshed repository stats. The separate douyin-spider exception is excluded from this batch."
+  },
+  "selectionRule": {
+    "minimumStarsExclusive": 5000,
+    "releaseWindowDays": 7,
+    "checkedAt": "2026-11-27T07:32:59Z"
+  },
+  "candidates": [
+    {
+      "id": "visual-explainer",
+      "repository": "nicobailon/visual-explainer",
+      "sourcePath": "plugins/visual-explainer",
+      "commit": "147ecdc8c5a096f1ddd6319db8be9ee7f6ee9821",
+      "coreSha256": "6abc82735d6868470121d4b97b820cdbd69d7128aca416e4c21d465a9c56d044",
+      "stars": 11297,
+      "starsCheckedAt": "2026-11-27T07:32:59Z",
+      "createdAt": "2026-02-16T19:33:52Z",
+      "pushedAt": "2026-11-25T23:24:41Z",
+      "release": {
+        "tag": "v0.16.0",
+        "publishedAt": "2026-11-25T06:54:14Z",
+        "url": "https://github.com/nicobailon/visual-explainer/releases/tag/v0.16.0",
+        "summary": "Automatic figure/reference numbering, section sidebar, automatic simple-diagram layout, and expanded HTML checks."
+      },
+      "windowPass": true,
+      "license": "MIT",
+      "licenseEvidence": [
+        {
+          "path": "kit/vendor/PELE-LICENSE",
+          "sha256": "311bccc30de6f7b9cbfb64232bb0c911ccb2191abe316550813ae25b2c7925b9"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "871b3c6c64e030c0647ca33543716bdae9511ae2d6a85d6f4ce63783bab52c8f"
+        }
+      ],
+      "upstreamFiles": 53,
+      "sourceBytes": 1131472,
+      "cacheFiles": 53,
+      "skipped": [
+        ".claude-plugin/plugin.json"
+      ],
+      "sourceVerified": true,
+      "securityStatus": "quarantined",
+      "approvalStatus": "quarantined",
+      "area": "quarantine",
+      "securityFindings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "kit/defs.svg"
+        },
+        {
+          "rule": "credential-files",
+          "severity": "high",
+          "file": "kit/files.mjs",
+          "line": 6
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "kit/vendor/PELE-LICENSE"
+        },
+        {
+          "rule": "invisible-unicode",
+          "severity": "high",
+          "file": "kit/vendor/pele.mjs",
+          "line": 43
+        }
+      ],
+      "manualReview": [
+        "Static scan matched a defensive credential-name denylist in kit/files.mjs and U+200D/U+FEFF inside a regex in minified kit/vendor/pele.mjs. This bundled third-party code remains unreviewed; .claude-plugin/plugin.json was excluded, so the package remains quarantined."
+      ],
+      "compatibility": "incompatible",
+      "compatibilityNotes": [
+        "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+        "1 upstream files were excluded by size/path/nested-skill limits; inspect _hub.source.json before activation.",
+        "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+        "Static imports reference optional integration modules for the Pi extension, MCP server, browser rendering and slide/video tooling. No dependency manifest is bundled in the selected skill directory; versions and runtime completeness are unverified."
+      ],
+      "requiredCapabilities": [
+        "bash [mention-hint]",
+        "browser [mention-hint]",
+        "ffmpeg [mention-hint]",
+        "ffprobe [mention-hint]",
+        "filesystem-read [mention-hint]",
+        "filesystem-write [mention-hint]",
+        "generate-slides [reference-hint]",
+        "generate-video [reference-hint]",
+        "git [mention-hint]",
+        "image-generation [mention-hint]",
+        "node [file-type-hint]",
+        "node [mention-hint]",
+        "playwright [mention-hint]",
+        "python [mention-hint]",
+        "react [mention-hint]",
+        "rust [mention-hint]",
+        "text-to-speech [mention-hint]",
+        "three [mention-hint]",
+        "tmp [reference-hint]"
+      ],
+      "permissions": [
+        "shell",
+        "filesystem-read",
+        "filesystem-write"
+      ],
+      "reason": "Strong recent release directly improves visual-explanation authoring and validation. MIT root license and PELE vendor license retained. High scan alerts were traced to a defensive credential-path denylist and invisible Unicode in a regex within a minified vendor bundle; still quarantined because that third-party bundle is not fully reviewed and .claude-plugin/plugin.json was skipped."
+    },
+    {
+      "id": "drawio-skill",
+      "repository": "Agents365-ai/drawio-skill",
+      "sourcePath": "skills/drawio-skill",
+      "commit": "ae1a42fefc0aa0931df268e48430579f795d6a04",
+      "coreSha256": "f390f875d422c1e0d52daa1406ad1ccf11b6a6cb2faa58e6706dc2600aa95916",
+      "stars": 10964,
+      "starsCheckedAt": "2026-11-27T07:32:59Z",
+      "createdAt": "2026-03-03T16:54:59Z",
+      "pushedAt": "2026-11-26T04:44:57Z",
+      "release": {
+        "tag": "v3.5.0",
+        "publishedAt": "2026-11-22T01:44:57Z",
+        "url": "https://github.com/Agents365-ai/drawio-skill/releases/tag/v3.5.0",
+        "summary": "Fixes quoted-name SQL ER import and swimlane edge-waypoint coordinates; adds decision-exit and malformed-attribute validation."
+      },
+      "windowPass": true,
+      "license": "MIT",
+      "licenseEvidence": [
+        {
+          "path": "LICENSE",
+          "sha256": "0d43b46456eda48a9054fbfa915ac80e150f5db5cf90714eda710c02e1df461a"
+        }
+      ],
+      "upstreamFiles": 80,
+      "sourceBytes": 1107567,
+      "cacheFiles": 80,
+      "skipped": [],
+      "sourceVerified": true,
+      "securityStatus": "review-required",
+      "approvalStatus": "review-required",
+      "area": "skills",
+      "securityFindings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "data/shape-index.json.gz"
+        },
+        {
+          "rule": "privilege",
+          "severity": "medium",
+          "file": "references/autolayout.md",
+          "line": 17
+        }
+      ],
+      "manualReview": [],
+      "compatibility": "unchecked",
+      "compatibilityNotes": [
+        "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+        "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+        "Optional modules are documented upstream: PyYAML for YAML parsing, python-pptx for PPTX export, and Pillow for GIF output. Versions and environment are untested.",
+        "No dependency was installed. Local subprocesses use argument arrays in the reviewed security guide; optional icon fetches use pinned URLs. Live infrastructure paths require the user-provided snapshot."
+      ],
+      "requiredCapabilities": [
+        "Graphviz (optional auto-layout)",
+        "Pillow (optional GIF output)",
+        "PyYAML (optional YAML inputs)",
+        "Python 3",
+        "bash [mention-hint]",
+        "browser [mention-hint]",
+        "docker [mention-hint]",
+        "draw.io CLI (native rendering/export)",
+        "filesystem-read [mention-hint]",
+        "filesystem-write [mention-hint]",
+        "git [mention-hint]",
+        "github-cli [mention-hint]",
+        "java [mention-hint]",
+        "node [mention-hint]",
+        "python [file-type-hint]",
+        "python [mention-hint]",
+        "python-pptx (optional PPTX export)",
+        "react [mention-hint]",
+        "rust [mention-hint]"
+      ],
+      "permissions": [
+        "shell",
+        "filesystem-read",
+        "filesystem-write",
+        "network"
+      ],
+      "reason": "Recent release adds directly relevant diagram import and validation corrections. Full 80-file skill bundle and MIT license retained. Review-required for scripts, local file access, optional network/icon and export capabilities; no scripts or dependencies were run/installed."
+    },
+    {
+      "id": "planning-with-files",
+      "repository": "OthmanAdi/planning-with-files",
+      "sourcePath": ".agents/skills/planning-with-files",
+      "commit": "c37abd73ff25f309a7b1b5991ef2149d5858bc49",
+      "coreSha256": "58fb5002a70accc4274f6ea7b3d398c87fcbef29bf15214e7f8ffc9725645d1d",
+      "stars": 28256,
+      "starsCheckedAt": "2026-11-27T07:32:59Z",
+      "createdAt": "2026-01-03T07:37:28Z",
+      "pushedAt": "2026-11-25T07:04:43Z",
+      "release": {
+        "tag": "v3.29.0",
+        "publishedAt": "2026-11-20T20:07:32Z",
+        "url": "https://github.com/OthmanAdi/planning-with-files/releases/tag/v3.29.0",
+        "summary": "Adds checkbox re-attestation against a snapshot hash and fixes phase-scoped completion counts and parsing."
+      },
+      "windowPass": true,
+      "license": "MIT",
+      "licenseEvidence": [
+        {
+          "path": "LICENSE",
+          "sha256": "4f2e5ecfaa4e0833621cfe54c0bdc2f60f086c0925540d7bdc713517eafb3c84"
+        }
+      ],
+      "upstreamFiles": 34,
+      "sourceBytes": 559207,
+      "cacheFiles": 34,
+      "skipped": [],
+      "sourceVerified": true,
+      "securityStatus": "review-required",
+      "approvalStatus": "review-required",
+      "area": "skills",
+      "securityFindings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        }
+      ],
+      "manualReview": [
+        "Upstream frontmatter declares lifecycle hooks that invoke shell for local filesystem operations. Scripts and hooks were statically reviewed only; no hook was activated or run."
+      ],
+      "compatibility": "unchecked",
+      "compatibilityNotes": [
+        "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+        "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+        "The optional orjson import falls back to Python standard-library JSON. Lifecycle hooks are preserved in the core but were not activated or run."
+      ],
+      "requiredCapabilities": [
+        "Bash or PowerShell",
+        "Python 3 for helper scripts",
+        "bash [file-type-hint]",
+        "bash [mention-hint]",
+        "browser [mention-hint]",
+        "docker [mention-hint]",
+        "filesystem-read [mention-hint]",
+        "filesystem-write [mention-hint]",
+        "git [mention-hint]",
+        "goal [reference-hint]",
+        "loop [reference-hint]",
+        "node [mention-hint]",
+        "orjson (optional accelerator; standard-library JSON fallback)",
+        "plan-attest [reference-hint]",
+        "plan-doctor [reference-hint]",
+        "plan-goal [reference-hint]",
+        "plan-loop [reference-hint]",
+        "powershell [file-type-hint]",
+        "powershell [mention-hint]",
+        "python [file-type-hint]",
+        "python [mention-hint]",
+        "subagents [mention-hint]",
+        "tmp [reference-hint]",
+        "workspace [reference-hint]"
+      ],
+      "permissions": [
+        "shell",
+        "filesystem-read",
+        "filesystem-write",
+        "network"
+      ],
+      "reason": "Meaningful planning/attestation release remains inside the seven-day window. Full 34-file skill subtree and MIT license retained. Frontmatter declares shell lifecycle hooks for local read/write; package is review-required and hooks/scripts were not activated or executed."
+    }
+  ],
+  "results": {
+    "added": 3,
+    "catalogCount": 87,
+    "readmeLatestEntryCount": 10,
+    "readmeLatestEntryIds": [
+      "visual-explainer",
+      "drawio-skill",
+      "planning-with-files",
+      "douyin-spider",
+      "rust-anything",
+      "last30days",
+      "aso",
+      "prospecting",
+      "customer-research",
+      "leaving-pr-comments"
+    ],
+    "sourceVerified": 3,
+    "quarantined": 1,
+    "reviewRequired": 2
+  },
+  "verification": {
+    "catalog": {
+      "count": 87,
+      "errors": 0,
+      "duplicateIds": false
+    },
+    "hybrid": {
+      "checked": 87,
+      "passed": 87,
+      "sourceVerified": 78,
+      "quarantined": 53,
+      "errors": 0
+    },
+    "requirements": {
+      "firstRunUpdated": 3,
+      "secondRunUpdated": 0
+    },
+    "idempotence": {
+      "skills": [
+        "visual-explainer",
+        "drawio-skill",
+        "planning-with-files"
+      ],
+      "result": "unchanged; source provider not called; core bytes unchanged"
+    },
+    "rollback": {
+      "scratchPath": "C:\\Users\\Leo\\.limixbot\\task-workspaces\\2a4d2d77-2b24-4940-acb9-dfab775368da\\bb36d3a9-7180-4929-9fcc-d2bd5342d0ee\\rollback-check-20261127",
+      "skillsRestoredToPinnedCore": [
+        "visual-explainer",
+        "drawio-skill",
+        "planning-with-files"
+      ],
+      "hybridBundlesRetained": true
+    },
+    "hubTests": {
+      "command": "npm test",
+      "passed": 24,
+      "failed": 0,
+      "skipped": 0
+    },
+    "runtime": "No upstream script, hook, install, provider, model, service, live account, icon fetch, or external integration was invoked.",
+    "gitBytes": {
+      "status": "passed",
+      "stagedSkillFiles": 3874,
+      "sourceHashes": "all staged catalog skill bytes matched recorded hashes",
+      "upstreamExecutableFlags": "retained",
+      "unrelatedPreexistingModeChangesRestored": [
+        "skills/live-panel/scripts/check_frames.py",
+        "skills/live-panel/scripts/fetch_fonts.sh",
+        "skills/live-panel/scripts/livepanel.py",
+        "skills/live-panel/scripts/render.py",
+        "skills/yomiyasu/scripts/yomiyasu_check.py",
+        "skills/yomiyasu/scripts/yomiyasu_diff.py",
+        "skills/yomiyasu/scripts/yomiyasu_lint.py"
+      ]
+    },
+    "whitespace": {
+      "command": "git diff --cached --check",
+      "status": "passed",
+      "output": "no whitespace errors"
+    }
+  },
+  "artifacts": {
+    "checkout": "C:\\Users\\Leo\\.limixbot\\task-workspaces\\2a4d2d77-2b24-4940-acb9-dfab775368da\\bb36d3a9-7180-4929-9fcc-d2bd5342d0ee\\curation-20261127",
+    "baselineBundle": "C:\\Users\\Leo\\.limixbot\\task-workspaces\\2a4d2d77-2b24-4940-acb9-dfab775368da\\bb36d3a9-7180-4929-9fcc-d2bd5342d0ee\\baseline-2026-11-27.bundle",
+    "baselineBundleSha256": "EB523796989B2208A5C90AC43B14EFF8D8EE43CA97A2CA641532BB1D2652195E",
+    "sourceCache": "C:\\Users\\Leo\\.limixbot\\task-workspaces\\2a4d2d77-2b24-4940-acb9-dfab775368da\\bb36d3a9-7180-4929-9fcc-d2bd5342d0ee\\curation-20261127\\source-cache",
+    "sourceReviewClones": "C:\\Users\\Leo\\.limixbot\\task-workspaces\\2a4d2d77-2b24-4940-acb9-dfab775368da\\bb36d3a9-7180-4929-9fcc-d2bd5342d0ee\\upstream-review",
+    "report": "migration-reports/curation-2026-11-27.json"
+  },
+  "limitations": [
+    "visual-explainer remains quarantined: .claude-plugin/plugin.json was skipped by hidden-path policy and the minified vendor bundle was not fully reviewed.",
+    "Draw.io and planning-with-files remain review-required; compatibility and actual dependencies were not tested on a target environment.",
+    "No model/provider task-success or runtime permission behavior was tested."
+  ]
+}

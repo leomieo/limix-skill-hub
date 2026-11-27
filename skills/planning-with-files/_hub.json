@@ -1,0 +1,16 @@
+{
+  "repository": "OthmanAdi/planning-with-files",
+  "commit": "c37abd73ff25f309a7b1b5991ef2149d5858bc49",
+  "path": ".agents/skills/planning-with-files",
+  "license": "MIT",
+  "stars": 28256,
+  "createdAt": "2026-01-03T07:37:28Z",
+  "pushedAt": "2026-11-25T07:04:43Z",
+  "statsCheckedAt": "2026-11-27",
+  "language": "hybrid",
+  "version": "c37abd73ff25",
+  "last_checked": "2026-11-27T07:49:52.174Z",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "coreOrigin": "upstream"
+}

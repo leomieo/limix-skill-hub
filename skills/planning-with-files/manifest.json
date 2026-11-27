@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "name": "planning-with-files",
+  "version": "c37abd73ff25",
+  "source": {
+    "url": "https://github.com/OthmanAdi/planning-with-files",
+    "commit": "c37abd73ff25f309a7b1b5991ef2149d5858bc49",
+    "sha256": "58fb5002a70accc4274f6ea7b3d398c87fcbef29bf15214e7f8ffc9725645d1d",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Duy trì kế hoạch, phát hiện và tiến độ nhiều bước trong các tệp của dự án; hỗ trợ khôi phục trạng thái theo mã kế hoạch.",
+    "aliases": [
+      "Lập kế hoạch bằng tệp",
+      "Ghi nhớ công việc theo dự án"
+    ],
+    "keywords": [
+      "planning-with-files",
+      "Lập kế hoạch bằng tệp",
+      "Ghi nhớ công việc theo dự án",
+      "planning",
+      "with",
+      "files"
+    ],
+    "examples": [
+      "Dùng planning-with-files để chia công việc triển khai thành các giai đoạn và ghi lại tiến độ."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "58fb5002a70accc4274f6ea7b3d398c87fcbef29bf15214e7f8ffc9725645d1d"
+  },
+  "requiredCapabilities": [
+    "Bash or PowerShell",
+    "Python 3 for helper scripts",
+    "bash [file-type-hint]",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "docker [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "git [mention-hint]",
+    "goal [reference-hint]",
+    "loop [reference-hint]",
+    "node [mention-hint]",
+    "orjson (optional accelerator; standard-library JSON fallback)",
+    "plan-attest [reference-hint]",
+    "plan-doctor [reference-hint]",
+    "plan-goal [reference-hint]",
+    "plan-loop [reference-hint]",
+    "powershell [file-type-hint]",
+    "powershell [mention-hint]",
+    "python [file-type-hint]",
+    "python [mention-hint]",
+    "subagents [mention-hint]",
+    "tmp [reference-hint]",
+    "workspace [reference-hint]"
+  ],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-27T07:49:52.174Z",
+  "security": {
+    "status": "review-required",
+    "findings": [
+      "Upstream frontmatter declares lifecycle hooks that invoke shell for local filesystem operations. Scripts and hooks were statically reviewed only; no hook was activated or run."
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested.",
+      "The optional orjson import falls back to Python standard-library JSON. Lifecycle hooks are preserved in the core but were not activated or run."
+    ]
+  }
+}
