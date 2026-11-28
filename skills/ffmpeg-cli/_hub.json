@@ -1,8 +1,8 @@
 {
   "repository": "FFmpeg/FFmpeg",
-  "stars": 68312,
+  "stars": 68288,
   "createdAt": "2011-04-14T14:12:38Z",
-  "pushedAt": "2026-11-27T03:08:35Z",
+  "pushedAt": "2026-11-28T01:59:06Z",
   "license": "LGPL-2.1-or-later",
   "commit": "88c46fce27e311c73772d9b83db4047dd83b1294",
   "path": null,
@@ -11,6 +11,6 @@
   "originalCoreVerified": false,
   "coreOrigin": "hub-authored-adapter",
   "version": "88c46fce27e3",
-  "statsCheckedAt": "2026-11-27",
+  "statsCheckedAt": "2026-11-28",
   "last_checked": "2026-11-13T13:49:51.612Z"
 }
