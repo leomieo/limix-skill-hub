@@ -1,7 +1,18 @@
 {
-  "checkedAt": "2026-11-27T08:11:58.552Z",
+  "checkedAt": "2026-11-28T01:55:37.355Z",
   "scope": "Static integrity and provenance only; no downloaded scripts executed.",
   "results": [
+    {
+      "id": "accessibility-engineering",
+      "verified": true,
+      "origin": "upstream",
+      "files": 4,
+      "commit": "e997ac5b9a74eab332d5e9793bb38a38c8cfdd74",
+      "security": "review-required",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "MIT"
+    },
     {
       "id": "agent-autoloop",
       "verified": true,
@@ -2581,6 +2592,17 @@
       "origin": "upstream",
       "files": 81,
       "commit": "d208281091b1c00db1724a2ee3db0055955eb41b",
+      "security": "quarantined",
+      "compatibility": "unchecked",
+      "skipped": [],
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "impeccable",
+      "verified": true,
+      "origin": "upstream",
+      "files": 70,
+      "commit": "88cfafae649164e6dc48b88d3c0c1bf6662eaade",
       "security": "quarantined",
       "compatibility": "unchecked",
       "skipped": [],

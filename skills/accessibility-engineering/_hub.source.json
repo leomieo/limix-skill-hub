@@ -1,0 +1,31 @@
+{
+  "repository": "addyosmani/agent-skills",
+  "commit": "e997ac5b9a74eab332d5e9793bb38a38c8cfdd74",
+  "path": "skills/accessibility-engineering",
+  "verified": true,
+  "coreSha256": "75890ff5b6ec110606d023905a2905294b5fd87de60ae7b5f675099ee24dcebe",
+  "skipped": [],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "75890ff5b6ec110606d023905a2905294b5fd87de60ae7b5f675099ee24dcebe",
+      "executable": false
+    },
+    {
+      "path": "references/shared/accessibility-checklist.md",
+      "sha256": "290870b5d6b00d4e359c28c0fb98ea5ac625cd651bde3cbe276d61a39e69d743",
+      "executable": false
+    },
+    {
+      "path": "scripts/audit-a11y.sh",
+      "sha256": "cee1d6a07eba48006da838edbda72d0682aa688616ec9bb61d5555ba5ac811e0",
+      "executable": true
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+      "executable": false
+    }
+  ],
+  "backup": "migration-backups/2026-11-13/accessibility-engineering"
+}

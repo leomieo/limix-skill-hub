@@ -1,0 +1,12 @@
+{
+  "repository": "pbakaus/impeccable",
+  "license": "Apache-2.0",
+  "commit": "88cfafae649164e6dc48b88d3c0c1bf6662eaade",
+  "path": ".agents/skills/impeccable",
+  "language": "hybrid",
+  "version": "88cfafae6491",
+  "hybrid": true,
+  "originalCoreVerified": true,
+  "coreOrigin": "upstream",
+  "last_checked": "2026-11-28T01:30:00.000Z"
+}

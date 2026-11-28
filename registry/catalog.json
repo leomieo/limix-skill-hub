@@ -1,8 +1,278 @@
 {
   "schema": 1,
   "hub": "leomieo/limix-skill-hub",
-  "count": 87,
+  "count": 89,
   "skills": [
+    {
+      "id": "accessibility-engineering",
+      "name": "accessibility-engineering",
+      "description": "Audits existing interfaces for WCAG 2.2 AA conformance and remediates the violations found. Use when auditing a page or component for accessibility, running axe-core or pa11y, triaging a11y violations, or checking screen reader and contrast issues before shipping.",
+      "description_vi": "Audits existing interfaces for WCAG 2.2 AA conformance and remediates the violations found. Use when auditing a page or component for accessibility, running axe-core or pa11y, triaging a11y violations, or checking screen reader and contrast issues before shipping.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "accessibility-engineering",
+        "version": "e997ac5b9a74",
+        "source": {
+          "url": "https://github.com/addyosmani/agent-skills",
+          "commit": "e997ac5b9a74eab332d5e9793bb38a38c8cfdd74",
+          "sha256": "75890ff5b6ec110606d023905a2905294b5fd87de60ae7b5f675099ee24dcebe",
+          "license": "MIT"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Audits existing interfaces for WCAG 2.2 AA conformance and remediates the violations found. Use when auditing a page or component for accessibility, running axe-core or pa11y, triaging a11y violations, or checking screen reader and contrast issues before shipping.",
+          "aliases": [
+            "Kiểm toán khả năng truy cập",
+            "WCAG 2.2 AA"
+          ],
+          "keywords": [
+            "accessibility",
+            "engineering",
+            "Kiểm toán khả năng truy cập",
+            "WCAG 2.2 AA"
+          ],
+          "examples": [
+            "Dùng accessibility-engineering cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "75890ff5b6ec110606d023905a2905294b5fd87de60ae7b5f675099ee24dcebe"
+        },
+        "requiredCapabilities": [
+          "bash [file-type-hint]",
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "node [mention-hint]"
+        ],
+        "permissions": [
+          "shell",
+          "filesystem-read",
+          "filesystem-write",
+          "network"
+        ],
+        "syncedAt": "2026-11-28T01:30:00.000Z",
+        "security": {
+          "status": "review-required",
+          "findings": []
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Kiểm toán khả năng truy cập",
+        "WCAG 2.2 AA"
+      ],
+      "keywords": [
+        "accessibility",
+        "engineering",
+        "Kiểm toán khả năng truy cập",
+        "WCAG 2.2 AA"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "e997ac5b9a74",
+      "source": {
+        "repository": "addyosmani/agent-skills",
+        "commit": "e997ac5b9a74eab332d5e9793bb38a38c8cfdd74",
+        "path": "skills/accessibility-engineering"
+      },
+      "stars": null,
+      "created_at": null,
+      "pushed_at": null,
+      "stats_checked": null,
+      "license": "MIT",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 70,
+      "score_parts": {
+        "function": 25,
+        "security": 21,
+        "compatibility": 15,
+        "testing": 0,
+        "maintenance": 4,
+        "localization": 5
+      },
+      "grade": "review",
+      "security_status": "clean",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        }
+      ],
+      "approval_status": "review-required",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          }
+        ]
+      },
+      "dependencies": [
+        "node"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "bash [file-type-hint]",
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "node [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          }
+        ],
+        "detected": [
+          {
+            "name": "filesystem-read",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/audit-a11y.sh",
+                "line": 80
+              }
+            ]
+          },
+          {
+            "name": "filesystem-write",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/audit-a11y.sh",
+                "line": 168
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/audit-a11y.sh",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 34
+              },
+              {
+                "file": "references/shared/accessibility-checklist.md",
+                "line": 127
+              },
+              {
+                "file": "scripts/audit-a11y.sh",
+                "line": 12
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 32
+              },
+              {
+                "file": "references/shared/accessibility-checklist.md",
+                "line": 125
+              },
+              {
+                "file": "scripts/audit-a11y.sh",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 51
+              },
+              {
+                "file": "references/shared/accessibility-checklist.md",
+                "line": 126
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 3,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "manifest.json",
+          "references/guide.vi.md",
+          "references/shared/accessibility-checklist.md",
+          "scripts/audit-a11y.sh"
+        ]
+      },
+      "checksum": "9fa75a82bedfaf7bc68eba1340e02aa036f688f549e1471b3113b5214322778f",
+      "file_hashes": {
+        "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+        "SKILL.md": "75890ff5b6ec110606d023905a2905294b5fd87de60ae7b5f675099ee24dcebe",
+        "manifest.json": "3fd11c7d1e19c75c92e705a8d3540929ea63af80078e8e8fab5ae023620b360e",
+        "references/guide.vi.md": "3872c54950ea8ee66181bfa0802d3f442e82331cbb504b793eef1efbb4e2e2d8",
+        "references/shared/accessibility-checklist.md": "290870b5d6b00d4e359c28c0fb98ea5ac625cd651bde3cbe276d61a39e69d743",
+        "scripts/audit-a11y.sh": "cee1d6a07eba48006da838edbda72d0682aa688616ec9bb61d5555ba5ac811e0"
+      },
+      "notes": [],
+      "last_checked": "2026-11-28T01:30:00.000Z",
+      "area": "skills"
+    },
     {
       "id": "agent-autoloop",
       "name": "agent-autoloop",
@@ -47878,6 +48148,1080 @@
       },
       "notes": [],
       "last_checked": "2026-11-13T13:49:51.563Z",
+      "area": "quarantine"
+    },
+    {
+      "id": "impeccable",
+      "name": "impeccable",
+      "description": "Use when the user wants to design, redesign, shape, critique, audit, polish, simplify, harden, animate, or otherwise improve a frontend interface: websites, landing pages, dashboards, product UI, components, forms, settings, onboarding, empty states, and native iOS or Android screens. Handles UX review, hierarchy, layout, typography, color, motion, UX copy, accessibility, responsive behavior, edge cases, and capturing or documenting design systems (DESIGN.md, tokens). Also for making bland UI bolder, loud UI quieter, or ambitious visual effects. Not for backend-only or non-UI tasks.",
+      "description_vi": "Use when the user wants to design, redesign, shape, critique, audit, polish, simplify, harden, animate, or otherwise improve a frontend interface: websites, landing pages, dashboards, product UI, components, forms, settings, onboarding, empty states, and native iOS or Android screens. Handles UX review, hierarchy, layout, typography, color, motion, UX copy, accessibility, responsive behavior, edge cases, and capturing or documenting design systems (DESIGN.md, tokens). Also for making bland UI bolder, loud UI quieter, or ambitious visual effects. Not for backend-only or non-UI tasks.",
+      "hybrid": {
+        "schemaVersion": 1,
+        "name": "impeccable",
+        "version": "88cfafae6491",
+        "source": {
+          "url": "https://github.com/pbakaus/impeccable",
+          "commit": "88cfafae649164e6dc48b88d3c0c1bf6662eaade",
+          "sha256": "61f3ffac1fa480e1cc9a542728c56b3c5220197d02f60480193ab6cee9a30632",
+          "license": "Apache-2.0"
+        },
+        "languages": [
+          "en",
+          "vi"
+        ],
+        "vietnamese": {
+          "description": "Use when the user wants to design, redesign, shape, critique, audit, polish, simplify, harden, animate, or otherwise improve a frontend interface: websites, landing pages, dashboards, product UI, components, forms, settings, onboarding, empty states, and native iOS or Android screens. Handles UX review, hierarchy, layout, typography, color, motion, UX copy, accessibility, responsive behavior, edge cases, and capturing or documenting design systems (DESIGN.md, tokens). Also for making bland UI bolder, loud UI quieter, or ambitious visual effects. Not for backend-only or non-UI tasks.",
+          "aliases": [
+            "Thiết kế giao diện tinh chỉnh",
+            "Kiểm toán UI/UX"
+          ],
+          "keywords": [
+            "impeccable",
+            "Thiết kế giao diện tinh chỉnh",
+            "Kiểm toán UI/UX"
+          ],
+          "examples": [
+            "Dùng impeccable cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+          ],
+          "guide": "references/guide.vi.md",
+          "sourceSha256": "61f3ffac1fa480e1cc9a542728c56b3c5220197d02f60480193ab6cee9a30632"
+        },
+        "requiredCapabilities": [
+          "40 [reference-hint]",
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "foo [reference-hint]",
+          "go [mention-hint]",
+          "hooks [reference-hint]",
+          "hooks-trust [reference-hint]",
+          "image-generation [mention-hint]",
+          "impeccable-asset-producer [reference-hint]",
+          "impeccable-finish-reviewer [reference-hint]",
+          "impeccable-motion-reviewer [reference-hint]",
+          "java [mention-hint]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "playwright [mention-hint]",
+          "poll [reference-hint]",
+          "powershell [mention-hint]",
+          "puppeteer [mention-hint]",
+          "python [mention-hint]",
+          "react [mention-hint]",
+          "subagents [mention-hint]",
+          "three [mention-hint]"
+        ],
+        "permissions": [
+          "shell",
+          "filesystem-read",
+          "filesystem-write"
+        ],
+        "syncedAt": "2026-11-28T01:30:00.000Z",
+        "security": {
+          "status": "quarantined",
+          "findings": [
+            "scripts/live-browser.js: secret-exfiltration (high)"
+          ]
+        },
+        "compatibility": {
+          "status": "unchecked",
+          "notes": [
+            "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+            "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+          ]
+        }
+      },
+      "aliases": [
+        "Thiết kế giao diện tinh chỉnh",
+        "Kiểm toán UI/UX"
+      ],
+      "keywords": [
+        "impeccable",
+        "Thiết kế giao diện tinh chỉnh",
+        "Kiểm toán UI/UX"
+      ],
+      "supported_languages": [
+        "en",
+        "vi"
+      ],
+      "version": "88cfafae6491",
+      "source": {
+        "repository": "pbakaus/impeccable",
+        "commit": "88cfafae649164e6dc48b88d3c0c1bf6662eaade",
+        "path": ".agents/skills/impeccable"
+      },
+      "stars": null,
+      "created_at": null,
+      "pushed_at": null,
+      "stats_checked": null,
+      "license": "Apache-2.0",
+      "language": "hybrid",
+      "category": "other",
+      "tags": [],
+      "quality_score": 40,
+      "score_parts": {
+        "function": 23,
+        "security": 0,
+        "compatibility": 8,
+        "testing": 0,
+        "maintenance": 4,
+        "localization": 5
+      },
+      "grade": "rejected",
+      "security_status": "quarantined",
+      "security_findings": [
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "LICENSE"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "scripts/VERSION"
+        },
+        {
+          "rule": "binary-file",
+          "severity": "low",
+          "file": "scripts/impeccable"
+        },
+        {
+          "rule": "secret-exfiltration",
+          "severity": "high",
+          "file": "scripts/live-browser.js",
+          "line": 13138
+        }
+      ],
+      "approval_status": "quarantined",
+      "kind": "skill-with-tools",
+      "compatibility": {
+        "text": null,
+        "runtimes": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "java",
+            "installerId": "jdk"
+          }
+        ]
+      },
+      "dependencies": [
+        "node",
+        "jdk"
+      ],
+      "requirements": {
+        "schemaVersion": 1,
+        "capabilities": [
+          "40 [reference-hint]",
+          "bash [mention-hint]",
+          "browser [mention-hint]",
+          "filesystem-read [mention-hint]",
+          "filesystem-write [mention-hint]",
+          "foo [reference-hint]",
+          "go [mention-hint]",
+          "hooks [reference-hint]",
+          "hooks-trust [reference-hint]",
+          "image-generation [mention-hint]",
+          "impeccable-asset-producer [reference-hint]",
+          "impeccable-finish-reviewer [reference-hint]",
+          "impeccable-motion-reviewer [reference-hint]",
+          "java [mention-hint]",
+          "node [file-type-hint]",
+          "node [mention-hint]",
+          "playwright [mention-hint]",
+          "poll [reference-hint]",
+          "powershell [mention-hint]",
+          "puppeteer [mention-hint]",
+          "python [mention-hint]",
+          "react [mention-hint]",
+          "subagents [mention-hint]",
+          "three [mention-hint]"
+        ],
+        "runtimeHints": [
+          {
+            "name": "node",
+            "installerId": "node"
+          },
+          {
+            "name": "python",
+            "installerId": null
+          },
+          {
+            "name": "java",
+            "installerId": "jdk"
+          }
+        ],
+        "detected": [
+          {
+            "name": "filesystem-read",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "agents/impeccable_documenter.toml",
+                "line": 18
+              },
+              {
+                "file": "agents/impeccable_finish_reviewer.toml",
+                "line": 22
+              },
+              {
+                "file": "reference/critique.md",
+                "line": 29
+              },
+              {
+                "file": "reference/degraded/documenter.md",
+                "line": 16
+              },
+              {
+                "file": "reference/degraded/finish-reviewer.md",
+                "line": 20
+              },
+              {
+                "file": "reference/live.md",
+                "line": 153
+              }
+            ]
+          },
+          {
+            "name": "filesystem-write",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "reference/android.md",
+                "line": 44
+              },
+              {
+                "file": "reference/hooks.md",
+                "line": 5
+              },
+              {
+                "file": "reference/ios.md",
+                "line": 49
+              }
+            ]
+          },
+          {
+            "name": "image-generation",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "agents/impeccable_asset_producer.toml",
+                "line": 36
+              },
+              {
+                "file": "agents/impeccable_finish_reviewer.toml",
+                "line": 22
+              },
+              {
+                "file": "reference/degraded/asset-producer.md",
+                "line": 34
+              },
+              {
+                "file": "reference/degraded/finish-reviewer.md",
+                "line": 20
+              },
+              {
+                "file": "reference/doctor.md",
+                "line": 53
+              },
+              {
+                "file": "reference/init.md",
+                "line": 114
+              },
+              {
+                "file": "reference/new-work-comp.md",
+                "line": 19
+              },
+              {
+                "file": "reference/new-work-world.md",
+                "line": 13
+              },
+              {
+                "file": "reference/new-work.md",
+                "line": 42
+              },
+              {
+                "file": "reference/visualize.md",
+                "line": 3
+              }
+            ]
+          },
+          {
+            "name": "subagents",
+            "kind": "agent-capability",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 18
+              },
+              {
+                "file": "reference/critique.md",
+                "line": 8
+              },
+              {
+                "file": "reference/layout.md",
+                "line": 15
+              },
+              {
+                "file": "reference/typeset.md",
+                "line": 15
+              }
+            ]
+          },
+          {
+            "name": "40",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "reference/critique.md",
+                "line": 151
+              }
+            ]
+          },
+          {
+            "name": "foo",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "reference/live.md",
+                "line": 315
+              }
+            ]
+          },
+          {
+            "name": "hooks-trust",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "reference/hooks.md",
+                "line": 17
+              }
+            ]
+          },
+          {
+            "name": "hooks",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "reference/hooks.md",
+                "line": 115
+              }
+            ]
+          },
+          {
+            "name": "impeccable-asset-producer",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "reference/new-work-comp.md",
+                "line": 19
+              }
+            ]
+          },
+          {
+            "name": "impeccable-finish-reviewer",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "reference/new-work.md",
+                "line": 111
+              }
+            ]
+          },
+          {
+            "name": "impeccable-motion-reviewer",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "reference/animate.md",
+                "line": 94
+              }
+            ]
+          },
+          {
+            "name": "poll",
+            "kind": "agent-skill",
+            "status": "reference-hint",
+            "evidence": [
+              {
+                "file": "reference/live.md",
+                "line": 17
+              },
+              {
+                "file": "reference/live.md",
+                "line": 66
+              }
+            ]
+          },
+          {
+            "name": "react",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "reference/adapt.native.md",
+                "line": 23
+              },
+              {
+                "file": "reference/android.md",
+                "line": 3
+              },
+              {
+                "file": "reference/audit.native.md",
+                "line": 3
+              },
+              {
+                "file": "reference/foundations.md",
+                "line": 30
+              },
+              {
+                "file": "reference/ios.md",
+                "line": 3
+              },
+              {
+                "file": "reference/live-setup.md",
+                "line": 25
+              },
+              {
+                "file": "reference/live.md",
+                "line": 68
+              },
+              {
+                "file": "reference/new-work.md",
+                "line": 64
+              },
+              {
+                "file": "reference/onboard.md",
+                "line": 199
+              },
+              {
+                "file": "reference/optimize.md",
+                "line": 108
+              },
+              {
+                "file": "reference/overdrive.md",
+                "line": 122
+              },
+              {
+                "file": "scripts/live-browser.js",
+                "line": 2059
+              }
+            ]
+          },
+          {
+            "name": "three",
+            "kind": "framework",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "reference/overdrive.md",
+                "line": 59
+              }
+            ]
+          },
+          {
+            "name": ",{rule:b,error:w})}}})))),d.cssRules.length&&c.push(d);const m=[];c.forEach(f=>{oe(f.cssRules,m)}),m.filter(f=>{var h;return Ye(f)&&Ie(f.style.getPropertyValue(",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "scripts/modern-screenshot.umd.js",
+                "line": 8
+              }
+            ]
+          },
+          {
+            "name": "nothing ever rendered",
+            "kind": "module",
+            "status": "import-hint",
+            "ecosystem": "javascript",
+            "evidence": [
+              {
+                "file": "scripts/live-browser.js",
+                "line": 6253
+              }
+            ]
+          },
+          {
+            "name": "go",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "reference/foundations.md",
+                "line": 41
+              }
+            ]
+          },
+          {
+            "name": "java",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "jdk",
+            "evidence": [
+              {
+                "file": "scripts/live-browser.js",
+                "line": 13827
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "file-type-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "scripts/live-browser-dom.js",
+                "line": 1
+              },
+              {
+                "file": "scripts/live-browser-ignores.js",
+                "line": 1
+              },
+              {
+                "file": "scripts/live-browser-session.js",
+                "line": 1
+              },
+              {
+                "file": "scripts/live-browser.js",
+                "line": 1
+              },
+              {
+                "file": "scripts/modern-screenshot.umd.js",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "node",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": "node",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 17
+              },
+              {
+                "file": "agents/impeccable_manual_edit_applier.toml",
+                "line": 36
+              },
+              {
+                "file": "reference/degraded/manual-edit-applier.md",
+                "line": 34
+              },
+              {
+                "file": "reference/doctor.md",
+                "line": 9
+              },
+              {
+                "file": "reference/foundations.md",
+                "line": 34
+              },
+              {
+                "file": "reference/hooks.md",
+                "line": 55
+              },
+              {
+                "file": "reference/init.md",
+                "line": 27
+              },
+              {
+                "file": "reference/live.md",
+                "line": 5
+              },
+              {
+                "file": "reference/routing.md",
+                "line": 22
+              },
+              {
+                "file": "scripts/engine-checksums.txt",
+                "line": 2
+              },
+              {
+                "file": "scripts/live-browser-dom.js",
+                "line": 68
+              },
+              {
+                "file": "scripts/live-browser-ignores.js",
+                "line": 35
+              },
+              {
+                "file": "scripts/live-browser.js",
+                "line": 21
+              },
+              {
+                "file": "scripts/modern-screenshot.umd.js",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "kind": "runtime",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "scripts/live-browser.js",
+                "line": 9135
+              }
+            ]
+          },
+          {
+            "name": "bash",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "agents/impeccable_motion_reviewer.toml",
+                "line": 8
+              },
+              {
+                "file": "reference/audit.md",
+                "line": 152
+              },
+              {
+                "file": "reference/audit.native.md",
+                "line": 145
+              },
+              {
+                "file": "reference/critique.md",
+                "line": 25
+              },
+              {
+                "file": "reference/degraded/motion-reviewer.md",
+                "line": 6
+              },
+              {
+                "file": "reference/generate.md",
+                "line": 48
+              },
+              {
+                "file": "reference/hooks.md",
+                "line": 50
+              },
+              {
+                "file": "reference/layout.md",
+                "line": 27
+              },
+              {
+                "file": "reference/live-setup.md",
+                "line": 49
+              },
+              {
+                "file": "reference/live.md",
+                "line": 60
+              },
+              {
+                "file": "reference/polish.md",
+                "line": 31
+              },
+              {
+                "file": "reference/typeset.md",
+                "line": 26
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 67
+              },
+              {
+                "file": "agents/impeccable_asset_producer.toml",
+                "line": 12
+              },
+              {
+                "file": "agents/impeccable_finish_reviewer.toml",
+                "line": 10
+              },
+              {
+                "file": "agents/impeccable_manual_edit_applier.toml",
+                "line": 52
+              },
+              {
+                "file": "agents/impeccable_motion_reviewer.toml",
+                "line": 8
+              },
+              {
+                "file": "reference/adapt.md",
+                "line": 168
+              },
+              {
+                "file": "reference/android.md",
+                "line": 44
+              },
+              {
+                "file": "reference/animate.md",
+                "line": 94
+              },
+              {
+                "file": "reference/audit.md",
+                "line": 51
+              },
+              {
+                "file": "reference/audit.native.md",
+                "line": 3
+              },
+              {
+                "file": "reference/component-review.md",
+                "line": 3
+              },
+              {
+                "file": "reference/craft-floor.md",
+                "line": 15
+              },
+              {
+                "file": "reference/critique-rubric.md",
+                "line": 390
+              },
+              {
+                "file": "reference/critique.md",
+                "line": 7
+              },
+              {
+                "file": "reference/degraded/asset-producer.md",
+                "line": 10
+              },
+              {
+                "file": "reference/degraded/finish-reviewer.md",
+                "line": 8
+              },
+              {
+                "file": "reference/degraded/manual-edit-applier.md",
+                "line": 50
+              },
+              {
+                "file": "reference/degraded/motion-reviewer.md",
+                "line": 6
+              },
+              {
+                "file": "reference/document.md",
+                "line": 94
+              },
+              {
+                "file": "reference/generate.md",
+                "line": 3
+              },
+              {
+                "file": "reference/harden.md",
+                "line": 229
+              },
+              {
+                "file": "reference/ios.md",
+                "line": 49
+              },
+              {
+                "file": "reference/live-setup.md",
+                "line": 17
+              },
+              {
+                "file": "reference/live.md",
+                "line": 1
+              },
+              {
+                "file": "reference/new-work-comp.md",
+                "line": 16
+              },
+              {
+                "file": "reference/new-work-world.md",
+                "line": 13
+              },
+              {
+                "file": "reference/new-work.md",
+                "line": 64
+              },
+              {
+                "file": "reference/onboard.md",
+                "line": 206
+              },
+              {
+                "file": "reference/optimize.md",
+                "line": 221
+              },
+              {
+                "file": "reference/overdrive.md",
+                "line": 8
+              },
+              {
+                "file": "reference/region-map.md",
+                "line": 24
+              },
+              {
+                "file": "reference/routing.md",
+                "line": 19
+              },
+              {
+                "file": "reference/typeset.md",
+                "line": 54
+              },
+              {
+                "file": "reference/visualize.md",
+                "line": 11
+              },
+              {
+                "file": "scripts/command-metadata.json",
+                "line": 19
+              },
+              {
+                "file": "scripts/live-browser-dom.js",
+                "line": 2
+              },
+              {
+                "file": "scripts/live-browser-ignores.js",
+                "line": 2
+              },
+              {
+                "file": "scripts/live-browser-session.js",
+                "line": 2
+              },
+              {
+                "file": "scripts/live-browser.js",
+                "line": 2
+              },
+              {
+                "file": "scripts/modern-screenshot.umd.js",
+                "line": 1
+              }
+            ]
+          },
+          {
+            "name": "playwright",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "reference/critique.md",
+                "line": 92
+              }
+            ]
+          },
+          {
+            "name": "powershell",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "reference/hooks.md",
+                "line": 21
+              }
+            ]
+          },
+          {
+            "name": "puppeteer",
+            "kind": "tool",
+            "status": "mention-hint",
+            "installerId": null,
+            "evidence": [
+              {
+                "file": "reference/critique.md",
+                "line": 92
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "analysisStatus": "static-review-required",
+        "coverage": {
+          "filesScanned": 67,
+          "detection": "candidates-found"
+        },
+        "missingPackageFiles": [],
+        "packageCompleteness": "retained-source-files-verified",
+        "environmentStatus": "not-tested",
+        "autoInstall": false
+      },
+      "permissions": {
+        "runs_code": true,
+        "mcp": false,
+        "files": [
+          "LICENSE",
+          "SKILL.md",
+          "agents/impeccable_asset_producer.toml",
+          "agents/impeccable_documenter.toml",
+          "agents/impeccable_finish_reviewer.toml",
+          "agents/impeccable_manual_edit_applier.toml",
+          "agents/impeccable_motion_reviewer.toml",
+          "agents/openai.yaml",
+          "manifest.json",
+          "reference/adapt.md",
+          "reference/adapt.native.md",
+          "reference/android.md",
+          "reference/animate.md",
+          "reference/audit.md",
+          "reference/audit.native.md",
+          "reference/bolder.md",
+          "reference/clarify.md",
+          "reference/colorize.md",
+          "reference/component-review.md",
+          "reference/craft-floor.md",
+          "reference/craft.md",
+          "reference/critique-rubric.md",
+          "reference/critique.md",
+          "reference/degraded/asset-producer.md",
+          "reference/degraded/documenter.md",
+          "reference/degraded/finish-reviewer.md",
+          "reference/degraded/manual-edit-applier.md",
+          "reference/degraded/motion-reviewer.md",
+          "reference/delight.md",
+          "reference/distill.md",
+          "reference/doctor.md",
+          "reference/document.md",
+          "reference/extract.md",
+          "reference/foundations.md",
+          "reference/generate.md",
+          "reference/harden.md",
+          "reference/hooks.md",
+          "reference/init.md",
+          "reference/ios.md",
+          "reference/layout.md",
+          "reference/live-setup.md",
+          "reference/live.md",
+          "reference/mode-operate.md",
+          "reference/mode-persuade.md",
+          "reference/mode-read.md",
+          "reference/new-work-comp.md",
+          "reference/new-work-world.md",
+          "reference/new-work.md",
+          "reference/onboard.md",
+          "reference/operate.md",
+          "reference/optimize.md",
+          "reference/overdrive.md",
+          "reference/polish.md",
+          "reference/quieter.md",
+          "reference/region-map.md",
+          "reference/routing.md",
+          "reference/shape.md",
+          "reference/typeset.md",
+          "reference/visualize.md",
+          "references/guide.vi.md",
+          "scripts/VERSION",
+          "scripts/command-metadata.json",
+          "scripts/data/font-index-failures.json",
+          "scripts/data/font-index.json",
+          "scripts/engine-checksums.txt",
+          "scripts/impeccable",
+          "scripts/impeccable.cmd",
+          "scripts/live-browser-dom.js",
+          "scripts/live-browser-ignores.js",
+          "scripts/live-browser-session.js",
+          "scripts/live-browser.js",
+          "scripts/modern-screenshot.umd.js"
+        ]
+      },
+      "checksum": "0a6f26597ff20613156d77b26823fccd088c42805a09cae4675cec1497b4d4f1",
+      "file_hashes": {
+        "LICENSE": "fc0673369dae07c045c46869d3d4c9113678c77fcc7d3b4e3a39ac074cfa68b6",
+        "SKILL.md": "61f3ffac1fa480e1cc9a542728c56b3c5220197d02f60480193ab6cee9a30632",
+        "agents/impeccable_asset_producer.toml": "af4b1724f58c853a0f5fdf3916a0501c07899eba45c6ee3fedfddda81ebd7291",
+        "agents/impeccable_documenter.toml": "0e27e9ca24ca9954da00c056df0e630cd3a0999c1378ed7fe71165d51e659f97",
+        "agents/impeccable_finish_reviewer.toml": "bb4f143957cbb5d9c0b5b83db8c5b32c6da08c2fb43731b0e7c554d0274cec1b",
+        "agents/impeccable_manual_edit_applier.toml": "2028e6893e00ac50f194a313ad31eebb9cca155e375d2f1e4e61cf18b604db38",
+        "agents/impeccable_motion_reviewer.toml": "90ac469c7a299f5587783c0f2674a6274f66ca538a368dca4e54291fd43adbb8",
+        "agents/openai.yaml": "92a7f329c767dd067a21b6e7bc1ccf07319a2b4e6f84687b3318a595af2e15d9",
+        "manifest.json": "09c3d7befbc094413556604d31eb13e2516ef74f33b097ff36972eec193f6dbe",
+        "reference/adapt.md": "ff53e9376b28e8087060f354b58622cf4de4a3f0e613c579c3650a76fc5d788a",
+        "reference/adapt.native.md": "07f759e869ab46308ab8e4776cbc9587f3b44f43dcad48c953d68861bc280de0",
+        "reference/android.md": "90143ff65239db1ecf84cc370717582708aa31731be82a50085cc40e3e94ed7d",
+        "reference/animate.md": "57943d98c34cf62164e43e5d841c09dd42eaced8c37146b8ac68f16991844a8a",
+        "reference/audit.md": "19987b193a00beb814c4f3f281b7864e9b87790cb8a743a0879cf254601ba8b5",
+        "reference/audit.native.md": "40a3cf9ea800610eea25c5dfe2df5879c2ccf2722aa5ac3fe23379e8fb08338e",
+        "reference/bolder.md": "b0f36c1f1bd01eca327d755e935bae11f5c02fb8006635bb613d6c0f82388ec4",
+        "reference/clarify.md": "cbbf5647e0e14f6b10c7fd43392ecc1d6924acfbf43994d1d147047d73497f42",
+        "reference/colorize.md": "a3cd4b18154e8c06edfbf7e7316077e8dd500d9777ea723c09fc02fe32b3fba2",
+        "reference/component-review.md": "479855a5e4e9e706470eb2950a72c4bd451e1f303d3a5765618d569f42ab5b08",
+        "reference/craft-floor.md": "cda4749980600fadaf56e084fe48975b5d30a04b1d1f486dd737fcb3c50f7931",
+        "reference/craft.md": "39b5fefbf524ad156a4cab2fbc5b65f2358c213a30d59a4c7510704e8d9dd56b",
+        "reference/critique-rubric.md": "11cb70e203d6547c16c9edc8a21b0300b44a47db54255f75bdd4b827bd11a6e3",
+        "reference/critique.md": "0a4e0b6a286678b9c9f55a988af3f2892ba0b447f36778c4b2724720c63ab45d",
+        "reference/degraded/asset-producer.md": "6c1358680dda786670242494fc9bb038173e7286731c1aa1009770f23565def4",
+        "reference/degraded/documenter.md": "82e3b15c6a0ef24dd34a44af0e5e55bba2dc7fdb89240d6d7ac67764b0748b4a",
+        "reference/degraded/finish-reviewer.md": "b6744e5910cefd2365bf6329e7ec9dae70f5f508ecc464d393ddbe12d4ff3ec2",
+        "reference/degraded/manual-edit-applier.md": "61783bf0dffb0a4d0e73fc750bb6d903988ff696ff840d0bd9487bb2012fb0bb",
+        "reference/degraded/motion-reviewer.md": "d0ca2232ee31a375ca53ab92297147938b311915413ad0303ab7d2cf9fe0b222",
+        "reference/delight.md": "14a5700220c44c9addf2bca02036969b4cede7ea51fd98fe290892942bb89d2c",
+        "reference/distill.md": "300a45c7502381001739935450f80d075be42a84a49bba0fccb662dbcb47986c",
+        "reference/doctor.md": "a2bd7a99bb08002069627f11462c8271a55e532476462d53b76ba0ba0462e97c",
+        "reference/document.md": "6505ddbf03eb5e563067d096f3b84cbff8d1de1e0595b92d15162c5ee4092c6b",
+        "reference/extract.md": "9f62e80b14a210b1c5dd036865c9d3a83614451e060cbd4b2220d1b597b2c973",
+        "reference/foundations.md": "f412542ca061c172fc83909c18f50f89c74efa7a7aee6a468df1065f046bbe0f",
+        "reference/generate.md": "18044ab2ccec09250dc2378aefb3dde6887983b0b4aa44541379b90bbef632ac",
+        "reference/harden.md": "592a24802724356b029fdf8cf27c3927341a27dc254e8819a15670127d8f0394",
+        "reference/hooks.md": "9880e009212daf35e34896a87a8ca802075dc9f7902ffde83324862bfa029207",
+        "reference/init.md": "c70db492dcfdf678710c5e39080486cc9f1e2e30a6379d1f3c2fe4c32c5415ba",
+        "reference/ios.md": "60ada207bfb419ad0a570b8319c29403713ca2ad3fb9a2f5bdffa62ab25611bb",
+        "reference/layout.md": "875ceae18559e953dc9949e50374c2daadaebdb58520406b909f552a06c3e081",
+        "reference/live-setup.md": "c9d6e1c35ed6963ffed82813b1e65fb54c28331c415360f7477b0295333df02c",
+        "reference/live.md": "5953bc0ed91f02d2f1f6f87fd6ca9c80ddff0937ba8b4b5f2f36a09e070be127",
+        "reference/mode-operate.md": "7cc131b41dae694a4b554c940445117318f0c6fb19f905cf1f8cbafc08a3f430",
+        "reference/mode-persuade.md": "81cf3d22f747b9768abe48bd6cb881b8807809b8995f20096cfb442dadf550bc",
+        "reference/mode-read.md": "20da46dd620da4433736173b130de306ceeb124dac83fccf664a12e236ee0b8d",
+        "reference/new-work-comp.md": "87291f708e585816344847cb796890cc7a9e3b98f404906a75fac9c5fffba744",
+        "reference/new-work-world.md": "352e5818afce0d43e587ea4cda8a71edf62daf3f952e14448fac1b96c46a3fa2",
+        "reference/new-work.md": "544c463491d530977d3543d2ecf7079995de0a010a827ad0f0b0bdaf222193b9",
+        "reference/onboard.md": "4fce915439ca9a4250fa8b074b286491cbeff4cf7797682f95d39d7d7145b77e",
+        "reference/operate.md": "c4b169ab7932329c833750971c53bc129d0385e16d0219b31f002792fce939e8",
+        "reference/optimize.md": "4fd6244de42ee793f0d4484ed2d44a1c1fc644367cb4347e76b5692271afae81",
+        "reference/overdrive.md": "a012553b97a809316a43bad4b90800baa0b45d18df6b9f665054d876a7fd028b",
+        "reference/polish.md": "dbc500eba2be3444a9dcad1feb5decd29394fc5ef69de360b3e0e893f34f6d07",
+        "reference/quieter.md": "1c9199938fd1da3364c78c5a285eb94cd5d4a9c0118305bf078617ac4c46a57c",
+        "reference/region-map.md": "af58ff0b02c6507be860624f122f6d2f4f36bddf18f143b2d5036962bea932c6",
+        "reference/routing.md": "3347cc1bf41d7b34e32617a468a7064fc1740eb7c1abe4ff479be07cfebec5b5",
+        "reference/shape.md": "51960b514f8437baf12484dd5be824e0c2d0ee8802e29e7f511e431493a6c417",
+        "reference/typeset.md": "0ef98ef25410e09e8f50847d67c010296bee32bdfea14be33c256fa5bb00aa76",
+        "reference/visualize.md": "89dd72aca888f6268ae12fdb2c4bdd77548dd306fd16cf560f8413ae478aea68",
+        "references/guide.vi.md": "5a321d01df552d2f9289e69194bac5766f988d6d764660665c94a0023090e297",
+        "scripts/VERSION": "556c040cfbab4f510e1a63e4c80305c081e3a4700202062cd25b7a88f2885c99",
+        "scripts/command-metadata.json": "7b91b379cc594cb9e45945f7c29838324c531b04e27ab52713eb0a35f02c6479",
+        "scripts/data/font-index-failures.json": "7461de9923357d70b1365647b0a85d181eac1702f622cbf24465767f4ba99d06",
+        "scripts/data/font-index.json": "47edbdfaf27073c47033d1ac7dfee881be49e2dcbda7671d1157300481dde6da",
+        "scripts/engine-checksums.txt": "ce608a3cf174c637874d2face4683d6b0ca9391c5b5431244b692bbd72703b01",
+        "scripts/impeccable": "4d405a06b9f13f0f92d08d4aa82cd66106a131b7d3dd5855531d09a6430db910",
+        "scripts/impeccable.cmd": "67a39557950acc624113e4db011033f278dc98da1fbbabd5a82ec2153fc135ce",
+        "scripts/live-browser-dom.js": "0e8e243d4242d1af8a710a548a85fe421a4fcf7787c6dbc11376ebe4c0f8f118",
+        "scripts/live-browser-ignores.js": "d5fb703e91293f5769bfa2376076c115823be19ef8d8f1eab57e8dd6e4283c4a",
+        "scripts/live-browser-session.js": "bd1580c0a32b88863b8bb014c6007054d496de9cd18cebd612e220f11f2c9474",
+        "scripts/live-browser.js": "cca7183b841250288ea671f33bd0b4f4883efefca9dc26f75555c68388febabe",
+        "scripts/modern-screenshot.umd.js": "9b0dc34415466edac6e6802574006608b5e5c0da9fdcb7b2651dbd1ea06713a6"
+      },
+      "notes": [],
+      "last_checked": "2026-11-28T01:30:00.000Z",
       "area": "quarantine"
     },
     {

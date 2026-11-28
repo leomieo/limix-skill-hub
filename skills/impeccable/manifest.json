@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "name": "impeccable",
+  "version": "88cfafae6491",
+  "source": {
+    "url": "https://github.com/pbakaus/impeccable",
+    "commit": "88cfafae649164e6dc48b88d3c0c1bf6662eaade",
+    "sha256": "61f3ffac1fa480e1cc9a542728c56b3c5220197d02f60480193ab6cee9a30632",
+    "license": "Apache-2.0"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Use when the user wants to design, redesign, shape, critique, audit, polish, simplify, harden, animate, or otherwise improve a frontend interface: websites, landing pages, dashboards, product UI, components, forms, settings, onboarding, empty states, and native iOS or Android screens. Handles UX review, hierarchy, layout, typography, color, motion, UX copy, accessibility, responsive behavior, edge cases, and capturing or documenting design systems (DESIGN.md, tokens). Also for making bland UI bolder, loud UI quieter, or ambitious visual effects. Not for backend-only or non-UI tasks.",
+    "aliases": [
+      "Thiết kế giao diện tinh chỉnh",
+      "Kiểm toán UI/UX"
+    ],
+    "keywords": [
+      "impeccable",
+      "Thiết kế giao diện tinh chỉnh",
+      "Kiểm toán UI/UX"
+    ],
+    "examples": [
+      "Dùng impeccable cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "61f3ffac1fa480e1cc9a542728c56b3c5220197d02f60480193ab6cee9a30632"
+  },
+  "requiredCapabilities": [
+    "40 [reference-hint]",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "foo [reference-hint]",
+    "go [mention-hint]",
+    "hooks [reference-hint]",
+    "hooks-trust [reference-hint]",
+    "image-generation [mention-hint]",
+    "impeccable-asset-producer [reference-hint]",
+    "impeccable-finish-reviewer [reference-hint]",
+    "impeccable-motion-reviewer [reference-hint]",
+    "java [mention-hint]",
+    "node [file-type-hint]",
+    "node [mention-hint]",
+    "playwright [mention-hint]",
+    "poll [reference-hint]",
+    "powershell [mention-hint]",
+    "puppeteer [mention-hint]",
+    "python [mention-hint]",
+    "react [mention-hint]",
+    "subagents [mention-hint]",
+    "three [mention-hint]"
+  ],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write"
+  ],
+  "syncedAt": "2026-11-28T01:30:00.000Z",
+  "security": {
+    "status": "quarantined",
+    "findings": [
+      "scripts/live-browser.js: secret-exfiltration (high)"
+    ]
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

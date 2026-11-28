@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "name": "accessibility-engineering",
+  "version": "e997ac5b9a74",
+  "source": {
+    "url": "https://github.com/addyosmani/agent-skills",
+    "commit": "e997ac5b9a74eab332d5e9793bb38a38c8cfdd74",
+    "sha256": "75890ff5b6ec110606d023905a2905294b5fd87de60ae7b5f675099ee24dcebe",
+    "license": "MIT"
+  },
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "vietnamese": {
+    "description": "Audits existing interfaces for WCAG 2.2 AA conformance and remediates the violations found. Use when auditing a page or component for accessibility, running axe-core or pa11y, triaging a11y violations, or checking screen reader and contrast issues before shipping.",
+    "aliases": [
+      "Kiểm toán khả năng truy cập",
+      "WCAG 2.2 AA"
+    ],
+    "keywords": [
+      "accessibility",
+      "engineering",
+      "Kiểm toán khả năng truy cập",
+      "WCAG 2.2 AA"
+    ],
+    "examples": [
+      "Dùng accessibility-engineering cho tác vụ của tôi; giải thích kết quả bằng tiếng Việt."
+    ],
+    "guide": "references/guide.vi.md",
+    "sourceSha256": "75890ff5b6ec110606d023905a2905294b5fd87de60ae7b5f675099ee24dcebe"
+  },
+  "requiredCapabilities": [
+    "bash [file-type-hint]",
+    "bash [mention-hint]",
+    "browser [mention-hint]",
+    "filesystem-read [mention-hint]",
+    "filesystem-write [mention-hint]",
+    "node [mention-hint]"
+  ],
+  "permissions": [
+    "shell",
+    "filesystem-read",
+    "filesystem-write",
+    "network"
+  ],
+  "syncedAt": "2026-11-28T01:30:00.000Z",
+  "security": {
+    "status": "review-required",
+    "findings": []
+  },
+  "compatibility": {
+    "status": "unchecked",
+    "notes": [
+      "English SKILL.md and downloaded source files are byte-identical to the pinned GitHub commit.",
+      "No upstream scripts were executed. Compatibility is static only; runtime and provider acceptance remain untested."
+    ]
+  }
+}

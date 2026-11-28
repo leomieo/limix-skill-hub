@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "batchDate": "2026-11-28",
+  "checkedAt": "2026-11-28T01:30:00Z",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "repository": "https://github.com/leomieo/limix-skill-hub",
+  "base": {
+    "commit": "078b4b7bfd5e579475cc369ef6bf73746cd3a433",
+    "catalogCount": 87,
+    "check": "No curation report or curation commit for 2026-11-28 existed before this run."
+  },
+  "selectionRule": {
+    "minimumStarsExclusive": 5000,
+    "signalWindowVietnam": "2026-11-21T08:00:00+07:00/2026-11-28T08:00:00+07:00",
+    "sourcePolicy": "Recent release, merged PR, or commit directly related to the selected skill; no forced quota."
+  },
+  "candidates": [
+    {
+      "id": "accessibility-engineering",
+      "repository": "addyosmani/agent-skills",
+      "sourcePath": "skills/accessibility-engineering/SKILL.md",
+      "commit": "e997ac5b9a74eab332d5e9793bb38a38c8cfdd74",
+      "coreSha256": "75890ff5b6ec110606d023905a2905294b5fd87de60ae7b5f675099ee24dcebe",
+      "stars": 121000,
+      "createdAt": "2026-02-15T20:20:26Z",
+      "signal": {
+        "type": "release",
+        "url": "https://github.com/addyosmani/agent-skills/releases/tag/0.6.18",
+        "publishedAt": "2026-11-24T07:11:18Z",
+        "summary": "The installed-skill accessibility audit helper resolves from its own directory; release also ships shared checklists and other audit fixes."
+      },
+      "license": "MIT",
+      "sourceVerified": true,
+      "upstreamFilesRetained": 4,
+      "skipped": [],
+      "securityStatus": "review-required",
+      "compatibility": "unchecked",
+      "area": "skills",
+      "reason": "New canonical skill id absent from the 87-entry catalog; pinned source, license and all four selected bundle files were retained byte-for-byte."
+    },
+    {
+      "id": "impeccable",
+      "repository": "pbakaus/impeccable",
+      "sourcePath": ".agents/skills/impeccable/SKILL.md",
+      "commit": "88cfafae649164e6dc48b88d3c0c1bf6662eaade",
+      "coreSha256": "61f3ffac1fa480e1cc9a542728c56b3c5220197d02f60480193ab6cee9a30632",
+      "stars": 118100,
+      "createdAt": "2025-11-16T01:52:04Z",
+      "signal": {
+        "type": "release",
+        "url": "https://github.com/pbakaus/impeccable/releases/tag/skill-v4.11.0",
+        "publishedAt": "2026-11-24T19:11:40Z",
+        "summary": "Saved critique/audit links and evidence images, work-type design guidance, and related reporting rules."
+      },
+      "license": "Apache-2.0",
+      "sourceVerified": true,
+      "upstreamFilesRetained": 70,
+      "skipped": [],
+      "securityStatus": "quarantined",
+      "securityFindings": [
+        {
+          "rule": "secret-exfiltration",
+          "severity": "high",
+          "file": "scripts/live-browser.js",
+          "line": 13138,
+          "note": "Static rule matched a localhost design-system request containing TOKEN; this is a scanner finding, not a runtime determination."
+        }
+      ],
+      "compatibility": "unchecked",
+      "area": "quarantine",
+      "reason": "Complete pinned bundle and Apache-2.0 license retained, but activation is blocked pending review of the static finding; no upstream script or dependency was run."
+    },
+    {
+      "id": "extract-design-md",
+      "repository": "google-labs-code/stitch-skills",
+      "sourcePath": "plugins/stitch-design/skills/extract-design-md/SKILL.md",
+      "commit": "50468f36b6910a9241c5c7e6fb2c39759535c584",
+      "stars": 13596,
+      "createdAt": "2026-01-16T17:17:17Z",
+      "signal": {
+        "type": "merged pull request",
+        "url": "https://github.com/google-labs-code/stitch-skills/pull/113",
+        "mergedAt": "2026-11-24T21:14:29Z",
+        "summary": "Adds local Puppeteer live-URL extraction, tests, URL scheme guardrails, CSS color handling and untrusted-data warnings."
+      },
+      "license": "Apache-2.0",
+      "sourceVerified": true,
+      "accepted": false,
+      "reason": "Rejected before packaging: upstream frontmatter name is stitch::extract-design-md, which violates this hub's slug/schema parser; no byte or catalog entry was created."
+    }
+  ],
+  "results": {
+    "added": 2,
+    "rejected": 1,
+    "catalogCount": 89,
+    "readmeLatestEntryCount": 10,
+    "readmeLatestEntryIds": [
+      "impeccable",
+      "accessibility-engineering",
+      "visual-explainer",
+      "drawio-skill",
+      "planning-with-files",
+      "douyin-spider",
+      "rust-anything",
+      "last30days",
+      "aso",
+      "prospecting"
+    ]
+  },
+  "verification": {
+    "catalog": { "count": 89, "errors": 0, "duplicateIds": false },
+    "hybrid": { "checked": 89, "passed": 89, "sourceVerified": 80, "quarantined": 54, "errors": 0 },
+    "requirements": { "firstRunUpdated": 2, "secondRunUpdated": 0 },
+    "idempotence": "Second migration check returned unchanged for both ids; no source bytes changed.",
+    "hubTests": { "command": "npm test", "passed": 24, "failed": 0, "skipped": 0 },
+    "catalogCommand": { "command": "npm run catalog", "status": "passed", "problems": 0 },
+    "gitBytes": { "command": "node tools/verify-git-bytes.mjs", "status": "passed", "publishedSkillFiles": 3874 },
+    "whitespace": { "command": "git -c core.whitespace=cr-at-eol diff --cached --check", "status": "source-preserving check reports upstream whitespace in immutable files", "files": ["skills/impeccable/reference/extract.md", "skills/impeccable/reference/harden.md", "skills/impeccable/reference/optimize.md"], "action": "Preserved unchanged upstream bytes; no whitespace normalization was applied." },
+    "runtime": "No upstream script, hook, browser, dependency install, model/provider task, or external integration was executed."
+  },
+  "artifacts": {
+    "checkout": "C:\\Users\\Leo\\.limixbot\\task-workspaces\\4b6a0b91-8f29-4dd4-a804-93631fd09b34\\cdfe4d93-654a-432e-a425-95dc3bd1ff46\\curation-20261128",
+    "upstreamReviewClones": [
+      "upstream-review-agent-skills",
+      "upstream-review-impeccable",
+      "upstream-review-stitch"
+    ],
+    "report": "migration-reports/curation-2026-11-28.json"
+  },
+  "limitations": [
+    "impeccable remains quarantined until the static localhost TOKEN finding is manually reviewed.",
+    "Compatibility, runtime permissions, model/provider task success and actual browser/screen-reader behavior were not tested.",
+    "GitHub metadata was checked from public repository/release/PR pages; unauthenticated API calls were rate-limited, so star counts use the observed public page/report values."
+  ]
+}

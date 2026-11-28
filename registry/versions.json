@@ -1724,5 +1724,21 @@
       "checksum": "a290581214debe2050f3abd4ef40fac633970b4732c2404bea29b7af6c99423b",
       "at": "2026-11-27T07:50:26.740Z"
     }
+  ],
+  "accessibility-engineering": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "9fa75a82bedfaf7bc68eba1340e02aa036f688f549e1471b3113b5214322778f",
+      "at": null
+    }
+  ],
+  "impeccable": [
+    {
+      "version": "0",
+      "commit": null,
+      "checksum": "0a6f26597ff20613156d77b26823fccd088c42805a09cae4675cec1497b4d4f1",
+      "at": null
+    }
   ]
 }

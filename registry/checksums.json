@@ -1,4 +1,5 @@
 {
+  "accessibility-engineering": "9fa75a82bedfaf7bc68eba1340e02aa036f688f549e1471b3113b5214322778f",
   "agent-autoloop": "431cf618c1276b0c7c9764f531b917d6b267d4704a30160f432d4a9c1075b13c",
   "anatomy": "4e68a734a650ce5680272be1edc4c5b4d0bd0a27c1bdea4b65f3c8da596b97f4",
   "answer-me-with-html": "8c5920cabb0dbe9f7b0d2771d81fc68b6be5f4485bca994e96167ef405e42d34",
@@ -45,6 +46,7 @@
   "huashu-motion": "7051b305ce454dc46a26759103a2a0afb6048666bb82bf3ecff38c80f7233270",
   "humanizer": "b4f99af501b8187b84b888d6242e45c8d72639336ea34e26b6001192f6eec361",
   "hyperframes": "d64e1b7208cdd44e86c06e7bb73b45cc79794998e571ff62b8e8ad7e79270b4d",
+  "impeccable": "0a6f26597ff20613156d77b26823fccd088c42805a09cae4675cec1497b4d4f1",
   "improve-architecture": "cf0db0d54afd57c0f02de80f56f2a8be87ab659aab0faddf41a736b724d09d49",
   "inference-optimisation": "2aa9a1325373c2207376609a416ab4dbc2af375f599fa3ffd2a5673adfe4897d",
   "instagram-agent-skill": "94dcc09cb1825a792d9cc76be2b4a88164af685af3929c9599ca29d34bc87495",
